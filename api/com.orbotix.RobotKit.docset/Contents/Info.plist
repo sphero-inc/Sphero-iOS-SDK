@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+     <key>CFBundleName</key>
+     <string>RobotKit API</string>
+     <key>CFBundleIdentifier</key>
+     <string>com.orbotix.RobotKit.docset</string>
+     <key>DocSetFeedName</key>
+     <string>Orbotix's API docs</string>
+     <key>DocSetPublisherIdentifier</key>
+     <string>com.orbotix.OrbotixDocSet.api</string>
+     <key>DocSetPublisherName</key>
+     <string>Orbotix</string>
+</dict>
+</plist>

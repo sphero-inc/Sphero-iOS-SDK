@@ -1,0 +1,66 @@
+                    _______  _______  ______   _______ __________________         
+                   (  ___  )(  ____ )(  ___ \ (  ___  )\__   __/\__   __/|\     /|
+                   | (   ) || (    )|| (   ) )| (   ) |   ) (      ) (   ( \   / )
+                   | |   | || (____)|| (__/ / | |   | |   | |      | |    \ (_) / 
+                   | |   | ||     __)|  __ (  | |   | |   | |      | |     ) _ (  
+                   | |   | || (\ (   | (  \ \ | |   | |   | |      | |    / ( ) \ 
+                   | (___) || ) \ \__| )___) )| (___) |   | |   ___) (___( /   \ )
+                   (_______)|/   \__/|/ \___/ (_______)   )_(   \_______/|/     \|
+
+MMMM77777777777777777777777ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMM77777777NMMMMMMMM7777777NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMM777777MMMMMMMMMMMMMMM7I7777MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMM77777MMMMMMMMMMMMMMMMMMM77777MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MM7777$MMMMMMMMMMMMMMMMMMMMM87777MMMMMMMMMMMMMMMMMMMMMMMMMMMM77MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MD7777MMMMMMMMMMMMMMMMMMMMMMM7777IMMMMMMMMMMMMMMMMMMMMMMMMMMM77MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+M7777MMMMMMMMM8777DMMMMMMMMMMM7777MMMMMMMMM7777MMMMMN7I77MMMM77M7777MMMMMMMII7$NMMMMMMO$8MMM$I77OMMM
+N777OMMMMMMMM7777777MMMM777MMMM777$MMMMMM$77777$MMM77777777MM777I77777MMM77I777$7NMM77777MI7777I778M
+7777MMMMMMMMM7777777MMM77777MMM7777MMMMMM77MMMMMMM77MMMMM$77M77MMMMM77OM77MMMM$777M77NMMM778MMMMM77M
+7777MMMMMMMMM7777777MMM77777MMM7777MMMMMMMI77778MM77MMMMMM77M77MMMMMM77M77$77777NMM77MMMM77MMMMMM877
+7777MMMMMMMMM7777777MMM77777MMM7777MMMMMMMMMMM77$M77MMMMM777M77MMMMMM77M777ZMMMM7MM77MMMM778MMMMM77M
+M777ZMMMMMMMM777777ZMMMM777MMMM777ZMMMMMM777DD77NM777777777MM77MMMMMM77MM777I7777MM77MMMMM77777I77NM
+M7777MMMMMMMMMZ7778MMMMMMMMMMM7777MMMMMMMM$7777NMM77N7777MMMM77MMMMMMINMMMM7777MMMM$7MMMMMMM7777DMMM
+M87777MMMMMMMMMMMMMMMMMMMMMMM$7777MMMMMMMMMMMMMMMM77MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MM$7777MMMMMMMMMMMMMMMMMMMMMO7777MMMMMMMMMMMMMMMMM7$MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMM77777MMMMMMMMMMMMMMMMMMM77777MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMI77777MMMMMMMMMMMMMMM$7777$MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMM77777I$MMMMMMMMM$I777778MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMN7777777777777777777ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMM$77777777777777MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMZ7$DMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+README.txt
+Achievement & SpheroWorld Sample Code
+Platform: iOS
+Version: 0.1
+Copyright 2011 Orbotix, Inc.
+
+Description:
+This sample code demonstrates using SpheroWorld to track and give users acheivements.  In order to
+use SpheroWorld and achievements in your application you will need to setup your app and enter the
+achievement meta data and requirements on the SpheroWorld website. An app has already been setup
+for this sample code that has achievements.  You can see where the identifier and secret string
+are set in the AppDelegate.
+
+This app contains 3 buttons to toggle Sphero between red, green and blue.  There is also a button
+to login to SpheroWorld and authorize this app to track your achievements on SpheroWorld.  After
+logging in this view will show your achievements and progress towards earning them.
+
+Pressing the color buttons will change Sphero's color and log an event that is sent to SpheroWorld
+to track the user's progress towards earning the achievement.  The view controller listens for
+notifications when the achievements are earned and displays a notification once one is earned.
+
+Below are the achievements that have been setup for this sample code and you can earn by 
+
+Achievements:
+Red 1 - Turn Sphero red
+Red 5 - Turn Sphero red 5 times
+Red 10 - Turn Sphero red 10 times
+Green 1 - Turn Sphero green
+Green 5 - Turn Sphero green 5 times
+Green 10 - Turn Sphero green 10 times
+Blue 1 - Turn Sphero blue
+Blue 5 - Turn Sphero blue 5 times
+Blue 10 - Turn Sphero blue 10 times
+
+
