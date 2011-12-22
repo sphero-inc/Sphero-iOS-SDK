@@ -9,9 +9,7 @@ Sphero.
 
 The roll command 
 takes a heading from 0° to 360°, and a relative speed from 0.0 to 1.0. So, to command the ball to go 90° at half speed would be:
-```objective-c
      [RKRollCommand sendCommandWithHeading:90.0 velocity:0.5];
-```
 The ball is stopped with `[RKRollCommand sendStop]`.
 
 Also, demonstrated in the code is the use of RUICalibrateGestureHandler which is attached to a view in it's initWithView: method. Calibration is used by the user to aim Sphero in a direction that they consider forward and sets the 0° heading in that direction. This gesture uses two fingers to rotate the ball similar to using two using the two finger rotation gesture used to rotate a photo.
