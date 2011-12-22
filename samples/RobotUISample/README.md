@@ -1,9 +1,11 @@
+![logo](http://update.orbotix.com/developer/sphero-small.png)
+
 # Robot UI Sample
 ## Color Picker
 
 The `RUIColorPickerViewController` presents a color wheel and a brightness bar along with a couple preview windows and an RGB readout. This is a very easy way for a user to change the color of their Sphero™.
 
-![Color Picker](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/RobotUISample/iosColor.png)
+![Color Picker](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/RobotUISample/assets/image01.png)
 
 The color changes initiated by the user are delivered to the RUIColorPickerViewController's delegate. 
 
@@ -62,7 +64,7 @@ If you need to do anything when the color picker is finished you can also implem
 
 The calibration view can be used to give the user some visual feedback while "aiming" their Sphero. It is meant to be an "all in one" widget combining the rotation gesture detection with the visual representation of calibration while sending the commands to Sphero to actually rotate and calibrate when finished.
 
-![Calibration View](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/RobotUISample/iosCalibration.png)
+![Calibration View](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/RobotUISample/assets/image02.png)
 
 To set up the `RUICalibrateGestureHandler`, simply create one with your View Controller's view.
 
@@ -77,7 +79,7 @@ Then, when a rotation gesture is recognized, the `RUICalibrateGestureHandler` au
 
 The joystick view is just one of the ways a user can control Sphero. One of the benefits of a joystick over a two lever RC style control is ability to give direction to Sphero relative to the user's orientation. So, if the user remains stationary and facing the same direction, pushing the joystick puck away always makes Sphero travel in the same direction.
 
-![Joystick View](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/RobotUISample/joystick.jpg)
+![Joystick View](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/RobotUISample/assets/image03.jpg)
 
 Driving Sphero with a joystick view can be broken down into three parts.
 

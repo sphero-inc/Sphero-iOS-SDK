@@ -1,4 +1,4 @@
-![iosdeveloperheader.jpg](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/iosdeveloperheader.jpg)
+![iosdeveloperheader.jpg](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image00.jpg)
 
 # iOS Developer Quick Start Guide
 
@@ -29,7 +29,7 @@ There are two ways to integrate the Sphero SDK into your project. You can start 
  - Download the latest version of our [Xcode 4 Template Installer](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/frameworks/SpheroXcode4Template.pkg)
      * *You can always keep up to date by watching our [GitHub Repository](https://github.com/orbotix/Sphero-iOS-SDK)*
 
-![installspheroxcode4templateforios.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/installspheroxcode4templateforios.png)
+![installspheroxcode4templateforios.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image01.png)
 
 This Xcode 4 Template Installer is designed to move the Sphero iOS SDK into the correct directory and integrate a default Sphero Application into the New Project menu in Xcode. It is important to note that this Installer only works with Xcode 4 and above. If you are the type that neglects the importance of upgrading your development environment, (guilty!) then you will have to manually add the Sphero iOS RobotKit and RobotUIKit into your Xcode project.
 
@@ -39,7 +39,7 @@ This Xcode 4 Template Installer is designed to move the Sphero iOS SDK into the 
 
  - Start a New Sphero Application.
 
-![newspheroapplicationinxcode.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/newspheroapplicationinxcode.png)
+![newspheroapplicationinxcode.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image02.png)
 
 Name your project and decide where you would like to store the project. There should now be a project with RobotKit and RobotUIKit already linked up and ready to use. To test everything out, we want to build the default Application. It is important to note here that the Sphero iOS SDK will not work on the iOS Simulator because it uses the External Accessories Framework, therefore it must be Run on an actual iOS Device. There are ways to simulate the Bluetooth of an iOS device on Mac OSX but that topic is beyond the scope of this document.
 
@@ -59,22 +59,22 @@ There are always those cases where you already developed an awesome game or app 
 
  - Simply Drag `RobotKit.framework`, `RobotUIKit.framework` and `RobotUIKit.Bundle` into your project's framework folder.
 
-![sendingIn.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/sendingIn.png)
+![sendingIn.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image03.png)
 
  The HelloSphero example has all the necessary code needed to create and maintain a connection to Sphero, and can be used as a guide in best practices.  In general you will need to:
 
  - You should define two methods in your `.h`, One to Setup the connection to Sphero and one to maintain the connection.
-
+```objective-c
         BOOL robotOnline;
         -(void)setupRobotConnection;
         -(void)handleRobotOnline;
-
+```
  - Make sure to import RobotKit.h
-
+```objective-c
         #import "RobotKit/RobotKit.h
-
+```
  - Create a method to handle setting up the Connection to Sphero
-
+```objective-c
         -(void)setupRobotConnection {
             /*Try to connect to the robot*/
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
@@ -82,8 +82,9 @@ There are always those cases where you already developed an awesome game or app 
                 [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
             }
         }
+```
  - Create a method to handle maintaining the Connection to Sphero
-
+```objective-c
         - (void)handleRobotOnline {
             /*The robot is now online, we can begin sending commands*/
             if(!robotOnline) {
@@ -92,17 +93,17 @@ There are always those cases where you already developed an awesome game or app 
             }
             robotOnline = YES;
         }
-
+```
  - Overload the `appDidBecomeActive:(NSNotification*)notification` method and initialize the connection to Sphero
 
-    
+```objective-c    
         -(void)appDidBecomeActive:(NSNotification*)notification {
             /*When the application becomes active after entering the background we try to connect to the robot*/
             [self setupRobotConnection];
         }
-
- - In the `OnLoad()` method you should register for application lifecycle notifications 
-
+```
+ - In the `viewDidLoad()` method you should register for application lifecycle notifications 
+```objective-c
         - (void)viewDidLoad
         {
             [super viewDidLoad];
@@ -114,21 +115,21 @@ There are always those cases where you already developed an awesome game or app 
 
             robotOnline = NO;
         }
-
+```
 
  - Do not forget to Disconnect from the Robot when the app closes, otherwise next time you start a connection it will already be in use.
-
+```objective-c
         -(void)appWillResignActive:(NSNotification*)notification {
             /*When the application is entering the background we need to close the connection to the robot*/
             [[NSNotificationCenter defaultCenter] removeObserver:self name:RKDeviceConnectionOnlineNotification object:nil];
             [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:0.0];
             [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
         }
-
+```
  You are now ready to start controlling and receiving information from your Sphero, simply add the following to change the LED Color of Sphero to red:
-
+```objective-c
      [RKRGBLEDOutputCommand sendCommandWithRed:1.0 green:0.0 blue:0.0];
-
+```
 
 
 ## Using the Sphero iOS SDK
@@ -137,13 +138,13 @@ There are always those cases where you already developed an awesome game or app 
 If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
 
 **For example**, try changing the following command in `ViewController.m` from
-
+```objective-c
     [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green :0.0 blue :1.0];
-
+```
 to
-
+```objective-c
     [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green :1.0 blue :0.0];
-
+```
 Notice the change from green of 0.0 to a green of 1.0. Run it and you should have a Green Sphero!  
 
 ### Sending Roll Commands
@@ -163,7 +164,7 @@ For example, a heading of 90° at a speed of 0.5 will tell Sphero to turn clockw
 
 
 Now, it's time to modify the code. Let's send Sphero forward for 2 seconds. Next we will create 2 new methods, one to Move Sphero, and Delay. And another to Stop Sphero.
-
+```objective-c
 			- (void)stop {
 		    	[RKRollCommand sendStop];
 			}
@@ -172,13 +173,13 @@ Now, it's time to modify the code. Let's send Sphero forward for 2 seconds. Next
 				[RKRollCommand sendCommandWithHeading:0.0 velocity:0.5];			
 				[self performSelector:@selector(stop) withDelay:2.0];
 			}
-
+```
 
 Next add the following code in place of the RGB command that was sent before.
 
-
+```objective-c
 		    [self driveforward];
-
+```
 
 **Run the application on an iOS Device, if all went well Sphero should have moved forward just a little.**
 
