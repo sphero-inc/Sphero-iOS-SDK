@@ -65,23 +65,23 @@ There are always those cases where you already developed an awesome game or app 
 
  - You should define two methods in your `.h`, One to Setup the connection to Sphero and one to maintain the connection.
 ```objective-c
-        BOOL robotOnline;
-        -(void)setupRobotConnection;
-        -(void)handleRobotOnline;
+ BOOL robotOnline;
+ -(void)setupRobotConnection;
+ -(void)handleRobotOnline;
 ```
  - Make sure to import RobotKit.h
 ```objective-c
-        #import "RobotKit/RobotKit.h
+ #import "RobotKit/RobotKit.h
 ```
  - Create a method to handle setting up the Connection to Sphero
 ```objective-c
-        -(void)setupRobotConnection {
-            /*Try to connect to the robot*/
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
-            if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-                [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-            }
-        }
+-(void)setupRobotConnection {
+    /*Try to connect to the robot*/
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
+    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
+        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
+    }
+}
 ```
  - Create a method to handle maintaining the Connection to Sphero
 ```objective-c
