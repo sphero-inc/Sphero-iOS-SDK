@@ -64,27 +64,26 @@ There are always those cases where you already developed an awesome game or app 
  The HelloSphero example has all the necessary code needed to create and maintain a connection to Sphero, and can be used as a guide in best practices.  In general you will need to:
 
  - You should define two methods in your `.h`, One to Setup the connection to Sphero and one to maintain the connection.
-```objective-c
- BOOL robotOnline;
- -(void)setupRobotConnection;
- -(void)handleRobotOnline;
-```
+
+        BOOL robotOnline;
+        -(void)setupRobotConnection;
+        -(void)handleRobotOnline;
+
  - Make sure to import RobotKit.h
-```objective-c
- #import "RobotKit/RobotKit.h
-```
+
+        #import "RobotKit/RobotKit.h
+
  - Create a method to handle setting up the Connection to Sphero
-```objective-c
--(void)setupRobotConnection {
-    /*Try to connect to the robot*/
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
-    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-    }
-}
-```
+
+        -(void)setupRobotConnection {
+            /*Try to connect to the robot*/
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
+            if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
+                [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
+            }
+        }
  - Create a method to handle maintaining the Connection to Sphero
-```objective-c
+
         - (void)handleRobotOnline {
             /*The robot is now online, we can begin sending commands*/
             if(!robotOnline) {
@@ -93,17 +92,17 @@ There are always those cases where you already developed an awesome game or app 
             }
             robotOnline = YES;
         }
-```
+
  - Overload the `appDidBecomeActive:(NSNotification*)notification` method and initialize the connection to Sphero
 
-```objective-c    
+    
         -(void)appDidBecomeActive:(NSNotification*)notification {
             /*When the application becomes active after entering the background we try to connect to the robot*/
             [self setupRobotConnection];
         }
-```
- - In the `viewDidLoad()` method you should register for application lifecycle notifications 
-```objective-c
+
+ - In the `OnLoad()` method you should register for application lifecycle notifications 
+
         - (void)viewDidLoad
         {
             [super viewDidLoad];
@@ -115,21 +114,21 @@ There are always those cases where you already developed an awesome game or app 
 
             robotOnline = NO;
         }
-```
+
 
  - Do not forget to Disconnect from the Robot when the app closes, otherwise next time you start a connection it will already be in use.
-```objective-c
+
         -(void)appWillResignActive:(NSNotification*)notification {
             /*When the application is entering the background we need to close the connection to the robot*/
             [[NSNotificationCenter defaultCenter] removeObserver:self name:RKDeviceConnectionOnlineNotification object:nil];
             [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:0.0];
             [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
         }
-```
+
  You are now ready to start controlling and receiving information from your Sphero, simply add the following to change the LED Color of Sphero to red:
-```objective-c
+
      [RKRGBLEDOutputCommand sendCommandWithRed:1.0 green:0.0 blue:0.0];
-```
+
 
 
 ## Using the Sphero iOS SDK
@@ -138,13 +137,13 @@ There are always those cases where you already developed an awesome game or app 
 If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
 
 **For example**, try changing the following command in `ViewController.m` from
-```objective-c
+
     [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green :0.0 blue :1.0];
-```
+
 to
-```objective-c
+
     [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green :1.0 blue :0.0];
-```
+
 Notice the change from green of 0.0 to a green of 1.0. Run it and you should have a Green Sphero!  
 
 ### Sending Roll Commands
@@ -164,7 +163,7 @@ For example, a heading of 90° at a speed of 0.5 will tell Sphero to turn clockw
 
 
 Now, it's time to modify the code. Let's send Sphero forward for 2 seconds. Next we will create 2 new methods, one to Move Sphero, and Delay. And another to Stop Sphero.
-```objective-c
+
 			- (void)stop {
 		    	[RKRollCommand sendStop];
 			}
@@ -173,13 +172,13 @@ Now, it's time to modify the code. Let's send Sphero forward for 2 seconds. Next
 				[RKRollCommand sendCommandWithHeading:0.0 velocity:0.5];			
 				[self performSelector:@selector(stop) withDelay:2.0];
 			}
-```
+
 
 Next add the following code in place of the RGB command that was sent before.
 
-```objective-c
+
 		    [self driveforward];
-```
+
 
 **Run the application on an iOS Device, if all went well Sphero should have moved forward just a little.**
 
