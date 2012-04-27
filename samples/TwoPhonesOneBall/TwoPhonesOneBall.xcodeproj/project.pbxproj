@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8125746114C89E380099AC9C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8125746014C89E380099AC9C /* CoreMotion.framework */; };
+		8177355C13FB163C006D560B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8177355B13FB163C006D560B /* GameKit.framework */; };
+		8177355E13FB1672006D560B /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8177355D13FB1672006D560B /* ExternalAccessory.framework */; };
+		81869EC813FF108D0008FA5A /* TPOB57.png in Resources */ = {isa = PBXBuildFile; fileRef = 81869EC513FF108D0008FA5A /* TPOB57.png */; };
+		81869EC913FF108D0008FA5A /* TPOB72.png in Resources */ = {isa = PBXBuildFile; fileRef = 81869EC613FF108D0008FA5A /* TPOB72.png */; };
+		81869ECA13FF108D0008FA5A /* TPOB114.png in Resources */ = {isa = PBXBuildFile; fileRef = 81869EC713FF108D0008FA5A /* TPOB114.png */; };
+		81903AD213FC58310012061C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81903AD113FC58310012061C /* README.txt */; };
+		819D446E13F5C3C30015BCD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819D446D13F5C3C30015BCD3 /* UIKit.framework */; };
+		819D447013F5C3C30015BCD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819D446F13F5C3C30015BCD3 /* Foundation.framework */; };
+		819D447213F5C3C30015BCD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819D447113F5C3C30015BCD3 /* CoreGraphics.framework */; };
+		819D447813F5C3C30015BCD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 819D447613F5C3C30015BCD3 /* InfoPlist.strings */; };
+		819D447A13F5C3C30015BCD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D447913F5C3C30015BCD3 /* main.m */; };
+		819D447E13F5C3C30015BCD3 /* TwoPhonesOneBallAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D447D13F5C3C30015BCD3 /* TwoPhonesOneBallAppDelegate.m */; };
+		819D448113F5C3C30015BCD3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D448013F5C3C30015BCD3 /* MainViewController.m */; };
+		819D448713F5C3C30015BCD3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819D448513F5C3C30015BCD3 /* MainViewController.xib */; };
+		D34518CA151B845000D4505A /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34518C8151B845000D4505A /* RobotKit.framework */; };
+		D34518CB151B845000D4505A /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34518C9151B845000D4505A /* RobotUIKit.framework */; };
+		D34518CD151B846F00D4505A /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D34518CC151B846F00D4505A /* RobotUIKit.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8125746014C89E380099AC9C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8177355B13FB163C006D560B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		8177355D13FB1672006D560B /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		81869EC513FF108D0008FA5A /* TPOB57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPOB57.png; sourceTree = "<group>"; };
+		81869EC613FF108D0008FA5A /* TPOB72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPOB72.png; sourceTree = "<group>"; };
+		81869EC713FF108D0008FA5A /* TPOB114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPOB114.png; sourceTree = "<group>"; };
+		81903AD113FC58310012061C /* README.txt */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = README.txt; sourceTree = "<group>"; };
+		819D446913F5C3C30015BCD3 /* TwoPhonesOneBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoPhonesOneBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		819D446D13F5C3C30015BCD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		819D446F13F5C3C30015BCD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		819D447113F5C3C30015BCD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		819D447513F5C3C30015BCD3 /* TwoPhonesOneBall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwoPhonesOneBall-Info.plist"; sourceTree = "<group>"; };
+		819D447713F5C3C30015BCD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		819D447913F5C3C30015BCD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		819D447B13F5C3C30015BCD3 /* TwoPhonesOneBall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwoPhonesOneBall-Prefix.pch"; sourceTree = "<group>"; };
+		819D447C13F5C3C30015BCD3 /* TwoPhonesOneBallAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoPhonesOneBallAppDelegate.h; sourceTree = "<group>"; };
+		819D447D13F5C3C30015BCD3 /* TwoPhonesOneBallAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoPhonesOneBallAppDelegate.m; sourceTree = "<group>"; };
+		819D447F13F5C3C30015BCD3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		819D448013F5C3C30015BCD3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		819D448613F5C3C30015BCD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
+		D34518C8151B845000D4505A /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = TwoPhonesOneBall/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		D34518C9151B845000D4505A /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = TwoPhonesOneBall/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
+		D34518CC151B846F00D4505A /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = Frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		819D446613F5C3C30015BCD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34518CA151B845000D4505A /* RobotKit.framework in Frameworks */,
+				D34518CB151B845000D4505A /* RobotUIKit.framework in Frameworks */,
+				8125746114C89E380099AC9C /* CoreMotion.framework in Frameworks */,
+				8177355E13FB1672006D560B /* ExternalAccessory.framework in Frameworks */,
+				8177355C13FB163C006D560B /* GameKit.framework in Frameworks */,
+				819D446E13F5C3C30015BCD3 /* UIKit.framework in Frameworks */,
+				819D447013F5C3C30015BCD3 /* Foundation.framework in Frameworks */,
+				819D447213F5C3C30015BCD3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		819D445E13F5C3C30015BCD3 = {
+			isa = PBXGroup;
+			children = (
+				819D447313F5C3C30015BCD3 /* TwoPhonesOneBall */,
+				819D446C13F5C3C30015BCD3 /* Frameworks */,
+				819D446A13F5C3C30015BCD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		819D446A13F5C3C30015BCD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				819D446913F5C3C30015BCD3 /* TwoPhonesOneBall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		819D446C13F5C3C30015BCD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D34518C8151B845000D4505A /* RobotKit.framework */,
+				D34518C9151B845000D4505A /* RobotUIKit.framework */,
+				8125746014C89E380099AC9C /* CoreMotion.framework */,
+				8177355B13FB163C006D560B /* GameKit.framework */,
+				8177355D13FB1672006D560B /* ExternalAccessory.framework */,
+				819D446D13F5C3C30015BCD3 /* UIKit.framework */,
+				819D446F13F5C3C30015BCD3 /* Foundation.framework */,
+				819D447113F5C3C30015BCD3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		819D447313F5C3C30015BCD3 /* TwoPhonesOneBall */ = {
+			isa = PBXGroup;
+			children = (
+				81903AD113FC58310012061C /* README.txt */,
+				819D447C13F5C3C30015BCD3 /* TwoPhonesOneBallAppDelegate.h */,
+				819D447D13F5C3C30015BCD3 /* TwoPhonesOneBallAppDelegate.m */,
+				819D447F13F5C3C30015BCD3 /* MainViewController.h */,
+				819D448013F5C3C30015BCD3 /* MainViewController.m */,
+				819D448513F5C3C30015BCD3 /* MainViewController.xib */,
+				819D447413F5C3C30015BCD3 /* Supporting Files */,
+			);
+			path = TwoPhonesOneBall;
+			sourceTree = "<group>";
+		};
+		819D447413F5C3C30015BCD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D34518CC151B846F00D4505A /* RobotUIKit.bundle */,
+				81869EC513FF108D0008FA5A /* TPOB57.png */,
+				81869EC613FF108D0008FA5A /* TPOB72.png */,
+				81869EC713FF108D0008FA5A /* TPOB114.png */,
+				819D447513F5C3C30015BCD3 /* TwoPhonesOneBall-Info.plist */,
+				819D447613F5C3C30015BCD3 /* InfoPlist.strings */,
+				819D447913F5C3C30015BCD3 /* main.m */,
+				819D447B13F5C3C30015BCD3 /* TwoPhonesOneBall-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		819D446813F5C3C30015BCD3 /* TwoPhonesOneBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 819D448D13F5C3C30015BCD3 /* Build configuration list for PBXNativeTarget "TwoPhonesOneBall" */;
+			buildPhases = (
+				819D446513F5C3C30015BCD3 /* Sources */,
+				819D446613F5C3C30015BCD3 /* Frameworks */,
+				819D446713F5C3C30015BCD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwoPhonesOneBall;
+			productName = TwoPhonesOneBall;
+			productReference = 819D446913F5C3C30015BCD3 /* TwoPhonesOneBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		819D446013F5C3C30015BCD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Orbotix, Inc.";
+			};
+			buildConfigurationList = 819D446313F5C3C30015BCD3 /* Build configuration list for PBXProject "TwoPhonesOneBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 819D445E13F5C3C30015BCD3;
+			productRefGroup = 819D446A13F5C3C30015BCD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				819D446813F5C3C30015BCD3 /* TwoPhonesOneBall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		819D446713F5C3C30015BCD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819D447813F5C3C30015BCD3 /* InfoPlist.strings in Resources */,
+				819D448713F5C3C30015BCD3 /* MainViewController.xib in Resources */,
+				81903AD213FC58310012061C /* README.txt in Resources */,
+				81869EC813FF108D0008FA5A /* TPOB57.png in Resources */,
+				81869EC913FF108D0008FA5A /* TPOB72.png in Resources */,
+				81869ECA13FF108D0008FA5A /* TPOB114.png in Resources */,
+				D34518CD151B846F00D4505A /* RobotUIKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		819D446513F5C3C30015BCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819D447A13F5C3C30015BCD3 /* main.m in Sources */,
+				819D447E13F5C3C30015BCD3 /* TwoPhonesOneBallAppDelegate.m in Sources */,
+				819D448113F5C3C30015BCD3 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		819D447613F5C3C30015BCD3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				819D447713F5C3C30015BCD3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		819D448513F5C3C30015BCD3 /* MainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				819D448613F5C3C30015BCD3 /* en */,
+			);
+			name = MainViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		819D448B13F5C3C30015BCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../MOBILE-IOS-ROBOTKIT/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lstdc++",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		819D448C13F5C3C30015BCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jonathan Carroll";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jonathan Carroll";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../MOBILE-IOS-ROBOTKIT/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lstdc++",
+				);
+				PROVISIONING_PROFILE = "B2E6C0D1-0CA3-4BC7-B6A4-F8099C1DA787";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B2E6C0D1-0CA3-4BC7-B6A4-F8099C1DA787";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		819D448E13F5C3C30015BCD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TwoPhonesOneBall/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwoPhonesOneBall/TwoPhonesOneBall-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "TwoPhonesOneBall/TwoPhonesOneBall-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lstdc++",
+					"-lsqlite3",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		819D448F13F5C3C30015BCD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TwoPhonesOneBall/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwoPhonesOneBall/TwoPhonesOneBall-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "TwoPhonesOneBall/TwoPhonesOneBall-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lstdc++",
+					"-lsqlite3",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		819D446313F5C3C30015BCD3 /* Build configuration list for PBXProject "TwoPhonesOneBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				819D448B13F5C3C30015BCD3 /* Debug */,
+				819D448C13F5C3C30015BCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		819D448D13F5C3C30015BCD3 /* Build configuration list for PBXNativeTarget "TwoPhonesOneBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				819D448E13F5C3C30015BCD3 /* Debug */,
+				819D448F13F5C3C30015BCD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 819D446013F5C3C30015BCD3 /* Project object */;
+}

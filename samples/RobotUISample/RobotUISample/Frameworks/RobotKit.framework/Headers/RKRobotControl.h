@@ -168,3 +168,7 @@
 - (void)jump;
 
 @end
+
+/*! Notification constant for when a boost has finished. */
+extern NSString * const RKRobotBoostDidFinishNotification;
+

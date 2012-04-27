@@ -57,13 +57,13 @@
  */
 - (void)setFlickEnabled:(BOOL)enabled;
 
-/*
+/*!
  * Used in subclasses to override common behaviors.  Be sure to call [super commonInit]
  * 
  */
 - (void)commonInit;
 
-/*
+/*!
  *  Used to get the gesture recognizer in case you need to require other recognizers to fail
  */
 -(RUIFlickGestureRecognizer*)getRecognizer;

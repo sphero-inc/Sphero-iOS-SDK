@@ -14,18 +14,18 @@ There is an achievement sample code project in the dev center that has an exampl
 Click on the “Dev” link in the top right corner of SpheroWorld after you are logged in to create a new application for your app.  The same application can be used for both Android and iOS applications.
 
 
-![image01.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/assets/image01.png)
+![image01.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/image01.png)
 
 ### Add achievements to your Sphero World application (Universal)
 
 Once your application has been created you can add achievements by clicking on the achievements tap when viewing the application details.  You can then click the “add achievement” button to add an achievement.
 
-![yadda.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/assets/image02.png)
+![yadda.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/yadda.png)
 
 After clicking **Add Achievement** you will see this screen:
 
 
-![newache.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/assets/image03.png)
+![newache.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/newache.png)
 
 
 
@@ -53,7 +53,7 @@ After clicking **Add Achievement** you will see this screen:
 The first step when integrating your iOS application with any part of Sphero World is to be sure you are setting your app id and app secret when your application first launches.  You can find these two pieces of information by viewing your application while logged into SpheroWorld.
 
 
-![catball.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/assets/image04.png) 
+![catball.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/catball.png) 
 
 In the *applicaiton:didFinishLaunchingWithOptions:* method inside of the application delegate of your iOS application you will need to set the application id and secret before using any Sphero World functionality.  It is easiest to ensure this happens by making it your first line of code.  **You will need to be sure to import RobotKit.h in your app delegate.**  See example below:
 
@@ -63,17 +63,18 @@ In the *applicaiton:didFinishLaunchingWithOptions:* method inside of the applica
         //These values will be specific for your application
         [RKSpheroWorldAuth setAppID:@"sphe31bfdd87d4ef0877f9757772258f50ed" secret:@"sAPzGibRzGq25krvGzbi"];
 
+
 ### Allowing app users to login to SpheroWorld
 
 You will need to provide a way for users to login to Sphero World within your applicaiton’s UI in order for them to track achievements.  The user should only need to login once to authorize your application, a view controller is provided to make this easy.  After the first time this view is displayed it will show the list of your game’s achievements along with the users progress.
 
-	    -(IBAction)spheroWorldPressed:(id)sender {
-		    //Display the SpheroWorld authorization view, it will display the user's achievements if already logged in
-		    RKSpheroWorldAuth *spheroWorld = [[RKSpheroWorldAuth alloc] init];
-		    spheroWorld.delegate = self;
-		    [self presentModalViewController:spheroWorld animated:YES];
-		    [spheroWorld release];
-	    }
+    -(IBAction)spheroWorldPressed:(id)sender {
+	    //Display the SpheroWorld authorization view, it will display the user's achievements if already logged in
+	    RKSpheroWorldAuth *spheroWorld = [[RKSpheroWorldAuth alloc] init];
+	    spheroWorld.delegate = self;
+	    [self presentModalViewController:spheroWorld animated:YES];
+	    [spheroWorld release];
+    }
 
 There isn’t a delegate protocol yet, just be sure the delegate is the view controller that presents it and it will dismiss itself when the user is done.
 
@@ -107,7 +108,9 @@ If everything was setup correctly up to this point you should be able to start s
 ### Notifying the user of earned achievements
 
 You can register to receive an NSNotification whenever a user has earned an achievement as shown below.
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(spheroWorldAchievementEarned:) name:RKAchievementEarnedNotification object:nil];
+
 When the notification fires you can extract the RKAchievement object the user earned from the user info dictionary.  You can use the information in the RKAchievement object to display a notification to the user.  An example is shown below.
 
     -(void)spheroWorldAchievementEarned:(NSNotification*)notification {
@@ -128,13 +131,14 @@ When the notification fires you can extract the RKAchievement object the user ea
 	    [controller release];
 	    //This will automatically animate itself off screen after 5 second and release any resources.
     }
+
 ## Integrating SpheroWorld into your Application (Android)
 
 ### Connect your application to SpheroWorld
 
 The first step to integrate your application with SpheroWorld is to pass in your applicaion id and secret string (*obtained from SpheroWorld as shown below*) when your main activity starts before you make any calls to RobotLibrary. 
 
-![catball.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/assets/image04.png) 
+![catball.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/samples/AchievementSample/catball.png) 
 
  An example of setting up the Achievement Manager is shown below.
 

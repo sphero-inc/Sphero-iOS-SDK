@@ -20,7 +20,10 @@
  * @sa RKDeviceMessage
  */
 @interface RKDeviceCommand : RKDeviceMessage {
+    NSTimeInterval transmitTimeStamp;
 }
+
+@property (nonatomic, readonly) NSTimeInterval transmitTimeStamp;
 
 /*!
  * Convenience method that will send a simple command without parameter using the RKDeviceMessenger

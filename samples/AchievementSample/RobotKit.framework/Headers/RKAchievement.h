@@ -77,6 +77,11 @@
  */
 +(void)recordEvent:(NSString*)name withCount:(int)count;
 
+/*!
+ *  Returns an array of RKAchievement objects showing current user progress
+ */
++(NSArray*)getAchievements;
+
 @end
 
 //Achievement related notification constants

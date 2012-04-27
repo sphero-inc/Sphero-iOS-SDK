@@ -75,10 +75,13 @@ static NSString *RUIColorPickerViewControllerRGBPickerDisplayedNotification = @"
 @property (nonatomic, retain) IBOutlet UILabel*                greenLabel;
 /*! A label showing the blue value of the current color in the RGB color space. */
 @property (nonatomic, retain) IBOutlet UILabel*                blueLabel;
-
+/*! Background image for where the RGB values are displayed. */
 @property (nonatomic, retain) IBOutlet UIImageView *colorIndicatorBG, *rgbBG;
+/*! A label with the title for the view. */
 @property (nonatomic, retain) IBOutlet UILabel *colorPickerLabel;
+/*! A button that is on the top right to return to dismiss the dialog to main view. */
 @property (nonatomic, retain) IBOutlet UIButton *rollButton;
+/*! A button for going back in the view navigation. */
 @property (nonatomic, retain) IBOutlet UIButton *backButton;
 
 /*! A delegate that optionally receives notification whenever the user changes the color
@@ -126,7 +129,7 @@ static NSString *RUIColorPickerViewControllerRGBPickerDisplayedNotification = @"
  * This action is used to show or hide the roll button and the label below.
  * By default the roll button is shown and must be hidden if desired
  *
- * @param Set whether or not the roll button should be shown
+ * @param show Set whether or not the roll button should be shown
  */
 -(void)showRollButton:(BOOL)show;
 

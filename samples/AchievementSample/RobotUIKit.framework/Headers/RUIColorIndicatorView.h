@@ -33,6 +33,7 @@
 /*! Get the blue component of the displayed color, between 0.0 and 1.0 */
 @property (nonatomic, readonly) CGFloat blue;
 
+/*! Initializes objects to default values. */
 -(void) initDefaults;
 
 /*!

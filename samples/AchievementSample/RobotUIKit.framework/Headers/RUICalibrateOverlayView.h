@@ -27,8 +27,8 @@
 
 /*!
  * Use this initializer to have the rings animate in properly
- * @param the rect of the screen this will be displayed as an overlay on
- * @return the instace of this class
+ * @param frame The rect of the screen this will be displayed as an overlay on
+ * @return The instace of this class
  */
 -(id)initWithFrame:(CGRect)frame;
 

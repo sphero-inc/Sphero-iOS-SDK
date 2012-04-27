@@ -14,5 +14,9 @@ enum {
     RKAsyncPacketSensorDataStreaming        = 0x03,
     RKAsyncPacketConfigBlockContents        = 0x04,
     RKAsyncPacketPreSleepWarning            = 0x05,
-    RKAsyncPacketMacroEmitMarker            = 0x06
+    RKAsyncPacketMacroEmitMarker            = 0x06,
+    RKAsyncPacketCollisionDetected          = 0x07,
+    RKAsyncPacketOrbBasicPrint              = 0x08,
+    RKAsyncPacketOrbBasicErrorASCII         = 0x09,
+    RKAsyncPacketOrbBasicErrorBinary        = 0x0A
 };

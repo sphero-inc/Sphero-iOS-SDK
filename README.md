@@ -1,4 +1,4 @@
-![iosdeveloperheader.jpg](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image00.jpg)
+![iosdeveloperheader.jpg](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/iosdeveloperheader.jpg)
 
 # iOS Developer Quick Start Guide
 
@@ -29,7 +29,7 @@ There are two ways to integrate the Sphero SDK into your project. You can start 
  - Download the latest version of our [Xcode 4 Template Installer](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/frameworks/SpheroXcode4Template.pkg)
      * *You can always keep up to date by watching our [GitHub Repository](https://github.com/orbotix/Sphero-iOS-SDK)*
 
-![installspheroxcode4templateforios.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image01.png)
+![installspheroxcode4templateforios.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/installspheroxcode4templateforios.png)
 
 This Xcode 4 Template Installer is designed to move the Sphero iOS SDK into the correct directory and integrate a default Sphero Application into the New Project menu in Xcode. It is important to note that this Installer only works with Xcode 4 and above. If you are the type that neglects the importance of upgrading your development environment, (guilty!) then you will have to manually add the Sphero iOS RobotKit and RobotUIKit into your Xcode project.
 
@@ -39,7 +39,7 @@ This Xcode 4 Template Installer is designed to move the Sphero iOS SDK into the 
 
  - Start a New Sphero Application.
 
-![newspheroapplicationinxcode.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image02.png)
+![newspheroapplicationinxcode.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/newspheroapplicationinxcode.png)
 
 Name your project and decide where you would like to store the project. There should now be a project with RobotKit and RobotUIKit already linked up and ready to use. To test everything out, we want to build the default Application. It is important to note here that the Sphero iOS SDK will not work on the iOS Simulator because it uses the External Accessories Framework, therefore it must be Run on an actual iOS Device. There are ways to simulate the Bluetooth of an iOS device on Mac OSX but that topic is beyond the scope of this document.
 
@@ -59,7 +59,7 @@ There are always those cases where you already developed an awesome game or app 
 
  - Simply Drag `RobotKit.framework`, `RobotUIKit.framework` and `RobotUIKit.Bundle` into your project's framework folder.
 
-![sendingIn.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image03.png)
+![sendingIn.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/sendingIn.png)
 
  The HelloSphero example has all the necessary code needed to create and maintain a connection to Sphero, and can be used as a guide in best practices.  In general you will need to:
 

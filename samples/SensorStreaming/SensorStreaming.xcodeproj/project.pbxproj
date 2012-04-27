@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81EE34421491452A00132035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34411491452A00132035 /* UIKit.framework */; };
+		81EE34441491452A00132035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34431491452A00132035 /* Foundation.framework */; };
+		81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34451491452A00132035 /* CoreGraphics.framework */; };
+		81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34471491452A00132035 /* CoreMotion.framework */; };
+		81EE344A1491452A00132035 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34491491452A00132035 /* GameKit.framework */; };
+		81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE344B1491452A00132035 /* ExternalAccessory.framework */; };
+		81EE34521491452A00132035 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34501491452A00132035 /* InfoPlist.strings */; };
+		81EE34541491452A00132035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34531491452A00132035 /* main.m */; };
+		81EE34581491452A00132035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34571491452A00132035 /* AppDelegate.m */; };
+		81EE345C1491452B00132035 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE345B1491452B00132035 /* RobotKit.framework */; };
+		81EE34631491452B00132035 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34621491452B00132035 /* ViewController.m */; };
+		81EE34661491452B00132035 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34641491452B00132035 /* ViewController_iPhone.xib */; };
+		81EE34691491452B00132035 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34671491452B00132035 /* ViewController_iPad.xib */; };
+		81EE34701491458B00132035 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81EE346F1491458B00132035 /* README.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81EE343D1491452A00132035 /* SensorStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81EE34411491452A00132035 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		81EE34431491452A00132035 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		81EE34451491452A00132035 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		81EE34471491452A00132035 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		81EE34491491452A00132035 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		81EE344B1491452A00132035 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		81EE344F1491452A00132035 /* SensorStreaming-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SensorStreaming-Info.plist"; sourceTree = "<group>"; };
+		81EE34511491452A00132035 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81EE34531491452A00132035 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81EE34551491452A00132035 /* SensorStreaming-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SensorStreaming-Prefix.pch"; sourceTree = "<group>"; };
+		81EE34561491452A00132035 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		81EE34571491452A00132035 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		81EE345B1491452B00132035 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = SensorStreaming/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		81EE34611491452B00132035 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		81EE34621491452B00132035 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		81EE34651491452B00132035 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		81EE34681491452B00132035 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		81EE346F1491458B00132035 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81EE343A1491452A00132035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81EE34421491452A00132035 /* UIKit.framework in Frameworks */,
+				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
+				81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */,
+				81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */,
+				81EE344A1491452A00132035 /* GameKit.framework in Frameworks */,
+				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
+				81EE345C1491452B00132035 /* RobotKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81EE34321491452A00132035 = {
+			isa = PBXGroup;
+			children = (
+				81EE344D1491452A00132035 /* SensorStreaming */,
+				81EE34401491452A00132035 /* Frameworks */,
+				81EE343E1491452A00132035 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81EE343E1491452A00132035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81EE343D1491452A00132035 /* SensorStreaming.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81EE34401491452A00132035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81EE345B1491452B00132035 /* RobotKit.framework */,
+				81EE34411491452A00132035 /* UIKit.framework */,
+				81EE34431491452A00132035 /* Foundation.framework */,
+				81EE34451491452A00132035 /* CoreGraphics.framework */,
+				81EE34471491452A00132035 /* CoreMotion.framework */,
+				81EE34491491452A00132035 /* GameKit.framework */,
+				81EE344B1491452A00132035 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81EE344D1491452A00132035 /* SensorStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				81EE346F1491458B00132035 /* README.txt */,
+				81EE34561491452A00132035 /* AppDelegate.h */,
+				81EE34571491452A00132035 /* AppDelegate.m */,
+				81EE34611491452B00132035 /* ViewController.h */,
+				81EE34621491452B00132035 /* ViewController.m */,
+				81EE34641491452B00132035 /* ViewController_iPhone.xib */,
+				81EE34671491452B00132035 /* ViewController_iPad.xib */,
+				81EE344E1491452A00132035 /* Supporting Files */,
+			);
+			path = SensorStreaming;
+			sourceTree = "<group>";
+		};
+		81EE344E1491452A00132035 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81EE344F1491452A00132035 /* SensorStreaming-Info.plist */,
+				81EE34501491452A00132035 /* InfoPlist.strings */,
+				81EE34531491452A00132035 /* main.m */,
+				81EE34551491452A00132035 /* SensorStreaming-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81EE343C1491452A00132035 /* SensorStreaming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81EE346C1491452B00132035 /* Build configuration list for PBXNativeTarget "SensorStreaming" */;
+			buildPhases = (
+				81EE34391491452A00132035 /* Sources */,
+				81EE343A1491452A00132035 /* Frameworks */,
+				81EE343B1491452A00132035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SensorStreaming;
+			productName = HelloWorld;
+			productReference = 81EE343D1491452A00132035 /* SensorStreaming.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81EE34341491452A00132035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Orbotix, Inc.";
+			};
+			buildConfigurationList = 81EE34371491452A00132035 /* Build configuration list for PBXProject "SensorStreaming" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81EE34321491452A00132035;
+			productRefGroup = 81EE343E1491452A00132035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81EE343C1491452A00132035 /* SensorStreaming */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81EE343B1491452A00132035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81EE34521491452A00132035 /* InfoPlist.strings in Resources */,
+				81EE34661491452B00132035 /* ViewController_iPhone.xib in Resources */,
+				81EE34691491452B00132035 /* ViewController_iPad.xib in Resources */,
+				81EE34701491458B00132035 /* README.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81EE34391491452A00132035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81EE34541491452A00132035 /* main.m in Sources */,
+				81EE34581491452A00132035 /* AppDelegate.m in Sources */,
+				81EE34631491452B00132035 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81EE34501491452A00132035 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81EE34511491452A00132035 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		81EE34641491452B00132035 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81EE34651491452B00132035 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		81EE34671491452B00132035 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81EE34681491452B00132035 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81EE346A1491452B00132035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81EE346B1491452B00132035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81EE346D1491452B00132035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SensorStreaming/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreaming/SensorStreaming-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+					"-lsqlite3",
+				);
+				PRODUCT_NAME = SensorStreaming;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		81EE346E1491452B00132035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SensorStreaming/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
+				INFOPLIST_FILE = "SensorStreaming/SensorStreaming-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+					"-lsqlite3",
+				);
+				PRODUCT_NAME = SensorStreaming;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81EE34371491452A00132035 /* Build configuration list for PBXProject "SensorStreaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81EE346A1491452B00132035 /* Debug */,
+				81EE346B1491452B00132035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81EE346C1491452B00132035 /* Build configuration list for PBXNativeTarget "SensorStreaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81EE346D1491452B00132035 /* Debug */,
+				81EE346E1491452B00132035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81EE34341491452A00132035 /* Project object */;
+}

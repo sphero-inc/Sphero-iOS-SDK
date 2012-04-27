@@ -16,7 +16,6 @@
 		8134AEB71492966B005F5FB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8134AEB51492966B005F5FB4 /* InfoPlist.strings */; };
 		8134AEB91492966B005F5FB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134AEB81492966B005F5FB4 /* main.m */; };
 		8134AEBD1492966B005F5FB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134AEBC1492966B005F5FB4 /* AppDelegate.m */; };
-		8134AEBF1492966B005F5FB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134AEBE1492966B005F5FB4 /* libsqlite3.dylib */; };
 		8134AEC11492966C005F5FB4 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134AEC01492966C005F5FB4 /* RobotKit.framework */; };
 		8134AEC31492966C005F5FB4 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134AEC21492966C005F5FB4 /* RobotUIKit.framework */; };
 		8134AEC51492966C005F5FB4 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8134AEC41492966C005F5FB4 /* RobotUIKit.bundle */; };
@@ -40,7 +39,6 @@
 		8134AEBA1492966B005F5FB4 /* ButtonDrive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ButtonDrive-Prefix.pch"; sourceTree = "<group>"; };
 		8134AEBB1492966B005F5FB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8134AEBC1492966B005F5FB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8134AEBE1492966B005F5FB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ButtonDrive/Frameworks/libsqlite3.dylib; sourceTree = "<group>"; };
 		8134AEC01492966C005F5FB4 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ButtonDrive/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		8134AEC21492966C005F5FB4 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ButtonDrive/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
 		8134AEC41492966C005F5FB4 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ButtonDrive/RobotUIKit.bundle; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				8134AEAD1492966B005F5FB4 /* CoreMotion.framework in Frameworks */,
 				8134AEAF1492966B005F5FB4 /* GameKit.framework in Frameworks */,
 				8134AEB11492966B005F5FB4 /* ExternalAccessory.framework in Frameworks */,
-				8134AEBF1492966B005F5FB4 /* libsqlite3.dylib in Frameworks */,
 				8134AEC11492966C005F5FB4 /* RobotKit.framework in Frameworks */,
 				8134AEC31492966C005F5FB4 /* RobotUIKit.framework in Frameworks */,
 			);
@@ -91,7 +88,6 @@
 		8134AEA51492966B005F5FB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8134AEBE1492966B005F5FB4 /* libsqlite3.dylib */,
 				8134AEC01492966C005F5FB4 /* RobotKit.framework */,
 				8134AEC21492966C005F5FB4 /* RobotUIKit.framework */,
 				8134AEC41492966C005F5FB4 /* RobotUIKit.bundle */,
@@ -296,6 +292,7 @@
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
+					"-lsqlite3",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -320,6 +317,7 @@
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
+					"-lsqlite3",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -345,6 +343,7 @@
 				8134AED31492966C005F5FB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

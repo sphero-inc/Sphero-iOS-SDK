@@ -16,12 +16,11 @@
 		81EE34521491452A00132035 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34501491452A00132035 /* InfoPlist.strings */; };
 		81EE34541491452A00132035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34531491452A00132035 /* main.m */; };
 		81EE34581491452A00132035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34571491452A00132035 /* AppDelegate.m */; };
-		81EE345A1491452A00132035 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34591491452A00132035 /* libsqlite3.dylib */; };
-		81EE345C1491452B00132035 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE345B1491452B00132035 /* RobotKit.framework */; };
 		81EE34631491452B00132035 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34621491452B00132035 /* ViewController.m */; };
 		81EE34661491452B00132035 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34641491452B00132035 /* ViewController_iPhone.xib */; };
 		81EE34691491452B00132035 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34671491452B00132035 /* ViewController_iPad.xib */; };
 		81EE34701491458B00132035 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81EE346F1491458B00132035 /* README.txt */; };
+		D308D6C3154AF42E00A64625 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE345B1491452B00132035 /* RobotKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +37,6 @@
 		81EE34551491452A00132035 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		81EE34561491452A00132035 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81EE34571491452A00132035 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		81EE34591491452A00132035 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = HelloWorld/Frameworks/libsqlite3.dylib; sourceTree = "<group>"; };
 		81EE345B1491452B00132035 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = HelloWorld/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		81EE34611491452B00132035 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		81EE34621491452B00132035 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -52,14 +50,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D308D6C3154AF42E00A64625 /* RobotKit.framework in Frameworks */,
 				81EE34421491452A00132035 /* UIKit.framework in Frameworks */,
 				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
 				81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */,
 				81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */,
 				81EE344A1491452A00132035 /* GameKit.framework in Frameworks */,
 				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
-				81EE345A1491452A00132035 /* libsqlite3.dylib in Frameworks */,
-				81EE345C1491452B00132035 /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +83,6 @@
 		81EE34401491452A00132035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81EE34591491452A00132035 /* libsqlite3.dylib */,
 				81EE345B1491452B00132035 /* RobotKit.framework */,
 				81EE34411491452A00132035 /* UIKit.framework */,
 				81EE34431491452A00132035 /* Foundation.framework */,
@@ -280,14 +276,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/HelloWorld/Frameworks\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
+					"-lsqlite3",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -304,14 +297,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/HelloWorld/Frameworks\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
+					"-lsqlite3",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

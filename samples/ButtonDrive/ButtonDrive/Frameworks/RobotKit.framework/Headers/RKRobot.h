@@ -18,9 +18,10 @@
  */
 @interface RKRobot : NSObject {
     @private
-    EAAccessory *accessory;
-    NSString *name;
-    NSString *bluetoothAddress;
+    EAAccessory     *accessory;
+    NSString        *name;
+    NSString        *bluetoothAddress;
+    NSTimeInterval  timeOffset;
 }
 
 /*! The EAAccessory object that is associated with the robot */
@@ -32,6 +33,9 @@
 
 /*! Robot has firmware support for vector command. The default value is NO. */
 @property (nonatomic, readonly) BOOL supportsVectorCommand;
+
+/*! The time offset needed to convert the robot's time reference into the iOS device's time reference. */
+@property (nonatomic, readonly) NSTimeInterval timeOffset;
 
 /*! 
  *  Initializes with a EAAccesory object for the robot.

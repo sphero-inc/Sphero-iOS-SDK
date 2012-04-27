@@ -28,6 +28,7 @@ enum RKConnectionState {
     RKConnectionStatePing1, /*! A ping was issued to test communications. */
     RKConnectionStatePing2, /*! A second ping issued to test communications before giving up. */
     RKConnectionStateGetBluetoothInfo, /*! A get bluetooth info was sent to the robot. */
+    RKConnectionStatePollPacketTimes, /*! Get the packet transmit and receive times for synchronizing clocks. */
     RKConnectionStateOnline /*! The robot is responding to communications and ready for commands to be sent. */
 };
 

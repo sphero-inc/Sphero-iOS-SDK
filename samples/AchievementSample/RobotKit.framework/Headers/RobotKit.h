@@ -33,6 +33,9 @@
 #import <RobotKit/RKStabilizationCommand.h>
 #import <RobotKit/RKRawMotorValuesCommand.h>
 #import <RobotKit/RKGoToSleepCommand.h>
+#import <RobotKit/RKConfigureCollisionDetectionCommand.h>
+#import <RobotKit/RKInitMacroExecutiveCommand.h>
+#import <RobotKit/RKSaveTemporaryMacroChunkCommand.h>
 
 // Responses
 #import <RobotKit/RKPingResponse.h>
@@ -48,6 +51,9 @@
 #import <RobotKit/RKStabilizationResponse.h>
 #import <RobotKit/RKRawMotorValuesResponse.h>
 #import <RobotKit/RKGoToSleepResponse.h>
+#import <RobotKit/RKConfigureCollisionDetectionResponse.h>
+#import <RobotKit/RKInitMacroExecutiveResponse.h>
+#import <RobotKit/RKSaveTemporaryMacroChunkResponse.h>
 
 #import <RobotKit/RKDeviceAsyncData.h>
 #import <RobotKit/RKDeviceSensorsAsyncData.h>
@@ -57,12 +63,26 @@
 #import <RobotKit/RKAttitudeData.h>
 #import <RobotKit/RKGyroData.h>
 #import <RobotKit/RKBackEMFData.h>
+#import <RobotKit/RKCollisionDetectedAsyncData.h>
 
 #import <RobotKit/RKAchievement.h>
 #import <RobotKit/RKSpheroWorldAuth.h>
 
 
-
+// Multiplayer
+#if defined (SRCLIBRARY)
+#import <RobotKit/Multiplayer/RKMultiplayer.h>
+#import <RobotKit/Multiplayer/RKRemotePlayer.h>
+#import <RobotKit/Multiplayer/RKRemoteRobot.h>
+#import <RobotKit/Multiplayer/RKRemoteSphero.h>
+#import <RobotKit/Multiplayer/RKMultiplayerGame.h>
+#else
+#import <RobotKit/RKMultiplayer.h>
+#import <RobotKit/RKRemotePlayer.h>
+#import <RobotKit/RKRemoteRobot.h>
+#import <RobotKit/RKRemoteSphero.h>
+#import <RobotKit/RKMultiplayerGame.h>
+#endif
 
 
 
