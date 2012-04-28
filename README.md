@@ -1,4 +1,4 @@
-![iosdeveloperheader.jpg](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/iosdeveloperheader.jpg)
+![iosdeveloperheader.jpg](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image00.jpg)
 
 # iOS Developer Quick Start Guide
 
