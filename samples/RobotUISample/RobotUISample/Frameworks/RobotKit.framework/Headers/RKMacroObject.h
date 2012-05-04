@@ -7,37 +7,72 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RKSaveMacroCommand.h"
-#import "RKMacroCommand.h"
-#import "RKMCRoll.h"
-#import "RKMCRGB.h"
-#import "RKMCCalibrate.h"
-#import "RKMCDelay.h"
-#import "RKMCSlew.h"
-#import "RKMCFrontLED.h"
-#import "RKMCRotationRate.h"
-#import "RKMCRotateOverTime.h"
-#import "RKMCRawMotor.h"
-#import "RKMCStabilization.h"
-#import "RKMCSD1.h"
-#import "RKMCSD2.h"
-#import "RKMCSPD1.h"
-#import "RKMCSPD2.h"
-#import "RKMCRollSD1.h"
-#import "RKMCRollSD1SPD1.h"
-#import "RKMCRollSD1SPD2.h"
-#import "RKMCRGBSD2.h"
-#import "RKMCEmit.h"
-#import "RKMCStreamEnd.h"
-#import "RKMCWaitUntilStop.h"
-#import "RKMCGoTo.h"
-#import "RKMCSleep.h"
-#import "RKMCLoopEnd.h"
-#import "RKMCLoopFor.h"
-#import "RKMCComment.h"
-#import "RKMCGoSub.h"
-#import "RKMCRotateOverTimeSD1.h"
-#import "RKMCRotateOverTimeSD2.h"
+
+#if defined (SRCLIBRARY)
+#import <RobotKit/Macro/RKSaveMacroCommand.h>
+#import <RobotKit/Macro/RKMacroCommand.h>
+#import <RobotKit/Macro/RKMCRoll.h>
+#import <RobotKit/Macro/RKMCRGB.h>
+#import <RobotKit/Macro/RKMCCalibrate.h>
+#import <RobotKit/Macro/RKMCDelay.h>
+#import <RobotKit/Macro/RKMCSlew.h>
+#import <RobotKit/Macro/RKMCFrontLED.h>
+#import <RobotKit/Macro/RKMCRotationRate.h>
+#import <RobotKit/Macro/RKMCRotateOverTime.h>
+#import <RobotKit/Macro/RKMCRawMotor.h>
+#import <RobotKit/Macro/RKMCStabilization.h>
+#import <RobotKit/Macro/RKMCSD1.h>
+#import <RobotKit/Macro/RKMCSD2.h>
+#import <RobotKit/Macro/RKMCSPD1.h>
+#import <RobotKit/Macro/RKMCSPD2.h>
+#import <RobotKit/Macro/RKMCRollSD1.h>
+#import <RobotKit/Macro/RKMCRollSD1SPD1.h>
+#import <RobotKit/Macro/RKMCRollSD1SPD2.h>
+#import <RobotKit/Macro/RKMCRGBSD2.h>
+#import <RobotKit/Macro/RKMCEmit.h>
+#import <RobotKit/Macro/RKMCStreamEnd.h>
+#import <RobotKit/Macro/RKMCWaitUntilStop.h>
+#import <RobotKit/Macro/RKMCGoTo.h>
+#import <RobotKit/Macro/RKMCSleep.h>
+#import <RobotKit/Macro/RKMCLoopEnd.h>
+#import <RobotKit/Macro/RKMCLoopFor.h>
+#import <RobotKit/Macro/RKMCComment.h>
+#import <RobotKit/Macro/RKMCGoSub.h>
+#import <RobotKit/Macro/RKMCRotateOverTimeSD1.h>
+#import <RobotKit/Macro/RKMCRotateOverTimeSD2.h>
+#else
+#import <RobotKit/RKSaveMacroCommand.h>
+#import <RobotKit/RKMacroCommand.h>
+#import <RobotKit/RKMCRoll.h>
+#import <RobotKit/RKMCRGB.h>
+#import <RobotKit/RKMCCalibrate.h>
+#import <RobotKit/RKMCDelay.h>
+#import <RobotKit/RKMCSlew.h>
+#import <RobotKit/RKMCFrontLED.h>
+#import <RobotKit/RKMCRotationRate.h>
+#import <RobotKit/RKMCRotateOverTime.h>
+#import <RobotKit/RKMCRawMotor.h>
+#import <RobotKit/RKMCStabilization.h>
+#import <RobotKit/RKMCSD1.h>
+#import <RobotKit/RKMCSD2.h>
+#import <RobotKit/RKMCSPD1.h>
+#import <RobotKit/RKMCSPD2.h>
+#import <RobotKit/RKMCRollSD1.h>
+#import <RobotKit/RKMCRollSD1SPD1.h>
+#import <RobotKit/RKMCRollSD1SPD2.h>
+#import <RobotKit/RKMCRGBSD2.h>
+#import <RobotKit/RKMCEmit.h>
+#import <RobotKit/RKMCStreamEnd.h>
+#import <RobotKit/RKMCWaitUntilStop.h>
+#import <RobotKit/RKMCGoTo.h>
+#import <RobotKit/RKMCSleep.h>
+#import <RobotKit/RKMCLoopEnd.h>
+#import <RobotKit/RKMCLoopFor.h>
+#import <RobotKit/RKMCComment.h>
+#import <RobotKit/RKMCGoSub.h>
+#import <RobotKit/RKMCRotateOverTimeSD1.h>
+#import <RobotKit/RKMCRotateOverTimeSD2.h>
+#endif
 
 /*! @file */
 

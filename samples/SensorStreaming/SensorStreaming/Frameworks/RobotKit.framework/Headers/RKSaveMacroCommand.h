@@ -21,8 +21,12 @@
  * is used to stream macro which allows client code to send multiple blocks which get appended
  * on the device. Use the abort command or a special END code end the streaming.
  * 
+ * NOTE: THE FIRMWARE AS OF 1.13 ONLY SUPPORTS MACRO STREAMING AND IT WILL NOT SAVE A MACRO 
+ * WITH AN IDENTIFIER LESS THAN 254. USE RKSaveTemporaryMacroCommand TO SAVE A MACRO TO IDENTIFIER 
+ * 255 AND USE THIS CLASS TO STREAM.
  *
- * @sa RKSaveMacroCommand
+ * @sa RKSaveTemporaryMacroCommand
+ *
  */
 @interface RKSaveMacroCommand : RKDeviceCommand {
     @private

@@ -8,7 +8,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import "RKMC_PrivateIdentifiers.h"
 
 /*! @file */
 

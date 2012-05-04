@@ -34,8 +34,6 @@
 #import <RobotKit/RKRawMotorValuesCommand.h>
 #import <RobotKit/RKGoToSleepCommand.h>
 #import <RobotKit/RKConfigureCollisionDetectionCommand.h>
-#import <RobotKit/RKInitMacroExecutiveCommand.h>
-#import <RobotKit/RKSaveTemporaryMacroChunkCommand.h>
 
 // Responses
 #import <RobotKit/RKPingResponse.h>
@@ -52,8 +50,6 @@
 #import <RobotKit/RKRawMotorValuesResponse.h>
 #import <RobotKit/RKGoToSleepResponse.h>
 #import <RobotKit/RKConfigureCollisionDetectionResponse.h>
-#import <RobotKit/RKInitMacroExecutiveResponse.h>
-#import <RobotKit/RKSaveTemporaryMacroChunkResponse.h>
 
 #import <RobotKit/RKDeviceAsyncData.h>
 #import <RobotKit/RKDeviceSensorsAsyncData.h>
@@ -82,6 +78,31 @@
 #import <RobotKit/RKRemoteRobot.h>
 #import <RobotKit/RKRemoteSphero.h>
 #import <RobotKit/RKMultiplayerGame.h>
+#endif
+
+// Macros
+#if defined (SRCLIBRARY)
+#import <RobotKit/Macro/RKMacroObject.h>
+#import <RobotKit/Macro/RKInitMacroExecutiveCommand.h>
+#import <RobotKit/Macro/RKSaveTemporaryMacroChunkCommand.h>
+#import <RobotKit/Macro/RKInitMacroExecutiveResponse.h>
+#import <RobotKit/Macro/RKSaveTemporaryMacroChunkResponse.h>
+#import <RobotKit/Macro/RKSaveMacroCommand.h>
+#import <Robotkit/Macro/RKRunMacroCommand.h>
+#import <RobotKit/Macro/RKRunMacroResponse.h>
+#import <RobotKit/Macro/RKAbortMacroCommand.h>
+#import <RobotKit/Macro/RKAbortMacroResponse.h>
+#else
+#import <RobotKit/RKMacroObject.h>
+#import <RobotKit/RKInitMacroExecutiveCommand.h>
+#import <RobotKit/RKSaveTemporaryMacroChunkCommand.h>
+#import <RobotKit/RKInitMacroExecutiveResponse.h>
+#import <RobotKit/RKSaveTemporaryMacroChunkResponse.h>
+#import <RobotKit/RKSaveMacroCommand.h>
+#import <Robotkit/RKRunMacroCommand.h>
+#import <RobotKit/RKRunMacroResponse.h>
+#import <RobotKit/RKAbortMacroCommand.h>
+#import <RobotKit/RKAbortMacroResponse.h>
 #endif
 
 
