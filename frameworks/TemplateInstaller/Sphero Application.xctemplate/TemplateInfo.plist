@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.storyboardApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application to control Sphero that uses a single view and handles connecting to Sphero. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
+	<key>Identifier</key>
+	<string>com.orbotix.sphero.singleViewTemplate</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Info.plist:UISupportedExternalAccessoryProtocols</string>
+		<string>Frameworks/RobotKit.framework</string>
+		<string>Frameworks/RobotUIKit.framework</string>
+		<string>RobotUIKit.bundle</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.h:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.h:implementation</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:import:___VARIABLE_classPrefix:identifier___ViewController.h</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:viewControllerImplementation</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:viewControllerImplementation:viewDidLoad</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:shouldAutorotateToInterfaceOrientation:return</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:appWillResignActive</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:appDidBecomeActive</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:handleRobotOnline</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:toggleLED</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:setupRobotConnection</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:import:RobotKit/RobotKit.h</string>
+		<string>___VARIABLE_classPrefix:identifier___ViewController.m:import:RobotUIKit/RobotUIKit.h</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>useStoryboard</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:viewController</key>
+							<string>@property (strong, nonatomic) ___VARIABLE_classPrefix:identifier___ViewController *viewController;
+</string>
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<string>self.viewController = ___RP___[[___VARIABLE_classPrefix:identifier___ViewController alloc] initWithNibName:@&quot;___VARIABLE_classPrefix:identifier___ViewController&quot; bundle:nil]___AR___;
+self.window.rootViewController = self.viewController;</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:class:___VARIABLE_classPrefix:identifier___ViewController</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:viewController</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___ViewController.h</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:synthesize:viewController = _viewController</string>
+							<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_viewController</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>en.lproj/MainStoryboard_iPad.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>MainStoryboard_iPad.storyboard</string>
+							</dict>
+							<key>en.lproj/MainStoryboard_iPhone.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>MainStoryboard_iPhone.storyboard</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+							<string>if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+    self.viewController = ___RP___[[___VARIABLE_classPrefix:identifier___ViewController alloc] initWithNibName:@&quot;___VARIABLE_classPrefix:identifier___ViewController_iPhone&quot; bundle:nil]___AR___;
+} else {
+    self.viewController = ___RP___[[___VARIABLE_classPrefix:identifier___ViewController alloc] initWithNibName:@&quot;___VARIABLE_classPrefix:identifier___ViewController_iPad&quot; bundle:nil]___AR___;
+}
+self.window.rootViewController = self.viewController;</string>
+							<key>en.lproj/___VARIABLE_classPrefix:identifier___ViewController_iPad.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>ViewControlleriPad.xib</string>
+							</dict>
+							<key>en.lproj/___VARIABLE_classPrefix:identifier___ViewController_iPhone.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>ViewControlleriPhone.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>en.lproj/___VARIABLE_classPrefix:identifier___ViewController_iPhone.xib</string>
+							<string>en.lproj/___VARIABLE_classPrefix:identifier___ViewController_iPad.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>useStoryboard</key>
+							<string>false</string>
+						</dict>
+					</dict>
+				</array>
+				<key>iPad</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>en.lproj/MainStoryboard.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>MainStoryboard_iPad.storyboard</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>en.lproj/___VARIABLE_classPrefix:identifier___ViewController.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>ViewControlleriPad.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>en.lproj/___VARIABLE_classPrefix:identifier___ViewController.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>useStoryboard</key>
+							<string>false</string>
+						</dict>
+					</dict>
+				</array>
+				<key>iPhone</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>en.lproj/MainStoryboard.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>MainStoryboard_iPhone.storyboard</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>en.lproj/___VARIABLE_classPrefix:identifier___ViewController.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>ViewControlleriPhone.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>en.lproj/___VARIABLE_classPrefix:identifier___ViewController.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>useStoryboard</key>
+							<string>false</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAME___-Info.plist:UISupportedExternalAccessoryProtocols</key>
+		<string>&lt;key&gt;UISupportedExternalAccessoryProtocols&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;com.orbotix.robotprotocol&lt;/string&gt;
+	&lt;/array&gt;</string>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:appWillResignActive</key>
+		<string>-(void)appWillResignActive:(NSNotification*)notification {
+    /*When the application is entering the background we need to close the connection to the robot*/
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:RKDeviceConnectionOnlineNotification object:nil];
+    [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:0.0];
+    [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:appDidBecomeActive</key>
+		<string>-(void)appDidBecomeActive:(NSNotification*)notification {
+    /*When the application becomes active after entering the background we try to connect to the robot*/
+    [self setupRobotConnection];
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:handleRobotOnline</key>
+		<string>- (void)handleRobotOnline {
+    /*The robot is now online, we can begin sending commands*/
+    if(!robotOnline) {
+        /*Only start the blinking loop once*/
+        [self toggleLED];
+    }
+    robotOnline = YES;
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:setupRobotConnection</key>
+		<string>-(void)setupRobotConnection {
+    /*Try to connect to the robot*/
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
+    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
+        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
+    }
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:toggleLED</key>
+		<string>- (void)toggleLED {
+    /*Toggle the LED on and off*/
+    if (ledON) {
+        ledON = NO;
+        [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:0.0];
+    } else {
+        ledON = YES;
+        [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:1.0];
+    }
+    [self performSelector:@selector(toggleLED) withObject:nil afterDelay:0.5];
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.h:implementation</key>
+		<string>#import &lt;UIKit/UIKit.h&gt;
+#import &lt;RobotUIKit/RobotUIKit.h&gt;
+
+@interface ___VARIABLE_classPrefix:identifier___ViewController : UIViewController {
+    BOOL ledON;
+    BOOL robotOnline;
+    RUICalibrateGestureHandler *calibrateHandler;
+}
+
+-(void)setupRobotConnection;
+-(void)handleRobotOnline;
+-(void)toggleLED;
+
+@end
+</string>
+		<key>___VARIABLE_classPrefix:identifier___ViewController.m:implementation:viewControllerImplementation:viewDidLoad</key>
+		<string>-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    /*Register for application lifecycle notifications so we known when to connect and disconnect from the robot*/
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
+
+    /*Only start the blinking loop when the view loads*/
+    robotOnline = NO;
+
+    calibrateHandler = [[RUICalibrateGestureHandler alloc] initWithView:self.view];
+}</string>
+		<key>Frameworks/RobotKit.framework</key>
+		<dict>
+			<key>Path</key>
+			<string>RobotKit.framework</string>
+		</dict>
+		<key>Frameworks/RobotUIKit.framework</key>
+		<dict>
+			<key>Path</key>
+			<string>RobotUIKit.framework</string>
+		</dict>
+		<key>RobotUIKit.bundle</key>
+		<dict>
+			<key>Path</key>
+			<string>RobotUIKit.bundle</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC -all_load -lstdc++ -lsqlite3.0</string>
+			</dict>
+			<key>Frameworks</key>
+			<array>
+				<string>CoreMotion</string>
+				<string>GameKit</string>
+				<string>ExternalAccessory</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -57,6 +57,8 @@ typedef enum RKMultiplayerGameState {
     RKRemotePlayer              *localPlayer;
     BOOL                        haveRobot;
     RKMultiplayerGameState      gameState;
+    NSString                    *gameType;
+    NSString                    *gameName;
     
     
     CFSocketRef                 listeningSocket;
@@ -164,6 +166,13 @@ typedef enum RKMultiplayerGameState {
  *  end the game for all players.
  */
 -(void)endGame;
+
+/*! Call this to return the game state to the lobby if this device is host.
+ *  This will cause all other player's game states to return to lobby.
+ *  The host will begin advertising the game again and players will be able
+ *  to join the game.
+ */
+-(void)returnToLobby;
 
 /*!
  *  Call to cause the game to transition to the pause state for all players

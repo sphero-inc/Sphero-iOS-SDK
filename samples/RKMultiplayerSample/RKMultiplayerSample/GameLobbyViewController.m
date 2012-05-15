@@ -82,6 +82,8 @@
         pauseButton.alpha = 0.25;
         resumeButton.enabled = NO;
         resumeButton.alpha = 0.25;
+        lobbyButton.alpha = 0.25;
+        lobbyButton.enabled = NO;
         stateLabel.text = @"GameState: Lobby";
     } else if(state==RKMultiplayerGameStateStarted) {
         startButton.enabled = NO;
@@ -89,9 +91,13 @@
         if([RKMultiplayer sharedMultiplayer].isHost) {
             endButton.enabled = YES;
             endButton.alpha = 1.0;
+            lobbyButton.alpha = 1.0;
+            lobbyButton.enabled = YES;
         } else {
             endButton.enabled = NO;
             endButton.alpha = 0.25;
+            lobbyButton.alpha = 0.25;
+            lobbyButton.enabled = NO;
         }
         pauseButton.enabled = YES;
         pauseButton.alpha = 1.0;
@@ -107,6 +113,8 @@
         } else {
             endButton.enabled = NO;
             endButton.alpha = 0.25;
+            lobbyButton.alpha = 0.25;
+            lobbyButton.enabled = NO;
         }
         pauseButton.enabled = NO;
         pauseButton.alpha = 0.25;
@@ -122,6 +130,10 @@
         pauseButton.alpha = 0.25;
         resumeButton.enabled = NO;
         resumeButton.alpha = 0.25;
+        if([RKMultiplayer sharedMultiplayer].isHost) {
+            lobbyButton.alpha = 1.0;
+            lobbyButton.enabled = YES;
+        }
         stateLabel.text = @"GameState: Ended";
     }
 }
@@ -154,6 +166,10 @@
 
 -(IBAction)resumePressed:(id)sender {
     [[RKMultiplayer sharedMultiplayer] resumeGame];
+}
+
+-(IBAction)lobbyPressed:(id)sender {
+    [[RKMultiplayer sharedMultiplayer] returnToLobby];
 }
 
 -(IBAction)sendPressed:(id)sender {

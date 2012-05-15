@@ -25,7 +25,7 @@
 		818BE088153777300009BA1A /* NameEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818BE086153777300009BA1A /* NameEntryViewController.m */; };
 		818BE089153777300009BA1A /* NameEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818BE087153777300009BA1A /* NameEntryViewController.xib */; };
 		819FD4D7153E1572008285D0 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 819FD4D6153E1572008285D0 /* README.txt */; };
-		D308D6D4154AF6AB00A64625 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D308D6D3154AF6AB00A64625 /* RobotKit.framework */; };
+		81EB958B155C326A00EE6E2C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EB958A155C326A00EE6E2C /* RobotKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		818BE06615374FB80009BA1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		818BE06715374FB80009BA1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		818BE06B15374FB90009BA1A /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = RKMultiplayerSample/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
-		818BE06D15374FB90009BA1A /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
+		818BE06D15374FB90009BA1A /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = RKMultiplayerSample/RobotUIKit.bundle; sourceTree = "<group>"; };
 		818BE06F15374FB90009BA1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		818BE07015374FB90009BA1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		818BE07315374FB90009BA1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		818BE086153777300009BA1A /* NameEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameEntryViewController.m; sourceTree = "<group>"; };
 		818BE087153777300009BA1A /* NameEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameEntryViewController.xib; sourceTree = "<group>"; };
 		819FD4D6153E1572008285D0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		D308D6D3154AF6AB00A64625 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = RKMultiplayerSample/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		81EB958A155C326A00EE6E2C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D308D6D4154AF6AB00A64625 /* RobotKit.framework in Frameworks */,
 				818BE05215374FB80009BA1A /* UIKit.framework in Frameworks */,
 				818BE05415374FB80009BA1A /* Foundation.framework in Frameworks */,
 				818BE05615374FB80009BA1A /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +69,7 @@
 				818BE05A15374FB80009BA1A /* GameKit.framework in Frameworks */,
 				818BE05C15374FB80009BA1A /* ExternalAccessory.framework in Frameworks */,
 				818BE06C15374FB90009BA1A /* RobotUIKit.framework in Frameworks */,
+				81EB958B155C326A00EE6E2C /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,8 @@
 		818BE05015374FB80009BA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D308D6D3154AF6AB00A64625 /* RobotKit.framework */,
+				81EB958A155C326A00EE6E2C /* RobotKit.framework */,
+				818BE06D15374FB90009BA1A /* RobotUIKit.bundle */,
 				818BE06B15374FB90009BA1A /* RobotUIKit.framework */,
 				818BE05115374FB80009BA1A /* UIKit.framework */,
 				818BE05315374FB80009BA1A /* Foundation.framework */,
@@ -114,7 +115,6 @@
 			children = (
 				818BE06615374FB80009BA1A /* AppDelegate.h */,
 				818BE06715374FB80009BA1A /* AppDelegate.m */,
-				818BE06D15374FB90009BA1A /* RobotUIKit.bundle */,
 				818BE06F15374FB90009BA1A /* ViewController.h */,
 				818BE07015374FB90009BA1A /* ViewController.m */,
 				818BE07215374FB90009BA1A /* ViewController.xib */,

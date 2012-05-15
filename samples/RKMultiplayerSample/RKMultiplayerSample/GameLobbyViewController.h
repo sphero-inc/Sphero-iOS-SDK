@@ -13,7 +13,7 @@
 @interface GameLobbyViewController : UIViewController <RKMultiplayerDelegateProtocol, UITextFieldDelegate> {
     NSMutableArray *players;
     IBOutlet UILabel *stateLabel;
-    IBOutlet UIButton *startButton, *endButton, *pauseButton, *resumeButton;
+    IBOutlet UIButton *startButton, *endButton, *pauseButton, *resumeButton, *lobbyButton;
     IBOutlet UIButton *sendButton;
     IBOutlet UITextView *playersList, *chatList;
     IBOutlet UITextField *chatField;
@@ -24,6 +24,7 @@
 -(IBAction)pausePressed:(id)sender;
 -(IBAction)resumePressed:(id)sender;
 -(IBAction)sendPressed:(id)sender;
+-(IBAction)lobbyPressed:(id)sender;
 
 -(void)updateButtonUIForState;
 -(void)updatePlayerList;
