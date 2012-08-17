@@ -12,6 +12,7 @@
 
 @interface ViewController : UIViewController {
     BOOL robotOnline;
+    int updatesLeft;
     
     UILabel *xValueLabel;
     UILabel *yValueLabel;

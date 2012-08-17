@@ -100,6 +100,20 @@
     [self setupRobotConnection];
 }
 
+- (void) initiateDataStream {
+    //// Start data streaming for the accelerometer and IMU data. The update rate is set to 20Hz with
+    //// one sample per update, so the sample rate is 10Hz. Packets are sent continuosly.
+    [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:40 packetFrames:1 
+                                                     sensorMask:RKDataStreamingMaskAccelerometerXFiltered |
+     RKDataStreamingMaskAccelerometerYFiltered |
+     RKDataStreamingMaskAccelerometerZFiltered |
+     RKDataStreamingMaskIMUPitchAngleFiltered |
+     RKDataStreamingMaskIMURollAngleFiltered |
+     RKDataStreamingMaskIMUYawAngleFiltered |
+                                                   0 packetCount:20];
+    updatesLeft = 10;
+}
+
 - (void)handleRobotOnline {
     /*The robot is now online, we can begin sending commands*/
     if(!robotOnline) {
@@ -110,16 +124,7 @@
         ////Register for asynchronise data streaming packets
         [[RKDeviceMessenger sharedMessenger] addDataStreamingObserver:self selector:@selector(handleAsyncData:)];
         
-        //// Start data streaming for the accelerometer and IMU data. The update rate is set to 20Hz with
-        //// one sample per update, so the sample rate is 10Hz. Packets are sent continuosly.
-        [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:40 packetFrames:1 
-                                                         sensorMask:RKDataStreamingMaskAccelerometerXFiltered |
-                                                        RKDataStreamingMaskAccelerometerYFiltered |
-                                                        RKDataStreamingMaskAccelerometerZFiltered |
-                                                        RKDataStreamingMaskIMUPitchAngleFiltered |
-                                                        RKDataStreamingMaskIMURollAngleFiltered |
-                                                        RKDataStreamingMaskIMUYawAngleFiltered
-                                                        packetCount:0];
+        [self initiateDataStream];
     }
     robotOnline = YES;
 }
@@ -143,6 +148,10 @@
         self.rollValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.roll];
         self.yawValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.yaw];
         
+        updatesLeft--;
+        if (updatesLeft == 0) {
+            [self initiateDataStream];
+        }
     }
 }
 
