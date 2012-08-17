@@ -94,4 +94,14 @@
  */
 +(RKRemotePlayer*)getPlayerWithUID:(NSString*)uid;
 
+/*! Method for changing the number of sequential ping timeouts that must occur before a player is dropped.
+ *  The default value is 5
+ */
++(void)setMaxPingTimeouts:(int)timeouts;
+
+/*! Method for changing the time allowed for a ping response before it is considered a timeout.
+ *  The default value is 5.0
+ */
++(void)setPingTimeout:(float)delay;
+
 @end

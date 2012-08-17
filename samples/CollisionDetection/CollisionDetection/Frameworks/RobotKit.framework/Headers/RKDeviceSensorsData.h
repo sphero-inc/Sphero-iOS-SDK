@@ -15,6 +15,8 @@
 @class RKGyroData;
 @class RKAccelerometerData;
 @class RKAttitudeData;
+@class RKLocatorData;
+@class RKQuaternionData;
 
 /*!
  * @brief Class that represents a sample of sensor data received when streaming data.
@@ -28,6 +30,8 @@
     RKGyroData          *gyroData;
     RKAccelerometerData *accelerometerData;
     RKAttitudeData      *attitudeData;
+    RKLocatorData       *locatorData;
+    RKQuaternionData    *quaternionData;
 }
 
 /*! Property for the object that contains a back EMF sample. */
@@ -40,6 +44,11 @@
 @property (nonatomic, readonly) RKAccelerometerData *accelerometerData;
 /*! Property to a RKAttitude object */
 @property (nonatomic, readonly) RKAttitudeData      *attitudeData;
+/*! Property to a RKLocator object */
+@property (nonatomic, readonly) RKLocatorData      *locatorData;
+/*! Property to a RKQuaternion object */
+@property (nonatomic, readonly) RKQuaternionData      *quaternionData;
+
 
 
 @end

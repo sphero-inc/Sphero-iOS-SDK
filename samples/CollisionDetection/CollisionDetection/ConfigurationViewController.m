@@ -51,13 +51,14 @@
         deadZone = [feildText floatValue];
     }
     
-    // start collision detection messages
+    // start collision detection messages    
     [RKConfigureCollisionDetectionCommand sendCommandForMethod:RKCollisionDetectionMethod1
                                                     xThreshold:xThreshold
-                                                    yThreshold:yThreshold
                                                xSpeedThreshold:xSpeedThreshold
+                                                    yThreshold:yThreshold
                                                ySpeedThreshold:ySpeedThreshold
                                               postTimeDeadZone:deadZone];
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 

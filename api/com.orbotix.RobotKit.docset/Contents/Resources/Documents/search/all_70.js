@@ -9,6 +9,7 @@ var searchData=
   ['pitch',['pitch',['../interface_r_k_attitude_data.html#ad8093d4644bc10e9c512eb90494968e4',1,'RKAttitudeData']]],
   ['pitchvalid',['pitchValid',['../struct_r_k_attitude_state.html#ab713a9375f2d990c1ca18e21ba27ee7d',1,'RKAttitudeState']]],
   ['points',['points',['../interface_r_k_achievement.html#ad5cff9f6f5750aa1a6cacc0eeb6557a6',1,'RKAchievement']]],
+  ['position',['position',['../interface_r_k_locator_data.html#ad3d0fa2809a873dbb67ea293625dde12',1,'RKLocatorData']]],
   ['postcommand_3a',['postCommand:',['../interface_r_k_device_messenger.html#a792e8ed149ac6e38a98f6a24f86dfd35',1,'RKDeviceMessenger']]],
   ['postcommand_3adelay_3a',['postCommand:delay:',['../interface_r_k_device_messenger.html#a5103455d483a28b34be5098def65af6a',1,'RKDeviceMessenger']]],
   ['powerstate',['powerState',['../interface_r_k_get_power_state_response.html#ad9c2f3b966260ff1261d3be1c1ca8a0a',1,'RKGetPowerStateResponse']]],

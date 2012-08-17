@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671EC2A815B8865E002E4815 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671EC2A715B8865E002E4815 /* RobotKit.framework */; };
+		6762B2A415AF57AD00BBDF9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A315AF57AD00BBDF9A /* UIKit.framework */; };
+		6762B2A615AF57AD00BBDF9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A515AF57AD00BBDF9A /* Foundation.framework */; };
+		6762B2A815AF57AD00BBDF9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */; };
+		6762B2AA15AF57AD00BBDF9A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A915AF57AD00BBDF9A /* CoreMotion.framework */; };
+		6762B2AC15AF57AD00BBDF9A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2AB15AF57AD00BBDF9A /* GameKit.framework */; };
+		6762B2AE15AF57AD00BBDF9A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2AD15AF57AD00BBDF9A /* ExternalAccessory.framework */; };
+		6762B2B415AF57AD00BBDF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2B215AF57AD00BBDF9A /* InfoPlist.strings */; };
+		6762B2B615AF57AD00BBDF9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B515AF57AD00BBDF9A /* main.m */; };
+		6762B2BA15AF57AD00BBDF9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B915AF57AD00BBDF9A /* AppDelegate.m */; };
+		6762B2BE15AF57AD00BBDF9A /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2BD15AF57AD00BBDF9A /* RobotUIKit.framework */; };
+		6762B2C015AF57AD00BBDF9A /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */; };
+		6762B2C315AF57AD00BBDF9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2C215AF57AD00BBDF9A /* ViewController.m */; };
+		6762B2C615AF57AD00BBDF9A /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2C415AF57AD00BBDF9A /* ViewController_iPhone.xib */; };
+		6762B2C915AF57AD00BBDF9A /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2C715AF57AD00BBDF9A /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		671EC2A715B8865E002E4815 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = Locator/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		6762B29F15AF57AD00BBDF9A /* Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6762B2A315AF57AD00BBDF9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6762B2A515AF57AD00BBDF9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6762B2A915AF57AD00BBDF9A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6762B2AB15AF57AD00BBDF9A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		6762B2AD15AF57AD00BBDF9A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		6762B2B115AF57AD00BBDF9A /* Locator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Locator-Info.plist"; sourceTree = "<group>"; };
+		6762B2B315AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6762B2B515AF57AD00BBDF9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6762B2B715AF57AD00BBDF9A /* Locator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locator-Prefix.pch"; sourceTree = "<group>"; };
+		6762B2B815AF57AD00BBDF9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6762B2B915AF57AD00BBDF9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6762B2BD15AF57AD00BBDF9A /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = Locator/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
+		6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
+		6762B2C115AF57AD00BBDF9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6762B2C215AF57AD00BBDF9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6762B2C515AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		6762B2C815AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6762B29C15AF57AD00BBDF9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671EC2A815B8865E002E4815 /* RobotKit.framework in Frameworks */,
+				6762B2A415AF57AD00BBDF9A /* UIKit.framework in Frameworks */,
+				6762B2A615AF57AD00BBDF9A /* Foundation.framework in Frameworks */,
+				6762B2A815AF57AD00BBDF9A /* CoreGraphics.framework in Frameworks */,
+				6762B2AA15AF57AD00BBDF9A /* CoreMotion.framework in Frameworks */,
+				6762B2AC15AF57AD00BBDF9A /* GameKit.framework in Frameworks */,
+				6762B2AE15AF57AD00BBDF9A /* ExternalAccessory.framework in Frameworks */,
+				6762B2BE15AF57AD00BBDF9A /* RobotUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6762B29415AF57AD00BBDF9A = {
+			isa = PBXGroup;
+			children = (
+				6762B2AF15AF57AD00BBDF9A /* Locator */,
+				6762B2A215AF57AD00BBDF9A /* Frameworks */,
+				6762B2A015AF57AD00BBDF9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6762B2A015AF57AD00BBDF9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6762B29F15AF57AD00BBDF9A /* Locator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6762B2A215AF57AD00BBDF9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6762B2BD15AF57AD00BBDF9A /* RobotUIKit.framework */,
+				671EC2A715B8865E002E4815 /* RobotKit.framework */,
+				6762B2A315AF57AD00BBDF9A /* UIKit.framework */,
+				6762B2A515AF57AD00BBDF9A /* Foundation.framework */,
+				6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */,
+				6762B2A915AF57AD00BBDF9A /* CoreMotion.framework */,
+				6762B2AB15AF57AD00BBDF9A /* GameKit.framework */,
+				6762B2AD15AF57AD00BBDF9A /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6762B2AF15AF57AD00BBDF9A /* Locator */ = {
+			isa = PBXGroup;
+			children = (
+				6762B2B815AF57AD00BBDF9A /* AppDelegate.h */,
+				6762B2B915AF57AD00BBDF9A /* AppDelegate.m */,
+				6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */,
+				6762B2C115AF57AD00BBDF9A /* ViewController.h */,
+				6762B2C215AF57AD00BBDF9A /* ViewController.m */,
+				6762B2C415AF57AD00BBDF9A /* ViewController_iPhone.xib */,
+				6762B2C715AF57AD00BBDF9A /* ViewController_iPad.xib */,
+				6762B2B015AF57AD00BBDF9A /* Supporting Files */,
+			);
+			path = Locator;
+			sourceTree = "<group>";
+		};
+		6762B2B015AF57AD00BBDF9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6762B2B115AF57AD00BBDF9A /* Locator-Info.plist */,
+				6762B2B215AF57AD00BBDF9A /* InfoPlist.strings */,
+				6762B2B515AF57AD00BBDF9A /* main.m */,
+				6762B2B715AF57AD00BBDF9A /* Locator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6762B29E15AF57AD00BBDF9A /* Locator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6762B2CC15AF57AD00BBDF9A /* Build configuration list for PBXNativeTarget "Locator" */;
+			buildPhases = (
+				6762B29B15AF57AD00BBDF9A /* Sources */,
+				6762B29C15AF57AD00BBDF9A /* Frameworks */,
+				6762B29D15AF57AD00BBDF9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locator;
+			productName = Locator;
+			productReference = 6762B29F15AF57AD00BBDF9A /* Locator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6762B29615AF57AD00BBDF9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Orbotix Inc";
+			};
+			buildConfigurationList = 6762B29915AF57AD00BBDF9A /* Build configuration list for PBXProject "Locator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6762B29415AF57AD00BBDF9A;
+			productRefGroup = 6762B2A015AF57AD00BBDF9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6762B29E15AF57AD00BBDF9A /* Locator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6762B29D15AF57AD00BBDF9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6762B2B415AF57AD00BBDF9A /* InfoPlist.strings in Resources */,
+				6762B2C015AF57AD00BBDF9A /* RobotUIKit.bundle in Resources */,
+				6762B2C615AF57AD00BBDF9A /* ViewController_iPhone.xib in Resources */,
+				6762B2C915AF57AD00BBDF9A /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6762B29B15AF57AD00BBDF9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6762B2B615AF57AD00BBDF9A /* main.m in Sources */,
+				6762B2BA15AF57AD00BBDF9A /* AppDelegate.m in Sources */,
+				6762B2C315AF57AD00BBDF9A /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6762B2B215AF57AD00BBDF9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6762B2B315AF57AD00BBDF9A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6762B2C415AF57AD00BBDF9A /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6762B2C515AF57AD00BBDF9A /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		6762B2C715AF57AD00BBDF9A /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6762B2C815AF57AD00BBDF9A /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6762B2CA15AF57AD00BBDF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6762B2CB15AF57AD00BBDF9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6762B2CD15AF57AD00BBDF9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Locator/Frameworks\"",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
+				INFOPLIST_FILE = "Locator/Locator-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+					"-lsqlite3.0",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6762B2CE15AF57AD00BBDF9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Locator/Frameworks\"",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
+				INFOPLIST_FILE = "Locator/Locator-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+					"-lsqlite3.0",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6762B29915AF57AD00BBDF9A /* Build configuration list for PBXProject "Locator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6762B2CA15AF57AD00BBDF9A /* Debug */,
+				6762B2CB15AF57AD00BBDF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6762B2CC15AF57AD00BBDF9A /* Build configuration list for PBXNativeTarget "Locator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6762B2CD15AF57AD00BBDF9A /* Debug */,
+				6762B2CE15AF57AD00BBDF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6762B29615AF57AD00BBDF9A /* Project object */;
+}

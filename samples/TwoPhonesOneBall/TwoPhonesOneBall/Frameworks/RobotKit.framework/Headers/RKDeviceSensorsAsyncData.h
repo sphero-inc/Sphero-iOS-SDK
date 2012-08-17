@@ -8,6 +8,7 @@
 
 /*! @file */
 
+#import "RKSetDataStreamingCommand.h"
 #import <Foundation/Foundation.h>
 #import <RobotKit/RKDeviceAsyncData.h>
 
@@ -25,16 +26,15 @@
  */
 @interface RKDeviceSensorsAsyncData : RKDeviceAsyncData {
     @private
-    NSUInteger      frameCount;
-    NSUInteger      mask;
-    
-    NSMutableArray  *dataFrames;
+    NSUInteger          frameCount;
+    RKDataStreamingMask mask;
+    NSMutableArray*     dataFrames;
 }
 
 /*! Number of sample frames returned in the packet. */
 @property (nonatomic, readonly) NSUInteger  frameCount;
 /*! The mask used to enable what data to include in the data.*/
-@property (nonatomic, readonly) NSUInteger  mask;
+@property (nonatomic, readonly) RKDataStreamingMask  mask;
 /*! An array of RKDeviceSensorData objects with each sample frame returned. */
 @property (nonatomic, readonly) NSArray     *dataFrames;
 

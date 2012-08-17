@@ -3,6 +3,7 @@ var searchData=
   ['dataframes',['dataFrames',['../interface_r_k_device_sensors_async_data.html#ad11a43534a43712d1214e5bd97aefa33',1,'RKDeviceSensorsAsyncData']]],
   ['deadzonesize',['deadZoneSize',['../interface_r_k_robot_control.html#a831973384afd2d0f97b3501b05a159e8',1,'RKRobotControl']]],
   ['delegate',['delegate',['../interface_r_k_sphero_world_auth.html#a7d78d8d86547445a34bcb76b7bfb2ad1',1,'RKSpheroWorldAuth']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['description',['description',['../interface_r_k_achievement.html#aadbde994592d10fab6d5d2e63cf1b318',1,'RKAchievement']]],
   ['deviceconnection',['deviceConnection',['../interface_r_k_robot_control.html#ac17c7ad15bea6269a7a55ea59a4b846f',1,'RKRobotControl']]],
   ['dictforcommand',['dictForCommand',['../interface_r_k_device_command.html#aaa88060b34a132cd822f2c13cb0c9d55',1,'RKDeviceCommand']]],

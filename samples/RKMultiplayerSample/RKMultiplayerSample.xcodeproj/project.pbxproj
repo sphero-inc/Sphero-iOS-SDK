@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67DCBCA115DC1DFA00FBA6A5 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DCBCA015DC1DFA00FBA6A5 /* RobotKit.framework */; };
 		818BE05215374FB80009BA1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818BE05115374FB80009BA1A /* UIKit.framework */; };
 		818BE05415374FB80009BA1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818BE05315374FB80009BA1A /* Foundation.framework */; };
 		818BE05615374FB80009BA1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818BE05515374FB80009BA1A /* CoreGraphics.framework */; };
@@ -25,10 +26,11 @@
 		818BE088153777300009BA1A /* NameEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818BE086153777300009BA1A /* NameEntryViewController.m */; };
 		818BE089153777300009BA1A /* NameEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818BE087153777300009BA1A /* NameEntryViewController.xib */; };
 		819FD4D7153E1572008285D0 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 819FD4D6153E1572008285D0 /* README.txt */; };
-		81EB958B155C326A00EE6E2C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EB958A155C326A00EE6E2C /* RobotKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67DCBC9E15DC1DE800FBA6A5 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "../../../MOBILE-IOS-SDK/samples/RKMultiplayerSample/RKMultiplayerSample/Frameworks/RobotKit.framework"; sourceTree = "<group>"; };
+		67DCBCA015DC1DFA00FBA6A5 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = RKMultiplayerSample/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		818BE04D15374FB80009BA1A /* RKMultiplayerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKMultiplayerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818BE05115374FB80009BA1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		818BE05315374FB80009BA1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,7 +56,6 @@
 		818BE086153777300009BA1A /* NameEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameEntryViewController.m; sourceTree = "<group>"; };
 		818BE087153777300009BA1A /* NameEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameEntryViewController.xib; sourceTree = "<group>"; };
 		819FD4D6153E1572008285D0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		81EB958A155C326A00EE6E2C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +70,7 @@
 				818BE05A15374FB80009BA1A /* GameKit.framework in Frameworks */,
 				818BE05C15374FB80009BA1A /* ExternalAccessory.framework in Frameworks */,
 				818BE06C15374FB90009BA1A /* RobotUIKit.framework in Frameworks */,
-				81EB958B155C326A00EE6E2C /* RobotKit.framework in Frameworks */,
+				67DCBCA115DC1DFA00FBA6A5 /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +80,7 @@
 		818BE04215374FB70009BA1A = {
 			isa = PBXGroup;
 			children = (
+				67DCBC9E15DC1DE800FBA6A5 /* RobotKit.framework */,
 				819FD4D6153E1572008285D0 /* README.txt */,
 				818BE05D15374FB80009BA1A /* RKMultiplayerSample */,
 				818BE05015374FB80009BA1A /* Frameworks */,
@@ -97,7 +99,7 @@
 		818BE05015374FB80009BA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81EB958A155C326A00EE6E2C /* RobotKit.framework */,
+				67DCBCA015DC1DFA00FBA6A5 /* RobotKit.framework */,
 				818BE06D15374FB90009BA1A /* RobotUIKit.bundle */,
 				818BE06B15374FB90009BA1A /* RobotUIKit.framework */,
 				818BE05115374FB80009BA1A /* UIKit.framework */,
@@ -287,6 +289,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/RKMultiplayerSample/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../MOBILE-IOS-SDK/samples/RKMultiplayerSample/RKMultiplayerSample/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RKMultiplayerSample/RKMultiplayerSample-Prefix.pch";
@@ -315,6 +318,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/RKMultiplayerSample/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../MOBILE-IOS-SDK/samples/RKMultiplayerSample/RKMultiplayerSample/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RKMultiplayerSample/RKMultiplayerSample-Prefix.pch";

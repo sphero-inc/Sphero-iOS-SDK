@@ -22,6 +22,10 @@
     NSString        *name;
     NSString        *bluetoothAddress;
     NSTimeInterval  timeOffset;
+    
+    float           userColorRedIntensity;
+    float           userColorGreenIntensity;
+    float           userColorBlueIntensity;
 }
 
 /*! The EAAccessory object that is associated with the robot */
@@ -36,6 +40,10 @@
 
 /*! The time offset needed to convert the robot's time reference into the iOS device's time reference. */
 @property (nonatomic, readonly) NSTimeInterval timeOffset;
+/*! User color of RGB that is remembered even when Sphero is turned on and off */
+@property (nonatomic, assign) float userColorRedIntensity;
+@property (nonatomic, assign) float userColorGreenIntensity;
+@property (nonatomic, assign) float userColorBlueIntensity;
 
 /*! 
  *  Initializes with a EAAccesory object for the robot.

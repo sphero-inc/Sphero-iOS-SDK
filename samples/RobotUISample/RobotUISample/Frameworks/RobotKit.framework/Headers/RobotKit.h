@@ -34,6 +34,13 @@
 #import <RobotKit/RKRawMotorValuesCommand.h>
 #import <RobotKit/RKGoToSleepCommand.h>
 #import <RobotKit/RKConfigureCollisionDetectionCommand.h>
+#import <RobotKit/RKSetUserHackModeCommand.h>
+#import <RobotKit/RKGetDeviceModeCommand.h>
+#import <RobotKit/RKConfigureLocatorCommand.h>
+#import <RobotKit/RKSelfLevelCommand.h>
+#import <RobotKit/RKSetMotionTimeoutCommand.h>
+#import <RobotKit/RKGetOptionFlagsCommand.h>
+#import <RobotKit/RKSetOptionFlagsCommand.h>
 
 // Responses
 #import <RobotKit/RKPingResponse.h>
@@ -50,8 +57,18 @@
 #import <RobotKit/RKRawMotorValuesResponse.h>
 #import <RobotKit/RKGoToSleepResponse.h>
 #import <RobotKit/RKConfigureCollisionDetectionResponse.h>
+#import <RobotKit/RKSetUserHackModeResponse.h>
+#import <RobotKit/RKGetDeviceModeResponse.h>
+#import <RobotKit/RKConfigureLocatorResponse.h>
+#import <RobotKit/RKSelfLevelResponse.h>
+#import <RobotKit/RKSetMotionTimeoutResponse.h>
+#import <RobotKit/RKGetOptionFlagsResponse.h>
+#import <RobotKit/RKSetOptionFlagsResponse.h>
 
+// Async Data
 #import <RobotKit/RKDeviceAsyncData.h>
+#import <RobotKit/RKCollisionDetectedAsyncData.h>
+#import <RobotKit/RKSelfLevelCompleteAsyncData.h>
 #import <RobotKit/RKDeviceSensorsAsyncData.h>
 #import <RobotKit/RKDeviceSensorsData.h>
 #import <RobotKit/RKAccelerometerData.h>
@@ -59,8 +76,10 @@
 #import <RobotKit/RKAttitudeData.h>
 #import <RobotKit/RKGyroData.h>
 #import <RobotKit/RKBackEMFData.h>
-#import <RobotKit/RKCollisionDetectedAsyncData.h>
+#import <RobotKit/RKLocatorData.h>
+#import <RobotKit/RKQuaternionData.h>
 
+// Achievements
 #import <RobotKit/RKAchievement.h>
 #import <RobotKit/RKSpheroWorldAuth.h>
 
@@ -83,10 +102,10 @@
 // Macros
 #if defined (SRCLIBRARY)
 #import <RobotKit/Macro/RKMacroObject.h>
-#import <RobotKit/Macro/RKInitMacroExecutiveCommand.h>
-#import <RobotKit/Macro/RKSaveTemporaryMacroChunkCommand.h>
-#import <RobotKit/Macro/RKInitMacroExecutiveResponse.h>
-#import <RobotKit/Macro/RKSaveTemporaryMacroChunkResponse.h>
+#import <RobotKit/RKInitMacroExecutiveCommand.h>
+#import <RobotKit/RKSaveTemporaryMacroChunkCommand.h>
+#import <RobotKit/RKInitMacroExecutiveResponse.h>
+#import <RobotKit/RKSaveTemporaryMacroChunkResponse.h>
 #import <RobotKit/Macro/RKSaveMacroCommand.h>
 #import <Robotkit/Macro/RKRunMacroCommand.h>
 #import <RobotKit/Macro/RKRunMacroResponse.h>

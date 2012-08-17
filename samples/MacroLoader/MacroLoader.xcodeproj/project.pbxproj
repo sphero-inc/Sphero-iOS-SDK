@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6784E7EE15DDA24100BD3A02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7DC15DDA24100BD3A02 /* AppDelegate.m */; };
+		6784E7EF15DDA24100BD3A02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7DD15DDA24100BD3A02 /* InfoPlist.strings */; };
+		6784E7F015DDA24100BD3A02 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7DF15DDA24100BD3A02 /* ViewController_iPad.xib */; };
+		6784E7F115DDA24100BD3A02 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7E115DDA24100BD3A02 /* ViewController_iPhone.xib */; };
+		6784E7F215DDA24100BD3A02 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E7E415DDA24100BD3A02 /* libsqlite3.dylib */; };
+		6784E7F315DDA24100BD3A02 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E7E515DDA24100BD3A02 /* RobotKit.framework */; };
+		6784E7F415DDA24100BD3A02 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E7E615DDA24100BD3A02 /* RobotUIKit.framework */; };
+		6784E7F515DDA24100BD3A02 /* MacroLoader-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7E715DDA24100BD3A02 /* MacroLoader-Info.plist */; };
+		6784E7F615DDA24100BD3A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7E915DDA24100BD3A02 /* main.m */; };
+		6784E7F715DDA24100BD3A02 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7EA15DDA24100BD3A02 /* README.txt */; };
+		6784E7F815DDA24100BD3A02 /* squaremedium.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7EB15DDA24100BD3A02 /* squaremedium.sphero */; };
+		6784E7F915DDA24100BD3A02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7ED15DDA24100BD3A02 /* ViewController.m */; };
+		E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */; };
+		E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */; };
+		E60EECA615DD6F3E008FFEB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECA515DD6F3E008FFEB9 /* CoreGraphics.framework */; };
+		E60EECA815DD6F52008FFEB9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECA715DD6F52008FFEB9 /* CoreMotion.framework */; };
+		E60EECAA15DD6F5C008FFEB9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECA915DD6F5C008FFEB9 /* GameKit.framework */; };
+		E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6784E7DB15DDA24100BD3A02 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6784E7DC15DDA24100BD3A02 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6784E7DE15DDA24100BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6784E7E015DDA24100BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		6784E7E215DDA24100BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		6784E7E415DDA24100BD3A02 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = MacroLoader/Frameworks/libsqlite3.dylib; sourceTree = "<group>"; };
+		6784E7E515DDA24100BD3A02 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = MacroLoader/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		6784E7E615DDA24100BD3A02 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = MacroLoader/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
+		6784E7E715DDA24100BD3A02 /* MacroLoader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MacroLoader-Info.plist"; sourceTree = "<group>"; };
+		6784E7E815DDA24100BD3A02 /* MacroLoader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MacroLoader-Prefix.pch"; sourceTree = "<group>"; };
+		6784E7E915DDA24100BD3A02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6784E7EA15DDA24100BD3A02 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		6784E7EB15DDA24100BD3A02 /* squaremedium.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = squaremedium.sphero; sourceTree = "<group>"; };
+		6784E7EC15DDA24100BD3A02 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6784E7ED15DDA24100BD3A02 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6784E7FD15DDA2BB00BD3A02 /* bigdance.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigdance.sphero; sourceTree = "<group>"; };
+		6784E7FE15DDA2BB00BD3A02 /* colorm.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = colorm.sphero; sourceTree = "<group>"; };
+		6784E7FF15DDA2BB00BD3A02 /* dance1.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = dance1.sphero; sourceTree = "<group>"; };
+		6784E80015DDA2BB00BD3A02 /* squaremedium.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = squaremedium.sphero; sourceTree = "<group>"; };
+		6784E80115DDA2BB00BD3A02 /* strobelight.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = strobelight.sphero; sourceTree = "<group>"; };
+		6784E80215DDA2BB00BD3A02 /* symboll.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = symboll.sphero; sourceTree = "<group>"; };
+		81EE343D1491452A00132035 /* MacroLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E60EECA515DD6F3E008FFEB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E60EECA715DD6F52008FFEB9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E60EECA915DD6F5C008FFEB9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81EE343A1491452A00132035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */,
+				E60EECAA15DD6F5C008FFEB9 /* GameKit.framework in Frameworks */,
+				E60EECA815DD6F52008FFEB9 /* CoreMotion.framework in Frameworks */,
+				E60EECA615DD6F3E008FFEB9 /* CoreGraphics.framework in Frameworks */,
+				E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */,
+				E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */,
+				6784E7F215DDA24100BD3A02 /* libsqlite3.dylib in Frameworks */,
+				6784E7F315DDA24100BD3A02 /* RobotKit.framework in Frameworks */,
+				6784E7F415DDA24100BD3A02 /* RobotUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6784E7DA15DDA24100BD3A02 /* MacroLoader */ = {
+			isa = PBXGroup;
+			children = (
+				6784E7FC15DDA29700BD3A02 /* Macros */,
+				6784E7DB15DDA24100BD3A02 /* AppDelegate.h */,
+				6784E7DC15DDA24100BD3A02 /* AppDelegate.m */,
+				6784E7EC15DDA24100BD3A02 /* ViewController.h */,
+				6784E7ED15DDA24100BD3A02 /* ViewController.m */,
+				6784E7DF15DDA24100BD3A02 /* ViewController_iPad.xib */,
+				6784E7E115DDA24100BD3A02 /* ViewController_iPhone.xib */,
+				6784E7E915DDA24100BD3A02 /* main.m */,
+				6784E7EA15DDA24100BD3A02 /* README.txt */,
+				6784E7FB15DDA27D00BD3A02 /* Supporting Files */,
+			);
+			path = MacroLoader;
+			sourceTree = "<group>";
+		};
+		6784E7FA15DDA24B00BD3A02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6784E7E415DDA24100BD3A02 /* libsqlite3.dylib */,
+				6784E7E515DDA24100BD3A02 /* RobotKit.framework */,
+				6784E7E615DDA24100BD3A02 /* RobotUIKit.framework */,
+				E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */,
+				E60EECA915DD6F5C008FFEB9 /* GameKit.framework */,
+				E60EECA715DD6F52008FFEB9 /* CoreMotion.framework */,
+				E60EECA515DD6F3E008FFEB9 /* CoreGraphics.framework */,
+				E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */,
+				E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6784E7FB15DDA27D00BD3A02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6784E7E715DDA24100BD3A02 /* MacroLoader-Info.plist */,
+				6784E7E815DDA24100BD3A02 /* MacroLoader-Prefix.pch */,
+				6784E7DD15DDA24100BD3A02 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6784E7FC15DDA29700BD3A02 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				6784E7FD15DDA2BB00BD3A02 /* bigdance.sphero */,
+				6784E7FE15DDA2BB00BD3A02 /* colorm.sphero */,
+				6784E7FF15DDA2BB00BD3A02 /* dance1.sphero */,
+				6784E80015DDA2BB00BD3A02 /* squaremedium.sphero */,
+				6784E80115DDA2BB00BD3A02 /* strobelight.sphero */,
+				6784E80215DDA2BB00BD3A02 /* symboll.sphero */,
+				6784E7EB15DDA24100BD3A02 /* squaremedium.sphero */,
+			);
+			name = Macros;
+			sourceTree = "<group>";
+		};
+		81EE34321491452A00132035 = {
+			isa = PBXGroup;
+			children = (
+				6784E7DA15DDA24100BD3A02 /* MacroLoader */,
+				81EE343E1491452A00132035 /* Products */,
+				6784E7FA15DDA24B00BD3A02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81EE343E1491452A00132035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81EE343D1491452A00132035 /* MacroLoader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81EE343C1491452A00132035 /* MacroLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81EE346C1491452B00132035 /* Build configuration list for PBXNativeTarget "MacroLoader" */;
+			buildPhases = (
+				81EE34391491452A00132035 /* Sources */,
+				81EE343A1491452A00132035 /* Frameworks */,
+				81EE343B1491452A00132035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacroLoader;
+			productName = HelloWorld;
+			productReference = 81EE343D1491452A00132035 /* MacroLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81EE34341491452A00132035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Orbotix, Inc.";
+			};
+			buildConfigurationList = 81EE34371491452A00132035 /* Build configuration list for PBXProject "MacroLoader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81EE34321491452A00132035;
+			productRefGroup = 81EE343E1491452A00132035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81EE343C1491452A00132035 /* MacroLoader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81EE343B1491452A00132035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6784E7EF15DDA24100BD3A02 /* InfoPlist.strings in Resources */,
+				6784E7F015DDA24100BD3A02 /* ViewController_iPad.xib in Resources */,
+				6784E7F115DDA24100BD3A02 /* ViewController_iPhone.xib in Resources */,
+				6784E7F515DDA24100BD3A02 /* MacroLoader-Info.plist in Resources */,
+				6784E7F715DDA24100BD3A02 /* README.txt in Resources */,
+				6784E7F815DDA24100BD3A02 /* squaremedium.sphero in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81EE34391491452A00132035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6784E7EE15DDA24100BD3A02 /* AppDelegate.m in Sources */,
+				6784E7F615DDA24100BD3A02 /* main.m in Sources */,
+				6784E7F915DDA24100BD3A02 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6784E7DD15DDA24100BD3A02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6784E7DE15DDA24100BD3A02 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6784E7DF15DDA24100BD3A02 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6784E7E015DDA24100BD3A02 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		6784E7E115DDA24100BD3A02 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6784E7E215DDA24100BD3A02 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81EE346A1491452B00132035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81EE346B1491452B00132035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81EE346D1491452B00132035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
+				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MacroSample/Frameworks\"",
+					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = MacroLoader;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		81EE346E1491452B00132035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
+				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MacroSample/Frameworks\"",
+					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = MacroLoader;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81EE34371491452A00132035 /* Build configuration list for PBXProject "MacroLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81EE346A1491452B00132035 /* Debug */,
+				81EE346B1491452B00132035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81EE346C1491452B00132035 /* Build configuration list for PBXNativeTarget "MacroLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81EE346D1491452B00132035 /* Debug */,
+				81EE346E1491452B00132035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81EE34341491452A00132035 /* Project object */;
+}

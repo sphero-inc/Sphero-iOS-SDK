@@ -11,6 +11,7 @@
 #import "RobotKit/RobotKit.h"
 
 @implementation ViewController
+@synthesize connectionLabel;
 
 - (void)didReceiveMemoryWarning
 {
@@ -82,13 +83,66 @@
     [self setupRobotConnection];
 }
 
+
+
+#pragma mark- Sphero Connections
+
 - (void)handleRobotOnline {
     /*The robot is now online, we can begin sending commands*/
+    connectionLabel.text = @"CONNECTED";
+    
     if(!robotOnline) {
         /*Only start the blinking loop once*/
+        
         [self toggleLED];
+        
     }
     robotOnline = YES;
+}
+
+-(void)setupRobotConnection {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleDidGainControl:) name:RKRobotDidGainControlNotification object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOffline) name:RKDeviceConnectionOfflineNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOffline) name:RKRobotDidLossControlNotification object:nil];
+    
+    //Attempt to control the connected robot so we get the notification if one is connected
+    
+    robotInitialized = NO;
+    
+    
+    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
+        robotInitialized = YES;
+        
+        
+        
+        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
+    }
+    else {
+        robotOnline = NO;
+        
+        connectionLabel.text = @"CONNECTING";
+      
+    }
+    robotInitialized = YES;
+}
+
+-(void)handleDidGainControl:(NSNotification*)notification {\
+    NSLog(@"didGainControlNotification");
+    if(!robotInitialized) return;
+    [[RKRobotProvider sharedRobotProvider] openRobotConnection];
+}
+
+- (void)handleRobotOffline {
+    if(robotOnline) {
+        robotOnline = NO;
+        //Put code to update UI for offline here
+        connectionLabel.text = @"CONNECTING";
+    }
 }
 
 - (void)toggleLED {
@@ -101,14 +155,6 @@
         [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:1.0];
     }
     [self performSelector:@selector(toggleLED) withObject:nil afterDelay:0.5];
-}
-
--(void)setupRobotConnection {
-    /*Try to connect to the robot*/
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
-    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-    }
 }
 
 @end

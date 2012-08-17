@@ -18,5 +18,6 @@ enum {
     RKAsyncPacketCollisionDetected          = 0x07,
     RKAsyncPacketOrbBasicPrint              = 0x08,
     RKAsyncPacketOrbBasicErrorASCII         = 0x09,
-    RKAsyncPacketOrbBasicErrorBinary        = 0x0A
+    RKAsyncPacketOrbBasicErrorBinary        = 0x0A,
+    RKAsyncPacketSelfLevelComplete          = 0x0B
 };

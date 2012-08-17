@@ -78,9 +78,26 @@
 +(void)recordEvent:(NSString*)name withCount:(int)count;
 
 /*!
+ *  Call to get the number of times an event has been recorded.  This might be useful for displaying
+ *  stats in a game for the number of times an event has happened.
+ *  @param name the event name that is being looked up, same name used in recordEvent: calls.
+ *  @return returns the number of times the event with the given identifier has been recorded.
+ */
++(int)getEventCount:(NSString*)name;
+
+/*!
  *  Returns an array of RKAchievement objects showing current user progress
  */
 +(NSArray*)getAchievements;
+
+/*!
+ *  Will automatically enable collision detection at the thresholds required for SpheroWorld collision tracking if YES.
+ *  If NO all collision detection will be disabled and collisions will not be reported to SpheroWorld.
+ *  When YES or if collision detection is enabled elsewhere the RKDriveCollisionNotification will begin to fire whenever
+ *  a collision is reported to the SpheroWorld profile of the ball.
+ *  @param enabled determines if collision detection should be automatically turned on or off.
+ */
++(void)achievementCollisionDetection:(BOOL)enabled;
 
 @end
 
@@ -108,6 +125,16 @@ static NSString * const RKDriveDistanceNotification         = @"RKDriveDistanceN
  * Notification of a color change, value will be R,G,B comma seperated string in userInfo dicationary
  */
 static NSString * const RKDriveColorChangeNotification      = @"RKDriveColorChangeNotification";
+/*!
+ * Notification that a macro was executed for achievements related to macros.
+ */
+static NSString * const RKDriveMacroNotification            = @"RKDriveMacroNotification";
+/*!
+ * Notification that a collision was reported to Sphero World for the balls stats, used for collision related achievements.
+ * NOTE: You must call [RKAchievement achievementCollisionDetection:YES] or enable collision detection in your own code to recieve this.
+ * This will only fire when internal collision requirements are met which may be different that ones set for your game.
+ */
+static NSString * const RKDriveCollisionNotification        = @"RKDriveCollisionNotification";
 /*!
  * Key to pull the value out of the user info dictionary in RKDriveTimeNotification, RKDriveDistanceNotification and RKDriveColorChangeNotification
  */

@@ -8,6 +8,7 @@
 
 /*! @file */
 
+#import "RKSetDataStreamingCommand.h"
 #import <Foundation/Foundation.h>
 #import <RobotKit/RKDeviceResponse.h>
 
@@ -27,7 +28,7 @@
 /*! Accessor to the packet frames requested in the last sent command. */
 + (NSUInteger)packetFrames;
 /*! Accessor to the mask sent in the last sent command. */
-+ (NSUInteger)mask;
++ (RKDataStreamingMask)mask;
 /*! Accessor the packet count sent in the last sent command. */
 + (NSUInteger)packetCount;
 

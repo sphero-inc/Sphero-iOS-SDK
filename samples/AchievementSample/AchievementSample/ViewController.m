@@ -152,6 +152,8 @@
     //This will automatically animate itself off screen after 5 second and release any resources.
 }
 
-
+- (void)dealloc {
+    [super dealloc];
+}
 
 @end

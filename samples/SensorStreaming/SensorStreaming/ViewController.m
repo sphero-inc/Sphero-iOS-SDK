@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
 #import "RobotKit/RobotKit.h"
+
+#define TOTAL_PACKET_COUNT 200
+#define PACKET_COUNT_THRESHOLD 50
 
 @implementation ViewController
 
@@ -18,6 +20,10 @@
 @synthesize pitchValueLabel;
 @synthesize rollValueLabel;
 @synthesize yawValueLabel;
+@synthesize q0ValueLabel;
+@synthesize q1ValueLabel;
+@synthesize q2ValueLabel;
+@synthesize q3ValueLabel;
 
 - (void)dealloc
 {
@@ -27,6 +33,10 @@
     [pitchValueLabel release];
     [rollValueLabel release];
     [yawValueLabel release];
+    [q0ValueLabel release];
+    [q1ValueLabel release];
+    [q2ValueLabel release];
+    [q3ValueLabel release];
     [super dealloc];
 }
 
@@ -60,7 +70,10 @@
     self.pitchValueLabel = nil;
     self.rollValueLabel = nil;
     self.yawValueLabel = nil;
-    
+    self.q0ValueLabel = nil;
+    self.q1ValueLabel = nil;
+    self.q2ValueLabel = nil;
+    self.q3ValueLabel = nil;
 }
 
 
@@ -107,42 +120,82 @@
         ////First turn off stabilization so the drive mechanism does not move.
         [RKStabilizationCommand sendCommandWithState:RKStabilizationStateOff];
         
+        [self sendSetDataStreamingCommand];
+        
         ////Register for asynchronise data streaming packets
         [[RKDeviceMessenger sharedMessenger] addDataStreamingObserver:self selector:@selector(handleAsyncData:)];
-        
-        //// Start data streaming for the accelerometer and IMU data. The update rate is set to 20Hz with
-        //// one sample per update, so the sample rate is 10Hz. Packets are sent continuosly.
-        [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:40 packetFrames:1 
-                                                         sensorMask:RKDataStreamingMaskAccelerometerXFiltered |
-                                                        RKDataStreamingMaskAccelerometerYFiltered |
-                                                        RKDataStreamingMaskAccelerometerZFiltered |
-                                                        RKDataStreamingMaskIMUPitchAngleFiltered |
-                                                        RKDataStreamingMaskIMURollAngleFiltered |
-                                                        RKDataStreamingMaskIMUYawAngleFiltered
-                                                        packetCount:0];
     }
     robotOnline = YES;
 }
 
+-(void)sendSetDataStreamingCommand {
+    
+    // Requesting the Accelerometer X, Y, and Z filtered (in Gs)
+    //            the IMU Angles roll, pitch, and yaw (in degrees)
+    //            the Quaternion data q0, q1, q2, and q3 (in 1/10000) of a Q
+    RKDataStreamingMask mask =  RKDataStreamingMaskAccelerometerFilteredAll |
+                                RKDataStreamingMaskIMUAnglesFilteredAll   |
+                                RKDataStreamingMaskQuaternionAll;
+    
+    // Note: If your ball has Firmware < 1.20 then these Quaternions
+    //       will simply show up as zeros.
+    
+    // Sphero samples this data at 400 Hz.  The divisor sets the sample
+    // rate you want it to store frames of data.  In this case 400Hz/40 = 10Hz
+    uint16_t divisor = 40;
+    
+    // Packet frames is the number of frames Sphero will store before it sends
+    // an async data packet to the iOS device
+    uint16_t packetFrames = 1;
+    
+    // Count is the number of async data packets Sphero will send you before
+    // it stops.  You want to register for a finite count and then send the command
+    // again once you approach the limit.  Otherwise data streaming may be left
+    // on when your app crashes, putting Sphero in a bad state.
+    uint8_t count = TOTAL_PACKET_COUNT;
+    
+    // Reset finite packet counter
+    packetCounter = 0;
+    
+    // Send command to Sphero
+    [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:divisor
+                                                   packetFrames:packetFrames
+                                                     sensorMask:mask
+                                                    packetCount:count];
+
+}
+
 - (void)handleAsyncData:(RKDeviceAsyncData *)asyncData
 {
-    // Need to check which type of async data is received as this method will be called for 
+    // Need to check which type of async data is received as this method will be called for
     // data streaming packets and sleep notification packets. We are going to ingnore the sleep
     // notifications.
     if ([asyncData isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
+        
+        // If we are getting close to packet limit, request more
+        packetCounter++;
+        if( packetCounter > (TOTAL_PACKET_COUNT-PACKET_COUNT_THRESHOLD)) {
+            [self sendSetDataStreamingCommand];
+        }
+        
         // Received sensor data, so display it to the user.
         RKDeviceSensorsAsyncData *sensorsAsyncData = (RKDeviceSensorsAsyncData *)asyncData;
         RKDeviceSensorsData *sensorsData = [sensorsAsyncData.dataFrames lastObject];
         RKAccelerometerData *accelerometerData = sensorsData.accelerometerData;
         RKAttitudeData *attitudeData = sensorsData.attitudeData;
+        RKQuaternionData *quaternionData = sensorsData.quaternionData;
         
+        // Print data to the text fields
         self.xValueLabel.text = [NSString stringWithFormat:@"%.6f", accelerometerData.acceleration.x];
         self.yValueLabel.text = [NSString stringWithFormat:@"%.6f", accelerometerData.acceleration.y];
         self.zValueLabel.text = [NSString stringWithFormat:@"%.6f", accelerometerData.acceleration.z];
         self.pitchValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.pitch];
         self.rollValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.roll];
         self.yawValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.yaw];
-        
+        self.q0ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q0];
+        self.q1ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q1];
+        self.q2ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q2];
+        self.q3ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q3];
     }
 }
 

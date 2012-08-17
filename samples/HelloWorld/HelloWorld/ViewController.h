@@ -11,7 +11,10 @@
 @interface ViewController : UIViewController {
     BOOL ledON;
     BOOL robotOnline;
+    BOOL robotInitialized;
+    UILabel *connetionLabel;
 }
+@property (nonatomic, retain) IBOutlet UILabel* connectionLabel;
 
 -(void)setupRobotConnection;
 -(void)handleRobotOnline;

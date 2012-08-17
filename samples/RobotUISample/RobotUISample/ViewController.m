@@ -216,4 +216,7 @@
     [sleep release];
 }
 
+- (void)dealloc {
+    [super dealloc];
+}
 @end
