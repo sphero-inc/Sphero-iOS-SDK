@@ -175,6 +175,7 @@ Edit the Info.plist for your application target and add an entry for key "Suppor
             [[NSNotificationCenter defaultCenter] removeObserver:self name:RKDeviceConnectionOnlineNotification object:nil];
             [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:0.0];
             [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
+            robotOnline = NO;
         }
 
  You are now ready to start controlling and receiving information from your Sphero, simply add the following to change the LED Color of Sphero to red:
