@@ -1,3 +1,5 @@
+![logo](http://update.orbotix.com/developer/sphero-small.png)
+
 # HelloWorld
 
 This sample code demonstrates how to connect to a Sphero and blink it's RGB LED blue. Also, the code sample is the bases for the application created in the Quick Start Guide. 

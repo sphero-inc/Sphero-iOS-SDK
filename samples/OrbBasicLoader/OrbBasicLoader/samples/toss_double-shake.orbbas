@@ -1,0 +1,2 @@
+10 A = 0
+20 if accelone > 200 then goto 2030 delay 5040 LEDC A & 150 A = A + 160 if dshake = 0 then goto 3070 end

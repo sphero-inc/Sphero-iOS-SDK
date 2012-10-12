@@ -1,0 +1,3 @@
+10 let A = 9
+20 B = sqrt A
+30 print A,B

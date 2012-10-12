@@ -79,11 +79,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_0x62.html#index_b"><span>b</span></a></li>
       <li><a href="functions_0x63.html#index_c"><span>c</span></a></li>
       <li><a href="functions_0x64.html#index_d"><span>d</span></a></li>
+      <li><a href="functions_0x65.html#index_e"><span>e</span></a></li>
       <li><a href="functions_0x66.html#index_f"><span>f</span></a></li>
       <li><a href="functions_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="functions_0x68.html#index_h"><span>h</span></a></li>
       <li class="current"><a href="functions_0x69.html#index_i"><span>i</span></a></li>
       <li><a href="functions_0x6a.html#index_j"><span>j</span></a></li>
+      <li><a href="functions_0x6b.html#index_k"><span>k</span></a></li>
       <li><a href="functions_0x6c.html#index_l"><span>l</span></a></li>
       <li><a href="functions_0x6d.html#index_m"><span>m</span></a></li>
       <li><a href="functions_0x6e.html#index_n"><span>n</span></a></li>
@@ -138,6 +140,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>impactTimeStamp
 : <a class="el" href="interface_r_k_collision_detected_async_data.html#aea14e7e2f57e266a34443023722640f4">RKCollisionDetectedAsyncData</a>
 </li>
+<li>inactivityTimeout
+: <a class="el" href="interface_r_k_set_inactivity_timeout_command.html#acf963359ffa410a14b7f78b2a3ebbe2e">RKSetInactivityTimeoutCommand</a>
+</li>
 <li>initForFlag:newX:newY:newYaw:
 : <a class="el" href="interface_r_k_configure_locator_command.html#a3e8f84f291b8d0840f54527e739373e8">RKConfigureLocatorCommand</a>
 </li>
@@ -156,14 +161,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>initWithBrightness:
 : <a class="el" href="interface_r_k_back_l_e_d_output_command.html#af4a4bf0d0ecc21ea71ba8e9db552c5f2">RKBackLEDOutputCommand</a>
 </li>
+<li>initWithBytes:
+: <a class="el" href="interface_r_k_macro_command.html#a5c44afa8cafee05857f01581ca2b8b63">RKMacroCommand</a>
+</li>
+<li>initWithData:
+: <a class="el" href="interface_r_k_macro_object.html#a23f831d04fe6f28ae8426b180ab4a79a">RKMacroObject</a>
+</li>
+<li>initWithFilePath:directoryPath:error:
+: <a class="el" href="interface_r_k_orb_basic_program.html#ac2380e10ff8d6bbfc2bf0e966788c59f">RKOrbBasicProgram</a>
+</li>
 <li>initWithHeading:
 : <a class="el" href="interface_r_k_calibrate_command.html#a026ba108b7a089a20a7590e0033e4212">RKCalibrateCommand</a>
 </li>
 <li>initWithHeading:velocity:
 : <a class="el" href="interface_r_k_roll_command.html#a20fc9821b2c1f93788a60483b1344fa8">RKRollCommand</a>
 </li>
+<li>initWithId:
+: <a class="el" href="interface_r_k_run_macro_command.html#a8cb227f80eef1902711b0269b1e5e3f3">RKRunMacroCommand</a>
+</li>
 <li>initWithLeftMode:leftPower:rightMode:rightPower:
 : <a class="el" href="interface_r_k_raw_motor_values_command.html#a53195dca53969f406aaddcf02926fb34">RKRawMotorValuesCommand</a>
+</li>
+<li>initWithMacro:flags:
+: <a class="el" href="interface_r_k_save_temporary_macro_command.html#af4c488a69bcae26e33fc31c1e6f16094">RKSaveTemporaryMacroCommand</a>
+</li>
+<li>initWithMacro:macroID:flags:
+: <a class="el" href="interface_r_k_save_macro_command.html#a0372a156cfa13463749186808356b2e0">RKSaveMacroCommand</a>
 </li>
 <li>initWithOptionFlags:
 : <a class="el" href="interface_r_k_set_option_flags_command.html#a1e4dbf6d70e98382c5899bfef6e59e80">RKSetOptionFlagsCommand</a>
@@ -184,24 +207,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_r_k_r_g_b_l_e_d_output_command.html#aa4377440a0b4236c61bf3809ed27542b">RKRGBLEDOutputCommand</a>
 </li>
 <li>initWithRobot:
-: <a class="el" href="interface_r_k_robot_control.html#af45cc9e1e947a1758f00f8f6d50a21b1">RKRobotControl</a>
-, <a class="el" href="interface_r_k_device_connection.html#ad479ee4af546a6cac4e3afe22adf98c8">RKDeviceConnection</a>
+: <a class="el" href="interface_r_k_device_connection.html#ad479ee4af546a6cac4e3afe22adf98c8">RKDeviceConnection</a>
+, <a class="el" href="interface_r_k_robot_control.html#af45cc9e1e947a1758f00f8f6d50a21b1">RKRobotControl</a>
 </li>
 <li>initWithSampleRate:cutoffFrequency:
-: <a class="el" href="interface_r_k_lowpass_filter.html#a47f7ca3360e9f1e09a710f14910b4abe">RKLowpassFilter</a>
-, <a class="el" href="interface_r_k_highpass_filter.html#a549d3df991af329336c4a88b6e090cb4">RKHighpassFilter</a>
+: <a class="el" href="interface_r_k_highpass_filter.html#a549d3df991af329336c4a88b6e090cb4">RKHighpassFilter</a>
+, <a class="el" href="interface_r_k_lowpass_filter.html#a47f7ca3360e9f1e09a710f14910b4abe">RKLowpassFilter</a>
 </li>
 <li>initWithSampleRateDivisor:packetFrames:sensorMask:packetCount:
 : <a class="el" href="interface_r_k_set_data_streaming_command.html#a494e32d7ee88057e4d44d2bbf067bb48">RKSetDataStreamingCommand</a>
 </li>
 <li>initWithState:
-: <a class="el" href="interface_r_k_stabilization_command.html#ac22cead8bac79b799b657850cef5c864">RKStabilizationCommand</a>
+: <a class="el" href="interface_r_k_set_power_notification_command.html#a37efd513faa6f27ca064d0ad75a0d94a">RKSetPowerNotificationCommand</a>
+, <a class="el" href="interface_r_k_stabilization_command.html#ac22cead8bac79b799b657850cef5c864">RKStabilizationCommand</a>
+</li>
+<li>initWithStorageType:
+: <a class="el" href="interface_r_k_orb_basic_erase_storage_command.html#a52873b571069b89d5b26d125fbdaec27">RKOrbBasicEraseStorageCommand</a>
 </li>
 <li>initWithTime:
 : <a class="el" href="interface_r_k_set_motion_timeout_command.html#ad99482fd4389bd95779bf5ccc2994f46">RKSetMotionTimeoutCommand</a>
 </li>
 <li>initWithWakeUpTimeInterval:macroId:
 : <a class="el" href="interface_r_k_go_to_sleep_command.html#a118011a322ca46cbeedff9491ac00e6b">RKGoToSleepCommand</a>
+</li>
+<li>intensity
+: <a class="el" href="interface_r_k_m_c_front_l_e_d.html#a3ba70525b8a18397fb117f2541c09846">RKMCFrontLED</a>
 </li>
 <li>isCurrentColorUserDefault
 : <a class="el" href="interface_r_k_r_g_b_l_e_d_output_command.html#a7ed8432e261cc455e8e5486d4cb5d107">RKRGBLEDOutputCommand</a>
@@ -211,6 +241,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>isEqualToRobot:
 : <a class="el" href="interface_r_k_robot.html#a203bbbaa8a76075f02653cf67ab59d6a">RKRobot</a>
+</li>
+<li>isHost
+: <a class="el" href="interface_r_k_multiplayer.html#a24534baf8b53ca93e39aba4eb302cd73">RKMultiplayer</a>
 </li>
 <li>isRobotAvailable
 : <a class="el" href="interface_r_k_robot_provider.html#a6ccfe8697b98a6f775e3972d8b7a8313">RKRobotProvider</a>
@@ -231,7 +264,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 17 2012 11:08:42 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2012 13:30:31 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
