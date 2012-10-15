@@ -30,6 +30,7 @@
 ## Fixes and such:
 
 #### In the API
+- Built for armv7 and armv7s, which is complatable with iOS 4.3 or greater.
 - Fixed potential deadlock condition that could happen in closing down communication threads.
 - Update the current heading in RKRollCommand after a RKCalibateCommand to reset the heading to the newly calibrated heading.
 
