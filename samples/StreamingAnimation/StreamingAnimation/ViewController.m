@@ -208,13 +208,13 @@
             
             //Places Sphero's center
             CGPoint newCenter = CGPointMake(sphero.center.x + xOffset, sphero.center.y + yOffset);
-            
+
             //PlaceSphero Back in center
             //Creates a boundry around the frame of the Phone so you can't lose him.
             if(newCenter.x < 0.0) newCenter.x = 0.0;
             if(newCenter.x > self.view.frame.size.height) newCenter.x = self.view.frame.size.height;
             if(newCenter.y < 0.0) newCenter.y = 0.0;
-            if(newCenter.y > self.view.frame.size.width - 20.0) newCenter.y = self.view.frame.size.width - 20.0;
+            if(newCenter.y > self.view.frame.size.width) newCenter.y = self.view.frame.size.width;
             
             targetSpheroLoc = newCenter;
         }

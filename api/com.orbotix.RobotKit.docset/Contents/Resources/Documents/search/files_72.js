@@ -80,6 +80,8 @@ var searchData=
   ['rksetautoreconnectresponse_2eh',['RKSetAutoReconnectResponse.h',['../_r_k_set_auto_reconnect_response_8h.html',1,'']]],
   ['rksetdatastreamingcommand_2eh',['RKSetDataStreamingCommand.h',['../_r_k_set_data_streaming_command_8h.html',1,'']]],
   ['rksetdatastreamingresponse_2eh',['RKSetDataStreamingResponse.h',['../_r_k_set_data_streaming_response_8h.html',1,'']]],
+  ['rksetheadingcommand_2eh',['RKSetHeadingCommand.h',['../_r_k_set_heading_command_8h.html',1,'']]],
+  ['rksetheadingresponse_2eh',['RKSetHeadingResponse.h',['../_r_k_set_heading_response_8h.html',1,'']]],
   ['rksetinactivitytimeoutcommand_2eh',['RKSetInactivityTimeoutCommand.h',['../_r_k_set_inactivity_timeout_command_8h.html',1,'']]],
   ['rksetinactivitytimeoutresponse_2eh',['RKSetInactivityTimeoutResponse.h',['../_r_k_set_inactivity_timeout_response_8h.html',1,'']]],
   ['rksetmotiontimeoutcommand_2eh',['RKSetMotionTimeoutCommand.h',['../_r_k_set_motion_timeout_command_8h.html',1,'']]],

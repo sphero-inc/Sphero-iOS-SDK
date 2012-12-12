@@ -51,6 +51,8 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 	// The X axis is just the cross product of Y and Z
 	vec3f_t xAxis = vec3f_crossProduct(yAxis, zAxis);
 	
+    
+    
 	CMRotationMatrix mat = {
 		xAxis.x, yAxis.x, zAxis.x,
 		xAxis.y, yAxis.y, zAxis.y,

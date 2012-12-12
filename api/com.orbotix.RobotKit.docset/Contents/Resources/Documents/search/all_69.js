@@ -16,7 +16,7 @@ var searchData=
   ['initwithbytes_3a',['initWithBytes:',['../interface_r_k_macro_command.html#a5c44afa8cafee05857f01581ca2b8b63',1,'RKMacroCommand']]],
   ['initwithdata_3a',['initWithData:',['../interface_r_k_macro_object.html#a23f831d04fe6f28ae8426b180ab4a79a',1,'RKMacroObject']]],
   ['initwithfilepath_3adirectorypath_3aerror_3a',['initWithFilePath:directoryPath:error:',['../interface_r_k_orb_basic_program.html#ac2380e10ff8d6bbfc2bf0e966788c59f',1,'RKOrbBasicProgram']]],
-  ['initwithheading_3a',['initWithHeading:',['../interface_r_k_calibrate_command.html#a026ba108b7a089a20a7590e0033e4212',1,'RKCalibrateCommand']]],
+  ['initwithheading_3a',['initWithHeading:',['../interface_r_k_calibrate_command.html#a026ba108b7a089a20a7590e0033e4212',1,'RKCalibrateCommand::initWithHeading:()'],['../interface_r_k_set_heading_command.html#a2632c598aed7b58bb9a32c1214b8e55c',1,'RKSetHeadingCommand::initWithHeading:()']]],
   ['initwithheading_3avelocity_3a',['initWithHeading:velocity:',['../interface_r_k_roll_command.html#a20fc9821b2c1f93788a60483b1344fa8',1,'RKRollCommand']]],
   ['initwithid_3a',['initWithId:',['../interface_r_k_run_macro_command.html#a8cb227f80eef1902711b0269b1e5e3f3',1,'RKRunMacroCommand']]],
   ['initwithleftmode_3aleftpower_3arightmode_3arightpower_3a',['initWithLeftMode:leftPower:rightMode:rightPower:',['../interface_r_k_raw_motor_values_command.html#a53195dca53969f406aaddcf02926fb34',1,'RKRawMotorValuesCommand']]],

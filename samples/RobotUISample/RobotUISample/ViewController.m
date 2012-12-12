@@ -28,23 +28,41 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
     /*Register for application lifecycle notifications so we known when to connect and disconnect from the robot*/
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appWillResignActive:)
+                                                 name:UIApplicationWillResignActiveNotification
+                                               object:nil];
 
     /*Only start the blinking loop when the view loads*/
     robotOnline = NO;
 
-    //Setup a calibration gesture handler on our view to handle rotation gestures and give visual feeback to the user.
-    calibrateHandler = [[RUICalibrateGestureHandler alloc] initWithView:self.view];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
+    // Setup a calibration gesture handler on our view to handle button
+    // gestures and give visual feeback to the user.  Defaults to above
+    calibrateAboveHandler = [[RUICalibrateButtonGestureHandler alloc]
+                        initWithView:self.view
+                        button:calibrateAboveButton];
     
-    [calibrateHandler release]; calibrateHandler = nil;
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    // Make the size of the calibration widget smaller for phones
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        calibrateAboveHandler.calibrationRadius = 200;
+    }
+    // Larger for iPads
+    else {
+        calibrateAboveHandler.calibrationRadius = 500;
+    }
+    // Open the circle widget above the button, can switch to pop out and cardinal direction
+    calibrateAboveHandler.calibrationCircleLocation = RUICalibrationCircleLocationAbove;
+    // Change color of the button
+    [calibrateAboveHandler setBackgroundWithColor:[UIColor colorWithRed:0.1 green:0.5 blue:1 alpha:1]];
+    [calibrateAboveHandler setForegroundWithColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:1]];
+    
+    // Setup two finger two calibration method
+    calibrateTwoFingerHandler = [[RUICalibrateGestureHandler alloc] initWithView:self.view];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -216,7 +234,15 @@
     [sleep release];
 }
 
+-(BOOL)calibrateGestureHandlerShouldAllowCalibration:(RUICalibrateButtonGestureHandler*)sender {
+    return YES;
+}
+
 - (void)dealloc {
+    [calibrateTwoFingerHandler release];
+    [calibrateAboveHandler release];
+    [calibrateAboveButton release];
     [super dealloc];
 }
+
 @end

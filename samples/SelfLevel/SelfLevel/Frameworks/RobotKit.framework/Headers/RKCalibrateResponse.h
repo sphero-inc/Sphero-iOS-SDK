@@ -19,6 +19,8 @@
  * calibrate command.
  *
  * @sa RKCalibrateResponse
+ *
+ * @deprecated Replacd by @sa RKSetHeadingResponse 
  */
 
 @interface RKCalibrateResponse : RKDeviceResponse {

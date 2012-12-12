@@ -6,7 +6,9 @@
      <key>CFBundleName</key>
      <string>RobotKit API</string>
      <key>CFBundleIdentifier</key>
-     <string>com.orbotix.RobotKit.docset</string>
+     <string>com.orbotix.RobotKit</string>
+     <key>CFBundleVersion</key>
+     <string>ProjectNumber</string>
      <key>DocSetFeedName</key>
      <string>Orbotix's API docs</string>
      <key>DocSetPublisherIdentifier</key>

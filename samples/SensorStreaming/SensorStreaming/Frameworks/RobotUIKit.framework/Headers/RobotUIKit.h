@@ -18,3 +18,6 @@
 #import <RobotUIKit/RUIHSColorPickerView.h>
 #import <RobotUIKit/RUICalibrateOverlayView.h>
 #import <RobotUIKit/RUICalibrateGestureHandler.h>
+#import <RobotUIKit/RUICalibrateButtonGestureHandler.h>
+#import <RobotUIKit/RUICalibrateOneTouchOverlayView.h>
+#import <RobotUIKit/RUINoSpheroConnectedViewController.h>

@@ -150,6 +150,8 @@ var searchData=
   ['rksetautoreconnectresponse',['RKSetAutoReconnectResponse',['../interface_r_k_set_auto_reconnect_response.html',1,'']]],
   ['rksetdatastreamingcommand',['RKSetDataStreamingCommand',['../interface_r_k_set_data_streaming_command.html',1,'']]],
   ['rksetdatastreamingresponse',['RKSetDataStreamingResponse',['../interface_r_k_set_data_streaming_response.html',1,'']]],
+  ['rksetheadingcommand',['RKSetHeadingCommand',['../interface_r_k_set_heading_command.html',1,'']]],
+  ['rksetheadingresponse',['RKSetHeadingResponse',['../interface_r_k_set_heading_response.html',1,'']]],
   ['rksetinactivitytimeoutcommand',['RKSetInactivityTimeoutCommand',['../interface_r_k_set_inactivity_timeout_command.html',1,'']]],
   ['rksetinactivitytimeoutresponse',['RKSetInactivityTimeoutResponse',['../interface_r_k_set_inactivity_timeout_response.html',1,'']]],
   ['rksetmotiontimeoutcommand',['RKSetMotionTimeoutCommand',['../interface_r_k_set_motion_timeout_command.html',1,'']]],

@@ -13,7 +13,7 @@ var searchData=
   ['sendcommandwithbrightness_3a',['sendCommandWithBrightness:',['../interface_r_k_back_l_e_d_output_command.html#a87946d6595898fbc81606583d6a98580',1,'RKBackLEDOutputCommand']]],
   ['sendcommandwithdelay_3a',['sendCommandWithDelay:',['../interface_r_k_device_command.html#abc5671831a846d8654c5835a3784f502',1,'RKDeviceCommand::sendCommandWithDelay:(NSTimeInterval delay)'],['../interface_r_k_device_command.html#abc5671831a846d8654c5835a3784f502',1,'RKDeviceCommand::sendCommandWithDelay:(NSTimeInterval delay)']]],
   ['sendcommandwithenableflag_3astarttime_3a',['sendCommandWithEnableFlag:StartTime:',['../interface_r_k_set_auto_reconnect_command.html#acd36cff936430284d035ae772ac0e543',1,'RKSetAutoReconnectCommand']]],
-  ['sendcommandwithheading_3a',['sendCommandWithHeading:',['../interface_r_k_calibrate_command.html#af7b776ec03b3105592fbae4e1ac99b96',1,'RKCalibrateCommand']]],
+  ['sendcommandwithheading_3a',['sendCommandWithHeading:',['../interface_r_k_calibrate_command.html#af7b776ec03b3105592fbae4e1ac99b96',1,'RKCalibrateCommand::sendCommandWithHeading:()'],['../interface_r_k_set_heading_command.html#a423429d6de406d5fad1da9e2c9dfec19',1,'RKSetHeadingCommand::sendCommandWithHeading:()']]],
   ['sendcommandwithheading_3avelocity_3a',['sendCommandWithHeading:velocity:',['../interface_r_k_roll_command.html#aec345bcd2b9c899562daff5a8d2c6095',1,'RKRollCommand']]],
   ['sendcommandwithheading_3avelocity_3astopped_3a',['sendCommandWithHeading:velocity:stopped:',['../interface_r_k_roll_command.html#ae114f6b15e0d3bd0349f8a397c801046',1,'RKRollCommand']]],
   ['sendcommandwithid_3a',['sendCommandWithId:',['../interface_r_k_run_macro_command.html#ad2291149b3cc23d63a9cbc9d36f77fd6',1,'RKRunMacroCommand']]],

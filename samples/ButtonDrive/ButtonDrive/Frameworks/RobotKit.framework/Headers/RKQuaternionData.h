@@ -10,12 +10,16 @@
 
 /*!
  * @brief Structure for Quaternion values.
+ * q0 = i axis (1st imaginary component)
+ * q1 = j axis (2nd imaginary component)
+ * q2 = k axis (3rd imaginary component)
+ * q3 = s axis (Real componenet)
  */
 struct RKQuaternions {
-    int16_t q0; /*! Quaternion 0, Range: -10000 to 10000 with units 1/10000 Q */
-    int16_t q1; /*! Quaternion 1, Range: -10000 to 10000 with units 1/10000 Q */
-    int16_t q2; /*! Quaternion 2, Range: -10000 to 10000 with units 1/10000 Q */
-    int16_t q3; /*! Quaternion 3, Range: -10000 to 10000 with units 1/10000 Q */
+    float q0; /*! Quaternion 0, i axis, Range: -1.0 to 1.0 with units of Q */
+    float q1; /*! Quaternion 1, j axis, Range: -1.0 to 1.0 with units of Q */
+    float q2; /*! Quaternion 2, k axis, Range: -1.0 to 1.0 with units of Q */
+    float q3; /*! Quaternion 3, s axis, Range: -1.0 to 1.0 with units of Q */
 };
 
 /*! Type for a the locator position structure. */
@@ -37,16 +41,17 @@ typedef struct RKQuaternionState RKQuaternionState;
 /*!
  * @brief Class to represent sample of Quaternion data
  *
- * Class that contains structures to the quaternion data received from data 
+ * Class that contains structures to the quaternion data received from data
  * streaming. Data streaming can be set to return quaternion 0, quaternion 1,
  * quaternion 2, or quaternion 3.  You can stream any and all of these values.
  *
  * @sa RKSetDataStreamingCommand.
  */
 @interface RKQuaternionData : RKSensorData {
-    @private
+@private
     RKQuaternionState quaternionState;
     RKQuaternions     quaternions;
+    NSArray*          rotationMatrix;
 }
 
 
@@ -55,5 +60,7 @@ typedef struct RKQuaternionState RKQuaternionState;
 /*! Read only property to a structure to use to test which quaternion values are valid */
 @property (nonatomic, readonly) RKQuaternionState quaternionState;
 
+/*! Converts a quaternion from -10000 to 10000 to -1.0 to 1.0 */
++(float)nomramlizeWithQuaternion:(int)quaternion;
 
 @end

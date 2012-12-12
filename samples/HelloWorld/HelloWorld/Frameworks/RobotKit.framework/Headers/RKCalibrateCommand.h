@@ -21,6 +21,8 @@
  * @sa RKCalibrateResponse
  * @sa RKBackLEDOutputCommand
  * @sa RKRollCommand
+ *
+ * @deprecated Replacd by @sa RKSetHeadingCommand
  */
 @interface RKCalibrateCommand : RKDeviceCommand {
     @private

@@ -2,9 +2,7 @@
 
 # Sphero Streaming Animation
 
-As shown in the video below, Sphero can be used as a remote control in different game environments. The Sphero uses its accelerometer data and indicates where the object on the screen needs to move.
-
-This sample code demonstrates how to connect to a Sphero and use its streaming Accelerometer Data to move an object on the screen. 
+This sample code demonstrates how to connect to a Sphero and use its streaming Accelerometer Data to move an object on the screen, and IMU yaw values to rotate the object. 
 
 
 ViewController.h

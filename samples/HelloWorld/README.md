@@ -23,6 +23,10 @@ RKRGBLEDOutputCommand is a subclass of RKDeviceCommand whose subclasses are used
 When the application exits the connection is closed with the following line of code.
 
     [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
+    
+## Questions
+
+For questions, please visit our developer's forum at [http://forum.gosphero.com/](http://forum.gosphero.com/)
 
 
 

@@ -19,6 +19,10 @@
 		6784E7F715DDA24100BD3A02 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7EA15DDA24100BD3A02 /* README.txt */; };
 		6784E7F815DDA24100BD3A02 /* squaremedium.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7EB15DDA24100BD3A02 /* squaremedium.sphero */; };
 		6784E7F915DDA24100BD3A02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7ED15DDA24100BD3A02 /* ViewController.m */; };
+		D34057441676C7CD00FE1E64 /* strobelight.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E80115DDA2BB00BD3A02 /* strobelight.sphero */; };
+		D34057461676C7F300FE1E64 /* bigdance.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7FD15DDA2BB00BD3A02 /* bigdance.sphero */; };
+		D34057471676C7FA00FE1E64 /* symboll.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E80215DDA2BB00BD3A02 /* symboll.sphero */; };
+		D34057481676C80400FE1E64 /* dance1.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7FF15DDA2BB00BD3A02 /* dance1.sphero */; };
 		E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */; };
 		E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */; };
 		E60EECA615DD6F3E008FFEB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECA515DD6F3E008FFEB9 /* CoreGraphics.framework */; };
@@ -209,6 +213,10 @@
 				6784E7F515DDA24100BD3A02 /* MacroLoader-Info.plist in Resources */,
 				6784E7F715DDA24100BD3A02 /* README.txt in Resources */,
 				6784E7F815DDA24100BD3A02 /* squaremedium.sphero in Resources */,
+				D34057441676C7CD00FE1E64 /* strobelight.sphero in Resources */,
+				D34057461676C7F300FE1E64 /* bigdance.sphero in Resources */,
+				D34057471676C7FA00FE1E64 /* symboll.sphero in Resources */,
+				D34057481676C80400FE1E64 /* dance1.sphero in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +319,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
 				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/MacroSample/Frameworks\"",
@@ -322,7 +331,7 @@
 					"-lstdc++",
 				);
 				PRODUCT_NAME = MacroLoader;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -338,6 +347,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
 				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/MacroSample/Frameworks\"",
@@ -349,7 +359,7 @@
 					"-lstdc++",
 				);
 				PRODUCT_NAME = MacroLoader;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

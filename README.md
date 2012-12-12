@@ -8,11 +8,9 @@
 
 ---
 
-The class documentation is located in api/ as DocSets for use with Xcode. It can be installed by following the Sphero SDK installation steps below. If that does not work or you would like to install the DocSets manually you can simply copy them into the DocSets directory used by Xcode. It is located at
+ * [RobotKit Class Documentation](http://docs.gosphero.com/ios/robot_kit/hierarchy.html)
 
-		~/Library/Developer/Shared/Documentation/DocSets/
-
-Once the DocSets have been copied, restart Xcode and they will then appear in the Documentation section of the Organizer.
+ * [RobotUIKit Class Documentation](http://docs.gosphero.com/ios/robot_ui_kit/hierarchy.html)
 
 ---
 
@@ -185,8 +183,7 @@ Change Build Settings -> Linking -> Other Linker Flags
 ## Using the Sphero iOS SDK
 
 
-If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.
-This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
+If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
 
 **For example**, try changing the following command in `ViewController.m` from
 

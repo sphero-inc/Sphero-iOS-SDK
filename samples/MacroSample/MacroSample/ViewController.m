@@ -84,13 +84,13 @@
     
     //Speed Slider
     NSString *speedText=[[NSString alloc]
-                        initWithFormat:@"%.f",(speedSlider.value)];
+                        initWithFormat:@"%.f%@",(speedSlider.value*10),@"%"];
 	speedLabel.text = speedText;
     robotSpeed = ([speedText floatValue]* 0.1);
 
     //Delay Slider
     NSString *delayText =[[NSString alloc]
-                        initWithFormat:@"%.f",delaySlider.value];
+                        initWithFormat:@"%.f%@",delaySlider.value,@" ms"];
 	delayLabel.text = delayText;
     robotDelay = [delayText floatValue];
     

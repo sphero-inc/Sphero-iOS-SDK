@@ -39,6 +39,7 @@
 #import <RobotKit/RKJumpToMainAppCommand.h>
 //// sphero
 #import <RobotKit/RKCalibrateCommand.h>
+#import <RobotKit/RKSetHeadingCommand.h>
 #import <RobotKit/RKRGBLEDOutputCommand.h>
 #import <RobotKit/RKBackLEDOutputCommand.h>
 #import <RobotKit/RKRollCommand.h>
@@ -81,6 +82,7 @@
 #import <RobotKit/RKJumpToMainAppResponse.h>
 //// sphero
 #import <RobotKit/RKCalibrateResponse.h>
+#import <RobotKit/RKSetHeadingResponse.h>
 #import <RobotKit/RKRGBLEDOutputResponse.h>
 #import <RobotKit/RKBackLEDOutputResponse.h>
 #import <RobotKit/RKRollResponse.h>

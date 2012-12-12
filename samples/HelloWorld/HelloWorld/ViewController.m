@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
 #import "RobotKit/RobotKit.h"
+#import "RobotUIKit/RobotUIKit.h"
 
 @implementation ViewController
 @synthesize connectionLabel;
@@ -32,10 +32,13 @@
 
     /*Only start the blinking loop when the view loads*/
     robotOnline = NO;
+    noSpheroViewShowing = NO;
 }
 
 - (void)viewDidUnload
 {
+    [connectionLabel release];
+    connectionLabel = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -83,8 +86,6 @@
     [self setupRobotConnection];
 }
 
-
-
 #pragma mark- Sphero Connections
 
 - (void)handleRobotOnline {
@@ -92,10 +93,14 @@
     connectionLabel.text = @"CONNECTED";
     
     if(!robotOnline) {
+        robotOnline = YES;
         /*Only start the blinking loop once*/
-        
         [self toggleLED];
-        
+    }
+    // Hide No Sphero Connected View
+    if( noSpheroViewShowing ) {
+        [noSpheroView dismissModalLayerViewControllerAnimated:YES];
+        noSpheroViewShowing = NO;
     }
     robotOnline = YES;
 }
@@ -117,16 +122,13 @@
     
     if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
         robotInitialized = YES;
-        
-        
-        
         [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
     }
     else {
         robotOnline = NO;
-        
         connectionLabel.text = @"CONNECTING";
-      
+        // Give the device a second to connect
+        [self performSelector:@selector(showNoSpheroConnectedView) withObject:nil afterDelay:1.0];
     }
     robotInitialized = YES;
 }
@@ -141,7 +143,8 @@
     if(robotOnline) {
         robotOnline = NO;
         //Put code to update UI for offline here
-        connectionLabel.text = @"CONNECTING";
+        connectionLabel.text = @"DISCONNECTED";
+        [self showNoSpheroConnectedView];
     }
 }
 
@@ -154,7 +157,41 @@
         ledON = YES;
         [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:1.0];
     }
-    [self performSelector:@selector(toggleLED) withObject:nil afterDelay:0.5];
+    // Only continue funciton if we are connect to robot
+    if( robotOnline ) [self performSelector:@selector(toggleLED) withObject:nil afterDelay:0.5];
 }
 
+-(void)showNoSpheroConnectedView {
+    if( robotOnline ) return;
+    //RobotUIKit resources like images and nib files stored in an external bundle and the path must be specified
+    NSString* rootpath = [[NSBundle mainBundle] bundlePath];
+    NSString* ruirespath = [NSBundle pathForResource:@"RobotUIKit" ofType:@"bundle" inDirectory:rootpath];
+    NSBundle* ruiBundle = [NSBundle bundleWithPath:ruirespath];
+    
+    NSString* nibName;
+    // Set up for iPhone/ipod
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        // Change if your app is portrait
+        nibName = @"RUINoSpheroConnectedViewController_Portrait";
+        //nibName = @"RUINoSpheroConnectedViewController_Landscape";
+    }
+    // Set up for iPad
+    else {
+        // Change if your app is portrait
+        nibName = @"RUINoSpheroConnectedViewController_iPad_Portrait";
+        // nibName = @"RUINoSpheroConnectedViewController_iPad_Landscape";
+    }
+        
+    noSpheroView = [[RUINoSpheroConnectedViewController alloc]
+                                                        initWithNibName:nibName
+                                                        bundle:ruiBundle];
+    [self presentModalLayerViewController:noSpheroView animated:YES];
+    noSpheroViewShowing = YES;
+}
+
+- (void)dealloc {
+    [noSpheroView release];
+    [connectionLabel release];
+    [super dealloc];
+}
 @end

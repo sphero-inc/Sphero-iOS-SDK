@@ -307,7 +307,7 @@
 					"-lsqlite3",
 				);
 				PRODUCT_NAME = MacroSample;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -335,7 +335,7 @@
 					"-lsqlite3",
 				);
 				PRODUCT_NAME = MacroSample;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

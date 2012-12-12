@@ -102,6 +102,9 @@
     // Restore stabilization (the control unit)
     [RKStabilizationCommand sendCommandWithState:RKStabilizationStateOn];
     
+    // Turn off Back LED
+    [RKBackLEDOutputCommand sendCommandWithBrightness:0.0f];
+    
     // Close the connection
     [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
     
@@ -119,6 +122,8 @@
         // Start streaming sensor data
         ////First turn off stabilization so the drive mechanism does not move.
         [RKStabilizationCommand sendCommandWithState:RKStabilizationStateOff];
+        // Turn on the Back LED for reference
+        [RKBackLEDOutputCommand sendCommandWithBrightness:1.0f];
         
         [self sendSetDataStreamingCommand];
         
@@ -192,10 +197,10 @@
         self.pitchValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.pitch];
         self.rollValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.roll];
         self.yawValueLabel.text = [NSString stringWithFormat:@"%.0f", attitudeData.yaw];
-        self.q0ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q0];
-        self.q1ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q1];
-        self.q2ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q2];
-        self.q3ValueLabel.text = [NSString stringWithFormat:@"%d", quaternionData.quaternions.q3];
+        self.q0ValueLabel.text = [NSString stringWithFormat:@"%.6f", quaternionData.quaternions.q0];
+        self.q1ValueLabel.text = [NSString stringWithFormat:@"%.6f", quaternionData.quaternions.q1];
+        self.q2ValueLabel.text = [NSString stringWithFormat:@"%.6f", quaternionData.quaternions.q2];
+        self.q3ValueLabel.text = [NSString stringWithFormat:@"%.6f", quaternionData.quaternions.q3];
     }
 }
 

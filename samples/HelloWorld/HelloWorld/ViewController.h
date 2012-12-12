@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RobotUIKit/RobotUIKit.h>
 
 @interface ViewController : UIViewController {
     BOOL ledON;
     BOOL robotOnline;
     BOOL robotInitialized;
+    BOOL noSpheroViewShowing;
     UILabel *connetionLabel;
+    
+    RUINoSpheroConnectedViewController* noSpheroView;
 }
 @property (nonatomic, retain) IBOutlet UILabel* connectionLabel;
 
