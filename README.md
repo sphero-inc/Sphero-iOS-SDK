@@ -8,9 +8,11 @@
 
 ---
 
- * [RobotKit Class Documentation](http://docs.gosphero.com/ios/robot_kit/hierarchy.html)
-
- * [RobotUIKit Class Documentation](http://docs.gosphero.com/ios/robot_ui_kit/hierarchy.html)
+ The class documentation is located in api/ as DocSets for use with Xcode. It can be installed by following the Sphero SDK installation steps below. If that does not work or you would like to install the DocSets manually you can simply copy them into the DocSets directory used by Xcode. It is located at
+ 
+        ~/Library/Developer/Shared/Documentation/DocSets/
+ 
+Once the DocSets have been copied, restart Xcode and they will then appear in the Documentation section of the Organizer.
 
 ---
 
