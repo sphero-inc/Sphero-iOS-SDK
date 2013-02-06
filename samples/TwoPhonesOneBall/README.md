@@ -1,6 +1,6 @@
 #Two Phones One Ball
 
-This sample code demonstartes using 2 different devices to share control of 1 Sphero using the 
+This sample code demonstrates using 2 different devices to share control of 1 Sphero using the 
 RKMultiplayer group of classes.  One of the devices should have a Sphero connected, this device
 is referred to as 'host' in the code.  The other device should launch the app without a Sphero
 connected and the two devices should find each other and connect once the app launches.  The two

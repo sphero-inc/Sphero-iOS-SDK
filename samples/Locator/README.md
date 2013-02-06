@@ -1,6 +1,6 @@
 ![logo](http://update.orbotix.com/developer/sphero-small.png)
 
-# LocatorSphero Locator is a firmware feature that provides real-time position and velocity information about the robot.  After setting up locator data streaming, you will receive async data packets containting Sphero's X,Y position, and X,Y velocity in cm and cm/s respectively.  
+# LocatorSphero Locator is a firmware feature that provides real-time position and velocity information about the robot.  After setting up locator data streaming, you will receive async data packets containing Sphero's X,Y position, and X,Y velocity in cm and cm/s respectively.  
 In this document we show on iOS how to receive the locator data, and use the Configure Locator command. 
 	Note: This command only works on Sphero's with Firmware 1.20 or greater
 ## Setting Data Streaming
@@ -13,7 +13,7 @@
 	                                                packetCount:count];
 For real time applications setting packetFrames > 1 is usually pointless since you are only interested in the most recent data.  However it is possible to obtain all the samples by setting, for instance, divisor=1 and packetFrames=21 (~20 packets/second each containing 21 sets of position/velocity data).
 ## Interpreting Locator DataThe locator treats the ground as a 2D plane and provides Sphero’s position in X,Y coordinates.  By default, roll heading 0, points down the positive Y-axis with positive X-axis to the right.  So, if you shake Sphero awake and send a roll command with heading 0, you will see the Sphero’s Y coordinate counting up.  If you then send a roll command with heading 90, Sphero’s X coordinate will count up.
-There are two API commands that affect the locator coordinate system.  Most obviously, the Configure Locator command allows you to set the position of Sphero and rotate the locator coordinate system with respect to roll headings.  For instance, if you would prefer that heading 0 corresponds to the positive X-axis (instead of Y) you could achieve this with the Configure Locator command by setting the yaw tare to 90.  This is acheived by calling this command in code:	[RKConfigureLocatorCommand sendCommandForFlag:flag newX:newX newY:newY newYaw:newYaw];
+There are two API commands that affect the locator coordinate system.  Most obviously, the Configure Locator command allows you to set the position of Sphero and rotate the locator coordinate system with respect to roll headings.  For instance, if you would prefer that heading 0 corresponds to the positive X-axis (instead of Y) you could achieve this with the Configure Locator command by setting the yaw tare to 90.  This is achieved by calling this command in code:	[RKConfigureLocatorCommand sendCommandForFlag:flag newX:newX newY:newY newYaw:newYaw];
 The parameters are as follows:
 1. **flag**: Determines whether calibrate commands automatically correct the yaw tare value. When 0, the positive Y axis coincides with heading 0 (assuming you do not change the yaw tare manually using this API command). When 1, a roll heading 0 will always increment Y, no matter if you calibrate or not.
 2. **newX**: Set the current X coordinates of Sphero on the ground plane in centimeters.

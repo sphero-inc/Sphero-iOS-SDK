@@ -182,6 +182,20 @@
 #import <RobotKit/RKAbortMacroResponse.h>
 #endif
 
+// Messages
+#if defined (SRCLIBRARY)
+#import <RobotKit/RKDeviceMessage.h>
+#import <RobotKit/RKDeviceMessageEncoder.h>
+#import <RobotKit/RKDeviceMessageDecoder.h>
+#import <RobotKit/RKDeviceNotification.h>
+#import <RobotKit/RKDeviceMessageCoding.h>
+#else
+#import <RobotKit/RKDeviceMessage.h>
+#import <RobotKit/RKDeviceMessageEncoder.h>
+#import <RobotKit/RKDeviceMessageDecoder.h>
+#import <RobotKit/RKDeviceNotification.h>
+#import <RobotKit/RKDeviceMessageCoding.h>
+#endif
 
 // orbBasic
 #if defined (SRCLIBRARY)

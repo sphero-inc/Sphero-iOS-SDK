@@ -100,8 +100,9 @@ Inheritance diagram for RKPollPacketTimesResponse:</div>
  <div class="center">
   <img src="interface_r_k_poll_packet_times_response.png" usemap="#RKPollPacketTimesResponse_map" alt=""/>
   <map id="RKPollPacketTimesResponse_map" name="RKPollPacketTimesResponse_map">
-<area href="interface_r_k_device_response.html" title="Abstract class that represents a response for a command." alt="RKDeviceResponse" shape="rect" coords="0,112,174,136"/>
-<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="0,56,174,80"/>
+<area href="interface_r_k_device_response.html" title="Abstract class that represents a response for a command." alt="RKDeviceResponse" shape="rect" coords="92,168,266,192"/>
+<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="92,112,266,136"/>
+<area href="protocol_r_k_device_message_coding-p.html" alt="&lt;RKDeviceMessageCoding&gt;" shape="rect" coords="184,56,358,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -128,6 +129,8 @@ Properties</h2></td></tr>
 <tr class="inherit_header properties_interface_r_k_device_message"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_r_k_device_message')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_r_k_device_message.html">RKDeviceMessage</a></td></tr>
 <tr class="memitem:a48d4b3d990f10951e5405b8361d59862 inherit properties_interface_r_k_device_message"><td class="memItemLeft" align="right" valign="top">NSTimeInterval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_r_k_device_message.html#a48d4b3d990f10951e5405b8361d59862">timeStamp</a></td></tr>
 <tr class="separator:a48d4b3d990f10951e5405b8361d59862 inherit properties_interface_r_k_device_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c648163638c751c73ea6611232b852 inherit properties_interface_r_k_device_message"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_r_k_device_message.html#a25c648163638c751c73ea6611232b852">robotId</a></td></tr>
+<tr class="separator:a25c648163638c751c73ea6611232b852 inherit properties_interface_r_k_device_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This response to <a class="el" href="interface_r_k_poll_packet_times_command.html" title="Command to request round trip time stamps for time syncing.">RKPollPacketTimesCommand</a> helps the Client application profile the transmission and processing latencies in Sphero so that a relative synchronization of timebases can be performed. This technique is based upon the scheme in the Network Time Protocol (RFC 5905) and allows the Client to reconcile time stamped messages from Sphero to its own time stamped events. In the following discussion, each time interval is from some reference within the device.</p>
@@ -244,7 +247,7 @@ The value delay represents the round-trip delay between the Client and Sphero: d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 7 2012 14:43:12 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 28 2013 13:44:19 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

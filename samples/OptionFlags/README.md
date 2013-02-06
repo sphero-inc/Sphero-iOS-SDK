@@ -1,4 +1,4 @@
-![logo](http://update.orbotix.com/developer/sphero-small.png)
+positive![logo](http://update.orbotix.com/developer/sphero-small.png)
 
 # Option Flags
 
@@ -31,7 +31,7 @@ To get the current state of the option flags, you must register a response callb
 	    robotOnline = YES;
 	}	
 	
-Now you will be notified by the handleResponse method when you receive a response from Sphero.  Retreive the option flags from the following callback:
+Now you will be notified by the handleResponse method when you receive a response from Sphero.  Retrieve the option flags from the following callback:
 
 	-(void)handleResponse:(RKDeviceResponse *)response {
 	

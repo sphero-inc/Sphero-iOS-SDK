@@ -10,9 +10,6 @@
 #import "RobotKit/RobotKit.h"
 #import "RobotUIKit/RobotUIKit.h"
 
-#define TOTAL_PACKET_COUNT 200
-#define PACKET_THRESHOLD 50
-
 @implementation ViewController
 
 @synthesize textFieldNewX;
@@ -122,13 +119,8 @@
     uint16_t packetFrames = 1;
     
     // Count is the number of async data packets Sphero will send you before
-    // it stops.  You want to register for a finite count and then send the command
-    // again once you approach the limit.  Otherwise data streaming may be left
-    // on when your app crashes, putting Sphero in a bad state.
-    uint8_t count = TOTAL_PACKET_COUNT;
-    
-    // Reset finite packet counter
-    packetCounter = 0;
+    // it stops.  A count of 0, implements infinite data streaming at an SDK level.
+    uint8_t count = 0;
     
     // Register for Locator X,Y position, and X,Y velocity
     RKDataStreamingMask sensorMask = RKDataStreamingMaskLocatorAll;
@@ -147,12 +139,6 @@
     // data streaming packets and sleep notification packets. We are going to ingnore the sleep
     // notifications.
     if ([asyncData isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
-        
-        // Check to see if we need to request more packets
-        packetCounter++;
-        if( packetCounter > (TOTAL_PACKET_COUNT-PACKET_THRESHOLD)) {
-            [self startLocatorStreaming];
-        }
         
         // Grab specific sensor data objects from the main sensor object
         RKDeviceSensorsAsyncData *sensorsAsyncData = (RKDeviceSensorsAsyncData *)asyncData;

@@ -9,6 +9,8 @@
 /*! @file */
 
 #import <Foundation/Foundation.h>
+#import <RobotKit/RKDeviceMessageCoding.h>
+
 
 /*!
  * @brief A structure that represents data values from a 3 axis sensor.
@@ -56,7 +58,7 @@ typedef struct RK3AxisSensorState RK3AxisSensorState;
  * Provides a base class for various sensor data sub classes. The sensor data is 
  * provided from samples returned from data streaming.
  */
-@interface RKSensorData : NSObject {
+@interface RKSensorData : NSObject <RKDeviceMessageCoding> {
     NSTimeInterval  timeStamp;
 }
 

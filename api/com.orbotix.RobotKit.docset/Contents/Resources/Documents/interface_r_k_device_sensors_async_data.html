@@ -99,8 +99,9 @@ Inheritance diagram for RKDeviceSensorsAsyncData:</div>
  <div class="center">
   <img src="interface_r_k_device_sensors_async_data.png" usemap="#RKDeviceSensorsAsyncData_map" alt=""/>
   <map id="RKDeviceSensorsAsyncData_map" name="RKDeviceSensorsAsyncData_map">
-<area href="interface_r_k_device_async_data.html" alt="RKDeviceAsyncData" shape="rect" coords="0,112,176,136"/>
-<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="0,56,176,80"/>
+<area href="interface_r_k_device_async_data.html" alt="RKDeviceAsyncData" shape="rect" coords="93,168,269,192"/>
+<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="93,112,269,136"/>
+<area href="protocol_r_k_device_message_coding-p.html" alt="&lt;RKDeviceMessageCoding&gt;" shape="rect" coords="186,56,362,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -112,6 +113,12 @@ Properties</h2></td></tr>
 <tr class="separator:a28641c9c82d9ef1a58283a929bdae3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad11a43534a43712d1214e5bd97aefa33"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_r_k_device_sensors_async_data.html#ad11a43534a43712d1214e5bd97aefa33">dataFrames</a></td></tr>
 <tr class="separator:ad11a43534a43712d1214e5bd97aefa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_interface_r_k_device_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_r_k_device_message')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="interface_r_k_device_message.html">RKDeviceMessage</a></td></tr>
+<tr class="memitem:a25b1bea85d1a24e7d93d0320178ba7f0 inherit pub_methods_interface_r_k_device_message"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_r_k_device_message.html#a25b1bea85d1a24e7d93d0320178ba7f0">initWithRobotId:</a></td></tr>
+<tr class="separator:a25b1bea85d1a24e7d93d0320178ba7f0 inherit pub_methods_interface_r_k_device_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Objects of this class are generated asynchronously from data sent by Sphero and are distributed to observers who register with the <a class="el" href="interface_r_k_device_messenger.html" title="Singleton to provide a messaging framework for command and responses.">RKDeviceMessenger</a> singleton. The data streaming is inititated using <a class="el" href="interface_r_k_set_data_streaming_command.html" title="Class that encapsulates a set data streaming command.">RKSetDataStreamingCommand</a> using a mask to specify the sensor data to send, the rate in which to send data, and the number of samples to send in each packet. This class provides this data in an array of RKDeviceSensorData objects for the sensor data requested.</p>
@@ -188,7 +195,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 7 2012 14:43:12 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 28 2013 13:44:18 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

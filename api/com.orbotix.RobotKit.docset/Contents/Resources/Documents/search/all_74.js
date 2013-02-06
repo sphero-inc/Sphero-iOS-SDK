@@ -9,5 +9,6 @@ var searchData=
   ['timesincelastcharge',['timeSinceLastCharge',['../interface_r_k_get_power_state_response.html#ac1a1e519f624f325f6673a9c5eae1777',1,'RKGetPowerStateResponse']]],
   ['timestamp',['timeStamp',['../interface_r_k_device_message.html#a48d4b3d990f10951e5405b8361d59862',1,'RKDeviceMessage::timeStamp()'],['../interface_r_k_sensor_data.html#ab7cb2abfdf274dd3ea7e04661cfc0b24',1,'RKSensorData::timeStamp()']]],
   ['turnoff',['turnOff',['../interface_r_k_set_power_notification_command.html#af85672ae7a826e17958c09503c8983af',1,'RKSetPowerNotificationCommand']]],
-  ['turnon',['turnOn',['../interface_r_k_set_power_notification_command.html#a3b350a89bdc40aa7fffb7bf201bdd3ae',1,'RKSetPowerNotificationCommand']]]
+  ['turnon',['turnOn',['../interface_r_k_set_power_notification_command.html#a3b350a89bdc40aa7fffb7bf201bdd3ae',1,'RKSetPowerNotificationCommand']]],
+  ['type',['type',['../interface_r_k_device_notification.html#a5ddd899b5088a8c6513daa8d74c8ca1f',1,'RKDeviceNotification']]]
 ];

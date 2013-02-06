@@ -97,8 +97,9 @@ Inheritance diagram for RKGetUserRGBLEDColorResponse:</div>
  <div class="center">
   <img src="interface_r_k_get_user_r_g_b_l_e_d_color_response.png" usemap="#RKGetUserRGBLEDColorResponse_map" alt=""/>
   <map id="RKGetUserRGBLEDColorResponse_map" name="RKGetUserRGBLEDColorResponse_map">
-<area href="interface_r_k_device_response.html" title="Abstract class that represents a response for a command." alt="RKDeviceResponse" shape="rect" coords="0,112,208,136"/>
-<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="0,56,208,80"/>
+<area href="interface_r_k_device_response.html" title="Abstract class that represents a response for a command." alt="RKDeviceResponse" shape="rect" coords="109,168,317,192"/>
+<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="109,112,317,136"/>
+<area href="protocol_r_k_device_message_coding-p.html" alt="&lt;RKDeviceMessageCoding&gt;" shape="rect" coords="218,56,426,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -124,6 +125,14 @@ Properties</h2></td></tr>
 <tr class="inherit_header properties_interface_r_k_device_message"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_r_k_device_message')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_r_k_device_message.html">RKDeviceMessage</a></td></tr>
 <tr class="memitem:a48d4b3d990f10951e5405b8361d59862 inherit properties_interface_r_k_device_message"><td class="memItemLeft" align="right" valign="top">NSTimeInterval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_r_k_device_message.html#a48d4b3d990f10951e5405b8361d59862">timeStamp</a></td></tr>
 <tr class="separator:a48d4b3d990f10951e5405b8361d59862 inherit properties_interface_r_k_device_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c648163638c751c73ea6611232b852 inherit properties_interface_r_k_device_message"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_r_k_device_message.html#a25c648163638c751c73ea6611232b852">robotId</a></td></tr>
+<tr class="separator:a25c648163638c751c73ea6611232b852 inherit properties_interface_r_k_device_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_interface_r_k_device_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_r_k_device_message')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="interface_r_k_device_message.html">RKDeviceMessage</a></td></tr>
+<tr class="memitem:a25b1bea85d1a24e7d93d0320178ba7f0 inherit pub_methods_interface_r_k_device_message"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_r_k_device_message.html#a25b1bea85d1a24e7d93d0320178ba7f0">initWithRobotId:</a></td></tr>
+<tr class="separator:a25b1bea85d1a24e7d93d0320178ba7f0 inherit pub_methods_interface_r_k_device_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Response that contains the user's prefered RGB color. These values can be set using the <a class="el" href="interface_r_k_r_g_b_l_e_d_output_command.html" title="Class that encapsulates a set RGB LED output command.">RKRGBLEDOutputCommand</a> by setting the user default color to true.</p>
@@ -200,7 +209,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 7 2012 14:43:12 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 28 2013 13:44:18 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

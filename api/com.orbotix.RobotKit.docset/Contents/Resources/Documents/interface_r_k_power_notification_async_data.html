@@ -99,8 +99,9 @@ Inheritance diagram for RKPowerNotificationAsyncData:</div>
  <div class="center">
   <img src="interface_r_k_power_notification_async_data.png" usemap="#RKPowerNotificationAsyncData_map" alt=""/>
   <map id="RKPowerNotificationAsyncData_map" name="RKPowerNotificationAsyncData_map">
-<area href="interface_r_k_device_async_data.html" alt="RKDeviceAsyncData" shape="rect" coords="0,112,189,136"/>
-<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="0,56,189,80"/>
+<area href="interface_r_k_device_async_data.html" alt="RKDeviceAsyncData" shape="rect" coords="99,168,288,192"/>
+<area href="interface_r_k_device_message.html" title="A base clase for object that messaged to or from a robot." alt="RKDeviceMessage" shape="rect" coords="99,112,288,136"/>
+<area href="protocol_r_k_device_message_coding-p.html" alt="&lt;RKDeviceMessageCoding&gt;" shape="rect" coords="199,56,388,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -108,6 +109,12 @@ Inheritance diagram for RKPowerNotificationAsyncData:</div>
 Properties</h2></td></tr>
 <tr class="memitem:ac8aa686daddc617b10be93332c24988d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_k_types_8h.html#a80c468ec9f445fd8d53ad87c5a178d1b">RKBatteryPowerState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_r_k_power_notification_async_data.html#ac8aa686daddc617b10be93332c24988d">state</a></td></tr>
 <tr class="separator:ac8aa686daddc617b10be93332c24988d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_interface_r_k_device_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_r_k_device_message')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="interface_r_k_device_message.html">RKDeviceMessage</a></td></tr>
+<tr class="memitem:a25b1bea85d1a24e7d93d0320178ba7f0 inherit pub_methods_interface_r_k_device_message"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_r_k_device_message.html#a25b1bea85d1a24e7d93d0320178ba7f0">initWithRobotId:</a></td></tr>
+<tr class="separator:a25b1bea85d1a24e7d93d0320178ba7f0 inherit pub_methods_interface_r_k_device_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>To enable these notification, use the <a class="el" href="interface_r_k_set_power_notification_command.html" title="Class used for sending set power notification commands.">RKSetPowerNotificationCommand</a> to initiate the notifications. The robot will send the notifications at intervals of 10 seconds with the battery state. The notification is received in client code by registering as an observer for data streaming events.</p>
@@ -142,7 +149,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 7 2012 14:43:12 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 28 2013 13:44:19 for RobotKit API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

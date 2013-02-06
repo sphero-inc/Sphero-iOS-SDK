@@ -12,7 +12,7 @@
 @interface ViewController : UIViewController {
     BOOL ledON;
     BOOL robotOnline;
-    int packetCounter;
+
     RUICalibrateGestureHandler *calibrateHandler;
 }
 

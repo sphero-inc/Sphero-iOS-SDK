@@ -6,13 +6,13 @@
 ## Detection ThresholdsThe X and Y axis impact thresholds are controlled independently. Each axis has two threshold values, the power of an impact, and a bias based on the speed of the ball. Xt is the threshold for the X axis at a speed of zero. The Xspd bias is added to Xt and becomes the threshold at the maximum speed.
 Typical values are in the 40-100 range for Xt and Yt.  Typical values for the speed thresholds Xspd and Yspd are 50-100.  
 
-These values are dependent on the types of collisions you want to detect.  For example, if you only want to detect serious impacts when the ball hits a wall you should set these paramers:
+These values are dependent on the types of collisions you want to detect.  For example, if you only want to detect serious impacts when the ball hits a wall you should set these parameters:
 
 	Wall Hits: Xt=200, Xsp=0, Yt=125, Ysp=0, deadTime=100 (1 second)
 	
 These values suggest only pay attention to a power threshold over 125 in the y-direction. And a x threshold over 200 is too high to occur while driving.  The deadTime means that after the ball detects a collision, it will delay any more collisions for 1 second after.  This is to avoid multiple collision async packets from one collision.
 
-Ball to ball collisions is a little bit tougher to determine, since Sphero may trigger collisions just driving aorund. However, these parameters will get you fairly accurate collisions at any point on the ball.
+Ball to ball collisions is a little bit tougher to determine, since Sphero may trigger collisions just driving around. However, these parameters will get you fairly accurate collisions at any point on the ball.
 
 	Ball to Ball Hits: Xt=40, Xsp=60, Yt=40, Ysp=60, deadTime=40 (400 ms)
 	

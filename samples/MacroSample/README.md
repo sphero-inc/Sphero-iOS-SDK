@@ -2,7 +2,7 @@
 
 # MacrosObjectiveC
 
-This sample code demonstrates how to progromatticaly write a macros.
+This sample code demonstrates how to programmatically write a macros.
 
 
 To create a macro,  
@@ -10,7 +10,7 @@ To create a macro,
 
         RKMacroObject *macro = [RKMacroObject new];        
 
-This call is implemented to create an object obtainting macro commands. 
+This call is implemented to create an object obtaining macro commands. 
 
 To add new commands to the object:
 
@@ -70,14 +70,14 @@ Roll Commands: Give a speed to travel, a direction in an 360 degree path, and a 
 Colors Fade during action (Circle)
 </br>
 
-Slew(Fade) is a parrelell command
+Slew(Fade) is a parallel abruptly command
 </br>
 
 When Slew action is performed, either have it run 
-parrallel to a roll command or a delay.
+parallel to a roll command or a delay.
 </br>
 
-If the user was to include a blink color it would then end the slew abrumtly.
+If the user was to include a blink color it would then end the slew abruptly.
 
 	-(IBAction)MacroColor:(id)sender{
     //Create a new macro object to send to Sphero
@@ -98,7 +98,7 @@ If the user was to include a blink color it would then end the slew abrumtly.
     [macro addCommand:[RKMCDelay commandWithDelay:robotDelay]];
     //Loop End
     [macro addCommand:[RKMCLoopEnd command]];
-    //Send full command dowm to Sphero to play
+    //Send full command down to Sphero to play
     [macro playMacro];
     //Release Macro
     [macro release];
@@ -145,11 +145,11 @@ Example: 4 loops makes a square
 </br>
 Figure 8 repeat
 </br>
-RotateOverTime is a parrelell command.
+RotateOverTime is a parallel command.
 </br>
-When a rotation action is performed, either have it run parrallel to a color command or a delay.
+When a rotation action is performed, either have it run parallel to a color command or a delay.
 </br>
-If the user was to include a drive command it would then end the rotation abrumtly.
+If the user was to include a drive command it would then end the rotation abruptly.
 
 
 	-(IBAction)MacroFigureEight:(id)sender{

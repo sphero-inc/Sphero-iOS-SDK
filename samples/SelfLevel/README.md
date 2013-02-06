@@ -14,7 +14,7 @@ A basic self level command can be performed by the developer by calling
 
 	[RKSelfLevelCommand sendCommand];
 	
-This will make you Sphero attempt to level itself.  You can also provide the RKSelfLevelCommand with settings to customize the self level command to perform perfect for your application.  The settings are as follows:
+This will make your Sphero attempt to level itself.  You can also provide the RKSelfLevelCommand with settings to customize the self level command to perform perfect for your application.  The settings are as follows:
 
 1. **Angle Limit**: The amount of degrees the roll and pitch angles must be within to be considered level.
 2. **Accuracy Time**: The length of time in centiseconds the roll and pitch angles must be within the Angle Limit before it is considered level. 
@@ -52,7 +52,7 @@ When the self level command completes, either successfully or unsuccessfully, it
 	////Register for asynchronous messages 
     [[RKDeviceMessenger sharedMessenger] addDataStreamingObserver:self selector:@selector(handleAsyncData:)];
    
-Withing the handleAsyncData callback we print out the async message status code in readable text to a label with the following code:
+Within the handleAsyncData callback we print out the async message status code in readable text to a label with the following code:
 
 	- (void)handleAsyncData:(RKDeviceAsyncData *)asyncData
 	{

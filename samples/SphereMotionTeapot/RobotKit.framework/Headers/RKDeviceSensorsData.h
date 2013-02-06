@@ -49,6 +49,4 @@
 /*! Property to a RKQuaternion object */
 @property (nonatomic, readonly) RKQuaternionData      *quaternionData;
 
-
-
 @end

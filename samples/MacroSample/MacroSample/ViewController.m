@@ -34,6 +34,8 @@
 
     /*Only start the blinking loop when the view loads*/
     robotOnline = NO;
+    
+    [self updateSliderValues];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -81,22 +83,25 @@
 #pragma mark-Sliders
 //When one Slider Updates, it updates all other sliders
 -(IBAction) sliderChanged:(id) sender{
-    
+    [self updateSliderValues];
+}
+
+-(void)updateSliderValues {
     //Speed Slider
     NSString *speedText=[[NSString alloc]
-                        initWithFormat:@"%.f%@",(speedSlider.value*10),@"%"];
+                         initWithFormat:@"%.f%@",(speedSlider.value*10),@"%"];
 	speedLabel.text = speedText;
     robotSpeed = ([speedText floatValue]* 0.1);
-
+    
     //Delay Slider
     NSString *delayText =[[NSString alloc]
-                        initWithFormat:@"%.f%@",delaySlider.value,@" ms"];
+                          initWithFormat:@"%.f%@",delaySlider.value,@" ms"];
 	delayLabel.text = delayText;
     robotDelay = [delayText floatValue];
     
     //Loop Slider
     NSString *loopText =[[NSString alloc]
-                        initWithFormat:@"%.f",loopSlider.value];
+                         initWithFormat:@"%.f",loopSlider.value];
 	loopLabel.text = loopText;
     robotLoop = [loopText floatValue];
     
@@ -104,7 +109,6 @@
     [speedText release];
     [delayText release];
 }
-
 
 #pragma mark-Macros
 //Macros
@@ -163,7 +167,7 @@
 //Colors Fade during action (Circle)
 //Slew(Fade) is a parrelell command
 //When Slew action is performed, either have it run parrallel to a roll command or a delay.
-//If the user was to include a blink color it would then end the slew abrumtly.
+//If the user was to include a blink color it would then end the slew abrutly.
 -(IBAction)MacroColor:(id)sender{
     //Create a new macro object to send to Sphero
     RKMacroObject *macro = [RKMacroObject new];
@@ -223,8 +227,8 @@
 }
 
 //Figure 8 repeat
-//RotateOverTime is a parrelell command
-//When a rotation action is performed, either have it run parrallel to a color command or a delay.
+//RotateOverTime is a parallel command
+//When a rotation action is performed, either have it run parallel to a color command or a delay.
 //If the user was to include a drive command it would then end the rotation abrumtly.
 -(IBAction)MacroFigureEight:(id)sender{
     //Start with verb!!

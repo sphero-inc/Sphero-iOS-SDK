@@ -1,6 +1,6 @@
 ![logo](http://update.orbotix.com/developer/sphero-small.png)
 
-# Sensor StreamingSphero supports asynchronous data streaming of certain control system and sensor parameters.  This is great for using Sphero as a controller, or for retreiving data about its environment.  In this document we show on Android how to setup and receive asynchronous data from Sphero.
+# Sensor StreamingSphero supports asynchronous data streaming of certain control system and sensor parameters.  This is great for using Sphero as a controller, or for retrieving data about its environment.  In this document we show on Android how to setup and receive asynchronous data from Sphero.
 
 ## Available Sensor Parameters
 As of Firmware 1.20, Sphero can stream the following values: 1. **Accelerometer** (X, Y, Z) 2. **GyroScope** (X, Y, Z)
@@ -9,7 +9,7 @@
  5. **Quaternions** - *New to Firmware 1.20*
  6. **Location Data** (X, Y, Vx, Vy) - *New to Firmware 1.20*## Accelerometer
 
-An accelerometer measures the force of gravity in 3-dimensions (x,y,z).  A few uses are for determing shake gestures and collisions. 
+An accelerometer measures the force of gravity in 3-dimensions (x,y,z).  A few uses are for determining shake gestures and collisions. 
 
 ![android.jpg](https://github.com/orbotix/Sphero-Android-SDK/raw/master/assets/accelerometer.png)
 
@@ -22,7 +22,7 @@ A gyroscope is a device for measuring or maintaining orientation, based on the p
 The IMU uses the accelerometer and gyroscope on Sphero to determine values for Roll, Pitch, and Yaw.  These values (in degrees) can be used to determine the orientation of Sphero.
 ![android.jpg](https://github.com/orbotix/Sphero-Android-SDK/raw/master/assets/IMU.png)## Back EMF
 
-Back electromotive force (abbreviated Back EMF) is the voltage, or electromotive force, that pushes against the current which induces it.  Before we created the Locator, this could be used to determine how fast Sphero was traveling. It can still be used to determing what is going on with the motors.
+Back electromotive force (abbreviated Back EMF) is the voltage, or electromotive force, that pushes against the current which induces it.  Before we created the Locator, this could be used to determine how fast Sphero was traveling. It can still be used to determining what is going on with the motors.
 
 ## Quaternions
 
@@ -72,7 +72,7 @@ The locator returns values for the x,y position of Sphero on the floor, and the 
                                                     packetCount:count];
 
 	}
-    For real time applications setting packetFrames > 1 is usually pointless since you are only interested in the most recent data.  However it is possible to obtain all the samples by setting, for instance, divisor=1 and packetFrames=21 (~20 packets/second each containing 21 sets of data.It is important to note that we are only requesting 200 sets of data from this Set Data Streaming Command.  Therefore, you will have to request after you get close to 200.  This is done to solve the problem of requesting infinite data putting the Sphero robot in a bad state if your app crashes and did not disconnect properlly.   
+    For real time applications setting packetFrames > 1 is usually pointless since you are only interested in the most recent data.  However it is possible to obtain all the samples by setting, for instance, divisor=1 and packetFrames=21 (~20 packets/second each containing 21 sets of data.It is important to note that we are only requesting 200 sets of data from this Set Data Streaming Command.  Therefore, you will have to request after you get close to 200.  This is done to solve the problem of requesting infinite data putting the Sphero robot in a bad state if your app crashes and did not disconnect properly.   
 ## Receiving Async Data Packets
 
 You will receive an `onDataReceived` callback at the frequency in which you requested data streaming.  The callback will contain `DeviceAsyncData` with a certain number of frames (also determined when requesting data).  The data will contain all the variables you requested as well.
@@ -82,7 +82,7 @@ In this example, you have access to the Attitude (IMU) data and the filtered acc
 	- (void)handleAsyncData:(RKDeviceAsyncData *)asyncData
 	{
     	// Need to check which type of async data is received as this method will be called for
-    	// data streaming packets and sleep notification packets. We are going to ingnore the sleep
+    	// data streaming packets and sleep notification packets. We are going to ignore the sleep
     	// notifications.
     	if ([asyncData isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
         

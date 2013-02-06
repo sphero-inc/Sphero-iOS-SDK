@@ -9,9 +9,6 @@
 #import "ViewController.h"
 #import "RobotKit/RobotKit.h"
 
-#define TOTAL_PACKET_COUNT 200
-#define PACKET_COUNT_THRESHOLD 50
-
 @implementation ViewController
 
 @synthesize xValueLabel;
@@ -119,6 +116,8 @@
 - (void)handleRobotOnline {
     /*The robot is now online, we can begin sending commands*/
     if(!robotOnline) {
+        
+        [RKSetDataStreamingCommand sendCommandStopStreaming];
         // Start streaming sensor data
         ////First turn off stabilization so the drive mechanism does not move.
         [RKStabilizationCommand sendCommandWithState:RKStabilizationStateOff];
@@ -154,13 +153,8 @@
     uint16_t packetFrames = 1;
     
     // Count is the number of async data packets Sphero will send you before
-    // it stops.  You want to register for a finite count and then send the command
-    // again once you approach the limit.  Otherwise data streaming may be left
-    // on when your app crashes, putting Sphero in a bad state.
-    uint8_t count = TOTAL_PACKET_COUNT;
-    
-    // Reset finite packet counter
-    packetCounter = 0;
+    // it stops.  Set a count of 0 for infinite data streaming.
+    uint8_t count = 0;
     
     // Send command to Sphero
     [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:divisor
@@ -176,12 +170,6 @@
     // data streaming packets and sleep notification packets. We are going to ingnore the sleep
     // notifications.
     if ([asyncData isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
-        
-        // If we are getting close to packet limit, request more
-        packetCounter++;
-        if( packetCounter > (TOTAL_PACKET_COUNT-PACKET_COUNT_THRESHOLD)) {
-            [self sendSetDataStreamingCommand];
-        }
         
         // Received sensor data, so display it to the user.
         RKDeviceSensorsAsyncData *sensorsAsyncData = (RKDeviceSensorsAsyncData *)asyncData;

@@ -14,6 +14,7 @@ var searchData=
   ['rightspeed',['rightSpeed',['../interface_r_k_m_c_raw_motor.html#a8bc00f0a5fa4664f7eceed3a64c78015',1,'RKMCRawMotor']]],
   ['robot',['robot',['../interface_r_k_device_connection.html#abc02df1b93543bd2ed9b23262cf84abe',1,'RKDeviceConnection::robot()'],['../interface_r_k_drive_control.html#a5351ea4030aa1459a9467db297959773',1,'RKDriveControl::robot()'],['../interface_r_k_robot_control.html#afd30af1978e8338c5a32494d174922d4',1,'RKRobotControl::robot()'],['../interface_r_k_robot_provider.html#ad2522cd3a3e4736679b15551d248de19',1,'RKRobotProvider::robot()'],['../interface_r_k_remote_player.html#a3591aa0d5abe21e42862548b9af9cc30',1,'RKRemotePlayer::robot()']]],
   ['robotcontrol',['robotControl',['../interface_r_k_drive_control.html#a6d7952ae4f02f67c1243d0fd10550350',1,'RKDriveControl::robotControl()'],['../interface_r_k_robot_provider.html#aa8bcb7ac9352f9cae6bea4b3dcbb54c7',1,'RKRobotProvider::robotControl()']]],
+  ['robotid',['robotId',['../interface_r_k_device_message.html#a25c648163638c751c73ea6611232b852',1,'RKDeviceMessage']]],
   ['robotprovider',['robotProvider',['../interface_r_k_drive_control.html#aa20fc157feeb33d44ac592f8d95a743d',1,'RKDriveControl']]],
   ['robotreceivetime',['robotReceiveTime',['../interface_r_k_poll_packet_times_response.html#a27f6b76c79fe1e862a59c3650840e628',1,'RKPollPacketTimesResponse']]],
   ['robots',['robots',['../interface_r_k_robot_provider.html#a0c599a6365f979747afb8809595fd940',1,'RKRobotProvider']]],

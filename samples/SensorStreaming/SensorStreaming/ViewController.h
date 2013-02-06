@@ -12,7 +12,6 @@
 
 @interface ViewController : UIViewController {
     BOOL robotOnline;
-    int  packetCounter;
     
     UILabel *xValueLabel;
     UILabel *yValueLabel;

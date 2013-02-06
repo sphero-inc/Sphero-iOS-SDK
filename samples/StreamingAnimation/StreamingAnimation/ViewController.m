@@ -10,8 +10,6 @@
 #import "RobotKit/RobotKit.h"
 
 #define DEGREES_TO_RADIANS(angle) (angle / 180.0 * M_PI)
-#define TOTAL_PACKET_COUNT 200
-#define PACKET_COUNT_THRESHOLD 50
 
 @implementation ViewController
 @synthesize randomMain, sphero, targetSpheroLoc;
@@ -140,13 +138,8 @@
     uint16_t packetFrames = 1;
     
     // Count is the number of async data packets Sphero will send you before
-    // it stops.  You want to register for a finite count and then send the command
-    // again once you approach the limit.  Otherwise data streaming may be left
-    // on when your app crashes, putting Sphero in a bad state.
-    uint8_t count = TOTAL_PACKET_COUNT;
-    
-    // Reset finite packet counter
-    packetCounter = 0;
+    // it stops. 0 will register for infinite data streaming.
+    uint8_t count = 0;
     
     // Send command to Sphero
     [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:divisor
@@ -175,12 +168,6 @@
     
     if ([data isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
         RKDeviceSensorsAsyncData *sensors_data = (RKDeviceSensorsAsyncData *)data;
-        
-        // If we are getting close to packet limit, request more
-        packetCounter++;
-        if( packetCounter > (TOTAL_PACKET_COUNT-PACKET_COUNT_THRESHOLD)) {
-            [self sendSetDataStreamingCommand];
-        }
         
         for (RKDeviceSensorsData *data in sensors_data.dataFrames) {
             RKAccelerometerData *accelerometer_data = data.accelerometerData;

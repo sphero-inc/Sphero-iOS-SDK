@@ -12,7 +12,6 @@
 @interface ViewController : UIViewController <UIAlertViewDelegate>{
 
     BOOL robotOnline;
-    int packetCounter;
     
     //Create labels 
     IBOutlet UILabel* yawLabel;
