@@ -70,9 +70,9 @@ There are two ways to integrate the Sphero SDK into your project. You can start 
 
 ![installspheroxcode4templateforios.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image01.png)
 
-This Xcode 4 Template Installer is designed to move the Sphero iOS SDK into the correct directory and integrate a default Sphero Application into the New Project menu in Xcode. It is important to note that this Installer only works with Xcode 4 and above. If you are the type that neglects the importance of upgrading your development environment, (guilty!) then you will have to manually add the Sphero iOS RobotKit and RobotUIKit into your Xcode project.
+This Xcode 4 Template Installer is designed to move the Sphero iOS SDK into the correct directory and integrate a default Sphero Application into the New Project menu in Xcode. It is important to note that this Installer only works with Xcode 4 and above.
 
- - After the Sphero Xcode 4 template is installed, Open Xcode 4. 
+ - After the Sphero Xcode 4 template is installed, Open Xcode. 
 
  - In Xcode navigate to File > New > New Project . . .
 
@@ -185,7 +185,8 @@ Change Build Settings -> Linking -> Other Linker Flags
 ## Using the Sphero iOS SDK
 
 
-If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
+If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.
+This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
 
 **For example**, try changing the following command in `ViewController.m` from
 
