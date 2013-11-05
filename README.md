@@ -73,6 +73,9 @@ Change Build Settings -> Linking -> Other Linker Flags
 		-ObjC
 		-lsqlite3
 
+**!NOTICE: You need to add the external accessory protocol string to your Info.plist.:** 
+Edit the Info.plist for your application target and add an entry for key "Supported external accessory protocols" which will create an array. Add "com.orbotix.robotprotocol" as a String item in the array.
+
  The HelloSphero example has all the necessary code needed to create and maintain a connection to Sphero, and can be used as a guide in best practices.  In general you will need to:
 
  - You should define two methods in your `.h`, One to Setup the connection to Sphero and one to maintain the connection.
@@ -139,6 +142,7 @@ Change Build Settings -> Linking -> Other Linker Flags
             [[NSNotificationCenter defaultCenter] removeObserver:self name:RKDeviceConnectionOnlineNotification object:nil];
             [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:0.0];
             [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
+            robotOnline = NO;
         }
 
  You are now ready to start controlling and receiving information from your Sphero, simply add the following to change the LED Color of Sphero to red:
@@ -150,7 +154,8 @@ Change Build Settings -> Linking -> Other Linker Flags
 ## Using the Sphero iOS SDK
 
 
-If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
+If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.
+This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
 
 **For example**, try changing the following command in `ViewController.m` from
 
