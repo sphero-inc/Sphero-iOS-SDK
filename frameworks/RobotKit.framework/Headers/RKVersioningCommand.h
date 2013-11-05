@@ -13,6 +13,7 @@
 
 @class RKRobot;
 
+
 /*!
  * @brief Class that encapsulates a request for version information from the robot.
  *

@@ -17,7 +17,7 @@
  *  rotation -32,767-32,767
  */
 @interface RKMCRotateOverTimeSD1 : RKMacroCommand {
-    short rotation;
+   short rotation;
 }
 
 /*! The number of degrees the ball should rotate. -32,767-32,767 allowed */
@@ -27,6 +27,6 @@
  *  @param rotation The number of degrees the robot should rotate
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRotateOverTimeSD1*)commandWithRotation:(short)rotation;
++ (RKMCRotateOverTimeSD1 *) commandWithRotation:(short) rotation;
 
 @end

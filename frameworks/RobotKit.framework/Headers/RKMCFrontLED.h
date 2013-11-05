@@ -17,8 +17,8 @@
  *  delay 0-255
  */
 @interface RKMCFrontLED : RKMacroCommand {
-    float intensity;
-    int delay;
+   float intensity;
+   int delay;
 }
 
 /*! The intensity the back LED will be lit at. 0.0-1.0 allowed. */
@@ -32,6 +32,6 @@
  *  @param delay The delay between this command and the next command.  0-255 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCFrontLED*)commandWithIntensity:(float)intensity delay:(int)delay;
++ (RKMCFrontLED *) commandWithIntensity:(float) intensity delay:(int) delay;
 
 @end

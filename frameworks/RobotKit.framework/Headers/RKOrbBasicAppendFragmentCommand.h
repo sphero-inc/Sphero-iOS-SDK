@@ -18,15 +18,15 @@
  *  and is terminated with a <CR>.
  */
 @interface RKOrbBasicAppendFragmentCommand : RKDeviceCommand {
-    @private
-    RKOrbBasicStorageType storageType;
-    NSData *fragment;
+@private
+   RKOrbBasicStorageType storageType;
+   NSData *fragment;
 }
 
 /* Convenience method to send a code fragment to the ball */
-+(void)sendCommandWithStorageType:(RKOrbBasicStorageType)storageType fragment:(NSData*)fragment;
++ (void) sendCommandWithStorageType:(RKOrbBasicStorageType) storageType fragment:(NSData *) fragment;
 
 /* Initialize a command fragment with code */
--(id)initWithStorageType:(RKOrbBasicStorageType)type fragment:(NSData*)frag;
+- (id) initWithStorageType:(RKOrbBasicStorageType) type fragment:(NSData *) frag;
 
 @end

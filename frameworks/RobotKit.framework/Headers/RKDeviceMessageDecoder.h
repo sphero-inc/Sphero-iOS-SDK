@@ -9,26 +9,26 @@
 #import <Foundation/Foundation.h>
 
 @interface RKDeviceMessageDecoder : NSObject {
-    @private
-    NSDictionary *keyedRepresentation;
-    id rootObject;
+@private
+   NSDictionary *keyedRepresentation;
+   id rootObject;
 }
 
-@property (nonatomic, readonly) id rootObject;
+@property ( nonatomic, readonly ) id rootObject;
 
-+ (RKDeviceMessageDecoder *)decoderWithStringRepersentation:(NSString *)encodedString;
-
-
-+ (id)rootObjectFromStringRepresentation:(NSString *)encodedString;
++ (RKDeviceMessageDecoder *) decoderWithStringRepersentation:(NSString *) encodedString;
 
 
-- (id)initWithStringRepresentation:(NSString *)encodedString;
++ (id) rootObjectFromStringRepresentation:(NSString *) encodedString;
 
-- (double)decodeDoubleValueForKey:(NSString *)key;
-- (NSInteger)decodeIntegerValueForKey:(NSString *)key;
-- (int64_t)decodeInteger64ValueForKey:(NSString *)key;
-- (BOOL)decodeBOOLValueForKey:(NSString *)key;
--(id)decodeObjectForKey:(NSString*)key;
--(float)decodeFloatValueForKey:(NSString*)key;
+
+- (id) initWithStringRepresentation:(NSString *) encodedString;
+
+- (double) decodeDoubleValueForKey:(NSString *) key;
+- (NSInteger) decodeIntegerValueForKey:(NSString *) key;
+- (int64_t) decodeInteger64ValueForKey:(NSString *) key;
+- (BOOL) decodeBOOLValueForKey:(NSString *) key;
+- (id) decodeObjectForKey:(NSString *) key;
+- (float) decodeFloatValueForKey:(NSString *) key;
 
 @end

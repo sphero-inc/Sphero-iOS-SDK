@@ -14,7 +14,7 @@
  *  This command will put the robot to sleep
  */
 @interface RKMCSleep : RKMacroCommand {
-    int delay;
+   int delay;
 }
 
 /*! The delay associated with the command. */
@@ -24,6 +24,6 @@
  *  @param delay The delay associated with the command
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCSleep*)commandWithDelay:(int)delay;
++ (RKMCSleep *) commandWithDelay:(int) delay;
 
 @end

@@ -20,6 +20,6 @@
  * @sa RKPollPacketTimesResponse
  * @sa RKDeviceMessenger
  */
-@interface RKPollPacketTimesCommand : RKDeviceCommand 
+@interface RKPollPacketTimesCommand : RKDeviceCommand
 
 @end

@@ -20,8 +20,8 @@
  * @sa RKRollCommand
  */
 @interface RKRollResponse : RKDeviceResponse {
-    float velocity;
-    float heading;
+   float velocity;
+   float heading;
 }
 
 /*! Property for the velocity that was sent in the response's command */

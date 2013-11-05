@@ -14,17 +14,17 @@
  * register as an asynchronous data observer with RKDeviceMessenger.
  */
 @interface RKMacroEmitMarker : RKDeviceAsyncData {
-    @private 
-    unsigned char   markerId;
-    unsigned char   macroId;
-    unsigned short  macroLineNumber;
+@private
+   unsigned char markerId;
+   unsigned char macroId;
+   unsigned short macroLineNumber;
 }
 
 /*! The marker identifier */
-@property (nonatomic, readonly) unsigned char markerId;
+@property ( nonatomic, readonly ) unsigned char markerId;
 /*! The macro identifier which emited the marker */
-@property (nonatomic, readonly) unsigned char macroId;
+@property ( nonatomic, readonly ) unsigned char macroId;
 /*! The line number in the macro where the emit marker command was invoked. */
-@property (nonatomic, readonly) unsigned short macroLineNumber;
+@property ( nonatomic, readonly ) unsigned short macroLineNumber;
 
 @end

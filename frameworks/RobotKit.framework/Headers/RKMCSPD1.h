@@ -17,7 +17,7 @@
  *  speed 0.0-1.0
  */
 @interface RKMCSPD1 : RKMacroCommand {
-    float speed;
+   float speed;
 }
 
 /*! The speed associated with the command. 0.0-1.0 allowed. */
@@ -27,6 +27,6 @@
  *  @param rate The speed to set. 0.0-1.0 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCSPD1*)commandWithSpeed:(float)speed;
++ (RKMCSPD1 *) commandWithSpeed:(float) speed;
 
 @end

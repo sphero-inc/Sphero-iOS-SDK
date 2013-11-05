@@ -18,30 +18,14 @@ Once the DocSets have been copied, restart Xcode and they will then appear in th
 
 ### Community and Help
 
-* [Developer Forum](http://forum.gosphero.com/) - Share your project, get help and talk to the Sphero developers!
+**Keep up to date by watching our [Sphero iOS GitHub Repository](https://github.com/orbotix/Sphero-iOS-SDK) **
+  
+**Share your project, get help, and chat with Sphero developers at [Sphero Developer Forum](http://forum.gosphero.com/) **
 
 
-### Samples
-
----
-
- * [HelloWorld](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/HelloWorld) - Connect to Sphero and blink the LED.  This is the most compact and easy to follow sample for dealing with Sphero.  It is also the default project for the template installer.
-
-* [ButtonDrive](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/ButtonDrive) - Drive Sphero with simple buttons on screen, just a notch above helloworld.
-
-* [RobotUISample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/RobotUISample) - RobotUISample is a great place to start, it already has elements for two finger calibration, shows you how to use sleep and colorpicker and also has a drive wheel!  
-
-* [SensorStreaming](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/SensorStreaming) - If you want to use the sensor data from Sphero, you should check this sample out.  Just simply register as an observer to the data, Pay attention to starting and stoping streaming during the application life cycle.
-
-* [RKMultiplayer Sample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/RKMultiplayerSample) - Check out our base sample for connecting two or more phones to a multiplayer lobby, cross platform.  This would be the place to start if you want to make party games or anything multiplayer.
-
-* [SphereMotion Teapot](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/SphereMotionTeapot) - This is a sensor streaming application that shows you how to use 3D objects in the screen, the simple teapot, driving by Sphero's motion.
-
-* [RKAchievement Sample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/AchievementSample) - Sphero has a backend web service that can help you maintain Achievements and also keeps track of all the Sphero activity, engage with your users!
-
-* [TwoPhonesOneBall](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/TwoPhonesOneBall) - A quick sample to show passing control between two phones to control a single Sphero.
 
 ## Overview
+
  
 This Guide walks you through the basics of creating mobile apps for iOS that leverage the Orbotix Sphero SDK. The examples in this guide were built using Objective-C and have been tested with the current released OS and current version of Xcode. The goal of this developer guide along with sample code is to give the developer a taste of the wide variety of things Sphero can do, respond to, and keep track of.
 
@@ -53,7 +37,7 @@ This Guide walks you through the basics of creating mobile apps for iOS that lev
 
 ### Before we begin - Installing Xcode
 
-    Notice: The Sphero iOS SDK works with iOS 4.0+
+    Notice: The Sphero iOS SDK works with iOS 5.0+
 
 Before you begin to develop applications that interface with Sphero on iOS, you will need to install the iOS developer tools. There is a general assumption that you are using the latest version of Mac OSX, our software is designed to take advantage of all the most current technologies that are offered but it is possible that it will work on older frameworks and technologies.
 
@@ -63,35 +47,12 @@ Before you begin to develop applications that interface with Sphero on iOS, you 
 
 There are two ways to integrate the Sphero SDK into your project. You can start a new project that is preconfigured to communicate with Sphero or you can add the RobotKit and RobotUIKit to an existing project. Starting a new project is the fastest way to begin developing applications that utilize and control Sphero.
 
+&nbsp;
 ### Starting a new Project
 
- - Download the latest version of our [Xcode 4 Template Installer](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/frameworks/SpheroXcode4Template.pkg)
-     * *You can always keep up to date by watching our [GitHub Repository](https://github.com/orbotix/Sphero-iOS-SDK)*
+  Please see the [1.6 release notes](https://github.com/orbotix/Sphero-iOS-SDK/release%20notes/version1.6.md) for setting up a new project or follow the following Integrating with existing project section)
 
-![installspheroxcode4templateforios.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image01.png)
-
-This Xcode 4 Template Installer is designed to move the Sphero iOS SDK into the correct directory and integrate a default Sphero Application into the New Project menu in Xcode. It is important to note that this Installer only works with Xcode 4 and above. If you are the type that neglects the importance of upgrading your development environment, (guilty!) then you will have to manually add the Sphero iOS RobotKit and RobotUIKit into your Xcode project.
-
- - After the Sphero Xcode 4 template is installed, Open Xcode 4. 
-
- - In Xcode navigate to File > New > New Project . . .
-
- - Start a New Sphero Application.
-
-![newspheroapplicationinxcode.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image02.png)
-
-Name your project and decide where you would like to store the project. There should now be a project with RobotKit and RobotUIKit already linked up and ready to use. To test everything out, we want to build the default Application. It is important to note here that the Sphero iOS SDK will not work on the iOS Simulator because it uses the External Accessories Framework, therefore it must be Run on an actual iOS Device. There are ways to simulate the Bluetooth of an iOS device on Mac OSX but that topic is beyond the scope of this document.
-
- - Build the Current Project and verify that it was successful. 
-
- - At this point in time you will want to Pair and Connect your iOS Device to Sphero.   **Turn Bluetooth ON**.
-
- - Attach an iPod Touch, iPhone or iPad and Run the project.
-
-   ### **Make sure you target your iOS Device!**
-
- - **Congrats!** Assuming everything went smooth you should now have a Sphero that is blinking Blue.
-
+&nbsp;
 ### Integrating into an existing project
 
 There are always those cases where you already developed an awesome game or app and want to integrate Sphero functionality or controllability into the project. For those cases we have made it possible to integrate our libraries into your existing project, including some nifty pre-built user interface tools.
@@ -102,7 +63,7 @@ There are always those cases where you already developed an awesome game or app 
 
 ![sendingIn.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image03.png)
 
- **!NOTICE: It is important to note that you must also include:** `ExternalAccessory.framework`, `CoreMotion.framework`
+**!NOTICE: It is important to note that you must also include:** `ExternalAccessory.framework`, `CoreMotion.framework`
 
 **!NOTICE: There are some linker changes that also must be made:** 
 Change Build Settings -> Linking -> Other Linker Flags
@@ -122,18 +83,22 @@ Change Build Settings -> Linking -> Other Linker Flags
 
  - Make sure to import RobotKit.h
 
-        #import "RobotKit/RobotKit.h
+        #import <RobotKit/RobotKit.h>
 
  - Create a method to handle setting up the Connection to Sphero
 
-        -(void)setupRobotConnection {
-            /*Try to connect to the robot*/
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
-            if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-                [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-            }
-        }
- - Create a method to handle maintaining the Connection to Sphero
+        -(void)connectToRobot 
+        {	
+			[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline:) name:RKDeviceConnectionOnlineNotification object:nil];
+		if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) 
+		{
+			[[RKRobotProvider sharedRobotProvider] openRobotConnection];
+		}else
+		{
+			[[RKRobotProvider sharedRobotProvider] controlConnectedRobot];
+		}
+		
+- Create a method to handle maintaining the Connection to Sphero
 
         - (void)handleRobotOnline {
             /*The robot is now online, we can begin sending commands*/
@@ -149,7 +114,7 @@ Change Build Settings -> Linking -> Other Linker Flags
     
         -(void)appDidBecomeActive:(NSNotification*)notification {
             /*When the application becomes active after entering the background we try to connect to the robot*/
-            [self setupRobotConnection];
+            [self connectToRobot];
         }
 
  - In the `OnLoad()` method you should register for application lifecycle notifications 
@@ -181,7 +146,7 @@ Change Build Settings -> Linking -> Other Linker Flags
      [RKRGBLEDOutputCommand sendCommandWithRed:1.0 green:0.0 blue:0.0];
 
 
-
+&nbsp;
 ## Using the Sphero iOS SDK
 
 
@@ -197,6 +162,7 @@ to
 
 Notice the change from green of 0.0 to a green of 1.0. Run it and you should have a Green Sphero!  
 
+&nbsp;
 ### Sending Roll Commands
 
  - Using Roll Commands to **Move** Sphero.
@@ -234,11 +200,37 @@ Next add the following code in place of the RGB command that was sent before.
 **Run the application on an iOS Device, if all went well Sphero should have moved forward just a little.**
 
 
-
+&nbsp;
 ## Where is Sphero going?
 
 If you have successfully completed the quick start guide then Sphero should have moved after running the modified code.  What is interesting to note here is that Sphero just went in a *random* direction.  The direction was not random at all, Sphero believe it or not has a *front* and a *back*.  It is necessary for the application to determine what direction forward is for the user from the point of view of the ball.  We call this step `Calibration` and it is **required** to properly drive Sphero in a predictable direction.  To learn more about calibration and using the `BackLED` to set Sphero's orientation please check out the `UISampler` Sample project.
 		    
+		    
+		    
+
+&nbsp;
+&nbsp;
+
+### Samples
+
+---
+
+ * [HelloWorld](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/HelloWorld) - Connect to Sphero and blink the LED.  This is the most compact and easy to follow sample for dealing with Sphero.  It is also the default project for the template installer.
+
+* [ButtonDrive](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/ButtonDrive) - Drive Sphero with simple buttons on screen, just a notch above helloworld.
+
+* [RobotUISample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/RobotUISample) - RobotUISample is a great place to start, it already has elements for two finger calibration, shows you how to use sleep and colorpicker and also has a drive wheel!  
+
+* [SensorStreaming](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/SensorStreaming) - If you want to use the sensor data from Sphero, you should check this sample out.  Just simply register as an observer to the data, Pay attention to starting and stoping streaming during the application life cycle.
+
+* [RKMultiplayer Sample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/RKMultiplayerSample) - Check out our base sample for connecting two or more phones to a multiplayer lobby, cross platform.  This would be the place to start if you want to make party games or anything multiplayer.
+
+* [SphereMotion Teapot](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/SphereMotionTeapot) - This is a sensor streaming application that shows you how to use 3D objects in the screen, the simple teapot, driving by Sphero's motion.
+
+* [RKAchievement Sample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/AchievementSample) - Sphero has a backend web service that can help you maintain Achievements and also keeps track of all the Sphero activity, engage with your users!
+
+* [TwoPhonesOneBall](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/TwoPhonesOneBall) - A quick sample to show passing control between two phones to control a single Sphero.
+
 		
 
 

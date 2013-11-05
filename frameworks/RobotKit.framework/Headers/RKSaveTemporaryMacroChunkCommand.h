@@ -11,8 +11,11 @@
 #if defined (SRCLIBRARY)
 #import <RobotKit/Macro/RKSaveTemporaryMacroCommand.h>
 #else
+
 #import <RobotKit/RKSaveTemporaryMacroCommand.h>
+
 #endif
+
 
 /*!
  *  @brief Similar to RKSaveTemporaryMacroCommand but allow for saving long macros
@@ -28,8 +31,8 @@
  */
 
 @interface RKSaveTemporaryMacroChunkCommand : RKSaveTemporaryMacroCommand {
-    @private
-    BOOL firstChunk;
+@private
+   BOOL firstChunk;
 }
 
 /*! Set if it is the first chunk to control sending of id byte and flags, default YES */

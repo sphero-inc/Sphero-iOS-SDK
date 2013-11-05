@@ -20,7 +20,7 @@
  * @sa RKPingCommand
  */
 @interface RKPingResponse : RKDeviceResponse {
-    
+
 }
 
 @end

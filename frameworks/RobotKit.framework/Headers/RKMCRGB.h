@@ -19,10 +19,10 @@
  *  delay 0-255
  */
 @interface RKMCRGB : RKMacroCommand {
-    float red;
-    float green;
-    float blue;
-    int delay;
+   float red;
+   float green;
+   float blue;
+   int delay;
 }
 
 /*! The intensity of the red LED. 0.0-1.0 allowed. */
@@ -44,6 +44,6 @@
  *  @param delay The delay between this command and the next command. 0-255 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRGB*)commandWithRed:(float)red green:(float)green blue:(float)blue delay:(int)delay;
++ (RKMCRGB *) commandWithRed:(float) red green:(float) green blue:(float) blue delay:(int) delay;
 
 @end

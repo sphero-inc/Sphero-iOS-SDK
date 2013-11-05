@@ -11,8 +11,11 @@
 #if defined (SRCLIBRARY)
 #import <RobotKit/Macro/RKSaveTemporaryMacroCommand.h>
 #else
+
 #import <RobotKit/RKSaveTemporaryMacroCommand.h>
+
 #endif
+
 
 /*!
  * @brief Class to encapsulate a save macro command.
@@ -28,19 +31,14 @@
  * @sa RKSaveTemporaryMacroCommand
  *
  */
-@interface RKSaveMacroCommand : RKDeviceCommand {
-    @private
-    RKMacroFlags  macroFlags;
-    NSData        *macro;
-    uint8_t       macroID;
-}
+@interface RKSaveMacroCommand : RKDeviceCommand
 
 /*! Flags that are used with the macro. @sa RKSaveTemporaryMacroCommand for the flags. */
-@property (nonatomic, readonly) RKMacroFlags    macroFlags;
+@property ( nonatomic, readonly ) RKMacroFlags macroFlags;
 /*! A NSData object which contains the macro. */
-@property (nonatomic, readonly) NSData          *macro;
+@property ( nonatomic, readonly ) NSData *macro;
 /*! An idenitifier for the macro. */
-@property (nonatomic, readonly) uint8_t         macroID;
+@property ( nonatomic, readonly ) uint8_t macroID;
 
 /*!
  * Convenience command to send the save macro command.
@@ -49,7 +47,7 @@
  * is for a temporary macro. 
  * @param flags A bitwise OR set of macro flags. 
  */
-+ (void)sendCommandWithMacro:(NSData *)data macroID:(uint8_t)identifier flags:(RKMacroFlags)flags;
++ (void) sendCommandWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags;
 /*!
  * Convenience command to send the save macro command with a delay.
  * @param data The macro contained in an NSData object. 
@@ -58,7 +56,7 @@
  * @param flags A bitwise OR set of macro flags. 
  * @param delay A delay in seconds befor sending the command to a device.
  */
-+ (void)sendCommandWithMacro:(NSData *)data macroID:(uint8_t)identifier flags:(RKMacroFlags)flags delay:(NSTimeInterval)delay;
++ (void) sendCommandWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags delay:(NSTimeInterval) delay;
 
 /*!
  * 
@@ -69,6 +67,6 @@
  * is for a temporary macro. 
  * @param flags A bitwise OR set of macro flags. 
  */
-- (id)initWithMacro:(NSData *)data macroID:(uint8_t)identifier flags:(RKMacroFlags)flags;
+- (id) initWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags;
 
 @end

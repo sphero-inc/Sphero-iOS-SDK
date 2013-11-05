@@ -21,7 +21,7 @@
  * @sa RKRGBLEDOutputCommand
  */
 @interface RKRGBLEDOutputResponse : RKDeviceResponse {
-    
+
 }
 
 @end

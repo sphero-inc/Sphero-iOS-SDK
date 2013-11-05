@@ -14,11 +14,11 @@
  *  A command to manually control the motors in the robot
  */
 @interface RKMCRawMotor : RKMacroCommand {
-    int leftMode;
-    int leftSpeed;
-    int rightMode;
-    int rightSpeed;
-    int delay;
+   int leftMode;
+   int leftSpeed;
+   int rightMode;
+   int rightSpeed;
+   int delay;
 }
 
 /*! The mode the left motor is in */
@@ -44,8 +44,8 @@
  *  @param delay The delay after this command before the next one
  *  @return An instance of the command with the given parameters.
  */
-+ (RKMCRawMotor *)commandWithLeftMode:(int)leftMode leftSpeed:(int)leftSpeed 
-                            rightMode:(int)rightMode rightSpeed:(int)rightSpeed delay:(int)delay;
++ (RKMCRawMotor *) commandWithLeftMode:(int) leftMode leftSpeed:(int) leftSpeed
+                             rightMode:(int) rightMode rightSpeed:(int) rightSpeed delay:(int) delay;
 
 
 @end

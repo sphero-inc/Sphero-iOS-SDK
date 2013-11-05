@@ -21,22 +21,22 @@
  * @sa RKGetBluetoothInfoCommand
  */
 @interface RKSetBluetoothNameCommand : RKDeviceCommand {
-    NSString *bluetoothName;
+   NSString *bluetoothName;
 }
 
 /*! The name to store on the robot. */
-@property (nonatomic, readonly) NSString *bluetoothName;
+@property ( nonatomic, readonly ) NSString *bluetoothName;
 
 /*!
  * Convenience method that sends a new name to be stored on the robot.
  * @param name A new name to store on the robot.
  */
-+ (void)sendCommandWithName:(NSString *)name;
++ (void) sendCommandWithName:(NSString *) name;
 /*!
  * Initializes an object with a name.
  * @param name A localized name to store on the robot.
  * @return The initialized object, otherwise nil if initialization failed.
  */
-- (id)initWithName:(NSString *)name;
+- (id) initWithName:(NSString *) name;
 
 @end

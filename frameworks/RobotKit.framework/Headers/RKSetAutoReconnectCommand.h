@@ -28,20 +28,20 @@
  */
 
 @interface RKSetAutoReconnectCommand : RKDeviceCommand {
-    BOOL    enableFlag;
-    uint8_t autoReconnectStartTime;
+   BOOL enableFlag;
+   uint8_t autoReconnectStartTime;
 }
 
 /*! Readonly value to access the enable flag for the command */
-@property (nonatomic, readonly) BOOL    enableFlag;
+@property ( nonatomic, readonly ) BOOL enableFlag;
 /*! Readonly value to access the start time of the auto reconnect state */
-@property (nonatomic, readonly) uint8_t autoReconnectStartTime;
+@property ( nonatomic, readonly ) uint8_t autoReconnectStartTime;
 
 /*!
  *  Convience method that sends a command to set the auto reconnect to the
  *  default values, which is enabled and time of 0 seconds.
  */
-+(void)sendCommand;
++ (void) sendCommand;
 
 /*!
  * Convenience method to send a set auto reconnect command to Sphero.
@@ -51,7 +51,7 @@
  * @param time the length of time, in seconds, that passes after Sphero is shaken awake
  *             before it attempts to auto reconnect
  */
-+(void)sendCommandWithEnableFlag:(BOOL)flag StartTime:(uint8_t)time;
++ (void) sendCommandWithEnableFlag:(BOOL) flag StartTime:(uint8_t) time;
 
 /*
  * Initializer to set up the set auto reconnect command with custom parameters
@@ -61,6 +61,6 @@
  * @param time the length of time, in seconds, that passes after Sphero is shaken awake
  *             before it attempts to auto reconnect
  */
--(id)initWithEnableFlag:(BOOL)flag StartTime:(uint8_t)time;
+- (id) initWithEnableFlag:(BOOL) flag StartTime:(uint8_t) time;
 
 @end

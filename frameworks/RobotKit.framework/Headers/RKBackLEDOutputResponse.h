@@ -21,7 +21,7 @@
  */
 
 @interface RKBackLEDOutputResponse : RKDeviceResponse {
-    
+
 }
 
 @end

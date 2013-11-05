@@ -23,11 +23,11 @@
  * @sa RKDeviceMessenger
  */
 @interface RKPowerNotificationAsyncData : RKDeviceAsyncData {
-    @private
-    RKBatteryPowerState state;
+@private
+   RKBatteryPowerState state;
 }
 
 /*! Readonly property for the power state for the notification. */
-@property (nonatomic, readonly) RKBatteryPowerState state;
+@property ( nonatomic, readonly ) RKBatteryPowerState state;
 
 @end

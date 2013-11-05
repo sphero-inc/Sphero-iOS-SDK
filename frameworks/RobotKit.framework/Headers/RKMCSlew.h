@@ -21,10 +21,10 @@
  *  delay 0-65,353
  */
 @interface RKMCSlew : RKMacroCommand {
-    float red;
-    float green;
-    float blue;
-    int delay;
+   float red;
+   float green;
+   float blue;
+   int delay;
 }
 
 /*! The intensity of the red LED. 0.0-1.0 allowed. */
@@ -46,6 +46,6 @@
  *  @param delay The duration of the fade
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCSlew*)commandWithRed:(float)red green:(float)green blue:(float)blue delay:(int)delay;
++ (RKMCSlew *) commandWithRed:(float) red green:(float) green blue:(float) blue delay:(int) delay;
 
 @end

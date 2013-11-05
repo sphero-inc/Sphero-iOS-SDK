@@ -21,19 +21,19 @@
  * @sa RKRotationRateResponse
  */
 @interface RKRotationRateCommand : RKDeviceCommand {
-    @private
-    float rate;
+@private
+   float rate;
 }
 
 /*! The rotation rate set for the command. */
-@property (nonatomic, readonly) float rate;
+@property ( nonatomic, readonly ) float rate;
 
 /*!
  * A convenience method for sending the command.
  * @param rate A value between 0.0 to 1.0 to adjust the rotation rate for the adjustable 
  * range.
  */
-+ (void)sendCommandWithRate:(float)rate;
++ (void) sendCommandWithRate:(float) rate;
 
 /*!
  * Initializer for the object.
@@ -41,6 +41,6 @@
  * range.
  * @return The initialized object.
  */
-- (id)initWithRate:(float)rate;
+- (id) initWithRate:(float) rate;
 
 @end

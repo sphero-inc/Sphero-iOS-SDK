@@ -22,7 +22,7 @@
  */
 
 @interface RKSetHeadingResponse : RKDeviceResponse {
-    
+
 }
 
 @end

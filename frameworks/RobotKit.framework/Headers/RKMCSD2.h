@@ -17,7 +17,7 @@
  *  delay 0-65,535
  */
 @interface RKMCSD2 : RKMacroCommand {
-    int delay;
+   int delay;
 }
 
 /*! The delay associated with the command. 0-63,353 allowed */
@@ -27,6 +27,6 @@
  *  @param delay The delay the command will be initialized with.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCSD2*)commandWithDelay:(int)delay;
++ (RKMCSD2 *) commandWithDelay:(int) delay;
 
 @end

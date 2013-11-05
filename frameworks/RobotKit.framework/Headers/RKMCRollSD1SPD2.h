@@ -20,7 +20,7 @@
  *  heading 0-359
  */
 @interface RKMCRollSD1SPD2 : RKMacroCommand {
-    int heading;
+   int heading;
 }
 
 /*! The direction the robot will roll in. 0-359 allowed. */
@@ -30,6 +30,6 @@
  *  @param heading The direction the robot will roll in. 0-359 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRollSD1SPD2*)commandWithHeading:(int)heading;
++ (RKMCRollSD1SPD2 *) commandWithHeading:(int) heading;
 
 @end

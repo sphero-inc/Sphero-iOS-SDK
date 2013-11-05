@@ -29,19 +29,18 @@
  *  @see RKAchievement
  */
 @interface RKSpheroWorldAuth : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate> {
-    @private
-    NSString *appID;
-    NSString *appSecret;
-    UIWebView *webView;
-    UIViewController* delegate;
-    UIView *loadingView;
-    BOOL redirecting;
+@private
+   NSString *appID;
+   NSString *appSecret;
+   UIWebView *webView;
+   UIView *loadingView;
+   BOOL redirecting;
 }
 
 /*!
  *  The view controller presenting this one as modal.  Required so this view can dismiss itself when done.
  */
-@property (nonatomic, assign) UIViewController* delegate;
+@property ( /*weak,*/ nonatomic ) UIViewController *delegate;
 
 /*!
  *  Call to authorize your app with SpheroWorld and ensure statistics are tracked to the user's profile
@@ -50,12 +49,12 @@
  *  @param appid The application id assigned to the application on the SpheroWorld developer site.
  *  @param secret The application's secret string assigned when the app was created on SpheroWorld
  */
-+(void)setAppID:(NSString*)appid secret:(NSString*)secret;
++ (void) setAppID:(NSString *) appid secret:(NSString *) secret;
 
 /*!
  *  Get the unique SpheroWorld appID for the application running.
  *  @return appID string of the application that is running, returns nil if setAppID:secret: was never called.
  */
-+(NSString*)getAppID;
++ (NSString *) getAppID;
 
 @end

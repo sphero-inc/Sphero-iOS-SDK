@@ -18,8 +18,8 @@
  *  delay 0-255
  */
 @interface RKMCStabilization : RKMacroCommand {
-    int setting;
-    int delay;
+   int setting;
+   int delay;
 }
 
 /*! The stabilization setting associated with the command 0=off 1=on. */
@@ -33,6 +33,6 @@
  *  @param delay The delay associated with this command
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCStabilization*)commandWithSetting:(int)setting delay:(int)delay;
++ (RKMCStabilization *) commandWithSetting:(int) setting delay:(int) delay;
 
 @end

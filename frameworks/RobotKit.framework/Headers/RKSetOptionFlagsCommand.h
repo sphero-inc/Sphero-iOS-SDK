@@ -20,8 +20,8 @@
  */
 
 @interface RKSetOptionFlagsCommand : RKDeviceCommand {
-    @private
-    uint32_t optionFlags;
+@private
+   uint32_t optionFlags;
 }
 
 /*!    
@@ -34,7 +34,7 @@
  *    Bit 4: Set to enable motion timeouts (see DID 02h, CID 34h)
  * Bit 5-31: Reserved
 */
-@property (nonatomic, readonly) uint32_t optionFlags;
+@property ( nonatomic, readonly ) uint32_t optionFlags;
 
 /**
  * Initializer for setting up the object with option flags
@@ -50,7 +50,7 @@
  *
  * @param optionFlags A long value in that represents the option flags
  */
-- (id)initWithOptionFlags:(uint32_t)flags;
+- (id) initWithOptionFlags:(uint32_t) flags;
 
 /**
  * A convenience method that sends a command to a robot to return to default option flags.
@@ -66,7 +66,7 @@
  *
  * Bit 5-31: Reserved
  */
-+(void) sendCommand;
++ (void) sendCommand;
 
 /**
  * A convenience method that sends a command to a robot.
@@ -82,6 +82,6 @@
  *
  * @param optionFlags A long value in that represents the option flags
  */
-+ (void)sendCommandWithOptionFlags:(uint32_t)flags;
++ (void) sendCommandWithOptionFlags:(uint32_t) flags;
 
 @end

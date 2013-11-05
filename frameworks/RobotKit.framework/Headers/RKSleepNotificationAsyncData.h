@@ -19,5 +19,6 @@
  *
  * @sa RKDeviceMessenger
  */
-@interface RKSleepNotificationAsyncData : RKDeviceAsyncData 
+@interface RKSleepNotificationAsyncData : RKDeviceAsyncData
+
 @end

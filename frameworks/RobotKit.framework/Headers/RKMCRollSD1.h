@@ -20,8 +20,8 @@
  *  heading 0-359
  */
 @interface RKMCRollSD1 : RKMacroCommand {
-    float speed;
-    int heading;
+   float speed;
+   int heading;
 }
 
 /*! The speed at which the robot will roll. 0.0-1.0 allowed. */
@@ -35,6 +35,6 @@
  *  @param heading The direction the robot will roll in. 0-359 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRollSD1*)commandWithSpeed:(float)speed heading:(int)heading;
++ (RKMCRollSD1 *) commandWithSpeed:(float) speed heading:(int) heading;
 
 @end
