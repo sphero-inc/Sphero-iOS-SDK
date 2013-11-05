@@ -24,7 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
 
     /*Register for application lifecycle notifications so we known when to connect and disconnect from the robot*/
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
@@ -42,26 +42,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -149,15 +129,13 @@
 }
 
 - (void)toggleLED {
-    /*Toggle the LED on and off*/
     if (ledON) {
-        ledON = NO;
         [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:0.0];
     } else {
-        ledON = YES;
         [RKRGBLEDOutputCommand sendCommandWithRed:0.0 green:0.0 blue:1.0];
     }
-    // Only continue funciton if we are connect to robot
+    ledON = !ledON;
+    // Continue while we are connected to the robot
     if( robotOnline ) [self performSelector:@selector(toggleLED) withObject:nil afterDelay:0.5];
 }
 
