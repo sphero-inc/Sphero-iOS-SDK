@@ -60,6 +60,7 @@ There are always those cases where you already developed an awesome game or app 
  - Download the current [Sphero iOS SDK](https://github.com/orbotix/Sphero-iOS-SDK/zipball/master).
 
  - Simply Drag `RobotKit.framework`, `RobotUIKit.framework` and `RobotUIKit.Bundle` into your project's framework folder.
+ - Change your Deployment Target to 6.0
 
 ![sendingIn.png](https://github.com/orbotix/Sphero-iOS-SDK/raw/master/assets/image03.png)
 
@@ -150,7 +151,8 @@ Change Build Settings -> Linking -> Other Linker Flags
 ## Using the Sphero iOS SDK
 
 
-If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
+If you started poking around in the template project you may have noticed that inside `ViewController.m` there are some commands to set the RGB LED on Sphero. This is best way to change Sphero’s color and give visual feedback using the ball.
+This command is described in section 3 in more detail but it is a good exercise at this point to change these values and try it out, play around a little bit.
 
 **For example**, try changing the following command in `ViewController.m` from
 
