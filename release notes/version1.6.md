@@ -1,4 +1,3 @@
-
 ## New in this version (1.6 b1146):
 
 
@@ -9,9 +8,9 @@
 
 SDK is compatible with Xcode5 and iOS versions 5 through 7 with native support for armv7 and armv7s.  The QuickStart App template has been removed from this release since XCode 5 is not compatible.  Please use the following information to manually setup your project.  
 
-##### Projects using this SDK should:
+##### Projects using this SDK MUST:
  * In Project Info
-    * Target **iOS7**
+    * Target **iOS6**
  * In Build Settings
  	* Architecures - **Standard Architectures (armv7, armv7s)**
  	* Valid Architectures - **armv7 armv7s** (remove arm64)
