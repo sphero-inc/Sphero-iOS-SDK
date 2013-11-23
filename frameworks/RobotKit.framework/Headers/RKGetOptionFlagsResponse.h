@@ -3,7 +3,6 @@
 //  RobotKit
 //
 //  Created by Michael DePhillips on 7/31/12.
-//  Updated by wes felteau
 //  Copyright (c) 2012 Orbotix Inc. All rights reserved.
 //
 
@@ -11,18 +10,20 @@
 
 #import "RKDeviceResponse.h"
 
+/*! Type that is used for identifying what the returned bits mean */
+typedef uint32_t RKGetOptionFlagsMask;
 /*! Mask values that are used to identifying what the returned bits mean */
-typedef NS_ENUM(uint32_t,  RKGetOptionFlagsMask) {
-   /*! Mask to prevent Sphero from going to sleep when placed in the charger and connected over Bluetooth */
-         RKGetOptionFlagsPreventSleepInCharger = 0x00000001,
-   /*! Mask to enable Vector Drive, that is, when Sphero is stopped and a new roll command is issued */
-         RKGetOptionFlagsEnableVectorDrive = 0x00000002,
-   /*! Mask to to disable self-leveling when Sphero is inserted into the charger */
-         RKGetOptionFlagsDisableSelfLevelInCharger = 0x00000004,
-   /*! Mask to force the tail LED always on */
-         RKGetOptionFlagsTailLightAlwaysOn = 0x00000008,
-   /*! Mask to enable motion timeouts */
-         RKGetOptionFlagsEnableMotionTimeout = 0x00000010,
+enum {
+    /*! Mask to prevent Sphero from going to sleep when placed in the charger and connected over Bluetooth */
+    RKGetOptionFlagsPreventSleepInCharger     = 0x00000001,
+    /*! Mask to enable Vector Drive, that is, when Sphero is stopped and a new roll command is issued */
+    RKGetOptionFlagsEnableVectorDrive         = 0x00000002,
+    /*! Mask to to disable self-leveling when Sphero is inserted into the charger */
+    RKGetOptionFlagsDisableSelfLevelInCharger = 0x00000004,
+    /*! Mask to force the tail LED always on */
+    RKGetOptionFlagsTailLightAlwaysOn         = 0x00000008,
+    /*! Mask to enable motion timeouts */
+    RKGetOptionFlagsEnableMotionTimeout       = 0x00000010,    
 };
 
 /*!
@@ -40,12 +41,12 @@ typedef NS_ENUM(uint32_t,  RKGetOptionFlagsMask) {
  */
 
 @interface RKGetOptionFlagsResponse : RKDeviceResponse {
-@private
-   RKGetOptionFlagsMask optionFlags;
+    @private
+    RKGetOptionFlagsMask optionFlags;
 }
 
 /*! The current option flags on the device */
-@property ( nonatomic, readonly ) RKGetOptionFlagsMask optionFlags;
+@property (nonatomic, readonly) RKGetOptionFlagsMask optionFlags;
 
 /*!
  * Accessor for the individual option flags properties
@@ -61,16 +62,6 @@ typedef NS_ENUM(uint32_t,  RKGetOptionFlagsMask) {
  * @param flag A flag option from this class' static constants
  * @return true if the flag is set, false otherwise
  */
-- (BOOL) isSetWithOptionFlag:(RKGetOptionFlagsMask) flag;
-
-#pragma mark - convenience methods
-
-- (BOOL) isSleepInCharger;
-- (BOOL) isSelfLevelInCharger;
-
-- (BOOL) isMotionTimeout;
-- (BOOL) isVectorDrive;
-- (BOOL) isTailLightAlwaysOn;
-
+-(BOOL)isSetWithOptionFlag:(RKGetOptionFlagsMask)flag;
 
 @end

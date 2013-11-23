@@ -11,11 +11,8 @@
 #if defined (SRCLIBRARY)
 #import <RobotKit/Macro/RKSaveTemporaryMacroResponse.h>
 #else
-
 #import <RobotKit/RKSaveTemporaryMacroResponse.h>
-
 #endif
-
 
 /*!
  *  @brief Class that represents RKSaveTemporaryMacroChunkCommand response
