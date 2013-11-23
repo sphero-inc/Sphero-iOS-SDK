@@ -34,7 +34,7 @@ enum {
 @interface RUICalibrateButtonGestureHandler : NSObject {
     id <RUICalibrateButtonGestureHandlerProtocol> delegate;
     @private
-    UIView *view;
+    UIView *view, *targetView;
     UIGestureRecognizer *recognizer;
     CGPoint startPoint;
     int calibrationRadius;
@@ -45,7 +45,6 @@ enum {
     UIColor* backgroundColor;
     UIColor* foregroundColor;
     UIButton*  calibrateButton;
-    BOOL isCalibrating;
 }
 
 /*!
@@ -63,8 +62,6 @@ enum {
  *  Delegate that will be notified when calibration begins and ends so sounds can be played
  */
 @property (nonatomic, assign) id <RUICalibrateButtonGestureHandlerProtocol> delegate;
-
-@property (nonatomic, retain) UIGestureRecognizer *recognizer;
 
 /*!
  *  @param _view - the background view that you want the gesture recognizer to be added to

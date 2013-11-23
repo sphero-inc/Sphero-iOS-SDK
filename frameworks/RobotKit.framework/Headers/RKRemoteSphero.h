@@ -9,14 +9,11 @@
 #if defined (SRCLIBRARY)
 #import <RobotKit/Multiplayer/RKRemoteRobot.h>
 #else
-
 #import <RobotKit/RKRemoteRobot.h>
-
 #endif
 
-
 @interface RKRemoteSphero : RKRemoteRobot {
-
+    
 }
 
 @end
