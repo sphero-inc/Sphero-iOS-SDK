@@ -1,8 +1,7 @@
 //
-//  RobotKit.h
-//  RobotKit
+//  Copyright 2013 Orbotix Inc. All rights reserved.
 //
-//  Copyright 2010 Orbotix Inc. All rights reserved.
+//  Version 2.0a
 //
 
 #include <RobotKit/RKTypes.h>
@@ -13,9 +12,10 @@
 #import <RobotKit/RKDriveControl.h>
 #import <RobotKit/RKDeviceConnection.h>
 #import <RobotKit/RKRobot.h>
-#import <RobotKit/RKRobotControl.h>
 #import <RobotKit/RKRobotProvider.h>
 #import <RobotKit/RKJoyStickDriveAlgorithm.h>
+#import <RobotKit/RKLogarithmicScaleDriveAddon.h>
+#import <RobotKit/RKAccuAngleDriveAddon.h>
 #import <RobotKit/RKTiltDriveAlgorithm.h>
 
 #import <RobotKit/RKResponseCodes.h>
@@ -52,18 +52,28 @@
 #import <RobotKit/RKConfigureLocatorCommand.h>
 #import <RobotKit/RKSelfLevelCommand.h>
 #import <RobotKit/RKSetMotionTimeoutCommand.h>
+
 #import <RobotKit/RKGetOptionFlagsCommand.h>
 #import <RobotKit/RKSetOptionFlagsCommand.h>
+#import <RobotKit/RKGetOptionFlagsResponse.h>
+#import <RobotKit/RKSetOptionFlagsResponse.h>
+
+#import <RobotKit/RKNonPersistentOptionsFlagCommand.h>
+#import <RobotKit/RKNonPersistentOptionsFlagResponse.h>
+
 #if defined (SRCLIBRARY)
 #import <RobotKit/orbBasic/RKOrbBasicEraseStorageCommand.h>
 #import <RobotKit/orbBasic/RKOrbBasicAppendFragmentCommand.h>
 #import <RobotKit/orbBasic/RKOrbBasicExecuteCommand.h>
 #import <RobotKit/orbBasic/RKOrbBasicAbortCommand.h>
 #else
+
 #import <RobotKit/RKOrbBasicEraseStorageCommand.h>
 #import <RobotKit/RKOrbBasicAppendFragmentCommand.h>
 #import <RobotKit/RKOrbBasicExecuteCommand.h>
 #import <RobotKit/RKOrbBasicAbortCommand.h>
+#import <RobotKit/RKByteCommand.h>
+
 #endif
 
 // Responses
@@ -97,18 +107,20 @@
 #import <RobotKit/RKConfigureLocatorResponse.h>
 #import <RobotKit/RKSelfLevelResponse.h>
 #import <RobotKit/RKSetMotionTimeoutResponse.h>
-#import <RobotKit/RKGetOptionFlagsResponse.h>
-#import <RobotKit/RKSetOptionFlagsResponse.h>
+#import <RobotKit/RKByteResponse.h>
+
 #if defined (SRCLIBRARY)
 #import <RobotKit/orbBasic/RKOrbBasicEraseStorageResponse.h>
 #import <RobotKit/orbBasic/RKOrbBasicAppendFragmentResponse.h>
 #import <RobotKit/orbBasic/RKOrbBasicExecuteResponse.h>
 #import <RobotKit/orbBasic/RKOrbBasicAbortResponse.h>
 #else
+
 #import <RobotKit/RKOrbBasicEraseStorageResponse.h>
 #import <RobotKit/RKOrbBasicAppendFragmentResponse.h>
 #import <RobotKit/RKOrbBasicExecuteResponse.h>
 #import <RobotKit/RKOrbBasicAbortResponse.h>
+
 #endif
 
 
@@ -127,14 +139,17 @@
 #import <RobotKit/RKQuaternionData.h>
 #import <RobotKit/RKSleepNotificationAsyncData.h>
 #import <RobotKit/RKPowerNotificationAsyncData.h>
+
 #if defined (SRCLIBRARY)
 #import <RobotKit/orbBasic/RKOrbBasicPrintMessage.h>
 #import <RobotKit/orbBasic/RKOrbBasicErrorASCII.h>
 #import <RobotKit/orbBasic/RKOrbBasicErrorBinary.h>
 #else
+
 #import <RobotKit/RKOrbBasicPrintMessage.h>
 #import <RobotKit/RKOrbBasicErrorASCII.h>
 #import <RobotKit/RKOrbBasicErrorBinary.h>
+
 #endif
 
 // Achievements
@@ -150,11 +165,13 @@
 #import <RobotKit/Multiplayer/RKRemoteSphero.h>
 #import <RobotKit/Multiplayer/RKMultiplayerGame.h>
 #else
+
 #import <RobotKit/RKMultiplayer.h>
 #import <RobotKit/RKRemotePlayer.h>
 #import <RobotKit/RKRemoteRobot.h>
 #import <RobotKit/RKRemoteSphero.h>
 #import <RobotKit/RKMultiplayerGame.h>
+
 #endif
 
 // Macros
@@ -170,6 +187,7 @@
 #import <RobotKit/Macro/RKAbortMacroCommand.h>
 #import <RobotKit/Macro/RKAbortMacroResponse.h>
 #else
+
 #import <RobotKit/RKMacroObject.h>
 #import <RobotKit/RKInitMacroExecutiveCommand.h>
 #import <RobotKit/RKSaveTemporaryMacroChunkCommand.h>
@@ -180,6 +198,7 @@
 #import <RobotKit/RKRunMacroResponse.h>
 #import <RobotKit/RKAbortMacroCommand.h>
 #import <RobotKit/RKAbortMacroResponse.h>
+
 #endif
 
 // Messages
@@ -190,18 +209,23 @@
 #import <RobotKit/RKDeviceNotification.h>
 #import <RobotKit/RKDeviceMessageCoding.h>
 #else
+
 #import <RobotKit/RKDeviceMessage.h>
 #import <RobotKit/RKDeviceMessageEncoder.h>
 #import <RobotKit/RKDeviceMessageDecoder.h>
 #import <RobotKit/RKDeviceNotification.h>
 #import <RobotKit/RKDeviceMessageCoding.h>
+
 #endif
 
 // orbBasic
 #if defined (SRCLIBRARY)
 #import <RobotKit/orbBasic/RKOrbBasicProgram.h>
 #else
+
 #import <RobotKit/RKOrbBasicProgram.h>
+
+
 #endif
 
 

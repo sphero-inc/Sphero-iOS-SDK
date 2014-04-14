@@ -12,14 +12,14 @@
 #import <Foundation/Foundation.h>
 
 @interface RKMultiplayerGame : NSObject {
-    NSNetService *service;
+   NSNetService *service;
 }
 
-@property (nonatomic, retain) NSNetService *service;
+@property ( nonatomic, strong ) NSNetService *service;
 
 /*!
  *  Returns a name to display to represent the game
  */
--(NSString*)name;
+- (NSString *) name;
 
 @end

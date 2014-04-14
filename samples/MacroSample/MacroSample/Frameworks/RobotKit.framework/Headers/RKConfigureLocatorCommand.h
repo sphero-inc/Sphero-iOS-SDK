@@ -14,13 +14,14 @@
  * Constants for the flag option of the Configure Locator Command
  */
 enum RKConfigureLocatorFlag {
-    /*! Used to turn off locator position system rotates with calibrate */
-    RKConfigureLocatorRotateWithCalibrateFlagOff  = 0x00,
-    /*! Used to turn on locator position system rotates with calibrate */
-    RKConfigureLocatorRotateWithCalibrateFlagOn   = 0x01
+   /*! Used to turn off locator position system rotates with calibrate */
+         RKConfigureLocatorRotateWithCalibrateFlagOff = 0x00,
+   /*! Used to turn on locator position system rotates with calibrate */
+         RKConfigureLocatorRotateWithCalibrateFlagOn = 0x01
 };
 /*! Type that is used for setting the data streaming mask */
 typedef enum RKConfigureLocatorFlag RKConfigureLocatorFlag;
+
 
 /*!
  * @brief Class that encapsulates a Configure Locator command (Firmware 1.17 or greater).
@@ -46,23 +47,23 @@ typedef enum RKConfigureLocatorFlag RKConfigureLocatorFlag;
  * @sa RKLocatorData
  */
 @interface RKConfigureLocatorCommand : RKDeviceCommand {
-    
-    RKConfigureLocatorFlag  configureFlag;
-    int16_t                 positionX;
-    int16_t                 positionY;
-    int16_t                 yawTare;
+
+   RKConfigureLocatorFlag configureFlag;
+   int16_t positionX;
+   int16_t positionY;
+   int16_t yawTare;
 }
 
 /* The flag rotates the position system with a calibrate when this
    flag is YES, the position systems stays the same when NO */
-@property (nonatomic, readonly) RKConfigureLocatorFlag configureFlag;
+@property ( nonatomic, readonly ) RKConfigureLocatorFlag configureFlag;
 /* The current x position of the device will now be set to this value (in cm) */
-@property (nonatomic, readonly) int16_t positionX;
+@property ( nonatomic, readonly ) int16_t positionX;
 /* The current y position of the device will now be set to this value (in cm) */
-@property (nonatomic, readonly) int16_t positionY;
+@property ( nonatomic, readonly ) int16_t positionY;
 /* When this is zero, it means device points in the positive x direction
    This may change to point down the y-axis */
-@property (nonatomic, readonly) int16_t yawTare;
+@property ( nonatomic, readonly ) int16_t yawTare;
 
 /*!
  * Convenience method for sending a robot the command.
@@ -74,7 +75,7 @@ typedef enum RKConfigureLocatorFlag RKConfigureLocatorFlag;
  *               with Sphero’s heading coordinate system. When this parameter is set to zero, it means that having 
  *               yaw = 0 corresponds to facing down the X- axis in the positive direction.  
  */
-+ (void)sendCommandForFlag:(RKConfigureLocatorFlag)flag newX:(int16_t)x newY:(int16_t)y newYaw:(int16_t)yaw;
++ (void) sendCommandForFlag:(RKConfigureLocatorFlag) flag newX:(int16_t) x newY:(int16_t) y newYaw:(int16_t) yaw;
 
 /**
  * Initializer to set the parameters used to configure the locator.
@@ -86,6 +87,6 @@ typedef enum RKConfigureLocatorFlag RKConfigureLocatorFlag;
  *               with Sphero’s heading coordinate system. When this parameter is set to zero, it means that having 
  *               yaw = 0 corresponds to facing down the X- axis in the positive direction.  
  */
-- (id)initForFlag:(RKConfigureLocatorFlag)flag newX:(int16_t)x newY:(int16_t)y newYaw:(int16_t)yaw;
+- (id) initForFlag:(RKConfigureLocatorFlag) flag newX:(int16_t) x newY:(int16_t) y newYaw:(int16_t) yaw;
 
 @end

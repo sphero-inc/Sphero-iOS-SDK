@@ -15,24 +15,24 @@
  * @sa
  */
 @interface RKSetUserHackModeCommand : RKDeviceCommand {
-    BOOL mode;
+   BOOL mode;
 }
 
 /*! 
  * Property for the mode to be set with this command.
  */
-@property (nonatomic, readonly) BOOL mode;
+@property ( nonatomic, readonly ) BOOL mode;
 
 /*! 
  * Convience method for sending the command for a given mode.
  * @param deviceMode The mode to set for the robot.
  */
-+ (void)sendCommandToSetUserHackMode:(BOOL)userHackMode;
++ (void) sendCommandToSetUserHackMode:(BOOL) userHackMode;
 
 /*! 
  * Initiazer that sets the mode for the robot.
  * @param deviceMode The mode to set for the robot.
  */
-- (id)initToSetUserHackMode:(BOOL)userHackMode;
+- (id) initToSetUserHackMode:(BOOL) userHackMode;
 
 @end

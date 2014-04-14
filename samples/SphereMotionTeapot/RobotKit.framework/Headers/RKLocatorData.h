@@ -17,8 +17,9 @@
  * Structure with the position x and y value
  */
 struct RKLocatorPosition {
-    float x; /*!< The x position of the locator (in cm) */
-    float y;  /*!< The y position of the locator (in cm) */
+   float x;
+   /*!< The x position of the locator (in cm) */
+   float y;  /*!< The y position of the locator (in cm) */
 };
 
 /*! Type for a the locator position structure. */
@@ -30,8 +31,9 @@ typedef struct RKLocatorPosition RKLocatorPosition;
  * Structure with the position x and y value
  */
 struct RKLocatorVelocity {
-    float x; /*!< The x velocity of the locator (in cm/s) */
-    float y;  /*!< The y velocity of the locator (in cm/s) */
+   float x;
+   /*!< The x velocity of the locator (in cm/s) */
+   float y;  /*!< The y velocity of the locator (in cm/s) */
 };
 
 /*! Type for a the locator position structure. */
@@ -42,14 +44,18 @@ typedef struct RKLocatorVelocity RKLocatorVelocity;
  * Structure whose members indicate which of position and velocity values are valid.
  */
 struct RKLocatorState {
-    BOOL locatorXValid; /*!< Indicates if the locator x position is value. */
-    BOOL locatorYValid; /*!< Indicates if the locator y position is value. */
-    BOOL locatoryVelocityXValid; /*!< Indicates if the locator velocity y is valid */
-    BOOL locatorVelocityYValid; /*!< Indicates if the locator velocity y is valid */
+   BOOL locatorXValid;
+   /*!< Indicates if the locator x position is value. */
+   BOOL locatorYValid;
+   /*!< Indicates if the locator y position is value. */
+   BOOL locatoryVelocityXValid;
+   /*!< Indicates if the locator velocity y is valid */
+   BOOL locatorVelocityYValid; /*!< Indicates if the locator velocity y is valid */
 };
 
 /*! Type for the Locator state structure. */
 typedef struct RKLocatorState RKLocatorState;
+
 
 /*!
  * @brief Class to represent samples of locator data.
@@ -62,18 +68,18 @@ typedef struct RKLocatorState RKLocatorState;
  * @sa RKConfigureLocatorCommand.
  */
 @interface RKLocatorData : RKSensorData {
-    @private
-    RKLocatorPosition   position;  // Position of device x and y
-    RKLocatorVelocity   velocity;  // Velocity of device x and y
-    RKLocatorState      state;     // State which shows which variables are valid
+@private
+   RKLocatorPosition position;  // Position of device x and y
+   RKLocatorVelocity velocity;  // Velocity of device x and y
+   RKLocatorState state;     // State which shows which variables are valid
 }
 
 /*! Read only property to access the locator x and y position (in cm) */
-@property (nonatomic, readonly) RKLocatorPosition position;
+@property ( nonatomic, readonly ) RKLocatorPosition position;
 /*! Read only property to access the locator x and y velocity (in cm/s) */
-@property (nonatomic, readonly) RKLocatorVelocity velocity; 
+@property ( nonatomic, readonly ) RKLocatorVelocity velocity;
 /*! Read only property to a structure to use to test which locator values are valid */
-@property (nonatomic, readonly) RKLocatorState state;
+@property ( nonatomic, readonly ) RKLocatorState state;
 
 
 @end

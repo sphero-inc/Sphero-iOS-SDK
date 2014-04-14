@@ -18,7 +18,7 @@
  *  delay 0-65,535
  */
 @interface RKMCDelay : RKMacroCommand {
-    int delay;
+   int delay;
 }
 
 /*! Delay in ms associated with this command. 0-65,535 allowed. */
@@ -28,6 +28,6 @@
  *  @param delay The delay the command will be initialized with.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCDelay*)commandWithDelay:(int)delay;
++ (RKMCDelay *) commandWithDelay:(int) delay;
 
 @end

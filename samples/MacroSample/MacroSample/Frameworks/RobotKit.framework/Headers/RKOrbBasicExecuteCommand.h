@@ -17,16 +17,16 @@
  *  This command will fail if there is already an orbBasic program executing.
  */
 @interface RKOrbBasicExecuteCommand : RKDeviceCommand {
-    @private
-    RKOrbBasicStorageType storageArea;
-    unsigned short startLine;
+@private
+   RKOrbBasicStorageType storageArea;
+   unsigned short startLine;
 }
 
 /* convenience method to send the command to execute an orb basic program. */
-+(void)sendCommandWithStorageArea:(RKOrbBasicStorageType)storageArea startLine:(unsigned short)startLine;
++ (void) sendCommandWithStorageArea:(RKOrbBasicStorageType) storageArea startLine:(unsigned short) startLine;
 
 /* Constructs command with given parameters. */
--(id)initWithStorageArea:(RKOrbBasicStorageType)storage startLine:(unsigned short)start;
+- (id) initWithStorageArea:(RKOrbBasicStorageType) storage startLine:(unsigned short) start;
 
 
 @end

@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <RobotKit/RKDeviceMessage.h>
+#import <RobotKit/RKResponseCodes.h>
 
 /*!
  * @brief Abstract class that represents a response for a command.
@@ -24,17 +25,31 @@
  */
 
 @interface RKDeviceResponse : RKDeviceMessage {
-	@protected
-	NSInteger   code;
-    BOOL        propertiesValid;
+@protected
+   NSInteger sequenceNumber;
+   NSInteger code;
+   BOOL propertiesValid;
 }
 
 /*! The response code returned from the robot. */
-@property (nonatomic, readonly) NSInteger   code;
+@property (nonatomic, readonly) NSInteger code;
+@property (nonatomic, readonly) NSInteger sequenceNumber;
+
+@property (nonatomic, readonly) NSInteger deviceId;
+@property (nonatomic, readonly) NSInteger commandId;
+
+
 /*!
  * Indicates that the properties return in the response are valid. The
  * default value is YES. This will get set to NO if the response returned with a error.
  */
-@property (nonatomic, readonly) BOOL        propertiesValid;
+
+@property ( nonatomic, readonly ) BOOL propertiesValid;
+
+- (int8_t) dataLength;
+
+/*! pull response data from raw packet data */
+- (NSData*) responseData;
+
 
 @end

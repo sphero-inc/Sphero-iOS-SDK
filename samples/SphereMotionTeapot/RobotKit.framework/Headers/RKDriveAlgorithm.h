@@ -7,6 +7,20 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef struct {
+   double angle; // in degrees
+   double scale;
+   NSTimeInterval time;
+} RKVector;
+
+
+@protocol RKDriveVectorAddon <NSObject>
+
+- (RKVector) updateVector:(RKVector) inVector;
+@end
+
+
 /*! @file */
 
 /*!
@@ -17,64 +31,54 @@
  *  to 1.0. An instance of this needs to be set in RKRobotControl.
  *  @sa RKRobotControl
  */
-@interface RKDriveAlgorithm : NSObject {
-    @private
-    double  angle;
-    double  correctionAngle;
-    double  velocity;
-    double  velocityScale;
-    double  stopOffset;
-    
-    double  windowDeltaForCoord1;
-    double  windowDeltaForCoord2;
-    double  windowDeltaForCoord3;
-    
-    id      target;
-    SEL     action;
-}
+@interface RKDriveAlgorithm : NSObject 
 
 /*!
  *  A heading direction calculated by the algorithm in degrees.
  */
-@property (nonatomic, assign) double angle;
+@property ( nonatomic, assign ) double angle;
 
 /*!
  * A correction angle given to the algorithm to modify the heading due to
  * some outside input or event.
  */
-@property (nonatomic, assign) double correctionAngle;
- 
+@property ( nonatomic, assign ) double correctionAngle;
+
 /*!
  * A speed from 0.0 to 1.0.
  */
-@property (nonatomic, assign) double velocity;
+@property ( nonatomic, assign ) double velocity;
 
 /*! A target to send an action to once the conversion completed */
-@property (nonatomic, assign) id target;
+@property ( nonatomic, strong ) id target;
 
 /*! An action to send once the conversion is completed */
-@property (nonatomic, assign) SEL action;
+@property ( nonatomic, assign ) SEL action;
 
 /*!
  * A scale factor from 0.0 to 1.0 which scales the final velocity. The default
  * value is 1.0;
  */
-@property (nonatomic, assign) double velocityScale;
+@property ( nonatomic, assign ) double velocityScale;
 
 /*! 
  *  Value used to offset the stop point.
  */
-@property (nonatomic, assign) double stopOffset;
+@property ( nonatomic, assign ) double stopOffset;
 
 /*! Window delta value for first coordinate */
-@property (nonatomic, assign) double windowDeltaForCoord1;
+@property ( nonatomic, assign ) double windowDeltaForCoord1;
 
 /*! Deadzone delta value for second coordinate */
-@property (nonatomic, assign) double windowDeltaForCoord2;
+@property ( nonatomic, assign ) double windowDeltaForCoord2;
 
 /*! Deadzone delta value for third coordinate */
-@property (nonatomic, assign) double windowDeltaForCoord3;
+@property ( nonatomic, assign ) double windowDeltaForCoord3;
 
+/*!
+ Simple x,y conversion to drive angle in degrees and velocity from 0-1 in the local properties, 'angle' and 'velocity'.
+ */
+- (void) convertWithX:(double) x Y:(double) y;
 
 /*!
  * Method that translates the input coordinates to the logical device coordinates.
@@ -82,12 +86,23 @@
  * @param coord2 The second coordinate in the input coordinate's space.
  * @param coord3 The third coordinate in the input coordinate's space.
  */
-- (void)convertWithCoord1:(double)coord1 coord2:(double)coord2 coord3:(double)coord3;
+- (void) convertWithCoord1:(double) coord1 coord2:(double) coord2 coord3:(double) coord3;
 
 /*!
  * Called in subclass once the conversion has finished to notify a target of
  * completed conversion.
  */
-- (void)performConversionFinishedAction;
+- (void) performConversionFinishedAction;
+
+#pragma mark - filters
+
+- (void) applyVectorFilters;
+
+- (void) addVectorFilter:(id <RKDriveVectorAddon>) filter;
+
+- (void) clearVectorFilters;
+
 
 @end
+
+

@@ -19,7 +19,7 @@
  *  Emit identifiers 0-10 are reserved for internal SDK use, avoid using them
  */
 @interface RKMCEmit : RKMacroCommand {
-    uint8_t emitID;
+   uint8_t emitID;
 }
 
 /*! The identifier that will be associated with the generated emit */
@@ -29,6 +29,6 @@
  *  @param identifier The identifier that will be associated with the emit that is generated.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCEmit*)commandWithID:(uint8_t)identifier;
++ (RKMCEmit *) commandWithID:(uint8_t) identifier;
 
 @end

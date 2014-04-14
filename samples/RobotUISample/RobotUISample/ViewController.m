@@ -115,6 +115,8 @@
     //Set max speed
     [RKDriveControl sharedDriveControl].velocityScale = 0.6;
     
+    [[RKDriveControl sharedDriveControl] startDriving:RKDriveControlJoyStick];
+    
     // start processing the puck's movements
     UIPanGestureRecognizer* panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleJoystickMotion:)];
     [drivePuck addGestureRecognizer:panGesture];
@@ -124,9 +126,9 @@
 -(void)setupRobotConnection {
     /*Try to connect to the robot*/
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
-    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-    }
+
+    [[RKRobotProvider sharedRobotProvider] openRobotConnection];
+
 }
 
 #pragma mark -
@@ -135,18 +137,18 @@
 - (void)handleJoystickMotion:(id)sender
 {
     //Don't handle the gesture if we aren't connected to and driving a robot
-    if (![RKDriveControl sharedDriveControl].driving) return;
+    //if (![RKDriveControl sharedDriveControl].driving) return;
     
     //Handle the pan gesture and pass the results into the drive control
     UIPanGestureRecognizer *pan_recognizer = (UIPanGestureRecognizer *)sender;
     CGRect parent_bounds = circularView.bounds;
     CGPoint parent_center = [circularView convertPoint:circularView.center fromView:circularView.superview] ;
     
-    if (pan_recognizer.state == UIGestureRecognizerStateEnded || pan_recognizer.state == UIGestureRecognizerStateCancelled || pan_recognizer.state == UIGestureRecognizerStateFailed || pan_recognizer.state == UIGestureRecognizerStateBegan) {
+    if (pan_recognizer.state == UIGestureRecognizerStateEnded || pan_recognizer.state == UIGestureRecognizerStateCancelled || pan_recognizer.state == UIGestureRecognizerStateFailed ) {
         ballMoving = NO;
-        [[RKDriveControl sharedDriveControl].robotControl stopMoving];
+        [RKRollCommand sendStop];
         drivePuck.center = parent_center;
-    } else if (pan_recognizer.state == UIGestureRecognizerStateChanged) {
+    } else if (pan_recognizer.state == UIGestureRecognizerStateChanged || pan_recognizer.state == UIGestureRecognizerStateBegan) {
         ballMoving = YES;
         CGPoint translate = [pan_recognizer translationInView:circularView];
         CGPoint drag_point = parent_center;
@@ -154,8 +156,57 @@
         drag_point.y += translate.y;
         drag_point.x = [self clampWithValue:drag_point.x min:CGRectGetMinX(parent_bounds) max:CGRectGetMaxX(parent_bounds)];
         drag_point.y = [self clampWithValue:drag_point.y min:CGRectGetMinY(parent_bounds) max:CGRectGetMaxY(parent_bounds)];
-        [[RKDriveControl sharedDriveControl] driveWithJoyStickPosition:drag_point];        
+        [[RKDriveControl sharedDriveControl] driveWithJoyStickPosition:drag_point];
+        [self convertWithCoord1:drag_point.x coord2:drag_point.y coord3:0.0];
     }
+}
+
+- (void) convertWithCoord1:(double)x coord2:(double)y coord3:(double)unused
+{
+    double angle, velocity;
+    CGRect parent_bounds = circularView.bounds;
+    CGPoint center = CGPointMake(CGRectGetMidX(parent_bounds), CGRectGetMidY(parent_bounds));
+    double x_length = x - CGRectGetMidX(parent_bounds);
+    double y_length = CGRectGetMidY(parent_bounds) - y;
+    
+    // Need to scale x_length and y_length to make sure the coordinates are polar
+    // instead of eliptical
+    if (center.x > center.y) {
+        x_length *= center.y/center.x;
+    } else if (center.x < center.y) {
+        y_length *= center.x/center.y;
+    }
+    
+    if (center.x > 0.0 && center.y > 0.0) {
+        velocity = (sqrt(x_length * x_length + y_length * y_length) /
+                    fmin(center.x, center.y));
+        velocity = Clamp(velocity, 0.0, 1.0) * 0.6;
+    } else {
+        velocity = 0.0;
+    }
+    
+    // calculate the angle
+    angle = atan2(x_length, y_length);
+    if (angle < 0.0) { // adjust for range between 0 and 2π
+        angle += 2.0 * M_PI;
+    }
+    // correct angle
+    //self.angle -= correctionAngle;
+    if (angle < 0.0) {
+        angle += 2.0 * M_PI;
+    }
+    
+    angle *= 180.0/M_PI; // convert to degrees
+    
+    [RKRollCommand sendCommandWithHeading:angle velocity:velocity];
+    RKDriveAlgorithm *drive = [[RKDriveAlgorithm alloc] init];
+    drive.velocity = velocity;
+    drive.angle = angle;
+    drive.velocityScale = 0.6;
+    drive.correctionAngle = 0.0f;
+    [self updateMotionIndicator:drive];
+    [drive release];
+    
 }
 
 - (void)updateMotionIndicator:(RKDriveAlgorithm*)driveAlgorithm {

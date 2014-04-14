@@ -17,7 +17,7 @@
  *  rate 0.0-1.0
  */
 @interface RKMCRotationRate : RKMacroCommand {
-    float rate;
+   float rate;
 }
 
 /*! The rotation rate to be set. 0.0-1.0 allowed. */
@@ -27,6 +27,6 @@
  *  @param rate The rotation rate to set. 0.0-1.0 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRotationRate*)commandWithRate:(float)rate;
++ (RKMCRotationRate *) commandWithRate:(float) rate;
 
 @end

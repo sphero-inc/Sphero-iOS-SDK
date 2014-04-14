@@ -19,8 +19,8 @@
  */
 
 @interface RKMCCalibrate : RKMacroCommand {
-    int heading;
-    int delay;
+   int heading;
+   int delay;
 }
 
 /*! The current heading of the robot will become this value after the command is executed. 0-359 allowed. */
@@ -34,6 +34,6 @@
  *  @param delay The delay the command will be initialized with
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCCalibrate*)commandWithHeading:(int)heading delay:(int)delay;
++ (RKMCCalibrate *) commandWithHeading:(int) heading delay:(int) delay;
 
 @end

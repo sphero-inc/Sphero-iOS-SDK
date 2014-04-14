@@ -25,17 +25,17 @@
  *
  */
 @interface RKSetPowerNotificationCommand : RKDeviceCommand {
-    @private
-    BOOL state;
+@private
+   BOOL state;
 }
 
 /*! Readonly value to access the state for power notification. */
-@property (nonatomic, readonly) BOOL state;
+@property ( nonatomic, readonly ) BOOL state;
 
 /*! Convience method that sends a command to turn on power notifications. */
-+ (void)turnOn;
++ (void) turnOn;
 /*! Convience method that sends a command to turn off power notifications. */
-+ (void)turnOff;
++ (void) turnOff;
 
 /*! 
  * Initialize for the class that sets the state of the power notifications to 
@@ -44,6 +44,6 @@
  * turn off power state notifications.
  * @return An initialized RKSetPowerNotificationCommand object.
  */
-- (id)initWithState:(BOOL)notificationState;
+- (id) initWithState:(BOOL) notificationState;
 
 @end

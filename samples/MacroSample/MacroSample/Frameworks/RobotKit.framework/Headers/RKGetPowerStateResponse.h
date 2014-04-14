@@ -19,21 +19,21 @@
  * @sa RKDeviceMessenger
  */
 @interface RKGetPowerStateResponse : RKDeviceResponse {
-    @private
-    RKBatteryPowerState powerState;
-    float               batteryVoltage;
-    NSUInteger          numberCharges;
-    NSUInteger          timeSinceLastCharge;
+@private
+   RKBatteryPowerState powerState;
+   float batteryVoltage;
+   NSUInteger numberCharges;
+   NSUInteger timeSinceLastCharge;
 }
 
 /*! Returns an enumerated state value indicating the battery charge state. */
-@property (nonatomic, readonly) RKBatteryPowerState powerState;
+@property ( nonatomic, readonly ) RKBatteryPowerState powerState;
 /*! Returns the current voltage of the robot's battery. */
-@property (nonatomic, readonly) float               batteryVoltage;
+@property ( nonatomic, readonly ) float batteryVoltage;
 /*! Returns the number of charge cycles the robot's battery has gone through. */
-@property (nonatomic, readonly) NSUInteger          numberCharges;
+@property ( nonatomic, readonly ) NSUInteger numberCharges;
 /*! Time since the robot wake and placed in it's charger. Note: the robot needs to be awake when it 
  is placed in the charger, so the firmware can reset zero the timer. */
-@property (nonatomic, readonly) NSUInteger          timeSinceLastCharge;
+@property ( nonatomic, readonly ) NSUInteger timeSinceLastCharge;
 
 @end

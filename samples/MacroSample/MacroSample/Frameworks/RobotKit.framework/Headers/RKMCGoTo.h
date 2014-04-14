@@ -19,7 +19,7 @@
  *  macroID 0-253, 255
  */
 @interface RKMCGoTo : RKMacroCommand {
-    uint8_t macroID;
+   uint8_t macroID;
 }
 
 /*! The identifier of the macro execution should continue at the beginning of. 0-253, 255 allowed */
@@ -29,6 +29,6 @@
  *  @param identifier The identifier of the macro that execution should continue at the beginning of.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCGoTo*)commandWithID:(uint8_t)identifier;
++ (RKMCGoTo *) commandWithID:(uint8_t) identifier;
 
 @end

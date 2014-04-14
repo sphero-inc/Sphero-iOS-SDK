@@ -13,8 +13,11 @@
 #if defined (SRCLIBRARY)
 #import <RobotKit/Macro/RKSaveTemporaryMacroCommand.h>
 #else
+
 #import <RobotKit/RKSaveTemporaryMacroCommand.h>
+
 #endif
+
 
 /*!
  * @brief Class that encapsulates the response from a save temporary macro command.
@@ -26,11 +29,11 @@
  */
 
 @interface RKSaveTemporaryMacroResponse : RKDeviceResponse {
-    @private
-    RKMacroFlags macroFlags;
+@private
+   RKMacroFlags macroFlags;
 }
 
 /*! The flags that where sent in the original command */
-@property (nonatomic, readonly) RKMacroFlags macroFlags;
+@property ( nonatomic, readonly ) RKMacroFlags macroFlags;
 
 @end

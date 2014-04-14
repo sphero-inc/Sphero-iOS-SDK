@@ -13,6 +13,7 @@
 /*! Type to represent the sleep time interval in seconds */
 typedef uint16_t RKSleepTimeInterval;
 
+
 /*!
  * @brief Class that encapsulates a go to sleep command.
  *
@@ -21,9 +22,9 @@ typedef uint16_t RKSleepTimeInterval;
  * @sa RKGoToSleepResponse
  */
 @interface RKGoToSleepCommand : RKDeviceCommand {
-    @private
-    RKSleepTimeInterval wakeUpTimeInterval;
-    uint8_t             wakeUpMacro;
+@private
+   RKSleepTimeInterval wakeUpTimeInterval;
+   uint8_t wakeUpMacro;
 }
 
 /*!
@@ -33,7 +34,7 @@ typedef uint16_t RKSleepTimeInterval;
  * @param identifier A system macro id to run upon awaking. This has no effect if the time
  * interval is set to 0.
  */
-+ (void)sendCommandWithWakeUpTimeInterval:(RKSleepTimeInterval)interval macroId:(uint8_t)identifier;
++ (void) sendCommandWithWakeUpTimeInterval:(RKSleepTimeInterval) interval macroId:(uint8_t) identifier;
 /*!
  * Initializer for the Class which allows for a sleep interval to be set and a system macro to
  * be ran upon waking.
@@ -41,6 +42,6 @@ typedef uint16_t RKSleepTimeInterval;
  * @param identifier A system macro id to run upon awaking. This has no effect if the time
  * interval is set to 0.
  */
-- (id)initWithWakeUpTimeInterval:(RKSleepTimeInterval)interval macroId:(uint8_t)identifier;
+- (id) initWithWakeUpTimeInterval:(RKSleepTimeInterval) interval macroId:(uint8_t) identifier;
 
 @end

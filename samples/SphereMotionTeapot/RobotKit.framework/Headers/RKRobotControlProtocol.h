@@ -22,20 +22,20 @@
  *  Starts the calibration mode for Sphero. This mainly sets up the 
  *  calibration LED.
  */
-- (void)startCalibration;
+- (void) startCalibration;
 
 /*!
  *  Stop calibration mode for Sphero. 
  *  @param calibrate YES to calibrate for new heading, and NO to stop calibration
  *  without setting calibration on the ball.
  */
-- (void)stopCalibrated:(BOOL)calibrate;
+- (void) stopCalibrated:(BOOL) calibrate;
 
 /*!
  *  Method to rotate Sphero to a heading without moving the ball. Used during
  *  calibration.
  *  @param angle A heading angle between 0° to 360°
  */
-- (void)rotateToHeading:(float)angle;
+- (void) rotateToHeading:(float) angle;
 
 @end

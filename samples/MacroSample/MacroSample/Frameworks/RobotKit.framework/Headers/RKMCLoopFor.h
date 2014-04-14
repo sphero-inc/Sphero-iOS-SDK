@@ -15,7 +15,7 @@
  *  Place a RKMCLoopEnd command at the end of the commands to loop.
  */
 @interface RKMCLoopFor : RKMacroCommand {
-    uint8_t repeats;
+   uint8_t repeats;
 }
 
 /*! Number of times to loop */
@@ -25,6 +25,6 @@
  *  @param repeats The number of times the loop will repeat
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCLoopFor*)commandWithRepeats:(uint8_t)repeats;
++ (RKMCLoopFor *) commandWithRepeats:(uint8_t) repeats;
 
 @end

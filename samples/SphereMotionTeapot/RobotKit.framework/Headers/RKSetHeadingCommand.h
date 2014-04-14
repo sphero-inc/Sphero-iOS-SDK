@@ -26,28 +26,28 @@
  * @sa RKRollCommand
  */
 @interface RKSetHeadingCommand : RKDeviceCommand {
-    @private
-    float heading;
+@private
+   float heading;
 }
 
 /*! 
  * The angle that will be added to the current heading when setting
  * the new 0° point. The value is in degrees.
  */
-@property (nonatomic, readonly) float heading;
+@property ( nonatomic, readonly ) float heading;
 
 /*! 
  * Convenience method for sending the command through RKDeviceMessenger.
  * @param heading Typically this should be 0.0, but setting it will add to the current heading
  * when setting the new 0° point. The value is in degrees.
  */
-+ (void)sendCommandWithHeading:(float)heading;
++ (void) sendCommandWithHeading:(float) heading;
 /*!
  * Initializer for a RKSetHeadingCommand object.
  * @param heading Typically this should be 0.0, but setting it will add to the current heading
  * when setting the new 0° point. The value is in degrees.
  * @return The initialized object.
  */
-- (id)initWithHeading:(float)heading;
+- (id) initWithHeading:(float) heading;
 
 @end

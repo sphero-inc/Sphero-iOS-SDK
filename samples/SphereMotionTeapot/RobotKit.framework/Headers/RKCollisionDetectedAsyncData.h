@@ -12,9 +12,9 @@
  * Structure to represent acceleration values normalized with the gravity constant. 
  */
 struct RKCollisionAcceleration {
-    float x;
-    float y;
-    float z;
+   float x;
+   float y;
+   float z;
 };
 typedef struct RKCollisionAcceleration RKCollisionAcceleration;
 
@@ -22,8 +22,8 @@ typedef struct RKCollisionAcceleration RKCollisionAcceleration;
  * Structure with boolean values for the x and y axes, which is used to indicate the axes of impact.
  */
 struct RKCollisionAxis {
-    bool x : 1;
-    bool y : 1;
+   bool x : 1;
+   bool y : 1;
 };
 typedef struct RKCollisionAxis RKCollisionAxis;
 
@@ -31,10 +31,11 @@ typedef struct RKCollisionAxis RKCollisionAxis;
  * Structure with the impact power values for the x and y axes.
  */
 struct RKCollisionPower {
-    int x;
-    int y;
+   int x;
+   int y;
 };
 typedef struct RKCollisionPower RKCollisionPower;
+
 
 /**
  *
@@ -46,23 +47,23 @@ typedef struct RKCollisionPower RKCollisionPower;
  */
 
 @interface RKCollisionDetectedAsyncData : RKDeviceAsyncData {
-    @private
-    RKCollisionAcceleration impactAcceleration;
-    RKCollisionAxis         impactAxis;
-    RKCollisionPower        impactPower;
-    float                   impactSpeed;
-    NSTimeInterval          impactTimeStamp;
+@private
+   RKCollisionAcceleration impactAcceleration;
+   RKCollisionAxis impactAxis;
+   RKCollisionPower impactPower;
+   float impactSpeed;
+   NSTimeInterval impactTimeStamp;
 }
 
 /*! Property for the acceleration values at the time of impact. */
-@property (nonatomic, readonly) RKCollisionAcceleration impactAcceleration;
+@property ( nonatomic, readonly ) RKCollisionAcceleration impactAcceleration;
 /*! Property for the axes effected in the impact. */
-@property (nonatomic, readonly) RKCollisionAxis         impactAxis;
+@property ( nonatomic, readonly ) RKCollisionAxis impactAxis;
 /*! Property for the power that occured during impact. */
-@property (nonatomic, readonly) RKCollisionPower        impactPower;
+@property ( nonatomic, readonly ) RKCollisionPower impactPower;
 /*! Property that returns the speed at the time of impact. */
-@property (nonatomic, readonly) float                   impactSpeed;
+@property ( nonatomic, readonly ) float impactSpeed;
 /*! Property with a time stamp in the iOS's time reference. */
-@property (nonatomic, readonly) NSTimeInterval          impactTimeStamp;
+@property ( nonatomic, readonly ) NSTimeInterval impactTimeStamp;
 
 @end

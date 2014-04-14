@@ -22,14 +22,14 @@
  * @sa RKSetDataStreamingCommand
  */
 @interface RKSetDataStreamingResponse : RKDeviceResponse {
-    
+
 }
 
 /*! Accessor to the packet frames requested in the last sent command. */
-+ (NSUInteger)packetFrames;
++ (NSUInteger) packetFrames;
 /*! Accessor to the mask sent in the last sent command. */
-+ (RKDataStreamingMask)mask;
++ (RKDataStreamingMask) mask;
 /*! Accessor the packet count sent in the last sent command. */
-+ (NSUInteger)packetCount;
++ (NSUInteger) packetCount;
 
 @end

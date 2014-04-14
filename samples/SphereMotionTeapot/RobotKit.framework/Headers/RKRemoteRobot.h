@@ -11,6 +11,7 @@
 @class RKDeviceCommand;
 @class RKRemotePlayer;
 
+
 /*!
  *  @brief RKRemoteRobot represents a remote player's robot and allows for remote control
  *
@@ -27,19 +28,17 @@
  *  @sa RKMultiplayer
  *  @sa RKMultiplayerGame
  */
-@interface RKRemoteRobot : NSObject {
-    RKRemotePlayer *player;
-}
+@interface RKRemoteRobot : NSObject
 
 /*! Represents the remote player associated with this robot. */
-@property (nonatomic, assign) RKRemotePlayer *player;
+@property ( nonatomic, strong ) RKRemotePlayer *player;
 
 /*! Used to send commands to a remote robot
  */
--(void)sendCommand:(RKDeviceCommand*)command;
+- (void) sendCommand:(RKDeviceCommand *) command;
 
 /*! Used internally by RKMultiplayer to process remote commands to local robot 
  */
-+(void)processCommand:(NSDictionary*)dict;
++ (void) processCommand:(NSDictionary *) dict;
 
 @end

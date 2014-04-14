@@ -24,7 +24,7 @@
  */
 
 @interface RKCalibrateResponse : RKDeviceResponse {
-    
+
 }
 
 @end

@@ -20,9 +20,9 @@
  *  blue 0.0-1.0
  */
 @interface RKMCRGBSD2 : RKMacroCommand {
-    float red;
-    float green;
-    float blue;
+   float red;
+   float green;
+   float blue;
 }
 
 /*! The intensity of the red LED. 0.0-1.0 allowed. */
@@ -40,6 +40,6 @@
  *  @param blue The intensity of the blue LED. 0.0-1.0 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRGBSD2*)commandWithRed:(float)red green:(float)green blue:(float)blue;
++ (RKMCRGBSD2 *) commandWithRed:(float) red green:(float) green blue:(float) blue;
 
 @end

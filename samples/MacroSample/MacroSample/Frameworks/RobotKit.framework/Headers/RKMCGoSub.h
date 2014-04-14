@@ -18,7 +18,7 @@
  *  GoSub commands inside a streaming macro (id 254) will be ignored.
  */
 @interface RKMCGoSub : RKMacroCommand {
-    uint8_t macroID;
+   uint8_t macroID;
 }
 
 /*! The identifier of the macro that should be executed inline. 0-253, 255 allowed */
@@ -28,6 +28,6 @@
  *  @param identifier The identifier of the macro that should be executed inline.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCGoSub*)commandWithID:(uint8_t)identifier;
++ (RKMCGoSub *) commandWithID:(uint8_t) identifier;
 
 @end

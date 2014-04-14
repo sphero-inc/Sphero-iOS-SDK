@@ -21,13 +21,13 @@
 */
 
 @interface RKJoyStickDriveAlgorithm : RKDriveAlgorithm {
-    @private
-    CGSize size;
-    CGPoint center;
+@private
+   CGSize size;
+   CGPoint center;
 }
 
 /*! Center point of the joy pad area */
-@property (nonatomic, readonly) CGPoint center;
+@property ( nonatomic, readonly ) CGPoint center;
 
 /*!
  *  Initializes the algorithm with the size of the drag area used for the 
@@ -35,11 +35,12 @@
  *  @param size The bounds of area used for the joy stick control.
  *  @return The initialized object.
  */
-- (id)initWithPadSize:(CGSize)size;
+- (id) initWithPadSize:(CGSize) size;
 /*!
  * Updates the size of the screen area used for the joystick.
  * @param size The bounds of the area used for the joystick.
  */
-- (void)updatePadSize:(CGSize)size;
+- (void) updatePadSize:(CGSize) size;
+
 
 @end

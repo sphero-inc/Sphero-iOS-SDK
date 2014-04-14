@@ -17,10 +17,12 @@
  * Indicates which attitude value are valid based on the mask that was sent 
  * to start the data streaming. 
  */
-typedef struct  {
-    BOOL pitchValid; /*!< Indicates if the pitch value is valid. */
-    BOOL rollValid;  /*!< Indicates if the roll value is valid. */
-    BOOL yawValid;   /*!< Indicates if the yaw value is valid. */
+typedef struct {
+   BOOL pitchValid;
+   /*!< Indicates if the pitch value is valid. */
+   BOOL rollValid;
+   /*!< Indicates if the roll value is valid. */
+   BOOL yawValid;   /*!< Indicates if the yaw value is valid. */
 } RKAttitudeState;
 
 
@@ -34,20 +36,20 @@ typedef struct  {
  * @sa RKDeviceSensorsData
  */
 @interface RKAttitudeData : RKSensorData {
-    float pitch;
-    float roll;
-    float yaw;
-    
-    RKAttitudeState state;
+   float pitch;
+   float roll;
+   float yaw;
+
+   RKAttitudeState state;
 }
 
 /*! Read only property for the pitch angle of Sphero. */
-@property (nonatomic, readonly) float pitch;
+@property ( nonatomic, readonly ) float pitch;
 /*! Read only property for the roll angle of Sphero. */
-@property (nonatomic, readonly) float roll;
+@property ( nonatomic, readonly ) float roll;
 /*! Read only property for the yaw angle of Sphero. */
-@property (nonatomic, readonly) float yaw;
+@property ( nonatomic, readonly ) float yaw;
 /*! Read only property to the state structure that indicates which angles are valid numbers. */
-@property (nonatomic, readonly) RKAttitudeState state;
+@property ( nonatomic, readonly ) RKAttitudeState state;
 
 @end

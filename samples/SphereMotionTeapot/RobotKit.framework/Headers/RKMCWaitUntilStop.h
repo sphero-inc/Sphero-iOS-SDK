@@ -18,7 +18,7 @@
  *  delay 0-65,353
  */
 @interface RKMCWaitUntilStop : RKMacroCommand {
-    int delay;
+   int delay;
 }
 
 /*! The amount of time to wait for the robot to come to a complete stop */
@@ -28,6 +28,6 @@
  *  @param delay The delay associated with the command. 0-65,353 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCWaitUntilStop*)commandWithDelay:(int)delay;
++ (RKMCWaitUntilStop *) commandWithDelay:(int) delay;
 
 @end

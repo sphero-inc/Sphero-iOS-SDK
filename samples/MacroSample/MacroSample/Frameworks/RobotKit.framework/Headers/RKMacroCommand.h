@@ -18,25 +18,25 @@
  *  This class should not be used directly.
  */
 @interface RKMacroCommand : NSObject {
-    
+
 }
 
 /*! Initialize a new command with the given binary command data
  *  @param data Binary data the command will be initialized from.
  *  @return A new instance of the macro command initialized from data
  */
--(RKMacroCommand*)initWithBytes:(NSData*)data;
+- (RKMacroCommand *) initWithBytes:(NSData *) data;
 
 /*! @return a human readable description of the command and parameters. */
--(NSString*)description;
+- (NSString *) description;
 
 /*! @return a binary byte representation for the command */
--(NSData*)getByteRepresentation;
+- (NSData *) getByteRepresentation;
 
 /*! @return the length of the command in bytes */
--(int)length;
+- (int) length;
 
 /*! @return human readable name of the command */
--(NSString*)name;
+- (NSString *) name;
 
 @end

@@ -20,7 +20,7 @@
  * @sa RKRotationRateCommand
  */
 @interface RKRotationRateResponse : RKDeviceResponse {
-    
+
 }
 
 @end

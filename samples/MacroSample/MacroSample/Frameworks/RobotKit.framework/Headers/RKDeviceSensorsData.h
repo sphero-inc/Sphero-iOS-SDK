@@ -18,6 +18,7 @@
 @class RKLocatorData;
 @class RKQuaternionData;
 
+
 /*!
  * @brief Class that represents a sample of sensor data received when streaming data.
  *
@@ -25,28 +26,28 @@
  *
  */
 @interface RKDeviceSensorsData : RKSensorData {
-    RKBackEMFData       *backEMFData;
-    RKMagnetometerData  *magnetometerData;
-    RKGyroData          *gyroData;
-    RKAccelerometerData *accelerometerData;
-    RKAttitudeData      *attitudeData;
-    RKLocatorData       *locatorData;
-    RKQuaternionData    *quaternionData;
+   RKBackEMFData *backEMFData;
+   RKMagnetometerData *magnetometerData;
+   RKGyroData *gyroData;
+   RKAccelerometerData *accelerometerData;
+   RKAttitudeData *attitudeData;
+   RKLocatorData *locatorData;
+   RKQuaternionData *quaternionData;
 }
 
 /*! Property for the object that contains a back EMF sample. */
-@property (nonatomic, readonly) RKBackEMFData       *backEMFData;
+@property ( nonatomic, readonly ) RKBackEMFData *backEMFData;
 /*! Property for the object that contains a sample from the magnetometer. */
-@property (nonatomic, readonly) RKMagnetometerData  *magnetometerData;
+@property ( nonatomic, readonly ) RKMagnetometerData *magnetometerData;
 /*! Property for the object that contains a sample from the gyro sensor */
-@property (nonatomic, readonly) RKGyroData          *gyroData;
+@property ( nonatomic, readonly ) RKGyroData *gyroData;
 /*! Property for the object that contains a sample from the accelerometer */
-@property (nonatomic, readonly) RKAccelerometerData *accelerometerData;
+@property ( nonatomic, readonly ) RKAccelerometerData *accelerometerData;
 /*! Property to a RKAttitude object */
-@property (nonatomic, readonly) RKAttitudeData      *attitudeData;
+@property ( nonatomic, readonly ) RKAttitudeData *attitudeData;
 /*! Property to a RKLocator object */
-@property (nonatomic, readonly) RKLocatorData      *locatorData;
+@property ( nonatomic, readonly ) RKLocatorData *locatorData;
 /*! Property to a RKQuaternion object */
-@property (nonatomic, readonly) RKQuaternionData      *quaternionData;
+@property ( nonatomic, readonly ) RKQuaternionData *quaternionData;
 
 @end

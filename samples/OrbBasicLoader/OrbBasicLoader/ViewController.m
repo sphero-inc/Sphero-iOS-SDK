@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import <RobotKit/RobotKit.h>
+#import <RobotKit/RKOrbBasicProgram.h>
 #import <RobotUIKit/RobotUIKit.h>
 
 #import "OrbBasicFilesManager.h"
@@ -124,7 +125,7 @@
     if (!connectionSetupFinished) return;
     
     // reconnect to Sphero
-    [[RKRobotProvider sharedRobotProvider] openRobotConnection];
+    //[[RKRobotProvider sharedRobotProvider] openRobotConnection];
     messageView.text = @"Sphero reconnected. Setting up connection to Sphero....";
 }
 
@@ -147,12 +148,10 @@
                                                  name:RKRobotDidGainControlNotification
                                                object:nil];
 
-    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-        messageView.text = @"Setting up connection to Sphero....";
-    } else {
-        messageView.text = @"Sphero is not connected. Make sure it is turned on.";
-    }
+
+    [[RKRobotProvider sharedRobotProvider] openRobotConnection];
+    messageView.text = @"Setting up connection to Sphero....";
+  
     
     connectionSetupFinished = YES;
 }

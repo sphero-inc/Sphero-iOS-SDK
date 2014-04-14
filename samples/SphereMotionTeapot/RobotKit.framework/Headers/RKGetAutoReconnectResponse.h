@@ -24,13 +24,13 @@
  */
 
 @interface RKGetAutoReconnectResponse : RKDeviceResponse {
-    BOOL    enableFlag;
-    uint8_t autoReconnectStartTime;
+   BOOL enableFlag;
+   uint8_t autoReconnectStartTime;
 }
 
 /*! Readonly value to access the enable flag for the command */
-@property (nonatomic, readonly) BOOL    enableFlag;
+@property ( nonatomic, readonly ) BOOL enableFlag;
 /*! Readonly value to access the start time of the auto reconnect state */
-@property (nonatomic, readonly) uint8_t autoReconnectStartTime;
+@property ( nonatomic, readonly ) uint8_t autoReconnectStartTime;
 
 @end

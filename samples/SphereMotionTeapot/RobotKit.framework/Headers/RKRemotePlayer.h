@@ -8,13 +8,17 @@
 //  Description: Represents a remote player in a multiplayer game
 
 #import <Foundation/Foundation.h>
+
 #if defined (SRCLIBRARY)
 #import <RobotKit/Multiplayer/RKRemoteRobot.h>
 #else
+
 #import <RobotKit/RKRemoteRobot.h>
+
 #endif
 
 @class RKMultiplayerNetworkWIFI;
+
 
 /*!
  *  @brief RKRemotePlayer represents a remote player in a multiplayer game
@@ -30,78 +34,78 @@
  */
 
 @interface RKRemotePlayer : NSObject {
-    RKMultiplayerNetworkWIFI    *connection;
-    NSString                    *name;
-    RKRemoteRobot               *robot;
-    NSString                    *UID;
-    BOOL                        host;
-    int                         sortOrder;
-    double                      timeOffset;
-    BOOL                        firstOffset;
-    NSMutableDictionary         *pendingPings;
-    int                         timeoutCount;
-    double                      latency;
+   RKMultiplayerNetworkWIFI *connection;
+   NSString *name;
+   RKRemoteRobot *robot;
+   NSString *UID;
+   BOOL host;
+   int sortOrder;
+   double timeOffset;
+   BOOL firstOffset;
+   NSMutableDictionary *pendingPings;
+   int timeoutCount;
+   double latency;
 }
 
 /*! Human readable name to display for the player.
  */
-@property (nonatomic, retain) NSString                  *name;
+@property ( nonatomic, strong ) NSString *name;
 
 /*! RKRemoteRobot instance representing the remote player's robot allowing remote control.
  *  If the remote player has no robot this will be nil.
  */
-@property (nonatomic, retain) RKRemoteRobot             *robot;
+@property ( nonatomic, strong ) RKRemoteRobot *robot;
 
 /*! A globally unique identifier string representing the player.  Can be used
  *  to associate messages with a remote player.
  */
-@property (nonatomic, retain) NSString                  *UID;
+@property ( nonatomic, strong ) NSString *UID;
 
 /*! The sort order of this player in the player list.  Used in games where player order
  *  matters.
  */
-@property int                                           sortOrder;
+@property int sortOrder;
 
 /*! The current latency in ms for data to reach the user/arrive from the user
  */
-@property double                                        latency;
+@property double latency;
 
 /*! Indicates if the remote player is the host
  */
-@property BOOL                                          host;
+@property BOOL host;
 
 /*! Returns the players position in the remotePlayers array regardless of sort order
  */
--(int)getPosition;
+- (int) getPosition;
 
 /*! When data arrives from a remote player with a timestamp this can be used to convert the
  *  remote time in ms into local time.  RKMultiplayer automatically handles time syncing
  *  between players.
  */
--(NSDate*)convertToLocalTime:(double)time;
+- (NSDate *) convertToLocalTime:(double) time;
 
 /*!  When data arrives from a remote player with a timestamp this can be used to convert the
  *  remote time in ms into local time in ms since the unix epoch.  RKMultiplayer automatically
  *  handles time syncing between players.
  */
--(double)convertToLocalTimeSince1970:(double)time;
+- (double) convertToLocalTimeSince1970:(double) time;
 
 /*! Convenience method for sorting the remotePlayers array
  */
-+(void)sortPlayers;
++ (void) sortPlayers;
 
 /*! Convenience method for getting the player assoicated with a particular unique identifier
  */
-+(RKRemotePlayer*)getPlayerWithUID:(NSString*)uid;
++ (RKRemotePlayer *) getPlayerWithUID:(NSString *) uid;
 
 /*! Method for changing the number of sequential ping timeouts that must occur before a player is dropped.
  *  The default value is 5
  */
-+(void)setMaxPingTimeouts:(int)timeouts;
++ (void) setMaxPingTimeouts:(int) timeouts;
 
 /*! Method for changing the time allowed for a ping response before it is considered a timeout.
  *  The default value is 5.0
  */
-+(void)setPingTimeout:(float)delay;
++ (void) setPingTimeout:(float) delay;
 
 @end

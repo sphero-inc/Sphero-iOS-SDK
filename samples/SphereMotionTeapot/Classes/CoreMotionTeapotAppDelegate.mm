@@ -57,13 +57,8 @@ Abstract: CoreMotionTeapot's app delegate.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleConnectionOnline:) name:RKDeviceConnectionOnlineNotification object:nil];
     
     // Try to bring the robot online and display an alert if there isn't a robot
-    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-    } else {
-        UIAlertView *no_robot_alert = [[UIAlertView alloc] initWithTitle:@"No Sphero" message:@"Go to the Settings app to connect." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [no_robot_alert show];
-        [no_robot_alert release];
-    }
+
+    [[RKRobotProvider sharedRobotProvider] openRobotConnection];
     
     [glView startAnimation];
 }

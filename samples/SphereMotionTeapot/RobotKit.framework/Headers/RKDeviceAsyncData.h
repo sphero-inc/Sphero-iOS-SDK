@@ -19,7 +19,12 @@
  * @sa RKDeviceMessenger
  */
 @interface RKDeviceAsyncData : RKDeviceMessage {
-    
 }
+
+@property ( nonatomic, readonly ) NSInteger code;
+
+@property ( readwrite ) int dataLength;
+
+- (NSData*) data;
 
 @end

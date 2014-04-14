@@ -14,10 +14,10 @@
 typedef uint8_t RKMacroIdType;
 
 enum {
-    /*! The identifier for the device's macro to move it in a figure eight pattern. */
-    RKDeviceMacroIdFigureEight    = 1,
-    /*! The identifier for the device's macro to move it in a square pattern. */
-    RKDeviceMacroIdSquare         = 2
+   /*! The identifier for the device's macro to move it in a figure eight pattern. */
+         RKDeviceMacroIdFigureEight = 1,
+   /*! The identifier for the device's macro to move it in a square pattern. */
+         RKDeviceMacroIdSquare = 2
 };
 
 
@@ -30,23 +30,24 @@ enum {
  * @sa RKRunMacroResponse
  */
 @interface RKRunMacroCommand : RKDeviceCommand {
-    @private
-    RKMacroIdType macroId;
+@private
+   RKMacroIdType macroId;
 }
+
 /*! An identifier for the macro. */
-@property (nonatomic, readonly) RKMacroIdType macroId;
+@property ( nonatomic, readonly ) RKMacroIdType macroId;
 
 /*!
  * Convenience class to send a run macro command with an identifier.
  * @param identifier The macro's identifier.
  */
-+ (void)sendCommandWithId:(RKMacroIdType)identifier;
++ (void) sendCommandWithId:(RKMacroIdType) identifier;
 /*!
  *  The initializer for instances which sets the macro identefier.
  *
  * @param identifier The macro's identifier.
  * @return The initialized object.
  */
-- (id)initWithId:(RKMacroIdType)identifier;
+- (id) initWithId:(RKMacroIdType) identifier;
 
 @end

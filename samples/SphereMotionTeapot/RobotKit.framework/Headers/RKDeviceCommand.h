@@ -20,39 +20,40 @@
  * @sa RKDeviceMessage
  */
 @interface RKDeviceCommand : RKDeviceMessage {
-    NSTimeInterval transmitTimeStamp;
+   NSTimeInterval transmitTimeStamp;
 }
 
-@property (nonatomic, readonly) NSTimeInterval transmitTimeStamp;
+@property ( nonatomic, readonly ) NSTimeInterval transmitTimeStamp;
+
 
 /*!
  * Convenience method that will send a simple command without parameter using the RKDeviceMessenger
  * singleton.
  */
-+ (void)sendCommand;
++ (void) sendCommand;
 /*!
  * Convenience method that will send a simple command without parameter using the RKDeviceMessenger
  * singleton.
  * @param delay A delay time in seconds to send the command.
  */
-+ (void)sendCommandWithDelay:(NSTimeInterval)delay;
++ (void) sendCommandWithDelay:(NSTimeInterval) delay;
 /*!
  * Method to send a command using a dictionary with a serialized command.
  * @sa sendCommandFromDict:
  * @param dict The serialized command in dictionary form.
  */
-+ (void)sendCommandFromDict:(NSDictionary*)dict;
+//+ (void) sendCommandFromDict:(NSDictionary *) dict;
 /*!
  * Used to serialize the command into a dictionary.
  */
-- (NSDictionary*)dictForCommand;
+- (NSDictionary *) dictForCommand;
 /*!
  * Convenience method that sends the command to the connected robot.
  */
-- (void)sendCommand;
+- (void) sendCommand;
 /*!
  * Convenience method that send the command after a delay to the connected robot.
  */
-- (void)sendCommandWithDelay:(NSTimeInterval)delay;
+- (void) sendCommandWithDelay:(NSTimeInterval) delay;
 
 @end

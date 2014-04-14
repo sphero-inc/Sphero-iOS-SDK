@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D37429F1161A474E00E6A724 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37429F0161A474E00E6A724 /* RobotKit.framework */; };
+		816B799518FCA3CC009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B799318FCA3CC009CA81D /* RobotKit.framework */; };
+		816B799618FCA3CC009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B799418FCA3CC009CA81D /* RobotUIKit.framework */; };
 		D37429FF161B5B4600E6A724 /* OrbBasicFilesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D37429FE161B5B4600E6A724 /* OrbBasicFilesManager.m */; };
 		D37B9B2C161A2257002E72D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37B9B2B161A2257002E72D1 /* UIKit.framework */; };
 		D37B9B2E161A2257002E72D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37B9B2D161A2257002E72D1 /* Foundation.framework */; };
@@ -21,7 +22,6 @@
 		D37B9B44161A2257002E72D1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D37B9B43161A2257002E72D1 /* Default.png */; };
 		D37B9B46161A2257002E72D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D37B9B45161A2257002E72D1 /* Default@2x.png */; };
 		D37B9B48161A2257002E72D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D37B9B47161A2257002E72D1 /* Default-568h@2x.png */; };
-		D37B9B4C161A2258002E72D1 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37B9B4B161A2258002E72D1 /* RobotUIKit.framework */; };
 		D37B9B4E161A2258002E72D1 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D37B9B4D161A2258002E72D1 /* RobotUIKit.bundle */; };
 		D37B9B51161A2258002E72D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37B9B50161A2258002E72D1 /* ViewController.m */; };
 		D37B9B54161A2258002E72D1 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37B9B52161A2258002E72D1 /* ViewController_iPhone.xib */; };
@@ -35,7 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D37429F0161A474E00E6A724 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = OrbBasicLoader/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		816B799318FCA3CC009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		816B799418FCA3CC009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
 		D37429FD161B5B4600E6A724 /* OrbBasicFilesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrbBasicFilesManager.h; sourceTree = "<group>"; };
 		D37429FE161B5B4600E6A724 /* OrbBasicFilesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrbBasicFilesManager.m; sourceTree = "<group>"; };
 		D37B9B27161A2257002E72D1 /* OrbBasicLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbBasicLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +55,6 @@
 		D37B9B43161A2257002E72D1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D37B9B45161A2257002E72D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D37B9B47161A2257002E72D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D37B9B4B161A2258002E72D1 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = OrbBasicLoader/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
 		D37B9B4D161A2258002E72D1 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
 		D37B9B4F161A2258002E72D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D37B9B50161A2258002E72D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -73,14 +73,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37429F1161A474E00E6A724 /* RobotKit.framework in Frameworks */,
 				D37B9B2C161A2257002E72D1 /* UIKit.framework in Frameworks */,
 				D37B9B2E161A2257002E72D1 /* Foundation.framework in Frameworks */,
 				D37B9B30161A2257002E72D1 /* CoreGraphics.framework in Frameworks */,
 				D37B9B32161A2257002E72D1 /* CoreMotion.framework in Frameworks */,
+				816B799618FCA3CC009CA81D /* RobotUIKit.framework in Frameworks */,
 				D37B9B34161A2257002E72D1 /* GameKit.framework in Frameworks */,
 				D37B9B36161A2257002E72D1 /* ExternalAccessory.framework in Frameworks */,
-				D37B9B4C161A2258002E72D1 /* RobotUIKit.framework in Frameworks */,
+				816B799518FCA3CC009CA81D /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +107,8 @@
 		D37B9B2A161A2257002E72D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D37429F0161A474E00E6A724 /* RobotKit.framework */,
-				D37B9B4B161A2258002E72D1 /* RobotUIKit.framework */,
+				816B799318FCA3CC009CA81D /* RobotKit.framework */,
+				816B799418FCA3CC009CA81D /* RobotUIKit.framework */,
 				D37B9B2B161A2257002E72D1 /* UIKit.framework */,
 				D37B9B2D161A2257002E72D1 /* Foundation.framework */,
 				D37B9B2F161A2257002E72D1 /* CoreGraphics.framework */,
@@ -299,6 +299,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -321,6 +322,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -331,6 +333,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/OrbBasicLoader/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OrbBasicLoader/OrbBasicLoader-Prefix.pch";
@@ -354,6 +357,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/OrbBasicLoader/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OrbBasicLoader/OrbBasicLoader-Prefix.pch";

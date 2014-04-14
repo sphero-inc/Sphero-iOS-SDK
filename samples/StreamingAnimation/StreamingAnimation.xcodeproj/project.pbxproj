@@ -12,11 +12,11 @@
 		6784E7A315DD9B7B00BD3A02 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79215DD9B7B00BD3A02 /* ViewController_iPad.xib */; };
 		6784E7A415DD9B7B00BD3A02 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79415DD9B7B00BD3A02 /* ViewController_iPhone.xib */; };
 		6784E7A515DD9B7B00BD3A02 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E79715DD9B7B00BD3A02 /* libsqlite3.dylib */; };
-		6784E7A615DD9B7B00BD3A02 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E79815DD9B7B00BD3A02 /* RobotKit.framework */; };
 		6784E7A715DD9B7B00BD3A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E79915DD9B7B00BD3A02 /* main.m */; };
 		6784E7A815DD9B7B00BD3A02 /* MenuBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79A15DD9B7B00BD3A02 /* MenuBG.png */; };
 		6784E7AA15DD9B7B00BD3A02 /* sphero-ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79C15DD9B7B00BD3A02 /* sphero-ball.png */; };
 		6784E7AC15DD9B7B00BD3A02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7A015DD9B7B00BD3A02 /* ViewController.m */; };
+		816B79A218FCA57F009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B79A118FCA57F009CA81D /* RobotKit.framework */; };
 		81EE34421491452A00132035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34411491452A00132035 /* UIKit.framework */; };
 		81EE34441491452A00132035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34431491452A00132035 /* Foundation.framework */; };
 		81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34451491452A00132035 /* CoreGraphics.framework */; };
@@ -32,7 +32,6 @@
 		6784E79315DD9B7B00BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		6784E79515DD9B7B00BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		6784E79715DD9B7B00BD3A02 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = StreamingAnimation/Frameworks/libsqlite3.dylib; sourceTree = "<group>"; };
-		6784E79815DD9B7B00BD3A02 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = StreamingAnimation/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		6784E79915DD9B7B00BD3A02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6784E79A15DD9B7B00BD3A02 /* MenuBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBG.png; sourceTree = "<group>"; };
 		6784E79C15DD9B7B00BD3A02 /* sphero-ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sphero-ball.png"; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		6784E7A015DD9B7B00BD3A02 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6784E7AE15DD9C2A00BD3A02 /* StreamingAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StreamingAnimation-Info.plist"; sourceTree = "<group>"; };
 		6784E7AF15DD9C2A00BD3A02 /* StreamingAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamingAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		816B79A118FCA57F009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		81EE343D1491452A00132035 /* StreamingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EE34411491452A00132035 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81EE34431491452A00132035 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,10 +58,10 @@
 				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
 				81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */,
 				81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */,
+				816B79A218FCA57F009CA81D /* RobotKit.framework in Frameworks */,
 				81EE344A1491452A00132035 /* GameKit.framework in Frameworks */,
 				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
 				6784E7A515DD9B7B00BD3A02 /* libsqlite3.dylib in Frameworks */,
-				6784E7A615DD9B7B00BD3A02 /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +115,8 @@
 		81EE34401491452A00132035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				816B79A118FCA57F009CA81D /* RobotKit.framework */,
 				6784E79715DD9B7B00BD3A02 /* libsqlite3.dylib */,
-				6784E79815DD9B7B00BD3A02 /* RobotKit.framework */,
 				81EE34411491452A00132035 /* UIKit.framework */,
 				81EE34431491452A00132035 /* Foundation.framework */,
 				81EE34451491452A00132035 /* CoreGraphics.framework */,
@@ -280,6 +280,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/StreamingAnimation/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreamingAnimation/StreamingAnimation-Prefix.pch";
@@ -306,6 +307,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/StreamingAnimation/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreamingAnimation/StreamingAnimation-Prefix.pch";

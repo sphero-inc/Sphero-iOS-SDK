@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67AFC46C16711E10002937FE /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67AFC46B16711E10002937FE /* RobotUIKit.bundle */; };
-		67E2661916701B7200A15D7B /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E2661716701B7200A15D7B /* RobotUIKit.framework */; };
+		816B797218FC9AC1009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B797118FC9AC1009CA81D /* RobotUIKit.framework */; };
+		816B797418FC9CBC009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B797318FC9CBC009CA81D /* RobotKit.framework */; };
 		81EE34421491452A00132035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34411491452A00132035 /* UIKit.framework */; };
 		81EE34441491452A00132035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34431491452A00132035 /* Foundation.framework */; };
 		81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34451491452A00132035 /* CoreGraphics.framework */; };
@@ -22,12 +23,12 @@
 		81EE34661491452B00132035 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34641491452B00132035 /* ViewController_iPhone.xib */; };
 		81EE34691491452B00132035 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34671491452B00132035 /* ViewController_iPad.xib */; };
 		81EE34701491458B00132035 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81EE346F1491458B00132035 /* README.txt */; };
-		D308D6C3154AF42E00A64625 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE345B1491452B00132035 /* RobotKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67AFC46B16711E10002937FE /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = HelloWorld/Frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
-		67E2661716701B7200A15D7B /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../RobotUISample/RobotUISample/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
+		816B797118FC9AC1009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
+		816B797318FC9CBC009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		81EE343D1491452A00132035 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EE34411491452A00132035 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81EE34431491452A00132035 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,7 +42,6 @@
 		81EE34551491452A00132035 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		81EE34561491452A00132035 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81EE34571491452A00132035 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		81EE345B1491452B00132035 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = HelloWorld/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		81EE34611491452B00132035 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		81EE34621491452B00132035 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		81EE34651491452B00132035 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -54,14 +54,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D308D6C3154AF42E00A64625 /* RobotKit.framework in Frameworks */,
 				81EE34421491452A00132035 /* UIKit.framework in Frameworks */,
 				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
 				81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */,
 				81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */,
+				816B797418FC9CBC009CA81D /* RobotKit.framework in Frameworks */,
+				816B797218FC9AC1009CA81D /* RobotUIKit.framework in Frameworks */,
 				81EE344A1491452A00132035 /* GameKit.framework in Frameworks */,
 				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
-				67E2661916701B7200A15D7B /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +88,9 @@
 		81EE34401491452A00132035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				816B797318FC9CBC009CA81D /* RobotKit.framework */,
+				816B797118FC9AC1009CA81D /* RobotUIKit.framework */,
 				67AFC46B16711E10002937FE /* RobotUIKit.bundle */,
-				67E2661716701B7200A15D7B /* RobotUIKit.framework */,
-				81EE345B1491452B00132035 /* RobotKit.framework */,
 				81EE34411491452A00132035 /* UIKit.framework */,
 				81EE34431491452A00132035 /* Foundation.framework */,
 				81EE34451491452A00132035 /* CoreGraphics.framework */,
@@ -280,7 +280,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/HelloWorld/Frameworks\"",
-					"\"$(SRCROOT)/../RobotUISample/RobotUISample/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
@@ -303,7 +303,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/HelloWorld/Frameworks\"",
-					"\"$(SRCROOT)/../RobotUISample/RobotUISample/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";

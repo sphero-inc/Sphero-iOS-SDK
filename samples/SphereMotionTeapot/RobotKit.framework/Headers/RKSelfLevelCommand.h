@@ -23,15 +23,16 @@ typedef uint8_t RKSelfLevelCommandOptions;
  *  control system is off after self level(bit 3)
  */
 enum {
-    /*! Starts the self level command */
-    RKSelfLevelCommandOptionStart  = 0x01,
-    /*! Rotates to heading equal to beginning heading */
-    RKSelfLevelCommandOptionKeepHeading = 0x02,
-    /*! Go to sleep after self level command */
-    RKSelfLevelCommandOptionSleepAfter = 0x04,
-    /*! Turns control system on after calibration */
-    RKSelfLevelCommandOptionControlSystemOn = 0x08
+   /*! Starts the self level command */
+         RKSelfLevelCommandOptionStart = 0x01,
+   /*! Rotates to heading equal to beginning heading */
+         RKSelfLevelCommandOptionKeepHeading = 0x02,
+   /*! Go to sleep after self level command */
+         RKSelfLevelCommandOptionSleepAfter = 0x04,
+   /*! Turns control system on after calibration */
+         RKSelfLevelCommandOptionControlSystemOn = 0x08
 };
+
 
 /*!
  * @brief Class that encapsulates a Self Level Command (Firmware 1.17 or greater).
@@ -52,25 +53,25 @@ enum {
  * @sa RKSelfLevelCompleteAsyncData
  */
 @interface RKSelfLevelCommand : RKDeviceCommand {
-    
-    RKSelfLevelCommandOptions levelOptions;
-    
-    uint8_t levelAngleLimit;
-    uint8_t levelTimeout;
-    uint8_t levelAccuracy;
+
+   RKSelfLevelCommandOptions levelOptions;
+
+   uint8_t levelAngleLimit;
+   uint8_t levelTimeout;
+   uint8_t levelAccuracy;
 }
 
 /* Options mask that controls the behavior of the self level command */
-@property (nonatomic, readonly) RKSelfLevelCommandOptions levelOptions;
+@property ( nonatomic, readonly ) RKSelfLevelCommandOptions levelOptions;
 /*       0: uses the default value in the config block 
    1 to 90: the max angle for completion (in degrees) */
-@property (nonatomic, readonly) uint8_t levelAngleLimit;
+@property ( nonatomic, readonly ) uint8_t levelAngleLimit;
 /*      0: uses the default value in the config block 
  1 to 255: the max seconds to run the routine */
-@property (nonatomic, readonly) uint8_t levelTimeout;
+@property ( nonatomic, readonly ) uint8_t levelTimeout;
 /*      0: uses the default value in the config block 
  1 to 255: the accuracy for the routine ot 10*Accuracy (in ms) */
-@property (nonatomic, readonly) uint8_t levelAccuracy;
+@property ( nonatomic, readonly ) uint8_t levelAccuracy;
 
 /*!
  * Convenience method to send a self level message to the robotic device.
@@ -83,14 +84,14 @@ enum {
  *
  * An aysnc message will be returned when the self level has completed
  */
-+(void)sendCommand;
++ (void) sendCommand;
 
 /*!
  * Convenience method to abort a self level that is currently in progress
  * 
  * What will happen if a self level command is not in progress?
  */
-+(void)sendCommandAbortSelfLevel;
++ (void) sendCommandAbortSelfLevel;
 
 /*!
  * Convenience method to send a self level message to the robotic device.
@@ -106,17 +107,17 @@ enum {
  * @param accuracy          0: uses the default value in the config block 
  *                   1 to 255: the accuracy for the routine ot 10*Accuracy (in ms)
  */
-+(void)sendCommandWithOptions:(RKSelfLevelCommandOptions)options 
-                   angleLimit:(uint8_t)angleLimit 
-                      timeout:(uint8_t)timeout
-                     accuracy:(uint8_t)accuracy;
++ (void) sendCommandWithOptions:(RKSelfLevelCommandOptions) options
+                     angleLimit:(uint8_t) angleLimit
+                        timeout:(uint8_t) timeout
+                       accuracy:(uint8_t) accuracy;
 
 /* 
  * Initializer to set up the self level command with custom parameters
  */
--(id)initWithOptions:(RKSelfLevelCommandOptions)options 
-          angleLimit:(uint8_t)angleLimit 
-             timeout:(uint8_t)timeout
-            accuracy:(uint8_t)accuracy;
+- (id) initWithOptions:(RKSelfLevelCommandOptions) options
+            angleLimit:(uint8_t) angleLimit
+               timeout:(uint8_t) timeout
+              accuracy:(uint8_t) accuracy;
 
 @end

@@ -22,24 +22,24 @@
  * @sa RKBackLEDOutputResponse
  */
 @interface RKBackLEDOutputCommand : RKDeviceCommand {
-    @private
-    float   brightness;
+@private
+   float brightness;
 }
 
 /*! The brightness value between 0.0 to 1.0 where 0.0 is off and 1.0 is full brightness. */
-@property (nonatomic, readonly) float brightness;
+@property ( nonatomic, readonly ) float brightness;
 
 /*! 
  * A convenience method for sending the command to the device. 
  * @param brightness The brightness value between 0.0 to 1.0 where 0.0 is off and 1.0 is full brightness.
  */
-+ (void)sendCommandWithBrightness:(float)brightness;
++ (void) sendCommandWithBrightness:(float) brightness;
 
 /*! 
  * Initializer for a object.
  * @param brightness The brightness value between 0.0 to 1.0 where 0.0 is off and 1.0 is full brightness.
  * @return The initialized object.
  */
-- (id)initWithBrightness:(float)brightness;
+- (id) initWithBrightness:(float) brightness;
 
 @end

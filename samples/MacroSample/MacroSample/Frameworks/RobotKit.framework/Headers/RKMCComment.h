@@ -9,11 +9,11 @@
 #import "RKMacroCommand.h"
 
 @interface RKMCComment : RKMacroCommand {
-    NSString *comment;
+   NSString *comment;
 }
 
-@property (nonatomic, retain) NSString *comment;
+@property ( nonatomic, strong ) NSString *comment;
 
-+(RKMCComment*)commandWithComment:(NSString*)comment;
++ (RKMCComment *) commandWithComment:(NSString *) comment;
 
 @end

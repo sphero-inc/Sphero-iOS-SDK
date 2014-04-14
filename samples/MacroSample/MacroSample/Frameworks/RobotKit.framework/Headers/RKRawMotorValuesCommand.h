@@ -12,17 +12,18 @@
 
 /*! Enumerations for the possible raw motor modes. */
 enum RKRawMotorMode {
-    RKRawMotorModeOff       = 0, /*!< Mode to set the motor off */
-    RKRawMotorModeForward   = 1, /*!< Mode to set the motor to turn forward. */
-    RKRawMotorModeReverse   = 2, /*!< Mode to set the motor to turn backward. */
-    RKRawMotorModeBrake     = 3, /*!< Mode to brake the motors. */
-    RKRawMotorModeIgnore    = 4  /*!< Mode to ignore the motor power value. */
+   RKRawMotorModeOff = 0, /*!< Mode to set the motor off */
+      RKRawMotorModeForward = 1, /*!< Mode to set the motor to turn forward. */
+      RKRawMotorModeReverse = 2, /*!< Mode to set the motor to turn backward. */
+      RKRawMotorModeBrake = 3, /*!< Mode to brake the motors. */
+      RKRawMotorModeIgnore = 4  /*!< Mode to ignore the motor power value. */
 };
 /*! Defines a type for the raw motor modes. */
 typedef enum RKRawMotorMode RKRawMotorMode;
 
 /*! Type for the motor power. */
 typedef uint8_t RKRawMotorPower;
+
 
 /*!
  * @brief Class to encapsulate a raw motor values command.
@@ -35,21 +36,21 @@ typedef uint8_t RKRawMotorPower;
  * @sa RKRawMotorValuesCommand
  */
 @interface RKRawMotorValuesCommand : RKDeviceCommand {
-    @private
-    RKRawMotorMode  leftMotorMode;
-    RKRawMotorPower leftMotorPower;
-    RKRawMotorMode  rightMotorMode;
-    RKRawMotorPower rightMotorPower;
+@private
+   RKRawMotorMode leftMotorMode;
+   RKRawMotorPower leftMotorPower;
+   RKRawMotorMode rightMotorMode;
+   RKRawMotorPower rightMotorPower;
 }
 
 /*! Read only property for left motor mode. */
-@property (nonatomic, readonly) RKRawMotorMode  leftMotorMode;
+@property ( nonatomic, readonly ) RKRawMotorMode leftMotorMode;
 /*! Read only property for the left motor power. This is a value from 0 to 255. */
-@property (nonatomic, readonly) RKRawMotorPower leftMotorPower;
+@property ( nonatomic, readonly ) RKRawMotorPower leftMotorPower;
 /*! Read only property for right motor mode. */
-@property (nonatomic, readonly) RKRawMotorMode  rightMotorMode;
+@property ( nonatomic, readonly ) RKRawMotorMode rightMotorMode;
 /*! Read only property for the right motor power. This is a value from 0 to 255. */
-@property (nonatomic, readonly) RKRawMotorPower rightMotorPower;
+@property ( nonatomic, readonly ) RKRawMotorPower rightMotorPower;
 
 /*!
  * Convenience method to send a raw motor values command.
@@ -58,8 +59,8 @@ typedef uint8_t RKRawMotorPower;
  * @param rightMode The right motor mode.
  * @param rightPower A value from 0 to 255 for the power to applied to the motor.
  */
-+(void)sendCommandWithLeftMode:(RKRawMotorMode)leftMode leftPower:(RKRawMotorPower)leftPower
-                     rightMode:(RKRawMotorMode)rightMode rightPower:(RKRawMotorPower)rightPower;
++ (void) sendCommandWithLeftMode:(RKRawMotorMode) leftMode leftPower:(RKRawMotorPower) leftPower
+                       rightMode:(RKRawMotorMode) rightMode rightPower:(RKRawMotorPower) rightPower;
 /*!
  *
  * Initializes the object with the raw motor values.
@@ -70,7 +71,7 @@ typedef uint8_t RKRawMotorPower;
  * @param rightPower A value from 0 to 255 for the power to applied to the motor.
  * @return Initialized object.
  */
-- (id)initWithLeftMode:(RKRawMotorMode)leftMode leftPower:(RKRawMotorPower)leftPower
-             rightMode:(RKRawMotorMode)rightMode rightPower:(RKRawMotorPower)rightPower;
+- (id) initWithLeftMode:(RKRawMotorMode) leftMode leftPower:(RKRawMotorPower) leftPower
+              rightMode:(RKRawMotorMode) rightMode rightPower:(RKRawMotorPower) rightPower;
 
 @end

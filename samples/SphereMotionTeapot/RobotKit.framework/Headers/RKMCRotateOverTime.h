@@ -18,8 +18,8 @@
  *  rotation -32,767-32,767
  */
 @interface RKMCRotateOverTime : RKMacroCommand {
-    int delay;
-    short rotation;
+   int delay;
+   short rotation;
 }
 
 /*! The amount of time the rotation is allowed to complete. 0-65,535 allowed. */
@@ -33,6 +33,6 @@
  *  @param delay The delay the command will be initialized with.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRotateOverTime*)commandWithRotation:(short)rotation delay:(int)delay;
++ (RKMCRotateOverTime *) commandWithRotation:(short) rotation delay:(int) delay;
 
 @end

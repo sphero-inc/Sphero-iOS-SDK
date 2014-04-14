@@ -28,17 +28,17 @@
  */
 
 @interface RKSetInactivityTimeoutCommand : RKDeviceCommand {
-    uint16_t inactivityTimeout;
+   uint16_t inactivityTimeout;
 }
 
 /*! Readonly value to access the length in seconds of the inactivity timeout */
-@property (nonatomic, readonly) uint16_t inactivityTimeout;
+@property ( nonatomic, readonly ) uint16_t inactivityTimeout;
 
 /*! 
  *  Convience method that sends a command to set the inactivity timeout to the
  *  default value, which is currently 600 seconds. 
  */
-+(void)sendCommand;
++ (void) sendCommand;
 
 /*!
  * Convenience method to send a set inactivity timeout command to Sphero.
@@ -46,11 +46,11 @@
  * @param timeout the length of time, in seconds, that the ball will go to sleep, if
  *                no bluetooth commands are received
  */
-+(void)sendCommandWithInactivityTimeout:(uint16_t)timeout;
++ (void) sendCommandWithInactivityTimeout:(uint16_t) timeout;
 
 /*
  * Initializer to set up the set inactivity timeout command with a custom parameter
  */
--(id)initWithInactivityTimeout:(uint16_t)timeout;
+- (id) initWithInactivityTimeout:(uint16_t) timeout;
 
 @end

@@ -20,9 +20,9 @@
  *  delay 0-255
  */
 @interface RKMCRoll : RKMacroCommand {
-    float speed;
-    int heading;
-    int delay;
+   float speed;
+   int heading;
+   int delay;
 }
 
 /*! The speed at which the robot will roll. 0.0-1.0 allowed. */
@@ -40,6 +40,6 @@
  *  @param delay The delay between this command and the next command. 0-255 allowed.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCRoll*)commandWithSpeed:(float)speed heading:(int)heading delay:(int)delay;
++ (RKMCRoll *) commandWithSpeed:(float) speed heading:(int) heading delay:(int) delay;
 
 @end

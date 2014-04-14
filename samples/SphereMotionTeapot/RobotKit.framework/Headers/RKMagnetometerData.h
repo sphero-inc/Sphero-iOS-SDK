@@ -21,17 +21,17 @@
  * @sa RKDeviceSensorsData
  */
 @interface RKMagnetometerData : RKSensorData {
-    @private
-    RK3AxisSensor       magnetometer;
-    RK3AxisSensor       magnetometerRaw;
-    RK3AxisSensorState  state;
+@private
+   RK3AxisSensor magnetometer;
+   RK3AxisSensor magnetometerRaw;
+   RK3AxisSensorState state;
 }
 
 /*! The filtered magnetometer 3 axis values. */
-@property (nonatomic, readonly) RK3AxisSensor       magnetometer;
+@property ( nonatomic, readonly ) RK3AxisSensor magnetometer;
 /*! The raw magnetometer 3 axis values. */
-@property (nonatomic, readonly) RK3AxisSensor       magnetometerRaw;
+@property ( nonatomic, readonly ) RK3AxisSensor magnetometerRaw;
 /*! A structure indicating which axis values are valid. */
-@property (nonatomic, readonly) RK3AxisSensorState  state;
+@property ( nonatomic, readonly ) RK3AxisSensorState state;
 
 @end

@@ -14,12 +14,13 @@
  * Constants for the method to use to detect collisions.
  */
 enum RKCollisionDetectionMethod {
-    /*! Used to turn off collision detection. */
-    RKCollisionDetectionMethodDetectionOff  = 0,
-    /*! Currently this is the only method used to detect collisions. */
-    RKCollisionDetectionMethod1             = 1
+   /*! Used to turn off collision detection. */
+         RKCollisionDetectionMethodDetectionOff = 0,
+   /*! Currently this is the only method used to detect collisions. */
+         RKCollisionDetectionMethod1 = 1
 };
 typedef enum RKCollisionDetectionMethod RKCollisionDetectionMethod;
+
 
 /*!
  * @brief Class that encapsulates a Configure Collision Detection Command.
@@ -36,21 +37,21 @@ typedef enum RKCollisionDetectionMethod RKCollisionDetectionMethod;
  */
 
 @interface RKConfigureCollisionDetectionCommand : RKDeviceCommand {
-    @private
-    RKCollisionDetectionMethod  method;
-    uint8_t                     xThreshold;
-    uint8_t                     yThreshold;
-    uint8_t                     xSpeedThreshold;
-    uint8_t                     ySpeedThreshold;
-    NSTimeInterval              postTimeDeadZone;
+@private
+   RKCollisionDetectionMethod method;
+   uint8_t xThreshold;
+   uint8_t yThreshold;
+   uint8_t xSpeedThreshold;
+   uint8_t ySpeedThreshold;
+   NSTimeInterval postTimeDeadZone;
 }
 
-@property (nonatomic, readonly) RKCollisionDetectionMethod  method;
-@property (nonatomic, readonly) uint8_t                     xThreshold;
-@property (nonatomic, readonly) uint8_t                     yThreshold;
-@property (nonatomic, readonly) uint8_t                     xSpeedThreshold;
-@property (nonatomic, readonly) uint8_t                     ySpeedThreshold;
-@property (nonatomic, readonly) NSTimeInterval              postTimeDeadZone;
+@property ( nonatomic, readonly ) RKCollisionDetectionMethod method;
+@property ( nonatomic, readonly ) uint8_t xThreshold;
+@property ( nonatomic, readonly ) uint8_t yThreshold;
+@property ( nonatomic, readonly ) uint8_t xSpeedThreshold;
+@property ( nonatomic, readonly ) uint8_t ySpeedThreshold;
+@property ( nonatomic, readonly ) NSTimeInterval postTimeDeadZone;
 
 /*!
  * Convenience method for sending a robot the command.
@@ -68,12 +69,12 @@ typedef enum RKCollisionDetectionMethod RKCollisionDetectionMethod;
  *
  * @deprecated method contains bug where it sends swapped values of yThreshold and xThresholdSpeed to Sphero
  */
-+ (void)sendCommandForMethod:(RKCollisionDetectionMethod)method 
-                  xThreshold:(uint8_t)theXThreshold
-                  yThreshold:(uint8_t)theYThreshold 
-             xSpeedThreshold:(uint8_t)theXSpeedThreshold
-             ySpeedThreshold:(uint8_t)theYSpeedThreshold
-            postTimeDeadZone:(NSTimeInterval)deadZone;
++ (void) sendCommandForMethod:(RKCollisionDetectionMethod) method
+                   xThreshold:(uint8_t) theXThreshold
+                   yThreshold:(uint8_t) theYThreshold
+              xSpeedThreshold:(uint8_t) theXSpeedThreshold
+              ySpeedThreshold:(uint8_t) theYSpeedThreshold
+             postTimeDeadZone:(NSTimeInterval) deadZone;
 
 /*!
  * Convenience method for sending a robot the command.
@@ -90,17 +91,17 @@ typedef enum RKCollisionDetectionMethod RKCollisionDetectionMethod;
  * @param deadZone          A value in seconds that indicates a time to wait after detecting an impact before watching
  *                          for the next collision.
  */
-+ (void)sendCommandForMethod:(RKCollisionDetectionMethod)method 
-                  xThreshold:(uint8_t)theXThreshold
-             xSpeedThreshold:(uint8_t)theXSpeedThreshold 
-                  yThreshold:(uint8_t)theYThreshold
-             ySpeedThreshold:(uint8_t)theYSpeedThreshold
-            postTimeDeadZone:(NSTimeInterval)deadZone;
++ (void) sendCommandForMethod:(RKCollisionDetectionMethod) method
+                   xThreshold:(uint8_t) theXThreshold
+              xSpeedThreshold:(uint8_t) theXSpeedThreshold
+                   yThreshold:(uint8_t) theYThreshold
+              ySpeedThreshold:(uint8_t) theYSpeedThreshold
+             postTimeDeadZone:(NSTimeInterval) deadZone;
 
 /*!
  * Convenience method for stoping collision detection.
  */
-+ (void)sendCommandToStopDetection;
++ (void) sendCommandToStopDetection;
 
 /**
  * Initializer to set the parameters used to configure the collision detection algorithm.
@@ -118,12 +119,12 @@ typedef enum RKCollisionDetectionMethod RKCollisionDetectionMethod;
  * 
  * @deprecated initializer contains bug where it sends swapped values of yThreshold and xThresholdSpeed to Sphero
  */
-- (id)initForMethod:(RKCollisionDetectionMethod)method 
-         xThreshold:(uint8_t)theXThreshold
-         yThreshold:(uint8_t)theYThreshold 
-    xSpeedThreshold:(uint8_t)theXSpeedThreshold
-    ySpeedThreshold:(uint8_t)theYSpeedThreshold
-   postTimeDeadZone:(NSTimeInterval)deadZone;
+- (id) initForMethod:(RKCollisionDetectionMethod) method
+          xThreshold:(uint8_t) theXThreshold
+          yThreshold:(uint8_t) theYThreshold
+     xSpeedThreshold:(uint8_t) theXSpeedThreshold
+     ySpeedThreshold:(uint8_t) theYSpeedThreshold
+    postTimeDeadZone:(NSTimeInterval) deadZone;
 
 /**
  * Initializer to set the parameters used to configure the collision detection algorithm.
@@ -140,11 +141,11 @@ typedef enum RKCollisionDetectionMethod RKCollisionDetectionMethod;
  * @param deadZone          A value in seconds that indicates a time to wait after detecting an impact before watching
  *                          for the next collision.
  */
-- (id)initForMethod:(RKCollisionDetectionMethod)method 
-         xThreshold:(uint8_t)theXThreshold
-    xSpeedThreshold:(uint8_t)theXSpeedThreshold
-         yThreshold:(uint8_t)theYThreshold
-    ySpeedThreshold:(uint8_t)theYSpeedThreshold
-   postTimeDeadZone:(NSTimeInterval)deadZone;
+- (id) initForMethod:(RKCollisionDetectionMethod) method
+          xThreshold:(uint8_t) theXThreshold
+     xSpeedThreshold:(uint8_t) theXSpeedThreshold
+          yThreshold:(uint8_t) theYThreshold
+     ySpeedThreshold:(uint8_t) theYSpeedThreshold
+    postTimeDeadZone:(NSTimeInterval) deadZone;
 
 @end

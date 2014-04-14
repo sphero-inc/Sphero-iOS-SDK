@@ -13,11 +13,11 @@
  * register as an asynchronous data observer with RKDeviceMessenger.
  */
 @interface RKOrbBasicPrintMessage : RKDeviceAsyncData {
-    @private
-    NSString *message;
+@private
+   NSString *message;
 }
 
 /*! The message that was returned from orbBasic for printing on the screen. */
-@property (nonatomic, readonly) NSString* message;
+@property ( nonatomic, readonly ) NSString *message;
 
 @end

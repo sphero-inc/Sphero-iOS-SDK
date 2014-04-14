@@ -25,26 +25,26 @@
     @sa RKDeviceMessenger
  */
 @interface RKPollPacketTimesResponse : RKDeviceResponse {
-    @private
-    NSTimeInterval  commandTransmitTime;
-    NSTimeInterval  robotReceiveTime;
-    NSTimeInterval  robotTransmitTime;
+@private
+   NSTimeInterval commandTransmitTime;
+   NSTimeInterval robotReceiveTime;
+   NSTimeInterval robotTransmitTime;
 }
 
 /*! @return The controller device's transmit time stamp in seconds in it's time reference. */
-@property (nonatomic, readonly) NSTimeInterval  commandTransmitTime;
+@property ( nonatomic, readonly ) NSTimeInterval commandTransmitTime;
 /*! @return The robot's receive time stamp in seconds in it's time reference. */
-@property (nonatomic, readonly) NSTimeInterval  robotReceiveTime;
+@property ( nonatomic, readonly ) NSTimeInterval robotReceiveTime;
 /*! @return The robot's transmit time stamp in seconds in it's time reference. */
-@property (nonatomic, readonly) NSTimeInterval  robotTransmitTime;
+@property ( nonatomic, readonly ) NSTimeInterval robotTransmitTime;
 
 /*!
  * @return A value in seconds for the offset between the controlling device's clock and the robot's clock.
  */
-- (NSTimeInterval)timeOffset;
+- (NSTimeInterval) timeOffset;
 /*!
  * @return A value in seconds for the delay from sending a command and receiving it's response. 
  */
-- (NSTimeInterval)timeDelay;
+- (NSTimeInterval) timeDelay;
 
 @end

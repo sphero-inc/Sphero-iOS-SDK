@@ -20,9 +20,11 @@
  * are in the range of plus or minus 3g.
  */
 struct RK3AxisSensor {
-    int16_t x; /*!< The x axis value of the sensor. */
-    int16_t y; /*!< The y axis value of the sensor. */
-    int16_t z; /*!< The z axis value of the sensor. */
+   int16_t x;
+   /*!< The x axis value of the sensor. */
+   int16_t y;
+   /*!< The y axis value of the sensor. */
+   int16_t z; /*!< The z axis value of the sensor. */
 };
 
 /*!
@@ -38,19 +40,25 @@ typedef struct RK3AxisSensor RK3AxisSensor;
  * are valid. Each flag is set based on a mask used to request streaming data, which
  * allows control down to a paticular axis to be sampled.
  */
-struct  RK3AxisSensorState {
-    BOOL xValid; /*!< Indicates that the filtered x axis sensor value is valid. */
-    BOOL yValid; /*!< Indicates that the filtered y axis sensor value is valid. */
-    BOOL zValid; /*!< Indicates that the filtered z axis sensor value is valid. */
-    BOOL xRawValid; /*!< Indicates that the raw x axis sensor value is valid. */
-    BOOL yRawValid; /*!< Indicates that the raw y axis sensor valie is valid. */
-    BOOL zRawValid; /*!< Indicates that the raw z axis sensor value is valid. */
+struct RK3AxisSensorState {
+   BOOL xValid;
+   /*!< Indicates that the filtered x axis sensor value is valid. */
+   BOOL yValid;
+   /*!< Indicates that the filtered y axis sensor value is valid. */
+   BOOL zValid;
+   /*!< Indicates that the filtered z axis sensor value is valid. */
+   BOOL xRawValid;
+   /*!< Indicates that the raw x axis sensor value is valid. */
+   BOOL yRawValid;
+   /*!< Indicates that the raw y axis sensor valie is valid. */
+   BOOL zRawValid; /*!< Indicates that the raw z axis sensor value is valid. */
 };
 
 /*!
  * Defines a RK3AxisSensorState type from a RK3AxisSensorState structure.
  */
 typedef struct RK3AxisSensorState RK3AxisSensorState;
+
 
 /*!
  * @brief Base class for all sensor data classes.
@@ -59,10 +67,10 @@ typedef struct RK3AxisSensorState RK3AxisSensorState;
  * provided from samples returned from data streaming.
  */
 @interface RKSensorData : NSObject <RKDeviceMessageCoding> {
-    NSTimeInterval  timeStamp;
+   NSTimeInterval timeStamp;
 }
 
 /*! A timestamp that is set in the objects initializer for when the object is created. */
-@property (nonatomic, readonly) NSTimeInterval timeStamp;
+@property ( nonatomic, readonly ) NSTimeInterval timeStamp;
 
 @end

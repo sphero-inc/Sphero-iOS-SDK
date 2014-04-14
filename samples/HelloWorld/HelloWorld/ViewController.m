@@ -118,18 +118,16 @@
     //Attempt to control the connected robot so we get the notification if one is connected
     
     robotInitialized = NO;
+    robotOnline = NO;
+    
+
+    [[RKRobotProvider sharedRobotProvider] openRobotConnection];
     
     
-    if ([[RKRobotProvider sharedRobotProvider] isRobotUnderControl]) {
-        robotInitialized = YES;
-        [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-    }
-    else {
-        robotOnline = NO;
-        connectionLabel.text = @"CONNECTING";
-        // Give the device a second to connect
-        [self performSelector:@selector(showNoSpheroConnectedView) withObject:nil afterDelay:1.0];
-    }
+    connectionLabel.text = @"CONNECTING";
+    // Give the device a second to connect
+    [self performSelector:@selector(showNoSpheroConnectedView) withObject:nil afterDelay:1.0];
+    
     robotInitialized = YES;
 }
 

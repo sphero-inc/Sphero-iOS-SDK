@@ -12,12 +12,12 @@
 		6784E77115DD96B600BD3A02 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E76015DD96B600BD3A02 /* ViewController_iPad.xib */; };
 		6784E77215DD96B600BD3A02 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E76215DD96B600BD3A02 /* ViewController_iPhone.xib */; };
 		6784E77315DD96B600BD3A02 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E76515DD96B600BD3A02 /* libsqlite3.dylib */; };
-		6784E77415DD96B600BD3A02 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E76615DD96B600BD3A02 /* RobotKit.framework */; };
 		6784E77515DD96B600BD3A02 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6784E76715DD96B600BD3A02 /* RobotUIKit.bundle */; };
-		6784E77615DD96B600BD3A02 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E76815DD96B600BD3A02 /* RobotUIKit.framework */; };
 		6784E77715DD96B600BD3A02 /* MacroSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6784E76915DD96B600BD3A02 /* MacroSample-Info.plist */; };
 		6784E77815DD96B600BD3A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E76B15DD96B600BD3A02 /* main.m */; };
 		6784E77A15DD96B600BD3A02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E76E15DD96B600BD3A02 /* ViewController.m */; };
+		816B798918FCA229009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B798718FCA229009CA81D /* RobotKit.framework */; };
+		816B798A18FCA229009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B798818FCA229009CA81D /* RobotUIKit.framework */; };
 		81EE34421491452A00132035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34411491452A00132035 /* UIKit.framework */; };
 		81EE34441491452A00132035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34431491452A00132035 /* Foundation.framework */; };
 		81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34451491452A00132035 /* CoreGraphics.framework */; };
@@ -33,14 +33,14 @@
 		6784E76115DD96B600BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		6784E76315DD96B600BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		6784E76515DD96B600BD3A02 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.dylib; sourceTree = "<group>"; };
-		6784E76615DD96B600BD3A02 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		6784E76715DD96B600BD3A02 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
-		6784E76815DD96B600BD3A02 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
 		6784E76915DD96B600BD3A02 /* MacroSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MacroSample-Info.plist"; sourceTree = "<group>"; };
 		6784E76A15DD96B600BD3A02 /* MacroSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MacroSample-Prefix.pch"; sourceTree = "<group>"; };
 		6784E76B15DD96B600BD3A02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6784E76D15DD96B600BD3A02 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6784E76E15DD96B600BD3A02 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		816B798718FCA229009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		816B798818FCA229009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
 		81EE343D1491452A00132035 /* MacroSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EE34411491452A00132035 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81EE34431491452A00132035 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,11 +59,11 @@
 				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
 				81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */,
 				81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */,
+				816B798918FCA229009CA81D /* RobotKit.framework in Frameworks */,
 				81EE344A1491452A00132035 /* GameKit.framework in Frameworks */,
 				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
 				6784E77315DD96B600BD3A02 /* libsqlite3.dylib in Frameworks */,
-				6784E77415DD96B600BD3A02 /* RobotKit.framework in Frameworks */,
-				6784E77615DD96B600BD3A02 /* RobotUIKit.framework in Frameworks */,
+				816B798A18FCA229009CA81D /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +89,10 @@
 		6784E76415DD96B600BD3A02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				816B798718FCA229009CA81D /* RobotKit.framework */,
+				816B798818FCA229009CA81D /* RobotUIKit.framework */,
 				6784E76515DD96B600BD3A02 /* libsqlite3.dylib */,
-				6784E76615DD96B600BD3A02 /* RobotKit.framework */,
 				6784E76715DD96B600BD3A02 /* RobotUIKit.bundle */,
-				6784E76815DD96B600BD3A02 /* RobotUIKit.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -291,6 +291,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/MacroSquare/Frameworks\"",
 					"\"$(SRCROOT)/MacroSample/Frameworks\"",
+					"$(PROJECT_DIR)/MacroSample/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroSample/MacroSample-Prefix.pch";
@@ -319,6 +320,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/MacroSquare/Frameworks\"",
 					"\"$(SRCROOT)/MacroSample/Frameworks\"",
+					"$(PROJECT_DIR)/MacroSample/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroSample/MacroSample-Prefix.pch";

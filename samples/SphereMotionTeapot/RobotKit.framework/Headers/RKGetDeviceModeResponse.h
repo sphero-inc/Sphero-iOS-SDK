@@ -12,14 +12,15 @@
 
 /*! enumeration of modes a robot can be set to. */
 enum RKDeviceMode {
-    /*! Normal mode which is the default operation mode. */
-    RKDeviceModeNormal = 0,
-    /*! User hack mode. This mode enables ASCII shell command. Refer to the shell commands document
-     for further details. */
-    RKDeviceModeUserHack = 1
+   /*! Normal mode which is the default operation mode. */
+         RKDeviceModeNormal = 0,
+   /*! User hack mode. This mode enables ASCII shell command. Refer to the shell commands document
+    for further details. */
+         RKDeviceModeUserHack = 1
 };
 /*! Type for enumerated device modes. */
 typedef enum RKDeviceMode RKDeviceMode;
+
 
 /*!
  * Response class for get device mode commands . The mode is returned in the response, which is an enumerated value.
@@ -30,11 +31,11 @@ typedef enum RKDeviceMode RKDeviceMode;
  * @sa RKDeviceMessenger
  */
 @interface RKGetDeviceModeResponse : RKDeviceResponse {
-    @private
-    RKDeviceMode mode;
+@private
+   RKDeviceMode mode;
 }
 
 /*! The mode the device is set to. */
-@property (nonatomic, readonly) RKDeviceMode mode;
+@property ( nonatomic, readonly ) RKDeviceMode mode;
 
 @end

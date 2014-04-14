@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		671EC2A815B8865E002E4815 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671EC2A715B8865E002E4815 /* RobotKit.framework */; };
 		6762B2A415AF57AD00BBDF9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A315AF57AD00BBDF9A /* UIKit.framework */; };
 		6762B2A615AF57AD00BBDF9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A515AF57AD00BBDF9A /* Foundation.framework */; };
 		6762B2A815AF57AD00BBDF9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */; };
@@ -17,15 +16,15 @@
 		6762B2B415AF57AD00BBDF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2B215AF57AD00BBDF9A /* InfoPlist.strings */; };
 		6762B2B615AF57AD00BBDF9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B515AF57AD00BBDF9A /* main.m */; };
 		6762B2BA15AF57AD00BBDF9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B915AF57AD00BBDF9A /* AppDelegate.m */; };
-		6762B2BE15AF57AD00BBDF9A /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2BD15AF57AD00BBDF9A /* RobotUIKit.framework */; };
 		6762B2C015AF57AD00BBDF9A /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */; };
 		6762B2C315AF57AD00BBDF9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2C215AF57AD00BBDF9A /* ViewController.m */; };
 		6762B2C615AF57AD00BBDF9A /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2C415AF57AD00BBDF9A /* ViewController_iPhone.xib */; };
 		6762B2C915AF57AD00BBDF9A /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2C715AF57AD00BBDF9A /* ViewController_iPad.xib */; };
+		816B798018FCA0F2009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B797F18FCA0F2009CA81D /* RobotKit.framework */; };
+		816B798218FCA10B009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B798118FCA10B009CA81D /* RobotUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		671EC2A715B8865E002E4815 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = Locator/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		6762B29F15AF57AD00BBDF9A /* Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6762B2A315AF57AD00BBDF9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6762B2A515AF57AD00BBDF9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,12 +38,13 @@
 		6762B2B715AF57AD00BBDF9A /* Locator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locator-Prefix.pch"; sourceTree = "<group>"; };
 		6762B2B815AF57AD00BBDF9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6762B2B915AF57AD00BBDF9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6762B2BD15AF57AD00BBDF9A /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = Locator/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
 		6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
 		6762B2C115AF57AD00BBDF9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6762B2C215AF57AD00BBDF9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6762B2C515AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		6762B2C815AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		816B797F18FCA0F2009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		816B798118FCA10B009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,14 +52,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671EC2A815B8865E002E4815 /* RobotKit.framework in Frameworks */,
 				6762B2A415AF57AD00BBDF9A /* UIKit.framework in Frameworks */,
 				6762B2A615AF57AD00BBDF9A /* Foundation.framework in Frameworks */,
 				6762B2A815AF57AD00BBDF9A /* CoreGraphics.framework in Frameworks */,
 				6762B2AA15AF57AD00BBDF9A /* CoreMotion.framework in Frameworks */,
+				816B798218FCA10B009CA81D /* RobotUIKit.framework in Frameworks */,
+				816B798018FCA0F2009CA81D /* RobotKit.framework in Frameworks */,
 				6762B2AC15AF57AD00BBDF9A /* GameKit.framework in Frameworks */,
 				6762B2AE15AF57AD00BBDF9A /* ExternalAccessory.framework in Frameworks */,
-				6762B2BE15AF57AD00BBDF9A /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +86,8 @@
 		6762B2A215AF57AD00BBDF9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6762B2BD15AF57AD00BBDF9A /* RobotUIKit.framework */,
-				671EC2A715B8865E002E4815 /* RobotKit.framework */,
+				816B798118FCA10B009CA81D /* RobotUIKit.framework */,
+				816B797F18FCA0F2009CA81D /* RobotKit.framework */,
 				6762B2A315AF57AD00BBDF9A /* UIKit.framework */,
 				6762B2A515AF57AD00BBDF9A /* Foundation.framework */,
 				6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */,
@@ -278,6 +278,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Locator/Frameworks\"",
 					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
@@ -303,6 +304,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Locator/Frameworks\"",
 					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";

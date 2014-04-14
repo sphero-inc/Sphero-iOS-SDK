@@ -27,12 +27,12 @@
  */
 
 @interface RKSetMotionTimeoutCommand : RKDeviceCommand {
-    @private
-    uint16_t timeBeforeTimeout;
+@private
+   uint16_t timeBeforeTimeout;
 }
 
 /*! The brightness value between 0.0 to 1.0 where 0.0 is off and 1.0 is full brightness. */
-@property (nonatomic, readonly) uint16_t timeBeforeTimeout;
+@property ( nonatomic, readonly ) uint16_t timeBeforeTimeout;
 
 /*! 
  * A convenience method for sending the command to the device.
@@ -40,13 +40,13 @@
  * @param time The time length in (ms) that Sphero will stop rolling if you don't send another roll command
  *             This value defaults to 2000 ms
  */
-+ (void)sendCommandWithTime:(uint16_t)time;
++ (void) sendCommandWithTime:(uint16_t) time;
 
 /*! 
  * A convenience method for sending the command to the device, makes the default time 2000 ms
  * Available in Firmware 1.18 or greater
  */
-+ (void)sendCommand;
++ (void) sendCommand;
 
 /*! 
  * Initializer for a object.
@@ -55,6 +55,6 @@
  *             This value defaults to 2000 ms
  * @return The initialized object.
  */
-- (id)initWithTime:(uint16_t)time;
+- (id) initWithTime:(uint16_t) time;
 
 @end

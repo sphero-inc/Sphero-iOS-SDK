@@ -33,7 +33,7 @@ extern double Norm3D(double x, double y, double z);
  * @param max The maximum value that v can go to.
  */
 extern double Clamp(double v, double min, double max);
- 
+
 /*!
  * Function to set a window on a value to keep it at a fixed value
  * within the window's delta.

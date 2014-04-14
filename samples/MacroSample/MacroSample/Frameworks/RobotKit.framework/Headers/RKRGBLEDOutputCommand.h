@@ -19,21 +19,21 @@
  * @sa RKRGBLEDOutputResponse
  */
 @interface RKRGBLEDOutputCommand : RKDeviceCommand {
-    @private
-    float red;
-    float green;
-    float blue;
-    BOOL userDefault;
+@private
+   float red;
+   float green;
+   float blue;
+   BOOL userDefault;
 }
 
 /*! The red brightness that is sent with the command. */
-@property (nonatomic, readonly) float red;
+@property ( nonatomic, readonly ) float red;
 /*! The green brightness that is sent with the command. */
-@property (nonatomic, readonly) float green;
+@property ( nonatomic, readonly ) float green;
 /*! The blue brightness that is sent with the command. */
-@property (nonatomic, readonly) float blue;
+@property ( nonatomic, readonly ) float blue;
 /*! */
-@property (nonatomic, readonly) BOOL userDefault;
+@property ( nonatomic, readonly ) BOOL userDefault;
 
 /*!
  * Convience method for sending the command to the device. 
@@ -44,7 +44,7 @@
  * @param blue The blue brightness value between 0.0 to 1.0 with 0.0 being off and 1.0 being
  * full brightness.
  */
-+ (void)sendCommandWithRed:(float)red green:(float)green blue:(float)blue;
++ (void) sendCommandWithRed:(float) red green:(float) green blue:(float) blue;
 
 /*!
  * Convience method for sending the command to the device. 
@@ -58,16 +58,16 @@
  * when Sphero first connects and is set when client code closes the connection.
  * 
  */
-+ (void)sendCommandWithRed:(float)red green:(float)green blue:(float)blue userDefault:(BOOL)defaultState;
++ (void) sendCommandWithRed:(float) red green:(float) green blue:(float) blue userDefault:(BOOL) defaultState;
 
 /*! The current RGB LED red value that was successfully sent to the device. */
-+ (float)currentRed;
++ (float) currentRed;
 /*! The current RGB LED green value that was successfully sent to the device. */
-+ (float)currentGreen;
++ (float) currentGreen;
 /*! The current RGB LED blue value that was successfully sent to the device. */
-+ (float)currentBlue;
++ (float) currentBlue;
 /*! The status of the current color is going to be set as the user default */
-+ (BOOL)isCurrentColorUserDefault;
++ (BOOL) isCurrentColorUserDefault;
 
 /*!
  * Initializer for the object.
@@ -79,7 +79,7 @@
  * full brightness.
  * @return The initialized object.
  */
-- (id)initWithRed:(float)red green:(float)green blue:(float)blue;
+- (id) initWithRed:(float) red green:(float) green blue:(float) blue;
 
 /*!
  * Initializer for the object.
@@ -93,6 +93,6 @@
  * when Sphero first connects and is set when client code closes the connection.
  * @return The initialized object.
  */
-- (id)initWithRed:(float)red green:(float)green blue:(float)blue userDefault:(BOOL)defaultState;
+- (id) initWithRed:(float) red green:(float) green blue:(float) blue userDefault:(BOOL) defaultState;
 
 @end

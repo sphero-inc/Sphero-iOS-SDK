@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		67A9410A166FF46000AA0B22 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67A94108166FF46000AA0B22 /* RobotUIKit.bundle */; };
-		67A9410B166FF46000AA0B22 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A94109166FF46000AA0B22 /* RobotUIKit.framework */; };
 		81015AB61492AF5900606C76 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81015AB51492AF5900606C76 /* README.txt */; };
 		8134AE6A149295D4005F5FB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134AE69149295D4005F5FB4 /* UIKit.framework */; };
 		8134AE6C149295D4005F5FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134AE6B149295D4005F5FB4 /* Foundation.framework */; };
@@ -20,18 +19,18 @@
 		8134AE7C149295D4005F5FB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134AE7B149295D4005F5FB4 /* main.m */; };
 		8134AE80149295D4005F5FB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134AE7F149295D4005F5FB4 /* AppDelegate.m */; };
 		8134AE82149295D4005F5FB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134AE81149295D4005F5FB4 /* libsqlite3.dylib */; };
-		8134AE84149295D4005F5FB4 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134AE83149295D4005F5FB4 /* RobotKit.framework */; };
 		8134AE8B149295D5005F5FB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134AE8A149295D5005F5FB4 /* ViewController.m */; };
 		8134AE8E149295D5005F5FB4 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8134AE8C149295D5005F5FB4 /* ViewController_iPhone.xib */; };
 		8134AE91149295D5005F5FB4 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8134AE8F149295D5005F5FB4 /* ViewController_iPad.xib */; };
 		8134AEE91492AC8B005F5FB4 /* JoystickPuck.png in Resources */ = {isa = PBXBuildFile; fileRef = 8134AEE71492AC8B005F5FB4 /* JoystickPuck.png */; };
 		8134AEEA1492AC8B005F5FB4 /* JoystickBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8134AEE81492AC8B005F5FB4 /* JoystickBG.png */; };
 		8134AEED1492AD36005F5FB4 /* CircularUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134AEEC1492AD36005F5FB4 /* CircularUIView.m */; };
+		816B797818FC9EEC009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B797718FC9EEC009CA81D /* RobotKit.framework */; };
+		816B797A18FC9F1E009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B797918FC9F1E009CA81D /* RobotUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67A94108166FF46000AA0B22 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = RobotUISample/Frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
-		67A94109166FF46000AA0B22 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = RobotUISample/Frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
 		81015AB51492AF5900606C76 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		8134AE65149295D4005F5FB4 /* RobotUISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotUISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8134AE69149295D4005F5FB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -47,7 +46,6 @@
 		8134AE7E149295D4005F5FB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8134AE7F149295D4005F5FB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8134AE81149295D4005F5FB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = RobotUISample/Frameworks/libsqlite3.dylib; sourceTree = "<group>"; };
-		8134AE83149295D4005F5FB4 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = RobotUISample/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		8134AE89149295D5005F5FB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8134AE8A149295D5005F5FB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8134AE8D149295D5005F5FB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		8134AEE81492AC8B005F5FB4 /* JoystickBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JoystickBG.png; sourceTree = "<group>"; };
 		8134AEEB1492AD36005F5FB4 /* CircularUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularUIView.h; sourceTree = "<group>"; };
 		8134AEEC1492AD36005F5FB4 /* CircularUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularUIView.m; sourceTree = "<group>"; };
+		816B797718FC9EEC009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		816B797918FC9F1E009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +63,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816B797A18FC9F1E009CA81D /* RobotUIKit.framework in Frameworks */,
 				8134AE6A149295D4005F5FB4 /* UIKit.framework in Frameworks */,
 				8134AE6C149295D4005F5FB4 /* Foundation.framework in Frameworks */,
 				8134AE6E149295D4005F5FB4 /* CoreGraphics.framework in Frameworks */,
 				8134AE70149295D4005F5FB4 /* CoreMotion.framework in Frameworks */,
 				8134AE72149295D4005F5FB4 /* GameKit.framework in Frameworks */,
+				816B797818FC9EEC009CA81D /* RobotKit.framework in Frameworks */,
 				8134AE74149295D4005F5FB4 /* ExternalAccessory.framework in Frameworks */,
 				8134AE82149295D4005F5FB4 /* libsqlite3.dylib in Frameworks */,
-				8134AE84149295D4005F5FB4 /* RobotKit.framework in Frameworks */,
-				67A9410B166FF46000AA0B22 /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +98,8 @@
 		8134AE68149295D4005F5FB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8134AE83149295D4005F5FB4 /* RobotKit.framework */,
-				67A94109166FF46000AA0B22 /* RobotUIKit.framework */,
+				816B797918FC9F1E009CA81D /* RobotUIKit.framework */,
+				816B797718FC9EEC009CA81D /* RobotKit.framework */,
 				67A94108166FF46000AA0B22 /* RobotUIKit.bundle */,
 				8134AE81149295D4005F5FB4 /* libsqlite3.dylib */,
 				8134AE69149295D4005F5FB4 /* UIKit.framework */,
@@ -300,7 +300,8 @@
 					"\"$(SRCROOT)/RobotUISample/Frameworks\"",
 					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/RobotKit-bkwjkwfznqjxoqheuptulvdqfgrd/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/RobotKit-bkwjkwfznqjxoqheuptulvdqfgrd/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RobotUISample/RobotUISample-Prefix.pch";
@@ -328,7 +329,8 @@
 					"\"$(SRCROOT)/RobotUISample/Frameworks\"",
 					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/RobotKit-bkwjkwfznqjxoqheuptulvdqfgrd/Build/Products/Release-iphoneos\"",
 					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/RobotKit-bkwjkwfznqjxoqheuptulvdqfgrd/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RobotUISample/RobotUISample-Prefix.pch";

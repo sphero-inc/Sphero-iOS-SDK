@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		816B797E18FCA095009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B797D18FCA095009CA81D /* RobotKit.framework */; };
 		D31E6D5314F732260041CE35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31E6D5214F732260041CE35 /* UIKit.framework */; };
 		D31E6D5514F732260041CE35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31E6D5414F732260041CE35 /* Foundation.framework */; };
 		D31E6D5714F732260041CE35 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31E6D5614F732260041CE35 /* CoreGraphics.framework */; };
@@ -17,12 +18,12 @@
 		D31E6D6914F732260041CE35 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31E6D6714F732260041CE35 /* ViewController.xib */; };
 		D31E6D7814F738140041CE35 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31E6D7714F738140041CE35 /* ExternalAccessory.framework */; };
 		D31E6D7A14F7381E0041CE35 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31E6D7914F7381E0041CE35 /* CoreMotion.framework */; };
-		D34518D8151BE82400D4505A /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34518D7151BE82400D4505A /* RobotKit.framework */; };
 		D3BAB8FA14FED0BB00007596 /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BAB8F814FED0BB00007596 /* ConfigurationViewController.m */; };
 		D3BAB8FB14FED0BB00007596 /* ConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3BAB8F914FED0BB00007596 /* ConfigurationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		816B797D18FCA095009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		D31E6D4E14F732260041CE35 /* CollisionDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollisionDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31E6D5214F732260041CE35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D31E6D5414F732260041CE35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,7 +39,6 @@
 		D31E6D6814F732260041CE35 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		D31E6D7714F738140041CE35 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		D31E6D7914F7381E0041CE35 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		D34518D7151BE82400D4505A /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = CollisionDetection/Frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		D3BAB8F714FED0BB00007596 /* ConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationViewController.h; sourceTree = "<group>"; };
 		D3BAB8F814FED0BB00007596 /* ConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationViewController.m; sourceTree = "<group>"; };
 		D3BAB8F914FED0BB00007596 /* ConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigurationViewController.xib; sourceTree = "<group>"; };
@@ -49,9 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34518D8151BE82400D4505A /* RobotKit.framework in Frameworks */,
 				D31E6D7A14F7381E0041CE35 /* CoreMotion.framework in Frameworks */,
 				D31E6D7814F738140041CE35 /* ExternalAccessory.framework in Frameworks */,
+				816B797E18FCA095009CA81D /* RobotKit.framework in Frameworks */,
 				D31E6D5314F732260041CE35 /* UIKit.framework in Frameworks */,
 				D31E6D5514F732260041CE35 /* Foundation.framework in Frameworks */,
 				D31E6D5714F732260041CE35 /* CoreGraphics.framework in Frameworks */,
@@ -81,7 +81,7 @@
 		D31E6D5114F732260041CE35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D34518D7151BE82400D4505A /* RobotKit.framework */,
+				816B797D18FCA095009CA81D /* RobotKit.framework */,
 				D31E6D7914F7381E0041CE35 /* CoreMotion.framework */,
 				D31E6D7714F738140041CE35 /* ExternalAccessory.framework */,
 				D31E6D5214F732260041CE35 /* UIKit.framework */,
@@ -264,6 +264,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/CollisionDetection/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollisionDetection/CollisionDetection-Prefix.pch";
@@ -284,6 +285,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/CollisionDetection/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollisionDetection/CollisionDetection-Prefix.pch";

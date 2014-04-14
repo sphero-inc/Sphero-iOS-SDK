@@ -17,7 +17,7 @@
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		2CB17FE710879D2700BED6A8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB17FE610879D2700BED6A8 /* CoreMotion.framework */; };
 		81657404143153D1009B33EE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81657403143153D1009B33EE /* libsqlite3.dylib */; };
-		81EE347F1491483200132035 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE347E1491483200132035 /* RobotKit.framework */; };
+		816B79A018FCA50E009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B799F18FCA50E009CA81D /* RobotKit.framework */; };
 		81EE34BC149165F800132035 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34BB149165F800132035 /* README.txt */; };
 		81F56AE413E325520075C094 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F56AE313E325520075C094 /* ExternalAccessory.framework */; };
 		81F56AE613E325640075C094 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F56AE513E325640075C094 /* GameKit.framework */; };
@@ -47,7 +47,7 @@
 		2CB17FE610879D2700BED6A8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* SphereMotionTeapot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphereMotionTeapot_Prefix.pch; sourceTree = "<group>"; };
 		81657403143153D1009B33EE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		81EE347E1491483200132035 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
+		816B799F18FCA50E009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		81EE34BB149165F800132035 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		81F56AE313E325520075C094 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		81F56AE513E325640075C094 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -78,10 +78,10 @@
 				81F56AE413E325520075C094 /* ExternalAccessory.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				816B79A018FCA50E009CA81D /* RobotKit.framework in Frameworks */,
 				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
 				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
 				2CB17FE710879D2700BED6A8 /* CoreMotion.framework in Frameworks */,
-				81EE347F1491483200132035 /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81EE347E1491483200132035 /* RobotKit.framework */,
+				816B799F18FCA50E009CA81D /* RobotKit.framework */,
 				81FE53091457674000AE01AE /* CoreGraphics.framework */,
 				81657403143153D1009B33EE /* libsqlite3.dylib */,
 				81F56AE513E325640075C094 /* GameKit.framework */,
@@ -201,6 +201,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SphereMotionTeapot" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -260,7 +262,8 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -285,7 +288,8 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SphereMotionTeapot_Prefix.pch;

@@ -11,9 +11,10 @@
 @class RKDeviceMessageEncoder;
 @class RKDeviceMessageDecoder;
 
+
 @protocol RKDeviceMessageCoding <NSObject>
 
-- (id)initWithDeviceMessageDecoder:(RKDeviceMessageDecoder *)decoder;
-- (void)encodeWithDeviceMessageEncoder:(RKDeviceMessageEncoder *)encoder;
+- (id) initWithDeviceMessageDecoder:(RKDeviceMessageDecoder *) decoder;
+- (void) encodeWithDeviceMessageEncoder:(RKDeviceMessageEncoder *) encoder;
 
 @end

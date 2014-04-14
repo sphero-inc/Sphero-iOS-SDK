@@ -13,18 +13,18 @@
  *  This erases any existing program in the specified storage area.
  */
 @interface RKOrbBasicEraseStorageCommand : RKDeviceCommand {
-    @private
-    RKOrbBasicStorageType storageType;
+@private
+   RKOrbBasicStorageType storageType;
 }
 
 /*!
  *  Convenience method for sending a command with a particular storage type
  */
-+(void)sendCommandWithStorageType:(RKOrbBasicStorageType)storageType;
++ (void) sendCommandWithStorageType:(RKOrbBasicStorageType) storageType;
 
 /*!
  *  Initialize a command with a particular storage type.
  */
--(id)initWithStorageType:(RKOrbBasicStorageType)storage;
+- (id) initWithStorageType:(RKOrbBasicStorageType) storage;
 
 @end

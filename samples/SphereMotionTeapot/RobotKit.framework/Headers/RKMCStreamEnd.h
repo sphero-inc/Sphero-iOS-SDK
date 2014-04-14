@@ -18,6 +18,6 @@
 /*! Convenience method for creating a command and setting the parameters in one line.
  *  @return An instance of the command with the given parameters.
  */
-+(RKMCStreamEnd*)command;
++ (RKMCStreamEnd *) command;
 
 @end
