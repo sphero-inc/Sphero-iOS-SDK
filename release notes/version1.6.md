@@ -1,6 +1,6 @@
 ## New in this version (1.6 b1146):
 
-
+## Hotfix 4.14.2014 - Fixes for crashing on iOS 7.1/xCode 5.1 - Updated RobotKit.framework and placed in all sample code
 
 ## Fixes:
 

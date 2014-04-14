@@ -225,13 +225,11 @@ If you have successfully completed the quick start guide then Sphero should have
 
 * [SensorStreaming](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/SensorStreaming) - If you want to use the sensor data from Sphero, you should check this sample out.  Just simply register as an observer to the data, Pay attention to starting and stoping streaming during the application life cycle.
 
-* [RKMultiplayer Sample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/RKMultiplayerSample) - Check out our base sample for connecting two or more phones to a multiplayer lobby, cross platform.  This would be the place to start if you want to make party games or anything multiplayer.
-
 * [SphereMotion Teapot](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/SphereMotionTeapot) - This is a sensor streaming application that shows you how to use 3D objects in the screen, the simple teapot, driving by Sphero's motion.
 
 * [RKAchievement Sample](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/AchievementSample) - Sphero has a backend web service that can help you maintain Achievements and also keeps track of all the Sphero activity, engage with your users!
 
-* [TwoPhonesOneBall](https://github.com/orbotix/Sphero-iOS-SDK/tree/master/samples/TwoPhonesOneBall) - A quick sample to show passing control between two phones to control a single Sphero.
+
 
 		
 
