@@ -50,7 +50,7 @@ There are two ways to integrate the Sphero SDK into your project. You can start 
 &nbsp;
 ### Starting a new Project
 
-  Please see the [1.6 release notes](https://github.com/orbotix/Sphero-iOS-SDK/release%20notes/version1.6.md) for setting up a new project or follow the following Integrating with existing project section)
+  Please see the [1.6 release notes](https://github.com/orbotix/Sphero-iOS-SDK/blob/master/release notes/version1.6.md) for setting up a new project or follow the following Integrating with existing project section)
 
 &nbsp;
 ### Integrating into an existing project
