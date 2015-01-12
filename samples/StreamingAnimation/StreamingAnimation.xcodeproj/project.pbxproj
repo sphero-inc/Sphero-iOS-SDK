@@ -7,31 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5C6C381A4252FB00FE1A1E /* StreamingAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C6C371A4252FB00FE1A1E /* StreamingAnimation.storyboard */; };
 		6784E7A115DD9B7B00BD3A02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E78F15DD9B7B00BD3A02 /* AppDelegate.m */; };
 		6784E7A215DD9B7B00BD3A02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79015DD9B7B00BD3A02 /* InfoPlist.strings */; };
-		6784E7A315DD9B7B00BD3A02 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79215DD9B7B00BD3A02 /* ViewController_iPad.xib */; };
-		6784E7A415DD9B7B00BD3A02 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79415DD9B7B00BD3A02 /* ViewController_iPhone.xib */; };
-		6784E7A515DD9B7B00BD3A02 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E79715DD9B7B00BD3A02 /* libsqlite3.dylib */; };
 		6784E7A715DD9B7B00BD3A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E79915DD9B7B00BD3A02 /* main.m */; };
 		6784E7A815DD9B7B00BD3A02 /* MenuBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79A15DD9B7B00BD3A02 /* MenuBG.png */; };
 		6784E7AA15DD9B7B00BD3A02 /* sphero-ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6784E79C15DD9B7B00BD3A02 /* sphero-ball.png */; };
 		6784E7AC15DD9B7B00BD3A02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7A015DD9B7B00BD3A02 /* ViewController.m */; };
-		816B79A218FCA57F009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B79A118FCA57F009CA81D /* RobotKit.framework */; };
 		81EE34421491452A00132035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34411491452A00132035 /* UIKit.framework */; };
 		81EE34441491452A00132035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34431491452A00132035 /* Foundation.framework */; };
-		81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34451491452A00132035 /* CoreGraphics.framework */; };
-		81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34471491452A00132035 /* CoreMotion.framework */; };
-		81EE344A1491452A00132035 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34491491452A00132035 /* GameKit.framework */; };
 		81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE344B1491452A00132035 /* ExternalAccessory.framework */; };
+		DE53D0781977118D006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D0771977118D006E4C0B /* Default-568h@2x.png */; };
+		DEED3A7F1A2639B000C8EB4A /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26321A26382E007DFB5C /* RobotKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F5C6C371A4252FB00FE1A1E /* StreamingAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StreamingAnimation.storyboard; sourceTree = "<group>"; };
 		6784E78E15DD9B7B00BD3A02 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6784E78F15DD9B7B00BD3A02 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6784E79115DD9B7B00BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6784E79315DD9B7B00BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		6784E79515DD9B7B00BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		6784E79715DD9B7B00BD3A02 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = StreamingAnimation/Frameworks/libsqlite3.dylib; sourceTree = "<group>"; };
 		6784E79915DD9B7B00BD3A02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6784E79A15DD9B7B00BD3A02 /* MenuBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBG.png; sourceTree = "<group>"; };
 		6784E79C15DD9B7B00BD3A02 /* sphero-ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sphero-ball.png"; sourceTree = "<group>"; };
@@ -39,14 +33,12 @@
 		6784E7A015DD9B7B00BD3A02 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6784E7AE15DD9C2A00BD3A02 /* StreamingAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StreamingAnimation-Info.plist"; sourceTree = "<group>"; };
 		6784E7AF15DD9C2A00BD3A02 /* StreamingAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamingAnimation-Prefix.pch"; sourceTree = "<group>"; };
-		816B79A118FCA57F009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		81EE343D1491452A00132035 /* StreamingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EE34411491452A00132035 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81EE34431491452A00132035 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		81EE34451491452A00132035 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		81EE34471491452A00132035 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		81EE34491491452A00132035 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		81EE344B1491452A00132035 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		DE53D0771977118D006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE9F26321A26382E007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEED3A7F1A2639B000C8EB4A /* RobotKit.framework in Frameworks */,
 				81EE34421491452A00132035 /* UIKit.framework in Frameworks */,
 				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
-				81EE34461491452A00132035 /* CoreGraphics.framework in Frameworks */,
-				81EE34481491452A00132035 /* CoreMotion.framework in Frameworks */,
-				816B79A218FCA57F009CA81D /* RobotKit.framework in Frameworks */,
-				81EE344A1491452A00132035 /* GameKit.framework in Frameworks */,
 				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
-				6784E7A515DD9B7B00BD3A02 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,15 +59,13 @@
 		6784E78D15DD9B7B00BD3A02 /* StreamingAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				6784E79915DD9B7B00BD3A02 /* main.m */,
+				1F5C6C371A4252FB00FE1A1E /* StreamingAnimation.storyboard */,
 				6784E79A15DD9B7B00BD3A02 /* MenuBG.png */,
 				6784E79C15DD9B7B00BD3A02 /* sphero-ball.png */,
 				6784E78E15DD9B7B00BD3A02 /* AppDelegate.h */,
 				6784E78F15DD9B7B00BD3A02 /* AppDelegate.m */,
 				6784E79F15DD9B7B00BD3A02 /* ViewController.h */,
 				6784E7A015DD9B7B00BD3A02 /* ViewController.m */,
-				6784E79215DD9B7B00BD3A02 /* ViewController_iPad.xib */,
-				6784E79415DD9B7B00BD3A02 /* ViewController_iPhone.xib */,
 				6784E7AD15DD9B9400BD3A02 /* Supporting Files */,
 			);
 			path = StreamingAnimation;
@@ -88,6 +74,7 @@
 		6784E7AD15DD9B9400BD3A02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6784E79915DD9B7B00BD3A02 /* main.m */,
 				6784E7AE15DD9C2A00BD3A02 /* StreamingAnimation-Info.plist */,
 				6784E7AF15DD9C2A00BD3A02 /* StreamingAnimation-Prefix.pch */,
 				6784E79015DD9B7B00BD3A02 /* InfoPlist.strings */,
@@ -98,6 +85,7 @@
 		81EE34321491452A00132035 = {
 			isa = PBXGroup;
 			children = (
+				DE53D0771977118D006E4C0B /* Default-568h@2x.png */,
 				6784E78D15DD9B7B00BD3A02 /* StreamingAnimation */,
 				81EE34401491452A00132035 /* Frameworks */,
 				81EE343E1491452A00132035 /* Products */,
@@ -115,13 +103,9 @@
 		81EE34401491452A00132035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				816B79A118FCA57F009CA81D /* RobotKit.framework */,
-				6784E79715DD9B7B00BD3A02 /* libsqlite3.dylib */,
+				DE9F26321A26382E007DFB5C /* RobotKit.framework */,
 				81EE34411491452A00132035 /* UIKit.framework */,
 				81EE34431491452A00132035 /* Foundation.framework */,
-				81EE34451491452A00132035 /* CoreGraphics.framework */,
-				81EE34471491452A00132035 /* CoreMotion.framework */,
-				81EE34491491452A00132035 /* GameKit.framework */,
 				81EE344B1491452A00132035 /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
@@ -153,8 +137,17 @@
 		81EE34341491452A00132035 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Orbotix, Inc.";
+				TargetAttributes = {
+					81EE343C1491452A00132035 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 81EE34371491452A00132035 /* Build configuration list for PBXProject "StreamingAnimation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -178,10 +171,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5C6C381A4252FB00FE1A1E /* StreamingAnimation.storyboard in Resources */,
 				6784E7A215DD9B7B00BD3A02 /* InfoPlist.strings in Resources */,
-				6784E7A315DD9B7B00BD3A02 /* ViewController_iPad.xib in Resources */,
-				6784E7A415DD9B7B00BD3A02 /* ViewController_iPhone.xib in Resources */,
 				6784E7A815DD9B7B00BD3A02 /* MenuBG.png in Resources */,
+				DE53D0781977118D006E4C0B /* Default-568h@2x.png in Resources */,
 				6784E7AA15DD9B7B00BD3A02 /* sphero-ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,22 +203,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6784E79215DD9B7B00BD3A02 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6784E79315DD9B7B00BD3A02 /* en */,
-			);
-			name = ViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		6784E79415DD9B7B00BD3A02 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6784E79515DD9B7B00BD3A02 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -233,9 +210,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -245,10 +230,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -258,15 +248,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -278,25 +280,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 					"$(inherited)",
-					"\"$(SRCROOT)/StreamingAnimation/Frameworks\"",
-					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreamingAnimation/StreamingAnimation-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/StreamingAnimation/StreamingAnimation-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/StreamingAnimation/Frameworks\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
 				);
 				PRODUCT_NAME = StreamingAnimation;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -305,25 +303,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 					"$(inherited)",
-					"\"$(SRCROOT)/StreamingAnimation/Frameworks\"",
-					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreamingAnimation/StreamingAnimation-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/StreamingAnimation/StreamingAnimation-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/StreamingAnimation/Frameworks\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
 				);
 				PRODUCT_NAME = StreamingAnimation;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

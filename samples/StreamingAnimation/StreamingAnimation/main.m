@@ -1,9 +1,5 @@
 //
-//  main.m
-//  HelloWorld
-//
-//  Created by Jon Carroll on 12/8/11.
-//  Copyright (c) 2011 Orbotix, Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Orbotix Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

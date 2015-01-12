@@ -28,6 +28,14 @@
 	<true/>
 	<key>UIApplicationExitsOnSuspend</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>MacroLoader</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>MacroLoader</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -39,7 +47,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

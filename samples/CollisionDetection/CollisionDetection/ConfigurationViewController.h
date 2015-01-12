@@ -8,16 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ConfigurationViewController : UIViewController {
-    // configuration UI
-    UIView      *configurationView;
-    UITextField *xThresholdTextField;
-    UITextField *yThresholdTextField;
-    UITextField *xSpeedThresholdTextField;
-    UITextField *ySpeedThresholdTextField;
-    UITextField *deadZoneTimeTextField;
-    UIButton    *startButton;
-}
+@interface ConfigurationViewController : UIViewController
 
 // configuration UI
 @property (nonatomic, retain) IBOutlet UITextField  *xThresholdTextField;

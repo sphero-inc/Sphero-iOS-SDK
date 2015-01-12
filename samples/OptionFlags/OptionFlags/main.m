@@ -1,9 +1,5 @@
 //
-//  main.m
-//  OptionFlags
-//
-//  Created by Michael DePhillips on 7/31/12.
-//  Copyright (c) 2012 Orbotix Inc. All rights reserved.
+//  Copyright (c) 2012-2014 Orbotix Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

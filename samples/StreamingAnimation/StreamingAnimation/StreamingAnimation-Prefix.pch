@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'HelloWorld' target in the 'HelloWorld' project
+//  Copyright (c) 2011-2014 Orbotix Inc. All rights reserved.
 //
 
 #import <Availability.h>

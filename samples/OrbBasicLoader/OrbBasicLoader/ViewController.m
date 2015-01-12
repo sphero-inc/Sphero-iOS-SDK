@@ -1,251 +1,225 @@
 //
-//  ViewController.m
-//  OrbBasicLoader
-//
-//  Created by Brian Smith on 10/1/12.
-//  Copyright (c) 2012 Orbotix Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Orbotix Inc. All rights reserved.
 //
 
 #import "ViewController.h"
-
 #import <RobotKit/RobotKit.h>
-#import <RobotKit/RKOrbBasicProgram.h>
 #import <RobotUIKit/RobotUIKit.h>
-
 #import "OrbBasicFilesManager.h"
 
+static NSString * const ReuseIdentifier = @"FILEPATHCELL";
+
+@interface ViewController() <RKResponseObserver, UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) RKConvenienceRobot* robot;
+@property (strong, nonatomic) RUICalibrateGestureHandler  *calibrateHandler;
+@property (strong, nonatomic) RKOrbBasicProgram *orbBasicProgram;
+
+@property (nonatomic, retain) IBOutlet UITableView *filesTableView;
+@property (nonatomic, retain) IBOutlet UITextView *messageView;
+
+@property (nonatomic, retain) IBOutlet UIButton *appendButton;
+@property (nonatomic, retain) IBOutlet UIButton *executeButton;
+@property (nonatomic, retain) IBOutlet UIButton *abortButton;
+@property (nonatomic, retain) IBOutlet UIButton *eraseButton;
+
+@end
 
 @implementation ViewController
-
-@synthesize filesTableView;
-@synthesize messageView;
-
-@synthesize appendButton;
-@synthesize executeButton;
-@synthesize abortButton;
-@synthesize eraseButton;
-
 
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    /*Register for application lifecycle notifications so we known when to connect and disconnect from the robot*/
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
-
-    /*Only start the blinking loop when the view loads*/
-    robotOnline = NO;
-    connectionSetupFinished = NO;
-    messageView.text = @"Loading the view.";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults objectForKey:@"firstRun"]) {
+        [self copyPrebuiltPrograms];
+        [defaults setObject:@(NO) forKey:@"firstRun"];
+        [defaults synchronize];
+    }
     
-    calibrateHandler = [[RUICalibrateGestureHandler alloc] initWithView:self.view];
+    _messageView.text = @"Loading the view.";
+    self.calibrateHandler = [[RUICalibrateGestureHandler alloc] initWithView:self.view];
+    
+    [_filesTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ReuseIdentifier];
+    
+	[[RKRobotDiscoveryAgent sharedAgent] addNotificationObserver:self selector:@selector(handleRobotStateChangeNotification:)];
+    
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(appWillResignActive:)
+												 name:UIApplicationWillResignActiveNotification
+											   object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    // Make sure the available OrbBasicPrograms show up in the table view.
-    [filesTableView reloadData];
+- (void)viewDidAppear:(BOOL)animated{
+	[super viewDidAppear:animated];
+	[_filesTableView reloadData];
+	[_filesTableView setDelegate:self];
 }
 
--(void)appWillResignActive:(NSNotification*)notification {
-    /* When the application is entering the background we need to close the connection to the robot */
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:RKDeviceConnectionOnlineNotification
-                                                  object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:RKDeviceConnectionOfflineNotification
-                                                  object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:RKRobotDidLossControlNotification
-                                                  object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:RKRobotDidGainControlNotification
-                                                  object:nil];
-
-    // Stop observing responses and asynchronous data from Sphero.
-    [[RKDeviceMessenger sharedMessenger] removeDataStreamingObserver:self];
-    [[RKDeviceMessenger sharedMessenger] removeResponseObserver:self];
-    
-    // Stop communication with Sphero.
-    [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
-    robotOnline = NO;
-    connectionSetupFinished = NO;
+- (void)appDidBecomeActive:(NSNotification *)n {
+    [RKRobotDiscoveryAgent startDiscovery];
 }
 
--(void)appDidBecomeActive:(NSNotification*)notification {
-    /* When the application becomes active after entering the background we try to connect to the robot */
-    [self setupRobotConnection];
+- (void)appWillResignActive:(NSNotification*)n{
+    [RKRobotDiscoveryAgent disconnectAll];
+    [RKRobotDiscoveryAgent stopDiscovery];
 }
 
-- (void)handleRobotOnline {
-    /* The robot is now online, we can begin sending commands */
-    if (robotOnline) return;
-    
-    // Set observer methods to handle messages from Sphero.
-    [[RKDeviceMessenger sharedMessenger] addResponseObserver:self selector:@selector(handleResponse:)];
-    [[RKDeviceMessenger sharedMessenger] addDataStreamingObserver:self selector:@selector(handleAsyncData:)];
-    
+- (void)handleRobotStateChangeNotification:(RKRobotChangedStateNotification*)n {
+    switch(n.type) {
+        case RKRobotConnecting:
+            [self handleConnecting];
+            break;
+        case RKRobotOnline: {
+            // Do not allow the robot to connect if the application is not running
+            RKConvenienceRobot *convenience = [RKConvenienceRobot convenienceWithRobot:n.robot];
+            if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive) {
+                [convenience disconnect];
+                return;
+            }
+            self.robot = convenience;
+            [self handleConnected];
+            break;
+        }
+        case RKRobotDisconnected:
+            [self handleDisconnected];
+            self.robot = nil;
+            [RKRobotDiscoveryAgent startDiscovery];
+            break;
+        case RKRobotFailedConnect:
+            // edge case - handle as you will.
+            break;
+    }
+}
+
+- (void)handleConnecting {
+    // Handle robot connecting here
+}
+
+- (void)handleConnected {
+    [_calibrateHandler setRobot:_robot.robot];
+    [_robot addResponseObserver:self];
     // Enable buttons
     self.appendButton.enabled = YES;
     self.executeButton.enabled = NO;
     self.abortButton.enabled = YES;
     self.eraseButton.enabled = YES;
-    
-    robotOnline = YES;
-    
-    messageView.text = @"Select a program, load it to Sphero, and press to execute to run it. Press the Erase button to erase the program before loading another program.";
+    self.messageView.text = @"Select a program, load it to Sphero, and press to execute to run it. Press the Erase button to erase the program before loading another program.";
 }
 
-- (void)handleRobotOffline
-{
-    messageView.text = @"Sphero is not responding. Make sure it is connected and turned on.";
-}
-
-- (void)handleRobotDidLoseControl:(NSNotification *)notification
-{
-    // Sphero disconnected for some reason.
-    //// disable buttons
-    appendButton.enabled = NO;
-    executeButton.enabled = NO;
-    abortButton.enabled = NO;
-    eraseButton.enabled = NO;
-    
-    [orbBasicProgram erase]; // This will change the state back to being unloaded.
-    
-    messageView.text = @"Sphero disconnected.";
-
-    robotOnline = NO;
-}
-
-- (void)handleRobotDidGainControl:(NSNotification *)notification
-{
-    // Make sure that we a reconnecting while the application is running instead of
-    // connecting from application start.
-    if (!connectionSetupFinished) return;
-    
-    // reconnect to Sphero
-    //[[RKRobotProvider sharedRobotProvider] openRobotConnection];
-    messageView.text = @"Sphero reconnected. Setting up connection to Sphero....";
-}
-
--(void)setupRobotConnection {
-    /*Try to connect to the robot*/
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleRobotOnline)
-                                                 name:RKDeviceConnectionOnlineNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleRobotOffline)
-                                                 name:RKDeviceConnectionOfflineNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleRobotDidLoseControl:)
-                                                 name:RKRobotDidLossControlNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleRobotDidGainControl:)
-                                                 name:RKRobotDidGainControlNotification
-                                               object:nil];
-
-
-    [[RKRobotProvider sharedRobotProvider] openRobotConnection];
-    messageView.text = @"Setting up connection to Sphero....";
-  
-    
-    connectionSetupFinished = YES;
-}
-
-#pragma Actions
-
-- (void)load:(id)sender
-{
-    // Send the program to Sphero. This will erase the previous loaded program.
-    [orbBasicProgram load];
-    self.executeButton.enabled = YES;
-}
-
-- (void)execute:(id)sender
-{
-    // Execute the program. This will load the program if it is not already loaded.
-    messageView.text = @"Executing ...\n";
-    [orbBasicProgram execute];
-}
-
-- (void)abort:(id)sender
-{
-    // Aborts the current program.
-    [orbBasicProgram abort];
-}
-
-- (void)erase:(id)sender
-{
-    // Erases the current program.
-    [orbBasicProgram erase];
+- (void)handleDisconnected {
+    self.appendButton.enabled = NO;
     self.executeButton.enabled = NO;
+    self.abortButton.enabled = NO;
+    self.eraseButton.enabled = NO;
+    [self.orbBasicProgram erase]; // This will change the state back to being unloaded.
+    self.messageView.text = @"Robot disconnected.";
 }
 
-
-#pragma mark Message Handlers
-
-- (void)handleResponse:(RKDeviceResponse *)response
-{
-    if ([response isKindOfClass:[RKOrbBasicAppendFragmentResponse class]]) {
-        if (response.code == RKResponseCodeErrorParameter) {
-            messageView.text = [messageView.text stringByAppendingFormat:@"Syntax error.\n"];
-        } else if (response.code == RKResponseCodeErrorExecute) {
-            messageView.text = [messageView.text stringByAppendingFormat:@"Memory full! Program not loaded.\n"];
+-(void)copyPrebuiltPrograms {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    
+    //Loop through all files in the bundle resources and  copy any files that are of a managed type
+    for(NSString *asset in [fileManager contentsOfDirectoryAtPath:[[NSBundle mainBundle] resourcePath] error:&error]) {
+        NSString *type = [[asset componentsSeparatedByString:@"."] lastObject];
+        
+        if([type isEqualToString:[RKOrbBasicProgram fileExtension]]) {
+            error = nil;
+            NSString *assetPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:asset];
+            NSString *destPath = [documentsDirectory stringByAppendingPathComponent:asset];
+            error = nil;
+            if(![fileManager copyItemAtPath:assetPath toPath:destPath error:&error]) {
+                NSLog(@"AssetManager:: Error copying asset %@", asset);
+                if(error) NSLog(@"AssetManager:: %@", [error localizedDescription]);
+            } else {
+                NSLog(@"AssetManager:: Successfully copied asset %@", asset);
+            }
         }
     }
 }
 
-- (void)handleAsyncData:(RKDeviceAsyncData *)data
-{
-    if ([data isKindOfClass:[RKOrbBasicPrintMessage class]]) {
-        // Show print message that are generated by the program to the user.
-        RKOrbBasicPrintMessage *printMessage = (RKOrbBasicPrintMessage *)data;
-        messageView.text = [messageView.text stringByAppendingFormat:@"orbBasic Print: %@", printMessage.message];
-    } else if ([data isKindOfClass:[RKOrbBasicErrorASCII class]]) {
-        // Show code error messages to the user.
-        RKOrbBasicErrorASCII *errorMessage = (RKOrbBasicErrorASCII *)data;
-        messageView.text = [messageView.text stringByAppendingFormat:@"orbBasic Error: %@", errorMessage.error];
-    } else if ([data isKindOfClass:[RKOrbBasicErrorBinary class]]) {
-        messageView.text = @"orbBasic binary error.";
+#pragma Actions
+
+- (IBAction) load:(id)sender{
+    [_orbBasicProgram load];
+	[_orbBasicProgram setRobot:_robot.robot];
+    _executeButton.enabled = YES;
+}
+
+- (IBAction)execute:(id)sender{
+    _messageView.text = @"Executing ...\n";
+    [_orbBasicProgram execute];
+}
+
+- (IBAction)abort:(id)sender{
+    [self.orbBasicProgram abort];
+}
+
+- (IBAction)erase:(id)sender{
+    [self.orbBasicProgram erase];
+    self.executeButton.enabled = NO;
+}
+
+#pragma mark Message Handlers
+
+- (void) handleResponse:(RKDeviceResponse *)response forRobot:(id<RKRobotBase>)robot{
+    if ([response isKindOfClass:[RKOrbBasicAppendFragmentResponse class]]) {
+        if (response.code == RKResponseCodeErrorParameter) {
+            _messageView.text = [_messageView.text stringByAppendingFormat:@"Syntax error.\n"];
+        } else if (response.code == RKResponseCodeErrorExecute) {
+            _messageView.text = [_messageView.text stringByAppendingFormat:@"Memory full! Program not loaded.\n"];
+        }
     }
 }
 
+-(void) handleAsyncMessage:(RKAsyncMessage *)message forRobot:(id<RKRobotBase>)robot{
+    if ([message isKindOfClass:[RKOrbBasicPrintMessage class]]) {
+        // Show print message that are generated by the program to the user.
+        RKOrbBasicPrintMessage *printMessage = (RKOrbBasicPrintMessage *)message;
+        _messageView.text = [_messageView.text stringByAppendingFormat:@"orbBasic Print: %@", printMessage.message];
+    } else if ([message isKindOfClass:[RKOrbBasicErrorASCII class]]) {
+        // Show code error messages to the user.
+        RKOrbBasicErrorASCII *errorMessage = (RKOrbBasicErrorASCII *)message;
+        _messageView.text = [_messageView.text stringByAppendingFormat:@"orbBasic Error: %@", errorMessage.error];
+    } else if ([message isKindOfClass:[RKOrbBasicErrorBinary class]]) {
+        _messageView.text = @"orbBasic binary error.";
+    }
+}
 
 #pragma mark Table View Data Source Methods
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [[OrbBasicFilesManager orbBasicFiles] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString * const ReuseIdentifier = @"FILEPATHCELL";
-    
-    // Create a basic cell and add the file path to it.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
-    if ( cell == nil ) {
-         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ReuseIdentifier];
-    }
     
     RKOrbBasicProgram *file = [[OrbBasicFilesManager orbBasicFiles] objectAtIndex:indexPath.row];
     cell.textLabel.text = file.name;
     
-    return [cell autorelease];
+    return cell;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+	if(section == 0) return @"OrbBasic Programs";
+	return @"";
 }
 
 #pragma mark Table View Delegate Methods
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [orbBasicProgram erase]; // resets the state of this program so it can be reloaded.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [_orbBasicProgram erase]; // resets the state of this program so it can be reloaded.
     NSArray *programs = [OrbBasicFilesManager orbBasicFiles];
-    orbBasicProgram = [programs objectAtIndex:indexPath.row];
+    _orbBasicProgram = [programs objectAtIndex:indexPath.row];
+	[_orbBasicProgram setRobot:_robot.robot];
     self.executeButton.enabled = NO;
 }
 

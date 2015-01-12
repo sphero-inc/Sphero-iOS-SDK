@@ -7,38 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RobotKit/RobotKit.h>
 
 @class RKDeviceAsyncData;
 
-@interface ViewController : UIViewController {
-    
-    UIView      *unconnectedView;
-    
-    // collision UI
-    UILabel     *xAccelerationLabel;
-    UILabel     *yAccelerationLabel;
-    UILabel     *zAccelerationLabel;
-    UILabel     *xAxisLabel;
-    UILabel     *yAxisLabel;
-    UILabel     *xPowerLabel;
-    UILabel     *yPowerLabel;
-    UILabel     *speedLabel;
-    UILabel     *timeStampLabel;
-    UIButton    *driveButton;
-    UIButton    *aimButton;
-    UISlider    *controlSpeedSlider;
-    UISlider    *controlHeadingSlider;
-    UILabel     *controlSpeedLabel;
-    UILabel     *controlHeadingLabel;
-    
-    // test drive controls UI
-    UILabel     *driveSpeedLabel;
-    UILabel     *driveHeadingLabel;
-    
-    // variables for driving
-    BOOL        driving;
-    BOOL        aiming;
+@interface ViewController : UIViewController <RKResponseObserver> {
+		BOOL        aiming;
 }
+
 
 @property (nonatomic, retain) IBOutlet UIView       *unconnectedView;
 

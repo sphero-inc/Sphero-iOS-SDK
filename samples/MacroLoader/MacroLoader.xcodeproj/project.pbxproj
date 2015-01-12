@@ -9,35 +9,28 @@
 /* Begin PBXBuildFile section */
 		6784E7EE15DDA24100BD3A02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7DC15DDA24100BD3A02 /* AppDelegate.m */; };
 		6784E7EF15DDA24100BD3A02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7DD15DDA24100BD3A02 /* InfoPlist.strings */; };
-		6784E7F015DDA24100BD3A02 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7DF15DDA24100BD3A02 /* ViewController_iPad.xib */; };
-		6784E7F115DDA24100BD3A02 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7E115DDA24100BD3A02 /* ViewController_iPhone.xib */; };
-		6784E7F215DDA24100BD3A02 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784E7E415DDA24100BD3A02 /* libsqlite3.dylib */; };
-		6784E7F515DDA24100BD3A02 /* MacroLoader-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7E715DDA24100BD3A02 /* MacroLoader-Info.plist */; };
 		6784E7F615DDA24100BD3A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7E915DDA24100BD3A02 /* main.m */; };
 		6784E7F715DDA24100BD3A02 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7EA15DDA24100BD3A02 /* README.txt */; };
 		6784E7F815DDA24100BD3A02 /* squaremedium.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7EB15DDA24100BD3A02 /* squaremedium.sphero */; };
 		6784E7F915DDA24100BD3A02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7ED15DDA24100BD3A02 /* ViewController.m */; };
-		816B798418FCA190009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B798318FCA190009CA81D /* RobotKit.framework */; };
-		816B798618FCA1A6009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B798518FCA1A6009CA81D /* RobotUIKit.framework */; };
 		D34057441676C7CD00FE1E64 /* strobelight.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E80115DDA2BB00BD3A02 /* strobelight.sphero */; };
 		D34057461676C7F300FE1E64 /* bigdance.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7FD15DDA2BB00BD3A02 /* bigdance.sphero */; };
 		D34057471676C7FA00FE1E64 /* symboll.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E80215DDA2BB00BD3A02 /* symboll.sphero */; };
 		D34057481676C80400FE1E64 /* dance1.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7FF15DDA2BB00BD3A02 /* dance1.sphero */; };
+		DE53D07E1977119B006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07D1977119B006E4C0B /* Default-568h@2x.png */; };
+		DE9F26051A2635DB007DFB5C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26031A2635DB007DFB5C /* RobotKit.framework */; };
+		DE9F26061A2635DB007DFB5C /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */; };
+		DE9F26081A2635F1007DFB5C /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE9F26071A2635F1007DFB5C /* RobotUIKit.bundle */; };
 		E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */; };
 		E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */; };
-		E60EECA615DD6F3E008FFEB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECA515DD6F3E008FFEB9 /* CoreGraphics.framework */; };
-		E60EECA815DD6F52008FFEB9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECA715DD6F52008FFEB9 /* CoreMotion.framework */; };
-		E60EECAA15DD6F5C008FFEB9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECA915DD6F5C008FFEB9 /* GameKit.framework */; };
 		E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */; };
+		EA84518A1A40DBDC0098A6C0 /* MacroLoader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8451891A40DBDC0098A6C0 /* MacroLoader.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6784E7DB15DDA24100BD3A02 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6784E7DC15DDA24100BD3A02 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6784E7DE15DDA24100BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6784E7E015DDA24100BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		6784E7E215DDA24100BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		6784E7E415DDA24100BD3A02 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = MacroLoader/Frameworks/libsqlite3.dylib; sourceTree = "<group>"; };
 		6784E7E715DDA24100BD3A02 /* MacroLoader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MacroLoader-Info.plist"; sourceTree = "<group>"; };
 		6784E7E815DDA24100BD3A02 /* MacroLoader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MacroLoader-Prefix.pch"; sourceTree = "<group>"; };
 		6784E7E915DDA24100BD3A02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,15 +44,17 @@
 		6784E80015DDA2BB00BD3A02 /* squaremedium.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = squaremedium.sphero; sourceTree = "<group>"; };
 		6784E80115DDA2BB00BD3A02 /* strobelight.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = strobelight.sphero; sourceTree = "<group>"; };
 		6784E80215DDA2BB00BD3A02 /* symboll.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = symboll.sphero; sourceTree = "<group>"; };
-		816B798318FCA190009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
-		816B798518FCA1A6009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
 		81EE343D1491452A00132035 /* MacroLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE07AAEF196F9C0700FB523A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		DE07AAF0196F9C0700FB523A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		DE53D07D1977119B006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE9F26031A2635DB007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
+		DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../_Frameworks_iOS/RobotUIKit.framework; sourceTree = "<group>"; };
+		DE9F26071A2635F1007DFB5C /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../_Frameworks_iOS/RobotUIKit.bundle; sourceTree = "<group>"; };
 		E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E60EECA515DD6F3E008FFEB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E60EECA715DD6F52008FFEB9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		E60EECA915DD6F5C008FFEB9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		EA8451891A40DBDC0098A6C0 /* MacroLoader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MacroLoader.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,15 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9F26051A2635DB007DFB5C /* RobotKit.framework in Frameworks */,
+				DE9F26061A2635DB007DFB5C /* RobotUIKit.framework in Frameworks */,
 				E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */,
-				E60EECAA15DD6F5C008FFEB9 /* GameKit.framework in Frameworks */,
-				E60EECA815DD6F52008FFEB9 /* CoreMotion.framework in Frameworks */,
-				E60EECA615DD6F3E008FFEB9 /* CoreGraphics.framework in Frameworks */,
 				E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */,
-				816B798418FCA190009CA81D /* RobotKit.framework in Frameworks */,
 				E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */,
-				6784E7F215DDA24100BD3A02 /* libsqlite3.dylib in Frameworks */,
-				816B798618FCA1A6009CA81D /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +81,7 @@
 				6784E7DC15DDA24100BD3A02 /* AppDelegate.m */,
 				6784E7EC15DDA24100BD3A02 /* ViewController.h */,
 				6784E7ED15DDA24100BD3A02 /* ViewController.m */,
-				6784E7DF15DDA24100BD3A02 /* ViewController_iPad.xib */,
-				6784E7E115DDA24100BD3A02 /* ViewController_iPhone.xib */,
+				EA8451891A40DBDC0098A6C0 /* MacroLoader.storyboard */,
 				6784E7E915DDA24100BD3A02 /* main.m */,
 				6784E7EA15DDA24100BD3A02 /* README.txt */,
 				6784E7FB15DDA27D00BD3A02 /* Supporting Files */,
@@ -102,13 +92,11 @@
 		6784E7FA15DDA24B00BD3A02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				816B798518FCA1A6009CA81D /* RobotUIKit.framework */,
-				816B798318FCA190009CA81D /* RobotKit.framework */,
-				6784E7E415DDA24100BD3A02 /* libsqlite3.dylib */,
+				DE9F26031A2635DB007DFB5C /* RobotKit.framework */,
+				DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */,
+				DE07AAEF196F9C0700FB523A /* libc++.dylib */,
+				DE07AAF0196F9C0700FB523A /* libstdc++.dylib */,
 				E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */,
-				E60EECA915DD6F5C008FFEB9 /* GameKit.framework */,
-				E60EECA715DD6F52008FFEB9 /* CoreMotion.framework */,
-				E60EECA515DD6F3E008FFEB9 /* CoreGraphics.framework */,
 				E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */,
 				E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */,
 			);
@@ -142,6 +130,8 @@
 		81EE34321491452A00132035 = {
 			isa = PBXGroup;
 			children = (
+				DE9F26071A2635F1007DFB5C /* RobotUIKit.bundle */,
+				DE53D07D1977119B006E4C0B /* Default-568h@2x.png */,
 				6784E7DA15DDA24100BD3A02 /* MacroLoader */,
 				81EE343E1491452A00132035 /* Products */,
 				6784E7FA15DDA24B00BD3A02 /* Frameworks */,
@@ -182,8 +172,17 @@
 		81EE34341491452A00132035 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Orbotix, Inc.";
+				TargetAttributes = {
+					81EE343C1491452A00132035 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 81EE34371491452A00132035 /* Build configuration list for PBXProject "MacroLoader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -207,10 +206,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9F26081A2635F1007DFB5C /* RobotUIKit.bundle in Resources */,
 				6784E7EF15DDA24100BD3A02 /* InfoPlist.strings in Resources */,
-				6784E7F015DDA24100BD3A02 /* ViewController_iPad.xib in Resources */,
-				6784E7F115DDA24100BD3A02 /* ViewController_iPhone.xib in Resources */,
-				6784E7F515DDA24100BD3A02 /* MacroLoader-Info.plist in Resources */,
+				EA84518A1A40DBDC0098A6C0 /* MacroLoader.storyboard in Resources */,
+				DE53D07E1977119B006E4C0B /* Default-568h@2x.png in Resources */,
 				6784E7F715DDA24100BD3A02 /* README.txt in Resources */,
 				6784E7F815DDA24100BD3A02 /* squaremedium.sphero in Resources */,
 				D34057441676C7CD00FE1E64 /* strobelight.sphero in Resources */,
@@ -244,22 +243,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6784E7DF15DDA24100BD3A02 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6784E7E015DDA24100BD3A02 /* en */,
-			);
-			name = ViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		6784E7E115DDA24100BD3A02 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6784E7E215DDA24100BD3A02 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -267,9 +250,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -279,10 +270,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,15 +288,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,19 +321,14 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
-					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
 				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/MacroSample/Frameworks\"",
-					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../_Frameworks_iOS";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -342,19 +345,13 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
-					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
 				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/MacroSample/Frameworks\"",
-					"\"$(SRCROOT)/MacroLoader/Frameworks\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../_Frameworks_iOS";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

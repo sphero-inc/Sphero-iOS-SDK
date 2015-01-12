@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iOI-Id-J6Y">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xQe-RJ-ljO">
+            <objects>
+                <viewController id="iOI-Id-J6Y" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pk6-K2-feM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ssd-B3-JSG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G1w-72-Uwm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iaw-aM-iHt" userLabel="EAGLView" customClass="EAGLView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="450"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robot Disconnected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bms-iK-6Kx">
+                                <rect key="frame" x="221" y="489" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iaw-aM-iHt" firstAttribute="trailing" secondItem="G1w-72-Uwm" secondAttribute="trailing" id="3C9-aI-7Fj"/>
+                            <constraint firstItem="Iaw-aM-iHt" firstAttribute="height" secondItem="G1w-72-Uwm" secondAttribute="height" multiplier="0.75" id="CHU-QJ-2AZ"/>
+                            <constraint firstItem="Iaw-aM-iHt" firstAttribute="top" secondItem="pk6-K2-feM" secondAttribute="bottom" id="DPY-jH-G4p"/>
+                            <constraint firstItem="bms-iK-6Kx" firstAttribute="top" secondItem="Iaw-aM-iHt" secondAttribute="bottom" constant="19" id="YxC-T4-jdj"/>
+                            <constraint firstAttribute="centerX" secondItem="bms-iK-6Kx" secondAttribute="centerX" id="f7n-w2-A4X"/>
+                            <constraint firstItem="Iaw-aM-iHt" firstAttribute="leading" secondItem="G1w-72-Uwm" secondAttribute="leading" id="xqu-HJ-PHW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eaglView" destination="Iaw-aM-iHt" id="MQU-sx-zvG"/>
+                        <outlet property="robotStatusLabel" destination="bms-iK-6Kx" id="yty-6W-nd2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqG-XJ-IQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="415"/>
+        </scene>
+    </scenes>
+</document>

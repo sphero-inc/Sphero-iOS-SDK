@@ -9,17 +9,7 @@
 #import <RobotKit/RobotKit.h>
 #import "ConfigurationViewController.h"
 
-
 @implementation ConfigurationViewController
-
-// configuration UI
-@synthesize xThresholdTextField;
-@synthesize yThresholdTextField;
-@synthesize xSpeedThresholdTextField;
-@synthesize ySpeedThresholdTextField;
-@synthesize deadZoneTimeTextField;
-@synthesize startButton;
-
 
 - (void)startCollisionDetection:(id)sender
 {
@@ -52,13 +42,13 @@
     }
     
     // start collision detection messages    
-    [RKConfigureCollisionDetectionCommand sendCommandForMethod:RKCollisionDetectionMethod1
-                                                    xThreshold:xThreshold
-                                               xSpeedThreshold:xSpeedThreshold
-                                                    yThreshold:yThreshold
-                                               ySpeedThreshold:ySpeedThreshold
-                                              postTimeDeadZone:deadZone];
-    
+//    [RKConfigureCollisionDetectionCommand sendCommandForMethod:RKCollisionDetectionMethod1
+//                                                    xThreshold:xThreshold
+//                                               xSpeedThreshold:xSpeedThreshold
+//                                                    yThreshold:yThreshold
+//                                               ySpeedThreshold:ySpeedThreshold
+//                                              postTimeDeadZone:deadZone];
+//    
     [self dismissModalViewControllerAnimated:YES];
 }
 

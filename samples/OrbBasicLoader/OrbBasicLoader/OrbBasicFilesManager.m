@@ -1,9 +1,5 @@
 //
-//  OrbBasicFilesManager.m
-//  OrbBasicLoader
-//
-//  Created by Brian Smith on 10/2/12.
-//  Copyright (c) 2012 Orbotix Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Orbotix Inc. All rights reserved.
 //
 
 #import <RobotKit/RobotKit.h>
@@ -33,7 +29,6 @@
                                                                            error:nil];
             if (program != nil) {
                 [files addObject:program];
-                [program release];
             } else {
                 NSLog(@"Failed to load file %@", filePath);
             }

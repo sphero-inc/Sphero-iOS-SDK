@@ -7,30 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F08DA901A423EB700DDEE82 /* SelfLevel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F08DA8F1A423EB700DDEE82 /* SelfLevel.storyboard */; };
 		67F6DC0115B28FAB006EAF28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DC0015B28FAB006EAF28 /* UIKit.framework */; };
 		67F6DC0315B28FAB006EAF28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DC0215B28FAB006EAF28 /* Foundation.framework */; };
-		67F6DC0515B28FAB006EAF28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DC0415B28FAB006EAF28 /* CoreGraphics.framework */; };
-		67F6DC0715B28FAB006EAF28 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DC0615B28FAB006EAF28 /* CoreMotion.framework */; };
-		67F6DC0915B28FAB006EAF28 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DC0815B28FAB006EAF28 /* GameKit.framework */; };
 		67F6DC0B15B28FAB006EAF28 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F6DC0A15B28FAB006EAF28 /* ExternalAccessory.framework */; };
 		67F6DC1115B28FAB006EAF28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67F6DC0F15B28FAB006EAF28 /* InfoPlist.strings */; };
 		67F6DC1315B28FAB006EAF28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6DC1215B28FAB006EAF28 /* main.m */; };
 		67F6DC1715B28FAB006EAF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6DC1615B28FAB006EAF28 /* AppDelegate.m */; };
-		67F6DC1D15B28FAC006EAF28 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67F6DC1C15B28FAC006EAF28 /* RobotUIKit.bundle */; };
 		67F6DC2015B28FAC006EAF28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6DC1F15B28FAC006EAF28 /* ViewController.m */; };
-		67F6DC2315B28FAC006EAF28 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6DC2115B28FAC006EAF28 /* ViewController_iPhone.xib */; };
-		67F6DC2615B28FAC006EAF28 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6DC2415B28FAC006EAF28 /* ViewController_iPad.xib */; };
-		816B799918FCA444009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B799718FCA444009CA81D /* RobotKit.framework */; };
-		816B799A18FCA444009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B799818FCA444009CA81D /* RobotUIKit.framework */; };
+		DE53D07A19771191006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07919771191006E4C0B /* Default-568h@2x.png */; };
+		DE9F26261A2637B0007DFB5C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26241A2637B0007DFB5C /* RobotKit.framework */; };
+		DE9F26271A2637B0007DFB5C /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26251A2637B0007DFB5C /* RobotUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F08DA8F1A423EB700DDEE82 /* SelfLevel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelfLevel.storyboard; sourceTree = "<group>"; };
 		67F6DBFC15B28FAB006EAF28 /* SelfLevel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfLevel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F6DC0015B28FAB006EAF28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		67F6DC0215B28FAB006EAF28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		67F6DC0415B28FAB006EAF28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		67F6DC0615B28FAB006EAF28 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		67F6DC0815B28FAB006EAF28 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		67F6DC0A15B28FAB006EAF28 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		67F6DC0E15B28FAB006EAF28 /* SelfLevel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SelfLevel-Info.plist"; sourceTree = "<group>"; };
 		67F6DC1015B28FAB006EAF28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -38,13 +32,11 @@
 		67F6DC1415B28FAB006EAF28 /* SelfLevel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SelfLevel-Prefix.pch"; sourceTree = "<group>"; };
 		67F6DC1515B28FAB006EAF28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67F6DC1615B28FAB006EAF28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		67F6DC1C15B28FAC006EAF28 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
 		67F6DC1E15B28FAC006EAF28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67F6DC1F15B28FAC006EAF28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		67F6DC2215B28FAC006EAF28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		67F6DC2515B28FAC006EAF28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		816B799718FCA444009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
-		816B799818FCA444009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
+		DE53D07919771191006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE9F26241A2637B0007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
+		DE9F26251A2637B0007DFB5C /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../_Frameworks_iOS/RobotUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,14 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9F26261A2637B0007DFB5C /* RobotKit.framework in Frameworks */,
+				DE9F26271A2637B0007DFB5C /* RobotUIKit.framework in Frameworks */,
 				67F6DC0115B28FAB006EAF28 /* UIKit.framework in Frameworks */,
 				67F6DC0315B28FAB006EAF28 /* Foundation.framework in Frameworks */,
-				67F6DC0515B28FAB006EAF28 /* CoreGraphics.framework in Frameworks */,
-				67F6DC0715B28FAB006EAF28 /* CoreMotion.framework in Frameworks */,
-				816B799A18FCA444009CA81D /* RobotUIKit.framework in Frameworks */,
-				67F6DC0915B28FAB006EAF28 /* GameKit.framework in Frameworks */,
 				67F6DC0B15B28FAB006EAF28 /* ExternalAccessory.framework in Frameworks */,
-				816B799918FCA444009CA81D /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +58,7 @@
 		67F6DBF115B28FAB006EAF28 = {
 			isa = PBXGroup;
 			children = (
+				DE53D07919771191006E4C0B /* Default-568h@2x.png */,
 				67F6DC0C15B28FAB006EAF28 /* SelfLevel */,
 				67F6DBFF15B28FAB006EAF28 /* Frameworks */,
 				67F6DBFD15B28FAB006EAF28 /* Products */,
@@ -86,13 +76,10 @@
 		67F6DBFF15B28FAB006EAF28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				816B799718FCA444009CA81D /* RobotKit.framework */,
-				816B799818FCA444009CA81D /* RobotUIKit.framework */,
+				DE9F26241A2637B0007DFB5C /* RobotKit.framework */,
+				DE9F26251A2637B0007DFB5C /* RobotUIKit.framework */,
 				67F6DC0015B28FAB006EAF28 /* UIKit.framework */,
 				67F6DC0215B28FAB006EAF28 /* Foundation.framework */,
-				67F6DC0415B28FAB006EAF28 /* CoreGraphics.framework */,
-				67F6DC0615B28FAB006EAF28 /* CoreMotion.framework */,
-				67F6DC0815B28FAB006EAF28 /* GameKit.framework */,
 				67F6DC0A15B28FAB006EAF28 /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
@@ -103,12 +90,10 @@
 			children = (
 				67F6DC1515B28FAB006EAF28 /* AppDelegate.h */,
 				67F6DC1615B28FAB006EAF28 /* AppDelegate.m */,
-				67F6DC1C15B28FAC006EAF28 /* RobotUIKit.bundle */,
 				67F6DC1E15B28FAC006EAF28 /* ViewController.h */,
 				67F6DC1F15B28FAC006EAF28 /* ViewController.m */,
-				67F6DC2115B28FAC006EAF28 /* ViewController_iPhone.xib */,
-				67F6DC2415B28FAC006EAF28 /* ViewController_iPad.xib */,
 				67F6DC0D15B28FAB006EAF28 /* Supporting Files */,
+				1F08DA8F1A423EB700DDEE82 /* SelfLevel.storyboard */,
 			);
 			path = SelfLevel;
 			sourceTree = "<group>";
@@ -150,8 +135,17 @@
 		67F6DBF315B28FAB006EAF28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Orbotix Inc";
+				TargetAttributes = {
+					67F6DBFB15B28FAB006EAF28 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 67F6DBF615B28FAB006EAF28 /* Build configuration list for PBXProject "SelfLevel" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -175,10 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F08DA901A423EB700DDEE82 /* SelfLevel.storyboard in Resources */,
 				67F6DC1115B28FAB006EAF28 /* InfoPlist.strings in Resources */,
-				67F6DC1D15B28FAC006EAF28 /* RobotUIKit.bundle in Resources */,
-				67F6DC2315B28FAC006EAF28 /* ViewController_iPhone.xib in Resources */,
-				67F6DC2615B28FAC006EAF28 /* ViewController_iPad.xib in Resources */,
+				DE53D07A19771191006E4C0B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,22 +199,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		67F6DC2115B28FAC006EAF28 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67F6DC2215B28FAC006EAF28 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		67F6DC2415B28FAC006EAF28 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67F6DC2515B28FAC006EAF28 /* en */,
-			);
-			name = ViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -229,9 +206,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -241,10 +225,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -254,15 +242,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -273,16 +271,15 @@
 		67F6DC2A15B28FAC006EAF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 					"$(inherited)",
-					"\"$(SRCROOT)/SelfLevel/Frameworks\"",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
-					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SelfLevel/SelfLevel-Prefix.pch";
 				INFOPLIST_FILE = "SelfLevel/SelfLevel-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -290,6 +287,7 @@
 					"-lsqlite3.0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -297,16 +295,15 @@
 		67F6DC2B15B28FAC006EAF28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 					"$(inherited)",
-					"\"$(SRCROOT)/SelfLevel/Frameworks\"",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
-					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SelfLevel/SelfLevel-Prefix.pch";
 				INFOPLIST_FILE = "SelfLevel/SelfLevel-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -314,6 +311,7 @@
 					"-lsqlite3.0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

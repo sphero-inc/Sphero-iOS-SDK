@@ -24,6 +24,13 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>external-accessory</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>SelfLevel</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -27,7 +27,14 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationExitsOnSuspend</key>
-	<true/>
+	<false/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>external-accessory</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>StreamingAnimation</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

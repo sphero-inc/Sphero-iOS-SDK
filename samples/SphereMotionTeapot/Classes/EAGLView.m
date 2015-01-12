@@ -1,45 +1,39 @@
-/*
-    File: EAGLView.m
-Abstract: View to display OpenGL ES teapot, along with UI controls to adjust various motion properties.
- Version: 1.0
+//
+//  Copyright (c) 2011-2014 Orbotix, Inc. All rights reserved.
+//
 
-*/
+#import <CoreMotion/CoreMotion.h>
+#import <QuartzCore/QuartzCore.h>
+#import <OpenGLES/EAGL.h>
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
+#import <OpenGLES/EAGLDrawable.h>
 
+#import "matrix.h"
 #import "EAGLView.h"
 
 #import "vector.h"
 #import "teapot.h"
 #import "shaders.h"
 
-#import <CoreMotion/CoreMotion.h>
-
-#import <RobotKit/RobotKit.h>
-
 static const double kDegreesToRadians = M_PI / 180.0;
-static const double kUserAccelerationFilterConstant = 0.1;
-
-static const double kMinCutoffFrequency = 1;
-
-static const double kUserAccelerationHpfCutoffFrequency = 1000.0;
-static const double kUserAccelerationLpfCutoffFrequency = 10.0;
 
 enum {
 	kSegmentIndexAccelerometer = 0,
 	kSegmentIndexDeviceMotion = 1
 };
 
-const GLfloat	kLightDirection[] = {0.0f, 0.0f, 1.0f};
-const GLfloat	kLightHalfPlane[] = {0.0f, 0.0f, 0.0f};
+const GLfloat kLightDirection[] = {0.0f, 0.0f, 1.0f};
+const GLfloat kLightHalfPlane[] = {0.0f, 0.0f, 0.0f};
 const GLfloat kLightAmbient[] = {0.2, 0.2, 0.2, 1.0f};
 const GLfloat kLightDiffuse[] = {1.0f, 0.6, 0.0f, 1.0f};
 const GLfloat kLightSpecular[] = {1.0f, 1.0f, 1.0f, 1.0f};
 const GLfloat kMaterialAmbient[] = {0.6, 0.6, 0.6, 1.0f};
-const GLfloat	kMaterialDiffuse[] = {1.0f, 1.0f, 1.0f, 1.0f};	
-const GLfloat	kMaterialSpecular[] = {1.0f, 1.0f, 1.0f, 1.0f};
-const GLfloat	kMaterialSpecularExponent = 10.0f;
+const GLfloat kMaterialDiffuse[] = {1.0f, 1.0f, 1.0f, 1.0f};
+const GLfloat kMaterialSpecular[] = {1.0f, 1.0f, 1.0f, 1.0f};
+const GLfloat kMaterialSpecularExponent = 10.0f;
 
-CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
-{	
+CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z) {
 	// The Z axis of our rotated frame is opposite gravity
 	vec3f_t zAxis = vec3f_normalize(vec3f_init(-x, -y, -z));
 	
@@ -50,8 +44,6 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 	
 	// The X axis is just the cross product of Y and Z
 	vec3f_t xAxis = vec3f_crossProduct(yAxis, zAxis);
-	
-    
     
 	CMRotationMatrix mat = {
 		xAxis.x, yAxis.x, zAxis.x,
@@ -61,58 +53,58 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 	return mat;
 }
 
+@interface EAGLView() {
+    mat4f_t projectionMatrix;
+    mat4f_t modelViewMatrix;
+    
+    struct {
+        // Handle to a program object
+        GLuint prog;
+        
+        // Attributes
+        GLint position;
+        GLint normal;
+        
+        // Uniforms
+        GLint mvpMatrix;
+        GLint modelViewMatrix;
+        GLint lightDirection;
+        GLint lightHalfPlane;
+        GLint lightAmbientColor;
+        GLint lightDiffuseColor;
+        GLint lightSpecularColor;
+        GLint materialAmbientColor;
+        GLint materialDiffuseColor;
+        GLint materialSpecularColor;
+        GLint materialSpecularExponent;
+    } glHandles;
+}
+
+@property (nonatomic) BOOL animating;
+@property (nonatomic) NSInteger animationFrameInterval;
+@property (nonatomic) CADisplayLink *displayLink;
+@property (nonatomic) EAGLContext *context;
+@property (nonatomic) GLuint viewRenderbuffer, viewFramebuffer;
+@property (nonatomic) GLuint depthRenderbuffer;
+@property (nonatomic) GLint backingWidth;
+@property (nonatomic) GLint backingHeight;
+@property (nonatomic) BOOL accelMode;
+@property (nonatomic) BOOL translationEnabled;
+@property (nonatomic) float lastX;
+@property (nonatomic) float lastY;
+@property (nonatomic) float lastZ;
+
+@end
+
 @implementation EAGLView
 
-@synthesize animating;
-@dynamic animationFrameInterval;
-
 // You must implement this method
-+ (Class) layerClass
-{
++ (Class) layerClass {
 	return [CAEAGLLayer class];
 }
 
--(void)enableSpheroStreaming {
-    //SPHERO SENSOR STREAMING CODE
-    // Send command to start the accelerometer data streaming from Sphero and add ourself as an observer
-    NSLog(@"Turning on data streaming, divisor %@", [[NSUserDefaults standardUserDefaults] stringForKey:@"rateDivisor"]);
-    [[RKDeviceMessenger sharedMessenger] addDataStreamingObserver:self selector:@selector(handleDataStreaming:)];
-    [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:[[[NSUserDefaults standardUserDefaults] stringForKey:@"rateDivisor"] intValue] packetFrames:[[[NSUserDefaults standardUserDefaults] stringForKey:@"framesPacket"] intValue] sensorMask:RKDataStreamingMaskAccelerometerXFiltered | RKDataStreamingMaskAccelerometerYFiltered | RKDataStreamingMaskAccelerometerZFiltered | RKDataStreamingMaskIMUYawAngleFiltered | RKDataStreamingMaskIMUPitchAngleFiltered | RKDataStreamingMaskIMURollAngleFiltered packetCount:[[[NSUserDefaults standardUserDefaults] stringForKey:@"packetCount"] intValue]];
-    //END SPHERO SENSOR STREAMING CODE
-}
-
--(void)disableSpheroStreaming {
-    //SPHERO SENSOR STREAMING CODE
-    //Disable sensor data streaming from Sphero by removing ourself as the observer
-    NSLog(@"Turning off data streaming");
-    [[RKDeviceMessenger sharedMessenger] removeDataStreamingObserver:self];
-    // Send command to stop the data streaming from Sphero
-    [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:0 packetFrames:0 sensorMask:RKDataStreamingMaskOff packetCount:0];
-    //END SPHERO SENSOR STREAMING CODE
-}
-
-- (IBAction)onModeControlValueChanged:(UISegmentedControl *)sender
-{
-	accelMode = (sender.selectedSegmentIndex == kSegmentIndexAccelerometer);
-	
-	if (accelMode) {
-		// If we're now in accelerometer mode, our old mode must have been device motion,
-		// so stop device motion and start accelerometer updates
-		// Note: The relevant update intervals were specified in startAnimation
-		[motionManager stopDeviceMotionUpdates];
-		[motionManager startAccelerometerUpdates];
-	} else {
-		// If we're now in device motion mode, our old mode must have been accelerometer,
-		// so stop accelerometer and start device motion
-		// Note: The relevant update intervals were specified in startAnimation
-		[motionManager stopAccelerometerUpdates];
-		[motionManager startDeviceMotionUpdates];
-	}
-}
-
 //The GL view is stored in the nib file. When it's unarchived it's sent -initWithCoder:
-- (id) initWithCoder:(NSCoder*)coder
-{
+- (id) initWithCoder:(NSCoder*)coder {
 	if ((self = [super initWithCoder:coder]))
 	{
 		// Get the layer
@@ -120,21 +112,16 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 		eaglLayer.opaque = TRUE;
 		eaglLayer.drawableProperties = [NSDictionary dictionaryWithObjectsAndKeys: [NSNumber numberWithBool:FALSE], kEAGLDrawablePropertyRetainedBacking, kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat, nil];
 
-		animating = FALSE;
-		animationFrameInterval = 1;
-		displayLink = nil;
-		motionManager = nil;
-		referenceAttitude = nil;
-		modeControl.selectedSegmentIndex = kSegmentIndexAccelerometer;
-		accelMode = (modeControl.selectedSegmentIndex == kSegmentIndexAccelerometer);
-		
-		context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+        self.animating = FALSE;
+        self.translationEnabled = NO;
+        self.animationFrameInterval = 1;
+        self.displayLink = nil;
+        self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
 		
 		mat4f_identity(modelViewMatrix);
 		mat4f_identity(projectionMatrix);
         
-		if (context == nil || ![EAGLContext setCurrentContext:context]) {
-			[self release];
+		if (self.context == nil || ![EAGLContext setCurrentContext:self.context]) {
 			return nil;
 		}
 		[self initializeGL];
@@ -142,11 +129,16 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 	return self;
 }
 
-- (void) renderTeapotUsingRotation:(CMRotationMatrix)rotation andTranslation:(vec3f_t)translation
-{
-	[EAGLContext setCurrentContext:context];
+- (void)setRotationWithAccelerometerX:(float)x Y:(float)y Z:(float)z {
+    self.lastX = x;
+    self.lastY = y;
+    self.lastZ = z;
+}
+
+- (void) renderTeapotUsingRotation:(CMRotationMatrix)rotation andTranslation:(vec3f_t)translation {
+	[EAGLContext setCurrentContext:self.context];
     
-	glBindFramebuffer(GL_FRAMEBUFFER, viewFramebuffer);
+	glBindFramebuffer(GL_FRAMEBUFFER, self.viewFramebuffer);
 	
 	mat3f_t modelView3;
 	mat4f_initTranslation(translation, modelViewMatrix);
@@ -178,7 +170,7 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 	mat4f_multiplyMatrix(projectionMatrix, modelViewMatrix, mvp);
 
 	// Set the viewport
-	glViewport(0, 0, backingWidth, backingHeight);
+	glViewport(0, 0, self.backingWidth, self.backingHeight);
    
 	// Clear buffers
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -209,47 +201,34 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 		glDrawElements(GL_TRIANGLE_STRIP, new_teapot_indicies[i], GL_UNSIGNED_SHORT, &new_teapot_indicies[i+1]);
 	}
 	
-	glBindRenderbuffer(GL_RENDERBUFFER, viewRenderbuffer);
-	[context presentRenderbuffer:GL_RENDERBUFFER];
+	glBindRenderbuffer(GL_RENDERBUFFER, self.viewRenderbuffer);
+	[self.context presentRenderbuffer:GL_RENDERBUFFER];
 }
 
-- (void) drawView:(id)sender
-{
+- (void) drawView:(id)sender {
 	// The translation and rotation components of the modelview matrix
 	vec3f_t translation = {0.0f, 0.0f, -0.40f};
-	CMRotationMatrix rotation;
-	//CMAcceleration userAcceleration;
     
-    
-    if(accelMode) { //if accelerometer mode
-        //Create a rotation based on the latest data from Sphero
-        rotation = rotationMatrixFromGravity(lastX, lastY, lastZ);
-    }
+    // Create rotation matrix from latest data
+	CMRotationMatrix rotation = rotationMatrixFromGravity(self.lastX, self.lastY, self.lastZ);
 	
 	// renderTeapotUsingRotation:andTranslation:translation: will rotate the teapot by the inverse
 	// of rotation and translate it by translation
 	[self renderTeapotUsingRotation:rotation andTranslation:translation];
 }
 
-- (void) layoutSubviews
-{
-	[EAGLContext setCurrentContext:context];
+- (void) layoutSubviews {
+	[EAGLContext setCurrentContext:self.context];
 	[self destroyFramebuffer];
 	[self createFramebuffer];
 	
 	// Re-compute projection matrix
-	mat4f_initPerspective(60.0f * kDegreesToRadians, (float) backingWidth*1.0f/backingHeight, 0.1f, 10.0f, projectionMatrix);
+	mat4f_initPerspective(60.0f * kDegreesToRadians, (float) self.backingWidth*1.0f/self.backingHeight, 0.1f, 10.0f, projectionMatrix);
 		
 	[self drawView:nil];
 }
 
-- (NSInteger) animationFrameInterval
-{
-	return animationFrameInterval;
-}
-
-- (void) setAnimationFrameInterval:(NSInteger)frameInterval
-{
+- (void) setAnimationFrameInterval:(NSInteger)frameInterval {
 	// Frame interval defines how many display frames must pass between each time the
 	// display link fires. The display link will only fire 30 times a second when the
 	// frame internal is two on a display that refreshes 60 times a second. The default
@@ -258,9 +237,9 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 	// behavior.
 	if (frameInterval >= 1)
 	{
-		animationFrameInterval = frameInterval;
+		_animationFrameInterval = frameInterval;
 		
-		if (animating)
+		if (self.animating)
 		{
 			[self stopAnimation];
 			[self startAnimation];
@@ -268,111 +247,72 @@ CMRotationMatrix rotationMatrixFromGravity(float x, float y, float z)
 	}
 }
 
-- (void) startAnimation
-{
-	if (!animating)
-	{
-        lastX = 0.0;
-        lastY = 0.0;
-        lastZ = -1.0;
-        
-		referenceAttitude = nil;
+- (void)startAnimation {
+	if (!self.animating) {
+        self.lastX = 0.0;
+        self.lastY = 0.0;
+        self.lastZ = -1.0;
 				
-		displayLink = [NSClassFromString(@"CADisplayLink") displayLinkWithTarget:self selector:@selector(drawView:)];
-		[displayLink setFrameInterval:animationFrameInterval];
-		[displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+		self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(drawView:)];
+		[self.displayLink setFrameInterval:self.animationFrameInterval];
+		[self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 
-		animating = TRUE;
+		self.animating = TRUE;
 	}
 }
 
-- (void)stopAnimation
-{
-	if (animating)
-	{
-        [self disableSpheroStreaming];
-		[motionManager stopAccelerometerUpdates];
-		[motionManager stopDeviceMotionUpdates];
-		[motionManager release];
-		motionManager = nil;
-	
-		[displayLink invalidate];
-		displayLink = nil;
-		animating = FALSE;
+- (void)stopAnimation {
+	if (self.animating) {
+		[self.displayLink invalidate];
+		self.displayLink = nil;
+		self.animating = FALSE;
 	}
 }
 
-//SPHERO SENSOR STREAMING CODE
-//Observer method that will be called as sensor data arrives from Sphero
-- (void)handleDataStreaming:(RKDeviceAsyncData *)data
-{
-    //NSLog(@"handleDataStreaming: data - %@", data);
-    if ([data isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
-        RKDeviceSensorsAsyncData *sensors_data = (RKDeviceSensorsAsyncData *)data;
-        //NSLog(@"sensors_data.dataFrames - %@", sensors_data.dataFrames);
-        for (RKDeviceSensorsData *data in sensors_data.dataFrames) {
-            if(accelMode) {
-                RKAccelerometerData *accelerometer_data = data.accelerometerData;
-                lastX = accelerometer_data.acceleration.x;
-                lastY = accelerometer_data.acceleration.y;
-                lastZ = (accelerometer_data.acceleration.z * -1.0); //Invert the z axis value
-            } 
-        }
-    }
-}
-//END SPHERO SENSOR STREAMING CODE
-
-- (void) dealloc
-{
+- (void) dealloc {
 	[self stopAnimation];
     
-	if ([EAGLContext currentContext] == context) {
+	if ([EAGLContext currentContext] == self.context) {
 		[EAGLContext setCurrentContext:nil];
 	}
-	[context release];
-	
-	[super dealloc];
+    self.context = nil;
 }
 
-- (void)createFramebuffer
-{
+- (void)createFramebuffer {
+	glGenFramebuffers(1, &_viewFramebuffer);
+	glGenRenderbuffers(1, &_viewRenderbuffer);
     
-	glGenFramebuffers(1, &viewFramebuffer);
-	glGenRenderbuffers(1, &viewRenderbuffer);
+	glBindFramebuffer(GL_FRAMEBUFFER, _viewFramebuffer);
+	glBindRenderbuffer(GL_RENDERBUFFER, _viewRenderbuffer);
+	[self.context renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer*)self.layer];
+	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, self.viewRenderbuffer);
     
-	glBindFramebuffer(GL_FRAMEBUFFER, viewFramebuffer);
-	glBindRenderbuffer(GL_RENDERBUFFER, viewRenderbuffer);
-	[context renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer*)self.layer];
-	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, viewRenderbuffer);
-    
-	glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &backingWidth);
-	glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &backingHeight);
+	glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &_backingWidth);
+	glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &_backingHeight);
   
-	glGenRenderbuffers(1, &depthRenderbuffer);
-	glBindRenderbuffer(GL_RENDERBUFFER, depthRenderbuffer);
-	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT16, backingWidth, backingHeight);
-	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, depthRenderbuffer);
+	glGenRenderbuffers(1, &_depthRenderbuffer);
+	glBindRenderbuffer(GL_RENDERBUFFER, self.depthRenderbuffer);
+	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT16, self.backingWidth, self.backingHeight);
+	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, self.depthRenderbuffer);
     
 	if(glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
 		NSLog(@"createFramebuffer failed %x", glCheckFramebufferStatus(GL_FRAMEBUFFER));
 	} else {
-		NSLog(@"Created framebuffer with backing width, height = (%d, %d)", backingWidth, backingHeight);
+		NSLog(@"Created framebuffer with backing width, height = (%d, %d)", self.backingWidth, self.backingHeight);
 	}
 }
 
 
-- (void)destroyFramebuffer
-{
-	glDeleteFramebuffers(1, &viewFramebuffer);
-	viewFramebuffer = 0;
-	glDeleteRenderbuffers(1, &viewRenderbuffer);
-	viewRenderbuffer = 0;
-	glDeleteRenderbuffers(1, &depthRenderbuffer);
-	depthRenderbuffer = 0;
+- (void)destroyFramebuffer {
+	glDeleteFramebuffers(1, &_viewFramebuffer);
+	self.viewFramebuffer = 0;
+	glDeleteRenderbuffers(1, &_viewRenderbuffer);
+	self.viewRenderbuffer = 0;
+	glDeleteRenderbuffers(1, &_depthRenderbuffer);
+	self.depthRenderbuffer = 0;
 }
 
-- (void) initializeGL
-{
+- (void) initializeGL {
 	char vertexFilePath[1024];
 	char fragFilePath[1024];
 	getFileResourcePath("vertex.shader", vertexFilePath, 1024);

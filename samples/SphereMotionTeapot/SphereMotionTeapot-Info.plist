@@ -16,7 +16,7 @@
 		<string>Icon@2x2.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.orbotix.enterprise.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -29,10 +29,10 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSMainNibFile</key>
-	<string>MainWindow</string>
-	<key>NSMainNibFile~ipad</key>
-	<string>MainWindow-iPad</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
+	<key>UIMainStoryboardFile</key>
+	<string>SphereMotionTeapot</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIStatusBarHidden</key>
@@ -42,7 +42,9 @@
 		<string>com.orbotix.robotprotocol</string>
 		<string>com.RovingNetworks.btdemo</string>
 	</array>
-	<key>UIApplicationExitsOnSuspend</key>
-	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
 </dict>
 </plist>

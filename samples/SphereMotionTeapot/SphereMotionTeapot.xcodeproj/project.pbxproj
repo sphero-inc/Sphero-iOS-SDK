@@ -3,41 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* CoreMotionTeapotAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CoreMotionTeapotAppDelegate.mm */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		1F2678181A40A991009E6A85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2678161A40A991009E6A85 /* ViewController.m */; };
+		1F5C6C361A424F1E00FE1A1E /* SphereMotionTeapot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C6C351A424F1E00FE1A1E /* SphereMotionTeapot.storyboard */; };
 		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		2CB17FE710879D2700BED6A8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB17FE610879D2700BED6A8 /* CoreMotion.framework */; };
 		81657404143153D1009B33EE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81657403143153D1009B33EE /* libsqlite3.dylib */; };
-		816B79A018FCA50E009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B799F18FCA50E009CA81D /* RobotKit.framework */; };
 		81EE34BC149165F800132035 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81EE34BB149165F800132035 /* README.txt */; };
 		81F56AE413E325520075C094 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F56AE313E325520075C094 /* ExternalAccessory.framework */; };
 		81F56AE613E325640075C094 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F56AE513E325640075C094 /* GameKit.framework */; };
-		81F56B8E13E37A610075C094 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F56B8D13E37A610075C094 /* MainWindow-iPad.xib */; };
 		81FE530A1457674000AE01AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FE53091457674000AE01AE /* CoreGraphics.framework */; };
-		81FE53111457676C00AE01AE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 81FE53101457676C00AE01AE /* Settings.bundle */; };
 		835D8DE8112CCB2B00792184 /* vertex.shader in Resources */ = {isa = PBXBuildFile; fileRef = 835D8DE6112CCB2A00792184 /* vertex.shader */; };
 		835D8DE9112CCB2B00792184 /* fragment.shader in Resources */ = {isa = PBXBuildFile; fileRef = 835D8DE7112CCB2B00792184 /* fragment.shader */; };
 		835D8E3C112CDB9900792184 /* matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 835D8E3A112CDB9900792184 /* matrix.m */; };
 		837931EC11B5A0CC00916A8B /* Icon@2x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 837931EB11B5A0CC00916A8B /* Icon@2x2.png */; };
 		837931EE11B5A0D500916A8B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 837931ED11B5A0D500916A8B /* Icon.png */; };
+		DE53D07C19771196006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07B19771196006E4C0B /* Default-568h@2x.png */; };
+		DE9F26301A263824007DFB5C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F262E1A263824007DFB5C /* RobotKit.framework */; };
+		DE9F26311A263824007DFB5C /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F262F1A263824007DFB5C /* RobotUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* CoreMotionTeapotAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreMotionTeapotAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* CoreMotionTeapotAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CoreMotionTeapotAppDelegate.mm; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* SphereMotionTeapot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereMotionTeapot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		1F2678151A40A991009E6A85 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F2678161A40A991009E6A85 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F5C6C351A424F1E00FE1A1E /* SphereMotionTeapot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SphereMotionTeapot.storyboard; sourceTree = "<group>"; };
 		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		28FD14FD0DC6FC130079059D /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -47,13 +50,10 @@
 		2CB17FE610879D2700BED6A8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* SphereMotionTeapot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphereMotionTeapot_Prefix.pch; sourceTree = "<group>"; };
 		81657403143153D1009B33EE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		816B799F18FCA50E009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
 		81EE34BB149165F800132035 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		81F56AE313E325520075C094 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		81F56AE513E325640075C094 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		81F56B8D13E37A610075C094 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		81FE53091457674000AE01AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		81FE53101457676C00AE01AE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		835D8DE6112CCB2A00792184 /* vertex.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.shader; sourceTree = "<group>"; };
 		835D8DE7112CCB2B00792184 /* fragment.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.shader; sourceTree = "<group>"; };
 		835D8E3A112CDB9900792184 /* matrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = matrix.m; sourceTree = "<group>"; };
@@ -65,6 +65,9 @@
 		837931EB11B5A0CC00916A8B /* Icon@2x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x2.png"; sourceTree = "<group>"; };
 		837931ED11B5A0D500916A8B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SphereMotionTeapot-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SphereMotionTeapot-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DE53D07B19771196006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE9F262E1A263824007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
+		DE9F262F1A263824007DFB5C /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../_Frameworks_iOS/RobotUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +75,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9F26301A263824007DFB5C /* RobotKit.framework in Frameworks */,
+				DE9F26311A263824007DFB5C /* RobotUIKit.framework in Frameworks */,
 				81FE530A1457674000AE01AE /* CoreGraphics.framework in Frameworks */,
 				81657404143153D1009B33EE /* libsqlite3.dylib in Frameworks */,
 				81F56AE613E325640075C094 /* GameKit.framework in Frameworks */,
 				81F56AE413E325520075C094 /* ExternalAccessory.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				816B79A018FCA50E009CA81D /* RobotKit.framework in Frameworks */,
 				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
 				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
 				2CB17FE710879D2700BED6A8 /* CoreMotion.framework in Frameworks */,
@@ -88,14 +92,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		080E96DDFE201D6D7F000001 /* SphereMotionTeapot */ = {
 			isa = PBXGroup;
 			children = (
 				28FD14FC0DC6FC130079059D /* EAGLView.h */,
 				28FD14FD0DC6FC130079059D /* EAGLView.m */,
-				1D3623240D0F684500981E51 /* CoreMotionTeapotAppDelegate.h */,
-				1D3623250D0F684500981E51 /* CoreMotionTeapotAppDelegate.mm */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				1F2678151A40A991009E6A85 /* ViewController.h */,
+				1F2678161A40A991009E6A85 /* ViewController.m */,
+				1F5C6C351A424F1E00FE1A1E /* SphereMotionTeapot.storyboard */,
 			);
+			name = SphereMotionTeapot;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -110,11 +118,11 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				DE53D07B19771196006E4C0B /* Default-568h@2x.png */,
 				81EE34BB149165F800132035 /* README.txt */,
-				080E96DDFE201D6D7F000001 /* Classes */,
+				080E96DDFE201D6D7F000001 /* SphereMotionTeapot */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				81F56B8C13E37A5F0075C094 /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -140,12 +148,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				81FE53101457676C00AE01AE /* Settings.bundle */,
 				835D8DE6112CCB2A00792184 /* vertex.shader */,
 				835D8DE7112CCB2B00792184 /* fragment.shader */,
 				837931EB11B5A0CC00916A8B /* Icon@2x2.png */,
 				837931ED11B5A0D500916A8B /* Icon.png */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* SphereMotionTeapot-Info.plist */,
 			);
 			name = Resources;
@@ -154,7 +160,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				816B799F18FCA50E009CA81D /* RobotKit.framework */,
+				DE9F262E1A263824007DFB5C /* RobotKit.framework */,
+				DE9F262F1A263824007DFB5C /* RobotUIKit.framework */,
 				81FE53091457674000AE01AE /* CoreGraphics.framework */,
 				81657403143153D1009B33EE /* libsqlite3.dylib */,
 				81F56AE513E325640075C094 /* GameKit.framework */,
@@ -166,14 +173,6 @@
 				2CB17FE610879D2700BED6A8 /* CoreMotion.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		81F56B8C13E37A5F0075C094 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				81F56B8D13E37A610075C094 /* MainWindow-iPad.xib */,
-			);
-			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +201,10 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SphereMotionTeapot" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -227,13 +227,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				835D8DE8112CCB2B00792184 /* vertex.shader in Resources */,
 				835D8DE9112CCB2B00792184 /* fragment.shader in Resources */,
+				DE53D07C19771196006E4C0B /* Default-568h@2x.png in Resources */,
 				837931EC11B5A0CC00916A8B /* Icon@2x2.png in Resources */,
 				837931EE11B5A0D500916A8B /* Icon.png in Resources */,
-				81F56B8E13E37A610075C094 /* MainWindow-iPad.xib in Resources */,
-				81FE53111457676C00AE01AE /* Settings.bundle in Resources */,
+				1F5C6C361A424F1E00FE1A1E /* SphereMotionTeapot.storyboard in Resources */,
 				81EE34BC149165F800132035 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,9 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* CoreMotionTeapotAppDelegate.mm in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */,
 				835D8E3C112CDB9900792184 /* matrix.m in Sources */,
+				1F2678181A40A991009E6A85 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +259,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -275,8 +278,9 @@
 					"$(SRCROOT)/../MOBILE-IOS-ROBOTKIT/**",
 				);
 				INFOPLIST_FILE = "SphereMotionTeapot-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = SphereMotionTeapot;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -285,11 +289,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../_Frameworks_iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SphereMotionTeapot_Prefix.pch;
@@ -300,8 +307,9 @@
 					"$(SRCROOT)/../MOBILE-IOS-ROBOTKIT/**",
 				);
 				INFOPLIST_FILE = "SphereMotionTeapot-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = SphereMotionTeapot;
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,18 +319,18 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../MOBILE-IOS-ROBOTKIT/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)\"",
 					"$(inherited)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lstdc++",
 					"-all_load",
@@ -337,7 +345,6 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -346,7 +353,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../MOBILE-IOS-ROBOTKIT/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)\"",
 					"$(inherited)",

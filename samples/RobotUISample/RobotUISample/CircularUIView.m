@@ -1,16 +1,10 @@
 //
-//  CircularUIView.m
-//  Sphero
-//
-//  Created by Brian Alexander on 4/25/11.
-//  Copyright 2011 Orbotix Inc. All rights reserved.
+//  Copyright 2011-2014 Orbotix Inc. All rights reserved.
 //
 
 #import "CircularUIView.h"
 
-
 @implementation CircularUIView
-
 
 - (id)initWithFrame:(CGRect)frame {
     
@@ -28,10 +22,5 @@
 	CGFloat h = hypot(x, y);
 	return( h < 1.0 ); 
 }
-
-- (void)dealloc {
-    [super dealloc];
-}
-
 
 @end
