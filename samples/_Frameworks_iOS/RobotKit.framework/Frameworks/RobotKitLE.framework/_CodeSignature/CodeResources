@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/RKDiscoveryAgentLE.h</key>
 		<data>
-		VoHnZyg9bS2sO6Zv/rDX27pWBCY=
+		rvGXgydVXBj1F3Y1mmEU10+6PEw=
 		</data>
 		<key>Headers/RKLESession.h</key>
 		<data>
@@ -38,11 +38,19 @@
 		</data>
 		<key>Headers/RKLeConnectStrategy.h</key>
 		<data>
-		DQvAvChK/gujTW54O523zqbfYw0=
+		JXZlgVIF7n2yjMqgO6eQ2e8DOv4=
 		</data>
 		<key>Headers/RKLeFavoritesManager.h</key>
 		<data>
 		d1cyefFuubcuSqjddwZ4hXlA18U=
+		</data>
+		<key>Headers/RKLeNode.h</key>
+		<data>
+		t/LjEqFsGk4FNHp698NeRC7HMHI=
+		</data>
+		<key>Headers/RKLeProximityConnectStrategy.h</key>
+		<data>
+		gTPGy0FjPI18wa5pCyaoifvT1m4=
 		</data>
 		<key>Headers/RKLeRadioServiceWrapper.h</key>
 		<data>
@@ -50,11 +58,7 @@
 		</data>
 		<key>Headers/RKLeRobotLink.h</key>
 		<data>
-		laUNCzKZoCMN2JEdaZmE+4b8Ljg=
-		</data>
-		<key>Headers/RKLeTouchConnectStrategy.h</key>
-		<data>
-		FR68/7kwXO7GhB6c6c+TOVK7gfI=
+		GqkRWbszaORXrh+px8b2nYxsRP8=
 		</data>
 		<key>Headers/RKNoConnectStrategy.h</key>
 		<data>
@@ -70,15 +74,15 @@
 		</data>
 		<key>Headers/RKRobotLE.h</key>
 		<data>
-		jfbiB2MR1LBqXdUum8QcdMZujfg=
+		Ox+yWWgE12RYzcnS+RKTOvEKvSg=
 		</data>
 		<key>Headers/RobotKitLE.h</key>
 		<data>
-		bVR1k3hDAOhn0YtuGfZHyIYZ/S0=
+		ujOHf88UHMez/lkCLUH3AakG6Rk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nVW954FRLANmWakCJ3bLFCazRAc=
+		ZYJr0799R1cYuPM0XN+qQkIh1Zc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -101,7 +105,7 @@
 		</data>
 		<key>Headers/RKDiscoveryAgentLE.h</key>
 		<data>
-		VoHnZyg9bS2sO6Zv/rDX27pWBCY=
+		rvGXgydVXBj1F3Y1mmEU10+6PEw=
 		</data>
 		<key>Headers/RKLESession.h</key>
 		<data>
@@ -117,11 +121,19 @@
 		</data>
 		<key>Headers/RKLeConnectStrategy.h</key>
 		<data>
-		DQvAvChK/gujTW54O523zqbfYw0=
+		JXZlgVIF7n2yjMqgO6eQ2e8DOv4=
 		</data>
 		<key>Headers/RKLeFavoritesManager.h</key>
 		<data>
 		d1cyefFuubcuSqjddwZ4hXlA18U=
+		</data>
+		<key>Headers/RKLeNode.h</key>
+		<data>
+		t/LjEqFsGk4FNHp698NeRC7HMHI=
+		</data>
+		<key>Headers/RKLeProximityConnectStrategy.h</key>
+		<data>
+		gTPGy0FjPI18wa5pCyaoifvT1m4=
 		</data>
 		<key>Headers/RKLeRadioServiceWrapper.h</key>
 		<data>
@@ -129,11 +141,7 @@
 		</data>
 		<key>Headers/RKLeRobotLink.h</key>
 		<data>
-		laUNCzKZoCMN2JEdaZmE+4b8Ljg=
-		</data>
-		<key>Headers/RKLeTouchConnectStrategy.h</key>
-		<data>
-		FR68/7kwXO7GhB6c6c+TOVK7gfI=
+		GqkRWbszaORXrh+px8b2nYxsRP8=
 		</data>
 		<key>Headers/RKNoConnectStrategy.h</key>
 		<data>
@@ -149,11 +157,11 @@
 		</data>
 		<key>Headers/RKRobotLE.h</key>
 		<data>
-		jfbiB2MR1LBqXdUum8QcdMZujfg=
+		Ox+yWWgE12RYzcnS+RKTOvEKvSg=
 		</data>
 		<key>Headers/RobotKitLE.h</key>
 		<data>
-		bVR1k3hDAOhn0YtuGfZHyIYZ/S0=
+		ujOHf88UHMez/lkCLUH3AakG6Rk=
 		</data>
 	</dict>
 	<key>rules</key>

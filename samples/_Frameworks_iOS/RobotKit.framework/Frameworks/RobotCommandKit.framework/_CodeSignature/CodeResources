@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/FWLevel1DiagnosticAsyncData.h</key>
+		<data>
+		2W3qYLXw7LgcyJjNTkZ+YYSl8Gc=
+		</data>
+		<key>Headers/FWLevel1DiagnosticCommand.h</key>
+		<data>
+		DWUBj4frvv4sAqDatDNA9il3LAU=
+		</data>
+		<key>Headers/FWLevel1DiagnosticResponse.h</key>
+		<data>
+		iKSRQqur3oMUi4BmukO3ParTioI=
+		</data>
 		<key>Headers/NSData+Extensions.h</key>
 		<data>
 		rW0F13KK016u9GrZ7jBbgjOyaPc=
@@ -42,7 +54,7 @@
 		</data>
 		<key>Headers/RKBackLEDOutputCommand.h</key>
 		<data>
-		DXpW4wCYi6KuKOmHu4RARLYcr+0=
+		xiGgvD4dB9pbW6fqbyBZh816Btw=
 		</data>
 		<key>Headers/RKBackLEDOutputResponse.h</key>
 		<data>
@@ -50,7 +62,7 @@
 		</data>
 		<key>Headers/RKByteCommand.h</key>
 		<data>
-		sz3SKqv9LPPCoyE+ZXDABOXR6Ro=
+		xP5Yc0lzkgZdKfYiuTjsRu2AY9M=
 		</data>
 		<key>Headers/RKByteResponse.h</key>
 		<data>
@@ -58,11 +70,11 @@
 		</data>
 		<key>Headers/RKCalibrateCommand.h</key>
 		<data>
-		BDJBoBstxsiBXV74tZvwbWAo6Zw=
+		AwnahzJfr6ljtQ+6mjugW9rmU/Q=
 		</data>
 		<key>Headers/RKCalibrateResponse.h</key>
 		<data>
-		h04x+0oLBVNXmkJCLML6gDVkr34=
+		dh7STBuXSdksyQE3qDvJ8kJ4wtU=
 		</data>
 		<key>Headers/RKCollisionDetectedAsyncData.h</key>
 		<data>
@@ -74,7 +86,7 @@
 		</data>
 		<key>Headers/RKConfigureCollisionDetectionCommand.h</key>
 		<data>
-		ZNE7PfQSmEY1cyS8vQtaPHtGMZo=
+		aeGHdmSNV3V3VJenbVzTXyAyMTk=
 		</data>
 		<key>Headers/RKConfigureCollisionDetectionResponse.h</key>
 		<data>
@@ -82,7 +94,7 @@
 		</data>
 		<key>Headers/RKConfigureLocatorCommand.h</key>
 		<data>
-		+52J5EwR+OtvcZmg+7IXEcPdKXE=
+		vU9UFTre7Vk1nFrxle1kya+OQcQ=
 		</data>
 		<key>Headers/RKConfigureLocatorResponse.h</key>
 		<data>
@@ -90,7 +102,7 @@
 		</data>
 		<key>Headers/RKDeviceAsyncData.h</key>
 		<data>
-		PnYJ+8g2veoQoXwsdKFdLCaUCWE=
+		ap8RYjz5S5mqDPwg0dqYwPL8jtQ=
 		</data>
 		<key>Headers/RKDeviceAsyncData_PrivateAdditions.h</key>
 		<data>
@@ -130,7 +142,7 @@
 		</data>
 		<key>Headers/RKDiscoveryAgent.h</key>
 		<data>
-		1BvrCpVJhgNSf2piW4vp07TQsq4=
+		Uct+MjgMxUe0GK2vN2Q+CgEtg9s=
 		</data>
 		<key>Headers/RKDriveAlgorithm.h</key>
 		<data>
@@ -150,7 +162,7 @@
 		</data>
 		<key>Headers/RKGetBluetoothInfoCommand.h</key>
 		<data>
-		ZjtIhoGStaYRlIOHquK/3HBMmHU=
+		CSiv8A5d1zYJeEiszJKMWgm0rKY=
 		</data>
 		<key>Headers/RKGetBluetoothInfoResponse.h</key>
 		<data>
@@ -158,7 +170,7 @@
 		</data>
 		<key>Headers/RKGetChassisIdCommand.h</key>
 		<data>
-		YSM0/si2ugpNGjU6/JXxcMDOVAQ=
+		3UptNNNjbZsQ5oItWVkD10adk3M=
 		</data>
 		<key>Headers/RKGetChassisIdResponse.h</key>
 		<data>
@@ -166,7 +178,7 @@
 		</data>
 		<key>Headers/RKGetDeviceModeCommand.h</key>
 		<data>
-		8jlnQWiiyWcd6QZ9fdP2fAfF+Cw=
+		d9mmfmTucFTR6XfV7bEdEqpag38=
 		</data>
 		<key>Headers/RKGetDeviceModeResponse.h</key>
 		<data>
@@ -190,11 +202,19 @@
 		</data>
 		<key>Headers/RKGetPowerStateCommand.h</key>
 		<data>
-		cXYbZyxHzZZBZCLQhismfauxZyU=
+		t9TOIv9MrgWSsOM88M1nKIGZ9R8=
 		</data>
 		<key>Headers/RKGetPowerStateResponse.h</key>
 		<data>
 		vXgk2c+N7nH7xXbMFrpD4c6ObuM=
+		</data>
+		<key>Headers/RKGetSkuCommand.h</key>
+		<data>
+		4+svRmmSq9jAxYL38iSDKPPthNE=
+		</data>
+		<key>Headers/RKGetSkuResponse.h</key>
+		<data>
+		mE0OH1SL3tj989jJt3RTc7Gt1pQ=
 		</data>
 		<key>Headers/RKGetUserRGBLEDColorCommand.h</key>
 		<data>
@@ -206,7 +226,7 @@
 		</data>
 		<key>Headers/RKGoToSleepCommand.h</key>
 		<data>
-		ut1uJQIoxvMxRc6JbLVfzKMxDsk=
+		deuQ9n6MioXgYisqpR9y+pxtdhA=
 		</data>
 		<key>Headers/RKGoToSleepResponse.h</key>
 		<data>
@@ -226,7 +246,7 @@
 		</data>
 		<key>Headers/RKJumpToBootloaderCommand.h</key>
 		<data>
-		cfEtx26mzpXFYbu6ggaDEjb2Y4I=
+		axqtvGZb5DHHAG8TbGJZkx9m21M=
 		</data>
 		<key>Headers/RKJumpToBootloaderResponse.h</key>
 		<data>
@@ -234,7 +254,7 @@
 		</data>
 		<key>Headers/RKJumpToMainAppCommand.h</key>
 		<data>
-		DQPM/k7O3rbq2FpMK6aEuZcYHr4=
+		Rf9L6u2Vk1nSBDA1Oup1Dfn6D4w=
 		</data>
 		<key>Headers/RKJumpToMainAppResponse.h</key>
 		<data>
@@ -242,7 +262,7 @@
 		</data>
 		<key>Headers/RKLinkDelegate.h</key>
 		<data>
-		1cSJGfTa+eQUaGBI7juHKJhiMcA=
+		AYiAHR+k2bp7gvIQzzDjxQ5sWTY=
 		</data>
 		<key>Headers/RKLocatorData.h</key>
 		<data>
@@ -262,7 +282,7 @@
 		</data>
 		<key>Headers/RKPingCommand.h</key>
 		<data>
-		+mtT0PAqcK/wQzr8XP/gRFNfotY=
+		gsGYlZk8k5jZUJt9xGLIJkIp12o=
 		</data>
 		<key>Headers/RKPingResponse.h</key>
 		<data>
@@ -286,7 +306,7 @@
 		</data>
 		<key>Headers/RKRGBLEDOutputCommand.h</key>
 		<data>
-		W27UlX4z2b3C3UCHkK7oM3MuXgU=
+		Sqz8oaFiUOYfUJYZO/QDEDdJ1XA=
 		</data>
 		<key>Headers/RKRGBLEDOutputResponse.h</key>
 		<data>
@@ -294,7 +314,7 @@
 		</data>
 		<key>Headers/RKRawMotorValuesCommand.h</key>
 		<data>
-		X1LDRjZiby5ivyo/s7AskxJH0CU=
+		8sE/CcActzTNBgtVkjd9EbEhDZg=
 		</data>
 		<key>Headers/RKRawMotorValuesResponse.h</key>
 		<data>
@@ -322,15 +342,15 @@
 		</data>
 		<key>Headers/RKRobotBase.h</key>
 		<data>
-		RyjzSR7WbjGmakObxDNRBmZ3wCI=
+		vWemmZkwdauc2LOsCRVvw3fp4cI=
 		</data>
 		<key>Headers/RKRobotNotification.h</key>
 		<data>
-		AoU9Q36eapsBj6b1gzuUtToi0rw=
+		vRjk/CCidsvAlCI6hEOGD5KQ5tM=
 		</data>
 		<key>Headers/RKRollCommand.h</key>
 		<data>
-		2wWBHkrEGoy7ExjreIeQUdKHocs=
+		CL+wqtoDwQqpujgvhXDhuI92pjk=
 		</data>
 		<key>Headers/RKRollResponse.h</key>
 		<data>
@@ -342,7 +362,7 @@
 		</data>
 		<key>Headers/RKRotationRateCommand.h</key>
 		<data>
-		vJh4lbUg4NR6mPbv8PkXS5z9Zec=
+		GnS/h6XhEOlEgRRD/gX3OPme/Dw=
 		</data>
 		<key>Headers/RKRotationRateResponse.h</key>
 		<data>
@@ -350,7 +370,7 @@
 		</data>
 		<key>Headers/RKSelfLevelCommand.h</key>
 		<data>
-		xbd7PnwyZKze+xvp7srlQomLBaw=
+		70i0MjF6qtMYm149mbAFBmZlfz0=
 		</data>
 		<key>Headers/RKSelfLevelCompleteAsyncData.h</key>
 		<data>
@@ -366,11 +386,11 @@
 		</data>
 		<key>Headers/RKSession.h</key>
 		<data>
-		Eggtq3MdZMI8isYG1HUpV/8aIeM=
+		gNo24O72NfqiqBVetZem4gcQvao=
 		</data>
 		<key>Headers/RKSetAutoReconnectCommand.h</key>
 		<data>
-		WEPSc9hGNgkC5snBDk/SkMnjhwc=
+		CD3l2HQ8+8J55cpASy5iP+OMU2M=
 		</data>
 		<key>Headers/RKSetAutoReconnectResponse.h</key>
 		<data>
@@ -378,7 +398,7 @@
 		</data>
 		<key>Headers/RKSetBluetoothNameCommand.h</key>
 		<data>
-		gOnvFtUt8+d2leqROff52ohtR9Q=
+		nO0d2H7OcIQ/qPozr8+nEksr1Xs=
 		</data>
 		<key>Headers/RKSetBluetoothNameResponse.h</key>
 		<data>
@@ -386,7 +406,7 @@
 		</data>
 		<key>Headers/RKSetDataStreamingCommand.h</key>
 		<data>
-		WkJIxK1atfXxm3YusPb3UxqO++Q=
+		v3Q8O2DGll5cj6vOKj6JaQzfqzg=
 		</data>
 		<key>Headers/RKSetDataStreamingResponse.h</key>
 		<data>
@@ -394,7 +414,7 @@
 		</data>
 		<key>Headers/RKSetFactoryDeviceModeCommand.h</key>
 		<data>
-		gnSWmEwtSW4LVHrzLkKEH/URFLM=
+		ODIhQiumcVIHN6qeGXOZNy/4p3c=
 		</data>
 		<key>Headers/RKSetFactoryDeviceModeResponse.h</key>
 		<data>
@@ -402,7 +422,7 @@
 		</data>
 		<key>Headers/RKSetHeadingCommand.h</key>
 		<data>
-		weZSclUHskZaXYhYPsm3TmshYb0=
+		sg8UmsauIMkN3bR2iuqD0KUw6nI=
 		</data>
 		<key>Headers/RKSetHeadingResponse.h</key>
 		<data>
@@ -410,7 +430,7 @@
 		</data>
 		<key>Headers/RKSetInactivityTimeoutCommand.h</key>
 		<data>
-		7Q2quFr+/jeOvA/6mIAtuIVI95U=
+		OiwBXip0QmRlVqXdTShysOElxnE=
 		</data>
 		<key>Headers/RKSetInactivityTimeoutResponse.h</key>
 		<data>
@@ -418,7 +438,7 @@
 		</data>
 		<key>Headers/RKSetMotionTimeoutCommand.h</key>
 		<data>
-		8J+TtSSL9zreZlYv7zY4zEysWRU=
+		/hzMzgwxn9cPKpvts3wP/Y/x0AU=
 		</data>
 		<key>Headers/RKSetMotionTimeoutResponse.h</key>
 		<data>
@@ -426,7 +446,7 @@
 		</data>
 		<key>Headers/RKSetNonPersistentOptionFlagsCommand.h</key>
 		<data>
-		x+DEE+otUDFzkDP8nA6IHZ1/hJ8=
+		py/awVMwptgzc54BzmuaOfWhQY4=
 		</data>
 		<key>Headers/RKSetNonPersistentOptionFlagsResponse.h</key>
 		<data>
@@ -434,7 +454,7 @@
 		</data>
 		<key>Headers/RKSetOptionFlagsCommand.h</key>
 		<data>
-		soCvlRjsbJghuj/XggW37fQmQJo=
+		jJclfCuOWRJz+bZNOvRY7vn7D8U=
 		</data>
 		<key>Headers/RKSetOptionFlagsResponse.h</key>
 		<data>
@@ -442,11 +462,11 @@
 		</data>
 		<key>Headers/RKSetPIDCommand.h</key>
 		<data>
-		aprOObT97ox4O303cpdMKSgYCf4=
+		/6vqZLECN0JfuO7AzyhfmS3Ea/w=
 		</data>
 		<key>Headers/RKSetPowerNotificationCommand.h</key>
 		<data>
-		y6qo/pZdDh/vaya54/G3ZkLagcc=
+		nGNh3A/nTABDg3ikWoxYjKEtjiI=
 		</data>
 		<key>Headers/RKSetPowerNotificationResponse.h</key>
 		<data>
@@ -454,7 +474,7 @@
 		</data>
 		<key>Headers/RKSetUserHackModeCommand.h</key>
 		<data>
-		0ay5nwNOsrBFTXTSgaQ5cY95les=
+		jmCoRSgK+akDUmRdkl9+jQpze9w=
 		</data>
 		<key>Headers/RKSetUserHackModeResponse.h</key>
 		<data>
@@ -470,7 +490,7 @@
 		</data>
 		<key>Headers/RKStabilizationCommand.h</key>
 		<data>
-		6zS13hllwpxdxUjEK557fXo6dPI=
+		62d/ISLcb68N73Wb1ZKIVZon2Zc=
 		</data>
 		<key>Headers/RKStabilizationResponse.h</key>
 		<data>
@@ -510,27 +530,47 @@
 		</data>
 		<key>Headers/RKVersioningCommand.h</key>
 		<data>
-		1xNA8hZbj3RStoBoal2HNct60DY=
+		MDkr6L3mrCAUF7X4KLJwq0xx+Jk=
 		</data>
 		<key>Headers/RKVersioningResponse.h</key>
 		<data>
-		tbaEmrwz5GFpNgVCndS3/GmwWdQ=
+		dR5NMVIv6aHkjF+yychov0VVLIw=
 		</data>
 		<key>Headers/RKWebSyncAgent.h</key>
 		<data>
 		+VgeCQLG2bJq1jrvmOaMTRPAOuA=
 		</data>
+		<key>Headers/RKWritePersistentPageCommand.h</key>
+		<data>
+		VkS3/B0oMa0qBXOev2F4pfZuIEk=
+		</data>
+		<key>Headers/RKWritePersistentPageResponse.h</key>
+		<data>
+		Tbcb7YPtyBznOQirCO1vmD6XiiE=
+		</data>
 		<key>Headers/RobotCommandKit.h</key>
 		<data>
-		ICLToXeEg/Q18wUTjNMOitbQgoo=
+		ozM82RN0tme08RVp3LEfcImS0M8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		egn3HZb+yafTQAhw0EWSG0fsoiM=
+		7hxCfYRbAUTmw+dHSyqTRaGCQko=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/FWLevel1DiagnosticAsyncData.h</key>
+		<data>
+		2W3qYLXw7LgcyJjNTkZ+YYSl8Gc=
+		</data>
+		<key>Headers/FWLevel1DiagnosticCommand.h</key>
+		<data>
+		DWUBj4frvv4sAqDatDNA9il3LAU=
+		</data>
+		<key>Headers/FWLevel1DiagnosticResponse.h</key>
+		<data>
+		iKSRQqur3oMUi4BmukO3ParTioI=
+		</data>
 		<key>Headers/NSData+Extensions.h</key>
 		<data>
 		rW0F13KK016u9GrZ7jBbgjOyaPc=
@@ -569,7 +609,7 @@
 		</data>
 		<key>Headers/RKBackLEDOutputCommand.h</key>
 		<data>
-		DXpW4wCYi6KuKOmHu4RARLYcr+0=
+		xiGgvD4dB9pbW6fqbyBZh816Btw=
 		</data>
 		<key>Headers/RKBackLEDOutputResponse.h</key>
 		<data>
@@ -577,7 +617,7 @@
 		</data>
 		<key>Headers/RKByteCommand.h</key>
 		<data>
-		sz3SKqv9LPPCoyE+ZXDABOXR6Ro=
+		xP5Yc0lzkgZdKfYiuTjsRu2AY9M=
 		</data>
 		<key>Headers/RKByteResponse.h</key>
 		<data>
@@ -585,11 +625,11 @@
 		</data>
 		<key>Headers/RKCalibrateCommand.h</key>
 		<data>
-		BDJBoBstxsiBXV74tZvwbWAo6Zw=
+		AwnahzJfr6ljtQ+6mjugW9rmU/Q=
 		</data>
 		<key>Headers/RKCalibrateResponse.h</key>
 		<data>
-		h04x+0oLBVNXmkJCLML6gDVkr34=
+		dh7STBuXSdksyQE3qDvJ8kJ4wtU=
 		</data>
 		<key>Headers/RKCollisionDetectedAsyncData.h</key>
 		<data>
@@ -601,7 +641,7 @@
 		</data>
 		<key>Headers/RKConfigureCollisionDetectionCommand.h</key>
 		<data>
-		ZNE7PfQSmEY1cyS8vQtaPHtGMZo=
+		aeGHdmSNV3V3VJenbVzTXyAyMTk=
 		</data>
 		<key>Headers/RKConfigureCollisionDetectionResponse.h</key>
 		<data>
@@ -609,7 +649,7 @@
 		</data>
 		<key>Headers/RKConfigureLocatorCommand.h</key>
 		<data>
-		+52J5EwR+OtvcZmg+7IXEcPdKXE=
+		vU9UFTre7Vk1nFrxle1kya+OQcQ=
 		</data>
 		<key>Headers/RKConfigureLocatorResponse.h</key>
 		<data>
@@ -617,7 +657,7 @@
 		</data>
 		<key>Headers/RKDeviceAsyncData.h</key>
 		<data>
-		PnYJ+8g2veoQoXwsdKFdLCaUCWE=
+		ap8RYjz5S5mqDPwg0dqYwPL8jtQ=
 		</data>
 		<key>Headers/RKDeviceAsyncData_PrivateAdditions.h</key>
 		<data>
@@ -657,7 +697,7 @@
 		</data>
 		<key>Headers/RKDiscoveryAgent.h</key>
 		<data>
-		1BvrCpVJhgNSf2piW4vp07TQsq4=
+		Uct+MjgMxUe0GK2vN2Q+CgEtg9s=
 		</data>
 		<key>Headers/RKDriveAlgorithm.h</key>
 		<data>
@@ -677,7 +717,7 @@
 		</data>
 		<key>Headers/RKGetBluetoothInfoCommand.h</key>
 		<data>
-		ZjtIhoGStaYRlIOHquK/3HBMmHU=
+		CSiv8A5d1zYJeEiszJKMWgm0rKY=
 		</data>
 		<key>Headers/RKGetBluetoothInfoResponse.h</key>
 		<data>
@@ -685,7 +725,7 @@
 		</data>
 		<key>Headers/RKGetChassisIdCommand.h</key>
 		<data>
-		YSM0/si2ugpNGjU6/JXxcMDOVAQ=
+		3UptNNNjbZsQ5oItWVkD10adk3M=
 		</data>
 		<key>Headers/RKGetChassisIdResponse.h</key>
 		<data>
@@ -693,7 +733,7 @@
 		</data>
 		<key>Headers/RKGetDeviceModeCommand.h</key>
 		<data>
-		8jlnQWiiyWcd6QZ9fdP2fAfF+Cw=
+		d9mmfmTucFTR6XfV7bEdEqpag38=
 		</data>
 		<key>Headers/RKGetDeviceModeResponse.h</key>
 		<data>
@@ -717,11 +757,19 @@
 		</data>
 		<key>Headers/RKGetPowerStateCommand.h</key>
 		<data>
-		cXYbZyxHzZZBZCLQhismfauxZyU=
+		t9TOIv9MrgWSsOM88M1nKIGZ9R8=
 		</data>
 		<key>Headers/RKGetPowerStateResponse.h</key>
 		<data>
 		vXgk2c+N7nH7xXbMFrpD4c6ObuM=
+		</data>
+		<key>Headers/RKGetSkuCommand.h</key>
+		<data>
+		4+svRmmSq9jAxYL38iSDKPPthNE=
+		</data>
+		<key>Headers/RKGetSkuResponse.h</key>
+		<data>
+		mE0OH1SL3tj989jJt3RTc7Gt1pQ=
 		</data>
 		<key>Headers/RKGetUserRGBLEDColorCommand.h</key>
 		<data>
@@ -733,7 +781,7 @@
 		</data>
 		<key>Headers/RKGoToSleepCommand.h</key>
 		<data>
-		ut1uJQIoxvMxRc6JbLVfzKMxDsk=
+		deuQ9n6MioXgYisqpR9y+pxtdhA=
 		</data>
 		<key>Headers/RKGoToSleepResponse.h</key>
 		<data>
@@ -753,7 +801,7 @@
 		</data>
 		<key>Headers/RKJumpToBootloaderCommand.h</key>
 		<data>
-		cfEtx26mzpXFYbu6ggaDEjb2Y4I=
+		axqtvGZb5DHHAG8TbGJZkx9m21M=
 		</data>
 		<key>Headers/RKJumpToBootloaderResponse.h</key>
 		<data>
@@ -761,7 +809,7 @@
 		</data>
 		<key>Headers/RKJumpToMainAppCommand.h</key>
 		<data>
-		DQPM/k7O3rbq2FpMK6aEuZcYHr4=
+		Rf9L6u2Vk1nSBDA1Oup1Dfn6D4w=
 		</data>
 		<key>Headers/RKJumpToMainAppResponse.h</key>
 		<data>
@@ -769,7 +817,7 @@
 		</data>
 		<key>Headers/RKLinkDelegate.h</key>
 		<data>
-		1cSJGfTa+eQUaGBI7juHKJhiMcA=
+		AYiAHR+k2bp7gvIQzzDjxQ5sWTY=
 		</data>
 		<key>Headers/RKLocatorData.h</key>
 		<data>
@@ -789,7 +837,7 @@
 		</data>
 		<key>Headers/RKPingCommand.h</key>
 		<data>
-		+mtT0PAqcK/wQzr8XP/gRFNfotY=
+		gsGYlZk8k5jZUJt9xGLIJkIp12o=
 		</data>
 		<key>Headers/RKPingResponse.h</key>
 		<data>
@@ -813,7 +861,7 @@
 		</data>
 		<key>Headers/RKRGBLEDOutputCommand.h</key>
 		<data>
-		W27UlX4z2b3C3UCHkK7oM3MuXgU=
+		Sqz8oaFiUOYfUJYZO/QDEDdJ1XA=
 		</data>
 		<key>Headers/RKRGBLEDOutputResponse.h</key>
 		<data>
@@ -821,7 +869,7 @@
 		</data>
 		<key>Headers/RKRawMotorValuesCommand.h</key>
 		<data>
-		X1LDRjZiby5ivyo/s7AskxJH0CU=
+		8sE/CcActzTNBgtVkjd9EbEhDZg=
 		</data>
 		<key>Headers/RKRawMotorValuesResponse.h</key>
 		<data>
@@ -849,15 +897,15 @@
 		</data>
 		<key>Headers/RKRobotBase.h</key>
 		<data>
-		RyjzSR7WbjGmakObxDNRBmZ3wCI=
+		vWemmZkwdauc2LOsCRVvw3fp4cI=
 		</data>
 		<key>Headers/RKRobotNotification.h</key>
 		<data>
-		AoU9Q36eapsBj6b1gzuUtToi0rw=
+		vRjk/CCidsvAlCI6hEOGD5KQ5tM=
 		</data>
 		<key>Headers/RKRollCommand.h</key>
 		<data>
-		2wWBHkrEGoy7ExjreIeQUdKHocs=
+		CL+wqtoDwQqpujgvhXDhuI92pjk=
 		</data>
 		<key>Headers/RKRollResponse.h</key>
 		<data>
@@ -869,7 +917,7 @@
 		</data>
 		<key>Headers/RKRotationRateCommand.h</key>
 		<data>
-		vJh4lbUg4NR6mPbv8PkXS5z9Zec=
+		GnS/h6XhEOlEgRRD/gX3OPme/Dw=
 		</data>
 		<key>Headers/RKRotationRateResponse.h</key>
 		<data>
@@ -877,7 +925,7 @@
 		</data>
 		<key>Headers/RKSelfLevelCommand.h</key>
 		<data>
-		xbd7PnwyZKze+xvp7srlQomLBaw=
+		70i0MjF6qtMYm149mbAFBmZlfz0=
 		</data>
 		<key>Headers/RKSelfLevelCompleteAsyncData.h</key>
 		<data>
@@ -893,11 +941,11 @@
 		</data>
 		<key>Headers/RKSession.h</key>
 		<data>
-		Eggtq3MdZMI8isYG1HUpV/8aIeM=
+		gNo24O72NfqiqBVetZem4gcQvao=
 		</data>
 		<key>Headers/RKSetAutoReconnectCommand.h</key>
 		<data>
-		WEPSc9hGNgkC5snBDk/SkMnjhwc=
+		CD3l2HQ8+8J55cpASy5iP+OMU2M=
 		</data>
 		<key>Headers/RKSetAutoReconnectResponse.h</key>
 		<data>
@@ -905,7 +953,7 @@
 		</data>
 		<key>Headers/RKSetBluetoothNameCommand.h</key>
 		<data>
-		gOnvFtUt8+d2leqROff52ohtR9Q=
+		nO0d2H7OcIQ/qPozr8+nEksr1Xs=
 		</data>
 		<key>Headers/RKSetBluetoothNameResponse.h</key>
 		<data>
@@ -913,7 +961,7 @@
 		</data>
 		<key>Headers/RKSetDataStreamingCommand.h</key>
 		<data>
-		WkJIxK1atfXxm3YusPb3UxqO++Q=
+		v3Q8O2DGll5cj6vOKj6JaQzfqzg=
 		</data>
 		<key>Headers/RKSetDataStreamingResponse.h</key>
 		<data>
@@ -921,7 +969,7 @@
 		</data>
 		<key>Headers/RKSetFactoryDeviceModeCommand.h</key>
 		<data>
-		gnSWmEwtSW4LVHrzLkKEH/URFLM=
+		ODIhQiumcVIHN6qeGXOZNy/4p3c=
 		</data>
 		<key>Headers/RKSetFactoryDeviceModeResponse.h</key>
 		<data>
@@ -929,7 +977,7 @@
 		</data>
 		<key>Headers/RKSetHeadingCommand.h</key>
 		<data>
-		weZSclUHskZaXYhYPsm3TmshYb0=
+		sg8UmsauIMkN3bR2iuqD0KUw6nI=
 		</data>
 		<key>Headers/RKSetHeadingResponse.h</key>
 		<data>
@@ -937,7 +985,7 @@
 		</data>
 		<key>Headers/RKSetInactivityTimeoutCommand.h</key>
 		<data>
-		7Q2quFr+/jeOvA/6mIAtuIVI95U=
+		OiwBXip0QmRlVqXdTShysOElxnE=
 		</data>
 		<key>Headers/RKSetInactivityTimeoutResponse.h</key>
 		<data>
@@ -945,7 +993,7 @@
 		</data>
 		<key>Headers/RKSetMotionTimeoutCommand.h</key>
 		<data>
-		8J+TtSSL9zreZlYv7zY4zEysWRU=
+		/hzMzgwxn9cPKpvts3wP/Y/x0AU=
 		</data>
 		<key>Headers/RKSetMotionTimeoutResponse.h</key>
 		<data>
@@ -953,7 +1001,7 @@
 		</data>
 		<key>Headers/RKSetNonPersistentOptionFlagsCommand.h</key>
 		<data>
-		x+DEE+otUDFzkDP8nA6IHZ1/hJ8=
+		py/awVMwptgzc54BzmuaOfWhQY4=
 		</data>
 		<key>Headers/RKSetNonPersistentOptionFlagsResponse.h</key>
 		<data>
@@ -961,7 +1009,7 @@
 		</data>
 		<key>Headers/RKSetOptionFlagsCommand.h</key>
 		<data>
-		soCvlRjsbJghuj/XggW37fQmQJo=
+		jJclfCuOWRJz+bZNOvRY7vn7D8U=
 		</data>
 		<key>Headers/RKSetOptionFlagsResponse.h</key>
 		<data>
@@ -969,11 +1017,11 @@
 		</data>
 		<key>Headers/RKSetPIDCommand.h</key>
 		<data>
-		aprOObT97ox4O303cpdMKSgYCf4=
+		/6vqZLECN0JfuO7AzyhfmS3Ea/w=
 		</data>
 		<key>Headers/RKSetPowerNotificationCommand.h</key>
 		<data>
-		y6qo/pZdDh/vaya54/G3ZkLagcc=
+		nGNh3A/nTABDg3ikWoxYjKEtjiI=
 		</data>
 		<key>Headers/RKSetPowerNotificationResponse.h</key>
 		<data>
@@ -981,7 +1029,7 @@
 		</data>
 		<key>Headers/RKSetUserHackModeCommand.h</key>
 		<data>
-		0ay5nwNOsrBFTXTSgaQ5cY95les=
+		jmCoRSgK+akDUmRdkl9+jQpze9w=
 		</data>
 		<key>Headers/RKSetUserHackModeResponse.h</key>
 		<data>
@@ -997,7 +1045,7 @@
 		</data>
 		<key>Headers/RKStabilizationCommand.h</key>
 		<data>
-		6zS13hllwpxdxUjEK557fXo6dPI=
+		62d/ISLcb68N73Wb1ZKIVZon2Zc=
 		</data>
 		<key>Headers/RKStabilizationResponse.h</key>
 		<data>
@@ -1037,19 +1085,27 @@
 		</data>
 		<key>Headers/RKVersioningCommand.h</key>
 		<data>
-		1xNA8hZbj3RStoBoal2HNct60DY=
+		MDkr6L3mrCAUF7X4KLJwq0xx+Jk=
 		</data>
 		<key>Headers/RKVersioningResponse.h</key>
 		<data>
-		tbaEmrwz5GFpNgVCndS3/GmwWdQ=
+		dR5NMVIv6aHkjF+yychov0VVLIw=
 		</data>
 		<key>Headers/RKWebSyncAgent.h</key>
 		<data>
 		+VgeCQLG2bJq1jrvmOaMTRPAOuA=
 		</data>
+		<key>Headers/RKWritePersistentPageCommand.h</key>
+		<data>
+		VkS3/B0oMa0qBXOev2F4pfZuIEk=
+		</data>
+		<key>Headers/RKWritePersistentPageResponse.h</key>
+		<data>
+		Tbcb7YPtyBznOQirCO1vmD6XiiE=
+		</data>
 		<key>Headers/RobotCommandKit.h</key>
 		<data>
-		ICLToXeEg/Q18wUTjNMOitbQgoo=
+		ozM82RN0tme08RVp3LEfcImS0M8=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RKAsyncMessage.h"
 
-__attribute__((deprecated)) // replaced with RKAsyncMessage
+__deprecated_msg("Replaced with RKAsyncMessage.") // replaced with RKAsyncMessage
 @interface RKDeviceAsyncData : RKAsyncMessage
 
 

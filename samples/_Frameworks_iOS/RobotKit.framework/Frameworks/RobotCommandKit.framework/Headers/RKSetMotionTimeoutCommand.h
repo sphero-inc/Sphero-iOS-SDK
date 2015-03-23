@@ -39,6 +39,6 @@
  *             This value defaults to 2000 ms
  * @return The initialized object.
  */
-- (id) initWithTime:(uint16_t) time;
+- (instancetype) initWithTime:(uint16_t) time;
 
 @end

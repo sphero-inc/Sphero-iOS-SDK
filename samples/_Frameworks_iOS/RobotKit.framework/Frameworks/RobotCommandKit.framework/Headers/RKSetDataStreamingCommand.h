@@ -132,12 +132,12 @@ typedef NS_ENUM(uint64_t, RKDataStreamingMask)  {
 /*!
  * Initializer to set up the command.
  */
-- (id) initWithSampleRateDivisor:(uint16_t) divisor
+- (instancetype) initWithSampleRateDivisor:(uint16_t) divisor
                     packetFrames:(uint16_t) frames
                       sensorMask:(RKDataStreamingMask) mask
                      packetCount:(uint8_t) count;
 
-+(id) commandWithStop;
-+(id) commandWithRate:(int)hz andMask:(RKDataStreamingMask) mask;
++(instancetype) commandWithStop;
++(instancetype) commandWithRate:(int)hz andMask:(RKDataStreamingMask) mask;
 
 @end

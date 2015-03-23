@@ -49,9 +49,9 @@
  * full brightness.
  * @return The initialized object.
  */
-- (id) initWithRed:(float) red green:(float) green blue:(float) blue;
-+ (id) commandWithRed:(float) red green:(float) green blue:(float) blue;
-+ (id) commandWithSpheroBlue;
+- (instancetype) initWithRed:(float) red green:(float) green blue:(float) blue;
++ (instancetype) commandWithRed:(float) red green:(float) green blue:(float) blue;
++ (instancetype) commandWithSpheroBlue;
 
 /*!
  * Initializer for the object.
@@ -65,6 +65,6 @@
  * when Sphero first connects and is set when client code closes the connection.
  * @return The initialized object.
  */
-- (id) initWithRed:(float) red green:(float) green blue:(float) blue userDefault:(BOOL) defaultState;
+- (instancetype) initWithRed:(float) red green:(float) green blue:(float) blue userDefault:(BOOL) defaultState;
 
 @end

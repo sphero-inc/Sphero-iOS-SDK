@@ -11,6 +11,17 @@
 
 #import "RKDeviceCommand.h"
 
+/*! 
+ *  Types of sleep
+ *  CAUTION: THESE VALUES NEED TO MATCH UNITY OR SLEEP WILL BREAK
+ */
+typedef NS_ENUM(uint8_t, RKSleepType) {
+    RKSleep = 0x00,          // regular sleep - robot advertises at high rate with
+    RKSleepDeep = 0x01,
+    RKSleepLowPower = 0x02,
+    RKSleepNoMore = 0x03
+};
+
 /*! Type to represent the sleep time interval in seconds */
 typedef uint16_t RKSleepTimeInterval;
 
@@ -40,16 +51,16 @@ typedef uint16_t RKSleepTimeInterval;
  * @param identifier A system macro id to run upon awaking. This has no effect if the time
  * interval is set to 0.
  */
-- (id) initWithWakeUpTimeInterval:(RKSleepTimeInterval) interval macroId:(uint8_t)  identifier;
+- (instancetype) initWithWakeUpTimeInterval:(RKSleepTimeInterval) interval macroId:(uint8_t)  identifier;
 
-- (id) initWithWakeUpTimeInterval:(RKSleepTimeInterval) interval orbbasic:(uint16_t) lineNumber;
+- (instancetype) initWithWakeUpTimeInterval:(RKSleepTimeInterval) interval orbbasic:(uint16_t) lineNumber;
 
 
-+ (id) commandWithWakeUpTimeInterval:(RKSleepTimeInterval) interval macroId:(uint8_t)  identifier;
++ (instancetype) commandWithWakeUpTimeInterval:(RKSleepTimeInterval) interval macroId:(uint8_t)  identifier;
 
-+ (id) commandWithWakeUpTimeInterval:(RKSleepTimeInterval) interval orbbasic:(uint16_t) lineNumber;
++ (instancetype) commandWithWakeUpTimeInterval:(RKSleepTimeInterval) interval orbbasic:(uint16_t) lineNumber;
 
-+ (id) command;
++ (instancetype) command;
 
 
 @end

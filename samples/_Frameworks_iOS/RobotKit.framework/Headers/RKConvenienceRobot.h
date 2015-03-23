@@ -3,14 +3,20 @@
 //
 
 #import <RobotCommandKit/RobotCommandKit.h>
+#import <RobotLanguageKit/RobotLanguageKit.h>
 #import "RKDriveable.h"
 #import "RKSensorControl.h"
+
 
 @interface RKConvenienceRobot : NSObject <RKDriveable>
 
 @property (strong, nonatomic) id<RKRobotBase> robot;
 @property (strong, nonatomic) RKSensorControl *sensorControl;
 @property (strong, nonatomic) RKVersioningResponse *lastVersioning;
+
+@property (strong, nonatomic, readonly) RKMacroPlayer* macroPlayer;
+@property (nonatomic, readonly) float currentHeading;
+
 
 +(id) convenienceWithRobot:(id<RKRobotBase>) robotBase;
 
@@ -27,6 +33,10 @@
 -(void) disconnect;
 
 -(BOOL) isConnected;
+
+-(BOOL) isOnline;
+
+-(NSString *)name;
 
 
 #pragma mark - Drive
@@ -79,6 +89,7 @@
 
 #pragma mark - Macros
 
+-(void) playMacro:(RKMacroObject*) macro;
 /*!
  This attempts to execute the specified macro. Macro IDs are organized into groups: 01 – 31 are System Macros, that is, they are compiled into the Main Application. As such they are always available to be run and cannot be deleted. Macro IDs 32 – 253 are User Macros that are downloaded and persistently stored. They can be deleted in total. Macro ID 255 is a special user macro called the Temporary Macro as it is held in RAM for execution. Macro ID 254 is also a special user macro called the Stream Macro that doesn't require this call to begin execution.
  

@@ -16,6 +16,6 @@ typedef NS_ENUM(Byte, RKAxis){
 
 @interface RKSetPIDCommand : RKDeviceCommand
 
--(id) initWithAxis:(RKAxis) axis andP:(NSNumber*) p andI:(NSNumber*)i andD:(NSNumber*)d;
+-(instancetype) initWithAxis:(RKAxis) axis andP:(NSNumber*) p andI:(NSNumber*)i andD:(NSNumber*)d;
 
 @end

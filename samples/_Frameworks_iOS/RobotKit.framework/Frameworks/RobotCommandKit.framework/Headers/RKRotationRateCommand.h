@@ -32,6 +32,6 @@
  * range.
  * @return The initialized object.
  */
-- (id) initWithRate:(float) rate;
+- (instancetype) initWithRate:(float) rate;
 
 @end

@@ -35,6 +35,6 @@
 /*
  * Initializer to set up the set inactivity timeout command with a custom parameter
  */
-- (id) initWithInactivityTimeout:(uint16_t) timeout;
+- (instancetype) initWithInactivityTimeout:(uint16_t) timeout;
 
 @end

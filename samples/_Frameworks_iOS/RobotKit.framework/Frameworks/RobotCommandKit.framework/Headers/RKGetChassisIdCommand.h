@@ -6,6 +6,6 @@
 
 @interface RKGetChassisIdCommand : RKDeviceCommand
 
-+(id) command;
++(instancetype) command;
 
 @end

@@ -35,8 +35,8 @@
  * turn off power state notifications.
  * @return An initialized RKSetPowerNotificationCommand object.
  */
-- (id) initWithState:(BOOL) notificationState;
+- (instancetype) initWithState:(BOOL) notificationState;
 
-+ (id) commandWithState:(bool) notificationStateEnabled;
++ (instancetype) commandWithState:(bool) notificationStateEnabled;
 
 @end

@@ -12,6 +12,7 @@ typedef void (^RKRobotConnectBlock)(id<RKRobotBase> robot);
 @protocol RKDiscoveryAgent <NSObject>
 
 +(BOOL) startDiscovery;
++(BOOL) startDiscoveryAndReturnError:(NSError**) err;
 
 +(void) stopDiscovery;
 

@@ -37,7 +37,7 @@
  * is for a temporary macro. 
  * @param flags A bitwise OR set of macro flags. 
  */
-+ (id) commandWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags;
++ (instancetype) commandWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags;
 /*!
  * Convenience command to send the save macro command with a delay.
  * @param data The macro contained in an NSData object. 
@@ -46,7 +46,7 @@
  * @param flags A bitwise OR set of macro flags. 
  * @param delay A delay in seconds befor sending the command to a device.
  */
-+ (id) commandWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags delay:(NSTimeInterval) delay;
++ (instancetype) commandWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags delay:(NSTimeInterval) delay;
 
 /*!
  * 
@@ -57,6 +57,6 @@
  * is for a temporary macro. 
  * @param flags A bitwise OR set of macro flags. 
  */
-- (id) initWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags;
+- (instancetype) initWithMacro:(NSData *) data macroID:(uint8_t) identifier flags:(RKMacroFlags) flags;
 
 @end

@@ -42,6 +42,6 @@
  * @param time the length of time, in seconds, that passes after Sphero is shaken awake
  *             before it attempts to auto reconnect
  */
-- (id) initWithEnableFlag:(BOOL) flag StartTime:(uint8_t) time;
+- (instancetype) initWithEnableFlag:(BOOL) flag StartTime:(uint8_t) time;
 
 @end

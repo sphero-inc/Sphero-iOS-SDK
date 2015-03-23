@@ -25,6 +25,6 @@
  */
 @interface RKVersioningCommand : RKDeviceCommand
 
-+(id) command;
++(instancetype) command;
 
 @end

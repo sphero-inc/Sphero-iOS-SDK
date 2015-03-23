@@ -40,7 +40,7 @@ typedef NS_ENUM(uint8_t, RKRobotChangedStateNotificationType) {
    	RKRobotFailedConnect = 90
 };
 
-
+/*! Used to notify that a Robot is within range and connectable. */
 @interface RKRobotAvailableNotification : RKRobotNotification
 
 @property (strong,nonatomic) NSArray* robots;
@@ -56,5 +56,7 @@ typedef NS_ENUM(uint8_t, RKRobotChangedStateNotificationType) {
 @property (readonly) RKRobotChangedStateNotificationType type;
 
 +(id) notificationWithRobot:(id<RKRobotBase>) robot andType:(RKRobotChangedStateNotificationType) type;
+
+-(NSString*) typeString;
 
 @end

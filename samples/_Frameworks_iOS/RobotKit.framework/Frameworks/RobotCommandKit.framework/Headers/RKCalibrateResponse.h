@@ -23,7 +23,8 @@
  * @deprecated Replacd by @sa RKSetHeadingResponse 
  */
 
-@interface RKCalibrateResponse : RKDeviceResponse {
+__deprecated_msg("Use RKSetHeadingResponse")
+@interface RKCalibrateResponse : RKDeviceResponse  {
 
 }
 

@@ -17,6 +17,6 @@
  */
 @interface RKGetPowerStateCommand : RKDeviceCommand
 
-+(id) command;
++(instancetype) command;
 
 @end

@@ -32,6 +32,7 @@
 
 -(void) processRawData:(NSData*) rawBytesFromConnectedDevice;
 
++ (void)setMaxNativeSequenceNumber:(uint8_t)sequenceNumber;
 
 -(NSData*) packetForCommand:(RKDeviceCommand*) command withACK:(BOOL) ack;
 -(NSData*) packetForCommand:(RKDeviceCommand*) command;

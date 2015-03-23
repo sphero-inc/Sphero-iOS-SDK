@@ -32,8 +32,8 @@
  * @param brightness The brightness value between 0.0 to 1.0 where 0.0 is off and 1.0 is full brightness.
  * @return The initialized object.
  */
-- (id) initWithBrightness:(float) brightness;
+- (instancetype) initWithBrightness:(float) brightness;
 
-+ (id) commandWithBrightness:(float) brightness;
++ (instancetype) commandWithBrightness:(float) brightness;
 
 @end

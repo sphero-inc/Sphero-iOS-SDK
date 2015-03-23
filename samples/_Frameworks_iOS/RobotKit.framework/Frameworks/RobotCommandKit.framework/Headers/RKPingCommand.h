@@ -17,6 +17,6 @@
  */
 @interface RKPingCommand : RKDeviceCommand
 
-+ (id) command;
++ (instancetype) command;
 
 @end

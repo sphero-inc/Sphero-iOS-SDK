@@ -10,8 +10,10 @@
 
 typedef NS_ENUM(NSInteger, RKRollType) {
    RKRollStop = 0,
+	/*! arc drive - standard drive mode */
    RKRoll = 1,
-   RKRollCalibrate = 2
+	/*! rotate to requested heading then drive */
+	RKRollCalibrate = 2
 };
 
 
@@ -29,6 +31,9 @@ typedef NS_ENUM(NSInteger, RKRollType) {
 /*! The new velocity for the robot. */
 @property ( nonatomic, readonly ) float velocity;
 /*! Indicates if this command will stop the robot. */
+
+@property ( nonatomic, strong, readonly ) NSNumber* distanceInCm;
+
 @property ( nonatomic, assign ) RKRollType type;
 
 @property ( readwrite) bool reverse;
@@ -41,15 +46,20 @@ typedef NS_ENUM(NSInteger, RKRollType) {
  * to travel at.
  * @return The initialized instance.
  */
-- (id) initWithHeading:(float) heading velocity:(float) velocity;
+- (instancetype) initWithHeading:(float) heading velocity:(float) velocity;
 
-- (id) initAsCalibrateWithHeading:(float) heading;
+/*! @availability in Sphero FW revision ?.?? (blocked on fw) */
+- (instancetype) initWithHeading:(float)heading velocity:(float)velocity andDistance:(float) distance;
 
--(id) initWithByteCommand:(RKByteCommand*) bCommand;
+- (instancetype) initAsCalibrateWithHeading:(float) heading;
 
-+(id) commandWithHeading:(float) heading andVelocity:(float) velocity;
+-(instancetype) initWithByteCommand:(RKByteCommand*) bCommand;
 
-+(id) commandWithStopAtHeading:(float) heading;
++(instancetype) commandWithHeading:(float) heading andVelocity:(float) velocity;
+
++(instancetype) commandWithHeading:(float) heading velocity:(float) velocity andDistance:(float) distance;
+
++(instancetype) commandWithStopAtHeading:(float) heading;
 
 
 @end

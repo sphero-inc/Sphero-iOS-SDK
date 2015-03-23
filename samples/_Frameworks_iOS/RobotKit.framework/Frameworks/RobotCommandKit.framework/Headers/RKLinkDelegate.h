@@ -7,6 +7,7 @@
 @protocol RKLinkDelegate <NSObject>
 
 -(void) didConnect;
+-(void) didWake;
 -(void) didDisconnect;
 -(void) didUpdateRssi;
 

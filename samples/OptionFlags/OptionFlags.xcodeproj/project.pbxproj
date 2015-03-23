@@ -18,6 +18,8 @@
 		DE53D07219771180006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07119771180006E4C0B /* Default-568h@2x.png */; };
 		DE9F26221A263766007DFB5C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26201A263766007DFB5C /* RobotKit.framework */; };
 		DE9F26231A263766007DFB5C /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26211A263766007DFB5C /* RobotUIKit.framework */; };
+		EA7AD4951AB21EA10075BCE1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7AD4941AB21EA10075BCE1 /* libc++.dylib */; };
+		EA7AD4971AB21EA80075BCE1 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7AD4961AB21EA80075BCE1 /* libstdc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		DE53D07119771180006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DE9F26201A263766007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
 		DE9F26211A263766007DFB5C /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../_Frameworks_iOS/RobotUIKit.framework; sourceTree = "<group>"; };
+		EA7AD4941AB21EA10075BCE1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		EA7AD4961AB21EA80075BCE1 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7AD4971AB21EA80075BCE1 /* libstdc++.dylib in Frameworks */,
+				EA7AD4951AB21EA10075BCE1 /* libc++.dylib in Frameworks */,
 				DE9F26221A263766007DFB5C /* RobotKit.framework in Frameworks */,
 				DE9F26231A263766007DFB5C /* RobotUIKit.framework in Frameworks */,
 				67DA8D6015C85DF0004B3000 /* UIKit.framework in Frameworks */,
@@ -76,6 +82,8 @@
 		67DA8D5E15C85DF0004B3000 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA7AD4961AB21EA80075BCE1 /* libstdc++.dylib */,
+				EA7AD4941AB21EA10075BCE1 /* libc++.dylib */,
 				DE9F26201A263766007DFB5C /* RobotKit.framework */,
 				DE9F26211A263766007DFB5C /* RobotUIKit.framework */,
 				67DA8D5F15C85DF0004B3000 /* UIKit.framework */,

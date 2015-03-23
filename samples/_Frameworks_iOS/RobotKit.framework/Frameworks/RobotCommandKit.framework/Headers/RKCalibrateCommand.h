@@ -35,6 +35,6 @@ __deprecated_msg("replaced by RKSetHeadingCommand")
  * when setting the new 0° point. The value is in degrees.
  * @return The initialized object.
  */
-- (id) initWithHeading:(float) heading;
+- (instancetype) initWithHeading:(float) heading;
 
 @end

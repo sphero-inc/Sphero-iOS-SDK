@@ -21,6 +21,6 @@
  */
 @interface RKJumpToBootloaderCommand : RKDeviceCommand
 
-+(id) command;
++(instancetype) command;
 
 @end

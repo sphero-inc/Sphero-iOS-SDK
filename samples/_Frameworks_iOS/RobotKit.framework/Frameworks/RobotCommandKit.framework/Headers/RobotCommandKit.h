@@ -68,6 +68,8 @@
 #import "RKSetFactoryDeviceModeCommand.h"
 #import "RKRollCommand.h"
 #import "RKSetPIDCommand.h"
+#import "RKGetSkuCommand.h"
+#import "FWLevel1DiagnosticCommand.h"
 
 #pragma mark - LEDS
 #import "RKGetUserRGBLEDColorCommand.h"
@@ -117,6 +119,8 @@
 #import "RKGetNonPersistentOptionFlagsResponse.h"
 #import "RKSetFactoryDeviceModeResponse.h"
 #import "RKGetChassisIdResponse.h"
+#import "RKGetSkuResponse.h"
+#import "FWLevel1DiagnosticResponse.h"
 
 #pragma mark - Async Data
 #import "RKCollisionDetectedAsyncData.h"
@@ -131,6 +135,7 @@
 #import "RKLocatorData.h"
 #import "RKQuaternionData.h"
 #import "RKPowerNotificationAsyncData.h"
+#import "FWLevel1DiagnosticAsyncData.h"
 
 #pragma mark - Async - new naming convention
 #import "RKSleepWillOccurMessage.h"

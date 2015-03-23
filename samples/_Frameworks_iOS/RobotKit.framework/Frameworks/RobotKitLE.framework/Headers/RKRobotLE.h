@@ -6,21 +6,12 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <RobotCommandKit/RobotCommandKit.h>
 #import <RobotCommandKit/RKRobotBase.h>
-#import "RKLeConnectStrategy.h"
 #import "RKLeRobotLink.h"
+#import "RKLeConnectStrategy.h"
 
 extern NSString * const kRobotRadioDidACK;
 extern NSString * const kRobotDidUpdateRSSI;
 extern NSString * const kRobotDidGetCloseNotification;
-
-
-typedef NS_ENUM(uint8_t, RKSleepType) {
-	RKSleepNoMore,
-	RKSleep,          // regular sleep - robot advertises at high rate with
-	RKSleepLowPower,
-	RKSleepDeep
-};
-
 
 @interface RKRobotLE : NSObject <RKRobotBase, RKLeNode, RKLinkDelegate, RKSessionDelegate>
 
@@ -38,6 +29,9 @@ typedef NS_ENUM(uint8_t, RKSleepType) {
 
 /*! request the robot sleep - upon internal callback that sleepDidOccur, SDK disconnects by default. */
 -(void) sleep:(RKSleepType) sleepType;
+
+
+-(BOOL) isOnline;
 
 
 @end

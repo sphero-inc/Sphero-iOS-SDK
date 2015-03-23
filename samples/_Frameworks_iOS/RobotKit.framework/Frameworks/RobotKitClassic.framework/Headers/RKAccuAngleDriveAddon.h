@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Orbotix Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <RobotCommandKit/RKDriveAlgorithm.h>
 
 @interface RKAccuAngleDriveAddon : NSObject <RKDriveVectorAddon>

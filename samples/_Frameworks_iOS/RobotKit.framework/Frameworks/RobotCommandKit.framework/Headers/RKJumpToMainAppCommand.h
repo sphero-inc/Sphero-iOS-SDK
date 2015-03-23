@@ -28,6 +28,6 @@
 
 @interface RKJumpToMainAppCommand : RKDeviceCommand
 
-+(id) command;
++(instancetype) command;
 
 @end

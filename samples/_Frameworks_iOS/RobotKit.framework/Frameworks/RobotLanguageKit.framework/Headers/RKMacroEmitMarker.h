@@ -8,12 +8,7 @@
 /*!
  * Class to encapsulate asyncronous messages sent from a Sphero. 
  */
-@interface RKMacroEmitMarker : RKAsyncMessage {
-@private
-   unsigned char markerId;
-   unsigned char macroId;
-   unsigned short macroLineNumber;
-}
+@interface RKMacroEmitMarker : RKAsyncMessage
 
 /*! The marker identifier */
 @property ( nonatomic, readonly ) unsigned char markerId;

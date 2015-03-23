@@ -26,9 +26,9 @@
  * Initiazer that sets the mode for the robot.
  * @param deviceMode The mode to set for the robot.
  */
-- (id) initToSetUserHackMode:(BOOL) userHackMode;
+- (instancetype) initToSetUserHackMode:(BOOL) userHackMode;
 
-+(id) commandWithUserHackMode;
-+(id) commandWithNormalMode;
++(instancetype) commandWithUserHackMode;
++(instancetype) commandWithNormalMode;
 
 @end

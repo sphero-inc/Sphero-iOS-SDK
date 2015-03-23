@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>76C03263-7527-4DEC-8E15-44DD5F3E2616</string>
+	<string>ADA6A42A-5E65-4701-9838-F076CAFF3146</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HelloWorld</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>5BE677357093A5A5683A95D324CBCE1546CDC20A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Sphero-iOS-SDK</string>
+			<string>PubliciOSSDK</string>
 		</dict>
 	</array>
 </dict>

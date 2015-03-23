@@ -42,8 +42,8 @@ typedef NS_ENUM(uint8_t, RKStabilizationState) {
  * @param state The new state for the control system stabilization.
  * @return The initialized object.
  */
-- (id) initWithState:(RKStabilizationState) state;
+- (instancetype) initWithState:(RKStabilizationState) state;
 
-+ (id) commandWithState:(RKStabilizationState) state;
++ (instancetype) commandWithState:(RKStabilizationState) state;
 
 @end

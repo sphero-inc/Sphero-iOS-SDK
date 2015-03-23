@@ -27,6 +27,6 @@
  * Initiazer that sets the mode for the robot.
  * @param deviceMode The mode to set for the robot.
  */
-- (id) initToSetFactoryDeviceMode:(BOOL) factoryDeviceMode password:(UInt32)pass;
+- (instancetype) initToSetFactoryDeviceMode:(BOOL) factoryDeviceMode password:(UInt32)pass;
 
 @end

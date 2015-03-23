@@ -24,9 +24,9 @@
 		D3DD05421627819100BA27C6 /* simple_assignment.orbbas in Resources */ = {isa = PBXBuildFile; fileRef = D3DD053C1627819100BA27C6 /* simple_assignment.orbbas */; };
 		D3DD05431627819100BA27C6 /* syntax_error.orbbas in Resources */ = {isa = PBXBuildFile; fileRef = D3DD053D1627819100BA27C6 /* syntax_error.orbbas */; };
 		D3DD05441627819100BA27C6 /* toss_double-shake.orbbas in Resources */ = {isa = PBXBuildFile; fileRef = D3DD053E1627819100BA27C6 /* toss_double-shake.orbbas */; };
-		DE9F26111A263683007DFB5C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F260F1A263683007DFB5C /* RobotKit.framework */; };
 		DE9F26121A263683007DFB5C /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26101A263683007DFB5C /* RobotUIKit.framework */; };
 		DEF235BE1A23FCB800764820 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF235BD1A23FCB800764820 /* CoreBluetooth.framework */; };
+		EA7AD4991AB21EC20075BCE1 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7AD4981AB21EC20075BCE1 /* RobotKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +57,7 @@
 		DE9F260F1A263683007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
 		DE9F26101A263683007DFB5C /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../_Frameworks_iOS/RobotUIKit.framework; sourceTree = "<group>"; };
 		DEF235BD1A23FCB800764820 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		EA7AD4981AB21EC20075BCE1 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RobotKitDevelopment-aebkzbizlelybwetqdzbpgkykyot/Build/Products/Debug-iphoneos/RobotKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9F26111A263683007DFB5C /* RobotKit.framework in Frameworks */,
+				EA7AD4991AB21EC20075BCE1 /* RobotKit.framework in Frameworks */,
 				DE9F26121A263683007DFB5C /* RobotUIKit.framework in Frameworks */,
 				DEF235BE1A23FCB800764820 /* CoreBluetooth.framework in Frameworks */,
 				D37B9B2C161A2257002E72D1 /* UIKit.framework in Frameworks */,
@@ -96,6 +97,7 @@
 		D37B9B2A161A2257002E72D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA7AD4981AB21EC20075BCE1 /* RobotKit.framework */,
 				DE9F260F1A263683007DFB5C /* RobotKit.framework */,
 				DE9F26101A263683007DFB5C /* RobotUIKit.framework */,
 				DEF235BD1A23FCB800764820 /* CoreBluetooth.framework */,
@@ -301,6 +303,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../_Frameworks_iOS",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RobotKitDevelopment-aebkzbizlelybwetqdzbpgkykyot/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OrbBasicLoader/OrbBasicLoader-Prefix.pch";
@@ -326,6 +329,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../_Frameworks_iOS",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RobotKitDevelopment-aebkzbizlelybwetqdzbpgkykyot/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OrbBasicLoader/OrbBasicLoader-Prefix.pch";

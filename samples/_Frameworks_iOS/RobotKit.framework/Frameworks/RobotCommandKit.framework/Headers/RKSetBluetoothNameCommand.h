@@ -31,6 +31,6 @@
  * @param name A localized name to store on the robot.
  * @return The initialized object, otherwise nil if initialization failed.
  */
-- (id) initWithName:(NSString *) name;
+- (instancetype) initWithName:(NSString *) name;
 
 @end

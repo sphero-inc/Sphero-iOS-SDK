@@ -110,8 +110,7 @@
             self.robot = nil;
             [RKRobotDiscoveryAgent startDiscovery];
             break;
-        case RKRobotFailedConnect:
-            // edge case - handle as you will.
+        default:
             break;
     }
 }

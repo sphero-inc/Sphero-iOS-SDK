@@ -33,9 +33,9 @@ typedef NS_ENUM(uint8_t, RKMacroIdType) {
  * @param identifier The macro's identifier.
  * @return The initialized object.
  */
-- (id) initWithId:(RKMacroIdType) identifier;
+- (instancetype) initWithId:(RKMacroIdType) identifier;
 
-+ (id) commandWithId:(RKMacroIdType) identifier;
++ (instancetype) commandWithId:(RKMacroIdType) identifier;
 
 
 @end

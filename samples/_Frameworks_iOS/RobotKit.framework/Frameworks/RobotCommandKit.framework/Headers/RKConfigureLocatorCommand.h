@@ -68,6 +68,6 @@ typedef NS_ENUM(uint8_t, RKConfigureLocatorFlag) {
  *               with Sphero’s heading coordinate system. When this parameter is set to zero, it means that having 
  *               yaw = 0 corresponds to facing down the X- axis in the positive direction.  
  */
-- (id) initForFlag:(RKConfigureLocatorFlag) flag newX:(int16_t) x newY:(int16_t) y newYaw:(int16_t) yaw;
+- (instancetype) initForFlag:(RKConfigureLocatorFlag) flag newX:(int16_t) x newY:(int16_t) y newYaw:(int16_t) yaw;
 
 @end

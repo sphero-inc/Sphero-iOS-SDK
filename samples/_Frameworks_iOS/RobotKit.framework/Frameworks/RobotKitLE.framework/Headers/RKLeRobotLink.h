@@ -16,24 +16,29 @@ extern NSString * const kRobotRadioAckNotificationLastPacketKey;
 // todo - move to robot & share with original SDK
 /*! main processor state */
 typedef NS_ENUM (uint8_t, RKLEMainProcessorState){
-   RKLEMainProcessorState_Offline = 0,
-   
-   RKLEMainProcessorState_MainProcessorPowerOnRequested = 10,
-   
-   // Bluetooth Classic states start here.  > 10
-   RKLEMainProcessorState_MainProcessorPowerOn = 11,
-
-   RKLEMainProcessorState_JumpToBootloaderRequested = 20,
-   RKLEMainProcessorState_JumpToBootloaderFailed = 21, /*! Failed to go to bootloader, and is still in the app. */
-   RKLEMainProcessorState_InBootloader = 22,
-   
-   RKLEMainProcessorState_JumpToMainAppRequested = 90,
-   RKLEMainProcessorState_MainAppCorrupt = 91, /*! The robot reported a main app corrupt error, and is stuck in the bootloader. */
-
-   RKLEMainProcessorState_InMainApp = 100, // in main app (9)
-   RKLEMainProcessorState_OfflineRequested = 101
+    RKLEMainProcessorState_Offline = 0,
+    
+    RKLEMainProcessorState_MainProcessorPowerOnRequested = 10,
+    
+    // Bluetooth Classic states start here.  > 10
+    RKLEMainProcessorState_MainProcessorPowerOn = 11,
+    
+    RKLEMainProcessorState_JumpToBootloaderRequested = 20,
+    RKLEMainProcessorState_JumpToBootloaderFailed = 21, /*! Failed to go to bootloader, and is still in the app. */
+    RKLEMainProcessorState_InBootloader = 22,
+    
+    
+    RKLEMainProcessorState_JumpToMainAppRequested = 90,
+    RKLEMainProcessorState_MainAppCorrupt = 91, /*! The robot reported a main app corrupt error, and is stuck in the bootloader. */
+    
+    RKLEMainProcessorState_InMainApp = 100, // in main app (9)
+    RKLEMainProcessorState_OfflineRequested = 101
 };
 
+typedef NS_ENUM (uint8_t, RKLEWakeType){
+	RKLeWakeType_Normal = 0x01,
+	RKLeWakeType_Silent = 0x02
+};
 
 /*!
  Manages the bluetooth low-energy (4.0) RF Link
@@ -65,7 +70,11 @@ typedef NS_ENUM (uint8_t, RKLEMainProcessorState){
 -(void) streamCommand:(RKDeviceCommand*) cmd;
 
 
+/*! request Wake */
 -(void) requestMainProcessorPowerOn;
+-(void) requestMainProcessorPowerOn:(RKLEWakeType) wakeType;
+
+/*! once awake, requestMainApp */
 -(void) requestMainApp;
 
 /*! hard shut down robot - requires USB power to restart robot */

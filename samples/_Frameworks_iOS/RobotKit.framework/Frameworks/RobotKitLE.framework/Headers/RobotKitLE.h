@@ -4,14 +4,22 @@
 
 #import <Foundation/Foundation.h>
 
+//! Project version number for RobotKitLE.
+FOUNDATION_EXPORT double RobotKitLEVersionNumber;
+
+//! Project version string for RobotKitLE.
+FOUNDATION_EXPORT const unsigned char RobotKitLEVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h"
 // LE Base
-#import <RobotKitLE/RKRobotLE.h>
-#import <RobotKitLE/RKRobotDiscoveryAgentLE.h>
-#import <RobotKitLE/RKLeFavoritesManager.h>
-#import <RobotKitLE/RKNodeStateChangedNotification.h>
-#import <RobotKitLE/RKDiscoveryAgentLE.h>
+#import "RKRobotLE.h"
+#import "RKRobotDiscoveryAgentLE.h"
+#import "RKLeFavoritesManager.h"
+#import "RKNodeStateChangedNotification.h"
+#import "RKDiscoveryAgentLE.h"
+#import "CBUUID+Extension.h"
 
 // Ollie - tmp
-#import <RobotKitLE/RKControlSystemPresetCommand.h>
+#import "RKControlSystemPresetCommand.h"
 
 

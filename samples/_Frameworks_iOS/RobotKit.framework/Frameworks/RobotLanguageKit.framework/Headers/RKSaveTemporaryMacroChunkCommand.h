@@ -31,6 +31,6 @@
 /*! Set if it is the first chunk to control sending of id byte and flags, default YES */
 @property (readwrite) BOOL firstChunk;
 
-+ (id) commandWithMacro:(NSData *) data flags:(RKMacroFlags) flags;
++ (instancetype) commandWithMacro:(NSData *) data flags:(RKMacroFlags) flags;
 
 @end

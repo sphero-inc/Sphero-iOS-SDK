@@ -35,10 +35,10 @@
  * when setting the new 0° point. The value is in degrees.
  * @return The initialized object.
  */
-- (id) initWithHeading:(float) heading;
+- (instancetype) initWithHeading:(float) heading;
 
-+ (id) commandWithHeading:(float) heading;
++ (instancetype) commandWithHeading:(float) heading;
 
-+ (id) command;
++ (instancetype) command;
 
 @end

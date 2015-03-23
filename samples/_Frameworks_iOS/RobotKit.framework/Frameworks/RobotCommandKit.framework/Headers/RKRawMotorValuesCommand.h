@@ -50,10 +50,10 @@ typedef uint8_t RKRawMotorPower;
  * @param rightPower A value from 0 to 255 for the power to applied to the motor.
  * @return Initialized object.
  */
-- (id) initWithLeftMode:(RKRawMotorMode) leftMode leftPower:(RKRawMotorPower) leftPower
+- (instancetype) initWithLeftMode:(RKRawMotorMode) leftMode leftPower:(RKRawMotorPower) leftPower
 			  rightMode:(RKRawMotorMode) rightMode rightPower:(RKRawMotorPower) rightPower;
 
-+ (id) commandWithLeftMode:(RKRawMotorMode) leftMode leftPower:(RKRawMotorPower) leftPower
++ (instancetype) commandWithLeftMode:(RKRawMotorMode) leftMode leftPower:(RKRawMotorPower) leftPower
 				 rightMode:(RKRawMotorMode) rightMode rightPower:(RKRawMotorPower) rightPower;
 
 

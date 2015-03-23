@@ -53,12 +53,12 @@ typedef NS_ENUM(uint8_t,  RKCollisionDetectionMethod ){
  * 
  * @deprecated initializer contains bug where it sends swapped values of yThreshold and xThresholdSpeed to Sphero
  */
-- (id) initForMethod:(RKCollisionDetectionMethod) method
+- (instancetype) initForMethod:(RKCollisionDetectionMethod) method
           xThreshold:(uint8_t) theXThreshold
           yThreshold:(uint8_t) theYThreshold
      xSpeedThreshold:(uint8_t) theXSpeedThreshold
      ySpeedThreshold:(uint8_t) theYSpeedThreshold
-    postTimeDeadZone:(NSTimeInterval) deadZone;
+    postTimeDeadZone:(NSTimeInterval) deadZone __deprecated_msg("Use -[RKConfigureCollisionDetectionCommand initForMethod:xThreshold:xSpeedThreshold:yThreshold:ySpeedThreshold:postTimeDeadZone:]");
 
 /**
  * Initializer to set the parameters used to configure the collision detection algorithm.
@@ -75,7 +75,7 @@ typedef NS_ENUM(uint8_t,  RKCollisionDetectionMethod ){
  * @param deadZone          A value in seconds that indicates a time to wait after detecting an impact before watching
  *                          for the next collision.
  */
-- (id) initForMethod:(RKCollisionDetectionMethod) method
+- (instancetype) initForMethod:(RKCollisionDetectionMethod) method
           xThreshold:(uint8_t) theXThreshold
      xSpeedThreshold:(uint8_t) theXSpeedThreshold
           yThreshold:(uint8_t) theYThreshold

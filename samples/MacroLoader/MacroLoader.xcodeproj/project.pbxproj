@@ -18,12 +18,14 @@
 		D34057471676C7FA00FE1E64 /* symboll.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E80215DDA2BB00BD3A02 /* symboll.sphero */; };
 		D34057481676C80400FE1E64 /* dance1.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7FF15DDA2BB00BD3A02 /* dance1.sphero */; };
 		DE53D07E1977119B006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07D1977119B006E4C0B /* Default-568h@2x.png */; };
-		DE9F26051A2635DB007DFB5C /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26031A2635DB007DFB5C /* RobotKit.framework */; };
 		DE9F26061A2635DB007DFB5C /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */; };
 		DE9F26081A2635F1007DFB5C /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE9F26071A2635F1007DFB5C /* RobotUIKit.bundle */; };
 		E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */; };
 		E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */; };
 		E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */; };
+		EA7AD4891AB21C420075BCE1 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE07AAF0196F9C0700FB523A /* libstdc++.dylib */; };
+		EA7AD48A1AB21C510075BCE1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE07AAEF196F9C0700FB523A /* libc++.dylib */; };
+		EA7AD48C1AB21C6C0075BCE1 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7AD48B1AB21C6C0075BCE1 /* RobotKit.framework */; };
 		EA84518A1A40DBDC0098A6C0 /* MacroLoader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8451891A40DBDC0098A6C0 /* MacroLoader.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,7 @@
 		E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		EA7AD48B1AB21C6C0075BCE1 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RobotKitDevelopment-aebkzbizlelybwetqdzbpgkykyot/Build/Products/Debug-iphoneos/RobotKit.framework"; sourceTree = "<group>"; };
 		EA8451891A40DBDC0098A6C0 /* MacroLoader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MacroLoader.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9F26051A2635DB007DFB5C /* RobotKit.framework in Frameworks */,
+				EA7AD48C1AB21C6C0075BCE1 /* RobotKit.framework in Frameworks */,
+				EA7AD48A1AB21C510075BCE1 /* libc++.dylib in Frameworks */,
+				EA7AD4891AB21C420075BCE1 /* libstdc++.dylib in Frameworks */,
 				DE9F26061A2635DB007DFB5C /* RobotUIKit.framework in Frameworks */,
 				E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */,
 				E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */,
@@ -92,6 +97,7 @@
 		6784E7FA15DDA24B00BD3A02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA7AD48B1AB21C6C0075BCE1 /* RobotKit.framework */,
 				DE9F26031A2635DB007DFB5C /* RobotKit.framework */,
 				DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */,
 				DE07AAEF196F9C0700FB523A /* libc++.dylib */,
@@ -322,6 +328,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../_Frameworks_iOS",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RobotKitDevelopment-aebkzbizlelybwetqdzbpgkykyot/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
@@ -346,6 +353,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../_Frameworks_iOS",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RobotKitDevelopment-aebkzbizlelybwetqdzbpgkykyot/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";

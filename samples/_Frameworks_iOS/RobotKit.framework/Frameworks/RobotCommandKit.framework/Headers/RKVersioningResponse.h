@@ -10,12 +10,13 @@
 
 
 typedef NS_ENUM( uint8_t, RKRobotModel ){
-   SpheroS1  = 0,
-   SpheroS11 = 1,
-   SpheroS2  = 2,
-   SpheroS3  = 3,
-   Unknown4  = 4,
-   Ollie01   = 10
+	SpheroS1  = 0,
+	SpheroS11 = 1,
+	SpheroS2  = 2,
+	SpheroS3  = 3,
+	Unknown4  = 4,
+	Ollie01   = 10,
+	Ray01     = 30
 };
 
 

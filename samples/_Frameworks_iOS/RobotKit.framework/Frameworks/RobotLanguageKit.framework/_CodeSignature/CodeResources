@@ -12,6 +12,22 @@
 		<data>
 		aCgvi/2L56z9pLn2qwyTnnrb7Hw=
 		</data>
+		<key>Headers/RKAppendCompleteOvalCommand.h</key>
+		<data>
+		vn1KyOwMdzaTDk5t49Zio0TggK0=
+		</data>
+		<key>Headers/RKAppendCompleteOvalResponse.h</key>
+		<data>
+		YLny++P23gz1q9TRD0NvRleN6IA=
+		</data>
+		<key>Headers/RKAppendFragmentOvalCommand.h</key>
+		<data>
+		GdylmMrSjcJ2rUbisR5Ey4+SEkU=
+		</data>
+		<key>Headers/RKAppendFragmentOvalResponse.h</key>
+		<data>
+		6wYmb4EbJmISOvKtAbpYvTgBhbQ=
+		</data>
 		<key>Headers/RKInitMacroExecutiveCommand.h</key>
 		<data>
 		Sk9LTtB/x8SINDWIM37pkNFsez0=
@@ -146,11 +162,11 @@
 		</data>
 		<key>Headers/RKMacroEmitMarker.h</key>
 		<data>
-		tDzZQga18HUXXGrLr+st3YWHy5w=
+		aP42rRW91xzUMdl4lzbJdMVy2ds=
 		</data>
 		<key>Headers/RKMacroObject+Compatibility.h</key>
 		<data>
-		tINyW1XmceTtXeGM3gQ2d1KlLNY=
+		HswNt/Z94jxIJGV9u7XkFo80Om8=
 		</data>
 		<key>Headers/RKMacroObject.h</key>
 		<data>
@@ -208,9 +224,21 @@
 		<data>
 		UkHfloOJCpadJFUxJ8+EccTJpnk=
 		</data>
+		<key>Headers/RKOvalDeviceBroadcast.h</key>
+		<data>
+		We04WS3kTfTL/6ZV6cMpJjnkC5U=
+		</data>
+		<key>Headers/RKOvalErrorBroadcast.h</key>
+		<data>
+		/89m9uRsokKc6j5QCz6KY0R+e4c=
+		</data>
+		<key>Headers/RKResetOvmCommand.h</key>
+		<data>
+		ZmPDdWqs9bDj+eoFTKWt8bPmkXU=
+		</data>
 		<key>Headers/RKRunMacroCommand.h</key>
 		<data>
-		Dzd1QG/kmtBr6V+fSWy53P3Vqpw=
+		dmF1E6ol1M1D0Gpbcxxcp7yhMfQ=
 		</data>
 		<key>Headers/RKRunMacroResponse.h</key>
 		<data>
@@ -218,7 +246,7 @@
 		</data>
 		<key>Headers/RKSaveMacroCommand.h</key>
 		<data>
-		yF3baJI6JOtqZ6/6dB6eAvq1tzg=
+		wlqBkCltJ0L8O2pOnc+XndSTCDU=
 		</data>
 		<key>Headers/RKSaveMacroResponse.h</key>
 		<data>
@@ -226,7 +254,7 @@
 		</data>
 		<key>Headers/RKSaveTemporaryMacroChunkCommand.h</key>
 		<data>
-		b2tV9JRCSBT5Ly+Oc96Y7oqcEj8=
+		TR5Bifqla0Vhhr6uXghd/fjZhLw=
 		</data>
 		<key>Headers/RKSaveTemporaryMacroChunkResponse.h</key>
 		<data>
@@ -234,7 +262,7 @@
 		</data>
 		<key>Headers/RKSaveTemporaryMacroCommand.h</key>
 		<data>
-		cWXR+V0LAUCP5uY+pyUl0LaUDrI=
+		TSKQ+OGGdDlROxsGBevyhJ+BZIA=
 		</data>
 		<key>Headers/RKSaveTemporaryMacroResponse.h</key>
 		<data>
@@ -246,7 +274,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5wL9bMH7mPHQkF4Hq5ind5wh+P4=
+		mhqdO2Rq/75PhyB3TnOKhI/OHeI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -259,6 +287,22 @@
 		<data>
 		aCgvi/2L56z9pLn2qwyTnnrb7Hw=
 		</data>
+		<key>Headers/RKAppendCompleteOvalCommand.h</key>
+		<data>
+		vn1KyOwMdzaTDk5t49Zio0TggK0=
+		</data>
+		<key>Headers/RKAppendCompleteOvalResponse.h</key>
+		<data>
+		YLny++P23gz1q9TRD0NvRleN6IA=
+		</data>
+		<key>Headers/RKAppendFragmentOvalCommand.h</key>
+		<data>
+		GdylmMrSjcJ2rUbisR5Ey4+SEkU=
+		</data>
+		<key>Headers/RKAppendFragmentOvalResponse.h</key>
+		<data>
+		6wYmb4EbJmISOvKtAbpYvTgBhbQ=
+		</data>
 		<key>Headers/RKInitMacroExecutiveCommand.h</key>
 		<data>
 		Sk9LTtB/x8SINDWIM37pkNFsez0=
@@ -393,11 +437,11 @@
 		</data>
 		<key>Headers/RKMacroEmitMarker.h</key>
 		<data>
-		tDzZQga18HUXXGrLr+st3YWHy5w=
+		aP42rRW91xzUMdl4lzbJdMVy2ds=
 		</data>
 		<key>Headers/RKMacroObject+Compatibility.h</key>
 		<data>
-		tINyW1XmceTtXeGM3gQ2d1KlLNY=
+		HswNt/Z94jxIJGV9u7XkFo80Om8=
 		</data>
 		<key>Headers/RKMacroObject.h</key>
 		<data>
@@ -455,9 +499,21 @@
 		<data>
 		UkHfloOJCpadJFUxJ8+EccTJpnk=
 		</data>
+		<key>Headers/RKOvalDeviceBroadcast.h</key>
+		<data>
+		We04WS3kTfTL/6ZV6cMpJjnkC5U=
+		</data>
+		<key>Headers/RKOvalErrorBroadcast.h</key>
+		<data>
+		/89m9uRsokKc6j5QCz6KY0R+e4c=
+		</data>
+		<key>Headers/RKResetOvmCommand.h</key>
+		<data>
+		ZmPDdWqs9bDj+eoFTKWt8bPmkXU=
+		</data>
 		<key>Headers/RKRunMacroCommand.h</key>
 		<data>
-		Dzd1QG/kmtBr6V+fSWy53P3Vqpw=
+		dmF1E6ol1M1D0Gpbcxxcp7yhMfQ=
 		</data>
 		<key>Headers/RKRunMacroResponse.h</key>
 		<data>
@@ -465,7 +521,7 @@
 		</data>
 		<key>Headers/RKSaveMacroCommand.h</key>
 		<data>
-		yF3baJI6JOtqZ6/6dB6eAvq1tzg=
+		wlqBkCltJ0L8O2pOnc+XndSTCDU=
 		</data>
 		<key>Headers/RKSaveMacroResponse.h</key>
 		<data>
@@ -473,7 +529,7 @@
 		</data>
 		<key>Headers/RKSaveTemporaryMacroChunkCommand.h</key>
 		<data>
-		b2tV9JRCSBT5Ly+Oc96Y7oqcEj8=
+		TR5Bifqla0Vhhr6uXghd/fjZhLw=
 		</data>
 		<key>Headers/RKSaveTemporaryMacroChunkResponse.h</key>
 		<data>
@@ -481,7 +537,7 @@
 		</data>
 		<key>Headers/RKSaveTemporaryMacroCommand.h</key>
 		<data>
-		cWXR+V0LAUCP5uY+pyUl0LaUDrI=
+		TSKQ+OGGdDlROxsGBevyhJ+BZIA=
 		</data>
 		<key>Headers/RKSaveTemporaryMacroResponse.h</key>
 		<data>

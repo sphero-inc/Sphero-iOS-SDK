@@ -1,8 +1,4 @@
 //
-//  RobotDiscoveryAgent.h
-//  RobotKit
-//
-//  Created by Corey Earwood on 11/13/14.
 //  Copyright (c) 2014 orbotix. All rights reserved.
 //
 
@@ -17,6 +13,9 @@
 @property (nonatomic, assign) NSUInteger maxConnectedRobots;
 
 + (RKRobotDiscoveryAgent *)sharedAgent;
+
++(BOOL) startDiscoveryAndReturnError:(NSError **) error;
+-(BOOL) startDiscoveryAndReturnError:(NSError **) error;
 
 + (void)disconnectAll;
 - (void)disconnectAll;

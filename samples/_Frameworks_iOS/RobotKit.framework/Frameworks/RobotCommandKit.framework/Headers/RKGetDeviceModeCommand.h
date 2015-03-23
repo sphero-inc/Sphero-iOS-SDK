@@ -14,6 +14,6 @@
  */
 @interface RKGetDeviceModeCommand : RKDeviceCommand
 
-+(id) command;
++(instancetype) command;
 
 @end

@@ -19,6 +19,6 @@
  */
 @interface RKGetBluetoothInfoCommand : RKDeviceCommand
 
-+(id) command;
++(instancetype) command;
 
 @end

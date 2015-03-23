@@ -1,16 +1,12 @@
 //
-//  RKDiscoveryAgentLE.h
-//  RobotKitLE
-//
-//  Created by Corey Earwood on 10/8/14.
-//  Copyright (c) 2014 Orbotix Inc. All rights reserved.
+//  Copyright (c) 2014-2015 Orbotix Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "RKLeConnectStrategy.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 
-typedef void(^RKConnectBlock)(id<RKLeNode> node);
+typedef void(^RKDeviceOnlineBlock)(id<RKLeNode> node);
 
 @protocol RKDiscoveryAgentLE <NSObject>
 
@@ -21,9 +17,10 @@ typedef void(^RKConnectBlock)(id<RKLeNode> node);
 
 @property (nonatomic, strong) id<RKLeConnectStrategy> connectStrategy;
 
--(BOOL)startDiscovery;
--(void)stopDiscovery;
--(void)disconnectAll;
+-(BOOL) startDiscovery;
+-(BOOL) startDiscoveryAndReturnError:(NSError **) error;
+-(void) stopDiscovery;
+-(void) disconnectAll;
 
 /*!
  @param observer
@@ -41,7 +38,7 @@ typedef void(^RKConnectBlock)(id<RKLeNode> node);
 - (id) nodeForName:(NSString*) name;
 
 /*! Experimental - internal use only */
--(void)connect:(id<RKLeNode>)node withCompletionHandler:(RKConnectBlock)completionHandler;
+-(void)connect:(id<RKLeNode>)node withCompletionHandler:(RKDeviceOnlineBlock)completionHandler;
 
 @end
 

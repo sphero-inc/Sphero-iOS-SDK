@@ -45,7 +45,7 @@ typedef NS_ENUM(uint32_t,  RKGetNonPersistentOptionFlagsMask) {
  *
  * @param optionFlags A long value in that represents the option flags
  */
-- (id) initWithOptionFlags:(uint32_t) flags;
-+ (id) commandWithFlags:(uint32_t) flags;
+- (instancetype) initWithOptionFlags:(uint32_t) flags;
++ (instancetype) commandWithFlags:(uint32_t) flags;
 
 @end

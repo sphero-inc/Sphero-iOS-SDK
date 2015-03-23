@@ -39,14 +39,14 @@ typedef NS_ENUM(uint8_t, RKMacroFlags) {
  * @param data The binary representation of the macro.
  * @param flags A set of flags created by bitwise or RKMacroFlags mask values.
  */
-+ (id) commandWithMacro:(NSData *) data flags:(RKMacroFlags) flags;
++ (instancetype) commandWithMacro:(NSData *) data flags:(RKMacroFlags) flags;
 
 /*! 
  * @param data The binary representation of the macro.
  * @param flags A set of flags created by bitwise or RKMacroFlags mask values.
  * @param delay A time interval in seconds to delay sending the command.
  */
-+ (id) commandWithMacro:(NSData *) data flags:(RKMacroFlags) flags delay:(NSTimeInterval) delay;
++ (instancetype) commandWithMacro:(NSData *) data flags:(RKMacroFlags) flags delay:(NSTimeInterval) delay;
 
 /*!
  * Initializer to set up the command.
@@ -54,6 +54,6 @@ typedef NS_ENUM(uint8_t, RKMacroFlags) {
  * @param flags A set of flags created by bitwise or RKMacroFlags mask values.
  * @return The initialized object.
  */
-- (id) initWithMacro:(NSData *) data flags:(RKMacroFlags) flags;
+- (instancetype) initWithMacro:(NSData *) data flags:(RKMacroFlags) flags;
 
 @end

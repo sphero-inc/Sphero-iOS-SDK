@@ -63,7 +63,7 @@ typedef NS_ENUM(uint8_t,  RKSelfLevelCommandOptions) {
 /* 
  * Initializer to set up the self level command with custom parameters
  */
-- (id) initWithOptions:(RKSelfLevelCommandOptions) options
+- (instancetype) initWithOptions:(RKSelfLevelCommandOptions) options
             angleLimit:(uint8_t) angleLimit
                timeout:(uint8_t) timeout
               accuracy:(uint8_t) accuracy;

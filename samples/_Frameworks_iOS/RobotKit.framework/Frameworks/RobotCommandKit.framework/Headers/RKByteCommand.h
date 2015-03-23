@@ -24,6 +24,6 @@
  * @param packet the properly formatted raw bytes of a Sphero command.
  * @return The initialized object.
  */
-- (id) initWithPacket:(NSData*) packet;
+- (instancetype) initWithPacket:(NSData*) packet;
 
 @end
