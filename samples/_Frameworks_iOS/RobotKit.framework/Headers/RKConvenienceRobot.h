@@ -132,7 +132,7 @@
 #pragma mark - Responses
 
 /*! add a Response Observer for both command responses and async messages */
--(void) addResponseObserver:(id<RKResponseObserver>) observer;
+-(void) addResponseObserver:(__weak id<RKResponseObserver>) observer;
 
 /*! remove a response observer */
 -(void) removeResponseObserver:(id<RKResponseObserver>) observer;

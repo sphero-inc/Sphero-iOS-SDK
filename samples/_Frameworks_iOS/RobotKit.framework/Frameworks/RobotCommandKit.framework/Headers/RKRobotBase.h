@@ -26,7 +26,7 @@ typedef void (^RKDeviceResponseBlock)(RKDeviceResponse* response);
 -(void) streamCommand:(RKDeviceCommand*) command;
 -(void) sendCommand:(RKDeviceCommand *)command;
 
--(void) addResponseObserver:(id<RKResponseObserver>) observer;
+-(void) addResponseObserver:(__weak id<RKResponseObserver>) observer;
 -(void) removeResponseObserver:(id<RKResponseObserver>) observer;
 
 -(NSNumber*) connectTimeInSeconds;
