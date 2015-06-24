@@ -7,44 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6762B2A415AF57AD00BBDF9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A315AF57AD00BBDF9A /* UIKit.framework */; };
-		6762B2A615AF57AD00BBDF9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A515AF57AD00BBDF9A /* Foundation.framework */; };
-		6762B2A815AF57AD00BBDF9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */; };
-		6762B2AA15AF57AD00BBDF9A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2A915AF57AD00BBDF9A /* CoreMotion.framework */; };
-		6762B2AC15AF57AD00BBDF9A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2AB15AF57AD00BBDF9A /* GameKit.framework */; };
-		6762B2AE15AF57AD00BBDF9A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6762B2AD15AF57AD00BBDF9A /* ExternalAccessory.framework */; };
+		1F08DA881A420C3900DDEE82 /* Locator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F08DA871A420C3900DDEE82 /* Locator.storyboard */; };
 		6762B2B415AF57AD00BBDF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2B215AF57AD00BBDF9A /* InfoPlist.strings */; };
 		6762B2B615AF57AD00BBDF9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B515AF57AD00BBDF9A /* main.m */; };
 		6762B2BA15AF57AD00BBDF9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B915AF57AD00BBDF9A /* AppDelegate.m */; };
-		6762B2C015AF57AD00BBDF9A /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */; };
 		6762B2C315AF57AD00BBDF9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2C215AF57AD00BBDF9A /* ViewController.m */; };
-		6762B2C615AF57AD00BBDF9A /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2C415AF57AD00BBDF9A /* ViewController_iPhone.xib */; };
-		6762B2C915AF57AD00BBDF9A /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2C715AF57AD00BBDF9A /* ViewController_iPad.xib */; };
-		816B798018FCA0F2009CA81D /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B797F18FCA0F2009CA81D /* RobotKit.framework */; };
-		816B798218FCA10B009CA81D /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816B798118FCA10B009CA81D /* RobotUIKit.framework */; };
+		DE526B041B3B4815000D6545 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B011B3B4815000D6545 /* RobotKit.framework */; };
+		DE526B051B3B4815000D6545 /* RobotUIKit.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B021B3B4815000D6545 /* RobotUIKit.bundle */; };
+		DE526B061B3B4815000D6545 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B031B3B4815000D6545 /* RobotUIKit.framework */; };
+		DE53D07419771184006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07319771184006E4C0B /* Default-568h@2x.png */; };
+		DE9F26161A2636CE007DFB5C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26151A2636CE007DFB5C /* ExternalAccessory.framework */; };
+		DE9F261E1A2636EF007DFB5C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F261D1A2636EF007DFB5C /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F08DA871A420C3900DDEE82 /* Locator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Locator.storyboard; sourceTree = "<group>"; };
 		6762B29F15AF57AD00BBDF9A /* Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6762B2A315AF57AD00BBDF9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6762B2A515AF57AD00BBDF9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6762B2A915AF57AD00BBDF9A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		6762B2AB15AF57AD00BBDF9A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		6762B2AD15AF57AD00BBDF9A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		6762B2B115AF57AD00BBDF9A /* Locator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Locator-Info.plist"; sourceTree = "<group>"; };
 		6762B2B315AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6762B2B515AF57AD00BBDF9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6762B2B715AF57AD00BBDF9A /* Locator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locator-Prefix.pch"; sourceTree = "<group>"; };
 		6762B2B815AF57AD00BBDF9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6762B2B915AF57AD00BBDF9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RobotUIKit.bundle; sourceTree = "<group>"; };
 		6762B2C115AF57AD00BBDF9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6762B2C215AF57AD00BBDF9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6762B2C515AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		6762B2C815AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		816B797F18FCA0F2009CA81D /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotKit.framework; sourceTree = "<group>"; };
-		816B798118FCA10B009CA81D /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RobotUIKit.framework; sourceTree = "<group>"; };
+		DE526B011B3B4815000D6545 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		DE526B021B3B4815000D6545 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../../frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
+		DE526B031B3B4815000D6545 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../../frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
+		DE53D07319771184006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE9F26151A2636CE007DFB5C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		DE9F261D1A2636EF007DFB5C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,14 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6762B2A415AF57AD00BBDF9A /* UIKit.framework in Frameworks */,
-				6762B2A615AF57AD00BBDF9A /* Foundation.framework in Frameworks */,
-				6762B2A815AF57AD00BBDF9A /* CoreGraphics.framework in Frameworks */,
-				6762B2AA15AF57AD00BBDF9A /* CoreMotion.framework in Frameworks */,
-				816B798218FCA10B009CA81D /* RobotUIKit.framework in Frameworks */,
-				816B798018FCA0F2009CA81D /* RobotKit.framework in Frameworks */,
-				6762B2AC15AF57AD00BBDF9A /* GameKit.framework in Frameworks */,
-				6762B2AE15AF57AD00BBDF9A /* ExternalAccessory.framework in Frameworks */,
+				DE9F261E1A2636EF007DFB5C /* CoreBluetooth.framework in Frameworks */,
+				DE9F26161A2636CE007DFB5C /* ExternalAccessory.framework in Frameworks */,
+				DE526B041B3B4815000D6545 /* RobotKit.framework in Frameworks */,
+				DE526B051B3B4815000D6545 /* RobotUIKit.bundle in Frameworks */,
+				DE526B061B3B4815000D6545 /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,8 +58,9 @@
 		6762B29415AF57AD00BBDF9A = {
 			isa = PBXGroup;
 			children = (
+				DE9F261F1A26372A007DFB5C /* Frameworks */,
+				DE53D07319771184006E4C0B /* Default-568h@2x.png */,
 				6762B2AF15AF57AD00BBDF9A /* Locator */,
-				6762B2A215AF57AD00BBDF9A /* Frameworks */,
 				6762B2A015AF57AD00BBDF9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,31 +73,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6762B2A215AF57AD00BBDF9A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				816B798118FCA10B009CA81D /* RobotUIKit.framework */,
-				816B797F18FCA0F2009CA81D /* RobotKit.framework */,
-				6762B2A315AF57AD00BBDF9A /* UIKit.framework */,
-				6762B2A515AF57AD00BBDF9A /* Foundation.framework */,
-				6762B2A715AF57AD00BBDF9A /* CoreGraphics.framework */,
-				6762B2A915AF57AD00BBDF9A /* CoreMotion.framework */,
-				6762B2AB15AF57AD00BBDF9A /* GameKit.framework */,
-				6762B2AD15AF57AD00BBDF9A /* ExternalAccessory.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6762B2AF15AF57AD00BBDF9A /* Locator */ = {
 			isa = PBXGroup;
 			children = (
+				1F08DA871A420C3900DDEE82 /* Locator.storyboard */,
 				6762B2B815AF57AD00BBDF9A /* AppDelegate.h */,
 				6762B2B915AF57AD00BBDF9A /* AppDelegate.m */,
-				6762B2BF15AF57AD00BBDF9A /* RobotUIKit.bundle */,
 				6762B2C115AF57AD00BBDF9A /* ViewController.h */,
 				6762B2C215AF57AD00BBDF9A /* ViewController.m */,
-				6762B2C415AF57AD00BBDF9A /* ViewController_iPhone.xib */,
-				6762B2C715AF57AD00BBDF9A /* ViewController_iPad.xib */,
 				6762B2B015AF57AD00BBDF9A /* Supporting Files */,
 			);
 			path = Locator;
@@ -122,6 +95,18 @@
 				6762B2B715AF57AD00BBDF9A /* Locator-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE9F261F1A26372A007DFB5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE526B011B3B4815000D6545 /* RobotKit.framework */,
+				DE526B021B3B4815000D6545 /* RobotUIKit.bundle */,
+				DE526B031B3B4815000D6545 /* RobotUIKit.framework */,
+				DE9F261D1A2636EF007DFB5C /* CoreBluetooth.framework */,
+				DE9F26151A2636CE007DFB5C /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +135,17 @@
 		6762B29615AF57AD00BBDF9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Orbotix Inc";
+				TargetAttributes = {
+					6762B29E15AF57AD00BBDF9A = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 6762B29915AF57AD00BBDF9A /* Build configuration list for PBXProject "Locator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -176,9 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6762B2B415AF57AD00BBDF9A /* InfoPlist.strings in Resources */,
-				6762B2C015AF57AD00BBDF9A /* RobotUIKit.bundle in Resources */,
-				6762B2C615AF57AD00BBDF9A /* ViewController_iPhone.xib in Resources */,
-				6762B2C915AF57AD00BBDF9A /* ViewController_iPad.xib in Resources */,
+				DE53D07419771184006E4C0B /* Default-568h@2x.png in Resources */,
+				1F08DA881A420C3900DDEE82 /* Locator.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,22 +199,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6762B2C415AF57AD00BBDF9A /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6762B2C515AF57AD00BBDF9A /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		6762B2C715AF57AD00BBDF9A /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6762B2C815AF57AD00BBDF9A /* en */,
-			);
-			name = ViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -229,11 +206,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -241,10 +228,18 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -254,16 +249,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -273,25 +285,21 @@
 		6762B2CD15AF57AD00BBDF9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../frameworks",
 					"$(inherited)",
-					"\"$(SRCROOT)/Locator/Frameworks\"",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
-					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
 				INFOPLIST_FILE = "Locator/Locator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-all_load",
-					"-lstdc++",
-					"-lsqlite3.0",
+					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -299,25 +307,21 @@
 		6762B2CE15AF57AD00BBDF9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../frameworks",
 					"$(inherited)",
-					"\"$(SRCROOT)/Locator/Frameworks\"",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/IOSRobotKitWorkspace-doxenitlytbwewdaqyrcfegeuvqo/Build/Products/Debug-iphoneos\"",
-					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
 				INFOPLIST_FILE = "Locator/Locator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-all_load",
-					"-lstdc++",
-					"-lsqlite3.0",
+					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

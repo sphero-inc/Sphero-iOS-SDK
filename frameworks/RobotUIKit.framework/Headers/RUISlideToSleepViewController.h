@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RUIModalLayerViewController.h"
+#import "RUIModalViewController.h"
 
 @protocol RUISlideToSleepViewControllerDelegate;
 
@@ -20,15 +20,10 @@
  *  
  *  There are delegate callbacks on success and failure
  */
-@interface RUISlideToSleepViewController : RUIModalLayerViewController {
-    @private
-    id<RUISlideToSleepViewControllerDelegate> delegate;
-    IBOutlet UIImageView *sliderBG;
-    IBOutlet UIImageView *sliderArrow;
-}
+@interface RUISlideToSleepViewController : RUIModalViewController
 
 /*! Delegate that will recieve callbacks on success or failure */
-@property (nonatomic, assign) id<RUISlideToSleepViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<RUISlideToSleepViewControllerDelegate> delegate;
 
 @end
 

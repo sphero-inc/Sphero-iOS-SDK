@@ -23,14 +23,13 @@
 	CGFloat       currentAngle;
 	CGFloat       wheelBorderSize;
 	BOOL          rotateView;
-	id<RUICalibrationViewDelegate> delegate;
 }
 
 /*!
  * The target object that is notified whenever the user rotates the 
  * calibration wheel.
  */
-@property (nonatomic, assign) id<RUICalibrationViewDelegate> delegate;
+@property (nonatomic, strong) id<RUICalibrationViewDelegate> delegate;
 
 /*!
  * Get or set the wheel border size.  The wheel border keeps the calibration

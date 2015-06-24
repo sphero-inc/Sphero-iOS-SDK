@@ -36,7 +36,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.orbotix.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.orbotix.enterprise.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -57,12 +57,16 @@
 	<string></string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
-	<key>UIFileSharingEnabled</key>
-	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string></string>
+		<string>bluetooth-central</string>
+		<string>external-accessory</string>
 	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UIMainStoryboardFile</key>
+	<string>OrbBasicLoader</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -74,8 +78,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

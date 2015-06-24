@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RUIModalLayerViewController.h"
+#import "RUIModalViewController.h"
 
-@interface RUINoSpheroConnectedViewController : RUIModalLayerViewController {
-    NSString* customURL;
-}
+/*!
+ todo - docs
+ */
+@interface RUINoSpheroConnectedViewController : RUIModalViewController
 
 /*!
  * Use this custom URL to coordinate with Orbotix to get rewards
@@ -19,7 +20,7 @@
  * 
  * defaults to nil
  */
-@property (nonatomic, assign) NSString* customURL;
+@property (nonatomic, weak) NSString* customURL;
 
 /*!
  * Called when the Get A Sphero button is pressed

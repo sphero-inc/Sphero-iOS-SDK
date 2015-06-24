@@ -20,8 +20,6 @@
 	UIImageView			*puckView;
     CGAffineTransform	puckTransform;
     double              radius;
-    double              speed;
-    double              heading;
     
     NSMutableArray      *targets;
     NSMutableArray      *actions;

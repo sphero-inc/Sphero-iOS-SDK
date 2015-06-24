@@ -7,6 +7,7 @@
 
 #import "RUICalibrateButtonGestureHandler.h"
 #import <UIKit/UIKit.h>
+#import <RobotKit/RobotKit.h>
 
 /*!
  * @brief A view that can be overlayed to show a rotation gesture is happening
@@ -25,6 +26,9 @@
     int calibrationRadius;
     RUICalibrationCircleLocation calibrationCircleLocation;
 }
+
+/*! test */
+@property (strong, nonatomic) id<RKRobotBase> robot;
 
 /*!
  *  Should be called as the touches are processed and the gesture is recognized to animate the overlay

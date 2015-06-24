@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RobotUIKit/RUIModalLayerViewController.h>
+#import <RobotUIKit/RUIModalViewController.h>
 
 @protocol RUIColorPickerDelegate;
 @class RUIColorIndicatorView;
@@ -19,7 +19,7 @@
  * a color for the robot LEDs and can be used to save the selected color in the app
  * preferences and to change the robot LED color.
  */
-@interface RUIRGBColorPickerViewController : RUIModalLayerViewController {
+@interface RUIRGBColorPickerViewController : RUIModalViewController {
 
 	@private
 	UITextField* redTextField;
@@ -44,27 +44,27 @@
 }
 
 /*! A text field where the user can enter a value for the red color component. */
-@property (nonatomic, retain) IBOutlet UITextField* redTextField;
+@property (nonatomic, strong) IBOutlet UITextField* redTextField;
 /*! A slider that the user can use to quickly adjust the red color component. */
-@property (nonatomic, retain) IBOutlet UISlider*    redSlider;
+@property (nonatomic, strong) IBOutlet UISlider*    redSlider;
 /*! A text field where the user can enter a value for the green color component. */
-@property (nonatomic, retain) IBOutlet UITextField* greenTextField;
+@property (nonatomic, strong) IBOutlet UITextField* greenTextField;
 /*! A slider that the user can use to quickly adjust the green color component. */
-@property (nonatomic, retain) IBOutlet UISlider*    greenSlider;
+@property (nonatomic, strong) IBOutlet UISlider*    greenSlider;
 /*! A text field where the user can enter a value for the blue color component. */
-@property (nonatomic, retain) IBOutlet UITextField* blueTextField;
+@property (nonatomic, strong) IBOutlet UITextField* blueTextField;
 /*! A slider that the user can use to quickly adjust the blue color component. */
-@property (nonatomic, retain) IBOutlet UISlider*    blueSlider;
+@property (nonatomic, strong) IBOutlet UISlider*    blueSlider;
 
 /*! A view showing the original color that the picker started with. A user tap on this
  *  view will retore the initial color values. */
-@property (nonatomic, retain) IBOutlet RUIColorIndicatorView* oldColorIndicator;
+@property (nonatomic, strong) IBOutlet RUIColorIndicatorView* oldColorIndicator;
 /*! A view showing the currently selected color */
-@property (nonatomic, retain) IBOutlet RUIColorIndicatorView* curColorIndicator;
+@property (nonatomic, strong) IBOutlet RUIColorIndicatorView* curColorIndicator;
 
 /*! A delegate that optionally receives notification whenever the user changes the color
  *  or when the user is done picking a color. */
-@property (nonatomic, assign) id<RUIColorPickerDelegate> delegate;
+@property (nonatomic, weak) id<RUIColorPickerDelegate> delegate;
 
 /*! 
  * Sets the color in the color picker. This can be used to initialize the color picker

@@ -8,45 +8,31 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <RobotKit/RobotKit.h>
 
 @class RUICalibrateButtonGestureHandler;
 @protocol RUICalibrateButtonGestureHandlerProtocol;
 
-/*! Type that is used for setting the location of the circle respect to the button */
-typedef int RUICalibrationCircleLocation;
 // Don't change the values of the enum because RUICalibrateTouchOverlayView depends
 // on these values to be the ones they are
-enum {
+typedef NS_OPTIONS(uint8_t,  RUICalibrationCircleLocation) {
     /*! Draws the calibration circle to the left of the button */
-    RUICalibrationCircleLocationLeft   = 0,
+    RUICalibrationCircleLocationLeft   = (1 << 0),
     /*! Draws the calibration circle above the button */
-    RUICalibrationCircleLocationAbove  = 1,
+    RUICalibrationCircleLocationAbove  = (1 << 1),
     /*! Draws the calibration circle to the right of the button */
-    RUICalibrationCircleLocationRight  = 2,
+    RUICalibrationCircleLocationRight  = (1 << 2),
     /*! Draws the calibration circle below the button */
-    RUICalibrationCircleLocationBelow  = 3,
+    RUICalibrationCircleLocationBelow  = (1 << 3)
 };
 
 /*!
  *@brief Class to add a rotation gesture recognizer to a view and automatically display
  * the rotation rings on the furthest superview
  */
-@interface RUICalibrateButtonGestureHandler : NSObject {
-    id <RUICalibrateButtonGestureHandlerProtocol> delegate;
-    @private
-    UIView *view;
-    UIGestureRecognizer *recognizer;
-    CGPoint startPoint;
-    int calibrationRadius;
-    RUICalibrationCircleLocation calibrationCircleLocation;
-    
-    UIImage* backgroundImage;
-    UIImage* foregroundImage;
-    UIColor* backgroundColor;
-    UIColor* foregroundColor;
-    UIButton*  calibrateButton;
-    BOOL isCalibrating;
-}
+@interface RUICalibrateButtonGestureHandler : NSObject
+
+@property (nonatomic, weak) id<RKRobotBase> robot;
 
 /*!
  *  Size of the radius of the calibration circle in pixels
@@ -64,7 +50,7 @@ enum {
  */
 @property (nonatomic, assign) id <RUICalibrateButtonGestureHandlerProtocol> delegate;
 
-@property (nonatomic, retain) UIGestureRecognizer *recognizer;
+@property (nonatomic, strong) UIGestureRecognizer *recognizer;
 
 /*!
  *  @param _view - the background view that you want the gesture recognizer to be added to
@@ -121,16 +107,16 @@ enum {
  * @param sender - The RUICalibrateButtonGestureHandler asking for permission
  * @return If the calibration should be allowed, defaults to YES
  */
--(BOOL)calibrateGestureHandlerShouldAllowCalibration:(RUICalibrateButtonGestureHandler*)sender;
+-(BOOL)calibrateGestureHandlerShouldAllowCalibration:(id)sender;
 
 /*!
  * Called when a calibration gesture begins successfully
  */
--(void)calibrateGestureHandlerBegan:(RUICalibrateButtonGestureHandler*)sender;
+-(void)calibrateGestureHandlerBegan:(id)sender;
 
 /*!
  * Called when a calibration gesture ends successfully
  */
--(void)calibrateGestureHandlerEnded:(RUICalibrateButtonGestureHandler*)sender;
+-(void)calibrateGestureHandlerEnded:(id)sender;
 
 @end

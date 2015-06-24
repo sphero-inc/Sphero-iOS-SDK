@@ -6,10 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RobotUIKit/RUIModalLayerViewController.h>
+#import <RobotUIKit/RUIModalViewController.h>
 #import <RobotUIKit/RUICalibrationView.h>
+#import <RobotKit/RobotKit.h>
 
-@protocol RKRobotControlProtocol;
 
 /*!
  * @brief Modal view controller that allows the user to calibrate the Sphero
@@ -20,21 +20,17 @@
  * new heading is used to orient the Sphero's orientation relative to that of the
  * controllers.
  */
-@interface RUICalibrationViewController : 
-	RUIModalLayerViewController <RUICalibrationViewDelegate> {
+@interface RUICalibrationViewController : RUIModalViewController <RUICalibrationViewDelegate> {
 	@private
-        RUICalibrationView *calibrationView;
-        id<RKRobotControlProtocol> robotControl;
-		IBOutlet UILabel		*calibrationLabel;
-		IBOutlet UIButton		*rollButton;
-        IBOutlet UILabel        *rollLabel;
+      IBOutlet UILabel	 *calibrationLabel;
+      IBOutlet UIButton	 *rollButton;
+      IBOutlet UILabel   *rollLabel;
 }
 
-/*! The calibration view used to rotate the Sphero. */
-@property (nonatomic, retain) IBOutlet RUICalibrationView*  calibrationView;
+@property (nonatomic, strong) id<RKRobotBase> robot;
 
-/*! The robot control that is used to communicate with the robot. */
-@property (nonatomic, assign) id<RKRobotControlProtocol>    robotControl;
+/*! The calibration view used to rotate the Sphero. */
+@property (nonatomic, strong) IBOutlet RUICalibrationView*  calibrationView;
 
 /*! The action to be executed when the user has finished calibrating the robot. */
 - (IBAction)done;

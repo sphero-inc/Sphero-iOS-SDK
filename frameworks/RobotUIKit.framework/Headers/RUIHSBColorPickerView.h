@@ -27,7 +27,7 @@
 @property (nonatomic, copy) UIColor* value;
 
 /*! The receiver's delegate. */
-@property (nonatomic, assign) id<RUIHSBColorPickerDelegate> delegate;
+@property (nonatomic, weak) id<RUIHSBColorPickerDelegate> delegate;
 
 /*!
  * Set the color picker's current color using the values for hue,

@@ -1,0 +1,21 @@
+float speed = 0.25;
+int continueLightShow = true;
+
+void setBrightness(float x) {
+    redLed = x;
+    greenLed = x;
+    blueLed = x;
+}
+
+yield lightShow() {
+    float brightness = 0;
+    while(continueLightShow) {
+        brightness = brightness + speed;
+        if (brightness > 255) { brightness = 0; }
+        setBrightness(brightness);
+        yield;
+    }
+}
+
+yield lightShow();
+...

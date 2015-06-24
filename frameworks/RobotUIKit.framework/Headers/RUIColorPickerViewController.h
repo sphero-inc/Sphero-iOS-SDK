@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RobotUIKit/RUIModalLayerViewController.h>
+#import <RobotUIKit/RUIModalViewController.h>
 #import <RobotUIKit/RUIHSBColorPickerView.h>
 
 static NSString *RUIColorPickerViewControllerRGBPickerDisplayedNotification = @"RUIColorPickerViewControllerRGBPickerDisplayedNotification";
@@ -23,66 +23,52 @@ static NSString *RUIColorPickerViewControllerRGBPickerDisplayedNotification = @"
  * color for the robot LEDs and can be used to save the selected color in the app
  * preferences and to change the robot LED color.
  */
-@interface RUIColorPickerViewController : RUIModalLayerViewController <RUIHSBColorPickerDelegate> {
+@interface RUIColorPickerViewController : RUIModalViewController <RUIHSBColorPickerDelegate> {
 	
 	@private
 	NSBundle*               resourceBundle;
-
-	RUIHSBColorPickerView*  colorPickerView;
-	RUIColorIndicatorView*  newColorIndicatorView;
-	RUIColorIndicatorView*  oldColorIndicatorView;
-	UIImageView*			rgbBackgroundView;
-	UILabel*                redLabel;
-	UILabel*                greenLabel;
-	UILabel*                blueLabel;
-	
-	UIImageView*			colorIndicatorBG;
-	UIImageView*			rgbBG;
-	UILabel*				colorPickerLabel;
-	UIButton*				rollButton;
-    IBOutlet UILabel*       rollLabel;
-    UIButton*               backButton;
-    IBOutlet UILabel*       backLabel;
-											  
-	id						rgbPicker;
+   
+   IBOutlet UILabel*       rollLabel;
+   IBOutlet UILabel*       backLabel;
+   
+	id                      rgbPicker;
 	id                      rgbListener;
 	
 	CGFloat                 pickedRed;
 	CGFloat                 pickedGreen;
 	CGFloat                 pickedBlue;
 	
-	id<RUIColorPickerDelegate> delegate;
 	BOOL                       isChangeDelegate;
-    BOOL                       showBackButton;
-    BOOL                       showRollButton;
-    id                         backButtonTarget;
-    SEL                        backButtonAction;
+   BOOL                       showBackButton;
+   BOOL                       showRollButton;
+   id                         backButtonTarget;
+   SEL                        backButtonAction;
 }
 
 /*! The view holding the color wheel image that allows the user to see the full spectrum of colors. */
-@property (nonatomic, retain) IBOutlet RUIHSBColorPickerView*  colorPickerView;
+@property (nonatomic, strong) IBOutlet RUIHSBColorPickerView*  colorPickerView;
 /*! The view showing the currently selected color and brightness. */
-@property (nonatomic, retain) IBOutlet RUIColorIndicatorView*  newColorIndicatorView;
+@property (nonatomic, strong) IBOutlet RUIColorIndicatorView*  selectedColorIndicatorView;
 /*! The view showing the original color that the picker started with.  A user tap on this
  *  view will restore the initial color. */
-@property (nonatomic, retain) IBOutlet RUIColorIndicatorView*  oldColorIndicatorView;
+@property (nonatomic, strong) IBOutlet RUIColorIndicatorView*  oldColorIndicatorView;
 /*! An image background for the RGB labels.  When double-tapped, this will
     switch to the RGB slider color picker. */
-@property (nonatomic, retain) IBOutlet UIImageView*            rgbBackgroundView;
+@property (nonatomic, strong) IBOutlet UIImageView*            rgbBackgroundView;
 /*! A label showing the red value of the current color in the RGB color space. */
-@property (nonatomic, retain) IBOutlet UILabel*                redLabel;
+@property (nonatomic, strong) IBOutlet UILabel*                redLabel;
 /*! A label showing the green value of the current color in the RGB color space. */
-@property (nonatomic, retain) IBOutlet UILabel*                greenLabel;
+@property (nonatomic, strong) IBOutlet UILabel*                greenLabel;
 /*! A label showing the blue value of the current color in the RGB color space. */
-@property (nonatomic, retain) IBOutlet UILabel*                blueLabel;
+@property (nonatomic, strong) IBOutlet UILabel*                blueLabel;
 /*! Background image for where the RGB values are displayed. */
-@property (nonatomic, retain) IBOutlet UIImageView *colorIndicatorBG, *rgbBG;
+@property (nonatomic, strong) IBOutlet UIImageView *colorIndicatorBG, *rgbBG;
 /*! A label with the title for the view. */
-@property (nonatomic, retain) IBOutlet UILabel *colorPickerLabel;
+@property (nonatomic, strong) IBOutlet UILabel *colorPickerLabel;
 /*! A button that is on the top right to return to dismiss the dialog to main view. */
-@property (nonatomic, retain) IBOutlet UIButton *rollButton;
+@property (nonatomic, strong) IBOutlet UIButton *rollButton;
 /*! A button for going back in the view navigation. */
-@property (nonatomic, retain) IBOutlet UIButton *backButton;
+@property (nonatomic, strong) IBOutlet UIButton *backButton;
 
 /*! A delegate that optionally receives notification whenever the user changes the color
  *  or when the user is done picking a color. */

@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>DFCAF3D9-BD0F-46B6-891D-18AA67B200F7</string>
+	<string>5FF7254E-C1F5-4983-B8B1-AFF8A5FD0103</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MacroLoader</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9646B5A7-8154-4ADA-A3DE-53CA6A4A96E7</key>
-		<string>ssh://github.com/orbotix/Sphero-iOS-SDK.git</string>
+		<key>5BE677357093A5A5683A95D324CBCE1546CDC20A</key>
+		<string>github.com:orbotix/Sphero-iOS-SDK.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>samples/MacroLoader/MacroLoader.xcodeproj/project.xcworkspace</string>
+	<string>samples/MacroLoader/MacroLoader.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9646B5A7-8154-4ADA-A3DE-53CA6A4A96E7</key>
+		<key>5BE677357093A5A5683A95D324CBCE1546CDC20A</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/orbotix/Sphero-iOS-SDK.git</string>
+	<string>github.com:orbotix/Sphero-iOS-SDK.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9646B5A7-8154-4ADA-A3DE-53CA6A4A96E7</string>
+	<string>5BE677357093A5A5683A95D324CBCE1546CDC20A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9646B5A7-8154-4ADA-A3DE-53CA6A4A96E7</string>
+			<string>5BE677357093A5A5683A95D324CBCE1546CDC20A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Sphero-iOS-SDK</string>
 		</dict>

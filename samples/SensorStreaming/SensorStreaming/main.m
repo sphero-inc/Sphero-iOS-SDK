@@ -1,9 +1,5 @@
 //
-//  main.m
-//  SensorStreaming
-//
-//  Created by Brian Smith on 03/28/12.
-//  Copyright (c) 2011 Orbotix, Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Orbotix Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

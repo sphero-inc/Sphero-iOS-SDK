@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <RobotKit/RobotKit.h>
 
 @class RUICalibrateGestureHandler;
 @protocol RUICalibrateGestureHandlerProtocol;
@@ -16,18 +17,15 @@
  *@brief Class to add a rotation gesture recognizer to a view and automatically display
  * the rotation rings on the furthest superview
  */
-@interface RUICalibrateGestureHandler : NSObject {
-    id <RUICalibrateGestureHandlerProtocol> delegate;
-    @private
-    UIView *view, *targetView;
-    UIRotationGestureRecognizer *recognizer;
-    CGPoint lastTouch2;
-}
+@interface RUICalibrateGestureHandler : NSObject
 
+// todo - weak?
+@property (nonatomic, strong) id<RKRobotBase> robot;
 /*!
  *  Delegate that will be notified when calibration begins and ends so sounds can be played
  */
-@property (nonatomic, assign) id <RUICalibrateGestureHandlerProtocol> delegate;
+// todo - weak delegates
+@property (nonatomic, strong) id <RUICalibrateGestureHandlerProtocol> delegate;
 
 /*!
  *  @param view - the view that you want the gesture recognizer to be added to
@@ -63,16 +61,16 @@
  * @param sender - The RUIcalibrateGestureHandler asking for permission
  * @return If the calibration should be allowed, defaults to YES
  */
--(BOOL)calibrateGestureHandlerShouldAllowCalibration:(RUICalibrateGestureHandler*)sender;
+-(BOOL)calibrateGestureHandlerShouldAllowCalibration:(id)sender;
 
 /*!
  * Called when a calibration gesture begins successfully
  */
--(void)calibrateGestureHandlerBegan:(RUICalibrateGestureHandler*)sender;
+-(void)calibrateGestureHandlerBegan:(id)sender;
 
 /*!
  * Called when a calibration gesture ends successfully
  */
--(void)calibrateGestureHandlerEnded:(RUICalibrateGestureHandler*)sender;
+-(void)calibrateGestureHandlerEnded:(id)sender;
 
 @end

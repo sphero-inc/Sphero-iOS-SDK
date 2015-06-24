@@ -1,8 +1,5 @@
 //
-//  RUIHSBColorPickerView.h
-//  RobotUIKit
-//
-//  Copyright 2011 Orbotix Inc. All rights reserved.
+//  Copyright 2013 Orbotix Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -18,16 +15,15 @@
  * The user can tap the color wheel or brightness slider or can drag the
  * crosshairs and brightness slider around to change colors.
  */
-@interface RUIHSColorPickerView : UIView <UIGestureRecognizerDelegate> {
-	@private
-	RUIHSColorPickerData* data;
-}
+@interface RUIHSColorPickerView : UIView <UIGestureRecognizerDelegate>
+
+@property (strong, nonatomic) RUIHSColorPickerData* data;
 
 /*! The color currently selected in the color picker. */
 @property (nonatomic, copy) UIColor* value;
 
 /*! The receiver's delegate. */
-@property (nonatomic, assign) id<RUIHSColorPickerDelegate> delegate;
+@property (nonatomic, weak) id<RUIHSColorPickerDelegate> delegate;
 
 /*! Shows brightness slider, defaults to YES */
 @property BOOL showsBrightnessSlider;

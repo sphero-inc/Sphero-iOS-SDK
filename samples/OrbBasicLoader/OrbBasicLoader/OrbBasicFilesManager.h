@@ -1,9 +1,5 @@
 //
-//  OrbBasicFilesManager.h
-//  OrbBasicLoader
-//
-//  Created by Brian Smith on 10/2/12.
-//  Copyright (c) 2012 Orbotix Inc. All rights reserved.
+//  Copyright (c) 2011-2014 Orbotix Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

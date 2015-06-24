@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Locator' target in the 'Locator' project
+//  Copyright (c) 2012-2014 Orbotix Inc. All rights reserved.
 //
 
 #import <Availability.h>

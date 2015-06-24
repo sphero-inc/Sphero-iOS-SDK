@@ -1,147 +1,111 @@
 //
-//  ViewController.m
-//  Locator
-//
-//  Created by Michael DePhillips on 7/12/12.
-//  Copyright (c) 2012 Orbotix Inc. All rights reserved.
+//  Copyright (c) 2012-2014 Orbotix Inc. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "RobotKit/RobotKit.h"
-#import "RobotUIKit/RobotUIKit.h"
+#import <RobotKit/RobotKit.h>
+#import <RobotUIKit/RobotUIKit.h>
+
+@interface ViewController()
+
+@property (strong, nonatomic) IBOutlet UITextField *textFieldNewX;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldNewY;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldNewYaw;
+
+@property (strong, nonatomic) IBOutlet UISwitch *flagSwitch;
+
+@property (strong, nonatomic) IBOutlet UILabel *xValueLabel;
+@property (strong, nonatomic) IBOutlet UILabel *yValueLabel;
+@property (strong, nonatomic) IBOutlet UILabel *xVelocityValueLabel;
+@property (strong, nonatomic) IBOutlet UILabel *yVelocityValueLabel;
+
+@property (nonatomic) BOOL ledON;
+@property (strong, nonatomic) RUICalibrateGestureHandler *calibrateHandler;
+@property (strong, nonatomic) RKConvenienceRobot *robot;
+
+@end
+
+#define VELOCITY 0.4
 
 @implementation ViewController
 
-@synthesize textFieldNewX;
-@synthesize textFieldNewY;
-@synthesize textFieldNewYaw;
-@synthesize flagSwitch;
-@synthesize xValueLabel;
-@synthesize yValueLabel;
-@synthesize xVelocityValueLabel;
-@synthesize yVelocityValueLabel;
 
--(void)dealloc {
-    [textFieldNewX release];
-    [textFieldNewY release];
-    [textFieldNewYaw release];
-    [flagSwitch release];
-    [xValueLabel release];
-    [yValueLabel release];
-    [xVelocityValueLabel release];
-    [yVelocityValueLabel release];
-    [super dealloc];
-}
-
--(void)viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    /*Register for application lifecycle notifications so we known when to connect and disconnect from the robot*/
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
+    self.calibrateHandler = [[RUICalibrateGestureHandler alloc] initWithView:self.view];
 
-    /*Only start the blinking loop when the view loads*/
-    robotOnline = NO;
-
-    calibrateHandler = [[RUICalibrateGestureHandler alloc] initWithView:self.view];
+	[[RKRobotDiscoveryAgent sharedAgent] addNotificationObserver:self selector:@selector(handleRobotStateChangeNotification:)];
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(appWillResignActive:)
+												 name:UIApplicationWillResignActiveNotification
+											   object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    self.textFieldNewX = nil;
-    self.textFieldNewY = nil;
-    self.textFieldNewYaw = nil;
-    self.flagSwitch = nil;
-    self.xValueLabel = nil;
-    self.yValueLabel = nil;
-    self.xVelocityValueLabel = nil;
-    self.yVelocityValueLabel = nil;
+- (void)appDidBecomeActive:(BOOL)animated {
+    [RKRobotDiscoveryAgent startDiscovery];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
+- (void)appWillResignActive:(NSNotification*)n {
+    [RKRobotDiscoveryAgent stopDiscovery];
+    [RKRobotDiscoveryAgent disconnectAll];
+}
+
+- (void)handleRobotStateChangeNotification:(RKRobotChangedStateNotification*)n {
+    switch(n.type) {
+        case RKRobotConnecting:
+            [self handleConnecting];
+            break;
+        case RKRobotOnline: {
+            // Do not allow the robot to connect if the application is not running
+            RKConvenienceRobot *convenience = [RKConvenienceRobot convenienceWithRobot:n.robot];
+            if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive) {
+                [convenience disconnect];
+                return;
+            }
+            self.robot = convenience;
+            [self handleConnected];
+            break;
+        }
+        case RKRobotDisconnected:
+            [self handleDisconnected];
+            self.robot = nil;
+            [RKRobotDiscoveryAgent startDiscovery];
+            break;
+        default:
+            break;
     }
 }
 
--(void)appWillResignActive:(NSNotification*)notification {
-    /*When the application is entering the background we need to close the connection to the robot*/
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:RKDeviceConnectionOnlineNotification object:nil];
-    
-    // Turn off data streaming
-    [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:0
-                                                   packetFrames:0
-                                                     sensorMask:RKDataStreamingMaskOff 
-                                                    packetCount:0];
-    // Unregister for async data packets
-    [[RKDeviceMessenger sharedMessenger] removeDataStreamingObserver:self];
-    
-    // Stop rolling if it is
-    [RKRollCommand sendStop];
-    
-    // Close the connection
-    [[RKRobotProvider sharedRobotProvider] closeRobotConnection];
-    
-    robotOnline = NO;
+- (void)handleConnecting {
+    // Handle robot connecting here
 }
 
--(void)appDidBecomeActive:(NSNotification*)notification {
-    /*When the application becomes active after entering the background we try to connect to the robot*/
-    [self setupRobotConnection];
+- (void)handleConnected {
+    [_robot addResponseObserver:self];
+    [self startLocatorStreaming];
+    [self.calibrateHandler setRobot:self.robot.robot];
 }
 
-- (void)handleRobotOnline {
-    /*The robot is now online, we can begin sending commands*/
-    if(!robotOnline) {
-        // Register for asynchronise data streaming packets
-        [[RKDeviceMessenger sharedMessenger] addDataStreamingObserver:self selector:@selector(handleAsyncData:)];
-        /* Start locator streaming */
-        [self startLocatorStreaming];
-    }
-    robotOnline = YES;
+- (void)handleDisconnected {
+    [_robot removeResponseObserver:self];
+    [_calibrateHandler setRobot:nil];
 }
 
--(void)startLocatorStreaming {
-    
-    // Note: If your ball has Firmware < 1.20 then these Quaternions
-    //       will simply show up as zeros.
-    
-    // Sphero samples this data at 400 Hz.  The divisor sets the sample
-    // rate you want it to store frames of data.  In this case 400Hz/40 = 10Hz
-    uint16_t divisor = 20;
-    
-    // Packet frames is the number of frames Sphero will store before it sends
-    // an async data packet to the iOS device
-    uint16_t packetFrames = 1;
-    
-    // Count is the number of async data packets Sphero will send you before
-    // it stops.  A count of 0, implements infinite data streaming at an SDK level.
-    uint8_t count = 0;
-    
+- (void)startLocatorStreaming {
     // Register for Locator X,Y position, and X,Y velocity
     RKDataStreamingMask sensorMask = RKDataStreamingMaskLocatorAll;
-     
-    //// Start data streaming for the locator data. The update rate is set to 20Hz with
-    //// one sample per update, so the sample rate is 10Hz. Packets are sent continuosly.
-    [RKSetDataStreamingCommand sendCommandWithSampleRateDivisor:divisor 
-                                                   packetFrames:packetFrames
-                                                     sensorMask:sensorMask 
-                                                    packetCount:count];
+	[self.robot sendCommand:[RKSetDataStreamingCommand commandWithRate:10 andMask:sensorMask]];
 }
 
-- (void)handleAsyncData:(RKDeviceAsyncData *)asyncData
-{
-    // Need to check which type of async data is received as this method will be called for 
-    // data streaming packets and sleep notification packets. We are going to ingnore the sleep
-    // notifications.
-    if ([asyncData isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
+- (void)handleAsyncMessage:(RKAsyncMessage *)message forRobot:(id<RKRobotBase>)robot {
+    if ([message isKindOfClass:[RKDeviceSensorsAsyncData class]]) {
         
         // Grab specific sensor data objects from the main sensor object
-        RKDeviceSensorsAsyncData *sensorsAsyncData = (RKDeviceSensorsAsyncData *)asyncData;
+        RKDeviceSensorsAsyncData *sensorsAsyncData = (RKDeviceSensorsAsyncData *)message;
         RKDeviceSensorsData *sensorsData = [sensorsAsyncData.dataFrames lastObject];
         RKLocatorData *locatorData = sensorsData.locatorData;
         
@@ -153,70 +117,62 @@
     }
 }
 
--(void)setupRobotConnection {
-    /*Try to connect to the robot*/
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleRobotOnline) name:RKDeviceConnectionOnlineNotification object:nil];
-
-    [[RKRobotProvider sharedRobotProvider] openRobotConnection];        
-
-}
-
--(IBAction)configurePressed:(id)sender {
+- (IBAction)configurePressed:(id)sender {
     
-    NSString *feildText = nil;
+    NSString *fieldText = nil;
     int16_t newX = 0;
     int16_t newY = 0;
     int16_t newYaw = 0;
     
     // Get the values of the text fields
-    feildText = self.textFieldNewX.text;
-    if ([feildText length] > 0) {
-        newX = [feildText integerValue];
+    fieldText = self.textFieldNewX.text;
+    if ([fieldText length] > 0) {
+        newX = [fieldText integerValue];
     }
-    feildText = self.textFieldNewY.text;
-    if ([feildText length] > 0) {
-        newY = [feildText integerValue];
+    fieldText = self.textFieldNewY.text;
+    if ([fieldText length] > 0) {
+        newY = [fieldText integerValue];
     }
-    feildText = self.textFieldNewYaw.text;
-    if ([feildText length] > 0) {
-        newYaw = [feildText integerValue];
+    fieldText = self.textFieldNewYaw.text;
+    if ([fieldText length] > 0) {
+        newYaw = [fieldText integerValue];
     }
-    
+
+	
     // Convert the value of the toggle switch to the configure locator flag
-    RKConfigureLocatorFlag flag = (flagSwitch.isOn ? RKConfigureLocatorRotateWithCalibrateFlagOn : RKConfigureLocatorRotateWithCalibrateFlagOff );
+    RKConfigureLocatorFlag flag = (_flagSwitch.isOn ? RKConfigureLocatorRotateWithCalibrateFlagOn : RKConfigureLocatorRotateWithCalibrateFlagOff );
     
     // Send command to configure locactor
     // After sending the command, you should see the x and y values of the labels
     // change to the ones you specified in the text fields
-    [RKConfigureLocatorCommand sendCommandForFlag:flag newX:newX newY:newY newYaw:newYaw];
+	[self.robot sendCommand:[[RKConfigureLocatorCommand alloc] initForFlag:flag newX:newX newY:newY newYaw:newYaw]];
 }
 
--(IBAction)upPressed:(id)sender {
-    [RKRollCommand sendCommandWithHeading:0 velocity:0.6];
+- (IBAction)upPressed:(id)sender {
+	[self.robot sendCommand:[RKRollCommand commandWithHeading:0 andVelocity:VELOCITY]];
 }
 
--(IBAction)downPressed:(id)sender {
-    [RKRollCommand sendCommandWithHeading:180 velocity:0.6];
+- (IBAction)downPressed:(id)sender {
+	[self.robot sendCommand:[RKRollCommand commandWithHeading:180 andVelocity:VELOCITY]];
 }
 
--(IBAction)leftPressed:(id)sender {
-    [RKRollCommand sendCommandWithHeading:270 velocity:0.6];
+- (IBAction)leftPressed:(id)sender {
+	[self.robot sendCommand:[RKRollCommand commandWithHeading:270 andVelocity:VELOCITY]];
 }
 
--(IBAction)rightPressed:(id)sender {
-    [RKRollCommand sendCommandWithHeading:90 velocity:0.6];
+- (IBAction)rightPressed:(id)sender {
+	[self.robot sendCommand:[RKRollCommand commandWithHeading:90 andVelocity:VELOCITY]];
 }
 
--(IBAction)stopPressed:(id)sender {
-    [RKRollCommand sendStop];
+- (IBAction)stopPressed:(id)sender {
+    [self.robot stop];
 }
 
 // Dismiss keyboard when view is tapped
--(IBAction)dismissKeyboard:(id)sender {
-    
-    [textFieldNewX resignFirstResponder];
-    [textFieldNewY resignFirstResponder];
-    [textFieldNewYaw resignFirstResponder];
+- (IBAction)dismissKeyboard:(id)sender {
+    [_textFieldNewX resignFirstResponder];
+    [_textFieldNewY resignFirstResponder];
+    [_textFieldNewYaw resignFirstResponder];
 }
 
 @end
