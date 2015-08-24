@@ -130,8 +130,6 @@ enum OvmOpCodes {
 	kNumOpCodes
 };
 
-#ifndef  OVM_ERROR_CODES
-#define OVM_ERROR_CODES
 // All of the error codes that can be used by the OVM
 enum OvmErrorCodes {
     ERR_NONE = 0,                   // No error
@@ -170,8 +168,6 @@ enum OvmErrorCodes {
     ERR_CALL_UNBOUND_PROC_ID,        // Call a procedure with an ID not bound to any procedure
 		ERR_SET_LIBRARY_FROM_LIBRARY,		//	Call set library function while the VM is executing library code
 };
-
-#endif
 
 typedef unsigned char byte;
 

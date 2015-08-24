@@ -60,4 +60,18 @@ typedef void (^RKDeviceResponseBlock)(RKDeviceResponse* response);
 -(void) handleResponseString:(NSString*) stringResponse forRobot:(id<RKRobotBase>) robot;
 -(void) handleAsyncMessage:(RKAsyncMessage*) message forRobot:(id<RKRobotBase>) robot;
 
+
+//#pragma mark - responses
+//-(void) handleReadOdometerResponse:(RKGetOdometerResponse*) response forRobot:(id<RKRobotBase>) robot;
+//
+//
+//#pragma mark - unsolicted robot messages
+//
+//-(void) handleSleepWillOccurAsyncMessage:(RKSleepWillOccurMessage*) msg forRobot:(id<RKRobotBase>) robot;
+//-(void) handleSleepDidOccurAsyncMessage:(RKSleepDidOccurMessage*) msg forRobot:(id<RKRobotBase>) robot;
+//-(void) handleCollisionDetectedAsyncMessage:(RKCollisionDetectedAsyncData*) msg forRobot:(id<RKRobotBase>) robot;
+//-(void) handleSensorsAsyncData:(RKDeviceSensorsAsyncData*) msg forRobot:(id<RKRobotBase>) robot;
+//[self registerClass:[RKSelfLevelCompleteAsyncData class]];
+//[self registerClass:[RKPowerNotificationAsyncData class]];
+
 @end

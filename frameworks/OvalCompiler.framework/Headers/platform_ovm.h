@@ -4,12 +4,12 @@
 #        define OVM_STREAMING_CODE_SIZE                    ((255*9)/4)        //    Assume best decompression ratio = 9
 #   define OVM_DECOMPRESSION_BUFFER_SIZE    20
 // Total size for the OVM stack
-#   define OVM_STACK_SIZE                   196
+#   define OVM_STACK_SIZE                   384
 // Total size for the associative array used
 // for jump operations
-#   define OVM_JUMP_TABLE_SIZE              128
-#   define OVM_MEM_MAP_TABLE_SIZE           65
-#   define OVM_PLATFORM_OP_TABLE_SIZE       14
+#   define OVM_JUMP_TABLE_SIZE              192
+#   define OVM_MEM_MAP_TABLE_SIZE           66
+#   define OVM_PLATFORM_OP_TABLE_SIZE       15
 //  The call stack has a max depth for now
 #   define OVM_CALL_STACK_SIZE              32
 //    Build robot-specific functionality into the VM.

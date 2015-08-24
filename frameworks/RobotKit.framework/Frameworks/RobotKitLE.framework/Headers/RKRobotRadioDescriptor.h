@@ -19,6 +19,7 @@
 
 +(id) ollieDescriptor;
 +(id) bb8Descriptor;
++(id) weBallDescriptor;
 
 -(id) initPrototypeDescriptor;
 

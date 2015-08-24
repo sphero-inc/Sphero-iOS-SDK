@@ -20,7 +20,7 @@
 @property (strong, readonly) NSArray* requiredUUIDS;
 
 /*! */
-@property (strong) NSString* namePrefix;
+@property (strong) NSArray* namePrefixes;
 
 // SpheroCo Radio service and characteristics
 @property (strong) CBUUID* uuidRadioService;
@@ -30,5 +30,7 @@
 @property (strong) CBUUID* uuidAntiDOSTimeoutCharacteristic;
 @property (strong) CBUUID* uuidWakeCharacteristic;
 @property (strong) CBUUID* uuidRSSICharacteristic;
+
+- (BOOL)nameMatchesPrefixes:(NSString *)name;
 
 @end

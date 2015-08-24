@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKAppUtils.h</key>
 		<data>
-		TfheltC52aSM8h8Bzkvfyp7c/K0=
+		KLyHHuVcqZw4Dr+sGjbN69t+KTg=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKAsyncFactory.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKCommandList.h</key>
 		<data>
-		T7cqZBFrEGDp4VPtFBtmPGKnSNM=
+		c9T1obhsVBkrugetfQ4bn2KHxyQ=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKConfigureCollisionDetectionCommand.h</key>
 		<data>
@@ -155,6 +155,10 @@
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKFlashWritingCommandDetector.h</key>
 		<data>
 		VGIhFq8sPY2vludSB7gJjMpZdNU=
+		</data>
+		<key>Frameworks/RobotCommandKit.framework/Headers/RKForceChargeCommand.h</key>
+		<data>
+		m7n6NZSAWrsQ9tga/OLtmA0tRZk=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKGetAutoReconnectCommand.h</key>
 		<data>
@@ -350,7 +354,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKReadOdometerResponse.h</key>
 		<data>
-		wFvUDq1L+B6+7eIK9pQ70pfvAkw=
+		P+6YOTtGuKTzkILQqX0zEmMuaTs=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKResponseCodes.h</key>
 		<data>
@@ -366,7 +370,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKRobotBase.h</key>
 		<data>
-		CW5U2aOyH5LnakXsb8ynsAIwiMI=
+		pBMYWgVZHRdxAr5cMQ9hBqNM0qM=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKRobotNotification.h</key>
 		<data>
@@ -430,7 +434,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKSetDataStreamingCommand.h</key>
 		<data>
-		FkZxYrtZ2KTyBpqqfxd7o7Rqg4A=
+		yA9bv6Vn5VFaHImqFxSpD20DCzc=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKSetDataStreamingResponse.h</key>
 		<data>
@@ -522,11 +526,11 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStat.h</key>
 		<data>
-		OnTl3U+HQoMzMzZXlSL2yuMGqUA=
+		4RnRVMFTDvKZXP3sqvOwTwhMNO0=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStatEventListener.h</key>
 		<data>
-		eRwkCO83xdud6VBiXXrtjWAo+fk=
+		RYKNVUcQx9BPnRXldQYA4kka2Wg=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStatForPacketFactory.h</key>
 		<data>
@@ -543,6 +547,14 @@
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStats.h</key>
 		<data>
 		O7uvHsTXT0pKScOJW5O/ioKIACA=
+		</data>
+		<key>Frameworks/RobotCommandKit.framework/Headers/RKTemperatureCommand.h</key>
+		<data>
+		mi8TlXtgOCQW0G4GVjyn+XTB0Pg=
+		</data>
+		<key>Frameworks/RobotCommandKit.framework/Headers/RKTemperatureResponse.h</key>
+		<data>
+		FCNXsiaA2KaiQReyI/wMKFcmEmg=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKTypes.h</key>
 		<data>
@@ -574,19 +586,19 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RobotCommandKit.h</key>
 		<data>
-		hlGPU8RhEKWfa6NHZPJFxj43Xco=
+		HfTGZ8Vo0YyxuWQisqH96vOH7us=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Info.plist</key>
 		<data>
-		riyyhE6jx7w1y/ScMQqhCUN0h+Y=
+		3YUMtjxovkfvsh/34M7mF44pqco=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/RobotCommandKit</key>
 		<data>
-		ar7ldc9J7SCGnj694hZ16lKWHko=
+		AnqeXbPJsFNjiVtMzaoEMBPvctw=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		/pYINP4Bgd9NOoeUHiGQcOX5Q2A=
+		wv5ZG3B80oRjJE6Xs9tCdsqwdDI=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -594,11 +606,11 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		K0WKMvVALOmGrTbTNBU8djTxoXU=
+		/VvRsq1/lKH6yS/B6ENFoTCZ/ME=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		MmLP3CIVhPxGCrnBuXYWXeNo18E=
+		V032dbfJojV8NS8uJn2005T450k=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Headers/RKAccelerometerFilter.h</key>
 		<data>
@@ -658,7 +670,7 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Info.plist</key>
 		<data>
-		RsAs7KXLDBJX3Qh0BlFMt4UCUM4=
+		dxjqYkXZY3qEv9Z2Pu6LSAQAndk=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/PrivateHeaders/RKTighterControlAddon.h</key>
 		<data>
@@ -666,11 +678,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/RobotKitClassic</key>
 		<data>
-		rPGcGLBzrRYuLpVnR+4TQRKMeFw=
+		0bPAMJkyDlSZsU+V+MaRyRi8FNg=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		beBuQ9aqbEe6V62sYIjrJVBsiAU=
+		dj03MkDDw0tRssr0TTati9ehS+E=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -678,11 +690,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeResources</key>
 		<data>
-		KzJLTv1MptQkBI39t8zGgQWZZ6o=
+		x8g9GrTlKoy8pEJQKnNdHI2WUxQ=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		OQ075yGS6T9lQ78R1ZwlScpjqZU=
+		u/2VCqaDs0WNNaYgJbCnkRLgld8=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/CBUUID+Extension.h</key>
 		<data>
@@ -734,7 +746,7 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKLeProximityConnectStrategy.h</key>
 		<data>
-		gTPGy0FjPI18wa5pCyaoifvT1m4=
+		JQbfqiZjcZCIMr9ffiL47mE+rEY=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKLeRobotLink.h</key>
 		<data>
@@ -750,7 +762,7 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKRadioDescriptor.h</key>
 		<data>
-		mnmTX3lD9LLj/GLWqn5gySLRH1k=
+		7TeWeaMdmy91rT6br0nx1u0WbC0=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKRadioServiceWrapper.h</key>
 		<data>
@@ -766,7 +778,7 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKRobotRadioDescriptor.h</key>
 		<data>
-		morn+4tgmzzZuD6fkYnWeFlxjiI=
+		7hXPSFaWzvpvvllXIEqsgzbvl9k=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RobotKitLE.h</key>
 		<data>
@@ -774,15 +786,15 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Info.plist</key>
 		<data>
-		LOunAsnxrhRqnOOXBIjHxOlAklU=
+		Jo9FT4TbZKCdfyhX5TQvyI2oT8U=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/RobotKitLE</key>
 		<data>
-		mUhACnn5xON7OWtigFCkPPaZC94=
+		9V5SkXakfV4n3weXWe/K4z0pRq4=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		EFpEiTim4Su8MrkWgwfpGu3q8zI=
+		ez8pKpbu1oSVOa1vpk3+1ykcKaA=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -790,11 +802,11 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeResources</key>
 		<data>
-		26xj9c45D6MkHHnM92UJ5h1MJ3Y=
+		Btnw53VEPScb0JN3ouyE9ydFarY=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		XW8xq+hzlG1GQXyRXAX0IGWevZA=
+		25MjupWd+3YPG/ChcEkAgZmpSTo=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKAbortMacroCommand.h</key>
 		<data>
@@ -1022,11 +1034,11 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKOvalDeviceBroadcast.h</key>
 		<data>
-		s5yazAL90M+xDteBYISDVs431pY=
+		U5ODBe1feBByHsRvvXX8QiyiCIw=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKOvalErrorBroadcast.h</key>
 		<data>
-		G7wQx8jW1GeL9qeJjT0pmtFaN5Q=
+		Ln6WSDUV72QXQyYr8xs7WNNGfEY=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKResetOvmCommand.h</key>
 		<data>
@@ -1074,15 +1086,15 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Info.plist</key>
 		<data>
-		WhSI/xHOMMJzbamCuBvfx9khGX4=
+		FXBbK7nt0p4/pLbEm0qOR6Pk7bc=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/RobotLanguageKit</key>
 		<data>
-		09FNZQ1NlyiaUCAc2LDUSZdjIUA=
+		Y5hRK3Mm/P6rBS5HGXpY26TgF+4=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		k30ritdUvQ3mcw6tm+rjPQTC5eM=
+		CTUmp+YUVUQ3anoORrlwgXl052g=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1090,15 +1102,15 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		pIWlFQ6lVsIbgebSWTpxrse1ltE=
+		SGq3S/ZUJUgtc86beh3d8TZAGUg=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		bewIIuWjRvYdIKmis/grExp16aA=
+		svSqvd6kh0OdimTWY9Hl//PpQyQ=
 		</data>
 		<key>Headers/RKConvenienceRobot.h</key>
 		<data>
-		hjTtwnitj0Ak95qvDTMr1cOT0oc=
+		qIPylX8JLV7z3bvAPMIdwgoksw4=
 		</data>
 		<key>Headers/RKDriveable.h</key>
 		<data>
@@ -1126,7 +1138,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SiGffUhYAnJYBipdWUO4IUHCfVw=
+		Nu7rRMC12GW156F5a0TF8t+EWWQ=
 		</data>
 		<key>PrivateHeaders/RobotKitPrivate.h</key>
 		<data>
@@ -1161,7 +1173,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKAppUtils.h</key>
 		<data>
-		TfheltC52aSM8h8Bzkvfyp7c/K0=
+		KLyHHuVcqZw4Dr+sGjbN69t+KTg=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKAsyncFactory.h</key>
 		<data>
@@ -1217,7 +1229,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKCommandList.h</key>
 		<data>
-		T7cqZBFrEGDp4VPtFBtmPGKnSNM=
+		c9T1obhsVBkrugetfQ4bn2KHxyQ=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKConfigureCollisionDetectionCommand.h</key>
 		<data>
@@ -1286,6 +1298,10 @@
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKFlashWritingCommandDetector.h</key>
 		<data>
 		VGIhFq8sPY2vludSB7gJjMpZdNU=
+		</data>
+		<key>Frameworks/RobotCommandKit.framework/Headers/RKForceChargeCommand.h</key>
+		<data>
+		m7n6NZSAWrsQ9tga/OLtmA0tRZk=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKGetAutoReconnectCommand.h</key>
 		<data>
@@ -1481,7 +1497,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKReadOdometerResponse.h</key>
 		<data>
-		wFvUDq1L+B6+7eIK9pQ70pfvAkw=
+		P+6YOTtGuKTzkILQqX0zEmMuaTs=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKResponseCodes.h</key>
 		<data>
@@ -1497,7 +1513,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKRobotBase.h</key>
 		<data>
-		CW5U2aOyH5LnakXsb8ynsAIwiMI=
+		pBMYWgVZHRdxAr5cMQ9hBqNM0qM=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKRobotNotification.h</key>
 		<data>
@@ -1561,7 +1577,7 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKSetDataStreamingCommand.h</key>
 		<data>
-		FkZxYrtZ2KTyBpqqfxd7o7Rqg4A=
+		yA9bv6Vn5VFaHImqFxSpD20DCzc=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKSetDataStreamingResponse.h</key>
 		<data>
@@ -1653,11 +1669,11 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStat.h</key>
 		<data>
-		OnTl3U+HQoMzMzZXlSL2yuMGqUA=
+		4RnRVMFTDvKZXP3sqvOwTwhMNO0=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStatEventListener.h</key>
 		<data>
-		eRwkCO83xdud6VBiXXrtjWAo+fk=
+		RYKNVUcQx9BPnRXldQYA4kka2Wg=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStatForPacketFactory.h</key>
 		<data>
@@ -1674,6 +1690,14 @@
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKStats.h</key>
 		<data>
 		O7uvHsTXT0pKScOJW5O/ioKIACA=
+		</data>
+		<key>Frameworks/RobotCommandKit.framework/Headers/RKTemperatureCommand.h</key>
+		<data>
+		mi8TlXtgOCQW0G4GVjyn+XTB0Pg=
+		</data>
+		<key>Frameworks/RobotCommandKit.framework/Headers/RKTemperatureResponse.h</key>
+		<data>
+		FCNXsiaA2KaiQReyI/wMKFcmEmg=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RKTypes.h</key>
 		<data>
@@ -1705,19 +1729,19 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Headers/RobotCommandKit.h</key>
 		<data>
-		hlGPU8RhEKWfa6NHZPJFxj43Xco=
+		HfTGZ8Vo0YyxuWQisqH96vOH7us=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Info.plist</key>
 		<data>
-		riyyhE6jx7w1y/ScMQqhCUN0h+Y=
+		3YUMtjxovkfvsh/34M7mF44pqco=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/RobotCommandKit</key>
 		<data>
-		ar7ldc9J7SCGnj694hZ16lKWHko=
+		AnqeXbPJsFNjiVtMzaoEMBPvctw=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		/pYINP4Bgd9NOoeUHiGQcOX5Q2A=
+		wv5ZG3B80oRjJE6Xs9tCdsqwdDI=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1725,11 +1749,11 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		K0WKMvVALOmGrTbTNBU8djTxoXU=
+		/VvRsq1/lKH6yS/B6ENFoTCZ/ME=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		MmLP3CIVhPxGCrnBuXYWXeNo18E=
+		V032dbfJojV8NS8uJn2005T450k=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Headers/RKAccelerometerFilter.h</key>
 		<data>
@@ -1789,7 +1813,7 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Info.plist</key>
 		<data>
-		RsAs7KXLDBJX3Qh0BlFMt4UCUM4=
+		dxjqYkXZY3qEv9Z2Pu6LSAQAndk=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/PrivateHeaders/RKTighterControlAddon.h</key>
 		<data>
@@ -1797,11 +1821,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/RobotKitClassic</key>
 		<data>
-		rPGcGLBzrRYuLpVnR+4TQRKMeFw=
+		0bPAMJkyDlSZsU+V+MaRyRi8FNg=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		beBuQ9aqbEe6V62sYIjrJVBsiAU=
+		dj03MkDDw0tRssr0TTati9ehS+E=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1809,11 +1833,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeResources</key>
 		<data>
-		KzJLTv1MptQkBI39t8zGgQWZZ6o=
+		x8g9GrTlKoy8pEJQKnNdHI2WUxQ=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		OQ075yGS6T9lQ78R1ZwlScpjqZU=
+		u/2VCqaDs0WNNaYgJbCnkRLgld8=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/CBUUID+Extension.h</key>
 		<data>
@@ -1865,7 +1889,7 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKLeProximityConnectStrategy.h</key>
 		<data>
-		gTPGy0FjPI18wa5pCyaoifvT1m4=
+		JQbfqiZjcZCIMr9ffiL47mE+rEY=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKLeRobotLink.h</key>
 		<data>
@@ -1881,7 +1905,7 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKRadioDescriptor.h</key>
 		<data>
-		mnmTX3lD9LLj/GLWqn5gySLRH1k=
+		7TeWeaMdmy91rT6br0nx1u0WbC0=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKRadioServiceWrapper.h</key>
 		<data>
@@ -1897,7 +1921,7 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RKRobotRadioDescriptor.h</key>
 		<data>
-		morn+4tgmzzZuD6fkYnWeFlxjiI=
+		7hXPSFaWzvpvvllXIEqsgzbvl9k=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/RobotKitLE.h</key>
 		<data>
@@ -1905,15 +1929,15 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Info.plist</key>
 		<data>
-		LOunAsnxrhRqnOOXBIjHxOlAklU=
+		Jo9FT4TbZKCdfyhX5TQvyI2oT8U=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/RobotKitLE</key>
 		<data>
-		mUhACnn5xON7OWtigFCkPPaZC94=
+		9V5SkXakfV4n3weXWe/K4z0pRq4=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		EFpEiTim4Su8MrkWgwfpGu3q8zI=
+		ez8pKpbu1oSVOa1vpk3+1ykcKaA=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1921,11 +1945,11 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeResources</key>
 		<data>
-		26xj9c45D6MkHHnM92UJ5h1MJ3Y=
+		Btnw53VEPScb0JN3ouyE9ydFarY=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		XW8xq+hzlG1GQXyRXAX0IGWevZA=
+		25MjupWd+3YPG/ChcEkAgZmpSTo=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKAbortMacroCommand.h</key>
 		<data>
@@ -2153,11 +2177,11 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKOvalDeviceBroadcast.h</key>
 		<data>
-		s5yazAL90M+xDteBYISDVs431pY=
+		U5ODBe1feBByHsRvvXX8QiyiCIw=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKOvalErrorBroadcast.h</key>
 		<data>
-		G7wQx8jW1GeL9qeJjT0pmtFaN5Q=
+		Ln6WSDUV72QXQyYr8xs7WNNGfEY=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKResetOvmCommand.h</key>
 		<data>
@@ -2205,15 +2229,15 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Info.plist</key>
 		<data>
-		WhSI/xHOMMJzbamCuBvfx9khGX4=
+		FXBbK7nt0p4/pLbEm0qOR6Pk7bc=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/RobotLanguageKit</key>
 		<data>
-		09FNZQ1NlyiaUCAc2LDUSZdjIUA=
+		Y5hRK3Mm/P6rBS5HGXpY26TgF+4=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		k30ritdUvQ3mcw6tm+rjPQTC5eM=
+		CTUmp+YUVUQ3anoORrlwgXl052g=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -2221,15 +2245,15 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		pIWlFQ6lVsIbgebSWTpxrse1ltE=
+		SGq3S/ZUJUgtc86beh3d8TZAGUg=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		bewIIuWjRvYdIKmis/grExp16aA=
+		svSqvd6kh0OdimTWY9Hl//PpQyQ=
 		</data>
 		<key>Headers/RKConvenienceRobot.h</key>
 		<data>
-		hjTtwnitj0Ak95qvDTMr1cOT0oc=
+		qIPylX8JLV7z3bvAPMIdwgoksw4=
 		</data>
 		<key>Headers/RKDriveable.h</key>
 		<data>

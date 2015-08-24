@@ -55,7 +55,7 @@
  This command does not set motion timeout timer so control system will remain on until turned off or a command is received that sets the motion timeout timer.
  
  An error is returned if the sensor network is dead; without sensors the IMU won't operate and thus there is no feedback to control stabilization.*/
--(void) enableStablilization:(BOOL) on;
+-(void) enableStabilization:(BOOL) on;
 
 /*! */
 -(void) setZeroHeading; // calibrate

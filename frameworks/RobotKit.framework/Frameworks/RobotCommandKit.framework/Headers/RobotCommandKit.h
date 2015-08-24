@@ -71,6 +71,7 @@
 #import "RKSetPIDCommand.h"
 #import "RKGetSkuCommand.h"
 #import "FWLevel1DiagnosticCommand.h"
+#import "RKForceChargeCommand.h"
 
 #pragma mark - LEDS
 #import "RKGetUserRGBLEDColorCommand.h"
@@ -153,6 +154,9 @@
 
 #import "RKTypes.h"
 
+
+#import "RKTemperatureCommand.h"
+#import "RKTemperatureResponse.h"
 
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)

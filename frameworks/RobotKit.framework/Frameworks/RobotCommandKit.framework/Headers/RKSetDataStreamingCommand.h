@@ -88,6 +88,8 @@ typedef NS_OPTIONS(uint64_t, RKDataStreamingMask)  {
    /*! Mask to register for locator streaming of y velocity - ONLY FOR FIRMWARE 1.17 OR GREATER */
          RKDataStreamingMaskVelocityY = 0x0080000000000000,
 
+   /*! Convenience mask to register for all gyro filtered data (x, y, z) */
+         RKDataStreamingMaskGyroFilteredAll = 0x0000000000001C00,
    /*! Convenience mask to register for all IMU gyro angle filtered data (roll, pitch, yaw) */
          RKDataStreamingMaskIMUAnglesFilteredAll = 0x0000000000070000,
    /*! Convenience mask to register for all filtered accelerometer data (x-axis, y-axis, z-axis) */

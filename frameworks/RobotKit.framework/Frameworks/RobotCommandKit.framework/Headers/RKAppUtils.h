@@ -17,5 +17,6 @@
 @interface RKAppUtils : NSObject
 
 + (BOOL)isAppActive;
++ (BOOL)isAppForeground;
 
 @end

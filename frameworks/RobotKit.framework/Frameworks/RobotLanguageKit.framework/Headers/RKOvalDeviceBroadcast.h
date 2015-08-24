@@ -9,4 +9,6 @@
 @property (strong, nonatomic) NSArray* floats;
 @property (nonatomic, strong) NSArray *ints;
 
+- (NSString *)stringInterpretation;
+
 @end

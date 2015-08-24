@@ -4,15 +4,32 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(int, RKStatKey) {
-    RKStatKeyDistanceDriven = 0,
-    RKStatKeyRGBChange = 1,
-    RKStatKeyMacroRun = 2,
-    RKStatKeyCollision = 3,
-    RKStatKeyBluetoothConnectionEvent = 4,
-    RKStatKeyConnectTime = 5,
-    RKStatKeyOdometer = 6,
-    RKStatKeyRobotProfile = 7,
+typedef NS_ENUM(uint8_t, RKStatKey) {
+    RKStatKeyDistanceDriven,
+    RKStatKeyRGBChange,
+    RKStatKeyMacroRun,
+    RKStatKeyCollision,
+    RKStatKeyBluetoothConnectionEvent,
+    RKStatKeyConnectTime,
+    RKStatKeyOdometer,
+    RKStatKeyRobotProfile,
+};
+
+typedef NS_ENUM(uint8_t, RKStatDataKey) {
+    RKStatDataKeyId,
+    RKStatDataKeyTime,
+    RKStatDataKeyValue,
+    RKStatDataKeyCm,
+    RKStatDataKeyHex,
+    RKStatDataKeyName,
+    RKStatDataKeySerialNumber,
+    RKStatDataKeyModel,
+    RKStatDataKeyMainApp,
+    RKStatDataKeyBootloader,
+    RKStatDataKeyRadioFirmware,
+    RKStatDataKeySku,
+    RKStatDataKeyChassisId,
+    RKStatDataKeyFactoryConfigBlockCRC,
 };
 
 @interface RKStat : NSObject
@@ -23,7 +40,8 @@ typedef NS_ENUM(int, RKStatKey) {
 
 + (instancetype)statWithKey:(RKStatKey)key mac:(NSString *)mac;
 
-- (void)addDataToStatWithKey:(NSString *)key value:(NSString *)value;
+- (void)addDataToStatWithKey:(RKStatDataKey)key value:(NSString *)value;
+- (void)addDataToStatWithKey:(RKStatDataKey)key uintValue:(uint32_t)uintValue;
 
 - (NSDictionary *)getDataDictionary;
 

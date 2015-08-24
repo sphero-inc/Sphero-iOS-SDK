@@ -17,6 +17,7 @@ typedef NS_ENUM(uint8_t, RKCoreCommandIdType) {
     RKCoreCommandGoToSleep = 0x22,
     RKCoreCommandSetVoltageTripPoints = 0x24,
     RKCoreCommandSetInactivityTimeout = 0x25,
+    RKCoreCommandGetFactoryConfigBlockCRC = 0x27,
     RKCoreCommandJumpToBootloader = 0x30,
     RKCoreCommandLevel1Diagnostic = 0x40,
     RKCoreCommandAssignTimeValue = 0x50,
