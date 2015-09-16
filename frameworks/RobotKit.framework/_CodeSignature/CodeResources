@@ -590,15 +590,15 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Info.plist</key>
 		<data>
-		3YUMtjxovkfvsh/34M7mF44pqco=
+		wYUwxjUo6QvmxfVztxv9Xn3epjw=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/RobotCommandKit</key>
 		<data>
-		AnqeXbPJsFNjiVtMzaoEMBPvctw=
+		JrCum/3cR4JO8lblyG0Cv6MimfM=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		wv5ZG3B80oRjJE6Xs9tCdsqwdDI=
+		DJhGlrA3PcAi0MTrvGvW53/zBUQ=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -606,11 +606,11 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		/VvRsq1/lKH6yS/B6ENFoTCZ/ME=
+		kegjGc90Z5sX6ixCaX5hCHnub1A=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		V032dbfJojV8NS8uJn2005T450k=
+		UhIipJtWIVb/njrGYxJ+/RIO5DM=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Headers/RKAccelerometerFilter.h</key>
 		<data>
@@ -670,7 +670,7 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Info.plist</key>
 		<data>
-		dxjqYkXZY3qEv9Z2Pu6LSAQAndk=
+		wy8ZDtpH1MpmpQDhqVd67/Jt36I=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/PrivateHeaders/RKTighterControlAddon.h</key>
 		<data>
@@ -678,11 +678,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/RobotKitClassic</key>
 		<data>
-		0bPAMJkyDlSZsU+V+MaRyRi8FNg=
+		bCRsORa2werHnX5LLoPsLdBX/bY=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		dj03MkDDw0tRssr0TTati9ehS+E=
+		1SOpYBwqNUPqkFFzEUWR3va+LWg=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -690,11 +690,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeResources</key>
 		<data>
-		x8g9GrTlKoy8pEJQKnNdHI2WUxQ=
+		opU4ZWY2pp0oZf5dhv5MRKgCamM=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		u/2VCqaDs0WNNaYgJbCnkRLgld8=
+		RDgdFeCUlA1bUwNFlxelhYvnl/A=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/CBUUID+Extension.h</key>
 		<data>
@@ -786,15 +786,15 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Info.plist</key>
 		<data>
-		Jo9FT4TbZKCdfyhX5TQvyI2oT8U=
+		/mtDXe98+xEL8sPZrkyX8gLEGJA=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/RobotKitLE</key>
 		<data>
-		9V5SkXakfV4n3weXWe/K4z0pRq4=
+		uTLSyQbgfsm10hUrweO0/+lcCu4=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		ez8pKpbu1oSVOa1vpk3+1ykcKaA=
+		1yvyIJgQdCUWtJx4g7QV9uUdtMU=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -802,11 +802,11 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Btnw53VEPScb0JN3ouyE9ydFarY=
+		AgcRDJc3WF5XmC1XkCqXCDhmKVI=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		25MjupWd+3YPG/ChcEkAgZmpSTo=
+		FJcccml/n/N9AOstPJNUR+c2uNw=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKAbortMacroCommand.h</key>
 		<data>
@@ -1086,15 +1086,15 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Info.plist</key>
 		<data>
-		FXBbK7nt0p4/pLbEm0qOR6Pk7bc=
+		cLIHwOdK7n2WoJNkSfLQBTAdR/4=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/RobotLanguageKit</key>
 		<data>
-		Y5hRK3Mm/P6rBS5HGXpY26TgF+4=
+		wvVchrfMhfwZiWRo8kcqsL9QS7A=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		CTUmp+YUVUQ3anoORrlwgXl052g=
+		4KyulgkzFvYrEgM+F8jJF/AWZZM=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1102,11 +1102,11 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		SGq3S/ZUJUgtc86beh3d8TZAGUg=
+		CQo09qOMcSUOEVLce624qOycl90=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		svSqvd6kh0OdimTWY9Hl//PpQyQ=
+		C9C213HHRmQhL/72qZB3gDKvH1E=
 		</data>
 		<key>Headers/RKConvenienceRobot.h</key>
 		<data>
@@ -1138,7 +1138,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Nu7rRMC12GW156F5a0TF8t+EWWQ=
+		DoGOZQ/V3kSsH1SbIWqsvaXJNfU=
 		</data>
 		<key>PrivateHeaders/RobotKitPrivate.h</key>
 		<data>
@@ -1733,15 +1733,15 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/Info.plist</key>
 		<data>
-		3YUMtjxovkfvsh/34M7mF44pqco=
+		wYUwxjUo6QvmxfVztxv9Xn3epjw=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/RobotCommandKit</key>
 		<data>
-		AnqeXbPJsFNjiVtMzaoEMBPvctw=
+		JrCum/3cR4JO8lblyG0Cv6MimfM=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		wv5ZG3B80oRjJE6Xs9tCdsqwdDI=
+		DJhGlrA3PcAi0MTrvGvW53/zBUQ=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1749,11 +1749,11 @@
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		/VvRsq1/lKH6yS/B6ENFoTCZ/ME=
+		kegjGc90Z5sX6ixCaX5hCHnub1A=
 		</data>
 		<key>Frameworks/RobotCommandKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		V032dbfJojV8NS8uJn2005T450k=
+		UhIipJtWIVb/njrGYxJ+/RIO5DM=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Headers/RKAccelerometerFilter.h</key>
 		<data>
@@ -1813,7 +1813,7 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/Info.plist</key>
 		<data>
-		dxjqYkXZY3qEv9Z2Pu6LSAQAndk=
+		wy8ZDtpH1MpmpQDhqVd67/Jt36I=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/PrivateHeaders/RKTighterControlAddon.h</key>
 		<data>
@@ -1821,11 +1821,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/RobotKitClassic</key>
 		<data>
-		0bPAMJkyDlSZsU+V+MaRyRi8FNg=
+		bCRsORa2werHnX5LLoPsLdBX/bY=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		dj03MkDDw0tRssr0TTati9ehS+E=
+		1SOpYBwqNUPqkFFzEUWR3va+LWg=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1833,11 +1833,11 @@
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeResources</key>
 		<data>
-		x8g9GrTlKoy8pEJQKnNdHI2WUxQ=
+		opU4ZWY2pp0oZf5dhv5MRKgCamM=
 		</data>
 		<key>Frameworks/RobotKitClassic.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		u/2VCqaDs0WNNaYgJbCnkRLgld8=
+		RDgdFeCUlA1bUwNFlxelhYvnl/A=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Headers/CBUUID+Extension.h</key>
 		<data>
@@ -1929,15 +1929,15 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/Info.plist</key>
 		<data>
-		Jo9FT4TbZKCdfyhX5TQvyI2oT8U=
+		/mtDXe98+xEL8sPZrkyX8gLEGJA=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/RobotKitLE</key>
 		<data>
-		9V5SkXakfV4n3weXWe/K4z0pRq4=
+		uTLSyQbgfsm10hUrweO0/+lcCu4=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		ez8pKpbu1oSVOa1vpk3+1ykcKaA=
+		1yvyIJgQdCUWtJx4g7QV9uUdtMU=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1945,11 +1945,11 @@
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Btnw53VEPScb0JN3ouyE9ydFarY=
+		AgcRDJc3WF5XmC1XkCqXCDhmKVI=
 		</data>
 		<key>Frameworks/RobotKitLE.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		25MjupWd+3YPG/ChcEkAgZmpSTo=
+		FJcccml/n/N9AOstPJNUR+c2uNw=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Headers/RKAbortMacroCommand.h</key>
 		<data>
@@ -2229,15 +2229,15 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/Info.plist</key>
 		<data>
-		FXBbK7nt0p4/pLbEm0qOR6Pk7bc=
+		cLIHwOdK7n2WoJNkSfLQBTAdR/4=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/RobotLanguageKit</key>
 		<data>
-		Y5hRK3Mm/P6rBS5HGXpY26TgF+4=
+		wvVchrfMhfwZiWRo8kcqsL9QS7A=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		CTUmp+YUVUQ3anoORrlwgXl052g=
+		4KyulgkzFvYrEgM+F8jJF/AWZZM=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -2245,11 +2245,11 @@
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		SGq3S/ZUJUgtc86beh3d8TZAGUg=
+		CQo09qOMcSUOEVLce624qOycl90=
 		</data>
 		<key>Frameworks/RobotLanguageKit.framework/_CodeSignature/CodeSignature</key>
 		<data>
-		svSqvd6kh0OdimTWY9Hl//PpQyQ=
+		C9C213HHRmQhL/72qZB3gDKvH1E=
 		</data>
 		<key>Headers/RKConvenienceRobot.h</key>
 		<data>
