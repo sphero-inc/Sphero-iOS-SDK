@@ -95,7 +95,7 @@
 	if(!_robot || ![_robot isConnected]) return; // stop the toggle if no robot.
 
     if (_ledOn) {
-		[_robot setLEDWithRed:0 green:0 blue:0];
+		[_robot setLEDWithRed:1 green:0 blue:0];
     }
     else {
 		[_robot setLEDWithRed:0 green:0 blue:1];

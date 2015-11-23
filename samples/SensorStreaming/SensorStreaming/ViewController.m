@@ -117,7 +117,7 @@
 }
 
 - (void)handleConnected {
-    [_robot enableStablilization:NO];
+    [_robot enableStabilization:NO];
     [_robot addResponseObserver:self];
     [self sendSetDataStreamingCommand];
 }
