@@ -1,0 +1,33 @@
+freeFallMaxG = 0.8; //Total acceleration must be less than this to count as free fall
+freeFallMinDuration = 0.3; //Total acceleration must be small for at least this time to count as free fall
+
+
+void HandleFreeFall()
+{
+//Set the robot LED to white
+setRgbLed(255,255,255);
+}
+
+void HandleLanding()
+{
+//Reset the robot LED to red
+setRgbLed(255,0,0);
+}
+
+//Both of these are Oval callbacks that are triggered when the robot is in free fall or landing.
+//Point them towards defined methods in order to have the free fall/landing situations handled.
+OnFreeFall = &HandleFreeFall;
+OnLanding = &HandleLanding;
+
+
+
+yield MainProgram()
+{
+//Turning off the control system gives a better reading from the sensors for free fall.
+controlSystemIsOn = 0;
+setRgbLed(255,0,0);
+}
+
+yield MainProgram();
+
+...

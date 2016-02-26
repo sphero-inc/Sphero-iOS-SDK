@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sGI-ng-47H">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Sample View Controller-->
+        <scene sceneID="yic-fG-XMW">
+            <objects>
+                <viewController id="sGI-ng-47H" customClass="RUISampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nJ7-p8-SXj"/>
+                        <viewControllerLayoutGuide type="bottom" id="F3E-us-KwF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3uK-RN-RWd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HT1-FX-p7L">
+                                <rect key="frame" x="275" y="542" width="50" height="38"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                <state key="normal" title="Sleep">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sleepPressed:" destination="sGI-ng-47H" eventType="touchUpInside" id="dBU-M2-Ade"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-Fy-C0A">
+                                <rect key="frame" x="276" y="33" width="49" height="38"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                <state key="normal" title="Color">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorPressed:" destination="sGI-ng-47H" eventType="touchUpInside" id="oRP-CT-GDi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flk-cN-OdD">
+                                <rect key="frame" x="282" y="466" width="36" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="FW4-Vg-anH"/>
+                                    <constraint firstAttribute="height" constant="36" id="jCS-O1-kLE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <color key="tintColor" red="0.0" green="0.75686281919999998" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcV-19-yjk">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="T7o-Cd-8MN"/>
+                                    <constraint firstAttribute="height" constant="250" id="YmX-pj-XYq"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="GT5-RV-KlT" kind="embed" id="rJM-jX-kVK"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HT1-FX-p7L" secondAttribute="centerX" id="4BD-Zx-YxR"/>
+                            <constraint firstAttribute="centerY" secondItem="fcV-19-yjk" secondAttribute="centerY" id="E21-df-P2c"/>
+                            <constraint firstItem="F3E-us-KwF" firstAttribute="top" secondItem="HT1-FX-p7L" secondAttribute="bottom" constant="20" id="FcA-77-8ul"/>
+                            <constraint firstItem="flk-cN-OdD" firstAttribute="top" secondItem="fcV-19-yjk" secondAttribute="bottom" constant="41" id="IaE-yS-lMu"/>
+                            <constraint firstAttribute="centerX" secondItem="fcV-19-yjk" secondAttribute="centerX" id="KIv-06-xSN"/>
+                            <constraint firstAttribute="centerX" secondItem="flk-cN-OdD" secondAttribute="centerX" id="ViW-qQ-Boa"/>
+                            <constraint firstItem="eQL-Fy-C0A" firstAttribute="top" secondItem="nJ7-p8-SXj" secondAttribute="bottom" constant="13" id="ihc-6k-nYP"/>
+                            <constraint firstItem="eQL-Fy-C0A" firstAttribute="top" secondItem="nJ7-p8-SXj" secondAttribute="bottom" constant="13" id="pGx-Zg-FdQ"/>
+                            <constraint firstAttribute="centerX" secondItem="eQL-Fy-C0A" secondAttribute="centerX" id="z0b-bS-I7U"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pGx-Zg-FdQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="calibrateAboveButton" destination="flk-cN-OdD" id="mM6-rg-wdt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQd-4W-WJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="9dc-tq-xDz"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="529"/>
+        </scene>
+        <!--Joystick View Controller-->
+        <scene sceneID="r8V-Ma-qSI">
+            <objects>
+                <viewController id="GT5-RV-KlT" customClass="RKUIJoystickViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnB-Ob-HAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="625"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,52 @@
+
+//Fade from one color to another over a set interval of time
+yield _DoFade(float startingR, float startingG, float startingB, float fadeTime, float endingR, float endingG, float endingB) {
+float startTime = currentRobotTime;
+float blend = 0.0;
+int done = false;
+
+if (fadeTime <= 0.0) {
+done = true;
+}
+
+while (not done) {
+blend = (currentRobotTime - startTime) / fadeTime;
+if (blend > 1.0) {
+blend = 1.0;
+}
+
+redLed = ((startingR * (1.0 - blend)) + (endingR * blend));
+greenLed = ((startingG * (1.0 - blend)) + (endingG * blend));
+blueLed = ((startingB * (1.0 - blend)) + (endingB * blend));
+
+if (currentRobotTime >= startTime + fadeTime) {
+done = true;
+}
+
+yield;
+}
+}
+
+//When a collision is detected, do something
+void CollisionHappened() {
+_DoFade( 255, 0, 0, 1, 0, 0, 255 );
+}
+
+//Point the collision callback to a method
+OnCollision = &CollisionHappened;
+
+yield MainProgram() {
+//Configure the collision callback. Range for collision threshold is 0-255.
+//Configures collision detection based on the parameters:
+//- mode: The collision detection method. 0 is off, 1 is normal.
+//- xt: The x threshold that needs to be surpassed to be considered a collision. 0 disables the contribution for the x axis.
+//- xs: The speed of the x axis that should be taken into account when calculating a collision.
+//- yt: The y threshold that needs to be surpassed to be considered a collision. 0 disables the contribution for the y axis.
+//- ys: The speed of the y axis that should be taken into account when calculating a collision.
+//- deadTime: How long the robot should wait before another event meeting the threshold parameters is counted as a collision.
+configureCollisionDetection( 1, 128, 0, 128, 0, 2 );
+
+setRgbLed( 0, 0, 255 );
+}
+yield MainProgram();
+...

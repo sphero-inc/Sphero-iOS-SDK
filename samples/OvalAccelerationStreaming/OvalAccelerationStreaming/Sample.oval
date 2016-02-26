@@ -1,0 +1,22 @@
+yield DoDelay(float duration)
+{
+    float finishTime = currentRobotTime + duration;
+    while (currentRobotTime < finishTime)
+    {
+        yield;
+        wait;
+    }
+}
+
+yield Main() {
+    redLed = 255;
+    greenLed = 255;
+    blueLed = 255;
+    while( true ) {
+        sendAsync( accelSensorXRight, accelSensorYForward, accelSensorZUp );
+        DoDelay( 3 );
+    }
+}
+
+yield Main();
+...
