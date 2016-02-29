@@ -60,10 +60,13 @@ class ViewController: UIViewController, RKOvalControlDelegate {
     }
     
     func sendOvalProgram() {
-        let source = NSString(contentsOfFile: NSBundle.mainBundle().pathForResource("Sample", ofType: "oval")!, encoding: NSUTF8StringEncoding, error: nil)
-        if let unwrappedSource = source {
-            self.ovalControl.sendOvalPrograms([unwrappedSource])
+        do {
+            let source = try NSString(contentsOfFile: NSBundle.mainBundle().pathForResource("Sample", ofType: "oval")!, encoding: NSUTF8StringEncoding)
+            self.ovalControl.sendOvalPrograms([source])
+        } catch let error as NSError {
+            print(error.localizedDescription)
         }
+
     }
     
     @IBAction func updateOval(sender: AnyObject?) {

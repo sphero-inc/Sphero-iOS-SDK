@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         connectionLabel = nil;
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         
         super.init(coder: aDecoder)
     }
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
             }
             ledON = !ledON
             
-            var delay = Int64(0.5 * Float(NSEC_PER_SEC))
+            let delay = Int64(0.5 * Float(NSEC_PER_SEC))
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay), dispatch_get_main_queue(), { () -> Void in
                 self.togleLED();
             })
