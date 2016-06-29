@@ -10,47 +10,27 @@
 		</data>
 		<key>Headers/RKAccuAngleDriveAddon.h</key>
 		<data>
-		wrRhCYV3+2it0NA1ydEhv4pNL9I=
+		tkettEdVWHfncO5kdUJyQH6SljA=
 		</data>
 		<key>Headers/RKDiscoveryAgentClassic.h</key>
 		<data>
-		TtmKtQbSDPOPLFk2//2LxW9ly+M=
+		C2N+LwhUZ/pVeAc5zBwf/m3BGJU=
 		</data>
 		<key>Headers/RKLogarithmicScaleDriveAddon.h</key>
 		<data>
 		LQ7Mirs8xXFIvocfUNTABtbfb3I=
 		</data>
-		<key>Headers/RKMultiplayer.h</key>
-		<data>
-		NRbSyLfEHW16CebXfAXivJv9Z5o=
-		</data>
-		<key>Headers/RKMultiplayerGame.h</key>
-		<data>
-		FzHliC0jklP750tLger5OXTxmEY=
-		</data>
-		<key>Headers/RKRemotePlayer.h</key>
-		<data>
-		cu8pViJxft4fpt7ihcHsnHoKjAo=
-		</data>
-		<key>Headers/RKRemoteRobot.h</key>
-		<data>
-		aDwdODc7C5Wel4eTGTjOOkpUku8=
-		</data>
-		<key>Headers/RKRemoteSphero.h</key>
-		<data>
-		Ghb9e6b8ksHlHJhRFKV1XM4yA3o=
-		</data>
 		<key>Headers/RKRobotClassic.h</key>
 		<data>
-		axAKlbn38hBYmRqne7926wH1Gso=
+		89NEbGiSJ9wRRucHUsbLdZnbBaQ=
 		</data>
 		<key>Headers/RKSteeringWheelDriveAlgorithm.h</key>
 		<data>
-		JKkaxLtnBhFABybe9P/BJEToFKE=
+		X/aSP4PEGsBRI+3dK6omRn5XbZU=
 		</data>
 		<key>Headers/RKTiltDriveAlgorithm.h</key>
 		<data>
-		jwg9KS7GFoZ8cNFPMJ2VuD4l1ig=
+		dReXJwzuwNgyceF0FBq46lV23+8=
 		</data>
 		<key>Headers/RKTypes.h</key>
 		<data>
@@ -58,11 +38,11 @@
 		</data>
 		<key>Headers/RobotKitClassic.h</key>
 		<data>
-		NXtbfx57f+MtssGo1EkhUIxrCUc=
+		FwnHzPMbh/Uveo/wnMsj5Hccfao=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wy8ZDtpH1MpmpQDhqVd67/Jt36I=
+		9zRknps+RoCCqkY9ZeKnPBnsiP4=
 		</data>
 		<key>PrivateHeaders/RKTighterControlAddon.h</key>
 		<data>
@@ -72,65 +52,115 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/RKAccelerometerFilter.h</key>
-		<data>
-		jr+0F5wcnt6ztuXsJErw2sRJZAE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			jr+0F5wcnt6ztuXsJErw2sRJZAE=
+			</data>
+			<key>hash2</key>
+			<data>
+			qouIu8lQULgqq7AqW3pchxVXNHws4doAlfFL3xMGJ3k=
+			</data>
+		</dict>
 		<key>Headers/RKAccuAngleDriveAddon.h</key>
-		<data>
-		wrRhCYV3+2it0NA1ydEhv4pNL9I=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			tkettEdVWHfncO5kdUJyQH6SljA=
+			</data>
+			<key>hash2</key>
+			<data>
+			CeQWJd+hjDE5+qmfR8/OBO8OczTp9toTkS1pnL1buEY=
+			</data>
+		</dict>
 		<key>Headers/RKDiscoveryAgentClassic.h</key>
-		<data>
-		TtmKtQbSDPOPLFk2//2LxW9ly+M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			C2N+LwhUZ/pVeAc5zBwf/m3BGJU=
+			</data>
+			<key>hash2</key>
+			<data>
+			j/Ih6kVnqodp5jgM6DCaTMWTdQbhD34hLUxUKYES6KI=
+			</data>
+		</dict>
 		<key>Headers/RKLogarithmicScaleDriveAddon.h</key>
-		<data>
-		LQ7Mirs8xXFIvocfUNTABtbfb3I=
-		</data>
-		<key>Headers/RKMultiplayer.h</key>
-		<data>
-		NRbSyLfEHW16CebXfAXivJv9Z5o=
-		</data>
-		<key>Headers/RKMultiplayerGame.h</key>
-		<data>
-		FzHliC0jklP750tLger5OXTxmEY=
-		</data>
-		<key>Headers/RKRemotePlayer.h</key>
-		<data>
-		cu8pViJxft4fpt7ihcHsnHoKjAo=
-		</data>
-		<key>Headers/RKRemoteRobot.h</key>
-		<data>
-		aDwdODc7C5Wel4eTGTjOOkpUku8=
-		</data>
-		<key>Headers/RKRemoteSphero.h</key>
-		<data>
-		Ghb9e6b8ksHlHJhRFKV1XM4yA3o=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			LQ7Mirs8xXFIvocfUNTABtbfb3I=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y8DB37Xo++sMjSzgnI0Et1gyXBfVNkhY7PMYaZnGNco=
+			</data>
+		</dict>
 		<key>Headers/RKRobotClassic.h</key>
-		<data>
-		axAKlbn38hBYmRqne7926wH1Gso=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			89NEbGiSJ9wRRucHUsbLdZnbBaQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			iEJYIuOrbHb1HjLZCclFsSsYoCdpxCWRKHXVEuFpOfs=
+			</data>
+		</dict>
 		<key>Headers/RKSteeringWheelDriveAlgorithm.h</key>
-		<data>
-		JKkaxLtnBhFABybe9P/BJEToFKE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			X/aSP4PEGsBRI+3dK6omRn5XbZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			8ubdrWk2V0p390cm3eqvlPvUOC0yCLOQUhpAxT6P8fY=
+			</data>
+		</dict>
 		<key>Headers/RKTiltDriveAlgorithm.h</key>
-		<data>
-		jwg9KS7GFoZ8cNFPMJ2VuD4l1ig=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			dReXJwzuwNgyceF0FBq46lV23+8=
+			</data>
+			<key>hash2</key>
+			<data>
+			JgDbTR0X2zZ9tcs+zvD8aJeyT1aIwlO6fTB/ZuOH/U8=
+			</data>
+		</dict>
 		<key>Headers/RKTypes.h</key>
-		<data>
-		UpWLivO/8cl8osJ1GX1ilmIERjg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			UpWLivO/8cl8osJ1GX1ilmIERjg=
+			</data>
+			<key>hash2</key>
+			<data>
+			EX8vO47an10w15VayXpQEbTxA/iBx37F0Ynl5dW7yN4=
+			</data>
+		</dict>
 		<key>Headers/RobotKitClassic.h</key>
-		<data>
-		NXtbfx57f+MtssGo1EkhUIxrCUc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			FwnHzPMbh/Uveo/wnMsj5Hccfao=
+			</data>
+			<key>hash2</key>
+			<data>
+			FlpNMLPe30Hpw6QW0R6ox85r2ZCsnLme2f80L2MxbdU=
+			</data>
+		</dict>
 		<key>PrivateHeaders/RKTighterControlAddon.h</key>
-		<data>
-		hT1QPLf5YrQqduKWMJnSabI7sVE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			hT1QPLf5YrQqduKWMJnSabI7sVE=
+			</data>
+			<key>hash2</key>
+			<data>
+			MVNQR9+FDCxQFzOPvNJqsWlYddvMLUUeiQuO76MNrMc=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

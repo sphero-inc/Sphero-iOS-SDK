@@ -6,15 +6,27 @@
 	<dict>
 		<key>Headers/FWLevel1DiagnosticAsyncData.h</key>
 		<data>
-		2W3qYLXw7LgcyJjNTkZ+YYSl8Gc=
+		aO4BHa9AlGqJF44CkZ/+eQaSpTc=
+		</data>
+		<key>Headers/FWLevel1DiagnosticChunkedAsyncData.h</key>
+		<data>
+		B+UQDAHP2fFxsBGGTTQTvCeYuIc=
+		</data>
+		<key>Headers/FWLevel1DiagnosticChunkedCommand.h</key>
+		<data>
+		wMfJgSViOpGyzl0RRG6aJvVpKHM=
+		</data>
+		<key>Headers/FWLevel1DiagnosticChunkedResponse.h</key>
+		<data>
+		O+3xdlzTFfAK1i+ywCjUJ4M/Wjw=
 		</data>
 		<key>Headers/FWLevel1DiagnosticCommand.h</key>
 		<data>
-		DWUBj4frvv4sAqDatDNA9il3LAU=
+		t4uRHigGAhBKHDzy4K97HNe3LCc=
 		</data>
 		<key>Headers/FWLevel1DiagnosticResponse.h</key>
 		<data>
-		iKSRQqur3oMUi4BmukO3ParTioI=
+		J1s0GWdoORoOy+DSGZAVu1/X4ic=
 		</data>
 		<key>Headers/NSData+Extensions.h</key>
 		<data>
@@ -34,19 +46,15 @@
 		</data>
 		<key>Headers/RKAsyncFactory.h</key>
 		<data>
-		vWDRy/RbdgpkTVP1Lln09f6+kAU=
+		0QF+pn6Doj4V7wdAdbHJS/7j6Sg=
 		</data>
-		<key>Headers/RKAsyncFactory_PrivateAdditions.h</key>
+		<key>Headers/RKAsyncId.h</key>
 		<data>
-		UMhdOz6CNH08eNsKjuzPCcly/aY=
+		A0TMQojm/59sdsCNqGEaDgGZvhE=
 		</data>
 		<key>Headers/RKAsyncMessage.h</key>
 		<data>
-		kFUqNKJSOI0l7q8htndXQExkbAk=
-		</data>
-		<key>Headers/RKAsyncPacketCodes.h</key>
-		<data>
-		6yI6eztuTqSqvaCHtB0rWvBxYL0=
+		/0heloPtjP7HL9xeizb2gBWGmcI=
 		</data>
 		<key>Headers/RKAttitudeData.h</key>
 		<data>
@@ -58,91 +66,75 @@
 		</data>
 		<key>Headers/RKBackLEDOutputCommand.h</key>
 		<data>
-		xiGgvD4dB9pbW6fqbyBZh816Btw=
+		FL21frVzM+V0GwblxJKCvYZb4LA=
 		</data>
 		<key>Headers/RKBackLEDOutputResponse.h</key>
 		<data>
-		Z8ovXM2uepR3WniL8YSVO2UEDvA=
+		OZp6HYS+pojUoBw3TJeD8ARi7Co=
+		</data>
+		<key>Headers/RKBuildDescriptors.h</key>
+		<data>
+		Ser0qUBvVK7D2r6xc4F+pqdAxxk=
+		</data>
+		<key>Headers/RKByteAsyncMessage.h</key>
+		<data>
+		KipHcxUNaq8xE0+M+SPcoCK69II=
 		</data>
 		<key>Headers/RKByteCommand.h</key>
 		<data>
-		xP5Yc0lzkgZdKfYiuTjsRu2AY9M=
+		HbpuGzUJ+HuixS3ayUx8O0DqlzY=
 		</data>
 		<key>Headers/RKByteResponse.h</key>
 		<data>
-		+wFiDEGYB9nC7Ieudyut6fFal9E=
-		</data>
-		<key>Headers/RKCalibrateCommand.h</key>
-		<data>
-		AwnahzJfr6ljtQ+6mjugW9rmU/Q=
-		</data>
-		<key>Headers/RKCalibrateResponse.h</key>
-		<data>
-		dh7STBuXSdksyQE3qDvJ8kJ4wtU=
+		oKvBujp5UYDTFV0KXEYyGBvnUeM=
 		</data>
 		<key>Headers/RKCollisionDetectedAsyncData.h</key>
 		<data>
-		cyA1KH3X8rgJsNNn411eeTC3jN0=
+		HfO7Jx28NDv1ZDGVgqek3uM/ECg=
 		</data>
 		<key>Headers/RKCommandList.h</key>
 		<data>
-		c9T1obhsVBkrugetfQ4bn2KHxyQ=
+		1Z8wjtxowjbxtoEvftLP0izulP4=
 		</data>
 		<key>Headers/RKConfigureCollisionDetectionCommand.h</key>
 		<data>
-		aeGHdmSNV3V3VJenbVzTXyAyMTk=
+		EFpw7O9tFoc9f7nCnkZxJ6HStT4=
 		</data>
 		<key>Headers/RKConfigureCollisionDetectionResponse.h</key>
 		<data>
-		hxsLbyYSXp2epCm1RvY39vpV9zY=
+		q8F2SZHVl5AF5U6C3nn424liiys=
 		</data>
 		<key>Headers/RKConfigureLocatorCommand.h</key>
 		<data>
-		vU9UFTre7Vk1nFrxle1kya+OQcQ=
+		PUmMw2WqGdrv+cqbC+24vqCUwXs=
 		</data>
 		<key>Headers/RKConfigureLocatorResponse.h</key>
 		<data>
-		7bOn3nykdHZpIMYFSZARdhNbDQk=
-		</data>
-		<key>Headers/RKDeviceAsyncData.h</key>
-		<data>
-		ap8RYjz5S5mqDPwg0dqYwPL8jtQ=
-		</data>
-		<key>Headers/RKDeviceAsyncData_PrivateAdditions.h</key>
-		<data>
-		r2WjbdrkanMibafPhgnNPyFt5T4=
+		GVtSk9ftND/wkhkzTpVt/YuHCbA=
 		</data>
 		<key>Headers/RKDeviceCommand.h</key>
 		<data>
-		mKRdFPcRmJ1anbx+3Kgj1ifft4k=
-		</data>
-		<key>Headers/RKDeviceCommand_PrivateAdditions.h</key>
-		<data>
-		nlXZayUYzNwsAH/UTV99WzhKBtk=
+		WBKab5fxx4CSgUGeVSlJBIdLh38=
 		</data>
 		<key>Headers/RKDeviceList.h</key>
 		<data>
-		4HDB8jBBXmo6Ot6qGu7KE1g+cEk=
+		xzeUuP/njctrOInZiBfEPf6UK8E=
 		</data>
 		<key>Headers/RKDeviceMessage.h</key>
 		<data>
-		uIN7+KyNqj0MMPGlXQ4xDh9kCDk=
+		vGw56OZ2T6C/gW7hbwoS7qUZJPU=
 		</data>
 		<key>Headers/RKDeviceResponse.h</key>
 		<data>
-		87qOsUjKceGIRam/fFPrs6RBdsg=
-		</data>
-		<key>Headers/RKDeviceResponse_PrivateAdditions.h</key>
-		<data>
-		VoqBnEEjPUmjpXQuWEae5RHoakc=
+		8xsjgapI609X7yT3WMq2zbyH0RU=
 		</data>
 		<key>Headers/RKDeviceSensorsAsyncData.h</key>
 		<data>
-		SRAA4r/6TSOZ1Uo8QEwcC9WZmlw=
+		2BSsn4Acevh73ZiL0nNk4iqTOUk=
 		</data>
 		<key>Headers/RKDeviceSensorsData.h</key>
 		<data>
-		yTwjG9txX9M6EmeGcldDA1nkYE4=
+		huUtvEs5EcyZymSh0tFJjp+p65o=
 		</data>
 		<key>Headers/RKDiscoveryAgent.h</key>
 		<data>
@@ -158,111 +150,107 @@
 		</data>
 		<key>Headers/RKForceChargeCommand.h</key>
 		<data>
-		m7n6NZSAWrsQ9tga/OLtmA0tRZk=
+		A4WVQ7pq1nMnAFSlhijcW+5UVKI=
 		</data>
 		<key>Headers/RKGetAutoReconnectCommand.h</key>
 		<data>
-		ZgnP2/BM5bMhBeG+mHqXf3wdN+I=
+		JuA1yrZR92fLzukIoBiPlEX/tmM=
 		</data>
 		<key>Headers/RKGetAutoReconnectResponse.h</key>
 		<data>
-		hnWR4HE3UtoeESOutLI2xXF7ydI=
+		ITF83345zFqQ/BScOJ60a616fE0=
 		</data>
 		<key>Headers/RKGetBluetoothInfoCommand.h</key>
 		<data>
-		CSiv8A5d1zYJeEiszJKMWgm0rKY=
+		gmIgjUJId0EIKqdEkDNWajCEcWc=
 		</data>
 		<key>Headers/RKGetBluetoothInfoResponse.h</key>
 		<data>
-		UKFWrkrvq2dnWX3YRJOeMmswI38=
+		6ueRFa2v6xFiMdm0FHpesNbjm9s=
 		</data>
 		<key>Headers/RKGetChargerStateCommand.h</key>
 		<data>
-		aGql5mgJBGa3HAy8g5ffWNL0ANM=
+		3j9RfkTOalkjDpYNq0KIJbCRgPU=
 		</data>
 		<key>Headers/RKGetChargerStateResponse.h</key>
 		<data>
-		S7WqehWOR6ax/Bi2I6etpELZC74=
+		fC5bCoBV9QF1CpQ3pcVSdoAdxLU=
 		</data>
 		<key>Headers/RKGetChassisIdCommand.h</key>
 		<data>
-		3UptNNNjbZsQ5oItWVkD10adk3M=
+		vl0V4nTLopscB8SSDWmy2jCTyA8=
 		</data>
 		<key>Headers/RKGetChassisIdResponse.h</key>
 		<data>
-		pKeYDRqOgV8OQSB3OViC4dfKwiQ=
+		46lIWskECGNWJm6h/591VSzvF+E=
 		</data>
 		<key>Headers/RKGetDeviceModeCommand.h</key>
 		<data>
-		d9mmfmTucFTR6XfV7bEdEqpag38=
+		HDECKbkKOoVw/ycAGTgRxsIzGpU=
 		</data>
 		<key>Headers/RKGetDeviceModeResponse.h</key>
 		<data>
-		MHFfAMIaaHuRBlSnj5NCxa3YsnU=
+		1Qkvy+SpxqBeqIg4AiZ9u06jv90=
 		</data>
 		<key>Headers/RKGetNonPersistentOptionFlagsCommand.h</key>
 		<data>
-		NtD6mrDLnvOZpjuk16DOmajdcOs=
+		vzxgGbay5FuJ/mWWd1upHwUOea0=
 		</data>
 		<key>Headers/RKGetNonPersistentOptionFlagsResponse.h</key>
 		<data>
-		g3kpne7u5AkhGwB+nvfu5i4sN0s=
+		mL2v9B9HPW3q2s+ZXOzoIFvyMds=
 		</data>
 		<key>Headers/RKGetOptionFlagsCommand.h</key>
 		<data>
-		zY/ksODmntcFAgYTTgbYVS1gt1A=
+		tncpd+ID+eIkijcz1W1rAkUSpLM=
 		</data>
 		<key>Headers/RKGetOptionFlagsResponse.h</key>
 		<data>
-		SCvYIzzs5fmCDC4c7Q1si+wv/ko=
+		kHQahDzvqVAz0+4QpurYTNRNQqw=
 		</data>
 		<key>Headers/RKGetPersistentPageCRCCommand.h</key>
 		<data>
-		iu3uPnfN6FT3D4a9SibvmW4C4LA=
+		7Yr2/Ou9ZN5udb6e8g2hr0/LDQ0=
 		</data>
 		<key>Headers/RKGetPersistentPageCRCResponse.h</key>
 		<data>
-		q27Htiz0Jsur3TWZdd43QBwtJcQ=
+		qZtILU/aLFHY3dCWsHv5pc7tPww=
 		</data>
 		<key>Headers/RKGetPowerStateCommand.h</key>
 		<data>
-		t9TOIv9MrgWSsOM88M1nKIGZ9R8=
+		sDq61oit+xCkiamlM3mCOzprFPY=
 		</data>
 		<key>Headers/RKGetPowerStateResponse.h</key>
 		<data>
-		vXgk2c+N7nH7xXbMFrpD4c6ObuM=
+		DclOcVEeK+80/R3F8l8Ot2j9XI4=
 		</data>
 		<key>Headers/RKGetSkuCommand.h</key>
 		<data>
-		4+svRmmSq9jAxYL38iSDKPPthNE=
+		VNuRpFGHwFCoz1ViAYC9PyypJp0=
 		</data>
 		<key>Headers/RKGetSkuResponse.h</key>
 		<data>
-		dwHCX1eKiaDQ58RFTMbGg6rOuKw=
+		becGjDQ+MEncL9r9bR1VPQOqiUQ=
 		</data>
 		<key>Headers/RKGetUserRGBLEDColorCommand.h</key>
 		<data>
-		oDaaIhVLIOg1YdHlQu5UwyYMQsY=
+		JIDABzC8DxH9vfWim07qoeczs9E=
 		</data>
 		<key>Headers/RKGetUserRGBLEDColorResponse.h</key>
 		<data>
-		NCeL11bFuZuiv/F5j66VAeH+oSw=
+		23SOltcZo7/l762acUlMMS+591w=
 		</data>
 		<key>Headers/RKGoToSleepCommand.h</key>
 		<data>
-		iUeovltGipjkwMoQ8lfXIPTq3TQ=
+		V62BBsqhrIwFKvvJrg5hqMXgHWY=
 		</data>
 		<key>Headers/RKGoToSleepResponse.h</key>
 		<data>
-		XigCuspXGfR24h+/SU9J266EXT4=
+		Z9G4s8LdfANq/XtVPpAxSaRtqjI=
 		</data>
 		<key>Headers/RKGyroData.h</key>
 		<data>
 		nx+UgxrbC7+CohR95quWDQS5QiI=
-		</data>
-		<key>Headers/RKImmutableCommand.h</key>
-		<data>
-		zzSnT4gl2pUc+YtmVrLepAFReTA=
 		</data>
 		<key>Headers/RKJoyStickDriveAlgorithm.h</key>
 		<data>
@@ -270,19 +258,23 @@
 		</data>
 		<key>Headers/RKJumpToBootloaderCommand.h</key>
 		<data>
-		axqtvGZb5DHHAG8TbGJZkx9m21M=
+		5lu6Pn+45a96viQzq4+Rsfx7128=
 		</data>
 		<key>Headers/RKJumpToBootloaderResponse.h</key>
 		<data>
-		A521K3YCMyC3bnnF//WR1JG4eDA=
+		MjdLp6Bk+8fad9bUSObKiw3EwLY=
 		</data>
 		<key>Headers/RKJumpToMainAppCommand.h</key>
 		<data>
-		Rf9L6u2Vk1nSBDA1Oup1Dfn6D4w=
+		1phJOpER3zQzNX8hD9U62y1DkhE=
 		</data>
 		<key>Headers/RKJumpToMainAppResponse.h</key>
 		<data>
-		0VznTSBPZjOYzhHuZi+UCzVBuNM=
+		VZNPqAEHsjAEyt1QyXq0dmLRpQo=
+		</data>
+		<key>Headers/RKLastDataStreamingDataTracker.h</key>
+		<data>
+		mlfnpPk5lj59S95t7UF8ODE8C1g=
 		</data>
 		<key>Headers/RKLinkDelegate.h</key>
 		<data>
@@ -298,11 +290,11 @@
 		</data>
 		<key>Headers/RKMainProcessorState.h</key>
 		<data>
-		K4nhEA5tWnGxfdeIpn2olg7gW/s=
+		35PoOz1JtABpCcF8ThaGESF9p1g=
 		</data>
 		<key>Headers/RKMajorMinorVersion.h</key>
 		<data>
-		dFKBT5Woot86qdrtHnFkzzt6h/I=
+		TlL1kqaMnJWSTpUA04NXaC4Tg1Q=
 		</data>
 		<key>Headers/RKMath.h</key>
 		<data>
@@ -310,23 +302,15 @@
 		</data>
 		<key>Headers/RKPingCommand.h</key>
 		<data>
-		gsGYlZk8k5jZUJt9xGLIJkIp12o=
+		BCjhmugaUFuWua5wfdITTlbFmrk=
 		</data>
 		<key>Headers/RKPingResponse.h</key>
 		<data>
-		v/1OH7vSfM9ZrTWjto2a5DAFajQ=
-		</data>
-		<key>Headers/RKPollPacketTimesCommand.h</key>
-		<data>
-		8V/p0e5T9wUdYJqeHJ6gf+g0YV0=
-		</data>
-		<key>Headers/RKPollPacketTimesResponse.h</key>
-		<data>
-		QGma3iom0PUEKYvhl47JlxoDbkI=
+		0ZtUgu5UWREnEef/y1+UQy0xQeU=
 		</data>
 		<key>Headers/RKPowerNotificationAsyncData.h</key>
 		<data>
-		51B8oNZsELPW6NkW2p/BRG+FWQg=
+		YZ453RYGhNNVVgU4UEZH6jKgd+o=
 		</data>
 		<key>Headers/RKQuaternionData.h</key>
 		<data>
@@ -334,43 +318,39 @@
 		</data>
 		<key>Headers/RKRGBLEDOutputCommand.h</key>
 		<data>
-		Sqz8oaFiUOYfUJYZO/QDEDdJ1XA=
+		nt7kmqLhbmdlHAbSZAIS7LEhzRk=
 		</data>
 		<key>Headers/RKRGBLEDOutputResponse.h</key>
 		<data>
-		m1eC6mGewOg3qObFVx4Zoab4Fbo=
+		iE1SJssnSvcomo/LLaOR7uO+O/M=
 		</data>
 		<key>Headers/RKRawMotorValuesCommand.h</key>
 		<data>
-		8sE/CcActzTNBgtVkjd9EbEhDZg=
+		w17nCI3C0mLOqRoixr6ijHb2jgA=
 		</data>
 		<key>Headers/RKRawMotorValuesResponse.h</key>
 		<data>
-		DdP+xWpti9kUXtpeMjo5eL+G3n4=
+		5dYXdWt66KTrOvsz7aEcam7E2Zg=
 		</data>
 		<key>Headers/RKReadOdometerCommand.h</key>
 		<data>
-		X6sn4Cb/gDQYquzW9dyLHg+8GZM=
+		e3Rnq71eIAYKQs7Hlrsfd+Yc7HM=
 		</data>
 		<key>Headers/RKReadOdometerResponse.h</key>
 		<data>
-		P+6YOTtGuKTzkILQqX0zEmMuaTs=
+		ipb1GZG4OB907DsSs/sz2kxbxcQ=
 		</data>
 		<key>Headers/RKResponseCodes.h</key>
 		<data>
-		OTI4LhG3ywG+NZ1beIzY39wtDXk=
+		PTbWneCZ+sy621hZYOdxLtR72SM=
 		</data>
 		<key>Headers/RKResponseFactory.h</key>
 		<data>
-		JwuVWvAWsJyS62FKo7vxL3mfdi4=
-		</data>
-		<key>Headers/RKResponseFactory_PrivateAdditions.h</key>
-		<data>
-		59LvfS8u0Ur6RatRAnEOrAQJ0Es=
+		h6xLyWPsuYHVrc53kTJ1oQ8Qbfw=
 		</data>
 		<key>Headers/RKRobotBase.h</key>
 		<data>
-		pBMYWgVZHRdxAr5cMQ9hBqNM0qM=
+		k/ITZOfJseF0qHaRWIFO0pj4eew=
 		</data>
 		<key>Headers/RKRobotNotification.h</key>
 		<data>
@@ -378,11 +358,7 @@
 		</data>
 		<key>Headers/RKRollCommand.h</key>
 		<data>
-		CL+wqtoDwQqpujgvhXDhuI92pjk=
-		</data>
-		<key>Headers/RKRollResponse.h</key>
-		<data>
-		GsmtgNBsF6uNLcTLXfYc+JT2Ex0=
+		0iyiZHLUnLtG7beKPT2+oB6mKUY=
 		</data>
 		<key>Headers/RKRollingQueue.h</key>
 		<data>
@@ -390,23 +366,23 @@
 		</data>
 		<key>Headers/RKRotationRateCommand.h</key>
 		<data>
-		GnS/h6XhEOlEgRRD/gX3OPme/Dw=
+		y8BhHmQ/xvxvC7LbYXUbmzjU/Bo=
 		</data>
 		<key>Headers/RKRotationRateResponse.h</key>
 		<data>
-		SVhqPduhvSvnIBCFRfWlBsvtt38=
+		HGA7jMinfGK3vA8WqkbdOeWiwj8=
 		</data>
 		<key>Headers/RKSelfLevelCommand.h</key>
 		<data>
-		70i0MjF6qtMYm149mbAFBmZlfz0=
+		wrRsy1y6DZnLNM7JOVVf/JhX0Fw=
 		</data>
 		<key>Headers/RKSelfLevelCompleteAsyncData.h</key>
 		<data>
-		azIvQC6RKT3eM/K+HHpJY5qVh/Q=
+		cTHHYHtQxI22l73kZGk37ukazlQ=
 		</data>
 		<key>Headers/RKSelfLevelResponse.h</key>
 		<data>
-		Slgl/9VEoclyto/8dghYkNgz6Wg=
+		RzzikMt846Qbq1GLgQ1XBN1nuRc=
 		</data>
 		<key>Headers/RKSensorData.h</key>
 		<data>
@@ -414,123 +390,123 @@
 		</data>
 		<key>Headers/RKSession.h</key>
 		<data>
-		WzOUQaVmYKHA82cOXoAetG15vcw=
+		dKIAsC5vfkUTNxrwZkVvamsrQ/Q=
 		</data>
 		<key>Headers/RKSetAutoReconnectCommand.h</key>
 		<data>
-		CD3l2HQ8+8J55cpASy5iP+OMU2M=
+		fWd7AV0/as1XG4M5Ar+eGelSnvc=
 		</data>
 		<key>Headers/RKSetAutoReconnectResponse.h</key>
 		<data>
-		Vdtl1NYp/2iXh/L4dA/oHxQZBpk=
+		bEubbEGrDoc9lsSlD+CEdk5K3qk=
 		</data>
 		<key>Headers/RKSetBluetoothNameCommand.h</key>
 		<data>
-		nO0d2H7OcIQ/qPozr8+nEksr1Xs=
+		3sSsvj7/s+T+RlvgXb8SbNCuA9g=
 		</data>
 		<key>Headers/RKSetBluetoothNameResponse.h</key>
 		<data>
-		xfXgG7XsTRUkRd9kQSPDsFHTQuY=
+		3EuHCKzg/YuReflt3sbuUxFBVdc=
 		</data>
 		<key>Headers/RKSetDataStreamingCommand.h</key>
 		<data>
-		yA9bv6Vn5VFaHImqFxSpD20DCzc=
+		03ETNU+Ae1dTLN6avkZMhdCVBtw=
 		</data>
 		<key>Headers/RKSetDataStreamingResponse.h</key>
 		<data>
-		89y1CV4jxSS5Zj9KISd09ELbfm8=
+		7wrKU7qeSh1LbtR2vplbkm4lb3g=
 		</data>
 		<key>Headers/RKSetFactoryDeviceModeCommand.h</key>
 		<data>
-		vnHQAJ4HELZebLDiuwygWGE23GQ=
+		b6cr4hNCFYuhijn7olgG4pWdemw=
 		</data>
 		<key>Headers/RKSetFactoryDeviceModeResponse.h</key>
 		<data>
-		97VCd+6LvFDhpZGXLcbbFtXMtpY=
+		L/z/SGmbkHTMQbqlnuPldadbdUs=
 		</data>
 		<key>Headers/RKSetHeadingCommand.h</key>
 		<data>
-		sg8UmsauIMkN3bR2iuqD0KUw6nI=
+		Yy7aUI+8SHEUkA12nokFSSEHgYA=
 		</data>
 		<key>Headers/RKSetHeadingResponse.h</key>
 		<data>
-		RpM/m8XFmnjcU1HrOR7ZL5faXTU=
+		PUVEXI/xpDrFjHs1I97Op7Ov2Fs=
 		</data>
 		<key>Headers/RKSetInactivityTimeoutCommand.h</key>
 		<data>
-		OiwBXip0QmRlVqXdTShysOElxnE=
+		WSGJz4G65bqav8NKmp/u8Qj71AY=
 		</data>
 		<key>Headers/RKSetInactivityTimeoutResponse.h</key>
 		<data>
-		2z3alOG3QXAfvg3aYhsVIYQxPAk=
+		05IoZiKIDM1Cj4FiMTZ97XR2tYc=
 		</data>
 		<key>Headers/RKSetMotionTimeoutCommand.h</key>
 		<data>
-		/hzMzgwxn9cPKpvts3wP/Y/x0AU=
+		NTVbsNyYC+uWxAyhZw+TYcoTo5o=
 		</data>
 		<key>Headers/RKSetMotionTimeoutResponse.h</key>
 		<data>
-		uY0gzLvHrcIlMTqjziW3MOJQQ64=
+		01nEOnjphCUj8YXWW/igz5JVMzc=
 		</data>
 		<key>Headers/RKSetNonPersistentOptionFlagsCommand.h</key>
 		<data>
-		+3g8iPEgEEJRAGBF4YuLL6EzHPM=
+		MisygPOriNNKh9VSfvkpRFX1IW8=
 		</data>
 		<key>Headers/RKSetNonPersistentOptionFlagsResponse.h</key>
 		<data>
-		CR3GiyrizAxxqpOm9on1KdkAtuE=
+		sBj74m92Djo4eauIvIt/w/wc9Dw=
 		</data>
 		<key>Headers/RKSetOptionFlagsCommand.h</key>
 		<data>
-		WWGTAXWNpIn3ayPTtmjwL8gFBHM=
+		gjAYxqy6Z6l4yuN0p/TjcCvtDM8=
 		</data>
 		<key>Headers/RKSetOptionFlagsResponse.h</key>
 		<data>
-		MZdxBhmTGHUekCKcS38oy1HaHxM=
+		kH8x0FHn8Ymckp2skAQfzc/w5cU=
 		</data>
 		<key>Headers/RKSetPIDCommand.h</key>
 		<data>
-		/6vqZLECN0JfuO7AzyhfmS3Ea/w=
+		rbjKkwPpnR1256wi/grNZLzFiZ4=
 		</data>
 		<key>Headers/RKSetPowerNotificationCommand.h</key>
 		<data>
-		nGNh3A/nTABDg3ikWoxYjKEtjiI=
+		qYFfp5MApAEzBNY4Zn7AMKNmK+E=
 		</data>
 		<key>Headers/RKSetPowerNotificationResponse.h</key>
 		<data>
-		65t+TQNTwEYkEJl0lzrRWiknVwY=
+		RLlAvW1Eo8v0qymHN3s1KJASoMo=
 		</data>
 		<key>Headers/RKSetUserHackModeCommand.h</key>
 		<data>
-		jmCoRSgK+akDUmRdkl9+jQpze9w=
+		+vegkhklQcDfBGMCuTxYcNy4d50=
 		</data>
 		<key>Headers/RKSetUserHackModeResponse.h</key>
 		<data>
-		wU8qbRB5vNIAuzBTd7a7HR6nS3c=
+		p28bKjmNtREQbk5gSzmwJpJZGC0=
 		</data>
 		<key>Headers/RKSleepDidOccurMessage.h</key>
 		<data>
-		E1fAXZVdt18CBpqcgtleEJDYoBk=
+		kBBgc7YbaIEl1keAJ5d7B5Ki/Rc=
 		</data>
 		<key>Headers/RKSleepWillOccurMessage.h</key>
 		<data>
-		+8A7vznZKJSyfb97eYGmiYF42vc=
+		RWVX//3iY5EV6KJY9CHfq8U1IR0=
 		</data>
 		<key>Headers/RKStabilizationCommand.h</key>
 		<data>
-		62d/ISLcb68N73Wb1ZKIVZon2Zc=
+		EWk8MN7IAJw2joTSrsRjBZGiG90=
 		</data>
 		<key>Headers/RKStabilizationResponse.h</key>
 		<data>
-		USBF6FyCwxhP6znDOWK7bv10jtQ=
+		jmiLqP/LG0LauFObj33VcchF1JE=
 		</data>
 		<key>Headers/RKStat.h</key>
 		<data>
-		4RnRVMFTDvKZXP3sqvOwTwhMNO0=
+		IxkthF1w8lI3H2zLd1nNZo/8u20=
 		</data>
 		<key>Headers/RKStatEventListener.h</key>
 		<data>
-		RYKNVUcQx9BPnRXldQYA4kka2Wg=
+		X0Zrvs0KCgIAqPUmHyo3emr7qQk=
 		</data>
 		<key>Headers/RKStatForPacketFactory.h</key>
 		<data>
@@ -538,7 +514,7 @@
 		</data>
 		<key>Headers/RKStatOdometerHack.h</key>
 		<data>
-		XP3LyR7u+jrFjBTmYhoekFFcUzI=
+		iZ79saGY5dpTU3mh1J/QAGeew+A=
 		</data>
 		<key>Headers/RKStatRecorder.h</key>
 		<data>
@@ -546,31 +522,39 @@
 		</data>
 		<key>Headers/RKStats.h</key>
 		<data>
-		O7uvHsTXT0pKScOJW5O/ioKIACA=
+		9dunBsHrssAhWFC8W6rLPyJPrH0=
 		</data>
 		<key>Headers/RKTemperatureCommand.h</key>
 		<data>
-		mi8TlXtgOCQW0G4GVjyn+XTB0Pg=
+		477rTVoxAg9XxGMxq77epZx4a0E=
 		</data>
 		<key>Headers/RKTemperatureResponse.h</key>
 		<data>
-		FCNXsiaA2KaiQReyI/wMKFcmEmg=
+		RKvzK71hSMwcZRQxKa/Ypr8PMZc=
 		</data>
 		<key>Headers/RKTypes.h</key>
 		<data>
-		ncMj2dUJqzVQTSHGH6jOXQrsoKI=
+		8YGeqOmbLx6//Juh3vOLVX6fmUY=
 		</data>
 		<key>Headers/RKURLRequestFactory.h</key>
 		<data>
-		n3hGo8l77Fiy3XjcliYOOF5gf/g=
+		/XxyXZ+KdrmUTTbzCcu4d5pF/3U=
+		</data>
+		<key>Headers/RKV1Session.h</key>
+		<data>
+		Tx3XHwCw5MN5BT6VJq+YmD6djRM=
+		</data>
+		<key>Headers/RKV2Session.h</key>
+		<data>
+		Vrnd2NGR1OiISaGXCvMYss6izgw=
 		</data>
 		<key>Headers/RKVersioningCommand.h</key>
 		<data>
-		MDkr6L3mrCAUF7X4KLJwq0xx+Jk=
+		w5fYvL6AR3sy9Alp+8cCEJbcWjA=
 		</data>
 		<key>Headers/RKVersioningResponse.h</key>
 		<data>
-		Lc9qQnyLKkoSdDhVo7cpRYJnNfA=
+		T1M5Txg+Co7J+iC1Rv4NgkHoESM=
 		</data>
 		<key>Headers/RKWebSyncAgent.h</key>
 		<data>
@@ -578,607 +562,1600 @@
 		</data>
 		<key>Headers/RKWritePersistentPageCommand.h</key>
 		<data>
-		CoSUENH0rFI4F/kYdZofnwGO9fw=
+		VfNnjSFUJb/eHgeUmb4+NpftnlU=
 		</data>
 		<key>Headers/RKWritePersistentPageResponse.h</key>
 		<data>
-		Tbcb7YPtyBznOQirCO1vmD6XiiE=
+		iAhiiaO5xkRsrMZoJe/aVhLmvto=
+		</data>
+		<key>Headers/RobotCommandKit-Prefix.pch</key>
+		<data>
+		1ToFq8ARi6NuZ8xHO1loIHpeX0I=
 		</data>
 		<key>Headers/RobotCommandKit.h</key>
 		<data>
-		HfTGZ8Vo0YyxuWQisqH96vOH7us=
+		X/onSR3lPRrbywGEkLrygGy8WCg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wYUwxjUo6QvmxfVztxv9Xn3epjw=
+		fB6HmJBWebqtDNoawLgTnGPrdNA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/FWLevel1DiagnosticAsyncData.h</key>
-		<data>
-		2W3qYLXw7LgcyJjNTkZ+YYSl8Gc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			aO4BHa9AlGqJF44CkZ/+eQaSpTc=
+			</data>
+			<key>hash2</key>
+			<data>
+			wJgGM0j0b0XvsUfgYDnWrDd5/b6qP1IxvgaAFBVNVuA=
+			</data>
+		</dict>
+		<key>Headers/FWLevel1DiagnosticChunkedAsyncData.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B+UQDAHP2fFxsBGGTTQTvCeYuIc=
+			</data>
+			<key>hash2</key>
+			<data>
+			JT0RN1aEOtVQLRS2hUCnbmjOLkOZVUHgd6gvVcarjuc=
+			</data>
+		</dict>
+		<key>Headers/FWLevel1DiagnosticChunkedCommand.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wMfJgSViOpGyzl0RRG6aJvVpKHM=
+			</data>
+			<key>hash2</key>
+			<data>
+			bsvfIsBPYGgLHKBbzA4RPVeUIkPa429HzlmGMolx6yY=
+			</data>
+		</dict>
+		<key>Headers/FWLevel1DiagnosticChunkedResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O+3xdlzTFfAK1i+ywCjUJ4M/Wjw=
+			</data>
+			<key>hash2</key>
+			<data>
+			qz+TzlTwc38oHTzKczFfC0dQJroJOs6sXi+6P1M+qW0=
+			</data>
+		</dict>
 		<key>Headers/FWLevel1DiagnosticCommand.h</key>
-		<data>
-		DWUBj4frvv4sAqDatDNA9il3LAU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			t4uRHigGAhBKHDzy4K97HNe3LCc=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Qx3sIwU61lHROApf0SUnEtPBWWM/VVfBRDfK19slu4=
+			</data>
+		</dict>
 		<key>Headers/FWLevel1DiagnosticResponse.h</key>
-		<data>
-		iKSRQqur3oMUi4BmukO3ParTioI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			J1s0GWdoORoOy+DSGZAVu1/X4ic=
+			</data>
+			<key>hash2</key>
+			<data>
+			BEmctIjS4NEE4p9ufovCxdDVIyYw3RL6z33Dh5D2Sks=
+			</data>
+		</dict>
 		<key>Headers/NSData+Extensions.h</key>
-		<data>
-		rW0F13KK016u9GrZ7jBbgjOyaPc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			rW0F13KK016u9GrZ7jBbgjOyaPc=
+			</data>
+			<key>hash2</key>
+			<data>
+			8OOJwaRZBhM2Twz4B+VNirr/t0q8G2PSps15JicWqaU=
+			</data>
+		</dict>
 		<key>Headers/NSData+RobotDataParsing.h</key>
-		<data>
-		+AQ4aYmwcs6wiu7xq+IW8fCYp1c=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			+AQ4aYmwcs6wiu7xq+IW8fCYp1c=
+			</data>
+			<key>hash2</key>
+			<data>
+			mxSRcuMYS0lXMFEEapH2i7/qJxUWXKiqObaO1/0MIGo=
+			</data>
+		</dict>
 		<key>Headers/RKAccelerometerData.h</key>
-		<data>
-		/rUatUaedYrdurl5uy4rqRSV0Fg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/rUatUaedYrdurl5uy4rqRSV0Fg=
+			</data>
+			<key>hash2</key>
+			<data>
+			XYpfcymOpptNfXwkrBmaSpNKuqqQrAGrTlEGZBOzd/A=
+			</data>
+		</dict>
 		<key>Headers/RKAppUtils.h</key>
-		<data>
-		KLyHHuVcqZw4Dr+sGjbN69t+KTg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			KLyHHuVcqZw4Dr+sGjbN69t+KTg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ae9BBKSQlOANK7GJpupOVlqc6vBuIiTSGmL375pFXWQ=
+			</data>
+		</dict>
 		<key>Headers/RKAsyncFactory.h</key>
-		<data>
-		vWDRy/RbdgpkTVP1Lln09f6+kAU=
-		</data>
-		<key>Headers/RKAsyncFactory_PrivateAdditions.h</key>
-		<data>
-		UMhdOz6CNH08eNsKjuzPCcly/aY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			0QF+pn6Doj4V7wdAdbHJS/7j6Sg=
+			</data>
+			<key>hash2</key>
+			<data>
+			yBuKlsHMfvUPLSMln0FIOKnAI/lDJFQStVTzMbh5dK4=
+			</data>
+		</dict>
+		<key>Headers/RKAsyncId.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A0TMQojm/59sdsCNqGEaDgGZvhE=
+			</data>
+			<key>hash2</key>
+			<data>
+			x2BZHIM5VB+7MDlDz9qdd6Mvmy4UwM6so4xp84Subbc=
+			</data>
+		</dict>
 		<key>Headers/RKAsyncMessage.h</key>
-		<data>
-		kFUqNKJSOI0l7q8htndXQExkbAk=
-		</data>
-		<key>Headers/RKAsyncPacketCodes.h</key>
-		<data>
-		6yI6eztuTqSqvaCHtB0rWvBxYL0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/0heloPtjP7HL9xeizb2gBWGmcI=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0UskzCDLEUKORLSfyZcwyysEMQpy7MOoxLp1q2RWms=
+			</data>
+		</dict>
 		<key>Headers/RKAttitudeData.h</key>
-		<data>
-		6ACOv8Uofd5I/TMPkas0C/SVRyA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ACOv8Uofd5I/TMPkas0C/SVRyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			N8DdcIQ90DIps44qSwCGqN6GLUQGxuBNXgFLzqEhaK4=
+			</data>
+		</dict>
 		<key>Headers/RKBackEMFData.h</key>
-		<data>
-		B0fdJMOsGOdChAzmC54rYx5HKdw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			B0fdJMOsGOdChAzmC54rYx5HKdw=
+			</data>
+			<key>hash2</key>
+			<data>
+			NQ5wehuyL1QQa3ek0dDd5Q0lQDXhjlMAzfuWRgS9Q1g=
+			</data>
+		</dict>
 		<key>Headers/RKBackLEDOutputCommand.h</key>
-		<data>
-		xiGgvD4dB9pbW6fqbyBZh816Btw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			FL21frVzM+V0GwblxJKCvYZb4LA=
+			</data>
+			<key>hash2</key>
+			<data>
+			2oE8b2XdJ5W2jTZmZSIsHWqacnwCQuykwG3LiHwWuHM=
+			</data>
+		</dict>
 		<key>Headers/RKBackLEDOutputResponse.h</key>
-		<data>
-		Z8ovXM2uepR3WniL8YSVO2UEDvA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			OZp6HYS+pojUoBw3TJeD8ARi7Co=
+			</data>
+			<key>hash2</key>
+			<data>
+			yGw38JTwP5Y04rWmpRqCUTLIodjWWprckAz9nj2ynzs=
+			</data>
+		</dict>
+		<key>Headers/RKBuildDescriptors.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ser0qUBvVK7D2r6xc4F+pqdAxxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			iUcXeODs2yO79Y4SPfMJmhomHsap0DMNbaCQl1004K0=
+			</data>
+		</dict>
+		<key>Headers/RKByteAsyncMessage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KipHcxUNaq8xE0+M+SPcoCK69II=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ia/LOzScsIV3mQU7QLd78jyaGV0Q+RsCykd4F4lOJJY=
+			</data>
+		</dict>
 		<key>Headers/RKByteCommand.h</key>
-		<data>
-		xP5Yc0lzkgZdKfYiuTjsRu2AY9M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			HbpuGzUJ+HuixS3ayUx8O0DqlzY=
+			</data>
+			<key>hash2</key>
+			<data>
+			3TqDycK3ZNyuQSnjuGil1cQYVkvjn/xhxqtz1HcO6t8=
+			</data>
+		</dict>
 		<key>Headers/RKByteResponse.h</key>
-		<data>
-		+wFiDEGYB9nC7Ieudyut6fFal9E=
-		</data>
-		<key>Headers/RKCalibrateCommand.h</key>
-		<data>
-		AwnahzJfr6ljtQ+6mjugW9rmU/Q=
-		</data>
-		<key>Headers/RKCalibrateResponse.h</key>
-		<data>
-		dh7STBuXSdksyQE3qDvJ8kJ4wtU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			oKvBujp5UYDTFV0KXEYyGBvnUeM=
+			</data>
+			<key>hash2</key>
+			<data>
+			HX8xrPgJtpn0Mxj5Uxcn0mPGn2jZfOHXq8CeLq8rSGs=
+			</data>
+		</dict>
 		<key>Headers/RKCollisionDetectedAsyncData.h</key>
-		<data>
-		cyA1KH3X8rgJsNNn411eeTC3jN0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			HfO7Jx28NDv1ZDGVgqek3uM/ECg=
+			</data>
+			<key>hash2</key>
+			<data>
+			+CRz4XYaC7vqXClwBTpJ+bQx5Ig77NxlBNH0/ARr4OE=
+			</data>
+		</dict>
 		<key>Headers/RKCommandList.h</key>
-		<data>
-		c9T1obhsVBkrugetfQ4bn2KHxyQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Z8wjtxowjbxtoEvftLP0izulP4=
+			</data>
+			<key>hash2</key>
+			<data>
+			5TSsYDfStB5+aBN57hAtlwUHO+JTXaenlifQCld2j/k=
+			</data>
+		</dict>
 		<key>Headers/RKConfigureCollisionDetectionCommand.h</key>
-		<data>
-		aeGHdmSNV3V3VJenbVzTXyAyMTk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			EFpw7O9tFoc9f7nCnkZxJ6HStT4=
+			</data>
+			<key>hash2</key>
+			<data>
+			7Y+1ROGZgCUWOB2IFZeZFhz2lWY2mXxT+KG5t3B8AzY=
+			</data>
+		</dict>
 		<key>Headers/RKConfigureCollisionDetectionResponse.h</key>
-		<data>
-		hxsLbyYSXp2epCm1RvY39vpV9zY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			q8F2SZHVl5AF5U6C3nn424liiys=
+			</data>
+			<key>hash2</key>
+			<data>
+			V980EDaOxAxInKgPTPZKd+Pkb+dJOOe7KArZiybj06I=
+			</data>
+		</dict>
 		<key>Headers/RKConfigureLocatorCommand.h</key>
-		<data>
-		vU9UFTre7Vk1nFrxle1kya+OQcQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			PUmMw2WqGdrv+cqbC+24vqCUwXs=
+			</data>
+			<key>hash2</key>
+			<data>
+			bPUGohGbtM7ofXRcSp3KHlQLpVlyWdjNbbL+XMlif6E=
+			</data>
+		</dict>
 		<key>Headers/RKConfigureLocatorResponse.h</key>
-		<data>
-		7bOn3nykdHZpIMYFSZARdhNbDQk=
-		</data>
-		<key>Headers/RKDeviceAsyncData.h</key>
-		<data>
-		ap8RYjz5S5mqDPwg0dqYwPL8jtQ=
-		</data>
-		<key>Headers/RKDeviceAsyncData_PrivateAdditions.h</key>
-		<data>
-		r2WjbdrkanMibafPhgnNPyFt5T4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVtSk9ftND/wkhkzTpVt/YuHCbA=
+			</data>
+			<key>hash2</key>
+			<data>
+			7WN4LQB+D8CNtRgAODbfxY5O/xAuk3Ul3fF2y1xp3jo=
+			</data>
+		</dict>
 		<key>Headers/RKDeviceCommand.h</key>
-		<data>
-		mKRdFPcRmJ1anbx+3Kgj1ifft4k=
-		</data>
-		<key>Headers/RKDeviceCommand_PrivateAdditions.h</key>
-		<data>
-		nlXZayUYzNwsAH/UTV99WzhKBtk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			WBKab5fxx4CSgUGeVSlJBIdLh38=
+			</data>
+			<key>hash2</key>
+			<data>
+			1fl26Ad3PqbuCmUtfDkXD466/pe8W2gGxz3LtECWlsI=
+			</data>
+		</dict>
 		<key>Headers/RKDeviceList.h</key>
-		<data>
-		4HDB8jBBXmo6Ot6qGu7KE1g+cEk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			xzeUuP/njctrOInZiBfEPf6UK8E=
+			</data>
+			<key>hash2</key>
+			<data>
+			BovJCsOxSpwFwXEO2LvZ4c0Ak8wAyuNcq/w7qT1Ox88=
+			</data>
+		</dict>
 		<key>Headers/RKDeviceMessage.h</key>
-		<data>
-		uIN7+KyNqj0MMPGlXQ4xDh9kCDk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			vGw56OZ2T6C/gW7hbwoS7qUZJPU=
+			</data>
+			<key>hash2</key>
+			<data>
+			jK8JR26NB2sZTQLQU00m3FNux7OqDtTUmdHl5L6rIPU=
+			</data>
+		</dict>
 		<key>Headers/RKDeviceResponse.h</key>
-		<data>
-		87qOsUjKceGIRam/fFPrs6RBdsg=
-		</data>
-		<key>Headers/RKDeviceResponse_PrivateAdditions.h</key>
-		<data>
-		VoqBnEEjPUmjpXQuWEae5RHoakc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			8xsjgapI609X7yT3WMq2zbyH0RU=
+			</data>
+			<key>hash2</key>
+			<data>
+			qc6u71AqfQHSmItSeWdkf4lXFH5evXtfwcKI1slGLqs=
+			</data>
+		</dict>
 		<key>Headers/RKDeviceSensorsAsyncData.h</key>
-		<data>
-		SRAA4r/6TSOZ1Uo8QEwcC9WZmlw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			2BSsn4Acevh73ZiL0nNk4iqTOUk=
+			</data>
+			<key>hash2</key>
+			<data>
+			NXar+MDgrQNxNc97L5/3o04ELL8fyC6O8Jx3ziig428=
+			</data>
+		</dict>
 		<key>Headers/RKDeviceSensorsData.h</key>
-		<data>
-		yTwjG9txX9M6EmeGcldDA1nkYE4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			huUtvEs5EcyZymSh0tFJjp+p65o=
+			</data>
+			<key>hash2</key>
+			<data>
+			fUIRbLQxTt8+tb55UGyubuzvHZ8vRuY4Z1C1dX5B4hY=
+			</data>
+		</dict>
 		<key>Headers/RKDiscoveryAgent.h</key>
-		<data>
-		vIihw6a/G4+lt0bwb3OuzXoddSE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			vIihw6a/G4+lt0bwb3OuzXoddSE=
+			</data>
+			<key>hash2</key>
+			<data>
+			3uFunjeWqMAmEedjB2CTYgSj2Zys5cfLjMjha1/WJfk=
+			</data>
+		</dict>
 		<key>Headers/RKDriveAlgorithm.h</key>
-		<data>
-		jC/89YShC3kyOn8XRlV6tJOQKFg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			jC/89YShC3kyOn8XRlV6tJOQKFg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Eov+h+fMrTrYQgIhs39jzy6AGHhHIVsabso7xwFinpY=
+			</data>
+		</dict>
 		<key>Headers/RKFlashWritingCommandDetector.h</key>
-		<data>
-		VGIhFq8sPY2vludSB7gJjMpZdNU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			VGIhFq8sPY2vludSB7gJjMpZdNU=
+			</data>
+			<key>hash2</key>
+			<data>
+			sV++UjYCi6NSbuG1+p+rsUX3QqnytnGaWf2L/KlBVFk=
+			</data>
+		</dict>
 		<key>Headers/RKForceChargeCommand.h</key>
-		<data>
-		m7n6NZSAWrsQ9tga/OLtmA0tRZk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			A4WVQ7pq1nMnAFSlhijcW+5UVKI=
+			</data>
+			<key>hash2</key>
+			<data>
+			TzWmAxmf/vUMP/rA15oQg5fCY0jFBuyj8V4pRe8TxOQ=
+			</data>
+		</dict>
 		<key>Headers/RKGetAutoReconnectCommand.h</key>
-		<data>
-		ZgnP2/BM5bMhBeG+mHqXf3wdN+I=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			JuA1yrZR92fLzukIoBiPlEX/tmM=
+			</data>
+			<key>hash2</key>
+			<data>
+			/P1kFseughPwhHPMc50Ad8b5jKGx4Auz8h1a8zaZr4Y=
+			</data>
+		</dict>
 		<key>Headers/RKGetAutoReconnectResponse.h</key>
-		<data>
-		hnWR4HE3UtoeESOutLI2xXF7ydI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			ITF83345zFqQ/BScOJ60a616fE0=
+			</data>
+			<key>hash2</key>
+			<data>
+			7iFRaQTfonTRCMJNXor88yhCzWk8mao4WZPAYAr/4io=
+			</data>
+		</dict>
 		<key>Headers/RKGetBluetoothInfoCommand.h</key>
-		<data>
-		CSiv8A5d1zYJeEiszJKMWgm0rKY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			gmIgjUJId0EIKqdEkDNWajCEcWc=
+			</data>
+			<key>hash2</key>
+			<data>
+			EFTmotdkTPKZkzJ/YWJoDFXJFPvTk1njnWE6Fhndhhg=
+			</data>
+		</dict>
 		<key>Headers/RKGetBluetoothInfoResponse.h</key>
-		<data>
-		UKFWrkrvq2dnWX3YRJOeMmswI38=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			6ueRFa2v6xFiMdm0FHpesNbjm9s=
+			</data>
+			<key>hash2</key>
+			<data>
+			yMNN040gj+JBCqNN0E1iD4QFwYj5pzNVy3FubFVLreM=
+			</data>
+		</dict>
 		<key>Headers/RKGetChargerStateCommand.h</key>
-		<data>
-		aGql5mgJBGa3HAy8g5ffWNL0ANM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			3j9RfkTOalkjDpYNq0KIJbCRgPU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zyv3NqDoCkFEDwfTPZXgBJ/m3dXY7lFaB0MGeq+9/Ew=
+			</data>
+		</dict>
 		<key>Headers/RKGetChargerStateResponse.h</key>
-		<data>
-		S7WqehWOR6ax/Bi2I6etpELZC74=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			fC5bCoBV9QF1CpQ3pcVSdoAdxLU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ku9oYJzAG/F5l9GXXtmiZCAdXiVwALqlVkRoB4Fd1ug=
+			</data>
+		</dict>
 		<key>Headers/RKGetChassisIdCommand.h</key>
-		<data>
-		3UptNNNjbZsQ5oItWVkD10adk3M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			vl0V4nTLopscB8SSDWmy2jCTyA8=
+			</data>
+			<key>hash2</key>
+			<data>
+			xn9P214cYz/EbVPmPSxP2Bj5dNMnbXMJoy+B1LNTwb0=
+			</data>
+		</dict>
 		<key>Headers/RKGetChassisIdResponse.h</key>
-		<data>
-		pKeYDRqOgV8OQSB3OViC4dfKwiQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			46lIWskECGNWJm6h/591VSzvF+E=
+			</data>
+			<key>hash2</key>
+			<data>
+			tyRRwOFjfe2RKDuXV5OLK9zWjrHvoryI7vpInSWLomo=
+			</data>
+		</dict>
 		<key>Headers/RKGetDeviceModeCommand.h</key>
-		<data>
-		d9mmfmTucFTR6XfV7bEdEqpag38=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			HDECKbkKOoVw/ycAGTgRxsIzGpU=
+			</data>
+			<key>hash2</key>
+			<data>
+			noU1AyiKuGvfnILrhQZe3tDH+J03Ju30tA82qd4M22Q=
+			</data>
+		</dict>
 		<key>Headers/RKGetDeviceModeResponse.h</key>
-		<data>
-		MHFfAMIaaHuRBlSnj5NCxa3YsnU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Qkvy+SpxqBeqIg4AiZ9u06jv90=
+			</data>
+			<key>hash2</key>
+			<data>
+			wdOrQEARkcFG/bLz2zENaEnxvHZnXmCNCfrbfwV5whQ=
+			</data>
+		</dict>
 		<key>Headers/RKGetNonPersistentOptionFlagsCommand.h</key>
-		<data>
-		NtD6mrDLnvOZpjuk16DOmajdcOs=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			vzxgGbay5FuJ/mWWd1upHwUOea0=
+			</data>
+			<key>hash2</key>
+			<data>
+			sGN2sBnQJeO3yf//zM8kL1a1Qd1SIsbHRjj9MpyxS+s=
+			</data>
+		</dict>
 		<key>Headers/RKGetNonPersistentOptionFlagsResponse.h</key>
-		<data>
-		g3kpne7u5AkhGwB+nvfu5i4sN0s=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			mL2v9B9HPW3q2s+ZXOzoIFvyMds=
+			</data>
+			<key>hash2</key>
+			<data>
+			hG6RfPOeRwh8KffghrgRocpw9Skh5aFX2mQ7P1twZxA=
+			</data>
+		</dict>
 		<key>Headers/RKGetOptionFlagsCommand.h</key>
-		<data>
-		zY/ksODmntcFAgYTTgbYVS1gt1A=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			tncpd+ID+eIkijcz1W1rAkUSpLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			fi4RYO6ixr676qsUyG2mPhbC2KhKOLoh5jsuAnCdLJY=
+			</data>
+		</dict>
 		<key>Headers/RKGetOptionFlagsResponse.h</key>
-		<data>
-		SCvYIzzs5fmCDC4c7Q1si+wv/ko=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			kHQahDzvqVAz0+4QpurYTNRNQqw=
+			</data>
+			<key>hash2</key>
+			<data>
+			3iKrjxuaTkjDglUsMTzNbSEakbEUWqdxUPuZQaO+YXQ=
+			</data>
+		</dict>
 		<key>Headers/RKGetPersistentPageCRCCommand.h</key>
-		<data>
-		iu3uPnfN6FT3D4a9SibvmW4C4LA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			7Yr2/Ou9ZN5udb6e8g2hr0/LDQ0=
+			</data>
+			<key>hash2</key>
+			<data>
+			OpKBKnENEm3bjo14tKaRPmEXR1ZN61m6Ue1mOrdPN5E=
+			</data>
+		</dict>
 		<key>Headers/RKGetPersistentPageCRCResponse.h</key>
-		<data>
-		q27Htiz0Jsur3TWZdd43QBwtJcQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			qZtILU/aLFHY3dCWsHv5pc7tPww=
+			</data>
+			<key>hash2</key>
+			<data>
+			C//xEcsy/JMOedApjVXXBqsM5+OvHNypyNBbeK1PfB8=
+			</data>
+		</dict>
 		<key>Headers/RKGetPowerStateCommand.h</key>
-		<data>
-		t9TOIv9MrgWSsOM88M1nKIGZ9R8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			sDq61oit+xCkiamlM3mCOzprFPY=
+			</data>
+			<key>hash2</key>
+			<data>
+			D4BBNucvToqZ+eUsqgUY07bMcor/HfkKIYIkXmTxfKU=
+			</data>
+		</dict>
 		<key>Headers/RKGetPowerStateResponse.h</key>
-		<data>
-		vXgk2c+N7nH7xXbMFrpD4c6ObuM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			DclOcVEeK+80/R3F8l8Ot2j9XI4=
+			</data>
+			<key>hash2</key>
+			<data>
+			MWBlKsinBHf1oGFHzfyb3geP/K5fCIy91j+9Opswwsc=
+			</data>
+		</dict>
 		<key>Headers/RKGetSkuCommand.h</key>
-		<data>
-		4+svRmmSq9jAxYL38iSDKPPthNE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			VNuRpFGHwFCoz1ViAYC9PyypJp0=
+			</data>
+			<key>hash2</key>
+			<data>
+			9Ux/+W8dBQe3wP3y+w8Ya/Gz6nNlBgzC1p23KdNvuDg=
+			</data>
+		</dict>
 		<key>Headers/RKGetSkuResponse.h</key>
-		<data>
-		dwHCX1eKiaDQ58RFTMbGg6rOuKw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			becGjDQ+MEncL9r9bR1VPQOqiUQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			1Yx/jZKvchzdZwlIBOYEc1gNpkNOuma27+j0TYOP5Y0=
+			</data>
+		</dict>
 		<key>Headers/RKGetUserRGBLEDColorCommand.h</key>
-		<data>
-		oDaaIhVLIOg1YdHlQu5UwyYMQsY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			JIDABzC8DxH9vfWim07qoeczs9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			/7fSxTSyvXD+YM73W5g+Rpf28z+VNgIE3Wwe/qHGeMs=
+			</data>
+		</dict>
 		<key>Headers/RKGetUserRGBLEDColorResponse.h</key>
-		<data>
-		NCeL11bFuZuiv/F5j66VAeH+oSw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			23SOltcZo7/l762acUlMMS+591w=
+			</data>
+			<key>hash2</key>
+			<data>
+			CfEaf6/jXgfN/Sql5O02Sc6qYI7f+tI92CO5yHk2gMI=
+			</data>
+		</dict>
 		<key>Headers/RKGoToSleepCommand.h</key>
-		<data>
-		iUeovltGipjkwMoQ8lfXIPTq3TQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			V62BBsqhrIwFKvvJrg5hqMXgHWY=
+			</data>
+			<key>hash2</key>
+			<data>
+			69vww9j/ZFBpSyKj6xLR1opzoPwc73qCxGHo7cOkyu8=
+			</data>
+		</dict>
 		<key>Headers/RKGoToSleepResponse.h</key>
-		<data>
-		XigCuspXGfR24h+/SU9J266EXT4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z9G4s8LdfANq/XtVPpAxSaRtqjI=
+			</data>
+			<key>hash2</key>
+			<data>
+			hTPEwEqcrNZjc5ekeDUXyCM/5nq2Jyac4RfACWlJ7aM=
+			</data>
+		</dict>
 		<key>Headers/RKGyroData.h</key>
-		<data>
-		nx+UgxrbC7+CohR95quWDQS5QiI=
-		</data>
-		<key>Headers/RKImmutableCommand.h</key>
-		<data>
-		zzSnT4gl2pUc+YtmVrLepAFReTA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			nx+UgxrbC7+CohR95quWDQS5QiI=
+			</data>
+			<key>hash2</key>
+			<data>
+			5Xr2Shn3b5SqmbDTzUI7iIlHJBQuGXCT074wSJYT+Bs=
+			</data>
+		</dict>
 		<key>Headers/RKJoyStickDriveAlgorithm.h</key>
-		<data>
-		oWZO0n2r8u5SFpGpobkgnTAoPg0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			oWZO0n2r8u5SFpGpobkgnTAoPg0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Jx+yl13C4pOO8P1NlcIXZXfZuj290ebB4Kgqc5OTjR8=
+			</data>
+		</dict>
 		<key>Headers/RKJumpToBootloaderCommand.h</key>
-		<data>
-		axqtvGZb5DHHAG8TbGJZkx9m21M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			5lu6Pn+45a96viQzq4+Rsfx7128=
+			</data>
+			<key>hash2</key>
+			<data>
+			vlc6Hns5QjzjMdAv1E90ICGvbdIkvp+kzuIghjmfsY8=
+			</data>
+		</dict>
 		<key>Headers/RKJumpToBootloaderResponse.h</key>
-		<data>
-		A521K3YCMyC3bnnF//WR1JG4eDA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			MjdLp6Bk+8fad9bUSObKiw3EwLY=
+			</data>
+			<key>hash2</key>
+			<data>
+			bzQ+SitgCqDAoMbNXjG7BKetwYJHIIq8NC/CW7KEfPg=
+			</data>
+		</dict>
 		<key>Headers/RKJumpToMainAppCommand.h</key>
-		<data>
-		Rf9L6u2Vk1nSBDA1Oup1Dfn6D4w=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1phJOpER3zQzNX8hD9U62y1DkhE=
+			</data>
+			<key>hash2</key>
+			<data>
+			tJh3ewpgD+YfNt9HL7jhRpc5nzn2wO/LnF/TkZyKZy8=
+			</data>
+		</dict>
 		<key>Headers/RKJumpToMainAppResponse.h</key>
-		<data>
-		0VznTSBPZjOYzhHuZi+UCzVBuNM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			VZNPqAEHsjAEyt1QyXq0dmLRpQo=
+			</data>
+			<key>hash2</key>
+			<data>
+			DPhbUeC8kksns+CwyMe9SRKX8b9fb0Sdr3026J/yGq0=
+			</data>
+		</dict>
+		<key>Headers/RKLastDataStreamingDataTracker.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mlfnpPk5lj59S95t7UF8ODE8C1g=
+			</data>
+			<key>hash2</key>
+			<data>
+			/zEzpqIw6PR/uxMpTpnCB+2F9ZBRTmP2mAOBD9vKO0A=
+			</data>
+		</dict>
 		<key>Headers/RKLinkDelegate.h</key>
-		<data>
-		AYiAHR+k2bp7gvIQzzDjxQ5sWTY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYiAHR+k2bp7gvIQzzDjxQ5sWTY=
+			</data>
+			<key>hash2</key>
+			<data>
+			9ZzmNPB+ToLrN5E7fdW+PMcZ8id0QVoQ8CXqt+WqDwI=
+			</data>
+		</dict>
 		<key>Headers/RKLocatorData.h</key>
-		<data>
-		D+uOjINmB3uJIuFrbpKwZjpa3RY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			D+uOjINmB3uJIuFrbpKwZjpa3RY=
+			</data>
+			<key>hash2</key>
+			<data>
+			lB66BVcV3AEzcFPv/gamnRWM1Y9JP/2no0BtNz6Xa9c=
+			</data>
+		</dict>
 		<key>Headers/RKMagnetometerData.h</key>
-		<data>
-		+1v5YEeJkdO62IGvXQJiOUxk49M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			+1v5YEeJkdO62IGvXQJiOUxk49M=
+			</data>
+			<key>hash2</key>
+			<data>
+			23pb4oBRCUTYdtPQXdnblW5kQhi/xVihf71RvqbR9Z4=
+			</data>
+		</dict>
 		<key>Headers/RKMainProcessorState.h</key>
-		<data>
-		K4nhEA5tWnGxfdeIpn2olg7gW/s=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			35PoOz1JtABpCcF8ThaGESF9p1g=
+			</data>
+			<key>hash2</key>
+			<data>
+			ugFoha6ar5DzaS2DN4DpmXFJQn1S7PeEcrSHoAtQBJw=
+			</data>
+		</dict>
 		<key>Headers/RKMajorMinorVersion.h</key>
-		<data>
-		dFKBT5Woot86qdrtHnFkzzt6h/I=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			TlL1kqaMnJWSTpUA04NXaC4Tg1Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			TYpRHcZ85NmdYh3irbps1p84x55i1kE0aV6KXKqtcOo=
+			</data>
+		</dict>
 		<key>Headers/RKMath.h</key>
-		<data>
-		My/w45ioYUIO/W9kwMlQf7xNaIE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			My/w45ioYUIO/W9kwMlQf7xNaIE=
+			</data>
+			<key>hash2</key>
+			<data>
+			ABEHIC6uLE3EDNSnElzRagYilDH1KBBtqlXfScBtm+s=
+			</data>
+		</dict>
 		<key>Headers/RKPingCommand.h</key>
-		<data>
-		gsGYlZk8k5jZUJt9xGLIJkIp12o=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			BCjhmugaUFuWua5wfdITTlbFmrk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Qn+MiHbUWLhnbkw9E7TSbbg5h9GWm/oAcnF7uB9ZeuE=
+			</data>
+		</dict>
 		<key>Headers/RKPingResponse.h</key>
-		<data>
-		v/1OH7vSfM9ZrTWjto2a5DAFajQ=
-		</data>
-		<key>Headers/RKPollPacketTimesCommand.h</key>
-		<data>
-		8V/p0e5T9wUdYJqeHJ6gf+g0YV0=
-		</data>
-		<key>Headers/RKPollPacketTimesResponse.h</key>
-		<data>
-		QGma3iom0PUEKYvhl47JlxoDbkI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			0ZtUgu5UWREnEef/y1+UQy0xQeU=
+			</data>
+			<key>hash2</key>
+			<data>
+			od1eSvoL73XwZ3M/PWFc+cMVLvRkfWFUFMesYKmawA4=
+			</data>
+		</dict>
 		<key>Headers/RKPowerNotificationAsyncData.h</key>
-		<data>
-		51B8oNZsELPW6NkW2p/BRG+FWQg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			YZ453RYGhNNVVgU4UEZH6jKgd+o=
+			</data>
+			<key>hash2</key>
+			<data>
+			NUsXQdWmuYTsEvxoA0znkCeN/qqhJp+60Yen/X+C0Ts=
+			</data>
+		</dict>
 		<key>Headers/RKQuaternionData.h</key>
-		<data>
-		Clwoi9OKldiLy/crZspNoOU1cuI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Clwoi9OKldiLy/crZspNoOU1cuI=
+			</data>
+			<key>hash2</key>
+			<data>
+			S9k1X+V1MZFv5IHHdna0kYRo6VXe7nOp6TTjtlEVarc=
+			</data>
+		</dict>
 		<key>Headers/RKRGBLEDOutputCommand.h</key>
-		<data>
-		Sqz8oaFiUOYfUJYZO/QDEDdJ1XA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			nt7kmqLhbmdlHAbSZAIS7LEhzRk=
+			</data>
+			<key>hash2</key>
+			<data>
+			BGO//e0DXB2Tf0S74vTg5P8ZKBSF/9HuE7wC2mb3zoo=
+			</data>
+		</dict>
 		<key>Headers/RKRGBLEDOutputResponse.h</key>
-		<data>
-		m1eC6mGewOg3qObFVx4Zoab4Fbo=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			iE1SJssnSvcomo/LLaOR7uO+O/M=
+			</data>
+			<key>hash2</key>
+			<data>
+			cW5cQR7GrmwS9+xuykJ/CdqABOBf+TXfea1mPUF4BUA=
+			</data>
+		</dict>
 		<key>Headers/RKRawMotorValuesCommand.h</key>
-		<data>
-		8sE/CcActzTNBgtVkjd9EbEhDZg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			w17nCI3C0mLOqRoixr6ijHb2jgA=
+			</data>
+			<key>hash2</key>
+			<data>
+			xIHeJ36tOKC6Iey6GG4Uwk61JYsItykgQ8JqbKTTdMI=
+			</data>
+		</dict>
 		<key>Headers/RKRawMotorValuesResponse.h</key>
-		<data>
-		DdP+xWpti9kUXtpeMjo5eL+G3n4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			5dYXdWt66KTrOvsz7aEcam7E2Zg=
+			</data>
+			<key>hash2</key>
+			<data>
+			bbtV9b4URi3j/vRQ1lZEDbNpyUNlpxLQ8AysOeD5Bs8=
+			</data>
+		</dict>
 		<key>Headers/RKReadOdometerCommand.h</key>
-		<data>
-		X6sn4Cb/gDQYquzW9dyLHg+8GZM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			e3Rnq71eIAYKQs7Hlrsfd+Yc7HM=
+			</data>
+			<key>hash2</key>
+			<data>
+			3nl1aHT4vKtr4W5rqFeohLRMqTRJti4Cq8tVUNms5dA=
+			</data>
+		</dict>
 		<key>Headers/RKReadOdometerResponse.h</key>
-		<data>
-		P+6YOTtGuKTzkILQqX0zEmMuaTs=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			ipb1GZG4OB907DsSs/sz2kxbxcQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			UL/3nWi6QExmF03HyxYj0SVy0a1fBt2z/8O2DkuCZms=
+			</data>
+		</dict>
 		<key>Headers/RKResponseCodes.h</key>
-		<data>
-		OTI4LhG3ywG+NZ1beIzY39wtDXk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			PTbWneCZ+sy621hZYOdxLtR72SM=
+			</data>
+			<key>hash2</key>
+			<data>
+			9PWkczUIjeVS7/FzSTiWiay3cMsJTvNO30kvuS5V/u8=
+			</data>
+		</dict>
 		<key>Headers/RKResponseFactory.h</key>
-		<data>
-		JwuVWvAWsJyS62FKo7vxL3mfdi4=
-		</data>
-		<key>Headers/RKResponseFactory_PrivateAdditions.h</key>
-		<data>
-		59LvfS8u0Ur6RatRAnEOrAQJ0Es=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			h6xLyWPsuYHVrc53kTJ1oQ8Qbfw=
+			</data>
+			<key>hash2</key>
+			<data>
+			6z5+hsiCtniKzcbMMq48fdTuL8Bdtgn0gz453cCZHq4=
+			</data>
+		</dict>
 		<key>Headers/RKRobotBase.h</key>
-		<data>
-		pBMYWgVZHRdxAr5cMQ9hBqNM0qM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			k/ITZOfJseF0qHaRWIFO0pj4eew=
+			</data>
+			<key>hash2</key>
+			<data>
+			drU5PFS5hOoAM6D0yaOzftjQLfgUgoKnADV0hBmCCHY=
+			</data>
+		</dict>
 		<key>Headers/RKRobotNotification.h</key>
-		<data>
-		csTOHt9S9mp/3Er5fXQxYLIN5EA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			csTOHt9S9mp/3Er5fXQxYLIN5EA=
+			</data>
+			<key>hash2</key>
+			<data>
+			MUq9Xo5qTHoKHXcJ62csHkbYwYfZAFz/UIPZ9fpqtyY=
+			</data>
+		</dict>
 		<key>Headers/RKRollCommand.h</key>
-		<data>
-		CL+wqtoDwQqpujgvhXDhuI92pjk=
-		</data>
-		<key>Headers/RKRollResponse.h</key>
-		<data>
-		GsmtgNBsF6uNLcTLXfYc+JT2Ex0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			0iyiZHLUnLtG7beKPT2+oB6mKUY=
+			</data>
+			<key>hash2</key>
+			<data>
+			N3w53W8F4bqOctDEdA+1WA4QzymsUcmgqfyuIVrhYOM=
+			</data>
+		</dict>
 		<key>Headers/RKRollingQueue.h</key>
-		<data>
-		YItOfA4fff6oRNxkdGTmFJPmMeE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			YItOfA4fff6oRNxkdGTmFJPmMeE=
+			</data>
+			<key>hash2</key>
+			<data>
+			pJae5KBkrel7n9HJgS5lJldp9e9YT3/4Zn4sFGounwU=
+			</data>
+		</dict>
 		<key>Headers/RKRotationRateCommand.h</key>
-		<data>
-		GnS/h6XhEOlEgRRD/gX3OPme/Dw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			y8BhHmQ/xvxvC7LbYXUbmzjU/Bo=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Ii91hxI4N5YSmHenylqhHXNU/vF3ROxpK7x2Qkv6UU=
+			</data>
+		</dict>
 		<key>Headers/RKRotationRateResponse.h</key>
-		<data>
-		SVhqPduhvSvnIBCFRfWlBsvtt38=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			HGA7jMinfGK3vA8WqkbdOeWiwj8=
+			</data>
+			<key>hash2</key>
+			<data>
+			XSX5agW8C5p6S7++/gKdC8DmTnWEQYjtg7VrOvF33QU=
+			</data>
+		</dict>
 		<key>Headers/RKSelfLevelCommand.h</key>
-		<data>
-		70i0MjF6qtMYm149mbAFBmZlfz0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			wrRsy1y6DZnLNM7JOVVf/JhX0Fw=
+			</data>
+			<key>hash2</key>
+			<data>
+			VHu7Ff/v7+Ky+k0GhSAiJp+4kFhhYlcY/OAF4VHTB60=
+			</data>
+		</dict>
 		<key>Headers/RKSelfLevelCompleteAsyncData.h</key>
-		<data>
-		azIvQC6RKT3eM/K+HHpJY5qVh/Q=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			cTHHYHtQxI22l73kZGk37ukazlQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			+tAl2EXLtJa1s01eyF3kTVd7bt8Y6OvZxPvRuvKuZ4U=
+			</data>
+		</dict>
 		<key>Headers/RKSelfLevelResponse.h</key>
-		<data>
-		Slgl/9VEoclyto/8dghYkNgz6Wg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			RzzikMt846Qbq1GLgQ1XBN1nuRc=
+			</data>
+			<key>hash2</key>
+			<data>
+			VfqsSzJtAEkBlmwlQ2ryxMo2Jjq/srStq8aocGQ6dR4=
+			</data>
+		</dict>
 		<key>Headers/RKSensorData.h</key>
-		<data>
-		KTEYhr9jsQxsEfbj2Lw7788yQUk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			KTEYhr9jsQxsEfbj2Lw7788yQUk=
+			</data>
+			<key>hash2</key>
+			<data>
+			qfOZq28YofhSEEjCFf843vw3X4eke+I2nQg4/qGWcmE=
+			</data>
+		</dict>
 		<key>Headers/RKSession.h</key>
-		<data>
-		WzOUQaVmYKHA82cOXoAetG15vcw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			dKIAsC5vfkUTNxrwZkVvamsrQ/Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			dcz5mFu0hH+HcbJwVssTHdXSJNfYYTv0DWR0H2OPYHk=
+			</data>
+		</dict>
 		<key>Headers/RKSetAutoReconnectCommand.h</key>
-		<data>
-		CD3l2HQ8+8J55cpASy5iP+OMU2M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			fWd7AV0/as1XG4M5Ar+eGelSnvc=
+			</data>
+			<key>hash2</key>
+			<data>
+			nSkJtUheRKwhRojb/PLEx/rnxyY4lvrqEXgObu23ymA=
+			</data>
+		</dict>
 		<key>Headers/RKSetAutoReconnectResponse.h</key>
-		<data>
-		Vdtl1NYp/2iXh/L4dA/oHxQZBpk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			bEubbEGrDoc9lsSlD+CEdk5K3qk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Be15azlvLxVt9ugzEZOc6cQfGWk7MYYecLmRe/PzzVE=
+			</data>
+		</dict>
 		<key>Headers/RKSetBluetoothNameCommand.h</key>
-		<data>
-		nO0d2H7OcIQ/qPozr8+nEksr1Xs=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			3sSsvj7/s+T+RlvgXb8SbNCuA9g=
+			</data>
+			<key>hash2</key>
+			<data>
+			KaR2utl3UIgPhpLdXZrSHa9n3NlT6tX4nDLyCh/PRtA=
+			</data>
+		</dict>
 		<key>Headers/RKSetBluetoothNameResponse.h</key>
-		<data>
-		xfXgG7XsTRUkRd9kQSPDsFHTQuY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			3EuHCKzg/YuReflt3sbuUxFBVdc=
+			</data>
+			<key>hash2</key>
+			<data>
+			0rMrt7uCM+D1AkZVlSo+1YO0wiRJOld7ADjJDx656o4=
+			</data>
+		</dict>
 		<key>Headers/RKSetDataStreamingCommand.h</key>
-		<data>
-		yA9bv6Vn5VFaHImqFxSpD20DCzc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			03ETNU+Ae1dTLN6avkZMhdCVBtw=
+			</data>
+			<key>hash2</key>
+			<data>
+			WYXPi8hcE5vouvhW6tJyx7Bz11TX/ed/W+e7qnUzOgg=
+			</data>
+		</dict>
 		<key>Headers/RKSetDataStreamingResponse.h</key>
-		<data>
-		89y1CV4jxSS5Zj9KISd09ELbfm8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			7wrKU7qeSh1LbtR2vplbkm4lb3g=
+			</data>
+			<key>hash2</key>
+			<data>
+			7Quko5Gn0m1C5+EXxWc6jN0PnOxYt6FusCnWCs7SxG4=
+			</data>
+		</dict>
 		<key>Headers/RKSetFactoryDeviceModeCommand.h</key>
-		<data>
-		vnHQAJ4HELZebLDiuwygWGE23GQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			b6cr4hNCFYuhijn7olgG4pWdemw=
+			</data>
+			<key>hash2</key>
+			<data>
+			j0uQPYwg/ea/V3l9fbUBrlkxCNO7r++y4wZSUYQ/aP8=
+			</data>
+		</dict>
 		<key>Headers/RKSetFactoryDeviceModeResponse.h</key>
-		<data>
-		97VCd+6LvFDhpZGXLcbbFtXMtpY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			L/z/SGmbkHTMQbqlnuPldadbdUs=
+			</data>
+			<key>hash2</key>
+			<data>
+			6BgmCS4P8PWoNmrgEEzsXfYKE6iqyZpKzWZXUKMFSNY=
+			</data>
+		</dict>
 		<key>Headers/RKSetHeadingCommand.h</key>
-		<data>
-		sg8UmsauIMkN3bR2iuqD0KUw6nI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yy7aUI+8SHEUkA12nokFSSEHgYA=
+			</data>
+			<key>hash2</key>
+			<data>
+			wLJidOvrd5wilXI3fPAkHTfo1QSUJIcpwL11Mse3IGU=
+			</data>
+		</dict>
 		<key>Headers/RKSetHeadingResponse.h</key>
-		<data>
-		RpM/m8XFmnjcU1HrOR7ZL5faXTU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			PUVEXI/xpDrFjHs1I97Op7Ov2Fs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Lfw3gyyJ+brOupfwAkfesLiNxaqgHxudWfnUMAcqK/0=
+			</data>
+		</dict>
 		<key>Headers/RKSetInactivityTimeoutCommand.h</key>
-		<data>
-		OiwBXip0QmRlVqXdTShysOElxnE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			WSGJz4G65bqav8NKmp/u8Qj71AY=
+			</data>
+			<key>hash2</key>
+			<data>
+			I3daATy5AzW6aq9n4Ewtfye79MILAHZbBYYBMUsZYrA=
+			</data>
+		</dict>
 		<key>Headers/RKSetInactivityTimeoutResponse.h</key>
-		<data>
-		2z3alOG3QXAfvg3aYhsVIYQxPAk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			05IoZiKIDM1Cj4FiMTZ97XR2tYc=
+			</data>
+			<key>hash2</key>
+			<data>
+			H+KX2ldqxaXT8GQ0/feZIKZtEss62mrtaoZeUvUpyJ4=
+			</data>
+		</dict>
 		<key>Headers/RKSetMotionTimeoutCommand.h</key>
-		<data>
-		/hzMzgwxn9cPKpvts3wP/Y/x0AU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			NTVbsNyYC+uWxAyhZw+TYcoTo5o=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZhELAuXTMqpl5K5YqucFEXazL0EyNxWsoZTAKPSApG8=
+			</data>
+		</dict>
 		<key>Headers/RKSetMotionTimeoutResponse.h</key>
-		<data>
-		uY0gzLvHrcIlMTqjziW3MOJQQ64=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			01nEOnjphCUj8YXWW/igz5JVMzc=
+			</data>
+			<key>hash2</key>
+			<data>
+			B5y4HV+PDFQSnvOoesAFGSOmjE2oLYeXRatwOwZjU2M=
+			</data>
+		</dict>
 		<key>Headers/RKSetNonPersistentOptionFlagsCommand.h</key>
-		<data>
-		+3g8iPEgEEJRAGBF4YuLL6EzHPM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			MisygPOriNNKh9VSfvkpRFX1IW8=
+			</data>
+			<key>hash2</key>
+			<data>
+			YlT9pHA+QuD1QL5ruXnzruop0hF382gmMcXDRjqE28s=
+			</data>
+		</dict>
 		<key>Headers/RKSetNonPersistentOptionFlagsResponse.h</key>
-		<data>
-		CR3GiyrizAxxqpOm9on1KdkAtuE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			sBj74m92Djo4eauIvIt/w/wc9Dw=
+			</data>
+			<key>hash2</key>
+			<data>
+			woixs0SgJm2ZQS8mh4cePZRbEc5aVMdFMmKfCrbDBQ8=
+			</data>
+		</dict>
 		<key>Headers/RKSetOptionFlagsCommand.h</key>
-		<data>
-		WWGTAXWNpIn3ayPTtmjwL8gFBHM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			gjAYxqy6Z6l4yuN0p/TjcCvtDM8=
+			</data>
+			<key>hash2</key>
+			<data>
+			3Cbb+KpjVF9fKvcHKj4wctXLnBxv7GqmxC1bJawVLBY=
+			</data>
+		</dict>
 		<key>Headers/RKSetOptionFlagsResponse.h</key>
-		<data>
-		MZdxBhmTGHUekCKcS38oy1HaHxM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			kH8x0FHn8Ymckp2skAQfzc/w5cU=
+			</data>
+			<key>hash2</key>
+			<data>
+			QBCNs/kGfXif0q17zs52YI99s5IKXHUgK9XXknCQvF0=
+			</data>
+		</dict>
 		<key>Headers/RKSetPIDCommand.h</key>
-		<data>
-		/6vqZLECN0JfuO7AzyhfmS3Ea/w=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			rbjKkwPpnR1256wi/grNZLzFiZ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			QgErQ2dA6eh+xuJrlggUsBOsC+3biYeXrB41F+Otl0w=
+			</data>
+		</dict>
 		<key>Headers/RKSetPowerNotificationCommand.h</key>
-		<data>
-		nGNh3A/nTABDg3ikWoxYjKEtjiI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			qYFfp5MApAEzBNY4Zn7AMKNmK+E=
+			</data>
+			<key>hash2</key>
+			<data>
+			zKKnrgZMhaDvY1hXNwmImsn9pN6l9jixKshfAMuuDVU=
+			</data>
+		</dict>
 		<key>Headers/RKSetPowerNotificationResponse.h</key>
-		<data>
-		65t+TQNTwEYkEJl0lzrRWiknVwY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			RLlAvW1Eo8v0qymHN3s1KJASoMo=
+			</data>
+			<key>hash2</key>
+			<data>
+			w0FO2HYI0YoZf8zj3kDyQAClQiW8vz0TaGktozqf+9o=
+			</data>
+		</dict>
 		<key>Headers/RKSetUserHackModeCommand.h</key>
-		<data>
-		jmCoRSgK+akDUmRdkl9+jQpze9w=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			+vegkhklQcDfBGMCuTxYcNy4d50=
+			</data>
+			<key>hash2</key>
+			<data>
+			t2oXe76zQCJ3VvZ4LS4S8po1+DiJ0RxJ+21+qEQkqAU=
+			</data>
+		</dict>
 		<key>Headers/RKSetUserHackModeResponse.h</key>
-		<data>
-		wU8qbRB5vNIAuzBTd7a7HR6nS3c=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			p28bKjmNtREQbk5gSzmwJpJZGC0=
+			</data>
+			<key>hash2</key>
+			<data>
+			G9t2CUhTu8mFiu7FMKZPhzQ3DxKHrchtHUM4XtojFlk=
+			</data>
+		</dict>
 		<key>Headers/RKSleepDidOccurMessage.h</key>
-		<data>
-		E1fAXZVdt18CBpqcgtleEJDYoBk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			kBBgc7YbaIEl1keAJ5d7B5Ki/Rc=
+			</data>
+			<key>hash2</key>
+			<data>
+			rcfRsgkIvma2OIpc6+fq25CEpABp/jrSXtxtwrXIjwc=
+			</data>
+		</dict>
 		<key>Headers/RKSleepWillOccurMessage.h</key>
-		<data>
-		+8A7vznZKJSyfb97eYGmiYF42vc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			RWVX//3iY5EV6KJY9CHfq8U1IR0=
+			</data>
+			<key>hash2</key>
+			<data>
+			R4Izw/CC8q6sw0DWMElDfB+ogyML43bPqPVd4uw9H+M=
+			</data>
+		</dict>
 		<key>Headers/RKStabilizationCommand.h</key>
-		<data>
-		62d/ISLcb68N73Wb1ZKIVZon2Zc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			EWk8MN7IAJw2joTSrsRjBZGiG90=
+			</data>
+			<key>hash2</key>
+			<data>
+			RMpUJ4yJd8Mys52sjPbVFW/RWpbhRJkZYfSy1NJXzxc=
+			</data>
+		</dict>
 		<key>Headers/RKStabilizationResponse.h</key>
-		<data>
-		USBF6FyCwxhP6znDOWK7bv10jtQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			jmiLqP/LG0LauFObj33VcchF1JE=
+			</data>
+			<key>hash2</key>
+			<data>
+			7GZPnw597hsZ5iLrgNRhlbgllvnFLyowzOCQjdvwhSU=
+			</data>
+		</dict>
 		<key>Headers/RKStat.h</key>
-		<data>
-		4RnRVMFTDvKZXP3sqvOwTwhMNO0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			IxkthF1w8lI3H2zLd1nNZo/8u20=
+			</data>
+			<key>hash2</key>
+			<data>
+			UkQh+6LehmUxCXisjpcUsl+DhpyKa/Z0ghOXUeYsCIQ=
+			</data>
+		</dict>
 		<key>Headers/RKStatEventListener.h</key>
-		<data>
-		RYKNVUcQx9BPnRXldQYA4kka2Wg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			X0Zrvs0KCgIAqPUmHyo3emr7qQk=
+			</data>
+			<key>hash2</key>
+			<data>
+			BizXjxDznL8MfIEIKQdowAWpcTMrYvRmrysCaLgeaX0=
+			</data>
+		</dict>
 		<key>Headers/RKStatForPacketFactory.h</key>
-		<data>
-		pr3k6lmwBX8/gH4Nr/j+6e/o5nk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			pr3k6lmwBX8/gH4Nr/j+6e/o5nk=
+			</data>
+			<key>hash2</key>
+			<data>
+			YMdIpa4zjZEmuQMYhjWlG0m3SsAXA5fllmmIBWtIj68=
+			</data>
+		</dict>
 		<key>Headers/RKStatOdometerHack.h</key>
-		<data>
-		XP3LyR7u+jrFjBTmYhoekFFcUzI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			iZ79saGY5dpTU3mh1J/QAGeew+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			YAYsNf1eJwLO3Xh4ZWcxYP7oQJqdiRk3zAH2MC2wcNQ=
+			</data>
+		</dict>
 		<key>Headers/RKStatRecorder.h</key>
-		<data>
-		LxfcjUgsA3N4XCSwNj62juF8F4E=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			LxfcjUgsA3N4XCSwNj62juF8F4E=
+			</data>
+			<key>hash2</key>
+			<data>
+			I3Tq8yiyN4uTsv39CwPIk4RZjM1O8Js6iWA44IYhXrg=
+			</data>
+		</dict>
 		<key>Headers/RKStats.h</key>
-		<data>
-		O7uvHsTXT0pKScOJW5O/ioKIACA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			9dunBsHrssAhWFC8W6rLPyJPrH0=
+			</data>
+			<key>hash2</key>
+			<data>
+			PP4KbGOAKpgEfeChTfZdAOsFVU+tlTyS+hV6P5bOEM4=
+			</data>
+		</dict>
 		<key>Headers/RKTemperatureCommand.h</key>
-		<data>
-		mi8TlXtgOCQW0G4GVjyn+XTB0Pg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			477rTVoxAg9XxGMxq77epZx4a0E=
+			</data>
+			<key>hash2</key>
+			<data>
+			Knf39ul1CpG1mAlqHPvlveoXBtXeFUFORArQzjgygpA=
+			</data>
+		</dict>
 		<key>Headers/RKTemperatureResponse.h</key>
-		<data>
-		FCNXsiaA2KaiQReyI/wMKFcmEmg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			RKvzK71hSMwcZRQxKa/Ypr8PMZc=
+			</data>
+			<key>hash2</key>
+			<data>
+			iHmYlJVAOpxiDOWLF9yWMPzY9zs1lHHiZ3IsfvkLGvM=
+			</data>
+		</dict>
 		<key>Headers/RKTypes.h</key>
-		<data>
-		ncMj2dUJqzVQTSHGH6jOXQrsoKI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			8YGeqOmbLx6//Juh3vOLVX6fmUY=
+			</data>
+			<key>hash2</key>
+			<data>
+			tXATJ+SVH2I46ambfv3z8ipg3ZOF8Pep2RTJpohOnWg=
+			</data>
+		</dict>
 		<key>Headers/RKURLRequestFactory.h</key>
-		<data>
-		n3hGo8l77Fiy3XjcliYOOF5gf/g=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/XxyXZ+KdrmUTTbzCcu4d5pF/3U=
+			</data>
+			<key>hash2</key>
+			<data>
+			gPpZrtaLsObH8v0AduKVH8urRupOEX15crk5Zq2PEh0=
+			</data>
+		</dict>
+		<key>Headers/RKV1Session.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Tx3XHwCw5MN5BT6VJq+YmD6djRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			62hmS6uANUKGhYmQ+pYCKho6pBVVuEeUxQm3/4xDMaQ=
+			</data>
+		</dict>
+		<key>Headers/RKV2Session.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vrnd2NGR1OiISaGXCvMYss6izgw=
+			</data>
+			<key>hash2</key>
+			<data>
+			sSjVj0L27dGOmB0LwNQXN5wtokp7VhWgNKAnfy4sUEo=
+			</data>
+		</dict>
 		<key>Headers/RKVersioningCommand.h</key>
-		<data>
-		MDkr6L3mrCAUF7X4KLJwq0xx+Jk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			w5fYvL6AR3sy9Alp+8cCEJbcWjA=
+			</data>
+			<key>hash2</key>
+			<data>
+			qrKSTOSIdrghF0+5p04bapTjRexBCC2uI7tpzR0Gs/c=
+			</data>
+		</dict>
 		<key>Headers/RKVersioningResponse.h</key>
-		<data>
-		Lc9qQnyLKkoSdDhVo7cpRYJnNfA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			T1M5Txg+Co7J+iC1Rv4NgkHoESM=
+			</data>
+			<key>hash2</key>
+			<data>
+			0cL1+NsBTHgAQbEisX7sbNEs0t7f4XJ608I40oGO4T8=
+			</data>
+		</dict>
 		<key>Headers/RKWebSyncAgent.h</key>
-		<data>
-		+VgeCQLG2bJq1jrvmOaMTRPAOuA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			+VgeCQLG2bJq1jrvmOaMTRPAOuA=
+			</data>
+			<key>hash2</key>
+			<data>
+			VJVnSYsH6ecRdSUKmFTHTD9J0dF7Z/HHHBMIH9ajxRM=
+			</data>
+		</dict>
 		<key>Headers/RKWritePersistentPageCommand.h</key>
-		<data>
-		CoSUENH0rFI4F/kYdZofnwGO9fw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			VfNnjSFUJb/eHgeUmb4+NpftnlU=
+			</data>
+			<key>hash2</key>
+			<data>
+			R0v51NuCrwDqtt/zT5FpSR+InrCR+mrlypl/bQuZxQ4=
+			</data>
+		</dict>
 		<key>Headers/RKWritePersistentPageResponse.h</key>
-		<data>
-		Tbcb7YPtyBznOQirCO1vmD6XiiE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			iAhiiaO5xkRsrMZoJe/aVhLmvto=
+			</data>
+			<key>hash2</key>
+			<data>
+			HHEH7qNglZoTfkhgHZWWvg7sdAOWAfwYFvUtCzm+Awg=
+			</data>
+		</dict>
+		<key>Headers/RobotCommandKit-Prefix.pch</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1ToFq8ARi6NuZ8xHO1loIHpeX0I=
+			</data>
+			<key>hash2</key>
+			<data>
+			adUnRIrN00PCgWYt5Z2iQOQ6d4ImZLhiDnciLPp0CEQ=
+			</data>
+		</dict>
 		<key>Headers/RobotCommandKit.h</key>
-		<data>
-		HfTGZ8Vo0YyxuWQisqH96vOH7us=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			X/onSR3lPRrbywGEkLrygGy8WCg=
+			</data>
+			<key>hash2</key>
+			<data>
+			/+lKIPMKs6pml1lVSDbeKRfffd11xhr9atb4B/G5IJY=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

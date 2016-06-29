@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RobotCommandKit/RKDriveAlgorithm.h>
+#import <RobotCommandKit/RobotCommandKit.h>
 
 /*! @file */
 

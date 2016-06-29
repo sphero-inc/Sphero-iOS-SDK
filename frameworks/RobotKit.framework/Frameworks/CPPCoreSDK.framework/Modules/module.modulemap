@@ -1,0 +1,6 @@
+framework module CPPCoreSDK {
+  umbrella header "CPPCoreSDK.h"
+
+  export *
+  module * { export * }
+}

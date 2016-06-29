@@ -1,18 +1,7 @@
-//
-//  Copyright (c) 2014 Orbotix Inc. All rights reserved.
-//
+#import <RobotCommandKit/RobotCommandKit.h>
 
-#import <RobotCommandKit/RKAsyncMessage.h>
+@interface RKOrbBasicPrintMessage : RKAsyncMessage
 
-/*!
- * Class to encapsulate asyncronous messages sent from a Sphero. 
- */
-@interface RKOrbBasicPrintMessage : RKAsyncMessage {
-@private
-   NSString *message;
-}
-
-/*! The message that was returned from orbBasic for printing on the screen. */
-@property ( nonatomic, readonly ) NSString *message;
+@property (nonatomic, strong, readonly, nonnull) NSString *message;
 
 @end

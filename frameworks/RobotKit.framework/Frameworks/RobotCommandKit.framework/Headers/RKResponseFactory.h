@@ -1,23 +1,17 @@
-//
-//  RKResponseFactory.h
-//  RobotKit
-//
-//  Created by wes on 7/2/13.
-//  Copyright (c) 2013 Orbotix Inc. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import "RKDeviceCommand.h"
 #import "RKDeviceResponse.h"
 
 @interface RKResponseFactory : NSObject
 
-+ (RKDeviceResponse*) responseFromRawPacket:(NSData*) rawPacket withCommand:(RKDeviceCommand*) command;
++ (nonnull instancetype)new NS_UNAVAILABLE;
++ (void)registerResponse:(nonnull Class)responseClass;
++ (nonnull RKDeviceResponse *)responseFromDeviceId:(uint8_t)deviceId
+                                         commandId:(uint8_t)commandId
+                                    sequenceNumber:(uint8_t)sequenceNumber
+                                      responseCode:(uint8_t)responseCode
+                                              data:(nonnull NSData *)data;
 
-+ (RKDeviceResponse*) timeoutResponseForCommand:(RKDeviceCommand*) command;
-
-+ (RKResponseFactory*) singleton;
-
--(void) registerResponse:(Class) responseClass;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end

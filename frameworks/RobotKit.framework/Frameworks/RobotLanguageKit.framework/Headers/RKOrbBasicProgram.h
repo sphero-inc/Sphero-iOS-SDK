@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RobotCommandKit/RKRobotBase.h>
+#import <RobotCommandKit/RobotCommandKit.h>
 
 /*! @file */
 

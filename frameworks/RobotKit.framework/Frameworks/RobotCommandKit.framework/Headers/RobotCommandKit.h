@@ -1,162 +1,167 @@
-//
-//  Copyright (c) 2014-2015 Orbotix Inc. All rights reserved.
-//
+#import <Foundation/Foundation.h>
 
-#import "RKLinkDelegate.h"
-#import "RKSession.h"
-#import "RKRobotBase.h"
-#import "RKDiscoveryAgent.h"
-#import "RKAppUtils.h"
+FOUNDATION_EXPORT double RobotCommandKitVersionNumber;
+
+FOUNDATION_EXPORT const unsigned char RobotCommandKitVersionString[];
+
+#import <RobotCommandKit/RobotCommandKit-Prefix.pch>
+#import <RobotCommandKit/RKLinkDelegate.h>
+#import <RobotCommandKit/RKRobotBase.h>
+#import <RobotCommandKit/RKDiscoveryAgent.h>
+#import <RobotCommandKit/RKAppUtils.h>
+#import <RobotCommandKit/RKBuildDescriptors.h>
 
 #pragma mark - all robots
-#import "RKRobotNotification.h"
-#import "NSData+Extensions.h"
+#import <RobotCommandKit/RKRobotNotification.h>
+#import <RobotCommandKit/NSData+Extensions.h>
 
 // Drive algorithms
-#import "RKDriveAlgorithm.h"
-#import "RKJoyStickDriveAlgorithm.h"
+#import <RobotCommandKit/RKDriveAlgorithm.h>
+#import <RobotCommandKit/RKJoyStickDriveAlgorithm.h>
 
 // Common
-#import "RKDeviceMessage.h"
-#import "RKDeviceCommand.h"
+#import <RobotCommandKit/RKByteCommand.h>
+#import <RobotCommandKit/RKByteResponse.h>
+#import <RobotCommandKit/RKByteAsyncMessage.h>
+#import <RobotCommandKit/RKDeviceMessage.h>
+#import <RobotCommandKit/RKDeviceCommand.h>
+#import <RobotCommandKit/RKAsyncFactory.h>
+#import <RobotCommandKit/RKResponseFactory.h>
 
-#import "RKDeviceAsyncData.h" // deprecated - replaced with RKAsyncMessage
-#import "RKAsyncMessage.h"
-#import "RKDeviceResponse.h"
-#import "RKImmutableCommand.h"
-#import "RKByteCommand.h"
-#import "RKResponseCodes.h"
+#import <RobotCommandKit/RKAsyncMessage.h>
+#import <RobotCommandKit/RKAsyncId.h>
+#import <RobotCommandKit/RKDeviceResponse.h>
+#import <RobotCommandKit/RKResponseCodes.h>
+#import <RobotCommandKit/RKMainProcessorState.h>
+#import <RobotCommandKit/RKLastDataStreamingDataTracker.h>
+#import <RobotCommandKit/RKStats.h>
+#import <RobotCommandKit/RKFlashWritingCommandDetector.h>
+#import <RobotCommandKit/RKRollingQueue.h>
 
+// Session
+#import <RobotCommandKit/RKSession.h>
+#import <RobotCommandKit/RKV1Session.h>
+#import <RobotCommandKit/RKV2Session.h>
 
 //// Core
-#import "RKGetAutoReconnectCommand.h"
-#import "RKGetBluetoothInfoCommand.h"
-#import "RKGetPowerStateCommand.h"
-#import "RKPingCommand.h"
-#import "RKPollPacketTimesCommand.h"
-#import "RKSetAutoReconnectCommand.h"
-#import "RKSetBluetoothNameCommand.h"
-#import "RKSetInactivityTimeoutCommand.h"
-#import "RKSetPowerNotificationCommand.h"
-#import "RKVersioningCommand.h"
-#import "RKJumpToBootloaderCommand.h"
-#import "RKGoToSleepCommand.h"
-#import "RKGetChargerStateCommand.h"
+#import <RobotCommandKit/RKGetAutoReconnectCommand.h>
+#import <RobotCommandKit/RKGetBluetoothInfoCommand.h>
+#import <RobotCommandKit/RKGetPowerStateCommand.h>
+#import <RobotCommandKit/RKPingCommand.h>
+#import <RobotCommandKit/RKSetAutoReconnectCommand.h>
+#import <RobotCommandKit/RKSetBluetoothNameCommand.h>
+#import <RobotCommandKit/RKSetInactivityTimeoutCommand.h>
+#import <RobotCommandKit/RKSetPowerNotificationCommand.h>
+#import <RobotCommandKit/RKVersioningCommand.h>
+#import <RobotCommandKit/RKJumpToBootloaderCommand.h>
+#import <RobotCommandKit/RKGoToSleepCommand.h>
+#import <RobotCommandKit/RKGetChargerStateCommand.h>
 
 //// Bootloader
-#import "RKJumpToMainAppCommand.h"
-
+#import <RobotCommandKit/RKJumpToMainAppCommand.h>
 
 #pragma mark - Commands
-#import "RKRollCommand.h"
-#import "RKGetChassisIdCommand.h"
-#import "RKCalibrateCommand.h"
-#import "RKStabilizationCommand.h"
-#import "RKSetHeadingCommand.h"
-#import "RKRotationRateCommand.h"
-#import "RKSetDataStreamingCommand.h"
-#import "RKRawMotorValuesCommand.h"
-#import "RKConfigureCollisionDetectionCommand.h"
-#import "RKSetUserHackModeCommand.h"
-#import "RKGetDeviceModeCommand.h"
-#import "RKConfigureLocatorCommand.h"
-#import "RKSelfLevelCommand.h"
-#import "RKSetMotionTimeoutCommand.h"
-#import "RKSetOptionFlagsCommand.h"
-#import "RKGetOptionFlagsCommand.h"
-#import "RKSetNonPersistentOptionFlagsCommand.h"
-#import "RKGetNonPersistentOptionFlagsCommand.h"
-#import "RKSetFactoryDeviceModeCommand.h"
-#import "RKRollCommand.h"
-#import "RKSetPIDCommand.h"
-#import "RKGetSkuCommand.h"
-#import "FWLevel1DiagnosticCommand.h"
-#import "RKForceChargeCommand.h"
+#import <RobotCommandKit/RKRollCommand.h>
+#import <RobotCommandKit/RKGetChassisIdCommand.h>
+#import <RobotCommandKit/RKStabilizationCommand.h>
+#import <RobotCommandKit/RKSetHeadingCommand.h>
+#import <RobotCommandKit/RKRotationRateCommand.h>
+#import <RobotCommandKit/RKSetDataStreamingCommand.h>
+#import <RobotCommandKit/RKRawMotorValuesCommand.h>
+#import <RobotCommandKit/RKConfigureCollisionDetectionCommand.h>
+#import <RobotCommandKit/RKSetUserHackModeCommand.h>
+#import <RobotCommandKit/RKGetDeviceModeCommand.h>
+#import <RobotCommandKit/RKConfigureLocatorCommand.h>
+#import <RobotCommandKit/RKSelfLevelCommand.h>
+#import <RobotCommandKit/RKSetMotionTimeoutCommand.h>
+#import <RobotCommandKit/RKSetOptionFlagsCommand.h>
+#import <RobotCommandKit/RKGetOptionFlagsCommand.h>
+#import <RobotCommandKit/RKSetNonPersistentOptionFlagsCommand.h>
+#import <RobotCommandKit/RKGetNonPersistentOptionFlagsCommand.h>
+#import <RobotCommandKit/RKSetFactoryDeviceModeCommand.h>
+#import <RobotCommandKit/RKRollCommand.h>
+#import <RobotCommandKit/RKSetPIDCommand.h>
+#import <RobotCommandKit/RKGetSkuCommand.h>
+#import <RobotCommandKit/FWLevel1DiagnosticCommand.h>
+#import <RobotCommandKit/FWLevel1DiagnosticChunkedCommand.h>
+#import <RobotCommandKit/RKForceChargeCommand.h>
 
 #pragma mark - LEDS
-#import "RKGetUserRGBLEDColorCommand.h"
-#import "RKRGBLEDOutputCommand.h"
-#import "RKBackLEDOutputCommand.h"
+#import <RobotCommandKit/RKGetUserRGBLEDColorCommand.h>
+#import <RobotCommandKit/RKRGBLEDOutputCommand.h>
+#import <RobotCommandKit/RKBackLEDOutputCommand.h>
 
 #pragma mark - Utils
-#import "RKMath.h"
-#import "RKMajorMinorVersion.h"
-
+#import <RobotCommandKit/RKMath.h>
+#import <RobotCommandKit/RKMajorMinorVersion.h>
 
 #pragma mark - Responses
-#import "RKResponseFactory.h"
-#import "RKGoToSleepResponse.h"
-#import "RKVersioningResponse.h"
-#import "RKPingResponse.h"
-#import "RKJumpToBootloaderResponse.h"
-#import "RKSetBluetoothNameResponse.h"
-#import "RKGetBluetoothInfoResponse.h"
-#import "RKGetPowerStateResponse.h"
-#import "RKPollPacketTimesResponse.h"
-#import "RKSetPowerNotificationResponse.h"
-#import "RKSetInactivityTimeoutResponse.h"
-#import "RKSetAutoReconnectResponse.h"
-#import "RKGetAutoReconnectResponse.h"
-#import "RKJumpToMainAppResponse.h"
-#import "RKGetUserRGBLEDColorResponse.h"
-#import "RKRGBLEDOutputResponse.h"
-#import "RKBackLEDOutputResponse.h"
-#import "RKByteResponse.h"
-#import "RKSetHeadingResponse.h"
-#import "RKCalibrateResponse.h"
-#import "RKRollResponse.h"
-#import "RKRotationRateResponse.h"
-#import "RKSetDataStreamingResponse.h"
-#import "RKStabilizationResponse.h"
-#import "RKRawMotorValuesResponse.h"
-#import "RKConfigureCollisionDetectionResponse.h"
-#import "RKSetUserHackModeResponse.h"
-#import "RKGetDeviceModeResponse.h"
-#import "RKConfigureLocatorResponse.h"
-#import "RKSelfLevelResponse.h"
-#import "RKSetMotionTimeoutResponse.h"
-#import "RKSetOptionFlagsResponse.h"
-#import "RKGetOptionFlagsResponse.h"
-#import "RKSetNonPersistentOptionFlagsResponse.h"
-#import "RKGetNonPersistentOptionFlagsResponse.h"
-#import "RKSetFactoryDeviceModeResponse.h"
-#import "RKGetChassisIdResponse.h"
-#import "RKGetSkuResponse.h"
-#import "FWLevel1DiagnosticResponse.h"
-#import "RKGetChargerStateResponse.h"
+#import <RobotCommandKit/RKResponseFactory.h>
+#import <RobotCommandKit/RKGoToSleepResponse.h>
+#import <RobotCommandKit/RKVersioningResponse.h>
+#import <RobotCommandKit/RKPingResponse.h>
+#import <RobotCommandKit/RKJumpToBootloaderResponse.h>
+#import <RobotCommandKit/RKSetBluetoothNameResponse.h>
+#import <RobotCommandKit/RKGetBluetoothInfoResponse.h>
+#import <RobotCommandKit/RKGetPowerStateResponse.h>
+#import <RobotCommandKit/RKSetPowerNotificationResponse.h>
+#import <RobotCommandKit/RKSetInactivityTimeoutResponse.h>
+#import <RobotCommandKit/RKSetAutoReconnectResponse.h>
+#import <RobotCommandKit/RKGetAutoReconnectResponse.h>
+#import <RobotCommandKit/RKJumpToMainAppResponse.h>
+#import <RobotCommandKit/RKGetUserRGBLEDColorResponse.h>
+#import <RobotCommandKit/RKRGBLEDOutputResponse.h>
+#import <RobotCommandKit/RKBackLEDOutputResponse.h>
+#import <RobotCommandKit/RKSetHeadingResponse.h>
+#import <RobotCommandKit/RKRotationRateResponse.h>
+#import <RobotCommandKit/RKSetDataStreamingResponse.h>
+#import <RobotCommandKit/RKStabilizationResponse.h>
+#import <RobotCommandKit/RKRawMotorValuesResponse.h>
+#import <RobotCommandKit/RKConfigureCollisionDetectionResponse.h>
+#import <RobotCommandKit/RKSetUserHackModeResponse.h>
+#import <RobotCommandKit/RKGetDeviceModeResponse.h>
+#import <RobotCommandKit/RKConfigureLocatorResponse.h>
+#import <RobotCommandKit/RKSelfLevelResponse.h>
+#import <RobotCommandKit/RKSetMotionTimeoutResponse.h>
+#import <RobotCommandKit/RKSetOptionFlagsResponse.h>
+#import <RobotCommandKit/RKGetOptionFlagsResponse.h>
+#import <RobotCommandKit/RKSetNonPersistentOptionFlagsResponse.h>
+#import <RobotCommandKit/RKGetNonPersistentOptionFlagsResponse.h>
+#import <RobotCommandKit/RKSetFactoryDeviceModeResponse.h>
+#import <RobotCommandKit/RKGetChassisIdResponse.h>
+#import <RobotCommandKit/RKGetSkuResponse.h>
+#import <RobotCommandKit/FWLevel1DiagnosticResponse.h>
+#import <RobotCommandKit/FWLevel1DiagnosticChunkedResponse.h>
+#import <RobotCommandKit/RKGetChargerStateResponse.h>
 
 #pragma mark - Async Data
-#import "RKCollisionDetectedAsyncData.h"
-#import "RKSelfLevelCompleteAsyncData.h"
-#import "RKDeviceSensorsAsyncData.h"
-#import "RKDeviceSensorsData.h"
-#import "RKAccelerometerData.h"
-#import "RKMagnetometerData.h"
-#import "RKAttitudeData.h"
-#import "RKGyroData.h"
-#import "RKBackEMFData.h"
-#import "RKLocatorData.h"
-#import "RKQuaternionData.h"
-#import "RKPowerNotificationAsyncData.h"
-#import "FWLevel1DiagnosticAsyncData.h"
+#import <RobotCommandKit/RKCollisionDetectedAsyncData.h>
+#import <RobotCommandKit/RKSelfLevelCompleteAsyncData.h>
+#import <RobotCommandKit/RKDeviceSensorsAsyncData.h>
+#import <RobotCommandKit/RKDeviceSensorsData.h>
+#import <RobotCommandKit/RKAccelerometerData.h>
+#import <RobotCommandKit/RKMagnetometerData.h>
+#import <RobotCommandKit/RKAttitudeData.h>
+#import <RobotCommandKit/RKGyroData.h>
+#import <RobotCommandKit/RKBackEMFData.h>
+#import <RobotCommandKit/RKLocatorData.h>
+#import <RobotCommandKit/RKQuaternionData.h>
+#import <RobotCommandKit/RKPowerNotificationAsyncData.h>
+#import <RobotCommandKit/FWLevel1DiagnosticAsyncData.h>
+#import <RobotCommandKit/FWLevel1DiagnosticChunkedAsyncData.h>
 
 #pragma mark - Async - new naming convention
-#import "RKSleepWillOccurMessage.h"
-#import "RKSleepDidOccurMessage.h"
+#import <RobotCommandKit/RKSleepWillOccurMessage.h>
+#import <RobotCommandKit/RKSleepDidOccurMessage.h>
 
 // odometer
-#import "RKReadOdometerCommand.h"
-#import "RKReadOdometerResponse.h"
+#import <RobotCommandKit/RKReadOdometerCommand.h>
+#import <RobotCommandKit/RKReadOdometerResponse.h>
 
+#import <RobotCommandKit/RKTypes.h>
 
-#import "RKResponseFactory_PrivateAdditions.h"
-#import "RKAsyncFactory_PrivateAdditions.h"
-
-#import "RKTypes.h"
-
-
-#import "RKTemperatureCommand.h"
-#import "RKTemperatureResponse.h"
+#import <RobotCommandKit/RKTemperatureCommand.h>
+#import <RobotCommandKit/RKTemperatureResponse.h>
 
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)

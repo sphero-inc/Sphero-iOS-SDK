@@ -11,6 +11,7 @@
 
 @protocol RKOvalControlDelegate <NSObject>
 
+- (void)ovalControlDidInitialize:(RKOvalControl *)control;
 - (void)ovalControl:(RKOvalControl *)control didFailToSendProgramWithMessage:(NSString *)message;
 - (void)ovalControlDidFinishSendingProgram:(RKOvalControl *)control;
 - (void)ovalControlDidResetOvm:(RKOvalControl *)control;

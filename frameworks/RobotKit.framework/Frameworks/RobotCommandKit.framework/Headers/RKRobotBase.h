@@ -6,7 +6,7 @@
 #import "RKRobotBase.h"
 #import "RKDeviceCommand.h"
 #import "RKDeviceResponse.h"
-#import "RKDeviceAsyncData.h"
+#import "RKAsyncMessage.h"
 #import "RKVersioningResponse.h"
 #import "RKGoToSleepCommand.h"
 
@@ -18,7 +18,7 @@ typedef void (^RKDeviceResponseBlock)(RKDeviceResponse* response);
 /*! The basis for any connected device that sends commands and receives responses & broadcasts */
 @protocol RKRobotBase <NSObject>
 
-/*! unique identifier - btAddress for Classic and NSUUID for BLE */
+/*! unique commandId - btAddress for Classic and NSUUID for BLE */
 -(NSString*) identifier;
 -(NSString*) serialNumber;
 -(NSString*) name;

@@ -1,9 +1,5 @@
-//
-//  Copyright (c) 2014 Orbotix Inc. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
-#import <RobotCommandKit/RKRobotBase.h>
+#import "RKRobotBase.h"
 
 @interface RKStatEventListener : NSObject <RKResponseObserver>
 
@@ -14,6 +10,5 @@
 
 - (void)startListener;
 - (void)stopListener;
-
 
 @end

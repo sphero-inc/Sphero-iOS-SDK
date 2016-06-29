@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define kAppId                  @"sphe172c542260dd83c709eba5a449efe59a"
-#define kSecret                 @"yKqlueWG2GLVyrAkcAn6"
-
 @interface RKURLRequestFactory : NSObject
 
 + (NSURLRequest *)requestWithURL:(NSURL *)URL stats:(NSArray *)stats;

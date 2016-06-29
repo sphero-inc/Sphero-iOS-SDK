@@ -15,7 +15,7 @@
 @property (strong, nonatomic) RKVersioningResponse *lastVersioning;
 
 @property (strong, nonatomic, readonly) RKMacroPlayer* macroPlayer;
-@property (nonatomic, readonly) float currentHeading;
+@property (nonatomic, assign) float currentHeading;
 
 
 +(id) convenienceWithRobot:(id<RKRobotBase>) robotBase;

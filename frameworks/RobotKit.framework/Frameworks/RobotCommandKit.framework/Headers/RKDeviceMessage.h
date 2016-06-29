@@ -1,21 +1,17 @@
-//
-//  Copyright 2013 Orbotix Inc. All rights reserved.
-//
-
-/*! @file */
-
 #import <Foundation/Foundation.h>
+// Include these here so commands don't all have to declare them
+#import "RKCommandList.h"
+#import "RKDeviceList.h"
 
-/*!
- * @brief A base clase for object that messaged to or from a robot.
- *
- * This clase is the base clase for a messages sent and received from a robot. 
- */
 @interface RKDeviceMessage : NSObject
 
-/*! The time stamp for when an object is created. */
-@property ( nonatomic, readonly ) NSTimeInterval timeStamp;
+@property (nonatomic, assign, readonly) uint8_t sequenceNumber;
+@property (nonatomic, strong, nullable, readonly) NSData *data;
 
-@property ( nonatomic, strong) NSData* packet;
+- (uint8_t)deviceId;
+- (uint8_t)commandId;
+
+- (nullable instancetype)initWithData:(nullable NSData *)data;
+- (nullable instancetype)initWithSequenceNumber:(uint8_t)sequenceNumber data:(nullable NSData *)data;
 
 @end

@@ -7,29 +7,28 @@
 
 @interface RKRadioDescriptor : NSObject
 
--(id) init; // for subclasses.
+- (id)initWithAdvertised:(NSArray *)adUUIDS andRequiredUUIDS:(NSArray *)reqUUIDS;
 
--(id) initWithAdvertised:(NSArray*) adUUIDS andRequiredUUIDS:(NSArray*) reqUUIDS;
-
-+(id) descriptorWithAdvertisedUUIDS:(NSArray*) adUUIDS andRequiredUUIDS:(NSArray*) reqUUIDS;
++ (id)descriptorWithAdvertisedUUIDS:(NSArray *)adUUIDS andRequiredUUIDS:(NSArray *)reqUUIDS;
 
 /*! Services advertised by the remote device*/
-@property (strong , readonly) NSArray* advertisedUUIDS;
+@property (nonatomic, strong , readonly) NSArray* advertisedUUIDS;
 
 /*! Required service UUIDS for the device to function */
-@property (strong, readonly) NSArray* requiredUUIDS;
+@property (nonatomic, strong, readonly) NSArray* requiredUUIDS;
 
 /*! */
-@property (strong) NSArray* namePrefixes;
+@property (nonatomic, strong) NSArray* namePrefixes;
 
 // SpheroCo Radio service and characteristics
-@property (strong) CBUUID* uuidRadioService;
-@property (strong) CBUUID* uuidTxPowerCharacteristic;
-@property (strong) CBUUID* uuidDeepSleepCharacteristic;
-@property (strong) CBUUID* uuidAntiDOSCharacteristic;
-@property (strong) CBUUID* uuidAntiDOSTimeoutCharacteristic;
-@property (strong) CBUUID* uuidWakeCharacteristic;
-@property (strong) CBUUID* uuidRSSICharacteristic;
+@property (nonatomic, strong) CBUUID *uuidRadioService;
+@property (nonatomic, strong) CBUUID *uuidTxPowerCharacteristic;
+@property (nonatomic, strong) CBUUID *uuidDeepSleepCharacteristic;
+@property (nonatomic, strong) CBUUID *uuidAntiDOSCharacteristic;
+@property (nonatomic, strong) CBUUID *uuidAntiDOSTimeoutCharacteristic;
+@property (nonatomic, strong) CBUUID *uuidSecurityCharacteristic;
+@property (nonatomic, strong) CBUUID* uuidWakeCharacteristic;
+@property (nonatomic, strong) CBUUID* uuidRSSICharacteristic;
 
 - (BOOL)nameMatchesPrefixes:(NSString *)name;
 

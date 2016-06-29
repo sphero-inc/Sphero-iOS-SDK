@@ -12,6 +12,14 @@
 		<data>
 		7PdpMZ7XWujHWty7laC1V68Sq5A=
 		</data>
+		<key>Headers/RKAccessoryDiscoveryAgent.h</key>
+		<data>
+		Ly0QzBHbsrQLq9iovIf9Fk2F27M=
+		</data>
+		<key>Headers/RKByNameConnectStrategy.h</key>
+		<data>
+		fM+dsf8i6T35+7+SBVWDYrkP3WU=
+		</data>
 		<key>Headers/RKCharacteristic.h</key>
 		<data>
 		21+6q+UMWWGhBwqtBkBra8Ybs/c=
@@ -36,6 +44,10 @@
 		<data>
 		1qcZbgJ9ePgHTATa5nuEnMGfAAE=
 		</data>
+		<key>Headers/RKLeBatchConnectStrategy.h</key>
+		<data>
+		mNfNBMgzb7APvwIaCogiViA5JCs=
+		</data>
 		<key>Headers/RKLeClosestConnectStrategy.h</key>
 		<data>
 		5qk1nqP+HISNcQYEXhrThP/5oU4=
@@ -48,6 +60,10 @@
 		<data>
 		d1cyefFuubcuSqjddwZ4hXlA18U=
 		</data>
+		<key>Headers/RKLeIfOneConnectStrategy.h</key>
+		<data>
+		fF7p0KNXPg1nKZ4lOoRATGzeT3A=
+		</data>
 		<key>Headers/RKLeNode.h</key>
 		<data>
 		fpyfPy8TTEkDxqqCnfUkPqyTcbs=
@@ -58,7 +74,7 @@
 		</data>
 		<key>Headers/RKLeRobotLink.h</key>
 		<data>
-		dz64roawt9QArxNSbby5kO23Sns=
+		wU02BGwD7Fq01fxdYpnM5xM0oqI=
 		</data>
 		<key>Headers/RKNoConnectStrategy.h</key>
 		<data>
@@ -70,11 +86,11 @@
 		</data>
 		<key>Headers/RKRadioDescriptor.h</key>
 		<data>
-		7TeWeaMdmy91rT6br0nx1u0WbC0=
+		HhFnJG9qX120042kA+zYtk8o20A=
 		</data>
 		<key>Headers/RKRadioServiceWrapper.h</key>
 		<data>
-		5vA9D2EUht6B5FIn8Y0DxtaXlwk=
+		YJZdbdngRPFWwa1mgbSR88KKDuA=
 		</data>
 		<key>Headers/RKRobotDiscoveryAgentLE.h</key>
 		<data>
@@ -82,11 +98,11 @@
 		</data>
 		<key>Headers/RKRobotLE.h</key>
 		<data>
-		//Z+F98G1kjRR0gcDo6wiPb9qgQ=
+		iAYv8MVOyJvkM+hx8qDJyod1jxQ=
 		</data>
 		<key>Headers/RKRobotRadioDescriptor.h</key>
 		<data>
-		7hXPSFaWzvpvvllXIEqsgzbvl9k=
+		XS+Kk/5UFhsyGBXHKbi5fjxR8t4=
 		</data>
 		<key>Headers/RobotKitLE.h</key>
 		<data>
@@ -94,99 +110,297 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/mtDXe98+xEL8sPZrkyX8gLEGJA=
+		GREJUYtt7uJlCenz/qcaGe/VTgM=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/CBUUID+Extension.h</key>
-		<data>
-		TLLSt+WlUzyUtcBAoSFnUeYSN4E=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			TLLSt+WlUzyUtcBAoSFnUeYSN4E=
+			</data>
+			<key>hash2</key>
+			<data>
+			pUkYOWZ0uZDj99fBG/ev3FTToYZw7TUzMvZ311Xlolg=
+			</data>
+		</dict>
 		<key>Headers/NSMutableArray+OrbQueue.h</key>
-		<data>
-		7PdpMZ7XWujHWty7laC1V68Sq5A=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			7PdpMZ7XWujHWty7laC1V68Sq5A=
+			</data>
+			<key>hash2</key>
+			<data>
+			AJmSE9oCcp8lrmjkP2++puQoyamVn+AnuJZu4pzVKgo=
+			</data>
+		</dict>
+		<key>Headers/RKAccessoryDiscoveryAgent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ly0QzBHbsrQLq9iovIf9Fk2F27M=
+			</data>
+			<key>hash2</key>
+			<data>
+			UMjLox4Y1EVeh3biCtK7WAUfqCmCrtorG3l9wt93qdg=
+			</data>
+		</dict>
+		<key>Headers/RKByNameConnectStrategy.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fM+dsf8i6T35+7+SBVWDYrkP3WU=
+			</data>
+			<key>hash2</key>
+			<data>
+			ejzZoCVnNm/tjCS9Pg2sndmNM9gC/L7KN637YHuJNEE=
+			</data>
+		</dict>
 		<key>Headers/RKCharacteristic.h</key>
-		<data>
-		21+6q+UMWWGhBwqtBkBra8Ybs/c=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			21+6q+UMWWGhBwqtBkBra8Ybs/c=
+			</data>
+			<key>hash2</key>
+			<data>
+			6reQGA7KwRKNkjqy/LpnJ623AM4SeY3GYKGjE8A6bV4=
+			</data>
+		</dict>
 		<key>Headers/RKControlSystemPresetCommand.h</key>
-		<data>
-		j6HhecJ5mksEukzBQiccyCpmhow=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			j6HhecJ5mksEukzBQiccyCpmhow=
+			</data>
+			<key>hash2</key>
+			<data>
+			efM64DEx0Hfwr16I7YcRd94+M/4kX5Mfhv7U31uiuxA=
+			</data>
+		</dict>
 		<key>Headers/RKDeviceInfoServiceWrapper.h</key>
-		<data>
-		jqeOCkFc+hbcrjYx4GeuF1UjFME=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			jqeOCkFc+hbcrjYx4GeuF1UjFME=
+			</data>
+			<key>hash2</key>
+			<data>
+			GTq2gi+pPv89jRBaIGl3tBYkqQpIB2Dj+7bZ/x44ruQ=
+			</data>
+		</dict>
 		<key>Headers/RKDiscoveryAgentLE.h</key>
-		<data>
-		r7EniVoKxn8oEkqc2G1WG+k7His=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			r7EniVoKxn8oEkqc2G1WG+k7His=
+			</data>
+			<key>hash2</key>
+			<data>
+			yd0SgdJhQPBoVlgl0qIokQEH7JyGVemuWXLRJu/kZ7g=
+			</data>
+		</dict>
 		<key>Headers/RKHiByeMonitor.h</key>
-		<data>
-		a1KFqVhpIzQw4IETbqAcAcqCIRY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			a1KFqVhpIzQw4IETbqAcAcqCIRY=
+			</data>
+			<key>hash2</key>
+			<data>
+			1ivhti8Em3Hd2aIigvih6vNTExAY5/ekBBmqPc+Bptg=
+			</data>
+		</dict>
 		<key>Headers/RKLeBaseLink.h</key>
-		<data>
-		1qcZbgJ9ePgHTATa5nuEnMGfAAE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1qcZbgJ9ePgHTATa5nuEnMGfAAE=
+			</data>
+			<key>hash2</key>
+			<data>
+			82TdIHoziXLkP1jWX0wocpFDNA6Yp4NZ454qQALV8N4=
+			</data>
+		</dict>
+		<key>Headers/RKLeBatchConnectStrategy.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mNfNBMgzb7APvwIaCogiViA5JCs=
+			</data>
+			<key>hash2</key>
+			<data>
+			xpEZFYynumFsK6rocthGg1rsa5q3OsQPYxYqOWNTF0w=
+			</data>
+		</dict>
 		<key>Headers/RKLeClosestConnectStrategy.h</key>
-		<data>
-		5qk1nqP+HISNcQYEXhrThP/5oU4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			5qk1nqP+HISNcQYEXhrThP/5oU4=
+			</data>
+			<key>hash2</key>
+			<data>
+			fskgxtnntyUy2PAelYtOeC3THK9E97j0lDB2lZfTPg8=
+			</data>
+		</dict>
 		<key>Headers/RKLeConnectStrategy.h</key>
-		<data>
-		JXZlgVIF7n2yjMqgO6eQ2e8DOv4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			JXZlgVIF7n2yjMqgO6eQ2e8DOv4=
+			</data>
+			<key>hash2</key>
+			<data>
+			RbtiB0OuPWKEwbJ7qRb24HjL5fvgZLxxIsiQfj7P7pY=
+			</data>
+		</dict>
 		<key>Headers/RKLeFavoritesManager.h</key>
-		<data>
-		d1cyefFuubcuSqjddwZ4hXlA18U=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			d1cyefFuubcuSqjddwZ4hXlA18U=
+			</data>
+			<key>hash2</key>
+			<data>
+			1fFBYySt/UtEam/5wxlrTQO6unJzK9JY9taVTUB3y0c=
+			</data>
+		</dict>
+		<key>Headers/RKLeIfOneConnectStrategy.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fF7p0KNXPg1nKZ4lOoRATGzeT3A=
+			</data>
+			<key>hash2</key>
+			<data>
+			JO1mYItXYsfbCqxOxogPbJJqgLBjECOuJAjnwrNKbCo=
+			</data>
+		</dict>
 		<key>Headers/RKLeNode.h</key>
-		<data>
-		fpyfPy8TTEkDxqqCnfUkPqyTcbs=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			fpyfPy8TTEkDxqqCnfUkPqyTcbs=
+			</data>
+			<key>hash2</key>
+			<data>
+			WMu/ogVPoN6hEP8R4buCFCGx2KckMnfVBuCCKDq6aXM=
+			</data>
+		</dict>
 		<key>Headers/RKLeProximityConnectStrategy.h</key>
-		<data>
-		JQbfqiZjcZCIMr9ffiL47mE+rEY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			JQbfqiZjcZCIMr9ffiL47mE+rEY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zq8wYZmoAoNtTxx6449DFhmkpjBQQBqaR0Rz98UB6os=
+			</data>
+		</dict>
 		<key>Headers/RKLeRobotLink.h</key>
-		<data>
-		dz64roawt9QArxNSbby5kO23Sns=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			wU02BGwD7Fq01fxdYpnM5xM0oqI=
+			</data>
+			<key>hash2</key>
+			<data>
+			EwFluFANRArt5DNprjDFWqdthk1ehl8FSPQsWixj7W8=
+			</data>
+		</dict>
 		<key>Headers/RKNoConnectStrategy.h</key>
-		<data>
-		emn/gdKdLcinQpcWpA+JYJ4/g6k=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			emn/gdKdLcinQpcWpA+JYJ4/g6k=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ylj1lqZtZWTlMBnf7srFTX13+dkO/Xu7JnEH+JgFm3k=
+			</data>
+		</dict>
 		<key>Headers/RKNodeStateChangedNotification.h</key>
-		<data>
-		+OfTO+1Zw4Qdnq9D7DjkBQ+gQFE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			+OfTO+1Zw4Qdnq9D7DjkBQ+gQFE=
+			</data>
+			<key>hash2</key>
+			<data>
+			2NSmXiu0ck1QfiSL8hjdQklTFiRDRQEgPH9LuBidokA=
+			</data>
+		</dict>
 		<key>Headers/RKRadioDescriptor.h</key>
-		<data>
-		7TeWeaMdmy91rT6br0nx1u0WbC0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			HhFnJG9qX120042kA+zYtk8o20A=
+			</data>
+			<key>hash2</key>
+			<data>
+			/LrrnteBkyyrLeTO1BjtxVSjMSpSoteHidml65s3ltM=
+			</data>
+		</dict>
 		<key>Headers/RKRadioServiceWrapper.h</key>
-		<data>
-		5vA9D2EUht6B5FIn8Y0DxtaXlwk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			YJZdbdngRPFWwa1mgbSR88KKDuA=
+			</data>
+			<key>hash2</key>
+			<data>
+			nUAIwV8Gn3L6XYVAP7ZFDJKbTVTPkdqRas9QEQkiz1I=
+			</data>
+		</dict>
 		<key>Headers/RKRobotDiscoveryAgentLE.h</key>
-		<data>
-		7fc5j9L0Fn4PpBdAj3bRK8Vc9e8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			7fc5j9L0Fn4PpBdAj3bRK8Vc9e8=
+			</data>
+			<key>hash2</key>
+			<data>
+			788pDInA8tnkb2TO+vy7W0hXi1gzkY6FKwhgUWTj358=
+			</data>
+		</dict>
 		<key>Headers/RKRobotLE.h</key>
-		<data>
-		//Z+F98G1kjRR0gcDo6wiPb9qgQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			iAYv8MVOyJvkM+hx8qDJyod1jxQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Oz4ofMq+AazA536Tki+TQ4kAuHeZo4sKyk/TsOKJuc=
+			</data>
+		</dict>
 		<key>Headers/RKRobotRadioDescriptor.h</key>
-		<data>
-		7hXPSFaWzvpvvllXIEqsgzbvl9k=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			XS+Kk/5UFhsyGBXHKbi5fjxR8t4=
+			</data>
+			<key>hash2</key>
+			<data>
+			yDE9SMOUbUqGoYMAbgofBLKfhR3u4Y/2sIuWclrFPA8=
+			</data>
+		</dict>
 		<key>Headers/RobotKitLE.h</key>
-		<data>
-		SluG643NKWHsXwhSi2i7YudiKSk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			SluG643NKWHsXwhSi2i7YudiKSk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Su6Frdul8PB3dFL7Z/h5xeHNph0gNNnxOm6uszpkODA=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

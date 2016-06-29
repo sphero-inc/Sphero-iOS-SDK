@@ -1,0 +1,75 @@
+//
+// Prefix header for all source files of the 'CocoaTouchStaticLibrary' target in the 'CocoaTouchStaticLibrary' project.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif
+
+
+#ifdef DEBUG
+#define DLog(...) NSLog(@"%s - %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]);
+#else
+#define DLog(...)
+#endif
+
+
+
+#pragma mark - STATS 
+
+#define STATLOG false
+
+// Log for stat debug
+#if STATLOG
+#define SLog(...) NSLog(@"Stat Logging:%s - %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]);
+#else
+#define SLog(...)
+#endif
+
+
+
+// always log
+#define ELog(...) NSLog(@"OBX:%s - %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]);
+
+#define ALog(...) NSLog(@"OBX:%s - %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]);
+
+
+
+#define SILENCE_SELECTOR_LEAK_WARNING(code)                    \
+_Pragma("clang diagnostic push")                                        \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")     \
+code;                                                                   \
+_Pragma("clang diagnostic pop")                                         \
+
+#define RK_NIL_DISALLOWED(parameter) if (!parameter) { @throw [NSException exceptionWithName:@"RKApiMisuseException" reason:[NSString stringWithFormat:@"Parameter %s cannot be nil", #parameter] userInfo:nil]; }
+#define RK_ABSTRACT_METHOD { @throw [NSException exceptionWithName:@"RKUnimplementedAbstractMethodException" reason:[NSString stringWithFormat:@"Class %@ must implement method %s", [self class], __PRETTY_FUNCTION__] userInfo:nil]; }
+#define RK_ASYNC_ID_DEF(id)                                         \
+- (uint8_t)commandId {                                              \
+    return (id);                                                    \
+}                                                                   \
+                                                                    \
+- (uint8_t)deviceId {                                               \
+    return 0;                                                       \
+}
+
+#define RK_API_ID_DEF(cid, did)                                     \
+- (uint8_t)commandId {                                              \
+    return cid;                                                     \
+}                                                                   \
+                                                                    \
+- (uint8_t)deviceId {                                               \
+    return did;                                                     \
+}                               
+
+
+
+#define SILENCE_DEPRECATION(expr)                                   \
+do {                                                                \
+_Pragma("clang diagnostic push")                                    \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")   \
+expr;                                                               \
+_Pragma("clang diagnostic pop")                                     \
+} while(0)
+
+#define SILENCE_IOS7_DEPRECATION(expr) SILENCE_DEPRECATION(expr)
+#define SILENCE_IOS8_DEPRECATION(expr) SILENCE_DEPRECATION(expr)

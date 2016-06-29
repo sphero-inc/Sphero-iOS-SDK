@@ -2,6 +2,10 @@
 //  Copyright (c) 2014 Orbotix. All rights reserved.
 //
 
+FOUNDATION_EXPORT double RobotLanguageKitVersionNumber;
+
+FOUNDATION_EXPORT const unsigned char RobotLanguageKitVersionString[];
+
 #pragma mark - Macros
 #import "RKMacroPlayer.h"
 #import "RKMacroObject.h"

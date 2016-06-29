@@ -1,11 +1,5 @@
-//
-//  Copyright (c) 2014 Orbotix Inc. All rights reserved.
-//
-
-#import <RobotCommandKit/RobotCommandKit.h>
+#import "RKDeviceCommand.h"
 
 @interface RKGetChassisIdCommand : RKDeviceCommand
-
-+(instancetype) command;
 
 @end

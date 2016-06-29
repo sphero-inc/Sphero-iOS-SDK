@@ -1,8 +1,4 @@
-//
-//  Copyright (c) 2015 Orbotix Inc. All rights reserved.
-//
-
-#import <RobotCommandKit/RobotCommandKit.h>
+#import "RKDeviceCommand.h"
 
 extern const ushort MINIMUM_BLOCK_ID;
 extern const ushort MAXIMUM_BLOCK_ID;

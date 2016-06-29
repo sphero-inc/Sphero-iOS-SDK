@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ExternalAccessory/ExternalAccessory.h>
-#import <RobotCommandKit/RKDiscoveryAgent.h>
+#import <RobotCommandKit/RobotCommandKit.h>
 
 @class RKRobotClassic;
 
@@ -44,6 +44,8 @@
 -(NSOrderedSet*) onlineRobots;
 
 - (BOOL) isDiscovering;
+
+-(void) setShouldAutoConnect:(BOOL) shouldAutoConnect;
 
 @end
 

@@ -37,6 +37,7 @@ typedef NS_ENUM(uint8_t, RKStatDataKey) {
 @property (nonatomic, readonly) RKStatKey statKey;
 @property (strong, nonatomic, readonly) NSString *stringStatKey;
 @property (strong, nonatomic, readonly) NSString *associatedMac;
+@property (strong, nonatomic, readonly) NSMutableDictionary *baseDictionary;
 
 + (instancetype)statWithKey:(RKStatKey)key mac:(NSString *)mac;
 

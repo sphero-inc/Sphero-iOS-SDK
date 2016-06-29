@@ -17,10 +17,11 @@
 @property (strong) CBUUID* uuidControlCharacteristic;
 @property (strong) CBUUID* uuidResponseCharacteristic;
 
-+(id) ollieDescriptor;
-+(id) bb8Descriptor;
-+(id) weBallDescriptor;
 
--(id) initPrototypeDescriptor;
+// ONLY Production scheduled devices should be listed here.
++ (instancetype)ollieDescriptor;
++ (instancetype)weBallDescriptor;
++ (instancetype)sprkPlusDescriptor;
+
 
 @end

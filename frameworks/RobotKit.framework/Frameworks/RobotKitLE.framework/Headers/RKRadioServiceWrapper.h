@@ -32,8 +32,7 @@ typedef NS_ENUM (uint8_t, RKLEWakeType){
 -(void) readRemoteRSSI;
 -(void) deepSleep;
 
--(void) peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error;
-
+- (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error;
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error;
 
 @property (strong, nonatomic, readonly) CBService* service;

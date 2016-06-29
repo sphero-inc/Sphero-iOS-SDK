@@ -5,7 +5,6 @@
 #import <Foundation/Foundation.h>
 #import <ExternalAccessory/ExternalAccessory.h>
 #import <RobotCommandKit/RobotCommandKit.h>
-#import <RobotCommandKit/RKSession.h>
 
 @class RKClassicLink;
 /*! @file */

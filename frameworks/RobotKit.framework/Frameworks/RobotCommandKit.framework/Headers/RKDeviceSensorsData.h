@@ -5,6 +5,7 @@
 /*! @file */
 #import <Foundation/Foundation.h>
 #import "RKSensorData.h"
+#import "RKSetDataStreamingCommand.h"
 
 @class RKBackEMFData;
 @class RKMagnetometerData;
@@ -40,5 +41,7 @@
 @property ( nonatomic, readonly ) RKQuaternionData *quaternionData;
 
 @property ( nonatomic, readonly) RKMotorData * motorData;
+
+- (id) initWithMask:(RKDataStreamingMask) mask data:(NSData *) data;
 
 @end

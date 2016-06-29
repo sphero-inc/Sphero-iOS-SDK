@@ -1,26 +1,12 @@
-//
-//  RKMajorMinorVersion.h
-//  RobotCommandKit
-//
-//  Created by wes on 5/4/14.
-//  Copyright (c) 2014 Orbotix Inc. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-
 @interface RKMajorMinorVersion : NSObject
 
-@property (nonatomic, strong, readonly) NSString* major;
-@property (nonatomic, strong, readonly) NSString* minor;
+@property (nonatomic, strong, readonly, nonnull) NSString *major;
+@property (nonatomic, strong, readonly, nonnull) NSString *minor;
 
-+(id) versionWithString:(NSString*) versionString;
-
--(NSComparisonResult) compare:(RKMajorMinorVersion*) version;
-
--(bool) isGreaterThan:(RKMajorMinorVersion*) version;
-
--(bool) isLessThan:(RKMajorMinorVersion*) version;
-
--(NSString*) versionString;
+- (nullable instancetype)initWithVersionString:(nonnull NSString *)versionString;
+- (NSComparisonResult)compare:(nonnull RKMajorMinorVersion *)version;
+- (BOOL)isGreaterThan:(nonnull RKMajorMinorVersion *)version;
+- (BOOL)isLessThan:(nonnull RKMajorMinorVersion *)version;
+- (nonnull NSString *)versionString;
 
 @end
