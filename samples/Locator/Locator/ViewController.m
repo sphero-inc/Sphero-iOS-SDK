@@ -6,7 +6,7 @@
 #import <RobotKit/RobotKit.h>
 #import <RobotUIKit/RobotUIKit.h>
 
-@interface ViewController()
+@interface ViewController() <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *textFieldNewX;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldNewY;
@@ -43,6 +43,10 @@
                                              selector:@selector(appDidBecomeActive:)
                                                  name:UIApplicationDidBecomeActiveNotification
                                                object:nil];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    [tap setCancelsTouchesInView:NO];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)appDidBecomeActive:(BOOL)animated {
@@ -98,7 +102,7 @@
 - (void)startLocatorStreaming {
     // Register for Locator X,Y position, and X,Y velocity
     RKDataStreamingMask sensorMask = RKDataStreamingMaskLocatorAll;
-	[self.robot sendCommand:[RKSetDataStreamingCommand commandWithRate:10 andMask:sensorMask]];
+    [self.robot.sensorControl enableSensors:sensorMask atStreamingRate:RKDataStreamingRate10];
 }
 
 - (void)handleAsyncMessage:(RKAsyncMessage *)message forRobot:(id<RKRobotBase>)robot {
@@ -115,6 +119,15 @@
         self.xVelocityValueLabel.text = [NSString stringWithFormat:@"%.02f  %@", locatorData.velocity.x, @"cm/s"];
         self.yVelocityValueLabel.text = [NSString stringWithFormat:@"%.02f  %@", locatorData.velocity.y, @"cm/s"];
     }
+}
+
+- (void)hideKeyboard {
+    [self.view endEditing:YES];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self hideKeyboard];
+    return YES;
 }
 
 - (IBAction)configurePressed:(id)sender {
@@ -149,19 +162,19 @@
 }
 
 - (IBAction)upPressed:(id)sender {
-	[self.robot sendCommand:[RKRollCommand commandWithHeading:0 andVelocity:VELOCITY]];
+    [self.robot driveWithHeading:0 andVelocity:VELOCITY];
 }
 
 - (IBAction)downPressed:(id)sender {
-	[self.robot sendCommand:[RKRollCommand commandWithHeading:180 andVelocity:VELOCITY]];
+    [self.robot driveWithHeading:180 andVelocity:VELOCITY];
 }
 
 - (IBAction)leftPressed:(id)sender {
-	[self.robot sendCommand:[RKRollCommand commandWithHeading:270 andVelocity:VELOCITY]];
+    [self.robot driveWithHeading:270 andVelocity:VELOCITY];
 }
 
 - (IBAction)rightPressed:(id)sender {
-	[self.robot sendCommand:[RKRollCommand commandWithHeading:90 andVelocity:VELOCITY]];
+    [self.robot driveWithHeading:90 andVelocity:VELOCITY];
 }
 
 - (IBAction)stopPressed:(id)sender {

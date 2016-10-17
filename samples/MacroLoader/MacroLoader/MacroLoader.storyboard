@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="241-hq-J9p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="241-hq-J9p">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,76 +15,71 @@
                         <viewControllerLayoutGuide type="bottom" id="lFg-2r-R9l"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SgP-ni-RlI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHW-h6-UqV">
-                                <rect key="frame" x="182" y="90" width="236" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="0tJ-04-X5G"/>
                                     <constraint firstAttribute="width" constant="236" id="XeQ-Y3-vZ0"/>
                                 </constraints>
                                 <state key="normal" title="Strobe">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="macro1:" destination="241-hq-J9p" eventType="touchUpInside" id="MNJ-dX-CcJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7f-Rg-b0M">
-                                <rect key="frame" x="182" y="171" width="236" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="XCr-YB-5Vg"/>
                                     <constraint firstAttribute="height" constant="61" id="xFj-ux-K6E"/>
                                 </constraints>
                                 <state key="normal" title="Clover">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="macro2:" destination="241-hq-J9p" eventType="touchUpInside" id="vZV-5H-LBw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTd-01-bcA">
-                                <rect key="frame" x="182" y="247" width="236" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="gU2-HI-ujY"/>
                                     <constraint firstAttribute="height" constant="60" id="lfF-bt-wKD"/>
                                 </constraints>
                                 <state key="normal" title="Small Dance">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="macro3:" destination="241-hq-J9p" eventType="touchUpInside" id="ZpJ-uF-Zin"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivv-w2-ZAn">
-                                <rect key="frame" x="182" y="320" width="236" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="EpQ-ZO-Nr8"/>
                                     <constraint firstAttribute="width" constant="236" id="Qu8-gK-tOK"/>
                                 </constraints>
                                 <state key="normal" title="LargeDance">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="macro4:" destination="241-hq-J9p" eventType="touchUpInside" id="Fq0-fc-KnU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv1-95-Jvc">
-                                <rect key="frame" x="236" y="413" width="129" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="2tG-LN-kkr"/>
                                     <constraint firstAttribute="width" constant="129" id="Xm1-6s-GfF"/>
                                 </constraints>
                                 <state key="normal" title="Stop">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="stop:" destination="241-hq-J9p" eventType="touchUpInside" id="Z1u-cp-Q1r"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ivv-w2-ZAn" firstAttribute="top" secondItem="UTd-01-bcA" secondAttribute="bottom" constant="13" id="1En-0b-6ed"/>
                             <constraint firstItem="Ivv-w2-ZAn" firstAttribute="centerX" secondItem="UTd-01-bcA" secondAttribute="centerX" id="BUM-5I-Wyv"/>

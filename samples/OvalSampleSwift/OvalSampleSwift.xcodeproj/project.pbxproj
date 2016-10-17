@@ -7,28 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE526B121B3B4AF2000D6545 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B111B3B4AF2000D6545 /* RobotKit.framework */; };
+		1F8D04E41DB02DC9009DCBDD /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8D04E31DB02DC9009DCBDD /* RobotKit.framework */; };
 		EA464DD31B386D3D00CDB4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA464DD21B386D3D00CDB4F0 /* AppDelegate.swift */; };
 		EA464DD51B386D3D00CDB4F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA464DD41B386D3D00CDB4F0 /* ViewController.swift */; };
 		EA464DD81B386D3D00CDB4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA464DD61B386D3D00CDB4F0 /* Main.storyboard */; };
 		EA464DDA1B386D3D00CDB4F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA464DD91B386D3D00CDB4F0 /* Images.xcassets */; };
 		EA464DDD1B386D3D00CDB4F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA464DDB1B386D3D00CDB4F0 /* LaunchScreen.xib */; };
-		EA464DE91B386D3D00CDB4F0 /* OvalSampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA464DE81B386D3D00CDB4F0 /* OvalSampleSwiftTests.swift */; };
 		EA464E1C1B3895AF00CDB4F0 /* Sample.oval in Resources */ = {isa = PBXBuildFile; fileRef = EA464E1B1B3895AF00CDB4F0 /* Sample.oval */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EA464DE31B386D3D00CDB4F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA464DC51B386D3C00CDB4F0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA464DCC1B386D3D00CDB4F0;
-			remoteInfo = OvalSampleSwift;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		DE526B111B3B4AF2000D6545 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		1F8D04E31DB02DC9009DCBDD /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		EA464DCD1B386D3D00CDB4F0 /* OvalSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OvalSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA464DD11B386D3D00CDB4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA464DD21B386D3D00CDB4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,11 +25,7 @@
 		EA464DD71B386D3D00CDB4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA464DD91B386D3D00CDB4F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA464DDC1B386D3D00CDB4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		EA464DE21B386D3D00CDB4F0 /* OvalSampleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OvalSampleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA464DE71B386D3D00CDB4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA464DE81B386D3D00CDB4F0 /* OvalSampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalSampleSwiftTests.swift; sourceTree = "<group>"; };
-		EA464DF21B386D7900CDB4F0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		EA464DF61B386E0500CDB4F0 /* OvalSampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OvalSampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA464DF61B386E0500CDB4F0 /* OvalSampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OvalSampleSwift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		EA464E1B1B3895AF00CDB4F0 /* Sample.oval */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sample.oval; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,29 +34,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE526B121B3B4AF2000D6545 /* RobotKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA464DDF1B386D3D00CDB4F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1F8D04E41DB02DC9009DCBDD /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8D04E21DB02DB3009DCBDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D04E31DB02DC9009DCBDD /* RobotKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA464DC41B386D3C00CDB4F0 = {
 			isa = PBXGroup;
 			children = (
-				DE526B111B3B4AF2000D6545 /* RobotKit.framework */,
-				EA464DF21B386D7900CDB4F0 /* libc++.dylib */,
 				EA464DCF1B386D3D00CDB4F0 /* OvalSampleSwift */,
-				EA464DE51B386D3D00CDB4F0 /* OvalSampleSwiftTests */,
+				1F8D04E21DB02DB3009DCBDD /* Frameworks */,
 				EA464DCE1B386D3D00CDB4F0 /* Products */,
-				EA464DF61B386E0500CDB4F0 /* OvalSampleSwift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				EA464DCD1B386D3D00CDB4F0 /* OvalSampleSwift.app */,
-				EA464DE21B386D3D00CDB4F0 /* OvalSampleSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,24 +83,8 @@
 		EA464DD01B386D3D00CDB4F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA464DF61B386E0500CDB4F0 /* OvalSampleSwift-Bridging-Header.h */,
 				EA464DD11B386D3D00CDB4F0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EA464DE51B386D3D00CDB4F0 /* OvalSampleSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				EA464DE81B386D3D00CDB4F0 /* OvalSampleSwiftTests.swift */,
-				EA464DE61B386D3D00CDB4F0 /* Supporting Files */,
-			);
-			path = OvalSampleSwiftTests;
-			sourceTree = "<group>";
-		};
-		EA464DE61B386D3D00CDB4F0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EA464DE71B386D3D00CDB4F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,44 +109,24 @@
 			productReference = EA464DCD1B386D3D00CDB4F0 /* OvalSampleSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA464DE11B386D3D00CDB4F0 /* OvalSampleSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA464DEF1B386D3D00CDB4F0 /* Build configuration list for PBXNativeTarget "OvalSampleSwiftTests" */;
-			buildPhases = (
-				EA464DDE1B386D3D00CDB4F0 /* Sources */,
-				EA464DDF1B386D3D00CDB4F0 /* Frameworks */,
-				EA464DE01B386D3D00CDB4F0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA464DE41B386D3D00CDB4F0 /* PBXTargetDependency */,
-			);
-			name = OvalSampleSwiftTests;
-			productName = OvalSampleSwiftTests;
-			productReference = EA464DE21B386D3D00CDB4F0 /* OvalSampleSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EA464DC51B386D3C00CDB4F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Orbotix;
 				TargetAttributes = {
 					EA464DCC1B386D3D00CDB4F0 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = U92PM5JGJC;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 						};
-					};
-					EA464DE11B386D3D00CDB4F0 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = EA464DCC1B386D3D00CDB4F0;
 					};
 				};
 			};
@@ -198,7 +144,6 @@
 			projectRoot = "";
 			targets = (
 				EA464DCC1B386D3D00CDB4F0 /* OvalSampleSwift */,
-				EA464DE11B386D3D00CDB4F0 /* OvalSampleSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,13 +160,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA464DE01B386D3D00CDB4F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,23 +172,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA464DDE1B386D3D00CDB4F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA464DE91B386D3D00CDB4F0 /* OvalSampleSwiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EA464DE41B386D3D00CDB4F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA464DCC1B386D3D00CDB4F0 /* OvalSampleSwift */;
-			targetProxy = EA464DE31B386D3D00CDB4F0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EA464DD61B386D3D00CDB4F0 /* Main.storyboard */ = {
@@ -285,14 +207,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -330,8 +255,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -350,6 +277,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -361,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../frameworks",
@@ -372,9 +301,11 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphero.OvalSampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OvalSampleSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -383,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../frameworks",
@@ -394,42 +326,10 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphero.OvalSampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OvalSampleSwift-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		EA464DF01B386D3D00CDB4F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OvalSampleSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OvalSampleSwift.app/OvalSampleSwift";
-			};
-			name = Debug;
-		};
-		EA464DF11B386D3D00CDB4F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OvalSampleSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OvalSampleSwift.app/OvalSampleSwift";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -450,15 +350,6 @@
 			buildConfigurations = (
 				EA464DED1B386D3D00CDB4F0 /* Debug */,
 				EA464DEE1B386D3D00CDB4F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA464DEF1B386D3D00CDB4F0 /* Build configuration list for PBXNativeTarget "OvalSampleSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA464DF01B386D3D00CDB4F0 /* Debug */,
-				EA464DF11B386D3D00CDB4F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

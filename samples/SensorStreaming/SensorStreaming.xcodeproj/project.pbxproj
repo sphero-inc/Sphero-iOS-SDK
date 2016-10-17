@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F08DA921A4244A400DDEE82 /* SensorStreaming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F08DA911A4244A400DDEE82 /* SensorStreaming.storyboard */; };
+		1F8D04EA1DB033B2009DCBDD /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8D04E71DB033B2009DCBDD /* RobotKit.framework */; };
 		81EE34421491452A00132035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34411491452A00132035 /* UIKit.framework */; };
 		81EE34441491452A00132035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE34431491452A00132035 /* Foundation.framework */; };
 		81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE344B1491452A00132035 /* ExternalAccessory.framework */; };
@@ -16,14 +17,12 @@
 		81EE34581491452A00132035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34571491452A00132035 /* AppDelegate.m */; };
 		81EE34631491452B00132035 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE34621491452B00132035 /* ViewController.m */; };
 		81EE34701491458B00132035 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81EE346F1491458B00132035 /* README.txt */; };
-		DE526B151B3B4B46000D6545 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B131B3B4B46000D6545 /* RobotKit.framework */; };
-		DE526B161B3B4B46000D6545 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B141B3B4B46000D6545 /* RobotUIKit.framework */; };
-		DE526B1A1B3B4B79000D6545 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE526B191B3B4B79000D6545 /* RobotUIKit.bundle */; };
 		DE53D07619771188006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07519771188006E4C0B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F08DA911A4244A400DDEE82 /* SensorStreaming.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SensorStreaming.storyboard; sourceTree = "<group>"; };
+		1F8D04E71DB033B2009DCBDD /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
 		81EE343D1491452A00132035 /* SensorStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EE34411491452A00132035 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81EE34431491452A00132035 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,14 +36,7 @@
 		81EE34611491452B00132035 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		81EE34621491452B00132035 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		81EE346F1491458B00132035 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		DE526B131B3B4B46000D6545 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
-		DE526B141B3B4B46000D6545 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../../frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
-		DE526B171B3B4B4C000D6545 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../../frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
-		DE526B191B3B4B79000D6545 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../../frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
 		DE53D07519771188006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DE9F26281A2637C6007DFB5C /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../_Frameworks_iOS/RobotUIKit.bundle; sourceTree = "<group>"; };
-		DE9F262A1A2637F0007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
-		DE9F262B1A2637F0007DFB5C /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../_Frameworks_iOS/RobotUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE526B151B3B4B46000D6545 /* RobotKit.framework in Frameworks */,
-				DE526B161B3B4B46000D6545 /* RobotUIKit.framework in Frameworks */,
+				1F8D04EA1DB033B2009DCBDD /* RobotKit.framework in Frameworks */,
 				81EE34421491452A00132035 /* UIKit.framework in Frameworks */,
 				81EE34441491452A00132035 /* Foundation.framework in Frameworks */,
 				81EE344C1491452A00132035 /* ExternalAccessory.framework in Frameworks */,
@@ -66,7 +57,6 @@
 		81EE34321491452A00132035 = {
 			isa = PBXGroup;
 			children = (
-				DE526B191B3B4B79000D6545 /* RobotUIKit.bundle */,
 				DE53D07519771188006E4C0B /* Default-568h@2x.png */,
 				81EE344D1491452A00132035 /* SensorStreaming */,
 				81EE34401491452A00132035 /* Frameworks */,
@@ -85,12 +75,7 @@
 		81EE34401491452A00132035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE526B171B3B4B4C000D6545 /* RobotUIKit.bundle */,
-				DE526B131B3B4B46000D6545 /* RobotKit.framework */,
-				DE526B141B3B4B46000D6545 /* RobotUIKit.framework */,
-				DE9F262A1A2637F0007DFB5C /* RobotKit.framework */,
-				DE9F262B1A2637F0007DFB5C /* RobotUIKit.framework */,
-				DE9F26281A2637C6007DFB5C /* RobotUIKit.bundle */,
+				1F8D04E71DB033B2009DCBDD /* RobotKit.framework */,
 				81EE34411491452A00132035 /* UIKit.framework */,
 				81EE34431491452A00132035 /* Foundation.framework */,
 				81EE344B1491452A00132035 /* ExternalAccessory.framework */,
@@ -149,10 +134,11 @@
 		81EE34341491452A00132035 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Orbotix, Inc.";
 				TargetAttributes = {
 					81EE343C1491452A00132035 = {
+						DevelopmentTeam = U92PM5JGJC;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -183,7 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE526B1A1B3B4B79000D6545 /* RobotUIKit.bundle in Resources */,
 				81EE34521491452A00132035 /* InfoPlist.strings in Resources */,
 				81EE34701491458B00132035 /* README.txt in Resources */,
 				DE53D07619771188006E4C0B /* Default-568h@2x.png in Resources */,
@@ -227,12 +212,15 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +254,9 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -293,10 +283,10 @@
 		81EE346D1491452B00132035 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../frameworks",
 					"$(inherited)",
-					"/Users/wes/Git/sdk/PUBLIC/Sphero-iOS-SDK/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
@@ -306,6 +296,7 @@
 					"-lc++",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphero.SensorStreaming;
 				PRODUCT_NAME = SensorStreaming;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -315,10 +306,10 @@
 		81EE346E1491452B00132035 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../frameworks",
 					"$(inherited)",
-					"/Users/wes/Git/sdk/PUBLIC/Sphero-iOS-SDK/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SensorStreaming/SensorStreaming-Prefix.pch";
@@ -328,6 +319,7 @@
 					"-lc++",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphero.SensorStreaming;
 				PRODUCT_NAME = SensorStreaming;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

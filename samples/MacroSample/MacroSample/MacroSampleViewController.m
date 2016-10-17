@@ -85,9 +85,9 @@
 
 - (void)handleConnected {
     [_robot disableSensors];
-    [_robot enableStablilization:NO];
+    [_robot enableStabilization:NO];
     [_robot setBackLEDBrightness:1.0f];
-    [_robot sendCommand:[RKSetDataStreamingCommand commandWithStop]];
+    [_robot.sensorControl disableSensors];
     [_robot addResponseObserver:self];
 }
 
@@ -124,10 +124,10 @@
 //Macros
 //Abort Macros
 - (IBAction)AbortMacro:(id)sender {
-	[_robot sendCommand:[RKAbortMacroCommand command]];
-	[_robot sendCommand:[RKStabilizationCommand commandWithState:RKStabilizationStateOn]];
-	[_robot sendCommand:[RKRollCommand commandWithStopAtHeading:0.0]];
-	[_robot sendCommand:[RKRGBLEDOutputCommand commandWithRed:1.0 green:1.0 blue:1.0]];
+    [_robot macroAbort];
+    [_robot enableStabilization:YES];
+    [_robot stop];
+    [_robot setLEDWithRed:1.0f green:1.0f blue:1.0f];
 }
 
 //Simple Square, no repeat

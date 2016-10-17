@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "appWillResignActive:", name: UIApplicationWillResignActiveNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "appDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.appWillResignActive(note:)), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.appDidBecomeActive(note:)), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
         
-        RKRobotDiscoveryAgent.sharedAgent().addNotificationObserver(self, selector: "handleRobotStateChangeNotification:")
+        RKRobotDiscoveryAgent.shared().addNotificationObserver(self, selector: #selector(ViewController.handleRobotStateChangeNotification(notification:)))
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         connectionLabel = nil;
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         
         super.init(coder: aDecoder)
     }
@@ -37,12 +37,12 @@ class ViewController: UIViewController {
         }
     }
     
-    func appWillResignActive(note: NSNotification) {
+    func appWillResignActive(note: Notification) {
         RKRobotDiscoveryAgent.disconnectAll()
         stopDiscovery()
     }
     
-    func appDidBecomeActive(note: NSNotification) {
+    func appDidBecomeActive(note: Notification) {
         startDiscovery()
     }
     
@@ -50,22 +50,22 @@ class ViewController: UIViewController {
         let noteRobot = notification.robot
         
         switch (notification.type) {
-        case .Connecting:
+        case .connecting:
             connectionLabel.text = "\(notification.robot.name()) Connecting"
             break
-        case .Online:
+        case .online:
             let conveniencerobot = RKConvenienceRobot(robot: noteRobot);
             
-            if (UIApplication.sharedApplication().applicationState != .Active) {
-                conveniencerobot.disconnect()
+            if (UIApplication.shared.applicationState != .active) {
+                conveniencerobot?.disconnect()
             } else {
                 self.robot = RKConvenienceRobot(robot: noteRobot);
                 
-                connectionLabel.text = noteRobot.name()
+                connectionLabel.text = noteRobot?.name()
                 togleLED()
             }
             break
-        case .Disconnected:
+        case .disconnected:
             connectionLabel.text = "Disconnected"
             startDiscovery()
             robot = nil;
@@ -94,8 +94,8 @@ class ViewController: UIViewController {
             }
             ledON = !ledON
             
-            var delay = Int64(0.5 * Float(NSEC_PER_SEC))
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay), dispatch_get_main_queue(), { () -> Void in
+            let delay = Int64(0.5 * Float(NSEC_PER_SEC))
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(delay) / Double(NSEC_PER_SEC), execute: { () -> Void in
                 self.togleLED();
             })
         }

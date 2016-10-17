@@ -92,7 +92,7 @@
 	
 	//saves a temporary macro command thats includes the data packet
 	[_robot macroSaveTemporary:data];
-	[_robot sendCommand:[RKRunMacroCommand commandWithId:255]];
+	[_robot sendCommand:[[RKRunMacroCommand alloc] initWithId:255]];
 }
 
 - (IBAction)macro3:(id)sender {
@@ -102,7 +102,7 @@
 	
 	//saves a temporary macro command thats includes the data packet
 	[_robot macroSaveTemporary:data];
-	[_robot sendCommand:[RKRunMacroCommand commandWithId:255]];
+	[_robot sendCommand:[[RKRunMacroCommand alloc] initWithId:255]];
 }
 
 - (IBAction)macro4:(id)sender {
@@ -111,14 +111,14 @@
 	NSData *data = [NSData dataWithContentsOfFile:file];
 	
 	//saves a temporary macro command thats includes the data packet
-	[_robot sendCommand:[RKSaveTemporaryMacroCommand commandWithMacro:data flags:RKMacroFlagMotorControl]]; // example of deeper control
+	[_robot sendCommand:[[RKSaveTemporaryMacroCommand alloc] initWithMacro:data flags:RKMacroFlagMotorControl delay:0]]; // example of deeper control
 	[_robot macroRunAtId:255];
 }
 
 
 - (IBAction)stop:(id)sender {
 	[_robot macroAbort];
-	[_robot enableStablilization:YES];
+	[_robot enableStabilization:YES];
 }
 
 

@@ -164,15 +164,16 @@ static NSString * const ReuseIdentifier = @"FILEPATHCELL";
 - (IBAction)erase:(id)sender{
     [self.orbBasicProgram erase];
     self.executeButton.enabled = NO;
+    self.messageView.text = @"Erase complete";
 }
 
 #pragma mark Message Handlers
 
 - (void) handleResponse:(RKDeviceResponse *)response forRobot:(id<RKRobotBase>)robot{
     if ([response isKindOfClass:[RKOrbBasicAppendFragmentResponse class]]) {
-        if (response.code == RKResponseCodeErrorParameter) {
+        if (response.responseCode == RKResponseCodeErrorParameter) {
             _messageView.text = [_messageView.text stringByAppendingFormat:@"Syntax error.\n"];
-        } else if (response.code == RKResponseCodeErrorExecute) {
+        } else if (response.responseCode == RKResponseCodeErrorExecute) {
             _messageView.text = [_messageView.text stringByAppendingFormat:@"Memory full! Program not loaded.\n"];
         }
     }

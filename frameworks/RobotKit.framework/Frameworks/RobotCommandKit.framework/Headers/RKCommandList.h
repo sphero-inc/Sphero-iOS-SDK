@@ -57,6 +57,7 @@ typedef NS_ENUM(uint8_t, RKSpheroCommandId) {
     RKSpheroCommandIdSetAutonomyTimes = 0x3D,
     RKSpheroCommandIdSetAutonomyFlags = 0x3E,
     RKSpheroCommandIdGetConfigurationBlock = 0x40,
+    RKSpheroCommandIdSetSSBModifiers = 0x41,
     RKSpheroCommandIdSetDeviceMode = 0x42,
     RKSpheroCommandIdSetConfigurationBlock = 0x43,
     RKSpheroCommandIdGetDeviceMode = 0x44,

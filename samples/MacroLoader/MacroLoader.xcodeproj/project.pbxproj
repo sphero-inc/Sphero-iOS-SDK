@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FECC8A21DB01B2A002BA3D0 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECC89F1DB01B2A002BA3D0 /* RobotKit.framework */; };
+		1FECC8A31DB01B2A002BA3D0 /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1FECC8A01DB01B2A002BA3D0 /* RobotUIKit.bundle */; };
+		1FECC8A41DB01B2A002BA3D0 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECC8A11DB01B2A002BA3D0 /* RobotUIKit.framework */; };
 		6784E7EE15DDA24100BD3A02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7DC15DDA24100BD3A02 /* AppDelegate.m */; };
 		6784E7EF15DDA24100BD3A02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7DD15DDA24100BD3A02 /* InfoPlist.strings */; };
 		6784E7F615DDA24100BD3A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784E7E915DDA24100BD3A02 /* main.m */; };
@@ -17,19 +20,17 @@
 		D34057461676C7F300FE1E64 /* bigdance.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7FD15DDA2BB00BD3A02 /* bigdance.sphero */; };
 		D34057471676C7FA00FE1E64 /* symboll.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E80215DDA2BB00BD3A02 /* symboll.sphero */; };
 		D34057481676C80400FE1E64 /* dance1.sphero in Resources */ = {isa = PBXBuildFile; fileRef = 6784E7FF15DDA2BB00BD3A02 /* dance1.sphero */; };
-		DE526B081B3B48E9000D6545 /* RobotUIKit.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B071B3B48E9000D6545 /* RobotUIKit.bundle */; };
 		DE53D07E1977119B006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07D1977119B006E4C0B /* Default-568h@2x.png */; };
-		DE9F26061A2635DB007DFB5C /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */; };
 		E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */; };
 		E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */; };
 		E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */; };
-		EA7AD4891AB21C420075BCE1 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE07AAF0196F9C0700FB523A /* libstdc++.dylib */; };
-		EA7AD48A1AB21C510075BCE1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE07AAEF196F9C0700FB523A /* libc++.dylib */; };
-		EA7AD48C1AB21C6C0075BCE1 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7AD48B1AB21C6C0075BCE1 /* RobotKit.framework */; };
 		EA84518A1A40DBDC0098A6C0 /* MacroLoader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8451891A40DBDC0098A6C0 /* MacroLoader.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FECC89F1DB01B2A002BA3D0 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
+		1FECC8A01DB01B2A002BA3D0 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../../frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
+		1FECC8A11DB01B2A002BA3D0 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../../frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
 		6784E7DB15DDA24100BD3A02 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6784E7DC15DDA24100BD3A02 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6784E7DE15DDA24100BD3A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -47,16 +48,10 @@
 		6784E80115DDA2BB00BD3A02 /* strobelight.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = strobelight.sphero; sourceTree = "<group>"; };
 		6784E80215DDA2BB00BD3A02 /* symboll.sphero */ = {isa = PBXFileReference; lastKnownFileType = file; path = symboll.sphero; sourceTree = "<group>"; };
 		81EE343D1491452A00132035 /* MacroLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE07AAEF196F9C0700FB523A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		DE07AAF0196F9C0700FB523A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		DE526B071B3B48E9000D6545 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../../frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
 		DE53D07D1977119B006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DE9F26031A2635DB007DFB5C /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
-		DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../_Frameworks_iOS/RobotUIKit.framework; sourceTree = "<group>"; };
 		E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		EA7AD48B1AB21C6C0075BCE1 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RobotKitDevelopment-aebkzbizlelybwetqdzbpgkykyot/Build/Products/Debug-iphoneos/RobotKit.framework"; sourceTree = "<group>"; };
 		EA8451891A40DBDC0098A6C0 /* MacroLoader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MacroLoader.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,11 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE526B081B3B48E9000D6545 /* RobotUIKit.bundle in Frameworks */,
-				EA7AD48C1AB21C6C0075BCE1 /* RobotKit.framework in Frameworks */,
-				EA7AD48A1AB21C510075BCE1 /* libc++.dylib in Frameworks */,
-				EA7AD4891AB21C420075BCE1 /* libstdc++.dylib in Frameworks */,
-				DE9F26061A2635DB007DFB5C /* RobotUIKit.framework in Frameworks */,
+				1FECC8A41DB01B2A002BA3D0 /* RobotUIKit.framework in Frameworks */,
+				1FECC8A21DB01B2A002BA3D0 /* RobotKit.framework in Frameworks */,
 				E60EECAC15DD6F6F008FFEB9 /* ExternalAccessory.framework in Frameworks */,
 				E60EECA015DD6EE8008FFEB9 /* UIKit.framework in Frameworks */,
 				E60EEC9D15DD6ED5008FFEB9 /* Foundation.framework in Frameworks */,
@@ -98,12 +90,9 @@
 		6784E7FA15DDA24B00BD3A02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE526B071B3B48E9000D6545 /* RobotUIKit.bundle */,
-				EA7AD48B1AB21C6C0075BCE1 /* RobotKit.framework */,
-				DE9F26031A2635DB007DFB5C /* RobotKit.framework */,
-				DE9F26041A2635DB007DFB5C /* RobotUIKit.framework */,
-				DE07AAEF196F9C0700FB523A /* libc++.dylib */,
-				DE07AAF0196F9C0700FB523A /* libstdc++.dylib */,
+				1FECC89F1DB01B2A002BA3D0 /* RobotKit.framework */,
+				1FECC8A01DB01B2A002BA3D0 /* RobotUIKit.bundle */,
+				1FECC8A11DB01B2A002BA3D0 /* RobotUIKit.framework */,
 				E60EECAB15DD6F6F008FFEB9 /* ExternalAccessory.framework */,
 				E60EEC9F15DD6EE8008FFEB9 /* UIKit.framework */,
 				E60EEC9C15DD6ED5008FFEB9 /* Foundation.framework */,
@@ -179,7 +168,7 @@
 		81EE34341491452A00132035 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Orbotix, Inc.";
 				TargetAttributes = {
 					81EE343C1491452A00132035 = {
@@ -223,6 +212,7 @@
 				D34057461676C7F300FE1E64 /* bigdance.sphero in Resources */,
 				D34057471676C7FA00FE1E64 /* symboll.sphero in Resources */,
 				D34057481676C80400FE1E64 /* dance1.sphero in Resources */,
+				1FECC8A31DB01B2A002BA3D0 /* RobotUIKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,12 +252,15 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -302,7 +295,9 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -332,17 +327,19 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
 				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.orbotix..${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MacroLoader;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,16 +352,18 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MacroLoader/MacroLoader-Prefix.pch";
 				INFOPLIST_FILE = "MacroLoader/MacroLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.orbotix..${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MacroLoader;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

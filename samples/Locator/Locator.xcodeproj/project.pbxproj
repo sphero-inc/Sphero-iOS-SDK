@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1F08DA881A420C3900DDEE82 /* Locator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F08DA871A420C3900DDEE82 /* Locator.storyboard */; };
+		1F8D04EF1DB03771009DCBDD /* RobotUIKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D04ED1DB03771009DCBDD /* RobotUIKit.bundle */; };
+		1F8D04F01DB03771009DCBDD /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8D04EE1DB03771009DCBDD /* RobotUIKit.framework */; };
 		6762B2B415AF57AD00BBDF9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6762B2B215AF57AD00BBDF9A /* InfoPlist.strings */; };
 		6762B2B615AF57AD00BBDF9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B515AF57AD00BBDF9A /* main.m */; };
 		6762B2BA15AF57AD00BBDF9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2B915AF57AD00BBDF9A /* AppDelegate.m */; };
 		6762B2C315AF57AD00BBDF9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6762B2C215AF57AD00BBDF9A /* ViewController.m */; };
 		DE526B041B3B4815000D6545 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B011B3B4815000D6545 /* RobotKit.framework */; };
-		DE526B051B3B4815000D6545 /* RobotUIKit.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B021B3B4815000D6545 /* RobotUIKit.bundle */; };
-		DE526B061B3B4815000D6545 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE526B031B3B4815000D6545 /* RobotUIKit.framework */; };
 		DE53D07419771184006E4C0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE53D07319771184006E4C0B /* Default-568h@2x.png */; };
 		DE9F26161A2636CE007DFB5C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F26151A2636CE007DFB5C /* ExternalAccessory.framework */; };
 		DE9F261E1A2636EF007DFB5C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9F261D1A2636EF007DFB5C /* CoreBluetooth.framework */; };
@@ -22,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		1F08DA871A420C3900DDEE82 /* Locator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Locator.storyboard; sourceTree = "<group>"; };
+		1F8D04ED1DB03771009DCBDD /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../../frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
+		1F8D04EE1DB03771009DCBDD /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../../frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
 		6762B29F15AF57AD00BBDF9A /* Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6762B2B115AF57AD00BBDF9A /* Locator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Locator-Info.plist"; sourceTree = "<group>"; };
 		6762B2B315AF57AD00BBDF9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -32,8 +34,6 @@
 		6762B2C115AF57AD00BBDF9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6762B2C215AF57AD00BBDF9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DE526B011B3B4815000D6545 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../../frameworks/RobotKit.framework; sourceTree = "<group>"; };
-		DE526B021B3B4815000D6545 /* RobotUIKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = RobotUIKit.bundle; path = ../../frameworks/RobotUIKit.bundle; sourceTree = "<group>"; };
-		DE526B031B3B4815000D6545 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = ../../frameworks/RobotUIKit.framework; sourceTree = "<group>"; };
 		DE53D07319771184006E4C0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DE9F26151A2636CE007DFB5C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		DE9F261D1A2636EF007DFB5C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -44,11 +44,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8D04F01DB03771009DCBDD /* RobotUIKit.framework in Frameworks */,
 				DE9F261E1A2636EF007DFB5C /* CoreBluetooth.framework in Frameworks */,
 				DE9F26161A2636CE007DFB5C /* ExternalAccessory.framework in Frameworks */,
 				DE526B041B3B4815000D6545 /* RobotKit.framework in Frameworks */,
-				DE526B051B3B4815000D6545 /* RobotUIKit.bundle in Frameworks */,
-				DE526B061B3B4815000D6545 /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,9 +99,9 @@
 		DE9F261F1A26372A007DFB5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F8D04ED1DB03771009DCBDD /* RobotUIKit.bundle */,
+				1F8D04EE1DB03771009DCBDD /* RobotUIKit.framework */,
 				DE526B011B3B4815000D6545 /* RobotKit.framework */,
-				DE526B021B3B4815000D6545 /* RobotUIKit.bundle */,
-				DE526B031B3B4815000D6545 /* RobotUIKit.framework */,
 				DE9F261D1A2636EF007DFB5C /* CoreBluetooth.framework */,
 				DE9F26151A2636CE007DFB5C /* ExternalAccessory.framework */,
 			);
@@ -135,10 +134,11 @@
 		6762B29615AF57AD00BBDF9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Orbotix Inc";
 				TargetAttributes = {
 					6762B29E15AF57AD00BBDF9A = {
+						DevelopmentTeam = U92PM5JGJC;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -170,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6762B2B415AF57AD00BBDF9A /* InfoPlist.strings in Resources */,
+				1F8D04EF1DB03771009DCBDD /* RobotUIKit.bundle in Resources */,
 				DE53D07419771184006E4C0B /* Default-568h@2x.png in Resources */,
 				1F08DA881A420C3900DDEE82 /* Locator.storyboard in Resources */,
 			);
@@ -211,12 +212,15 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -254,7 +258,9 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -285,6 +291,7 @@
 		6762B2CD15AF57AD00BBDF9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../frameworks",
 					"$(inherited)",
@@ -292,12 +299,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
 				INFOPLIST_FILE = "Locator/Locator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphero.Locator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -307,6 +315,7 @@
 		6762B2CE15AF57AD00BBDF9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = U92PM5JGJC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../frameworks",
 					"$(inherited)",
@@ -314,12 +323,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Locator/Locator-Prefix.pch";
 				INFOPLIST_FILE = "Locator/Locator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphero.Locator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

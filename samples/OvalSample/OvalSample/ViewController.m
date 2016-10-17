@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <RobotKit/RobotKit.h>
 
-@interface ViewController () <RKOvalControlDelegate>
+@interface ViewController () <RKOvalControlDelegate, UITextFieldDelegate>
 
 @property (nonatomic, weak) IBOutlet UITextField *lightSpeed;
 @property (nonatomic, strong) RKConvenienceRobot *robot;
@@ -24,6 +24,9 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    [tap setCancelsTouchesInView:NO];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,8 +52,6 @@
         case RKRobotOnline:
             self.robot = [[RKConvenienceRobot alloc] initWithRobot:notification.robot];
             self.ovalControl = [[RKOvalControl alloc] initWithRobot:notification.robot delegate:self];
-            [self.ovalControl resetOvmAndLibrary:YES];
-            [self sendOvalProgram];
             break;
             
         default:
@@ -63,7 +64,20 @@
     [_ovalControl sendOvalPrograms:@[ovalProgram]];
 }
 
+- (void)hideKeyboard {
+    [self.view endEditing:YES];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self hideKeyboard];
+    return YES;
+}
+
 #pragma mark - RKOvalControlDelegate
+
+- (void)ovalControlDidInitialize:(RKOvalControl *)control {
+    [self.ovalControl resetOvmAndLibrary:YES];
+}
 
 - (void)ovalControlDidFinishSendingProgram:(RKOvalControl *)control {
     NSLog(@"Oval successfully sent");
@@ -71,6 +85,7 @@
 
 - (void)ovalControlDidResetOvm:(RKOvalControl *)control {
     NSLog(@"OVM Reset");
+    [self sendOvalProgram];
 }
 
 - (void)ovalControl:(RKOvalControl *)control receivedOvalNotification:(RKOvalDeviceBroadcast *)notification {
