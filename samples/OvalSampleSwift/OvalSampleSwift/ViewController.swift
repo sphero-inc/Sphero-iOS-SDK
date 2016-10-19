@@ -15,8 +15,8 @@ class ViewController: UIViewController, RKOvalControlDelegate, UITextFieldDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(ViewController.hideKeyboard));
+        
+        let tap = UITapGestureRecognizer(target:self, action:#selector(hideKeyboard));
         tap.cancelsTouchesInView = false;
         self.view.addGestureRecognizer(tap);
     }
@@ -24,24 +24,20 @@ class ViewController: UIViewController, RKOvalControlDelegate, UITextFieldDelega
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        RKRobotDiscoveryAgent.shared().addNotificationObserver(self, selector: #selector(ViewController.handleRobotStateChangeNotification(_:)))
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        RKRobotDiscoveryAgent.shared().addNotificationObserver(self, selector: #selector(handleRobotStateChangeNotification(_:)))
     }
     
     override func awakeFromNib() {
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.appDidBecomeActive(_:)), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.appWillResignActive(_:)), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
+        super.awakeFromNib()
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive(_:)), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appWillResignActive(_:)), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
     }
     
-    func appDidBecomeActive(_ notification: Notification) {
+    func appDidBecomeActive(_: Notification) {
         RKRobotDiscoveryAgent.startDiscovery()
     }
     
-    func appWillResignActive(_ notification: Notification) {
+    func appWillResignActive(_: Notification) {
         RKRobotDiscoveryAgent.disconnectAll()
     }
 
@@ -50,21 +46,27 @@ class ViewController: UIViewController, RKOvalControlDelegate, UITextFieldDelega
         case .online:
             self.robot = RKConvenienceRobot(robot: notification.robot)
             self.ovalControl = RKOvalControl(robot: notification.robot, delegate: self)
-            break
         case .disconnected:
             self.robot = nil
             self.ovalControl = nil
-            break
         default:
             break
         }
     }
     
     func sendOvalProgram() {
-        let path:String = Bundle.main.path(forResource: "Sample", ofType: "oval")!
-        let source = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
-        if let unwrappedSource = source {
-            self.ovalControl.sendOvalPrograms([unwrappedSource])
+        guard let path = Bundle.main.path(forResource: "Sample", ofType: "oval") else {
+            return
+        }
+        
+        var source: String? = nil
+        do {
+            source = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+            if let unwrappedSource = source {
+                self.ovalControl.sendOvalPrograms([unwrappedSource])
+            }
+        } catch let error as NSError {
+            debugPrint("Error: \(error)")
         }
     }
     
@@ -88,24 +90,24 @@ class ViewController: UIViewController, RKOvalControlDelegate, UITextFieldDelega
     }
     
     func ovalControlDidFinishSendingProgram(_ control: RKOvalControl!) {
-        NSLog("Oval successfully sent")
+        debugPrint("Oval successfully sent")
     }
     
     func ovalControlDidResetOvm(_ control: RKOvalControl!) {
-        NSLog("OVM Reset")
+        debugPrint("OVM Reset")
         sendOvalProgram()
     }
     
     func ovalControl(_ control: RKOvalControl!, receivedOvalNotification notification: RKOvalDeviceBroadcast!) {
-        NSLog("Did receive oval async with floats: \(notification.floats) ints: \(notification.ints)")
+        debugPrint("Did receive oval async with floats: \(notification.floats) ints: \(notification.ints)")
     }
     
     func ovalControl(_ control: RKOvalControl!, receivedVmRuntimeError notification: RKOvalErrorBroadcast!) {
-        NSLog("Did receive OVM Error: \(notification.errorDescription())")
+        debugPrint("Did receive OVM Error: \(notification.errorDescription())")
     }
     
     func ovalControl(_ control: RKOvalControl!, didFailToSendProgramWithMessage message: String!) {
-        NSLog("Failed to send program with message: \(message)")
+        debugPrint("Failed to send program with message: \(message)")
     }
 }
 
